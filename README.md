@@ -7,7 +7,7 @@
 
 A modern, feature-rich icon pack built with the CandyBar Dashboard. This icon pack brings a fresh, cohesive design to your Android device while maintaining compatibility with various launchers.
 
-## Features
+## 🎨 Features
 
 - **Extensive Icon Collection**: Carefully crafted icons with attention to detail
 - **Regular Updates**: Continuous addition of new icons and improvements
@@ -20,7 +20,7 @@ A modern, feature-rich icon pack built with the CandyBar Dashboard. This icon pa
 - **Adaptive Icons**: Full support for Android's adaptive icon system
 - **Dark Mode**: Seamless dark theme support
 
-## Supported Launchers
+## 📱 Supported Launchers
 
 - Nova Launcher
 - Action Launcher
@@ -31,19 +31,14 @@ A modern, feature-rich icon pack built with the CandyBar Dashboard. This icon pa
 - Niagara Launcher
 - And many more!
 
-## Getting Started
+## 🚀 Getting Started
 
 1. Download the app from your preferred store
 2. Open the app and select your launcher
 3. Apply the icon pack through your launcher's settings
 4. Enjoy your freshly themed device!
 
-## Download
-
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=your.package.name)
-[<img src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-appstore-badge-english-black.png" alt="Available at Amazon Appstore" height="80">](https://www.amazon.com/your-app-link)
-
-## Building from Source
+## 🛠️ Building from Source
 
 ### Prerequisites
 - Android Studio Arctic Fox or newer
@@ -60,7 +55,7 @@ A modern, feature-rich icon pack built with the CandyBar Dashboard. This icon pa
 3. Sync project with Gradle files
 4. Build the project
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you'd like to contribute:
 
@@ -70,7 +65,15 @@ Contributions are welcome! If you'd like to contribute:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+## 👏 Credits
+
+This project is based on the [CandyBar Dashboard](https://github.com/danimahardhika/candybar-library) created by [Dani Mahardhika](https://github.com/danimahardhika). Special thanks to:
+
+- [Dani Mahardhika](https://github.com/danimahardhika) for creating and maintaining the original CandyBar Dashboard
+- The CandyBar community for their contributions and support
+- All contributors who have helped improve this project
+
+## 📄 License
 
 ```
 Copyright 2024 Sam Neill
