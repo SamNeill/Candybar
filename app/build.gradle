@@ -87,7 +87,8 @@ configurations.all {
 }
 
 dependencies {
-    implementation project(':library')
+    implementation 'com.github.SamNeill.Candybar:candybar:1.0.0'
+    implementation 'com.github.SamNeill.Candybar:PreLollipopTransitions:1.0.0'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     compileOnly 'org.projectlombok:lombok:1.18.30'
