@@ -106,12 +106,12 @@
 
     <!-- Home -->
     <string name="home_more_apps_header">More Apps</string>
-    <string name="home_more_apps">Check other apps published on the Google Play Store</string>
+    <string name="home_more_apps">Check More Icons Pack on Amazon App Store</string>
     <string name="home_rate_and_review">Rate &amp; Review</string>
 
     <string name="home_apply_icon_pack">Apply %s</string>
     <string name="home_donate">Donate</string>
-    <string name="home_donate_desc">Support development for the icon pack</string>
+    <string name="home_donate_desc">Encourage Developer to make more icon pack</string>
     <string name="home_icons">Icons</string>
     <string name="home_icon_dimension">%s pixels icon dimension</string>
     <string name="home_loud_wallpapers">%d cloud wallpapers</string>
