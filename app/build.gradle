@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            // Only configure signing if not on JitPack
+            if (!System.env.JITPACK) {
+                keyAlias 'key0'
+                keyPassword 'candybar'
+                storeFile file('candybar.jks')
+                storePassword 'candybar'
+            }
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    compileSdk rootProject.ext.CompileSdk
+
+    namespace 'com.candybar.dev'
+
+    defaultConfig {
+        applicationId 'com.candybar.dev'
+        minSdkVersion rootProject.ext.MinSdk
+        targetSdkVersion rootProject.ext.TargetSdk
+        versionCode 1
+        versionName '1.0'
+
+        // This code loads the license key from `local.properties` file
+        // and saves it as build config field named "LICENSE_KEY"
+        String licenseKey = ''
+        Properties props = new Properties()
+        File propFile = rootProject.file('local.properties')
+        if (propFile.exists()) {
+            props.load(propFile.newDataInputStream())
+            licenseKey = props.get('license_key', '')
+        }
+        buildConfigField 'String', 'LICENSE_KEY', "\"$licenseKey\""
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def projectName = project.rootDir.name // Gets "candybar-Cursor2"
+            def buildType = variant.buildType.name
+            def versionName = variant.versionName
+
+            // For APK
+            if (outputFileName.endsWith('.apk')) {
+                outputFileName = "${projectName}-${versionName}-${buildType}.apk"
+            }
+            // For AAB (Bundle)
+            else if (outputFileName.endsWith('.aab')) {
+                outputFileName = "${projectName}-${versionName}-${buildType}.aab"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (!System.env.JITPACK) {
+                signingConfig signingConfigs.release
+            }
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+configurations.all {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}
+
+dependencies {
+    implementation project(':library')
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}

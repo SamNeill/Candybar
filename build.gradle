@@ -1,0 +1,70 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
+
+plugins {
+    id 'maven-publish'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://developer.huawei.com/repo' }
+        maven { url 'https://raw.githubusercontent.com/amzn/amazon-pay-sdk-java/maven' }
+        maven { url 'https://maven.amazon.com/repository/amazon-sdk-maven' }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.22'
+        }
+    }
+
+    rootProject.ext {
+        def major = 3
+        def minor = 20
+        def patch = 3
+
+        VersionCode = major * 10000 + minor * 100 + patch
+        VersionName = "$major.$minor.$patch"
+
+        MinSdk = 21
+        TargetSdk = 35
+        CompileSdk = 35
+    }
+}
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            android {
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_11
+                    targetCompatibility JavaVersion.VERSION_11
+                }
+            }
+        }
+        
+        tasks.withType(JavaCompile).configureEach {
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
+        }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.layout.buildDirectory
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <contributor
+        name="Sam Neill"
+        contribution="Amazon Appstore Edition"
+        image="https://github.com/SamNeill.png"
+        link="https://github.com/SamNeill" />
+
+    <contributor
+        name="Stefanie Grunwald"
+        contribution="DX, UX &amp; Analytics"
+        image="https://github.com/moertel.png"
+        link="https://github.com/moertel" />
+
+    <contributor
+        name="GitGitro"
+        contribution=""
+        image="https://github.com/GitGitro.png"
+        link="https://github.com/GitGitro" />
+		
+    <contributor
+        name="maxtron95"
+        contribution=""
+        image="https://github.com/maxtron95.png"
+        link="https://github.com/maxtron95" />
+
+</resources>

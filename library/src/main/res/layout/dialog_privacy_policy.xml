@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_marginHorizontal="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="?attr/cb_colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_accept"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="?attr/cb_colorAccent"
+            android:textColor="?android:textColorPrimaryInverse"
+            style="@style/Widget.Material3.Button"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_deny"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="DENY"
+            android:textSize="14sp"
+            android:textColor="?attr/cb_colorAccent"
+            style="@style/Widget.Material3.Button.TextButton"/>
+
+    </LinearLayout>
+</LinearLayout>

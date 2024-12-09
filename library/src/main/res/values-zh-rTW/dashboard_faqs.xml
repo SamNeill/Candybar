@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="base">
+        <!-- What is a launcher -->
+        <!-- What is an icon pack -->
+        <!-- How do i use an icon pack? -->
+        <!-- How do i apply an icon pack? -->
+        <!-- How do i see all icons included? -->
+        <!-- I can\'t see a complete icon name -->
+        <!-- How can i replace icons with an alternate icon? -->
+        <!-- How do i request an icon? -->
+        <!-- How can i restore the remaining Premium Requests after reinstalling the app? -->
+        <!-- After restarting my phone, the icon pack is not applied, it restore to defaults? -->
+        <!-- Why do the icons looks jaggy or pixelated on my phone? -->
+        <!-- I can see the icon included in all icons,
+            but why isn\'t the actual icon on the app drawer changed? -->
+        <!-- What is the \"report bugs\" option? -->
+        <!-- My launcher is listed in the Google Play description, but why isn\'t it included in apply section? -->
+        <!-- Wallpaper can\'t be applied, just showing black screen? -->
+        <!-- Muzei: How to load downloaded wallpapers only? -->
+        <!-- Muzei: I don\'t want to keep downloading wallpapers each time the wallpaper changes? -->
+        <!-- Muzei: I only want to use specific wallpapers? -->
+        <!-- Why are Read &amp; Write External Storage permission needed? -->
+        <!-- Why is Internet permission needed? -->
+        <!-- Why is Access Network State permission needed? -->
+        <!-- Why is Access Wi-Fi State permission needed? -->
+        <!-- Why is Set Wallpaper permission needed? -->
+        <!-- Why is Wake Lock Permission needed? -->
+        <!-- Why is Set Alarm permission needed? -->
+    </string-array>
+    <string-array name="questions">
+        <item>什麼是啟動器?</item>
+        <item>什麼是 icon pack?</item>
+        <item>我該怎樣使用一個 icon pack?</item>
+        <item>我該如啟用一個 icon pack?</item>
+        <item>我怎樣才能看到所有包含的 icon ?</item>
+        <item>我看不到一個完整的 icon 名稱</item>
+        <item>我該如何才能將 icon 替換為備用 icon ?</item>
+        <item>我該如何申請 icon ?</item>
+        <item>How can I restore the remaining Premium Requests after reinstalling the app?</item>
+        <item>After restarting my phone, the icon pack is not applied; it restores to defaults?</item>
+        <item>為什麼 icon 們在我的手機上看起來有鋸齒感?</item>
+        <item>I can see the icon included in all icons,
+            but why isn\'t the actual icon on the app drawer changed?</item>
+        <item>\"回報問題\" 選項是什麼?</item>
+        <item>My launcher is listed in the Google Play description, but why isn\'t it included in apply section?</item>
+        <item>桌布無法啟用，只是黑色畫面?</item>
+        <item>Muzei: 如何只載入已下載 icon ?</item>
+        <item>Muzei: 不想每次桌布變化的時候都要下載它們?</item>
+        <item>Muzei: 我只想用特定的桌布?</item>
+        <item>為什麼需要用到存儲讀寫權限?</item>
+        <item>為什麼需要用到聯網權限?</item>
+        <item>為什麼需要用到取得網絡連接狀態權限?</item>
+        <item>為什麼需要用到取得 WiFi 連接狀態權限?</item>
+        <item>為什麼需要用到設定桌布權限?</item>
+        <item>為什麼需要用到喚醒鎖權限?</item>
+        <item>Why is Set Alarm permission needed?</item>
+    </string-array>
+    <string-array name="answers">
+        <item>啟動器是 Android 界面的一部分，它可以讓使用者在使用 Android 設備時自定義主屏幕，啟動應用 App ，撥打電話，以及其它種種任務。</item>
+        <item>一組能夠改變 Navigation drawer 中 App 的 icon 的圖形們。</item>
+        <item>You will need a launcher that supports custom icon packs.
+            Supported launchers are listed in the Play Store description.
+            If you are confused about which launchers should be used, just go to the \"Apply\" section and install from there.</item>
+        <item>You can open the navigation drawer, then open \"Apply\". Choose your launcher from the list.
+            If your launcher is not listed there, but this icon pack is compatible with it
+            (see on Google Play Store description for supported launchers),
+            you can apply the icon pack manually in your launcher settings.</item>
+        <item>You can open the navigation drawer and then open \"Icons\"</item>
+        <item>輕點一下 icon 。一個預覽窗口將會彈出，那裡有更大的 icon 以及 icon 的全名。</item>
+        <item>那取決於你用的是哪一個啟動器。不是所有啟動器都支持 icon 編輯。但大多數情況下，你可以通過長按或者雙擊一個 icon 來編輯它。</item>
+        <item>You can open the navigation drawer, then open \"Icon Request\".</item>
+        <item>You can open the navigation drawer, then open \"Settings\", choose \"Restore Purchases\".
+            If you had any remaining Premium Requests before reinstalling, they will be restored.</item>
+        <item>It happened because this icon pack was moved to the SD Card; you should install it in internal memory.</item>
+        <item>The problem might come from the launcher that you used when handling big icon resolution.
+       	    You can fix it by increasing the icon size to 115–120%.
+       	    Alternatively, you might change your launcher.</item>
+        <item>Open settings, scroll down, and then select \"Report Bugs\".</item>
+        <item>\"回報問題\" 是用來報告本 icon pack存在的 bug 的，而不是 Candy Bar Dashboard 的 bug。</item>
+        <item>Not every launcher supports direct apply, and some of them can\'t be accessed directly from the dashboard.
+      	    You can apply this icon pack manually in the individual launcher settings.</item>
+        <item>當你從本 App 裡直接設定桌布的時候，它（桌布）會被下載到快取中，然後本 App 會嘗試應用它。
+啟用桌布的過程會花一些時間，並且需要在短時間內佔用很多的運行內存。
+\"黑色畫面\" 的錯誤之所以會出現，可能是因為你的手機沒有足夠用來處理該桌布的空閒運行內存。
+重啟你的手機能夠修復這個問題。
+重啟之後你的手機有更多可用的運行內存。
+或者，你可以在圖庫 App 中打開之前下載的桌布圖片，從那裡設定為桌布。</item>
+        <item>Open Muzei, choose this icon pack, settings. You will see an option to load downloaded wallpapers only.
+            You will need to download wallpapers from the dashboard first.</item>
+        <item>如果一張桌布已下載了，那麼它將被自動載入到你的手機內存中。
+Muzei 並不會在每次桌布變化的時候下載桌布。你需要先在 Dashboard 中下載桌布才行。</item>
+        <item>打開 Dashboard  App ，下載那些你想要在 Muzei 中使用的桌布。
+打開 Muzei 設置，然後選擇只使用已下載的桌布。</item>
+        <item>是用來讀寫快取，以及收集 icon 申請資料的。</item>
+        <item>It is used to load Cloud-Based Wallpapers &amp; download them.</item>
+        <item>是用來檢查你的手機是否擁有網路連接的。</item>
+        <item>是用來檢查你的手機是否連接到 Wifi 網絡的，以便載入 Muzei 上的雲端桌布。</item>
+        <item>是用來從 Dashboard  App 中直接啟用桌布的。</item>
+        <item>它被 Muzei 動態桌布所使用</item>
+        <item>It is used to launch the clock app from the analog clock widget.</item>
+    </string-array>
+</resources>

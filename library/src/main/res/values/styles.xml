@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CandyBar.Text.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">@dimen/text_content_subtitle</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="textAppearanceSubtitle2">@style/CandyBar.Text.Subtitle2</item>
+        <item name="android:listPreferredItemHeightSmall">48dp</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="itemShapeFillColor">@color/navigation_item_background_color</item>
+        <item name="itemTextAppearance">@style/CandyBar.Text.Subtitle2</item>
+        <item name="itemTextAppearanceActiveBoldEnabled">false</item>
+    </style>
+
+    <style name="RippleStyle">
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+    <style name="RippleStyleLight">
+        <item name="colorControlHighlight">#44FFFFFF</item>
+    </style>
+
+    <style name="RippleAccentStyle">
+        <item name="colorControlHighlight">?cb_rippleAccent</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="colorButtonNormal">?cb_colorAccent</item>
+    </style>
+
+    <style name="CheckBoxStyle">
+        <item name="colorPrimary">?cb_colorAccent</item>
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlActivated">?cb_colorAccent</item>
+    </style>
+
+    <style name="AccentChange">
+        <item name="colorPrimary">?cb_colorAccent</item>
+    </style>
+
+    <style name="ToolbarThemeOverlay">
+        <item name="colorControlNormal">?cb_toolbarIcon</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="materialThemeOverlay">@style/ToolbarThemeOverlay</item>
+    </style>
+
+    <style name="ActionBarOverlay">
+        <item name="colorControlNormal">?cb_toolbarIcon</item>
+        <item name="android:textColorPrimary">?cb_toolbarIcon</item>
+    </style>
+
+    <style name="ActionModeStyle" parent="Widget.AppCompat.ActionMode">
+        <item name="background">?cb_colorPrimary</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.CandyBar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.CandyBar.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Icon Styles -->
+    <style name="Icon.CandyBar" parent="">
+        <item name="tint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="CandyBar.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@drawable/overflow_menu_card_background</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:textColor">?cb_primaryText</item>
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+    <style name="CandyBar.PopupMenu.Overflow" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/overflow_menu_card_background</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:textColor">?cb_primaryText</item>
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+</resources>

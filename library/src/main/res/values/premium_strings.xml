@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Request Product IDs -->
+    <string name="premium_request_20">1_20_icon_request</string>
+    <string name="premium_request_30">1_30_icon_request</string>
+    <string name="premium_request_40">1_40_icon_request</string>
+    <string name="premium_request_50">1_50_icon_request</string>
+
+    <!-- Premium Request Product Counts -->
+    <integer name="premium_request_count_20">20</integer>
+    <integer name="premium_request_count_30">30</integer>
+    <integer name="premium_request_count_40">40</integer>
+    <integer name="premium_request_count_50">50</integer>
+
+    <!-- Donation Product IDs -->
+    <string name="donation_coffee">coffee</string>
+    <string name="donation_breakfast">breakfast</string>
+    <string name="donation_lunch">lunch</string>
+    <string name="donation_dinner">dinner</string>
+
+    <!-- Product Arrays -->
+    <string-array name="premium_request_products">
+        <item>@string/premium_request_20</item>
+        <item>@string/premium_request_30</item>
+        <item>@string/premium_request_40</item>
+        <item>@string/premium_request_50</item>
+    </string-array>
+
+    <integer-array name="premium_request_counts">
+        <item>@integer/premium_request_count_20</item>
+        <item>@integer/premium_request_count_30</item>
+        <item>@integer/premium_request_count_40</item>
+        <item>@integer/premium_request_count_50</item>
+    </integer-array>
+
+    <string-array name="donation_products">
+        <item>@string/donation_coffee</item>
+        <item>@string/donation_breakfast</item>
+        <item>@string/donation_lunch</item>
+        <item>@string/donation_dinner</item>
+    </string-array>
+</resources>
