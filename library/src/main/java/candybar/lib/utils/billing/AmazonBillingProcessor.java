@@ -1,3 +1,0 @@
-package candybar.lib.utils.billing;
-
-// ... rest of the code remains the same ... 
