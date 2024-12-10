@@ -7,7 +7,7 @@
     <string name="navigation_view_icons">Icons</string>
     <string name="navigation_view_request">Icon-Anfrage</string>
     <string name="navigation_view_wallpapers">Hintergrundbilder</string>
-    <string name="navigation_view_presets">Voreinstellungen</string>
+    <string name="navigation_view_kustom">Kustom</string>
     <string name="navigation_view_settings">Einstellungen</string>
     <string name="navigation_view_faqs">FAQs</string>
     <string name="navigation_view_about">Über</string>
@@ -107,8 +107,11 @@ Mit Premium Icon-Anfragen kannst du deine gewünschte App schneller erhalten.</s
     <string name="home_icon_request_missed_apps">%d\nfehlende App(s)</string>
     <!-- Apply -->
     <string name="apply_installed">Installierte Launcher</string>
+    <string name="apply_installed_launchers">Installed Launchers</string>
     <string name="apply_supported">Unterstützte Launcher</string>
-    <string name="apply_manual" formatted="true">%1$s Launcher unterstützt kein direktes Anwenden. Du kannst %2$s manuell über die Launcher-Einstellungen anwenden.</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is not installed. You can find and install it from the Amazon Appstore or other app stores.</string>
+    <string name="apply_manual">%1$s Launcher unterstützt kein direktes Anwenden. Du kannst %2$s manuell über die Launcher-Einstellungen anwenden.</string>
     <string name="apply_manual_kvaesitso">Kvaesitso unterstützt keine direktes Anwenden, aber du kannst diesen Schritten folgen:</string>
     <string name="apply_manual_kvaesitso_step_1">Kvaesitso Einstellungen öffnen</string>
     <string name="apply_manual_kvaesitso_step_2">Tippe auf \"Raster &amp; Icons\"</string>
@@ -120,7 +123,7 @@ Mit Premium Icon-Anfragen kannst du deine gewünschte App schneller erhalten.</s
     <string name="apply_manual_kiss_step_2">Tippe auf \"Benutzeroberfläche\"</string>
     <string name="apply_manual_kiss_step_3">Tippe auf \"Symbolpaket\"</string>
     <string name="apply_manual_kiss_step_4">Wähle %s aus der Liste</string>
-    <string name="apply_manual_samsung_oneui" formatted="true">%1$s unterstützt das automatische Anwenden von Icons leider nicht, aber ab Version %2$s können Icons über eine Begleit-App angewendet werden.</string>
+    <string name="apply_manual_samsung_oneui">%1$s unterstützt das automatische Anwenden von Icons leider nicht, aber ab Version %2$s können Icons über eine Begleit-App angewendet werden.</string>
     <string name="apply_manual_samsung_oneui_too_old">Deine aktuelle Version %s ist zu alt. Bitte nimm ein Update auf Android 12, vor um Icons automatisch anwenden zu können. Alternativ kannst du einen anderen Launcher installieren.</string>
     <string name="apply_manual_samsung_oneui_step_1">Öffne %s</string>
     <string name="apply_manual_samsung_oneui_step_2">Lade die App %s herunter</string>
@@ -163,12 +166,12 @@ Google Play Store öffnen, um es herunterzuladen und es zu installieren?</string
     <string name="apply_lg_home_not_available">LG Home ist auf diesem Gerät nicht verfügbar</string>
     <string name="apply_lg_home_failed">LG Home kann nicht gestartet werden. Du kannst versuchen das Icon Pack manuell aus den Einstellungen anzuwenden.</string>
     <string name="apply_lg_home_nougat">LG Home unterstützt unter Android Nougat keine Icon Packs mehr. Du brauchst einen alternativen Launcher, um Icon Packs zu benutzen.</string>
-    <string name="apply_launcher_incompatible">%s Launcher unterstützt keine Icon Packs, daher kannst du dieses Icon Pack nicht verwenden. Du kannst jedoch versuchen mit Hilfe einer externen App %2$s mit diesem Launcher zu verwenden. Möchtest du es ausprobieren?</string>
-    <string name="apply_launcher_incompatible_depending_on_version">%s Launcher unterstützt keine Icon-Pakete auf Android %d oder niedriger. Bitte aktualisieren Sie Ihre Android-Version oder installieren Sie einen Drittanbieter-Launcher, um dieses Icon-Paket zu verwenden. Sie können auch eine Helfer-App versuchen, einzelne Symbole zu ändern. Möchten Sie sie installieren?</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher unterstützt keine Icon Packs, daher kannst du dieses Icon Pack nicht verwenden. Du kannst jedoch versuchen mit Hilfe einer externen App %2$s mit diesem Launcher zu verwenden. Möchtest du es ausprobieren?</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%s Launcher unterstützt keine Icon-Pakete auf Android %d oder niedriger. Bitte aktualisieren Sie Ihre Android-Version oder installieren Sie einen Drittanbieter-Launcher, um dieses Icon-Paket zu verwenden. Sie können auch eine Helfer-App versuchen, einzelne Symbole zu ändern. Möchten Sie sie installieren?</string>
     <!-- Icons -->
     <string name="icons_load_failed">Icons können nicht geladen werden</string>
     <string name="icon_shape">Symbolform</string>
-    <string name="bookmark_icons_empty">Keine Lesezeichen gefunden. Markiere Icons für schnellen Zugriff.</string>
+    <string name="bookmark_icons_empty"></string>
     <string name="items_selected">%d ausgewählt</string>
     <!-- Request -->
     <string name="request_title">Icon-Anfrage</string>
@@ -265,6 +268,8 @@ fehlenden Icons erstellt wurde.</string>
     <string name="pref_theme_header">Design</string>
     <string name="pref_theme_dark">Dunkles Design</string>
     <string name="pref_theme_dark_desc">Dunkle Farbe als Design für die App verwenden</string>
+    <string name="pref_notifications_header">Notifications</string>
+    <string name="pref_notifications">Receive Notifications</string>
     <string name="pref_wallpaper_header">Hintergrundbild</string>
     <string name="pref_wallpaper_location">Speicherort der Hintergrundbilder</string>
     <string name="pref_language_header">Sprache</string>
@@ -280,6 +285,8 @@ fehlenden Icons erstellt wurde.</string>
     <string name="theme_name_material_you">Material You</string>
     <!-- Permission -->
     <string name="permission_storage_denied">Zugang zum Speicher nötig, um das Hintergrundbild zu speichern</string>
+    <string name="permission_notification_denied_1">Notification permission is needed to receive notifications from the developer</string>
+    <string name="permission_notification_denied_2">Enable notifications from the app settings</string>
     <!-- Intent -->
     <string name="app_client">E-Mail-Klienten auswählen</string>
     <string name="no_email_app">Keine Apps für E-Mails verfügbar</string>
@@ -291,8 +298,6 @@ fehlenden Icons erstellt wurde.</string>
     <string name="intent_email_not_supported_message">Nicht unterstützter E-Mail-Klient ausgewählt. Bitte einen anderen Klienten wählen</string>
     <!-- About -->
     <string name="about_contributors_title">Mitwirkende</string>
-    <string name="about_privacy_policy_title">Datenschutzerklärung</string>
-    <string name="about_terms_and_conditions_title">Allgemeine Geschäftsbedingungen</string>
     <!-- Report Bugs -->
     <string name="report_bugs_desc">Bitte gib eine Beschreibung des Problems ab, das du melden willst</string>
     <string name="report_bugs_desc_hint">Beschreibung</string>
@@ -306,23 +311,34 @@ fehlenden Icons erstellt wurde.</string>
     <string name="crash_report">Absturzbericht</string>
     <string name="crash_report_message">Leider ist %s abgestürzt. Wähle unten \"Bericht senden\", um den Entwickler bei der Fehlerbehebung zu unterstützen.</string>
     <string name="crash_report_send">Bericht senden</string>
-    <!-- Please don't modify this, Just Translate -->
-    <string name="about_dashboard">CandyBar Dashboard</string>
-    <string name="about_dashboard_dev">CandyBar ist ein Open Source Icon Pack Dashboard, das unter Apache License 2.0 lizensiert ist. 
-Für Android bei GitHub verfügbar und kostenlos zur Benutzung freigegeben, entwickelt von Dani Mahardhika.</string>
-    <string name="about_open_source_licenses">Open-Source-Lizenzen</string>
-    <string name="about_dashboard_contributors">Mitwirkende bei CandyBar</string>
-    <string name="about_dashboard_translator">Übersetzer bei CandyBar</string>
     <!-- DrawerToggle -->
     <string name="txt_open">Öffnen</string>
     <string name="txt_close">Schließen</string>
     <string name="txt_new">Neu</string>
     <!-- Content descriptions for screen readers -->
-    <string name="bookmark_button_content_description">Fügen Sie dieses Icon zu den Lesezeichen hinzu</string>
+    <string name="bookmark_button_content_description"></string>
     <string name="icon_search_close_button_content_description">Iconsuche schließen</string>
     <string name="icon_request_submit_button_content_description">Eine Icon-Anfrage senden</string>
     <string name="icon_list_content_description">Die Liste der Icons, die im Icon-Pack enthalten sind</string>
     <string name="icon_search_list_content_description">Die Liste der Icons, die mit dem Suchbegriff übereinstimmen</string>
     <string name="about_item_social_content_description">Ein Link zu einem Online-Profil des Autors des Icon-Packs: </string>
     <string name="share_icon_pack_button_content_description">Teile diese App mit anderen</string>
+    <!-- Keep the strings but make them empty -->
+    <string name="about_dashboard"></string>
+    <string name="about_dashboard_dev"></string>
+    <string name="about_open_source_licenses"></string>
+    <string name="about_dashboard_contributors"></string>
+    <string name="about_dashboard_translator"></string>
+    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_desc">Your privacy is important to us. Please read our privacy policy to understand how we handle your data.</string>
+    <!-- Request -->
+    <string name="request_limit_title">Free Request Limit</string>
+    <string name="request_limit_content">You have %d free requests remaining. Consider upgrading to premium for unlimited requests.</string>
+    <string name="request_limit_reached">Free request limit reached. Please upgrade to premium for more requests.</string>
+    <string name="request_limit_remaining">You can select %d more icons</string>
+    <!-- Version -->
+    <string name="version">Version</string>
+    <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
