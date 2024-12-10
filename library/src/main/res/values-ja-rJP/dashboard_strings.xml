@@ -7,7 +7,7 @@
     <string name="navigation_view_icons">アイコン</string>
     <string name="navigation_view_request">アイコンリクエスト</string>
     <string name="navigation_view_wallpapers">壁紙</string>
-    <string name="navigation_view_presets">プリセット</string>
+    <string name="navigation_view_kustom">Kustom</string>
     <string name="navigation_view_settings">設定</string>
     <string name="navigation_view_faqs">よくある質問</string>
     <string name="navigation_view_about">概要</string>
@@ -109,6 +109,8 @@
     <string name="apply_installed">インストールされたランチャー</string>
     <string name="apply_installed_launchers">インストール済みのランチャー</string>
     <string name="apply_supported">対応しているランチャー</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is not installed. You can find and install it from the Amazon Appstore or other app stores.</string>
     <string name="apply_manual">%1$sはこのアプリから直接適用することはできませんが、%s$sのランチャー設定から手動で適用することができます。</string>
     <string name="apply_manual_kvaesitso">Kvaesitsoはこのアプリから直接適用することはできませんが、次の手順で適用することができます。</string>
     <string name="apply_manual_kvaesitso_step_1">Kvaesitsoの設定を開く</string>
@@ -164,12 +166,12 @@ Google Playストアを開きダウンロードしてインストールします
     <string name="apply_lg_home_not_available">LGホームはお使いの端末で利用できません</string>
     <string name="apply_lg_home_failed">LGホーム設定を起動できません。設定からアイコンパックの適用を手動でお試しください。</string>
     <string name="apply_lg_home_nougat">Android NougatでのLGホームではアイコンパックの対応を廃止しました。アイコンパックを使用するにはカスタムランチャーが必要です。</string>
-    <string name="apply_launcher_incompatible">%1$sではあらゆるアイコンパックがサポートされていないため、アイコンパックを利用することができません。アイコンパックを利用するため、サードパーティーのアプリである%2$sを試すことができます。インストールしますか？</string>
-    <string name="apply_launcher_incompatible_depending_on_version">%sはAndroid %d以下ではアイコンパックがサポートされていません。アイコンパックを使用するにはAndroidのバージョンを更新するかサードパーティーのランチャーをインストールしてください。ヘルパーアプリを試して個別にアイコンを変更することもできます。インストールしますか？</string>
+    <string name="apply_launcher_incompatible" formatted="true">%1$sではあらゆるアイコンパックがサポートされていないため、アイコンパックを利用することができません。アイコンパックを利用するため、サードパーティーのアプリである%2$sを試すことができます。インストールしますか？</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%sはAndroid %d以下ではアイコンパックがサポートされていません。アイコンパックを使用するにはAndroidのバージョンを更新するかサードパーティーのランチャーをインストールしてください。ヘルパーアプリを試して個別にアイコンを変更することもできます。インストールしますか？</string>
     <!-- Icons -->
     <string name="icons_load_failed">アイコンを読み込めません</string>
     <string name="icon_shape">アイコンの形状</string>
-    <string name="bookmark_icons_empty">ブックマークが存在しません。ブックマークされたアイコンはここから瞬時にアクセスすることができます。</string>
+    <string name="bookmark_icons_empty"></string>
     <string name="items_selected">%d個選択中</string>
     <!-- Request -->
     <string name="request_title">アイコンリクエスト</string>
@@ -189,6 +191,7 @@ Google Playストアを開きダウンロードしてインストールします
     <string name="request_requested">あなたは既にこのアイコンをリクエストしており、再度リクエストすることはできません。</string>
     <string name="request_requested_possible">あなたは既にこのアイコンをリクエストしています。他のアイコンをリクエストしますか？</string>
     <string name="request_requested_button_cancel">戻る</string>
+    <string name="request_requested_button_confirm">Select anyway</string>
     <string name="request_email_client">アイコンリクエストを送信したいメールクライアントを選択してください</string>
     <string name="request_app_disabled">あなたは古いバージョンのアイコンパックを使用しています。リクエストしたアイコンは最新のバージョンに含まれている可能性があります。アイコンをリクエストするにはアプリを最新のバージョンに更新してください。</string>
     <string name="connection_error_long">サーバーからデータを読み込むことができませんでした。申し訳ありませんが、ネットワーク接続を確認してください。</string>
@@ -295,8 +298,6 @@ Google Playストアを開きダウンロードしてインストールします
     <string name="intent_email_not_supported_message">非対応のメールクライアントが選択されました。他のメールクライアントを選択してください</string>
     <!-- About -->
     <string name="about_contributors_title">貢献者</string>
-    <string name="about_privacy_policy_title">プライバシーポリシー</string>
-    <string name="about_terms_and_conditions_title">利用規約</string>
     <!-- Report Bugs -->
     <string name="report_bugs_desc">どのような問題が起きたのかについての概要を記載して報告してください</string>
     <string name="report_bugs_desc_hint">概要</string>
@@ -310,21 +311,34 @@ Google Playストアを開きダウンロードしてインストールします
     <string name="crash_report">クラッシュ報告</string>
     <string name="crash_report_message">残念なことに、%sがクラッシュしました。以下の「レポートを送信」を選択して、開発者が問題を修正できるようにしてください。</string>
     <string name="crash_report_send">レポートを送信</string>
-    <!-- Please don't modify this, Just Translate -->
-    <string name="about_dashboard">CandyBar Dashboard</string>
-    <string name="about_dashboard_dev">CandyBarは、Dani Mahardhikaによって開発され、GitHubで入手して自由に利用することのできる、Apache License 2.0に基づきライセンスされたAndroid向けオープンソースアイコンパックダッシュボードです。</string>
-    <string name="about_open_source_licenses">オープンソースライセンス</string>
-    <string name="about_dashboard_contributors">CandyBarの貢献者</string>
-    <string name="about_dashboard_translator">CandyBarの翻訳者</string>
     <!-- DrawerToggle -->
     <string name="txt_open">開く</string>
     <string name="txt_close">閉じる</string>
+    <string name="txt_new">New</string>
     <!-- Content descriptions for screen readers -->
-    <string name="bookmark_button_content_description">このアイコンをブックマークセクションに追加します</string>
+    <string name="bookmark_button_content_description"></string>
     <string name="icon_search_close_button_content_description">アイコン検索を閉じます</string>
     <string name="icon_request_submit_button_content_description">アイコンリクエストを提出します</string>
     <string name="icon_list_content_description">このリスト上のアイコンはアイコンパックに含まれています</string>
     <string name="icon_search_list_content_description">このリスト上のアイコンは検索範囲に一致したものです</string>
     <string name="about_item_social_content_description">アイコンパックの著者のオンラインプロフィールへのリンク: </string>
     <string name="share_icon_pack_button_content_description">このアプリを他の人に共有します</string>
+    <!-- Keep the strings but make them empty -->
+    <string name="about_dashboard"></string>
+    <string name="about_dashboard_dev"></string>
+    <string name="about_open_source_licenses"></string>
+    <string name="about_dashboard_contributors"></string>
+    <string name="about_dashboard_translator"></string>
+    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_desc">Your privacy is important to us. Please read our privacy policy to understand how we handle your data.</string>
+    <!-- Request -->
+    <string name="request_limit_title">Free Request Limit</string>
+    <string name="request_limit_content">You have %d free requests remaining. Consider upgrading to premium for unlimited requests.</string>
+    <string name="request_limit_reached">Free request limit reached. Please upgrade to premium for more requests.</string>
+    <string name="request_limit_remaining">You can select %d more icons</string>
+    <!-- Version -->
+    <string name="version">Version</string>
+    <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
