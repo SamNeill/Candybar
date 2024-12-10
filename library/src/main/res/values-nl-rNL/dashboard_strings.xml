@@ -7,7 +7,7 @@
     <string name="navigation_view_icons">Iconen</string>
     <string name="navigation_view_request">Icoonverzoek</string>
     <string name="navigation_view_wallpapers">Achtergronden</string>
-    <string name="navigation_view_presets">Voorinstellingen</string>
+    <string name="navigation_view_kustom">Kustom</string>
     <string name="navigation_view_settings">Instellingen</string>
     <string name="navigation_view_faqs">Veelgestelde vragen</string>
     <string name="navigation_view_about">Over</string>
@@ -105,7 +105,10 @@
     <string name="home_icon_request_missed_apps">Ontbrekende\n%d apps</string>
     <!-- Apply -->
     <string name="apply_installed">Geïnstalleerde Launcher</string>
+    <string name="apply_installed_launchers">Installed Launchers</string>
     <string name="apply_supported">Ondersteunde Launchers</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is not installed. You can find and install it from the Amazon Appstore or other app stores.</string>
     <string name="apply_manual">%1$s ondersteunt geen directe toepassing, maar je kunt %2$s handmatig toepassen via de launcherinstellingen.</string>
     <string name="apply_manual_kvaesitso">Kvaesitso ondersteunt geen directe toepassing, maar je kunt deze stappen volgen:</string>
     <string name="apply_manual_kvaesitso_step_1">Open Kvaesitso\'s instellingen</string>
@@ -161,12 +164,12 @@
     <string name="apply_lg_home_not_available">LG Home is niet beschikbaar op dit apparaat</string>
     <string name="apply_lg_home_failed">Kan LG Home-instellingen niet starten. Je kunt proberen het icoonpakket handmatig toe te passen vanuit de instellingen.</string>
     <string name="apply_lg_home_nougat">LG Home met Android Nougat ondersteunt geen icoonpakketten. Je hebt een andere launcher nodig om icoonpakketten te gebruiken.</string>
-    <string name="apply_launcher_incompatible">%s ondersteunt geen icoonpakketten. Je kunt een third-party app proberen om dit icoonpakket te gebruiken in %2$s launcher. Wil je het installeren?</string>
-    <string name="apply_launcher_incompatible_depending_on_version">%s launcher ondersteunt geen icoonpakketten op Android %d of lager. Update je Androidversie of installeer een andere launcher om dit icoonpakket te gebruiken. Je kunt ook een helper-app proberen om de individuele iconen te wijzigen. Wil je deze installeren?</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s ondersteunt geen icoonpakketten. Je kunt een third-party app proberen om dit icoonpakket te gebruiken in %2$s launcher. Wil je het installeren?</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%s launcher ondersteunt geen icoonpakketten op Android %d of lager. Update je Androidversie of installeer een andere launcher om dit icoonpakket te gebruiken. Je kunt ook een helper-app proberen om de individuele iconen te wijzigen. Wil je deze installeren?</string>
     <!-- Icons -->
     <string name="icons_load_failed">Kan iconen niet laden</string>
     <string name="icon_shape">Icoonvorm</string>
-    <string name="bookmark_icons_empty">Geen bladwijzers gevonden. Geef iconen een bladwijzer om ze hier snel te openen.</string>
+    <string name="bookmark_icons_empty"></string>
     <string name="items_selected">%d geselecteerd</string>
     <!-- Request -->
     <string name="request_title">Icoonverzoek</string>
@@ -261,6 +264,8 @@
     <string name="pref_theme_header">Thema</string>
     <string name="pref_theme_dark">Donker thema</string>
     <string name="pref_theme_dark_desc">Donkere kleur gebruiken voor appthema</string>
+    <string name="pref_notifications_header">Notifications</string>
+    <string name="pref_notifications">Receive Notifications</string>
     <string name="pref_wallpaper_header">Achtergrond</string>
     <string name="pref_wallpaper_location">Opslaglocatie voor achtergronden</string>
     <string name="pref_language_header">Taal</string>
@@ -276,6 +281,8 @@
     <string name="theme_name_material_you">Material You</string>
     <!-- Permission -->
     <string name="permission_storage_denied">Opslagrechten nodig om achtergrond op te slaan</string>
+    <string name="permission_notification_denied_1">Notification permission is needed to receive notifications from the developer</string>
+    <string name="permission_notification_denied_2">Enable notifications from the app settings</string>
     <!-- Intent -->
     <string name="app_client">App kiezen</string>
     <string name="no_email_app">Geen toepassing om e-mail te verzenden</string>
@@ -287,8 +294,6 @@
     <string name="intent_email_not_supported_message">Niet ondersteunde e-mailclient geselecteerd, selecteer een andere e-mailclient</string>
     <!-- About -->
     <string name="about_contributors_title">Bijdragers</string>
-    <string name="about_privacy_policy_title">Privacybeleid</string>
-    <string name="about_terms_and_conditions_title">Algemene voorwaarden</string>
     <!-- Report Bugs -->
     <string name="report_bugs_desc">Geef alsjeblieft een omschrijving van wat voor soort probleem je wilt melden</string>
     <string name="report_bugs_desc_hint">Omschrijving</string>
@@ -302,23 +307,34 @@
     <string name="crash_report">Foutenrapport</string>
     <string name="crash_report_message">Helaas is %s gecrasht. Stuur hieronder een rapport om de ontwikkelaar te helpen het probleem op te lossen.</string>
     <string name="crash_report_send">Rapport versturen</string>
-    <!-- Please don't modify this, Just Translate -->
-    <string name="about_dashboard">CandyBar Dashboard</string>
-    <string name="about_dashboard_dev">CandyBar is een open source icoonpakket-dashboard gelicenceerd onder Apache Licentie 2.0 voor Android.
-Beschikbaar op GitHub en gratis te gebruiken, ontwikkeld door Dani Mahardhika.</string>
-    <string name="about_open_source_licenses">Open Source-licenties</string>
-    <string name="about_dashboard_contributors">CandyBar bijdragers</string>
-    <string name="about_dashboard_translator">CandyBar vertaler</string>
     <!-- DrawerToggle -->
     <string name="txt_open">Openen</string>
     <string name="txt_close">Sluiten</string>
     <string name="txt_new">Nieuw</string>
     <!-- Content descriptions for screen readers -->
-    <string name="bookmark_button_content_description">Dit icoon toevoegen aan de bladwijzersectie</string>
+    <string name="bookmark_button_content_description"></string>
     <string name="icon_search_close_button_content_description">Sluit het zoeken naar icoon</string>
     <string name="icon_request_submit_button_content_description">Dien een icoon-aanvraag in</string>
     <string name="icon_list_content_description">De lijst met iconen opgenomen in het icoonpakket</string>
     <string name="icon_search_list_content_description">De lijst met iconen die overeenkomen met de zoekterm</string>
     <string name="about_item_social_content_description">Een link naar een online profiel van de auteur van het icoonpakket: </string>
     <string name="share_icon_pack_button_content_description">Deel deze app met iemand</string>
+    <!-- Keep the strings but make them empty -->
+    <string name="about_dashboard"></string>
+    <string name="about_dashboard_dev"></string>
+    <string name="about_open_source_licenses"></string>
+    <string name="about_dashboard_contributors"></string>
+    <string name="about_dashboard_translator"></string>
+    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_desc">Your privacy is important to us. Please read our privacy policy to understand how we handle your data.</string>
+    <!-- Request -->
+    <string name="request_limit_title">Free Request Limit</string>
+    <string name="request_limit_content">You have %d free requests remaining. Consider upgrading to premium for unlimited requests.</string>
+    <string name="request_limit_reached">Free request limit reached. Please upgrade to premium for more requests.</string>
+    <string name="request_limit_remaining">You can select %d more icons</string>
+    <!-- Version -->
+    <string name="version">Version</string>
+    <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
