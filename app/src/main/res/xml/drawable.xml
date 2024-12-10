@@ -2,6 +2,25 @@
 <resources>
     <version>1</version>
 
+    <category title="Misc" />
+    <item drawable="icon_1" />
+    <item drawable="icon_103" />
+    <item drawable="icon_102" />
+	
+	
+    <category title="Games" />
+    <item drawable="icon_1" />
+    <item drawable="icon_2" />
+    <item drawable="icon_3" />
+    <item drawable="icon_4" />
+    <item drawable="icon_5" />
+    <item drawable="icon_6" />
+    <item drawable="icon_7" />
+    <item drawable="icon_8" />
+    <item drawable="icon_9" />
+    <item drawable="icon_101" />
+
+
     <category title="All" />
     <item drawable="icon_1" />
     <item drawable="icon_2" />

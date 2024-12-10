@@ -30,6 +30,7 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import candybar.lib.R;
@@ -62,9 +63,13 @@ public class IconsHelper {
         // Load icons only if they are not loaded
         if (CandyBarMainActivity.sSections == null) {
             CandyBarMainActivity.sSections = getIconsList(context);
+            HashSet<String> uniqueIcons = new HashSet<>();
 
             for (Icon section : CandyBarMainActivity.sSections) {
                 List<Icon> icons = section.getIcons();
+                for (Icon icon : icons) {
+                    uniqueIcons.add(icon.getDrawableName());
+                }
 
                 computeTitles(context, icons);
 
@@ -74,11 +79,8 @@ public class IconsHelper {
                 }
             }
 
-            if (CandyBarApplication.getConfiguration().isShowTabAllIcons()) {
-                List<Icon> icons = getTabAllIcons();
-                CandyBarMainActivity.sSections.add(new Icon(
-                        CandyBarApplication.getConfiguration().getTabAllIconsTitle(), icons));
-            }
+            // Set the total unique icon count for the home button
+            CandyBarMainActivity.sIconsCount = uniqueIcons.size();
         }
     }
 
@@ -90,19 +92,17 @@ public class IconsHelper {
         List<Icon> icons = new ArrayList<>();
         List<Icon> sections = new ArrayList<>();
 
-        int count = 0;
         while (eventType != XmlPullParser.END_DOCUMENT) {
             if (eventType == XmlPullParser.START_TAG) {
                 if (parser.getName().equals("category")) {
                     String title = parser.getAttributeValue(null, "title");
                     if (!sectionTitle.equals(title)) {
                         if (sectionTitle.length() > 0 && icons.size() > 0) {
-                            count += icons.size();
                             sections.add(new Icon(sectionTitle, icons));
                         }
+                        sectionTitle = title;
+                        icons = new ArrayList<>();
                     }
-                    sectionTitle = title;
-                    icons = new ArrayList<>();
                 } else if (parser.getName().equals("item")) {
                     String drawableName = parser.getAttributeValue(null, "drawable");
                     String customName = parser.getAttributeValue(null, "name");
@@ -112,18 +112,14 @@ public class IconsHelper {
                     }
                 }
             }
-
             eventType = parser.next();
         }
-        count += icons.size();
-        CandyBarMainActivity.sIconsCount = count;
-        if (!CandyBarApplication.getConfiguration().isAutomaticIconsCountEnabled() &&
-                CandyBarApplication.getConfiguration().getCustomIconsCount() == 0) {
-            CandyBarApplication.getConfiguration().setCustomIconsCount(count);
-        }
+
+        // Add the last section
         if (icons.size() > 0) {
             sections.add(new Icon(sectionTitle, icons));
         }
+
         parser.close();
         return sections;
     }
