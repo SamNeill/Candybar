@@ -7,7 +7,7 @@
     <string name="navigation_view_icons">Icone</string>
     <string name="navigation_view_request">Richiesta Icone</string>
     <string name="navigation_view_wallpapers">Sfondi</string>
-    <string name="navigation_view_presets">Preset</string>
+    <string name="navigation_view_kustom">Kustom</string>
     <string name="navigation_view_settings">Impostazioni</string>
     <string name="navigation_view_faqs">FAQ</string>
     <string name="navigation_view_about">Info</string>
@@ -105,7 +105,10 @@
     <string name="home_icon_request_missed_apps">%d app mancanti</string>
     <!-- Apply -->
     <string name="apply_installed">Launcher installati</string>
+    <string name="apply_installed_launchers">Installed Launchers</string>
     <string name="apply_supported">Launcher supportati</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is not installed. You can find and install it from the Amazon Appstore or other app stores.</string>
     <string name="apply_manual">%1$s non supporta l\'applicazione diretta dei pacchetti icone però puoi applicare %2$s manualmente dalle impostazioni del launcher.</string>
     <string name="apply_manual_kvaesitso">Kvaesitso non supporta l\'applicazione diretta ma puoi seguire questi passaggi:</string>
     <string name="apply_manual_kvaesitso_step_1">Apri le impostazioni di Kvaesitso</string>
@@ -160,12 +163,12 @@
     <string name="apply_lg_home_not_available">LG Home non è disponibile su questo dispositivo</string>
     <string name="apply_lg_home_failed">Impossibile aprire le impostazioni di LG Home, prova ad applicare il pacchetto icone manualmente dalle impostazioni.</string>
     <string name="apply_lg_home_nougat">LG Home su Android Nougat non supporta più i pacchetti icone. Scarica un launcher dal Play Store per utilizzare quest\'app.</string>
-    <string name="apply_launcher_incompatible">%s Launcher non supporta nessun pacchetto icone, quindi non puoi usare questo pacchetto icone con questo launcher. Puoi provare un\'app di terze parti per usare questo pacchetto icone con %2$s launcher. Vuoi installarlo?</string>
-    <string name="apply_launcher_incompatible_depending_on_version">Il launcher %s non supporta i pacchetti icone su Android %d o inferiore. Si prega di aggiornare la versione di Android o installare un launcher di terze parti per utilizzare questo pacchetto icone. Puoi anche provare un\'app che aiuta a cambiare le singole icone. Vuoi installarla?</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher non supporta nessun pacchetto icone, quindi non puoi usare questo pacchetto icone con questo launcher. Puoi provare un\'app di terze parti per usare questo pacchetto icone con %2$s launcher. Vuoi installarlo?</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Il launcher %s non supporta i pacchetti icone su Android %d o inferiore. Si prega di aggiornare la versione di Android o installare un launcher di terze parti per utilizzare questo pacchetto icone. Puoi anche provare un\'app che aiuta a cambiare le singole icone. Vuoi installarla?</string>
     <!-- Icons -->
     <string name="icons_load_failed">Impossibile caricare le icone</string>
     <string name="icon_shape">Forma icona</string>
-    <string name="bookmark_icons_empty">Nessun preferito trovato. Aggiungi un\'icona ai preferiti per trovarla velocemente qui.</string>
+    <string name="bookmark_icons_empty"></string>
     <string name="items_selected">%d selezionato</string>
     <!-- Request -->
     <string name="request_title">Richiesta Icone</string>
@@ -189,16 +192,21 @@
     <string name="request_email_client">Scegli l\'app che vuoi utilizzare per inviare la richiesta di icone</string>
     <string name="request_app_disabled">Non stai utilizzando l\'ultima versione dell\'app e siccome le icone richieste potrebbero essere già state aggiunte nell\'ultimo update, devi aggiornare all\'ultima versione prima di poter effettuare una richiesta.</string>
     <string name="connection_error_long">Impossibile caricare i dati dal server. Per favore, controlla la tua connessione internet.</string>
+    <string name="unable_to_load_config">An error occurred while fetching or reading data from the server.</string>
+    <string name="request_limit">You can only make %d request(s) with regular request.</string>
     <string name="request_used">Hai richiesto %d icone</string>
     <string name="request_limit_buy">Puoi acquistare la funzione Premium per richiedere più icone.</string>
     <string name="request_limit_reset">Il limite delle icone richieste verrà azzerato ad ogni aggiornamento.</string>
     <!-- Regular Request -->
     <string name="regular_request">Richiesta icone standard</string>
+    <string name="regular_request_desc">Get your icon requested, and the developer will try to include icons you requested.</string>
     <string name="regular_request_count">\n%d richieste totali</string>
     <string name="regular_request_used">\n%d richieste usate</string>
     <string name="regular_request_available">\n%d richieste disponibili</string>
     <!-- Premium Request -->
     <string name="premium_request">Richiesta Icone Premium</string>
+    <string name="premium_request_no_internet">Make sure your phone is connected to the internet before sending a premium request</string>
+    <string name="premium_request_desc">Premium icon request is a pay-to request. You can get your requested apps faster by using a premium icon request.</string>
     <string name="premium_request_buy">Acquista</string>
     <string name="premium_request_count">\n%d richieste totali</string>
     <string name="premium_request_used">\n%d richieste usate</string>
@@ -208,6 +216,8 @@ devi utilizzarle tutte prima di acquistare di nuovo la funzione Premium</string>
     <string name="premium_request_limit">Hai soltanto %d icone premium</string>
     <string name="premium_request_limit1">hai selezionato %d  app(s)
 \n\nDevi prima completare la funzione Premium per poter usare la richiesta di icone gratuita di nuovo.</string>
+    <string name="premium_request_consume_failed">Unable to use Premium Request, make sure you have a stable internet connection and try again.
+        Go to Settings to rebuild Premium Requests.</string>
     <string name="premium_request_rebuilding">Riscrivendo Richiesta Premium …</string>
     <string name="premium_request_rebuilding_empty">Nessuna Richiesta Premium effettuata</string>
     <string name="premium_request_exist">Hai ancora a disposizione la Richiesta Icone Premium.
@@ -231,6 +241,7 @@ Apri Impostazioni e scegli \"Azzera Acquisti\".</string>
     <string name="presets_load_failed">Impossibile caricare i preset</string>
     <string name="presets_storage_permission">È necessario il permesso alla memoria per caricare gli sfondi</string>
     <string name="presets_required_apps">Applicazioni richieste per usare questi preset</string>
+    <string name="presets_required_apps_not_installed">Required apps to use the preset are not installed. Please install the missing required apps and try again.</string>
     <!-- Preferences -->
     <string name="pref_data_header">Data e Cache</string>
     <string name="pref_data_cache">Pulisci Cache</string>
@@ -252,6 +263,8 @@ Apri Impostazioni e scegli \"Azzera Acquisti\".</string>
     <string name="pref_theme_header">Tema</string>
     <string name="pref_theme_dark">Tema scuro</string>
     <string name="pref_theme_dark_desc">Usa colori scuri per il tema dell\'applicazione</string>
+    <string name="pref_notifications_header">Notifications</string>
+    <string name="pref_notifications">Receive Notifications</string>
     <string name="pref_wallpaper_header">Sfondo</string>
     <string name="pref_wallpaper_location">Destinazione sfondi salvati</string>
     <string name="pref_language_header">Lingua</string>
@@ -264,11 +277,15 @@ Apri Impostazioni e scegli \"Azzera Acquisti\".</string>
     <string name="theme_name_auto">Automatico</string>
     <string name="theme_name_light">Chiaro</string>
     <string name="theme_name_dark">Scuro</string>
+    <string name="theme_name_material_you">Material You</string>
     <!-- Permission -->
     <string name="permission_storage_denied">Sono necessari i permessi di memorizzazione per salvare lo sfondo</string>
+    <string name="permission_notification_denied_1">Notification permission is needed to receive notifications from the developer</string>
+    <string name="permission_notification_denied_2">Enable notifications from the app settings</string>
     <!-- Intent -->
     <string name="app_client">Scegli il client per le email</string>
     <string name="no_email_app">Nessun\'applicazione per inviare email</string>
+    <string name="no_browser">No application to open URL</string>
     <string name="intent_email_failed">Impossibile visualizzare l\'applicazione email</string>
     <string name="intent_email_supported">Supportato</string>
     <string name="intent_email_recommended">Raccomandato</string>
@@ -276,9 +293,8 @@ Apri Impostazioni e scegli \"Azzera Acquisti\".</string>
     <string name="intent_email_not_supported_message">hai selezionato un\'applicazione non supportate, per favore, seleziona un\'altra app</string>
     <!-- About -->
     <string name="about_contributors_title">Collaboratori</string>
-    <string name="about_privacy_policy_title">Informativa sulla privacy</string>
-    <string name="about_terms_and_conditions_title">Termini e Condizioni</string>
     <!-- Report Bugs -->
+    <string name="report_bugs_desc">Please give a description of the kind of problem that you want to report</string>
     <string name="report_bugs_desc_hint">Descrizione</string>
     <string name="report_bugs_desc_empty">Per favore, inserisci una descrizione</string>
     <string name="report_bugs_building">Creazione lista activity …</string>
@@ -288,21 +304,36 @@ Apri Impostazioni e scegli \"Azzera Acquisti\".</string>
     <string name="donation_success">Grazie per aver fatto una donazione! Ne farò un buon uso!</string>
     <!-- Crash Report -->
     <string name="crash_report">Segnalazione crash</string>
+    <string name="crash_report_message">Unfortunately, %s has crashed. Choose Send Report below to help the developer fix the issue.</string>
     <string name="crash_report_send">Invia Report</string>
-    <!-- Please don't modify this, Just Translate -->
-    <string name="about_dashboard">CandyBar Dashboard</string>
-    <string name="about_dashboard_contributors">Collaboratori della CandyBar</string>
-    <string name="about_dashboard_translator">Traduttori della CandyBar</string>
     <!-- DrawerToggle -->
     <string name="txt_open">Apri</string>
     <string name="txt_close">Chiudi</string>
     <string name="txt_new">Nuovo</string>
     <!-- Content descriptions for screen readers -->
-    <string name="bookmark_button_content_description">Aggiungi quest\'icona alla sezione dei preferiti</string>
+    <string name="bookmark_button_content_description"></string>
     <string name="icon_search_close_button_content_description">Chiudi la ricerca icone</string>
     <string name="icon_request_submit_button_content_description">Invia una richiesta icone</string>
     <string name="icon_list_content_description">L\'elenco delle icone incluse nel pacchetto</string>
     <string name="icon_search_list_content_description">L\'elenco delle icone che corrispondono ai termini di ricerca</string>
     <string name="about_item_social_content_description">Un link a un profilo online dell\'autore del pacchetto di icone: </string>
     <string name="share_icon_pack_button_content_description">Condividi questa app con qualcuno</string>
+    <!-- Keep the strings but make them empty -->
+    <string name="about_dashboard"></string>
+    <string name="about_dashboard_dev"></string>
+    <string name="about_open_source_licenses"></string>
+    <string name="about_dashboard_contributors"></string>
+    <string name="about_dashboard_translator"></string>
+    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_desc">Your privacy is important to us. Please read our privacy policy to understand how we handle your data.</string>
+    <!-- Request -->
+    <string name="request_limit_title">Free Request Limit</string>
+    <string name="request_limit_content">You have %d free requests remaining. Consider upgrading to premium for unlimited requests.</string>
+    <string name="request_limit_reached">Free request limit reached. Please upgrade to premium for more requests.</string>
+    <string name="request_limit_remaining">You can select %d more icons</string>
+    <!-- Version -->
+    <string name="version">Version</string>
+    <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
