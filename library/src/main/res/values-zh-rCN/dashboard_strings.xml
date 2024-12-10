@@ -7,7 +7,7 @@
     <string name="navigation_view_icons">图标</string>
     <string name="navigation_view_request">申请图标</string>
     <string name="navigation_view_wallpapers">壁纸</string>
-    <string name="navigation_view_presets">Presets（预设）</string>
+    <string name="navigation_view_kustom">Kustom</string>
     <string name="navigation_view_settings">设置</string>
     <string name="navigation_view_faqs">常见问题</string>
     <string name="navigation_view_about">关于</string>
@@ -106,6 +106,8 @@
     <string name="apply_installed">已安装的启动器</string>
     <string name="apply_installed_launchers">已安装的启动器</string>
     <string name="apply_supported">受支持的启动器</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is not installed. You can find and install it from the Amazon Appstore or other app stores.</string>
     <string name="apply_manual">%1$s 启动器不支持直接应用，但您可以从启动器设置手动应用 %2$s。</string>
     <string name="apply_manual_kvaesitso">Kvaesitso 不支持直接应用，但您可以按照这些步骤：</string>
     <string name="apply_manual_kvaesitso_step_1">打开 Kvaesitso 的设置</string>
@@ -160,12 +162,12 @@
     <string name="apply_lg_home_not_available">LG Home 在此设备上不可用。</string>
     <string name="apply_lg_home_failed">无法启动 LG Home 设置，你可以尝试从设置中手动应用图标包。</string>
     <string name="apply_lg_home_nougat">Android Nougat 版本的 LG Home 不再支持图标包了。你需要一个第三方启动器来使用图标包。</string>
-    <string name="apply_launcher_incompatible">%s 启动器不支持任何图标包，所以您不能使用此图标包使用此启动器。 您可以尝试第三方应用在 %2$s 启动器中使用此图标包。您想要安装它吗？</string>
-    <string name="apply_launcher_incompatible_depending_on_version">%s 启动器不支持 Android %d 或更低版本的图标包。 请更新您的 Android 版本或安装第三方启动器来使用此图标包。 您也可以尝试帮助程序更改个别图标。您想要安装它吗？</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s 启动器不支持任何图标包，所以您不能使用此图标包使用此启动器。 您可以尝试第三方应用在 %2$s 启动器中使用此图标包。您想要安装它吗？</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%s 启动器不支持 Android %d 或更低版本的图标包。 请更新您的 Android 版本或安装第三方启动器来使用此图标包。 您也可以尝试帮助程序更改个别图标。您想要安装它吗？</string>
     <!-- Icons -->
     <string name="icons_load_failed">图标加载失败</string>
     <string name="icon_shape">图标形状</string>
-    <string name="bookmark_icons_empty">没有找到书签。在这里快速访问书签图标。</string>
+    <string name="bookmark_icons_empty"></string>
     <string name="items_selected">已选择 %d 个</string>
     <!-- Request -->
     <string name="request_title">申请图标</string>
@@ -290,8 +292,6 @@
     <string name="intent_email_not_supported_message">选择了一个不支持的邮件客户端，请更换另一个邮件客户端</string>
     <!-- About -->
     <string name="about_contributors_title">贡献者</string>
-    <string name="about_privacy_policy_title">隐私条款</string>
-    <string name="about_terms_and_conditions_title">服务条款</string>
     <!-- Report Bugs -->
     <string name="report_bugs_desc">遇到什么问题？</string>
     <string name="report_bugs_desc_hint">问题描述</string>
@@ -305,22 +305,34 @@
     <string name="crash_report">崩溃报告</string>
     <string name="crash_report_message">崩溃了！！！， %s 已经崩溃。选择下面的发送报告以帮助开发者解决这个问题。</string>
     <string name="crash_report_send">发送错误报告</string>
-    <!-- Please don't modify this, Just Translate -->
-    <string name="about_dashboard">CandyBar</string>
-    <string name="about_dashboard_dev">CandyBar 是 GitHub 上一个受 Apache License 2.0 保护的开源 Android 图标包仪表盘，免费使用，由 Dani Mahardhika 开发。</string>
-    <string name="about_open_source_licenses">开源许可证</string>
-    <string name="about_dashboard_contributors">CandyBar 贡献者</string>
-    <string name="about_dashboard_translator">CandyBar 翻译者</string>
     <!-- DrawerToggle -->
     <string name="txt_open">打开</string>
     <string name="txt_close">关闭</string>
     <string name="txt_new">新</string>
     <!-- Content descriptions for screen readers -->
-    <string name="bookmark_button_content_description">将此图标添加到书签</string>
+    <string name="bookmark_button_content_description"></string>
     <string name="icon_search_close_button_content_description">关闭图标搜索</string>
     <string name="icon_request_submit_button_content_description">提交图标请求</string>
     <string name="icon_list_content_description">图标包中包含的图标列表</string>
     <string name="icon_search_list_content_description">搜索到的图标列表</string>
     <string name="about_item_social_content_description">图标包作者个人资料： </string>
     <string name="share_icon_pack_button_content_description">与您的朋友分享这个图标包</string>
+    <!-- Keep the strings but make them empty -->
+    <string name="about_dashboard"></string>
+    <string name="about_dashboard_dev"></string>
+    <string name="about_open_source_licenses"></string>
+    <string name="about_dashboard_contributors"></string>
+    <string name="about_dashboard_translator"></string>
+    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <!-- Privacy Policy -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_desc">Your privacy is important to us. Please read our privacy policy to understand how we handle your data.</string>
+    <!-- Request -->
+    <string name="request_limit_title">Free Request Limit</string>
+    <string name="request_limit_content">You have %d free requests remaining. Consider upgrading to premium for unlimited requests.</string>
+    <string name="request_limit_reached">Free request limit reached. Please upgrade to premium for more requests.</string>
+    <string name="request_limit_remaining">You can select %d more icons</string>
+    <!-- Version -->
+    <string name="version">Version</string>
+    <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
