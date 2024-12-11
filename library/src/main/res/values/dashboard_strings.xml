@@ -382,7 +382,7 @@
     <string name="about_open_source_licenses"></string>
     <string name="about_dashboard_contributors"></string>
     <string name="about_dashboard_translator"></string>
-    <string name="about_dashboard_translator_url">https://github.com/zixpo/candybar/blob/master/TRANSLATORS.md</string>
+    <string name="about_dashboard_translator_url"></string>
 
     <!-- Privacy Policy -->
     <string name="privacy_policy">Privacy Policy</string>
@@ -396,6 +396,6 @@
 
     <!-- Version -->
     <string name="version">Version</string>
-
+    <!-- Kustom -->
     <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
 </resources>
