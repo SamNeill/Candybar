@@ -61,7 +61,7 @@ import candybar.lib.utils.CandyBarGlideModule;
 import candybar.lib.utils.Extras;
 import candybar.lib.utils.Popup;
 import candybar.lib.utils.WallpaperDownloader;
-import uk.co.senab.photoview.PhotoViewAttacher;
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
 /*
  * CandyBar - Material Dashboard
@@ -257,7 +257,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
         }
         Glide.get(this).clearMemory();
-        if (mAttacher != null) mAttacher.cleanup();
+        if (mAttacher != null) mAttacher = null;
         super.onDestroy();
     }
 
@@ -462,7 +462,6 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
     private void loadWallpaper() {
         if (mAttacher != null) {
-            mAttacher.cleanup();
             mAttacher = null;
         }
 
