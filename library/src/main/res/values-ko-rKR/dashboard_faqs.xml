@@ -1,104 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string-array name="base">
-        <!-- What is a launcher -->
-        <!-- What is an icon pack -->
-        <!-- How do i use an icon pack? -->
-        <!-- How do i apply an icon pack? -->
-        <!-- How do i see all icons included? -->
-        <!-- I can\'t see a complete icon name -->
-        <!-- How can i replace icons with an alternate icon? -->
-        <!-- How do i request an icon? -->
-        <!-- How can i restore the remaining Premium Requests after reinstalling the app? -->
-        <!-- After restarting my phone, the icon pack is not applied, it restore to defaults? -->
-        <!-- Why do the icons looks jaggy or pixelated on my phone? -->
-        <!-- I can see the icon included in all icons,
-            but why isn\'t the actual icon on the app drawer changed? -->
-        <!-- What is the \"report bugs\" option? -->
-        <!-- My launcher is listed in the Google Play description, but why isn\'t it included in apply section? -->
-        <!-- Wallpaper can\'t be applied, just showing black screen? -->
-        <!-- Muzei: How to load downloaded wallpapers only? -->
-        <!-- Muzei: I don\'t want to keep downloading wallpapers each time the wallpaper changes? -->
-        <!-- Muzei: I only want to use specific wallpapers? -->
-        <!-- Why are Read &amp; Write External Storage permission needed? -->
-        <!-- Why is Internet permission needed? -->
-        <!-- Why is Access Network State permission needed? -->
-        <!-- Why is Access Wi-Fi State permission needed? -->
-        <!-- Why is Set Wallpaper permission needed? -->
-        <!-- Why is Wake Lock Permission needed? -->
-        <!-- Why is Set Alarm permission needed? -->
-    </string-array>
-    <string-array name="questions">
-        <item>런처는 뭐죠?</item>
-        <item>아이콘 팩이 뭐죠?</item>
-        <item>아이콘 팩은 어떻게 사용하나요?</item>
-        <item>아이콘 팩을 어떻게 적용하나요?</item>
-        <item>포함된 모든 아이콘을 보려면 어떻게 해야 하나요?</item>
-        <item>아이콘 이름을 전부 확인할 수 없습니다.</item>
-        <item>어떻게 하면 아이콘을 다른 아이콘으로 바꿀 수 있나요?</item>
-        <item>아이콘을 요청하려면 어떻게 해야 하나요?</item>
-        <item>How can I restore the remaining Premium Requests after reinstalling the app?</item>
-        <item>After restarting my phone, the icon pack is not applied; it restores to defaults?</item>
-        <item>왜 제 폰에서는 아이콘이 왜곡되거나 자글자글해 보이죠?</item>
-        <item>I can see the icon included in all icons,
-            but why isn\'t the actual icon on the app drawer changed?</item>
-        <item>\"버그 신고\" 옵션은 뭔가요?</item>
-        <item>My launcher is listed in the Google Play description, but why isn\'t it included in apply section?</item>
-        <item>배경화면이 적용되지 않고 빈 화면만 나타납니다.</item>
-        <item>Muzei: 다운로드한 배경화면만 불러오게 하려면 어떻게 하나요?</item>
-        <item>Muzei: 배경화면이 바뀔 때마다 매번 배경화면을 다운로드하는 것이 싫습니다.</item>
-        <item>Muzei: 특정 배경 화면만 사용하고 싶습니다.</item>
-        <item>Why are Read &amp; Write External Storage permission needed?</item>
-        <item>Why is Internet permission needed?</item>
-        <item>Why is Access Network State permission needed?</item>
-        <item>Why is Access Wifi State permission needed?</item>
-        <item>Why is Set Wallpaper permission needed?</item>
-        <item>Why is Wake Lock Permission needed?</item>
-        <item>Why is Set Alarm permission needed?</item>
-    </string-array>
-    <string-array name="answers">
-        <item>Launcher is the part of the Android user interface that lets users customize the home screen,
-            launch mobile apps, make phone calls, and perform other tasks on Android devices.</item>
-        <item>A set of graphics that will change the look of your app drawer icons</item>
-        <item>You will need a launcher that supports custom icon packs.
-            Supported launchers are listed in the Play Store description.
-            If you are confused about which launchers should be used, just go to the \"Apply\" section and install from there.</item>
-        <item>You can open the navigation drawer, then open \"Apply\". Choose your launcher from the list.
-            If your launcher is not listed there, but this icon pack is compatible with it
-            (see on Google Play Store description for supported launchers),
-            you can apply the icon pack manually in your launcher settings.</item>
-        <item>You can open the navigation drawer and then open \"Icons\"</item>
-        <item>Just tap the icon. A preview dialog will appear with a bigger image and complete icon name.</item>
-        <item>It depends on which launcher you used. Not every launcher supports icon editing.
-       	    Mostly you can edit an icon by tapping &amp; holding the icon or double tapping it.</item>
-        <item>You can open the navigation drawer, then open \"Icon Request\".</item>
-        <item>You can open the navigation drawer, then open \"Settings\", choose \"Restore Purchases\".
-            If you had any remaining Premium Requests before reinstalling, they will be restored.</item>
-        <item>It happened because this icon pack was moved to the SD Card; you should install it in internal memory.</item>
-        <item>The problem might come from the launcher that you used when handling big icon resolution.
-       	    You can fix it by increasing the icon size to 115–120%.
-       	    Alternatively, you might change your launcher.</item>
-        <item>Open settings, scroll down, and then select \"Report Bugs\".</item>
-        <item>\"버그 신고\"는 대시보드가 아니라 아이콘 팩의 버그를 신고하는 데 사용합니다.</item>
-        <item>Not every launcher supports direct apply, and some of them can\'t be accessed directly from the dashboard.
-      	    You can apply this icon pack manually in the individual launcher settings.</item>
-        <item>When you \"Set Wallpaper\" directly from the app, it will be downloaded to the cache,
-      	    then the dashboard app will try to apply it. Applying will take some time and also need a huge amount of RAM for a short timespan.
-      	    \"Black Screen\" errors may appear because your phone doesn\'t have enough free RAM to process the wallpaper.
-      	    Restarting your phone will fix this problem. After restarting, your phone will have more RAM available.
-            Alternatively, you can open the downloaded wallpaper from your Gallery and set it as wallpaper from there.</item>
-        <item>Open Muzei, choose this icon pack, settings. You will see an option to load downloaded wallpapers only.
-            You will need to download wallpapers from the dashboard first.</item>
-        <item>If a wallpaper is already downloaded, it will be loaded from your phone memory automatically.
-            Muzei won\'t keep downloading it when the wallpaper changes. You will need to download wallpapers from the dashboard first.</item>
-        <item>Open Dashboard, download wallpapers that you want to use in Muzei.
-            Open Muzei settings, then choose Load Downloaded Wallpapers Only.</item>
-        <item>아이콘 요청 데이터를 수집하거나 캐시를 읽고 쓰는 데 사용됩니다.</item>
-        <item>It is used to load Cloud-Based Wallpapers &amp; download them.</item>
-        <item>기기가 인터넷에 연결되어 있는지 확인하는 데 사용됩니다.</item>
-        <item>Muzei에서 클라우드 배경화면을 불러올 때 기기의 인터넷이 Wi-Fi인지 판단하는 데 사용됩니다.</item>
-        <item>대시보드 앱에서 배경화면을 바로 적용하는 데 사용됩니다.</item>
-        <item>Muzei Live Wallpaper 앱에서 사용됩니다.</item>
-        <item>It is used to launch the clock app from the analog clock widget.</item>
-    </string-array>
+  <string-array name="base">
+    <!--런처 란 무엇입니까?-->
+    <!--아이콘 팩이란 무엇입니까?-->
+    <!--아이콘팩은 어떻게 사용하나요?-->
+    <!--아이콘팩은 어떻게 적용하나요?-->
+    <!--포함된 모든 아이콘을 어떻게 볼 수 있나요?-->
+    <!--전체 아이콘 이름을 볼 수 없습니다-->
+    <!--아이콘을 대체 아이콘으로 바꾸려면 어떻게 해야 합니까?-->
+    <!--아이콘은 어떻게 요청하나요?-->
+    <!--앱을 재설치한 후 남은 프리미엄 요청을 어떻게 복원할 수 있나요?-->
+    <!--휴대폰을 다시 시작했는데 아이콘팩이 적용되지 않아서 기본값으로 복원되나요?-->
+    <!--휴대폰에서 아이콘이 들쭉날쭉하거나 픽셀화되어 보이는 이유는 무엇입니까?-->
+    <!--모든 아이콘에 포함된 아이콘을 볼 수 있는데,
+            그런데 앱 서랍의 실제 아이콘은 왜 바뀌지 않나요?-->
+    <!--\"버그 신고\" 옵션은 무엇인가요?-->
+    <!--Google Play 설명에는 내 런처가 표시되어 있는데 왜 적용 섹션에는 포함되어 있지 않나요?-->
+    <!--배경화면을 적용할 수 없고 검은 화면만 표시됩니까?-->
+    <!--Muzei: 다운로드한 배경화면만 로드하는 방법은 무엇입니까?-->
+    <!--Muzei: 배경화면이 바뀔 때마다 배경화면을 계속 다운로드하고 싶지 않나요?-->
+    <!--Muzei: 특정 배경화면만 사용하고 싶은데요?-->
+    <!--읽기 및 쓰기 외부 저장소 권한이 필요한 이유는 무엇입니까?-->
+    <!--인터넷 권한이 필요한 이유는 무엇입니까?-->
+    <!--네트워크 상태 액세스 권한이 필요한 이유는 무엇입니까?-->
+    <!--Wi-Fi 상태 액세스 권한이 필요한 이유는 무엇입니까?-->
+    <!--배경 화면 설정 권한이 필요한 이유는 무엇입니까?-->
+    <!--Wake Lock 권한이 필요한 이유는 무엇입니까?-->
+    <!--알람 설정 권한이 필요한 이유는 무엇입니까?-->
+  </string-array>
+  <string-array name="questions">
+    <item>런처란 무엇입니까?</item>
+    <item>아이콘 팩이란 무엇입니까?</item>
+    <item>아이콘팩은 어떻게 사용하나요?</item>
+    <item>아이콘팩은 어떻게 적용하나요?</item>
+    <item>포함된 모든 아이콘을 보려면 어떻게 해야 합니까?</item>
+    <item>전체 아이콘 이름을 볼 수 없습니다</item>
+    <item>아이콘을 대체 아이콘으로 바꾸려면 어떻게 해야 합니까?</item>
+    <item>아이콘을 요청하려면 어떻게 해야 하나요?</item>
+    <item>앱을 재설치한 후 남은 프리미엄 요청을 어떻게 복원할 수 있나요?</item>
+    <item>휴대폰을 다시 시작한 후 아이콘 팩이 적용되지 않습니다. 기본값으로 복원되나요?</item>
+    <item>휴대폰에서 아이콘이 들쭉날쭉하거나 픽셀화되어 보이는 이유는 무엇입니까?</item>
+    <item>모든 아이콘에 포함된 아이콘을 볼 수 있는데,
+            그런데 앱 서랍의 실제 아이콘은 왜 바뀌지 않나요?</item>
+    <item>\"버그 신고\" 옵션은 무엇인가요?</item>
+    <item>Google Play 설명에는 내 런처가 표시되어 있는데 왜 적용 섹션에는 포함되어 있지 않나요?</item>
+    <item>배경화면을 적용할 수 없고 검은 화면만 표시됩니까?</item>
+    <item>Muzei: 다운로드한 배경화면만 로드하는 방법은 무엇입니까?</item>
+    <item>Muzei: 배경화면이 바뀔 때마다 배경화면을 계속 다운로드하고 싶지 않나요?</item>
+    <item>Muzei: 특정 배경화면만 사용하고 싶은데요?</item>
+    <item>읽기 및 쓰기 외부 저장소 권한이 필요한 이유는 무엇입니까?</item>
+    <item>인터넷 권한이 필요한 이유는 무엇입니까?</item>
+    <item>네트워크 상태 액세스 권한이 필요한 이유는 무엇입니까?</item>
+    <item>Wi-Fi 상태 액세스 권한이 필요한 이유는 무엇입니까?</item>
+    <item>배경 화면 설정 권한이 필요한 이유는 무엇입니까?</item>
+    <item>Wake Lock 권한이 필요한 이유는 무엇입니까?</item>
+    <item>알람 설정 권한이 필요한 이유는 무엇입니까?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher는 사용자가 홈 화면을 맞춤설정할 수 있는 Android 사용자 인터페이스의 일부입니다.
+            Android 기기에서 모바일 앱을 실행하고, 전화를 걸고, 기타 작업을 수행하세요.</item>
+    <item>앱 서랍 아이콘의 모양을 바꾸는 그래픽 세트</item>
+    <item>사용자 정의 아이콘 팩을 지원하는 실행 프로그램이 필요합니다.
+            지원되는 실행 프로그램은 Play 스토어 설명에 나열되어 있습니다.
+            어떤 런처를 사용해야 할지 혼란스러우면 \"적용\" 섹션으로 이동하여 설치하세요.</item>
+    <item>탐색 창을 연 다음 \"적용\"을 열 수 있습니다. 목록에서 실행 프로그램을 선택하세요.
+            해당 런처가 목록에 없지만 이 아이콘 팩이 호환되는 경우
+            (지원되는 실행 프로그램은 Google Play 스토어 설명 참조)
+            런처 설정에서 아이콘 팩을 수동으로 적용할 수 있습니다.</item>
+    <item>탐색 창을 연 다음 \"아이콘\"을 열 수 있습니다.</item>
+    <item>아이콘을 탭하면 됩니다. 더 큰 이미지와 전체 아이콘 이름이 포함된 미리보기 대화상자가 나타납니다.</item>
+    <item>어떤 런처를 사용했는지에 따라 다릅니다. 모든 런처가 아이콘 편집을 지원하는 것은 아닙니다.
+       	    대부분 아이콘을 길게 탭하거나 두 번 탭하여 아이콘을 편집할 수 있습니다.</item>
+    <item>탐색 창을 연 다음 \"아이콘 요청\"을 열 수 있습니다.</item>
+    <item>탐색 창을 연 다음 \"설정\"을 열고 \"구매 복원\"을 선택하세요.
+            재설치하기 전에 남은 프리미엄 요청이 있으면 복원됩니다.</item>
+    <item>이 아이콘 팩이 SD 카드로 옮겨졌기 때문에 이런 일이 일어났습니다. 내부 메모리에 설치해야 합니다.</item>
+    <item>큰 아이콘 해결을 처리할 때 사용한 실행 프로그램에서 문제가 발생할 수 있습니다.
+       	    아이콘 크기를 115~120%로 늘려 문제를 해결할 수 있습니다.
+       	    또는 실행 프로그램을 변경할 수도 있습니다.</item>
+    <item>설정을 열고 아래로 스크롤한 다음 \"버그 신고\"를 선택하세요.</item>
+    <item>\"버그 신고\"는 대시보드가 ​​아닌 아이콘 팩과 관련된 버그를 신고하는 데 사용됩니다.</item>
+    <item>모든 런처가 직접 적용을 지원하는 것은 아니며 일부 런처는 대시보드에서 직접 액세스할 수 없습니다.
+      	    개별 실행기 설정에서 이 아이콘 팩을 수동으로 적용할 수 있습니다.</item>
+    <item>앱에서 직접 \"배경화면 설정\"을 하면 캐시에 다운로드되며,
+      	    그러면 대시보드 앱이 이를 적용하려고 시도합니다. 적용하는 데 시간이 좀 걸리며 짧은 시간 동안 엄청난 양의 RAM이 필요합니다.
+      	    휴대폰에 배경화면을 처리할 여유 RAM이 부족하기 때문에 \"검은색 화면\" 오류가 나타날 수 있습니다.
+      	    휴대폰을 다시 시작하면 이 문제가 해결됩니다. 다시 시작하면 휴대폰에서 더 많은 RAM을 사용할 수 있습니다.
+            또는 갤러리에서 다운로드한 배경화면을 열고 거기에서 배경화면으로 설정할 수도 있습니다.</item>
+    <item>Muzei를 열고 이 아이콘 팩, 설정을 선택하세요. 다운로드한 배경화면만 로드하는 옵션이 표시됩니다.
+            먼저 대시보드에서 배경화면을 다운로드해야 합니다.</item>
+    <item>배경화면이 이미 다운로드된 경우 휴대폰 메모리에서 자동으로 로드됩니다.
+            Muzei는 배경화면이 변경되면 계속 다운로드하지 않습니다. 먼저 대시보드에서 배경화면을 다운로드해야 합니다.</item>
+    <item>대시보드를 열고 Muzei에서 사용하고 싶은 배경화면을 다운로드하세요.
+            Muzei 설정을 연 다음 다운로드한 배경화면만 로드를 선택하세요.</item>
+    <item>캐시 쓰기 및 읽기, 아이콘 요청 데이터 수집에 사용됩니다.</item>
+    <item>클라우드 기반 배경화면을 로드하고 다운로드하는 데 사용됩니다.</item>
+    <item>휴대폰이 인터넷에 연결되어 있는지 확인하는 데 사용됩니다.</item>
+    <item>휴대폰이 Wi-Fi에 인터넷에 연결되어 있는지 확인하고 Muzei에서 클라우드 배경화면을 로드하는 데 사용됩니다.</item>
+    <item>대시보드 앱에서 바로 배경화면을 적용하는데 사용됩니다.</item>
+    <item>Muzei 라이브 배경화면에서 사용됩니다.</item>
+    <item>아날로그 시계 위젯에서 시계 앱을 실행하는 데 사용됩니다.</item>
+  </string-array>
 </resources>

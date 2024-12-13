@@ -1,104 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string-array name="base">
-        <!-- What is a launcher -->
-        <!-- What is an icon pack -->
-        <!-- How do i use an icon pack? -->
-        <!-- How do i apply an icon pack? -->
-        <!-- How do i see all icons included? -->
-        <!-- I can\'t see a complete icon name -->
-        <!-- How can i replace icons with an alternate icon? -->
-        <!-- How do i request an icon? -->
-        <!-- How can i restore the remaining Premium Requests after reinstalling the app? -->
-        <!-- After restarting my phone, the icon pack is not applied, it restore to defaults? -->
-        <!-- Why do the icons looks jaggy or pixelated on my phone? -->
-        <!-- I can see the icon included in all icons,
-            but why isn\'t the actual icon on the app drawer changed? -->
-        <!-- What is the \"report bugs\" option? -->
-        <!-- My launcher is listed in the Google Play description, but why isn\'t it included in apply section? -->
-        <!-- Wallpaper can\'t be applied, just showing black screen? -->
-        <!-- Muzei: How to load downloaded wallpapers only? -->
-        <!-- Muzei: I don\'t want to keep downloading wallpapers each time the wallpaper changes? -->
-        <!-- Muzei: I only want to use specific wallpapers? -->
-        <!-- Why are Read &amp; Write External Storage permission needed? -->
-        <!-- Why is Internet permission needed? -->
-        <!-- Why is Access Network State permission needed? -->
-        <!-- Why is Access Wi-Fi State permission needed? -->
-        <!-- Why is Set Wallpaper permission needed? -->
-        <!-- Why is Wake Lock Permission needed? -->
-        <!-- Why is Set Alarm permission needed? -->
-    </string-array>
-    <string-array name="questions">
-        <item>Mi az a - Launcher - kezdőképernyő indító?</item>
-        <item>Mi az az - Icon Pack - ikon csomag?</item>
-        <item>Hogyan tudom hsználni az ikon csomagot?</item>
-        <item>Hogyan alkalmazhatom az ikoncsomagot?</item>
-        <item>Hogyan láthatom a ikoncsomag összes ikonját?</item>
-        <item>Nem látom néhány ikon teljes nevét</item>
-        <item>Hogyan helyettesíthetem az ikonokat alternatív ikonokkal?</item>
-        <item>Hogyan kérhetek egy ikont?</item>
-        <item>How can I restore the remaining Premium Requests after reinstalling the app?</item>
-        <item>After restarting my phone, the icon pack is not applied; it restores to defaults?</item>
-        <item>Miért pixelesek és szögleteek az ikonok a telefonomon?</item>
-        <item>I can see the icon included in all icons,
-            but why isn\'t the actual icon on the app drawer changed?</item>
-        <item>Mi az a  \"hiba jelentése\" opció?</item>
-        <item>My launcher is listed in the Google Play description, but why isn\'t it included in apply section?</item>
-        <item>A háttérképet nem tudom alkalmazni és csak egy fekete képernyő jelenik meg.</item>
-        <item>Muzei: Hogyan tölthetek be csak letöltött háttérképeket?</item>
-        <item>Muzei: Nem szeretném mindig letölteni a háttérképeket, mert mindig megváltoznak.</item>
-        <item>Muzei: Csak konkrét háttéreket szeretnék használni.</item>
-        <item>Miért kell engedélyeznem a külső tárhely írását és olvasását?</item>
-        <item>Miért kell engedélyeznem az internet használatát?</item>
-        <item>Miért van szükség a hálózati kapcsolatra vonatkozó információk gyűjtésére?</item>
-        <item>Miért van szükség a WiFi hálózatokra vonatkozó információk gyűjtésére?</item>
-        <item>Miért van szükség engedélyre a háttérkép beállításához?</item>
-        <item>Miért van szükség a készenléti mód kikapcsolására vonatkozó engedélyek megadására?</item>
-        <item>Why is Set Alarm permission needed?</item>
-    </string-array>
-    <string-array name="answers">
-        <item>A Launcher az Android felhasználói felületének az a része, amely lehetővé teszi a kezdőképernyő testreszabását, alkalmazások indítását, hívások kezdeményezését és egyéb feladatok végrehajtását az Android eszközökön.</item>
-        <item>Olyan grafikai csomagok, amelyek megváltoztatják az ikonok megjelenítését az alkalmazáslistában.</item>
-        <item>You will need a launcher that supports custom icon packs.
-            Supported launchers are listed in the Play Store description.
-            If you are confused about which launchers should be used, just go to the \"Apply\" section and install from there.</item>
-        <item>You can open the navigation drawer, then open \"Apply\". Choose your launcher from the list.
-            If your launcher is not listed there, but this icon pack is compatible with it
-            (see on Google Play Store description for supported launchers),
-            you can apply the icon pack manually in your launcher settings.</item>
-        <item>You can open the navigation drawer and then open \"Icons\"</item>
-        <item>Kattints az ikonra ezután látni fogod, hogy megjelenik egy előnézet nagyobb képpel és az ikon teljes nevével.</item>
-        <item>Ez attól függ, hogy melyik Launchert használod. Nem minden indító támogatja az ikonok szerkesztését.
-Egy ikont általában úgy tudsz szerkeszteni, hogy lenyomva tartod, vagy duplán kattintasz rá, majd a felugró szerkesztő ablakban tudod szerkeszteni és esetleg átnevezni</item>
-        <item>You can open the navigation drawer, then open \"Icon Request\".</item>
-        <item>You can open the navigation drawer, then open \"Settings\", choose \"Restore Purchases\".
-            If you had any remaining Premium Requests before reinstalling, they will be restored.</item>
-        <item>It happened because this icon pack was moved to the SD Card; you should install it in internal memory.</item>
-        <item>The problem might come from the launcher that you used when handling big icon resolution.
-       	    You can fix it by increasing the icon size to 115–120%.
-       	    Alternatively, you might change your launcher.</item>
-        <item>Open settings, scroll down, and then select \"Report Bugs\".</item>
-        <item>A \"Hiba jelentése\" az ikoncsomaggal és az irányítópulttal kapcsolatos hibák jelentésére szolgál.</item>
-        <item>Not every launcher supports direct apply, and some of them can\'t be accessed directly from the dashboard.
-      	    You can apply this icon pack manually in the individual launcher settings.</item>
-        <item>Ha háttérképet állítasz be az alkalmazásból, akkor az letöltésre kerül a gyorsítótárba
-és az irányítópult alkalmazás megpróbálja használni. Az alkalmazás eltart egy ideig, és rövid ideig nagy mennyiségű RAM-ot fogyaszt.
-Fekete képernyő jelenhet meg, mert a telefon nem rendelkezik elegendő RAM-mal.
-A készülék újraindítása megoldja a problémát. Az újraindítás után az eszközön ismét több RAM áll rendelkezésre.
-Ellenkező esetben töltd le a háttérképet, majd a galériából vag a Launcher beállításaiban állítsd be manuálisan a kívánt háttérképet.</item>
-        <item>Open Muzei, choose this icon pack, settings. You will see an option to load downloaded wallpapers only.
-            You will need to download wallpapers from the dashboard first.</item>
-        <item>Ha egy háttérképet már letöltöttél, az automatikusan betöltődik a készülék memóriájából.
-A Muzei nem fogja mégegyszer letölteni, amikor a háttérkép megváltozik.
-Fontos, hogy először mindenképpen le kell töltenie a kívánt háttérképeket.</item>
-        <item>Nyisd meg az irányítópultot, majd töltsd le a Muzei-ban használni kívánt háttérképeket.
-Nyisd meg a Muzei beállításokat és válaszd a csak a letöltött háttérképek betöltése lehetőséget.</item>
-        <item>A gyorsítótár olvasására és írására, valamint az ikonkérésből történő adatok gyűjtésére szolgál.</item>
-        <item>It is used to load Cloud-Based Wallpapers &amp; download them.</item>
-        <item>Ez egy vizsgálat, amely arra szolgál, hogy a szolgáltatások használatához a készüléked rendelkezik-e internetkapcsolattal.</item>
-        <item>Ez a vizsgálat azért szükséges, hogy a készülék WiFi hálózaton csatlakozik-e az internetre, hogy a Muzei felhő háttérképei letölthetők legyenek.</item>
-        <item>Erre azért van szükség, hogy a háttérképet közvetlenül az alkalmazás Irányítópultjából alkalmazni tudjuk.</item>
-        <item>Ez az engedély a Muzei élő háttérkép alkalmazás miatt szükséges.</item>
-        <item>It is used to launch the clock app from the analog clock widget.</item>
-    </string-array>
+  <string-array name="base">
+    <!--Mi az a launcher-->
+    <!--Mi az az ikoncsomag-->
+    <!--Hogyan használhatok ikoncsomagot?-->
+    <!--Hogyan alkalmazhatok ikoncsomagot?-->
+    <!--Hogyan láthatom az összes ikont?-->
+    <!--Nem látom a teljes ikonnevet-->
+    <!--Hogyan cserélhetem ki az ikonokat egy másik ikonra?-->
+    <!--Hogyan kérhetek ikont?-->
+    <!--Hogyan állíthatom vissza a fennmaradó prémium kérelmeket az alkalmazás újratelepítése után?-->
+    <!--A telefonom újraindítása után az ikoncsomag nem kerül alkalmazásra, visszaáll az alapértelmezett értékekre?-->
+    <!--Miért tűnnek szaggatottnak vagy pixelesnek az ikonok a telefonomon?-->
+    <!--Látom az ikont az összes ikonban,
+            de miért nem változott meg a tényleges ikon az alkalmazásfiókban?-->
+    <!--Mi a \"hibajelentés\" lehetőség?-->
+    <!--Az indítóprogramom szerepel a Google Play leírásában, de miért nem szerepel az alkalmazás szakaszban?-->
+    <!--A háttérképet nem lehet alkalmazni, csak fekete képernyő jelenik meg?-->
+    <!--Muzei: Hogyan lehet csak a letöltött háttérképeket betölteni?-->
+    <!--Muzei: Nem akarok minden alkalommal háttérképeket letölteni, amikor a háttérkép megváltozik?-->
+    <!--Muzei: Csak meghatározott háttérképeket szeretnék használni?-->
+    <!--Miért van szükség külső tárhely olvasási és írási engedélyére?-->
+    <!--Miért van szükség internetengedélyre?-->
+    <!--Miért van szükség Access Network State engedélyre?-->
+    <!--Miért van szükség a Wi-Fi állapot hozzáférési engedélyére?-->
+    <!--Miért van szükség a Háttérkép beállítása engedélyre?-->
+    <!--Miért van szükség Wake Lock engedélyre?-->
+    <!--Miért van szükség Riasztás beállítása engedélyre?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Mi az a launcher?</item>
+    <item>Mi az az ikoncsomag?</item>
+    <item>Hogyan használhatok ikoncsomagot?</item>
+    <item>Hogyan alkalmazhatok ikoncsomagot?</item>
+    <item>Hogyan láthatom az összes ikont?</item>
+    <item>Nem látom a teljes ikonnevet</item>
+    <item>Hogyan cserélhetem le az ikonokat egy másik ikonra?</item>
+    <item>Hogyan kérhetek ikont?</item>
+    <item>Hogyan állíthatom vissza a fennmaradó prémium kéréseket az alkalmazás újratelepítése után?</item>
+    <item>A telefon újraindítása után az ikoncsomag nem kerül alkalmazásra; visszaállítja az alapértelmezett értékeket?</item>
+    <item>Miért tűnnek szaggatottnak vagy pixelesnek az ikonok a telefonomon?</item>
+    <item>Látom az ikont az összes ikonban,
+            de miért nem változott meg a tényleges ikon az alkalmazásfiókban?</item>
+    <item>Mi a \"hibajelentés\" lehetőség?</item>
+    <item>Az indítóprogramom szerepel a Google Play leírásában, de miért nem szerepel az alkalmazás szakaszban?</item>
+    <item>A háttérképet nem lehet alkalmazni, csak fekete képernyő jelenik meg?</item>
+    <item>Muzei: Hogyan lehet csak a letöltött háttérképeket betölteni?</item>
+    <item>Muzei: Nem akarok minden alkalommal háttérképeket letölteni, amikor a háttérkép megváltozik?</item>
+    <item>Muzei: Csak meghatározott háttérképeket szeretnék használni?</item>
+    <item>Miért van szükség külső tárhely olvasási és írási engedélyére?</item>
+    <item>Miért van szükség internetengedélyre?</item>
+    <item>Miért van szükség Access Network State engedélyre?</item>
+    <item>Miért van szükség Access Wifi State engedélyre?</item>
+    <item>Miért van szükség a Háttérkép beállítása engedélyre?</item>
+    <item>Miért van szükség Wake Lock engedélyre?</item>
+    <item>Miért van szükség Riasztás beállítása engedélyre?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>A Launcher az Android felhasználói felület azon része, amely lehetővé teszi a felhasználók számára a kezdőképernyő testreszabását,
+            mobilalkalmazások elindítása, telefonhívások kezdeményezése és egyéb feladatok végrehajtása Android-eszközökön.</item>
+    <item>Grafikakészlet, amely megváltoztatja az alkalmazásfiók ikonjainak megjelenését</item>
+    <item>Szüksége lesz egy indítóra, amely támogatja az egyéni ikoncsomagokat.
+            A támogatott indítók listája a Play Áruház leírásában található.
+            Ha nem tudja, melyik indítókat érdemes használni, lépjen az \"Alkalmaz\" részre, és telepítse onnan.</item>
+    <item>Megnyithatja a navigációs fiókot, majd az \"Alkalmaz\" gombot. Válassza ki az indítót a listából.
+            Ha az indítója nem szerepel ott, de ez az ikoncsomag kompatibilis vele
+            (a támogatott indítókat lásd a Google Play Áruház leírásában),
+            az ikoncsomagot manuálisan is alkalmazhatja az indító beállításaiban.</item>
+    <item>Megnyithatja a navigációs fiókot, majd az \"Ikonok\" elemet.</item>
+    <item>Csak érintse meg az ikont. Megjelenik egy előnézeti párbeszédpanel egy nagyobb képpel és egy teljes ikonnévvel.</item>
+    <item>Attól függ, hogy melyik indítót használtad. Nem minden indító támogatja az ikonszerkesztést.
+       	    Leginkább úgy szerkeszthet egy ikont, hogy megérinti az ikont hosszan, vagy duplán megérinti.</item>
+    <item>Megnyithatja a navigációs fiókot, majd az \"Ikonkérés\" lehetőséget.</item>
+    <item>Nyissa meg a navigációs fiókot, majd nyissa meg a \"Beállítások\" menüpontot, és válassza a \"Vásárlások visszaállítása\" lehetőséget.
+            Ha az újratelepítés előtt volt fennmaradó prémium kérelme, akkor azok vissza lesznek állítva.</item>
+    <item>Ez azért történt, mert ez az ikoncsomag átkerült az SD-kártyára; telepítenie kell a belső memóriába.</item>
+    <item>A probléma az indítóból származhat, amelyet a nagy ikonfelbontás kezelésekor használt.
+       	    Megjavíthatja az ikon méretének 115–120%-ra növelésével.
+       	    Alternatív megoldásként módosíthatja az indítót.</item>
+    <item>Nyissa meg a beállításokat, görgessen le, majd válassza a \"Hibabejelentés\" lehetőséget.</item>
+    <item>A \"Hibabejelentés\" az ikoncsomaggal kapcsolatos hibák bejelentésére szolgál, nem az irányítópulthoz.</item>
+    <item>Nem minden indító támogatja a közvetlen alkalmazást, és néhányuk nem érhető el közvetlenül az irányítópultról.
+      	    Ezt az ikoncsomagot manuálisan is alkalmazhatja az egyes indítóbeállításokban.</item>
+    <item>Ha közvetlenül az alkalmazásból állítja be a háttérképet, az letöltődik a gyorsítótárba,
+      	    akkor az irányítópult alkalmazás megpróbálja alkalmazni. A jelentkezés eltart egy ideig, és rövid ideig hatalmas mennyiségű RAM-ot is igényel.
+      	    \"Fekete képernyő\" hibák jelenhetnek meg, mert telefonjában nincs elég szabad RAM a háttérkép feldolgozásához.
+      	    A telefon újraindítása megoldja ezt a problémát. Újraindítás után a telefon több RAM-mal rendelkezik.
+            Alternatív megoldásként megnyithatja a letöltött háttérképet a Galériából, és onnan beállíthatja háttérképként.</item>
+    <item>Nyissa meg a Muzeit, válassza ki ezt az ikoncsomagot, beállításokat. Látni fog egy lehetőséget, hogy csak a letöltött háttérképeket töltse be.
+            Először le kell töltenie a háttérképeket az irányítópultról.</item>
+    <item>Ha egy háttérképet már letöltött, az automatikusan betöltődik a telefon memóriájából.
+            A Muzei nem fogja folytatni a letöltést, ha megváltozik a háttérkép. Először le kell töltenie a háttérképeket az irányítópultról.</item>
+    <item>Nyissa meg az Irányítópultot, és töltse le a Muzeiben használni kívánt háttérképeket.
+            Nyissa meg a Muzei beállításait, majd válassza a Csak letöltött háttérképek betöltése lehetőséget.</item>
+    <item>A gyorsítótár írására és olvasására, valamint az ikonkérési adatok gyűjtésére szolgál.</item>
+    <item>Felhőalapú háttérképek betöltésére és letöltésére szolgál.</item>
+    <item>Ennek ellenőrzésére szolgál, hogy a telefon rendelkezik-e internetkapcsolattal vagy sem.</item>
+    <item>Arra szolgál, hogy ellenőrizze, hogy a telefon rendelkezik-e internetkapcsolattal a wifi-hez vagy sem, felhő háttérképek betöltésére a Muzei szolgáltatásból.</item>
+    <item>A háttérképek közvetlenül az irányítópult alkalmazásból történő alkalmazására szolgál.</item>
+    <item>A Muzei Live Wallpaper használja.</item>
+    <item>Az óra alkalmazás elindítására szolgál az analóg óra widgetből.</item>
+  </string-array>
 </resources>

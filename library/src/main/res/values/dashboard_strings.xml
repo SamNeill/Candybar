@@ -398,4 +398,10 @@
     <string name="version">Version</string>
     <!-- Kustom -->
     <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
+
+    <!-- Request Consent Dialog -->
+    <string name="request_consent_title">Data Collection Consent</string>
+    <string name="request_consent_content">To process your icon request, we need to collect information about your installed apps and device details (like screen dimensions and Android version). This helps us design icons that work best for your device.\n\nYou can review our Privacy Policy in About Section for more information.</string>
+    <string name="request_consent_accept">ACCEPT</string>
+    <string name="request_consent_deny">DENY</string>
 </resources>

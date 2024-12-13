@@ -90,7 +90,12 @@ public class LocaleHelper {
     public static Locale getLocale(String language) {
         String[] codes = language.split("_");
         if (codes.length == 2) {
-            return new Locale(codes[0], codes[1]);
+            // Handle the case where country code starts with 'r' (e.g., ur_rPK)
+            String country = codes[1];
+            if (country.startsWith("r")) {
+                country = country.substring(1);
+            }
+            return new Locale(codes[0], country);
         }
         return Locale.getDefault();
     }
