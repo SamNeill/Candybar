@@ -72,12 +72,11 @@ import candybar.lib.helpers.TypefaceHelper;
 import candybar.lib.items.Request;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
-import candybar.lib.utils.InAppBillingClient;
 import candybar.lib.utils.listeners.InAppBillingListener;
 import candybar.lib.utils.listeners.RequestListener;
 import candybar.lib.items.Purchase;
-import candybar.lib.items.BillingResult;
-import candybar.lib.utils.BillingProcessor;
+import candybar.lib.items.BillingProcessor;
+import candybar.lib.utils.InAppBillingClient;
 
 /*
  * CandyBar - Material Dashboard

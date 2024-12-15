@@ -16,6 +16,7 @@ import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.items.InAppBilling;
 import candybar.lib.items.Purchase;
 import candybar.lib.items.BillingResult;
+import candybar.lib.items.BillingProcessor;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.listeners.InAppBillingListener;
 import candybar.lib.utils.AmazonBillingProcessor;

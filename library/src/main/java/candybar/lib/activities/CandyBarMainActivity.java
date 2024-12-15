@@ -97,13 +97,14 @@ import candybar.lib.helpers.RequestHelper;
 import candybar.lib.helpers.ThemeHelper;
 import candybar.lib.helpers.TypefaceHelper;
 import candybar.lib.helpers.WallpaperHelper;
+import candybar.lib.items.BillingProcessor;
 import candybar.lib.items.Home;
 import candybar.lib.items.Icon;
 import candybar.lib.items.InAppBilling;
 import candybar.lib.items.Purchase;
-import candybar.lib.items.Wallpaper;
-import candybar.lib.preferences.Preferences;
+import candybar.lib.items.Request;
 import candybar.lib.items.Theme;
+import candybar.lib.items.Wallpaper;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.services.CandyBarService;
 import candybar.lib.tasks.IconRequestTask;
@@ -118,8 +119,6 @@ import candybar.lib.utils.listeners.SearchListener;
 import candybar.lib.utils.listeners.WallpapersListener;
 import candybar.lib.utils.views.HeaderView;
 import candybar.lib.items.BillingResult;
-import candybar.lib.utils.BillingProcessor;
-import candybar.lib.items.Request;
 import candybar.lib.utils.License;
 
 /*
@@ -590,7 +589,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 Preferences.get(this).setPremiumRequestCount(count);
                 if (count == 0) {
                     InAppBillingClient.get(this).getProcessor().queryPurchases(
-                        new BillingProcessor.QueryPurchasesCallback() {
+                        new candybar.lib.items.BillingProcessor.QueryPurchasesCallback() {
                             @Override
                             public void onSuccess(List<Purchase> purchases) {
                                 String premiumRequestProductId = Preferences.get(CandyBarMainActivity.this).getPremiumRequestProductId();
@@ -598,7 +597,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                                     if (purchase.getProducts().contains(premiumRequestProductId)) {
                                         InAppBillingClient.get(CandyBarMainActivity.this).getProcessor()
                                             .consumePurchase(purchase.getPurchaseToken(),
-                                                new BillingProcessor.ConsumeCallback() {
+                                                new candybar.lib.items.BillingProcessor.ConsumeCallback() {
                                                     @Override
                                                     public void onSuccess() {
                                                         Preferences.get(CandyBarMainActivity.this).setPremiumRequest(false);
@@ -642,7 +641,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
     @Override
     public void onRestorePurchases() {
         InAppBillingClient.get(this).getProcessor().queryPurchases(
-            new BillingProcessor.QueryPurchasesCallback() {
+            new candybar.lib.items.BillingProcessor.QueryPurchasesCallback() {
                 @Override
                 public void onSuccess(List<Purchase> purchases) {
                     List<String> productIds = new ArrayList<>();
@@ -671,7 +670,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         if (Preferences.get(this).getInAppBillingType() == InAppBilling.DONATE) {
             InAppBillingClient.get(this).getProcessor().consumePurchase(
                 purchase.getPurchaseToken(),
-                new BillingProcessor.ConsumeCallback() {
+                new candybar.lib.items.BillingProcessor.ConsumeCallback() {
                     @Override
                     public void onSuccess() {
                         Preferences.get(CandyBarMainActivity.this).setInAppBillingType(-1);
@@ -694,7 +693,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             if (!purchase.isAcknowledged()) {
                 InAppBillingClient.get(this).getProcessor().acknowledgePurchase(
                     purchase.getPurchaseToken(),
-                    new BillingProcessor.AcknowledgeCallback() {
+                    new candybar.lib.items.BillingProcessor.AcknowledgeCallback() {
                         @Override
                         public void onSuccess() {
                             Preferences.get(CandyBarMainActivity.this).setPremiumRequest(true);

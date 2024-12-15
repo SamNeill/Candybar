@@ -280,9 +280,12 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                                 .submit();
                     }
                 } else {
-                    contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(DrawableHelper.getTintedDrawable(
-                            mContext, mHomes.get(finalPosition).getIcon(), color), null, null, null);
+                    contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
+                            DrawableHelper.getTintedDrawable(mContext, mHomes.get(finalPosition).getIcon(), color),
+                            null, null, null);
                 }
+            } else {
+                contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
             }
 
             if (mHomes.get(finalPosition).getType() == Home.Type.ICONS) {
@@ -297,14 +300,16 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 contentViewHolder.title.setLines(1);
                 contentViewHolder.title.setTextSize(TypedValue.COMPLEX_UNIT_PX,
                         mContext.getResources().getDimension(R.dimen.text_max_size));
-                contentViewHolder.title.setGravity(Gravity.END | Gravity.CENTER_VERTICAL);
+                contentViewHolder.title.setGravity(Gravity.CENTER);
                 contentViewHolder.title.setIncludeFontPadding(false);
                 TextViewCompat.setAutoSizeTextTypeWithDefaults(contentViewHolder.title, TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM);
 
-                contentViewHolder.subtitle.setGravity(Gravity.END | Gravity.CENTER_VERTICAL);
+                contentViewHolder.subtitle.setGravity(Gravity.CENTER);
+                contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
             } else {
                 contentViewHolder.title.setTextSize(TypedValue.COMPLEX_UNIT_PX,
                         mContext.getResources().getDimension(R.dimen.text_content_title));
+                contentViewHolder.title.setGravity(Gravity.CENTER_VERTICAL);
             }
 
             contentViewHolder.title.setTypeface(TypefaceHelper.getMedium(mContext));

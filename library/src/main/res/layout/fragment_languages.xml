@@ -12,4 +12,5 @@
         android:dividerHeight="0dp"
         android:divider="@android:color/transparent"
         android:listSelector="@android:color/transparent" />
+
 </RelativeLayout>
