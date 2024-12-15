@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Ano ang isang launcher-->
+    <!--Ano ang icon pack-->
+    <!--Paano ako gagamit ng icon pack?-->
+    <!--Paano ako maglalapat ng icon pack?-->
+    <!--Paano ko makikita ang lahat ng icon na kasama?-->
+    <!--Hindi ko makita ang kumpletong pangalan ng icon-->
+    <!--Paano ko mapapalitan ang mga icon ng isang kahaliling icon?-->
+    <!--Paano ako hihingi ng icon?-->
+    <!--Paano ko maibabalik ang natitirang Mga Kahilingan sa Premium pagkatapos muling i-install ang app?-->
+    <!--Pagkatapos i-restart ang aking telepono, ang icon pack ay hindi nailapat, ibinabalik ito sa mga default?-->
+    <!--Bakit mukhang jaggy o pixelated ang mga icon sa aking telepono?-->
+    <!--Nakikita ko ang icon na kasama sa lahat ng mga icon,
+            ngunit bakit hindi nabago ang aktwal na icon sa drawer ng app?-->
+    <!--Ano ang opsyon na \"ulat ng mga bug\"?-->
+    <!--Nakalista ang aking launcher sa paglalarawan ng Google Play, ngunit bakit hindi ito kasama sa seksyong ilapat?-->
+    <!--Hindi maaaring ilapat ang wallpaper, nagpapakita lang ng itim na screen?-->
+    <!--Muzei: Paano mag-load ng mga na-download na wallpaper lang?-->
+    <!--Muzei: Ayaw kong patuloy na magda-download ng mga wallpaper sa tuwing nagbabago ang wallpaper?-->
+    <!--Muzei: Gusto ko lang gumamit ng mga partikular na wallpaper?-->
+    <!--Bakit kailangan ang pahintulot sa Read & Write External Storage?-->
+    <!--Bakit kailangan ang pahintulot sa Internet?-->
+    <!--Bakit kailangan ang pahintulot ng Access Network State?-->
+    <!--Bakit kailangan ang pahintulot ng Access Wi-Fi State?-->
+    <!--Bakit kailangan ang pahintulot ng Set Wallpaper?-->
+    <!--Bakit kailangan ang Pahintulot sa Wake Lock?-->
+    <!--Bakit kailangan ang pahintulot na Magtakda ng Alarm?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Ano ang isang launcher?</item>
+    <item>Ano ang icon pack?</item>
+    <item>Paano ako gagamit ng icon pack?</item>
+    <item>Paano ako maglalapat ng icon pack?</item>
+    <item>Paano ko makikita ang lahat ng icon na kasama?</item>
+    <item>Hindi ko makita ang kumpletong pangalan ng icon</item>
+    <item>Paano ko mapapalitan ang mga icon ng isang kahaliling icon?</item>
+    <item>Paano ako hihingi ng icon?</item>
+    <item>Paano ko maibabalik ang natitirang Mga Kahilingan sa Premium pagkatapos muling i-install ang app?</item>
+    <item>Pagkatapos i-restart ang aking telepono, hindi nailapat ang icon pack; ibinabalik ito sa mga default?</item>
+    <item>Bakit mukhang jaggy o pixelated ang mga icon sa aking telepono?</item>
+    <item>Nakikita ko ang icon na kasama sa lahat ng mga icon,
+            ngunit bakit hindi nabago ang aktwal na icon sa drawer ng app?</item>
+    <item>Ano ang opsyon na \"ulat ng mga bug\"?</item>
+    <item>Nakalista ang aking launcher sa paglalarawan ng Google Play, ngunit bakit hindi ito kasama sa seksyong ilapat?</item>
+    <item>Hindi maaaring ilapat ang wallpaper, nagpapakita lang ng itim na screen?</item>
+    <item>Muzei: Paano mag-load ng mga na-download na wallpaper lang?</item>
+    <item>Muzei: Ayaw kong patuloy na magda-download ng mga wallpaper sa tuwing nagbabago ang wallpaper?</item>
+    <item>Muzei: Gusto ko lang gumamit ng mga partikular na wallpaper?</item>
+    <item>Bakit kailangan ang pahintulot sa Read &amp; Write External Storage?</item>
+    <item>Bakit kailangan ang pahintulot sa Internet?</item>
+    <item>Bakit kailangan ang pahintulot ng Access Network State?</item>
+    <item>Bakit kailangan ang pahintulot ng Access Wifi State?</item>
+    <item>Bakit kailangan ang pahintulot ng Set Wallpaper?</item>
+    <item>Bakit kailangan ang pahintulot ng Wake Lock?</item>
+    <item>Bakit kailangan ang pahintulot na Magtakda ng Alarm?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Ang Launcher ay bahagi ng user interface ng Android na nagbibigay-daan sa mga user na i-customize ang home screen,
+            maglunsad ng mga mobile app, tumawag sa telepono, at magsagawa ng iba pang mga gawain sa mga Android device.</item>
+    <item>Isang hanay ng mga graphics na magbabago sa hitsura ng iyong mga icon ng drawer ng app</item>
+    <item>Kakailanganin mo ng launcher na sumusuporta sa mga custom na icon pack.
+            Nakalista ang mga sinusuportahang launcher sa paglalarawan ng Play Store.
+            Kung nalilito ka kung aling mga launcher ang dapat gamitin, pumunta lang sa seksyong \"Ilapat\" at i-install mula doon.</item>
+    <item>Maaari mong buksan ang navigation drawer, pagkatapos ay buksan ang \"Ilapat\". Piliin ang iyong launcher mula sa listahan.
+            Kung ang iyong launcher ay hindi nakalista doon, ngunit ang icon pack na ito ay katugma dito
+            (tingnan sa paglalarawan ng Google Play Store para sa mga sinusuportahang launcher),
+            maaari mong ilapat nang manu-mano ang icon pack sa iyong mga setting ng launcher.</item>
+    <item>Maaari mong buksan ang navigation drawer at pagkatapos ay buksan ang \"Icons\"</item>
+    <item>I-tap lang ang icon. May lalabas na dialog ng preview na may mas malaking larawan at kumpletong pangalan ng icon.</item>
+    <item>Depende ito sa kung aling launcher ang ginamit mo. Hindi lahat ng launcher ay sumusuporta sa pag-edit ng icon.
+       	    Kadalasan maaari mong i-edit ang isang icon sa pamamagitan ng pag-tap nang matagal sa icon o pag-double tap dito.</item>
+    <item>Maaari mong buksan ang navigation drawer, pagkatapos ay buksan ang \"Icon Request\".</item>
+    <item>Maaari mong buksan ang navigation drawer, pagkatapos ay buksan ang \"Mga Setting\", piliin ang \"Ibalik ang Mga Pagbili\".
+            Kung mayroon kang anumang natitirang Mga Kahilingan sa Premium bago muling i-install, ire-restore ang mga ito.</item>
+    <item>Nangyari ito dahil ang icon pack na ito ay inilipat sa SD Card; dapat mong i-install ito sa panloob na memorya.</item>
+    <item>Ang problema ay maaaring magmula sa launcher na ginamit mo kapag humahawak ng malaking resolution ng icon.
+       	    Maaayos mo ito sa pamamagitan ng pagtaas ng laki ng icon sa 115–120%.
+       	    Bilang kahalili, maaari mong baguhin ang iyong launcher.</item>
+    <item>Buksan ang mga setting, mag-scroll pababa, at pagkatapos ay piliin ang \"Mag-ulat ng Mga Bug\".</item>
+    <item>Ang \"Mag-ulat ng Mga Bug\" ay ginagamit upang mag-ulat ng mga bug na nauugnay sa icon pack, hindi sa dashboard.</item>
+    <item>Hindi lahat ng launcher ay sumusuporta sa direktang paglalapat, at ang ilan sa mga ito ay hindi direktang ma-access mula sa dashboard.
+      	    Maaari mong ilapat nang manu-mano ang icon pack na ito sa mga indibidwal na setting ng launcher.</item>
+    <item>Kapag direkta kang \"Itakda ang Wallpaper\" mula sa app, ida-download ito sa cache,
+      	    pagkatapos ay susubukan ng dashboard app na ilapat ito. Ang pag-apply ay magtatagal at kailangan din ng malaking halaga ng RAM para sa maikling panahon.
+      	    Maaaring lumitaw ang mga error sa \"Black Screen\" dahil walang sapat na libreng RAM ang iyong telepono upang iproseso ang wallpaper.
+      	    Ang pag-restart ng iyong telepono ay aayusin ang problemang ito. Pagkatapos mag-restart, magkakaroon ng mas maraming RAM na available ang iyong telepono.
+            Bilang kahalili, maaari mong buksan ang na-download na wallpaper mula sa iyong Gallery at itakda ito bilang wallpaper mula doon.</item>
+    <item>Buksan ang Muzei, piliin ang icon pack na ito, mga setting. Makakakita ka ng opsyon na mag-load ng mga na-download na wallpaper lamang.
+            Kakailanganin mo munang mag-download ng mga wallpaper mula sa dashboard.</item>
+    <item>Kung na-download na ang isang wallpaper, awtomatiko itong mailo-load mula sa memorya ng iyong telepono.
+            Hindi ito mada-download ng Muzei kapag nagbago ang wallpaper. Kakailanganin mo munang mag-download ng mga wallpaper mula sa dashboard.</item>
+    <item>Buksan ang Dashboard, mag-download ng mga wallpaper na gusto mong gamitin sa Muzei.
+            Buksan ang mga setting ng Muzei, pagkatapos ay piliin ang I-load ang Mga Na-download na Wallpaper Lamang.</item>
+    <item>Ginagamit ito upang magsulat at magbasa ng cache, at mangolekta ng data ng kahilingan sa icon.</item>
+    <item>Ito ay ginagamit upang i-load ang Cloud-Based Wallpaper at i-download ang mga ito.</item>
+    <item>Ito ay ginagamit upang suriin kung ang iyong telepono ay may koneksyon sa internet o wala.</item>
+    <item>Ito ay ginagamit upang suriin kung ang iyong telepono ay may koneksyon sa internet sa isang wifi o wala, upang i-load ang mga wallpaper ng ulap mula sa Muzei.</item>
+    <item>Ginagamit ito upang direktang maglapat ng mga wallpaper mula sa dashboard app.</item>
+    <item>Ito ay ginagamit ng Muzei Live Wallpaper.</item>
+    <item>Ginagamit ito upang ilunsad ang app ng orasan mula sa widget ng analog na orasan.</item>
+  </string-array>
+</resources>
