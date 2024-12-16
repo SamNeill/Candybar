@@ -1,54 +1,50 @@
 package com.candybar.dev.licenses;
 
+import android.content.Context;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
+
 public class License {
     /*
-     * License Checker
-     * Enable or disable license checker
-     * Set license key for premium apps from Amazon Developer Console
-     */
-    private static final boolean LICENSE_CHECKER_ENABLED = false;  // Set to true if you want to enable license checker
-    private static final String LICENSE_KEY = "YOUR_AMAZON_LICENSE_KEY"; // Your Amazon license key
-
-    /*
      * Amazon In-App Purchase Public Key
-     * Get this key from Amazon Developer Console -> Your App -> In-App Items -> Security Profile
+     * The key is stored in assets/amazon_public_key.pem
      */
-    private static final String AMAZON_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA"; // Replace with your actual key
-
-    private static final byte[] RANDOM_STRING = new byte[] {
-        // Your random string bytes for license checking
-        (byte) 0x28, (byte) 0xF0, (byte) 0x2D, (byte) 0x91, (byte) 0xA4, (byte) 0x8F
-    };
+    private static String amazonPublicKey = null;
 
     /*
      * Premium Request
      * Set premium request products
      * Product ID from Amazon Developer Console
+     * Format: premium_request_[count]
      */
     private static final String[] PREMIUM_REQUEST_PRODUCTS = {
-        "1_20_icon_request",  // 20 icons for $1.99
-        "1_30_icon_request",  // 30 icons for $2.99  
-        "1_40_icon_request",  // 40 icons for $3.99
-        "1_50_icon_request"   // 50 icons for $4.99
+        "premium_request_20",  // 20 icons for $1.99
+        "premium_request_30",  // 30 icons for $2.99  
+        "premium_request_40",  // 40 icons for $3.99
+        "premium_request_50"   // 50 icons for $4.99
     };
 
     private static final int[] PREMIUM_REQUEST_COUNTS = {
-        20,  // For 1_20_icon_request
-        30,  // For 1_30_icon_request
-        40,  // For 1_40_icon_request
-        50   // For 1_50_icon_request
+        20,  // For premium_request_20
+        30,  // For premium_request_30
+        40,  // For premium_request_40
+        50   // For premium_request_50
     };
 
     /*
      * Donation
      * Set donation products
-     * Product ID from Amazon Developer Console 
+     * Product ID from Amazon Developer Console
+     * Format: donation_[type]
      */
     private static final String[] DONATION_PRODUCTS = {
-        "coffee",      // $0.99 - Buy me a coffee
-        "breakfast",   // $1.99 - Buy me breakfast
-        "lunch",       // $4.99 - Buy me lunch
-        "dinner"       // $9.99 - Buy me dinner
+        "donation_coffee",     // $0.99 - Buy me a coffee
+        "donation_breakfast",  // $1.99 - Buy me breakfast
+        "donation_lunch",      // $4.99 - Buy me lunch
+        "donation_dinner"      // $9.99 - Buy me dinner
     };
 
     /*
@@ -61,32 +57,41 @@ public class License {
     private static final int PREMIUM_REQUEST_LIMIT = 5;           // Free request limit
     private static final boolean RESET_PREMIUM_REQUEST_LIMIT = true; // Reset request limit on update
 
-    public static String[] getPremiumRequestProductsId() {
-        return PREMIUM_REQUEST_PRODUCTS;
-    }
-
-    public static int[] getPremiumRequestProductsCount() {
-        return PREMIUM_REQUEST_COUNTS;
-    }
-
-    public static String[] getDonationProductsId() {
-        return DONATION_PRODUCTS;
+    public static boolean isLicenseCheckerEnabled() {
+        // License checking is not used with Amazon IAP
+        return false;
     }
 
     public static String getLicenseKey() {
-        return LICENSE_KEY;
-    }
-
-    public static String getAmazonPublicKey() {
-        return AMAZON_PUBLIC_KEY;
+        // Not used with Amazon IAP
+        return "";
     }
 
     public static byte[] getRandomString() {
-        return RANDOM_STRING;
+        // Not used with Amazon IAP
+        return new byte[0];
     }
 
-    public static boolean isLicenseCheckerEnabled() {
-        return LICENSE_CHECKER_ENABLED;
+    public static String getAmazonPublicKey(Context context) {
+        if (amazonPublicKey == null) {
+            try {
+                InputStream inputStream = context.getAssets().open("amazon_public_key.pem");
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                StringBuilder key = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if (!line.contains("-----BEGIN PUBLIC KEY-----") && !line.contains("-----END PUBLIC KEY-----")) {
+                        key.append(line);
+                    }
+                }
+                reader.close();
+                amazonPublicKey = key.toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "";
+            }
+        }
+        return amazonPublicKey;
     }
 
     public static boolean isInAppBillingEnabled() {
@@ -111,5 +116,17 @@ public class License {
 
     public static boolean isResetPremiumRequestLimit() {
         return RESET_PREMIUM_REQUEST_LIMIT;
+    }
+
+    public static String[] getPremiumRequestProductsId() {
+        return PREMIUM_REQUEST_PRODUCTS;
+    }
+
+    public static int[] getPremiumRequestProductsCount() {
+        return PREMIUM_REQUEST_COUNTS;
+    }
+
+    public static String[] getDonationProductsId() {
+        return DONATION_PRODUCTS;
     }
 }
