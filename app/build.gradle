@@ -5,7 +5,7 @@ android {
         def keystoreFile = file('candybar.jks')
         if (keystoreFile.exists()) {
             release {
-                keyAlias 'key0'
+                keyAlias 'candybar'
                 keyPassword 'candybar'
                 storeFile keystoreFile
                 storePassword 'candybar'
