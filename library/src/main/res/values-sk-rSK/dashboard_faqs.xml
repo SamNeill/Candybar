@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Čo je spúšťač-->
+    <!--Čo je balík ikon-->
+    <!--Ako môžem použiť balík ikon?-->
+    <!--Ako použijem balík ikon?-->
+    <!--Ako zobrazím všetky zahrnuté ikony?-->
+    <!--Nevidím úplný názov ikony-->
+    <!--Ako môžem nahradiť ikony alternatívnou ikonou?-->
+    <!--Ako požiadam o ikonu?-->
+    <!--Ako môžem obnoviť zostávajúce prémiové požiadavky po preinštalovaní aplikácie?-->
+    <!--Po reštartovaní môjho telefónu sa balík ikon nepoužije, obnoví sa na predvolené hodnoty?-->
+    <!--Prečo sú ikony na mojom telefóne zubaté alebo rozpixelované?-->
+    <!--Vidím ikonu zahrnutú vo všetkých ikonách,
+            ale prečo sa skutočná ikona na zásuvke aplikácie nezmenila?-->
+    <!--Čo je to možnosť \"nahlásiť chyby\"?-->
+    <!--Môj spúšťač je uvedený v popise služby Google Play, ale prečo nie je zahrnutý v sekcii použiť?-->
+    <!--Tapeta sa nedá použiť, zobrazuje sa len čierna obrazovka?-->
+    <!--Muzei: Ako načítať iba stiahnuté tapety?-->
+    <!--Muzei: Nechcem neustále sťahovať tapety pri každej zmene tapety?-->
+    <!--Muzei: Chcem použiť iba konkrétne tapety?-->
+    <!--Prečo sú potrebné povolenia na čítanie a zápis do externého úložiska?-->
+    <!--Prečo je potrebné povolenie na internet?-->
+    <!--Prečo je potrebné povolenie stavu prístupovej siete?-->
+    <!--Prečo je potrebné povolenie na prístup k stavu Wi-Fi?-->
+    <!--Prečo je potrebné povolenie Nastaviť tapetu?-->
+    <!--Prečo je potrebné povolenie na uzamknutie režimu spánku?-->
+    <!--Prečo je potrebné povolenie na nastavenie budíka?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Čo je spúšťač?</item>
+    <item>Čo je to balík ikon?</item>
+    <item>Ako môžem použiť balík ikon?</item>
+    <item>Ako použijem balík ikon?</item>
+    <item>Ako zobrazím všetky zahrnuté ikony?</item>
+    <item>Nevidím úplný názov ikony</item>
+    <item>Ako môžem nahradiť ikony alternatívnou ikonou?</item>
+    <item>Ako požiadam o ikonu?</item>
+    <item>Ako môžem po preinštalovaní aplikácie obnoviť zostávajúce prémiové požiadavky?</item>
+    <item>Po reštartovaní môjho telefónu sa balík ikon nepoužije; obnoví sa to na predvolené hodnoty?</item>
+    <item>Prečo sú ikony na mojom telefóne zubaté alebo rozpixelované?</item>
+    <item>Vidím ikonu zahrnutú vo všetkých ikonách,
+            ale prečo sa skutočná ikona na zásuvke aplikácie nezmenila?</item>
+    <item>Čo je to možnosť \"nahlásiť chyby\"?</item>
+    <item>Môj spúšťač je uvedený v popise služby Google Play, ale prečo nie je zahrnutý v sekcii použiť?</item>
+    <item>Tapeta sa nedá použiť, zobrazuje sa len čierna obrazovka?</item>
+    <item>Muzei: Ako načítať iba stiahnuté tapety?</item>
+    <item>Muzei: Nechcem neustále sťahovať tapety pri každej zmene tapety?</item>
+    <item>Muzei: Chcem použiť iba konkrétne tapety?</item>
+    <item>Prečo sú potrebné povolenia na čítanie a zápis do externého úložiska?</item>
+    <item>Prečo je potrebné povolenie na internet?</item>
+    <item>Prečo je potrebné povolenie stavu prístupovej siete?</item>
+    <item>Prečo je potrebné povolenie stavu Access Wifi?</item>
+    <item>Prečo je potrebné povolenie Nastaviť tapetu?</item>
+    <item>Prečo je potrebné povolenie Wake Lock?</item>
+    <item>Prečo je potrebné povolenie na nastavenie budíka?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher je časť používateľského rozhrania systému Android, ktorá používateľom umožňuje prispôsobiť si domovskú obrazovku,
+            spúšťať mobilné aplikácie, telefonovať a vykonávať ďalšie úlohy na zariadeniach so systémom Android.</item>
+    <item>Sada grafiky, ktorá zmení vzhľad ikon na zásuvke aplikácií</item>
+    <item>Budete potrebovať spúšťač, ktorý podporuje vlastné balíčky ikon.
+            Podporované spúšťače sú uvedené v popise Obchodu Play.
+            Ak si nie ste istí, ktoré spúšťače by ste mali použiť, prejdite do sekcie \"Použiť\" a nainštalujte odtiaľ.</item>
+    <item>Môžete otvoriť navigačnú zásuvku a potom otvoriť \"Použiť\". Vyberte si spúšťač zo zoznamu.
+            Ak tam váš spúšťač nie je uvedený, ale tento balík ikon je s ním kompatibilný
+            (podporované spúšťače nájdete v popise Obchodu Google Play),
+            balík ikon môžete použiť manuálne v nastaveniach spúšťača.</item>
+    <item>Môžete otvoriť navigačnú zásuvku a potom otvoriť \"Ikony\"</item>
+    <item>Stačí klepnúť na ikonu. Zobrazí sa dialógové okno ukážky s väčším obrázkom a úplným názvom ikony.</item>
+    <item>Závisí to od toho, ktorý spúšťač ste použili. Nie každý spúšťač podporuje úpravu ikon.
+       	    Väčšinou môžete upraviť ikonu klepnutím a podržaním ikony alebo dvojitým klepnutím na ňu.</item>
+    <item>Môžete otvoriť navigačnú zásuvku a potom otvoriť \"Žiadosť o ikonu\".</item>
+    <item>Môžete otvoriť navigačnú zásuvku, potom otvoriť \"Nastavenia\" a vybrať \"Obnoviť nákupy\".
+            Ak ste pred preinštalovaním mali nejaké zostávajúce prémiové požiadavky, budú obnovené.</item>
+    <item>Stalo sa to preto, že tento balík ikon bol presunutý na SD kartu; mali by ste ho nainštalovať do internej pamäte.</item>
+    <item>Problém môže pochádzať zo spúšťača, ktorý ste použili pri práci s rozlíšením veľkých ikon.
+       	    Môžete to opraviť zväčšením veľkosti ikony na 115–120 %.
+       	    Prípadne môžete zmeniť spúšťač.</item>
+    <item>Otvorte nastavenia, posuňte zobrazenie nadol a vyberte možnosť \"Nahlásiť chyby\".</item>
+    <item>\"Nahlásiť chyby\" sa používa na nahlásenie chýb súvisiacich s balíkom ikon, nie s informačným panelom.</item>
+    <item>Nie každý spúšťač podporuje priame použitie a k niektorým z nich nie je možné pristupovať priamo z hlavného panela.
+      	    Tento balík ikon môžete použiť manuálne v nastaveniach jednotlivých spúšťačov.</item>
+    <item>Keď \"Nastavíte tapetu\" priamo z aplikácie, stiahne sa do vyrovnávacej pamäte,
+      	    potom sa ho aplikácia dashboard pokúsi použiť. Aplikácia bude nejaký čas trvať a bude tiež potrebovať veľké množstvo pamäte RAM na krátky čas.
+      	    Chyby \"Čierna obrazovka\" sa môžu zobraziť, pretože váš telefón nemá dostatok voľnej pamäte RAM na spracovanie tapety.
+      	    Tento problém vyriešite reštartovaním telefónu. Po reštartovaní bude mať váš telefón k dispozícii viac pamäte RAM.
+            Prípadne môžete stiahnutú tapetu otvoriť z vašej Galérie a nastaviť ju ako tapetu odtiaľ.</item>
+    <item>Otvorte Muzei, vyberte tento balík ikon, nastavenia. Zobrazí sa možnosť načítať iba stiahnuté tapety.
+            Najprv si budete musieť stiahnuť tapety z hlavného panela.</item>
+    <item>Ak je tapeta už stiahnutá, automaticky sa načíta z pamäte telefónu.
+            Muzei ju nebude naďalej sťahovať, keď sa zmení tapeta. Najprv si budete musieť stiahnuť tapety z hlavného panela.</item>
+    <item>Otvorte Dashboard, stiahnite si tapety, ktoré chcete použiť v Muzei.
+            Otvorte nastavenia Muzei a potom vyberte Načítať iba stiahnuté tapety.</item>
+    <item>Používa sa na zapisovanie a čítanie vyrovnávacej pamäte a zhromažďovanie údajov o požiadavkách na ikony.</item>
+    <item>Používa sa na načítanie cloudových tapiet a ich sťahovanie.</item>
+    <item>Používa sa na kontrolu, či má váš telefón internetové pripojenie alebo nie.</item>
+    <item>Používa sa na kontrolu, či má váš telefón internetové pripojenie k wifi alebo nie, na načítanie cloudových tapiet z Muzei.</item>
+    <item>Používa sa na aplikáciu tapiet priamo z aplikácie palubnej dosky.</item>
+    <item>Používa ho Muzei Live Wallpaper.</item>
+    <item>Používa sa na spustenie aplikácie hodín z miniaplikácie analógových hodín.</item>
+  </string-array>
+</resources>

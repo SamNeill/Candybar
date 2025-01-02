@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Splash Screen Titel-->
+    <string name="splash_screen_title">CandyBar Dashboard</string>
+
+    <!--Navigasie-aansig-->
+    <string name="navigation_view_home">Tuis</string>
+    <string name="navigation_view_apply">Doen aansoek</string>
+    <string name="navigation_view_icons">Ikone</string>
+    <string name="navigation_view_request">Ikoonversoek</string>
+    <string name="navigation_view_wallpapers">Wallpapers</string>
+    <string name="navigation_view_kustom">Pasgemaak</string>
+    <string name="navigation_view_settings">Instellings</string>
+    <string name="navigation_view_faqs">Gereelde vrae</string>
+    <string name="navigation_view_about">Oor</string>
+    <string name="navigation_view_donate">Ondersteun ontwikkeling</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Muzei-instellings</string>
+    <string name="minute">Minuut</string>
+    <string name="hour">Uur</string>
+    <string name="save_setting">Stoor</string>
+    <string name="muzei_refresh_duration">Herlaai Duur</string>
+    <string name="muzei_wifi_only">Verfris slegs vanaf Wi-Fi</string>
+    <string name="muzei_downloaded_only">Laai slegs afgelaaide agtergronde</string>
+    <string name="muzei_settings_ignored">Icon Pack bevat nie agtergronde nie, instellings word geïgnoreer.</string>
+    <string name="muzei_settings_saved">Instellings gestoor</string>
+
+    <!--Spyskaart-->
+    <string name="menu_search">Soek</string>
+    <string name="menu_save">Stoor na Toestel</string>
+    <string name="menu_select_all">Kies Alles</string>
+    <string name="menu_delete">Vee uit</string>
+
+    <string name="menu_wallpaper_crop">Sny muurpapier</string>
+    <string name="menu_apply_homescreen">Tuisskerm</string>
+    <string name="menu_apply_lockscreen">Sluitskerm</string>
+    <string name="menu_apply_homescreen_lockscreen">Tuisskerm en sluitskerm</string>
+
+    <!--Dialoog-->
+    <string name="open">Maak oop</string>
+    <string name="close">Maak toe</string>
+    <string name="clear">Duidelik</string>
+    <string name="ok">OK</string>
+    <string name="install">Installeer</string>
+    <string name="donate">Skenk</string>
+    <string name="update">Dateer op</string>
+
+    <string name="search_noresult">Geen resultaat gevind vir \"%s\"</string>
+    <string name="search_faqs">Vraag of antwoord</string>
+    <string name="search_icon">Ikoon Naam</string>
+    <string name="search_wallpapers">Muurpapier naam</string>
+
+    <!--Dateer op-->
+    <string name="checking_for_update">Kyk tans vir opdatering …</string>
+    <string name="update_available">Opdatering beskikbaar!</string>
+    <string name="no_update_available">Jy gebruik die nuutste weergawe!</string>
+
+    <!--Veranderlog weergawe-->
+    <string name="changelog_version">Weergawe</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Kan nie inprogram-aankoopprodukte laai nie</string>
+
+    <!--Lisensie-->
+    <string name="license_checking">Gaan tans lisensie na …</string>
+    <string name="license_check">Lisensie Check</string>
+    <string name="license_check_success">Lisensiekontrole sukses. Dankie dat jy die toepassing vanaf die Play Winkel afgelaai het.</string>
+    <string name="license_check_failed">Lisensiekontrole het misluk; jy het nie die toepassing van die Play Winkel afgelaai nie. Jy sal dit nie kan gebruik nie.</string>
+    <string name="license_check_retry">Kan nie lisensie nagaan nie, probeer asseblief weer oor \'n paar oomblikke.</string>
+
+    <!--Play Winkel-installasiekontrole-->
+    <string name="playstore_check">Play Winkel Check</string>
+    <string name="playstore_check_success">Dankie dat jy die toepassing vanaf die Google Play Winkel geïnstalleer het. Geniet dit!</string>
+    <string name="playstore_check_failed">Dit lyk of jy hierdie ikoonpakket van buite die Google Play Winkel geïnstalleer het.
+        Jy sal dit nie kan gebruik nie.</string>
+
+    <!--Deel-->
+    <string name="share_app_title">Yo! Kyk na %s</string>
+    <string name="share_app_body">Kyk na %1$s Icon Pack op Play Winkel: %2$s</string>
+
+    <!--Tik Intro-->
+    <string name="tap_intro_home_navigation">Navigasielaai</string>
+    <string name="tap_intro_home_navigation_desc">Tik hier of swiep vanaf die linkerkant van die skerm om die navigasielaai oop te maak</string>
+    <string name="tap_intro_home_apply">Pas ikoonpakket toe</string>
+    <string name="tap_intro_home_apply_desc">Tik hier om %s op jou huidige lanseerder toe te pas. Druk lank om op ander lanseerders toe te pas.</string>
+    <string name="tap_intro_icons_search">Soek</string>
+    <string name="tap_intro_icons_search_desc">Tik hier om na \'n ikoon te soek</string>
+    <string name="tap_intro_request_search">Soek ontbrekende toepassings</string>
+    <string name="tap_intro_request_search_desc">Tik hier om deur jou geïnstalleerde toepassings te soek vir ontbrekende ikone vir Geselekteerde ikoonversoek</string>
+    <string name="tap_intro_request_select">Kies gemiste toepassing</string>
+    <string name="tap_intro_request_select_desc">Tik hier om gemiste toepassing vir ikoonversoek te kies</string>
+    <string name="tap_intro_request_select_all">Kies alle gemiste toepassings</string>
+    <string name="tap_intro_request_select_all_desc">Tik hier om alle gemiste toepassings vir ikoonversoek te kies</string>
+    <string name="tap_intro_request_send">Stuur ikoonversoek</string>
+    <string name="tap_intro_request_send_desc">Tik hier om geselekteerde gemiste toepassings te stuur</string>
+    <string name="tap_intro_request_premium">Premium-ikoonversoek</string>
+    <string name="tap_intro_request_premium_desc">Tik hier om die premium-ikoonversoekpakket te koop, met \'n premium-ikoonversoek kan jy jou gevraagde programme vinniger kry.</string>
+    <string name="tap_intro_wallpapers_option">Muurpapier opsies</string>
+    <string name="tap_intro_wallpapers_option_desc">Tik en hou hier om muurpapieropsies te wys; %s pas muurpapier toe.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">aflaai of</string>
+    <string name="tap_intro_wallpapers_preview">Voorskou muurpapier</string>
+    <string name="tap_intro_wallpapers_preview_desc">Tik hier om die volle grootte van die muurpapier te sien</string>
+    <string name="tap_intro_wallpaper_preview_save">Stoor plakpapier</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Tik hier om muurpapier op jou toestel af te laai en te stoor sodat jy dit later kan gebruik</string>
+    <string name="tap_intro_wallpaper_preview_apply">Pas plakpapier toe</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Tik hier om muurpapier as die tuisskerm-agtergrond te stel</string>
+
+    <!--Tuis-->
+    <string name="home_more_apps_header">Meer toepassings</string>
+    <string name="home_more_apps">Gaan More Icons Pack na in Google Play Winkel</string>
+    <string name="home_rate">Beoordeel</string>
+    <string name="home_share">Deel</string>
+    <string name="home_check_update">Dateer op</string>
+    <string name="home_apply_icon_pack">Pas %s toe</string>
+    <string name="home_donate">Skenk</string>
+    <string name="home_donate_desc">Moedig ontwikkelaar aan om meer ikoonpakket te maak</string>
+    <string name="home_icons">Ikone</string>
+    <string name="home_icon_dimension">%s pixels ikoon dimensie</string>
+    <string name="home_loud_wallpapers">%d wolk agtergronde</string>
+    <string name="home_muzei">Muzei lewendige plakpapier</string>
+    <string name="home_icon_request_installed_apps">Totaal\n%d geïnstalleerde programme</string>
+    <string name="home_icon_request_themed_apps">Tema\n%d programme</string>
+    <string name="home_icon_request_missed_apps">Gemis\n%d programme</string>
+
+    <!--Doen aansoek-->
+    <string name="apply_installed">Geïnstalleerde Launcher</string>
+    <string name="apply_installed_launchers">Launchers geïnstalleer</string>
+    <string name="apply_supported">Ondersteunde lanseerders</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher is nie geïnstalleer nie. U kan dit vind en installeer vanaf Amazon AppStore of van u voorkeurhulpbronne en -winkels.</string>
+    <string name="apply_manual">%1$s Launcher ondersteun nie direkte toepassing nie, maar jy kan %2$s handmatig toepas vanaf die lanseerderinstellings.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso ondersteun nie direkte aansoek nie, maar jy kan hierdie stappe volg:</string>
+    <string name="apply_manual_kvaesitso_step_1">Maak Kvaesitso se instellings oop</string>
+    <string name="apply_manual_kvaesitso_step_2">Tik op \"Rooster en ikone\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Tik op die \"Icon Pack\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Kies %s uit die lys</string>
+    <string name="apply_manual_kvaesitso_step_5">Tik die verfkwasikoon om die agtergrondvorm te aktiveer of te deaktiveer</string>
+    <string name="apply_manual_kiss">KISS ondersteun nie direkte toepassing nie, maar jy kan hierdie stappe volg:</string>
+    <string name="apply_manual_kiss_step_1">Maak KISS-instellings oop</string>
+    <string name="apply_manual_kiss_step_2">Tik \"Gebruikerskoppelvlak\"</string>
+    <string name="apply_manual_kiss_step_3">Tik op die \"Icon Pack\"</string>
+    <string name="apply_manual_kiss_step_4">Kies %s uit die lys</string>
+    <string name="apply_manual_samsung_oneui">%1$s ondersteun nie direkte toepassing nie, maar begin met %2$s kan jy ikone met \'n metgeseltoepassing toepas.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Jou huidige weergawe van %s is te oud. Dateer asseblief op na Android 12 of nuwer om ikone direk toe te pas. Alternatiewelik kan u \'n ander lanseerder installeer.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Maak %s oop</string>
+    <string name="apply_manual_samsung_oneui_step_2">Laai die toepassing %s af</string>
+    <string name="apply_manual_samsung_oneui_step_3">Tik \"ikoon\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Tik \"Skep nuwe\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Tik die blou \"Iconpack\"-knoppie</string>
+    <string name="apply_manual_samsung_oneui_step_6">Kies %s uit die lys</string>
+    <string name="apply_manual_samsung_oneui_step_7">Herhaal hierdie stappe elke keer as jy %s opdateer aangesien nuwe ikone nie outomaties gekarteer sal word nie.</string>
+    <string name="apply_manual_hios">HiOS-lanseerder ondersteun nie direkte toepassing nie, maar jy kan hierdie stappe volg:</string>
+    <string name="apply_manual_hios_step_1">Maak \"Instellings\" oop</string>
+    <string name="apply_manual_hios_step_2">Tik \"Tema en sluitskerm\"</string>
+    <string name="apply_manual_hios_step_3">Tik \"My tema\"</string>
+    <string name="apply_manual_hios_step_4">Tik \"Icon pack\"</string>
+    <string name="apply_manual_hios_step_5">Tik op %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Tik lank op jou tuisskerm</string>
+    <string name="apply_manual_oxygen_os_step_2">Tik \"Tuisinstellings\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Tik \"Icon Pack\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Tik op %s</string>
+    <string name="apply_manual_color_os_step_1">Tik lank op jou tuisskerm</string>
+    <string name="apply_manual_color_os_step_2">Tik \"Icons\"</string>
+    <string name="apply_manual_color_os_step_3">Rollees na die regterkant van die \"Custom\"-knoppie (dit is \'n blaaibare lys!)</string>
+    <string name="apply_manual_color_os_step_4">Tik op %s</string>
+    <string name="apply_manual_before">Hierdie weergawe van Before Launcher ondersteun nog nie die toepassing van ikone direk nie. Volg eerder die stappe hieronder:</string>
+    <string name="apply_manual_before_step_1">Swiep links op tuisskerm</string>
+    <string name="apply_manual_before_step_2">Tik \"Instellings\"</string>
+    <string name="apply_manual_before_step_3">Tik op \"style en temas\"</string>
+    <string name="apply_manual_before_step_4">Tik \"Ikoonstyle en -pakke\"</string>
+    <string name="apply_manual_before_step_5">Tik op %s</string>
+    <string name="apply_manual_nothing_step_1">Maak \"Instellings\" oop</string>
+    <string name="apply_manual_nothing_step_2">Tik \"Pasmaak\"</string>
+    <string name="apply_manual_nothing_step_3">Tik \"Icon Pack\"</string>
+    <string name="apply_manual_nothing_step_4">Tik op %s</string>
+    <string name="apply_launch_failed">Kan nie %s instellings begin nie</string>
+    <string name="apply_launcher_not_installed">%s Launcher is nie geïnstalleer nie. Wil jy Google Play Winkel oopmaak om dit af te laai en te installeer?</string>
+    <string name="apply_launcher_not_installable">%s Launcher is nie geïnstalleer nie. Probeer asseblief weer nadat jy die lanseerder geïnstalleer het.</string>
+    <string name="apply_cmtheme_not_available">CM-temabestuurder is nie op hierdie toestel beskikbaar nie</string>
+    <string name="apply_cmtheme_failed">Kan nie CM-temabestuurder begin nie, jy kan probeer om die Icon Pack handmatig toe te pas vanaf Instellings.</string>
+    <string name="apply_lg_home">Om hierdie ikoonpakket toe te pas, maak Instellings - Vertoon - Tuisskerm - Tema oop</string>
+    <string name="apply_lg_home_not_available">LG Home is nie op hierdie toestel beskikbaar nie</string>
+    <string name="apply_lg_home_failed">As u nie LG Home-instellings kan begin nie, kan u probeer om die Icon Pack handmatig toe te pas vanaf Instellings.</string>
+    <string name="apply_lg_home_nougat">LG Home met Android Nougat ondersteun nie meer Icon Pack nie. Jy benodig \'n pasgemaakte lanseerder om Icon Pack te gebruik.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher ondersteun geen ikoonpakkette nie, so jy kan nie hierdie ikoonpakket saam met hierdie lanseerder gebruik nie. Jy kan \'n derdeparty-toepassing probeer om hierdie ikoonpakket in die %2$s-lanseerder te gebruik.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s lanseerder is nie versoenbaar met %2$s nie, maar kan dalk versoenbaar wees met nuwer weergawes</string>
+
+    <!--Ikone-->
+    <string name="icons_load_failed">Kan nie ikone laai nie</string>
+    <string name="icon_shape">Ikoon Vorm</string>
+    <string name="items_selected">%d gekies</string>
+
+    <!--Versoek-->
+    <string name="request_title">Ikoonversoek</string>
+    <string name="request_terms">Voordat u met die ikoonversoek voortgaan, moet u daarop let dat u versoek volgens ons riglyne hersien sal word. Premieversoeke kan dalk vinniger verwerk word.</string>
+    <string name="request_not_selected">Kies programme om aan te vra</string>
+    <string name="request_not_requested">Nie aangevra nie</string>
+    <string name="request_already_requested">Reeds aangevra</string>
+    <string name="request_not_available">Kan nie aangevra word nie</string>
+    <string name="request_building">Bouversoek …</string>
+    <string name="request_pacific_sending">Stuur tans versoek na Pacific Bestuurder …</string>
+    <string name="request_pacific_error">Fout het voorgekom tydens die stuur van \'n versoek na Pacific Manager. Fout is %s</string>
+    <string name="request_pacific_success">Versoek is suksesvol aan Pacific Bestuurder gestuur</string>
+    <string name="request_custom_error">Fout het voorgekom tydens die stuur van \'n ikoonversoek. As hierdie fout voortduur, kontak die ontwikkelaar. %s</string>
+    <string name="request_custom_success">Ikoonversoek is suksesvol gestuur</string>
+    <string name="request_fetching_data">Haal tans jongste data …</string>
+    <string name="request_build_failed">Kan nie ikoonversoek bou nie</string>
+    <string name="request_appfilter_failed">Kan nie appfilter.xml lees nie</string>
+    <string name="request_requested">Jy het reeds hierdie ikoon versoek en kan dit nie weer versoek nie.</string>
+    <string name="request_requested_possible">Jy het reeds hierdie ikoon versoek. Is jy seker jy wil nog \'n versoek daaraan bestee?</string>
+    <string name="request_requested_button_cancel">Gaan terug</string>
+    <string name="request_requested_button_confirm">Kies in elk geval</string>
+    <string name="request_email_client">Kies die toepassing wat jy wil gebruik om die ikoonversoek te stuur</string>
+    <string name="request_app_disabled">Jy gebruik \'n ouer weergawe van hierdie ikoonpakket. Die gevraagde ikone kan in die nuutste weergawe ingesluit word. Dateer asseblief jou program op na die nuutste weergawe om ikone te versoek.</string>
+    <string name="connection_error_long">Kan nie data vanaf bediener laai nie. Gaan asseblief jou netwerkverbinding na.</string>
+    <string name="unable_to_load_config">\'n Fout het voorgekom tydens die haal of lees van data vanaf die bediener.</string>
+    <string name="request_limit">Jy kan slegs %d versoek(e) met gereelde versoeke maak.</string>
+    <string name="request_used">Jy het %d ikoon(e) versoek.</string>
+    <string name="request_limit_buy">Jy kan Premium-versoeke koop om meer ikone aan te vra.</string>
+    <string name="request_limit_reset">Ikoonversoeklimiet sal met elke opdatering teruggestel word.</string>
+
+    <!--Gereelde versoek-->
+    <string name="regular_request">Gereelde ikoonversoek</string>
+    <string name="regular_request_desc">Kry jou ikoon versoek, en die ontwikkelaar sal probeer om ikone in te sluit wat jy versoek het.</string>
+    <string name="regular_request_count">Totaal\n%d versoek</string>
+    <string name="regular_request_used">Gebruik\n%d versoek</string>
+    <string name="regular_request_available">Beskikbaar\n%d versoek</string>
+
+    <!--Premium-versoek-->
+    <string name="premium_request">Premium-ikoonversoek</string>
+    <string name="premium_request_no_internet">Maak seker dat jou foon aan die internet gekoppel is voordat jy \'n premieversoek stuur</string>
+    <string name="premium_request_desc">Premium-ikoonversoek is \'n betaal-tot-versoek. Jy kan jou aangevraagde programme vinniger kry deur \'n premium-ikoonversoek te gebruik.</string>
+    <string name="premium_request_buy">Koop</string>
+    <string name="premium_request_count">Totaal\n%d versoek</string>
+    <string name="premium_request_used">Gebruik\n%d versoek</string>
+    <string name="premium_request_available">Beskikbaar\n%d versoek</string>
+    <string name="premium_request_already_purchased">Jy het nog %d premieversoek. U moet hulle almal gebruik voordat u weer \'n premieversoekpakket koop.</string>
+    <string name="premium_request_limit">Jy het net %d premieversoek(e),</string>
+    <string name="premium_request_limit1">maar jy het %d toepassing(s) gekies. \n\nJy moet al jou premieversoeke gebruik voordat jy weer gewone versoeke gebruik.</string>
+    <string name="premium_request_consume_failed">Kan nie Premium Request gebruik nie, maak seker jy het \'n stabiele internetverbinding en probeer weer. Gaan na Instellings om Premium-versoeke te herbou.</string>
+    <string name="premium_request_rebuilding">Herbou Premium-versoek …</string>
+    <string name="premium_request_rebuilding_empty">Jy het nie \'n Premium-versoek gedoen nie</string>
+    <string name="premium_request_exist">Jy het steeds \'n Premium Icon Request-pakket. Maak Instellings oop, kies \"Herstel aankope\" om dit te herstel.</string>
+    <string name="premium_request_required">Jy moet \'n premium ikoonversoekpakket koop om ikoonversoeke te maak</string>
+
+    <!--Wallpapers-->
+    <string name="wallpaper_new_added">Nuwe plakpapier</string>
+    <string name="wallpaper_already_downloaded">Muurpapier is reeds afgelaai</string>
+    <string name="wallpaper_downloading">Laai tans muurpapier af …</string>
+    <string name="wallpaper_download_failed">Kan nie muurpapier aflaai nie</string>
+    <string name="wallpaper_download_success">Muurpapier aflaai suksesvol</string>
+    <string name="wallpaper_loading">Laai tans muurpapier …</string>
+    <string name="wallpaper_applying">Pas tans muurpapier toe …</string>
+    <string name="wallpaper_applied">Muurpapier toegepas</string>
+    <string name="wallpaper_apply_failed">Kan nie muurpapier toepas nie</string>
+    <string name="wallpaper_apply_cancelled">Muurpapiertoepassing is gekanselleer</string>
+    <string name="connection_failed">Kan nie data van bediener af haal nie</string>
+    <string name="wallpaper_apply">Pas plakpapier toe</string>
+    <string name="wallpaper_save_to_device">Stoor plakpapier</string>
+
+    <!--Voorinstellings-->
+    <string name="presets_load_failed">Kan nie voorafinstellings laai nie</string>
+    <string name="presets_storage_permission">Bergingtoestemming is nodig om die voorskou-muurpapier te laai</string>
+    <string name="presets_required_apps">Vereiste programme om hierdie voorafinstellings te gebruik</string>
+    <string name="presets_required_apps_not_installed">Vereiste toepassings om die voorafinstelling te gebruik, is nie geïnstalleer nie. Installeer asseblief die ontbrekende vereiste programme en probeer weer.</string>
+
+    <!--Voorkeure-->
+    <string name="pref_data_header">Data en kas</string>
+    <string name="pref_data_cache">Vee kas uit</string>
+    <string name="pref_data_cache_desc">Verwyder prentkas uit jou berging, geskep wanneer \'n prent van hierdie toepassing gekies word, gemis toepassings versoek, en nadat wolkmuurpapier-kleinkiekies gelaai is.</string>
+    <string name="pref_data_cache_size">Kasgrootte: %s</string>
+    <string name="pref_data_cache_clear_dialog">Wil jy regtig kas skoonmaak?</string>
+    <string name="pref_data_cache_cleared">Kas is skoongemaak</string>
+    <string name="pref_data_request">Vee ikoonversoekdata uit</string>
+    <string name="pref_data_request_desc">Verwyder ikoonversoekdata wat geskep is nadat u gemiste toepassings vanaf ikoonversoek versoek het.</string>
+    <string name="pref_data_request_clear_dialog">Wil jy regtig ikoonversoekdata uitvee?</string>
+    <string name="pref_data_request_cleared">Ikoonversoekdata is skoongemaak</string>
+    <string name="pref_premium_request_header">Premium-ikoonversoek</string>
+    <string name="pref_premium_request_restore">Herstel aankope</string>
+    <string name="pref_premium_request_restore_desc">Herstel premiumversoekpakket nadat die ikoonpakket herinstalleer is</string>
+    <string name="pref_premium_request_restore_success">Premium-versoek is herstel</string>
+    <string name="pref_premium_request_restore_empty">Jy het geen gekoopte pakkette nie</string>
+    <string name="pref_premium_request_rebuild">Herbou Premium-ikoonversoek</string>
+    <string name="pref_premium_request_rebuild_desc">Versamel alle premium-ikoonversoekdata om dit weer te stuur</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">Donker Tema</string>
+    <string name="pref_theme_dark_desc">Gebruik donker kleur vir toepassingstema</string>
+    <string name="pref_notifications_header">Kennisgewings</string>
+    <string name="pref_notifications">Ontvang kennisgewings</string>
+    <string name="pref_wallpaper_header">Muurpapier</string>
+    <string name="pref_wallpaper_location">Muurpapier Stoor ligging</string>
+    <string name="pref_language_header">Taal</string>
+    <string name="pref_others_header">Ander</string>
+    <string name="pref_others_report_bugs">Rapporteer foute</string>
+    <string name="pref_others_changelog">Veranderlogboek</string>
+    <string name="pref_others_reset_tutorial">Stel handleiding terug</string>
+    <string name="pref_others_reset_tutorial_reset">Tutoriaal-terugstelling</string>
+
+    <!--Temas-->
+    <string name="theme_name_auto">Outo</string>
+    <string name="theme_name_light">Lig</string>
+    <string name="theme_name_dark">Donker</string>
+    <string name="theme_name_material_you">Materiaal Jy</string>
+
+    <!--Toestemming-->
+    <string name="permission_storage_denied">Bergingtoestemming benodig om muurpapier te stoor</string>
+    <string name="permission_notification_denied_1">Kennisgewingtoestemming is nodig om kennisgewings van die ontwikkelaar te ontvang</string>
+    <string name="permission_notification_denied_2">Aktiveer kennisgewings vanaf die programinstellings</string>
+
+    <!--Voorneme-->
+    <string name="app_client">Kies App</string>
+    <string name="no_email_app">Geen aansoek om e-pos te stuur nie</string>
+    <string name="no_browser">Geen toepassing om URL oop te maak nie</string>
+    <string name="intent_email_failed">Kan nie e-postoepassing wys nie</string>
+    <string name="intent_email_supported">Ondersteun</string>
+    <string name="intent_email_recommended">Aanbeveel</string>
+    <string name="intent_email_not_supported">Nie ondersteun nie</string>
+    <string name="intent_email_not_supported_message">Het \'n nie-ondersteunde e-poskliënt gekies, kies asseblief \'n ander e-poskliënt</string>
+
+    <!--Oor-->
+    <string name="about_contributors_title">Bydraers</string>
+
+    <!--Rapporteer foute-->
+    <string name="report_bugs_desc">Gee asseblief \'n beskrywing van die soort probleem wat jy wil rapporteer</string>
+    <string name="report_bugs_desc_hint">Beskrywing</string>
+    <string name="report_bugs_desc_empty">Gee asseblief \'n beskrywing</string>
+    <string name="report_bugs_building">Bou aktiwiteit lys …</string>
+    <string name="report_bugs_failed">Kan nie aktiwiteitslys bou nie</string>
+    <string name="report_bugs_send">Stuur verslag</string>
+
+    <!--Ondersteun ontwikkeling-->
+    <string name="donation_success">Dankie vir die skenking. Ek sal dit vir goed gebruik.</string>
+
+    <!--Crash Report-->
+    <string name="crash_report">Crash Report</string>
+    <string name="crash_report_message">Ongelukkig het %s omgeval. Kies Stuur verslag hieronder om die ontwikkelaar te help om die probleem op te los.</string>
+    <string name="crash_report_send">Stuur verslag</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Maak oop</string>
+    <string name="txt_close">Maak toe</string>
+
+    <string name="txt_new">Nuut</string>
+
+    <!--Inhoudbeskrywings vir skermlesers-->
+    <string name="icon_search_close_button_content_description">Maak die ikoonsoektog toe</string>
+    <string name="icon_request_submit_button_content_description">Dien \'n ikoonversoek in</string>
+    <string name="icon_list_content_description">Die lys van ikone wat in die ikoonpakket ingesluit is</string>
+    <string name="icon_search_list_content_description">Die lys ikone wat by die soekterm pas</string>
+    <string name="about_item_social_content_description">\'n Skakel na \'n aanlynprofiel van die skrywer van die ikoonpakket:</string>
+    <string name="share_icon_pack_button_content_description">Deel hierdie toepassing met iemand</string>
+
+    <!--Privaatheidsbeleid-->
+    <string name="privacy_policy">Privaatheidsbeleid</string>
+    <string name="privacy_policy_desc">Jou privaatheid is vir ons belangrik. Lees asseblief ons privaatheidsbeleid in About om te verstaan ​​hoe ons jou data hanteer.</string>
+
+    <!--Bepalings en voorwaardes-->
+    <string name="terms_conditions">Bepalings en voorwaardes</string>
+
+    <!--Versoek-->
+    <string name="request_limit_title">Gratis versoek limiet</string>
+    <string name="request_limit_content">Jy het %d gratis versoeke oor. Oorweeg dit om op te gradeer na premium vir onbeperkte versoeke.</string>
+    <string name="request_limit_reached">Gratis versoeklimiet bereik. Gradeer asseblief op na premium vir meer versoeke.</string>
+    <string name="request_limit_remaining">Jy kan nog %d ikone kies</string>
+
+    <!--App weergawe-->
+    <string name="version">Weergawe</string>
+	
+    <!--Pasgemaak-->
+    <string name="home_kustom_desc">Bypassende Weathers-komponente vir %s</string>
+    <string name="kustom_widgets">Widgets</string>
+    <string name="kustom_wallpapers">Wallpapers</string>
+    <string name="kustom_lockscreens">Sluitskerms</string>
+    <string name="kustom_komponents">Komponent</string>
+
+    <!--Versoek toestemmingdialoog-->
+    <string name="request_consent_title">Toestemming vir data-insameling</string>
+    <string name="request_consent_content">Om jou ikoonversoek te verwerk, moet ons inligting oor jou geïnstalleerde programme en toestelbesonderhede (soos skermafmetings en Android-weergawe) insamel. Dit help ons om ikone te ontwerp wat die beste vir jou toestel werk.\n\nJy kan ons Privaatheidsbeleid in Meer oor-afdeling nagaan vir meer inligting.</string>
+    <string name="request_consent_accept">AANVAAR</string>
+    <string name="request_consent_deny">WEEK</string>
+
+    <!--Navigasie styl-->
+    <string name="pref_navigation_style">Navigasiebalk</string>
+
+    <!--Soek-->
+    <string name="search_apps">Soek toepassings</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Τίτλος Splash Screen-->
+    <string name="splash_screen_title">CandyBar Dashboard</string>
+
+    <!--Προβολή πλοήγησης-->
+    <string name="navigation_view_home">Σπίτι</string>
+    <string name="navigation_view_apply">Εφαρμόζω</string>
+    <string name="navigation_view_icons">εικονίδια</string>
+    <string name="navigation_view_request">Αίτημα εικονιδίου</string>
+    <string name="navigation_view_wallpapers">Ταπετσαρίες</string>
+    <string name="navigation_view_kustom">Εθιμο</string>
+    <string name="navigation_view_settings">Ρυθμίσεις</string>
+    <string name="navigation_view_faqs">Συχνές ερωτήσεις</string>
+    <string name="navigation_view_about">Για</string>
+    <string name="navigation_view_donate">Υποστήριξη Ανάπτυξης</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Ρυθμίσεις Muzei</string>
+    <string name="minute">Λεπτό</string>
+    <string name="hour">Ωρα</string>
+    <string name="save_setting">Εκτός</string>
+    <string name="muzei_refresh_duration">Διάρκεια ανανέωσης</string>
+    <string name="muzei_wifi_only">Ανανέωση μόνο από Wi-Fi</string>
+    <string name="muzei_downloaded_only">Φόρτωση μόνο ληφθέντων ταπετσαριών</string>
+    <string name="muzei_settings_ignored">Το Icon Pack δεν περιέχει ταπετσαρίες, οι ρυθμίσεις αγνοήθηκαν.</string>
+    <string name="muzei_settings_saved">Οι ρυθμίσεις αποθηκεύτηκαν</string>
+
+    <!--Μενού-->
+    <string name="menu_search">Ερευνα</string>
+    <string name="menu_save">Αποθήκευση στη Συσκευή</string>
+    <string name="menu_select_all">Επιλέξτε Όλα</string>
+    <string name="menu_delete">Διαγράφω</string>
+
+    <string name="menu_wallpaper_crop">Περικοπή ταπετσαρίας</string>
+    <string name="menu_apply_homescreen">Αρχική οθόνη</string>
+    <string name="menu_apply_lockscreen">Οθόνη κλειδώματος</string>
+    <string name="menu_apply_homescreen_lockscreen">Αρχική οθόνη και οθόνη κλειδώματος</string>
+
+    <!--Διάλογος-->
+    <string name="open">Ανοιχτό</string>
+    <string name="close">Κοντά</string>
+    <string name="clear">Σαφής</string>
+    <string name="ok">ΕΝΤΑΞΕΙ</string>
+    <string name="install">Εγκαθιστώ</string>
+    <string name="donate">Προσφέρω</string>
+    <string name="update">Εκσυγχρονίζω</string>
+
+    <string name="search_noresult">Δεν βρέθηκε αποτέλεσμα για \"%s\"</string>
+    <string name="search_faqs">Ερώτηση ή απάντηση</string>
+    <string name="search_icon">Όνομα εικονιδίου</string>
+    <string name="search_wallpapers">Όνομα ταπετσαρίας</string>
+
+    <!--Εκσυγχρονίζω-->
+    <string name="checking_for_update">Έλεγχος για ενημέρωση…</string>
+    <string name="update_available">Διαθέσιμη ενημέρωση!</string>
+    <string name="no_update_available">Χρησιμοποιείτε την πιο πρόσφατη έκδοση!</string>
+
+    <!--Έκδοση Changelog-->
+    <string name="changelog_version">Εκδοχή</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Δεν είναι δυνατή η φόρτωση προϊόντων αγοράς εντός εφαρμογής</string>
+
+    <!--Αδεια-->
+    <string name="license_checking">Έλεγχος άδειας…</string>
+    <string name="license_check">Έλεγχος άδειας χρήσης</string>
+    <string name="license_check_success">Επιτυχής έλεγχος άδειας. Σας ευχαριστούμε που κατεβάσατε την εφαρμογή από το Play Store.</string>
+    <string name="license_check_failed">Ο έλεγχος άδειας απέτυχε. δεν κατεβάσατε την εφαρμογή από το Play Store. Δεν θα μπορείτε να το χρησιμοποιήσετε.</string>
+    <string name="license_check_retry">Δεν είναι δυνατός ο έλεγχος της άδειας, δοκιμάστε ξανά σε λίγα λεπτά.</string>
+
+    <!--Έλεγχος εγκατάστασης Play Store-->
+    <string name="playstore_check">Έλεγχος Play Store</string>
+    <string name="playstore_check_success">Σας ευχαριστούμε που εγκαταστήσατε την εφαρμογή από το Google Play Store. Απολαμβάνω!</string>
+    <string name="playstore_check_failed">Φαίνεται ότι έχετε εγκαταστήσει αυτό το πακέτο εικονιδίων εκτός του Google Play Store.
+        Δεν θα μπορείτε να το χρησιμοποιήσετε.</string>
+
+    <!--Μερίδιο-->
+    <string name="share_app_title">Γιο! Ρίξτε μια ματιά στο %s</string>
+    <string name="share_app_body">Ρίξτε μια ματιά στο %1$s Icon Pack στο Play Store: %2$s</string>
+
+    <!--Πατήστε Εισαγωγή-->
+    <string name="tap_intro_home_navigation">Συρτάρι πλοήγησης</string>
+    <string name="tap_intro_home_navigation_desc">Πατήστε εδώ ή σύρετε από το αριστερό άκρο της οθόνης για να ανοίξετε το συρτάρι πλοήγησης</string>
+    <string name="tap_intro_home_apply">Εφαρμογή πακέτου εικονιδίων</string>
+    <string name="tap_intro_home_apply_desc">Πατήστε εδώ για να εφαρμόσετε το %s στην τρέχουσα εφαρμογή εκκίνησης. Πατήστε παρατεταμένα για εφαρμογή σε άλλους εκτοξευτές.</string>
+    <string name="tap_intro_icons_search">Ερευνα</string>
+    <string name="tap_intro_icons_search_desc">Πατήστε εδώ για να αναζητήσετε ένα εικονίδιο</string>
+    <string name="tap_intro_request_search">Αναζήτηση εφαρμογών που λείπουν</string>
+    <string name="tap_intro_request_search_desc">Πατήστε εδώ για αναζήτηση μέσω των εγκατεστημένων εφαρμογών σας για εικονίδια που λείπουν για Επιλεγμένο αίτημα εικονιδίων</string>
+    <string name="tap_intro_request_select">Επιλέξτε χαμένη εφαρμογή</string>
+    <string name="tap_intro_request_select_desc">Πατήστε εδώ για να επιλέξετε χαμένη εφαρμογή για αίτημα εικονιδίου</string>
+    <string name="tap_intro_request_select_all">Επιλέξτε όλες τις εφαρμογές που χάσατε</string>
+    <string name="tap_intro_request_select_all_desc">Πατήστε εδώ για να επιλέξετε όλες τις χαμένες εφαρμογές για αίτημα εικονιδίων</string>
+    <string name="tap_intro_request_send">Αποστολή αιτήματος εικονιδίου</string>
+    <string name="tap_intro_request_send_desc">Πατήστε εδώ για να στείλετε επιλεγμένες εφαρμογές που χάθηκαν</string>
+    <string name="tap_intro_request_premium">Αίτημα εικονιδίου Premium</string>
+    <string name="tap_intro_request_premium_desc">Πατήστε εδώ για να αγοράσετε το πακέτο αιτήματος εικονιδίων premium, με ένα αίτημα εικονιδίου premium, μπορείτε να λάβετε τις εφαρμογές που ζητήσατε πιο γρήγορα.</string>
+    <string name="tap_intro_wallpapers_option">Επιλογές ταπετσαρίας</string>
+    <string name="tap_intro_wallpapers_option_desc">Πατήστε παρατεταμένα εδώ για να εμφανιστούν οι επιλογές ταπετσαρίας. Το %s εφαρμόζει ταπετσαρία.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">λήψη ή</string>
+    <string name="tap_intro_wallpapers_preview">Προεπισκόπηση ταπετσαρίας</string>
+    <string name="tap_intro_wallpapers_preview_desc">Πατήστε εδώ για προεπισκόπηση του πλήρους μεγέθους της ταπετσαρίας</string>
+    <string name="tap_intro_wallpaper_preview_save">Αποθήκευση ταπετσαρίας</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Πατήστε εδώ για λήψη και αποθήκευση ταπετσαρίας στη συσκευή σας, ώστε να μπορείτε να τη χρησιμοποιήσετε αργότερα</string>
+    <string name="tap_intro_wallpaper_preview_apply">Εφαρμόστε ταπετσαρία</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Πατήστε εδώ για να ορίσετε την ταπετσαρία ως φόντο της αρχικής οθόνης</string>
+
+    <!--Σπίτι-->
+    <string name="home_more_apps_header">Περισσότερες εφαρμογές</string>
+    <string name="home_more_apps">Ελέγξτε Περισσότερα πακέτο εικονιδίων στο Google Play Store</string>
+    <string name="home_rate">Τιμή</string>
+    <string name="home_share">Μερίδιο</string>
+    <string name="home_check_update">Εκσυγχρονίζω</string>
+    <string name="home_apply_icon_pack">Εφαρμογή %s</string>
+    <string name="home_donate">Προσφέρω</string>
+    <string name="home_donate_desc">Ενθαρρύνετε τον προγραμματιστή να δημιουργήσει περισσότερα εικονίδια</string>
+    <string name="home_icons">εικονίδια</string>
+    <string name="home_icon_dimension">Διάσταση εικονιδίου %s pixel</string>
+    <string name="home_loud_wallpapers">%d ταπετσαρίες σύννεφων</string>
+    <string name="home_muzei">Ζωντανή ταπετσαρία Muzei</string>
+    <string name="home_icon_request_installed_apps">Σύνολο\n%d εγκατεστημένες εφαρμογές</string>
+    <string name="home_icon_request_themed_apps">Θεματικές\n%d εφαρμογές</string>
+    <string name="home_icon_request_missed_apps">Χάθηκαν\n%d εφαρμογές</string>
+
+    <!--Εφαρμόζω-->
+    <string name="apply_installed">Εγκατεστημένο Launcher</string>
+    <string name="apply_installed_launchers">Εγκατεστημένα προγράμματα εκκίνησης</string>
+    <string name="apply_supported">Υποστηριζόμενα προγράμματα εκκίνησης</string>
+    <string name="apply_launcher_not_installed_title">%μικρό</string>
+    <string name="apply_launcher_not_installed_message">Το %s Launcher δεν είναι εγκατεστημένο. Μπορείτε να το βρείτε και να το εγκαταστήσετε από το Amazon AppStore ή από τα Resources &amp; Stores που προτιμάτε.</string>
+    <string name="apply_manual">Το %1$s Launcher δεν υποστηρίζει την άμεση εφαρμογή, αλλά μπορείτε να εφαρμόσετε το %2$s μη αυτόματα από τις ρυθμίσεις του προγράμματος εκκίνησης.</string>
+    <string name="apply_manual_kvaesitso">Το Kvaesitso δεν υποστηρίζει την άμεση εφαρμογή, αλλά μπορείτε να ακολουθήσετε αυτά τα βήματα:</string>
+    <string name="apply_manual_kvaesitso_step_1">Ανοίξτε τις ρυθμίσεις του Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">Πατήστε \"Πλέγμα και εικονίδια\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Πατήστε στο \"Πακέτο εικονιδίων\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Επιλέξτε %s από τη λίστα</string>
+    <string name="apply_manual_kvaesitso_step_5">Πατήστε το εικονίδιο του πινέλου για να ενεργοποιήσετε ή να απενεργοποιήσετε το σχήμα φόντου</string>
+    <string name="apply_manual_kiss">Το KISS δεν υποστηρίζει την άμεση εφαρμογή, αλλά μπορείτε να ακολουθήσετε αυτά τα βήματα:</string>
+    <string name="apply_manual_kiss_step_1">Ανοίξτε τις ρυθμίσεις KISS</string>
+    <string name="apply_manual_kiss_step_2">Πατήστε \"Διεπαφή χρήστη\"</string>
+    <string name="apply_manual_kiss_step_3">Πατήστε στο \"Πακέτο εικονιδίων\"</string>
+    <string name="apply_manual_kiss_step_4">Επιλέξτε %s από τη λίστα</string>
+    <string name="apply_manual_samsung_oneui">Το %1$s δεν υποστηρίζει την άμεση εφαρμογή, αλλά ξεκινώντας από το %2$s, μπορείτε να εφαρμόσετε εικονίδια με μια συνοδευτική εφαρμογή.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Η τρέχουσα έκδοση του %s είναι πολύ παλιά. Ενημερώστε σε Android 12 ή νεότερη έκδοση για να μπορείτε να εφαρμόζετε απευθείας τα εικονίδια. Εναλλακτικά, μπορείτε να εγκαταστήσετε διαφορετικό πρόγραμμα εκκίνησης.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Ανοίξτε το %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Κατεβάστε την εφαρμογή %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Πατήστε \"Εικονίδιο\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Πατήστε \"Δημιουργία νέου\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Πατήστε το μπλε κουμπί \"Iconpack\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">Επιλέξτε %s από τη λίστα</string>
+    <string name="apply_manual_samsung_oneui_step_7">Επαναλάβετε αυτά τα βήματα κάθε φορά που ενημερώνετε το %s, καθώς τα νέα εικονίδια δεν θα αντιστοιχιστούν αυτόματα.</string>
+    <string name="apply_manual_hios">Το πρόγραμμα εκκίνησης HiOS δεν υποστηρίζει άμεση εφαρμογή, αλλά μπορείτε να ακολουθήσετε τα εξής βήματα:</string>
+    <string name="apply_manual_hios_step_1">Ανοίξτε τις \"Ρυθμίσεις\"</string>
+    <string name="apply_manual_hios_step_2">Πατήστε \"Θέμα και οθόνη κλειδώματος\"</string>
+    <string name="apply_manual_hios_step_3">Πατήστε \"Το θέμα μου\"</string>
+    <string name="apply_manual_hios_step_4">Πατήστε \"Πακέτο εικονιδίων\"</string>
+    <string name="apply_manual_hios_step_5">Πατήστε %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Πατήστε παρατεταμένα την αρχική σας οθόνη</string>
+    <string name="apply_manual_oxygen_os_step_2">Πατήστε \"Ρυθμίσεις αρχικής σελίδας\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Πατήστε \"Πακέτο εικονιδίων\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Πατήστε %s</string>
+    <string name="apply_manual_color_os_step_1">Πατήστε παρατεταμένα την αρχική σας οθόνη</string>
+    <string name="apply_manual_color_os_step_2">Πατήστε \"Εικονίδια\"</string>
+    <string name="apply_manual_color_os_step_3">Κάντε κύλιση προς τα δεξιά του κουμπιού \"Προσαρμοσμένο\" (αυτή είναι μια λίστα με δυνατότητα κύλισης!)</string>
+    <string name="apply_manual_color_os_step_4">Πατήστε %s</string>
+    <string name="apply_manual_before">Αυτή η έκδοση του Before Launcher δεν υποστηρίζει ακόμη την απευθείας εφαρμογή εικονιδίων. Αντίθετα, ακολουθήστε τα παρακάτω βήματα:</string>
+    <string name="apply_manual_before_step_1">Σύρετε προς τα αριστερά στην αρχική οθόνη</string>
+    <string name="apply_manual_before_step_2">Πατήστε \"Ρυθμίσεις\"</string>
+    <string name="apply_manual_before_step_3">Πατήστε \"Στυλ και θέματα\"</string>
+    <string name="apply_manual_before_step_4">Πατήστε \"Στιλ και πακέτα εικονιδίων\"</string>
+    <string name="apply_manual_before_step_5">Πατήστε %s</string>
+    <string name="apply_manual_nothing_step_1">Ανοίξτε τις \"Ρυθμίσεις\"</string>
+    <string name="apply_manual_nothing_step_2">Πατήστε \"Προσαρμογή\"</string>
+    <string name="apply_manual_nothing_step_3">Πατήστε \"Πακέτο εικονιδίων\"</string>
+    <string name="apply_manual_nothing_step_4">Πατήστε %s</string>
+    <string name="apply_launch_failed">Δεν είναι δυνατή η εκκίνηση των ρυθμίσεων %s</string>
+    <string name="apply_launcher_not_installed">Το %s Launcher δεν είναι εγκατεστημένο. Θέλετε να ανοίξετε το Google Play Store για να το κατεβάσετε και να το εγκαταστήσετε;</string>
+    <string name="apply_launcher_not_installable">Το %s Launcher δεν είναι εγκατεστημένο. Δοκιμάστε ξανά μετά την εγκατάσταση του προγράμματος εκκίνησης.</string>
+    <string name="apply_cmtheme_not_available">Το CM Theme Manager δεν είναι διαθέσιμο σε αυτήν τη συσκευή</string>
+    <string name="apply_cmtheme_failed">Δεν είναι δυνατή η εκκίνηση του CM Theme Manager, μπορείτε να δοκιμάσετε να εφαρμόσετε το Icon Pack μη αυτόματα από τις Ρυθμίσεις.</string>
+    <string name="apply_lg_home">Για να εφαρμόσετε αυτό το Icon Pack, ανοίξτε τις Ρυθμίσεις - Οθόνη - Αρχική οθόνη - Θέμα</string>
+    <string name="apply_lg_home_not_available">Το LG Home δεν είναι διαθέσιμο σε αυτήν τη συσκευή</string>
+    <string name="apply_lg_home_failed">Δεν είναι δυνατή η εκκίνηση των ρυθμίσεων LG Home, μπορείτε να δοκιμάσετε να εφαρμόσετε το Icon Pack με μη αυτόματο τρόπο από τις Ρυθμίσεις.</string>
+    <string name="apply_lg_home_nougat">Το LG Home με Android Nougat δεν υποστηρίζει πλέον το Icon Pack. Χρειάζεστε έναν προσαρμοσμένο εκκινητή για να χρησιμοποιήσετε το Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">Το %s Launcher δεν υποστηρίζει κανένα πακέτο εικονιδίων, επομένως δεν μπορείτε να χρησιμοποιήσετε αυτό το πακέτο εικονιδίων με αυτόν τον εκκινητή. Μπορείτε να δοκιμάσετε μια εφαρμογή τρίτου μέρους για να χρησιμοποιήσετε αυτό το πακέτο εικονιδίων στη λειτουργία εκκίνησης %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Το πρόγραμμα εκκίνησης %1$s δεν είναι συμβατό με το %2$s, αλλά μπορεί να είναι συμβατό με νεότερες εκδόσεις</string>
+
+    <!--εικονίδια-->
+    <string name="icons_load_failed">Δεν είναι δυνατή η φόρτωση εικονιδίων</string>
+    <string name="icon_shape">Σχήμα εικονιδίου</string>
+    <string name="items_selected">Επιλέχθηκε %d</string>
+
+    <!--Αίτηση-->
+    <string name="request_title">Αίτημα εικονιδίου</string>
+    <string name="request_terms">Πριν προχωρήσετε με το αίτημα εικονιδίων, σημειώστε ότι το αίτημά σας θα εξεταστεί σύμφωνα με τις οδηγίες μας. Τα αιτήματα Premium ενδέχεται να διεκπεραιωθούν ταχύτερα.</string>
+    <string name="request_not_selected">Επιλέξτε εφαρμογές για αίτημα</string>
+    <string name="request_not_requested">Δεν ζητήθηκε</string>
+    <string name="request_already_requested">Ζητήθηκε ήδη</string>
+    <string name="request_not_available">Δεν μπορεί να ζητηθεί</string>
+    <string name="request_building">Αίτημα κατασκευής…</string>
+    <string name="request_pacific_sending">Αποστολή αιτήματος στο Pacific Manager...</string>
+    <string name="request_pacific_error">Παρουσιάστηκε σφάλμα κατά την αποστολή ενός αιτήματος στο Pacific Manager. Το σφάλμα είναι %s</string>
+    <string name="request_pacific_success">Το αίτημα εστάλη με επιτυχία στον Pacific Manager</string>
+    <string name="request_custom_error">Παρουσιάστηκε σφάλμα κατά την αποστολή ενός αιτήματος εικονιδίου. Εάν αυτό το σφάλμα παραμένει, επικοινωνήστε με τον προγραμματιστή. %μικρό</string>
+    <string name="request_custom_success">Το αίτημα για εικονίδιο στάλθηκε με επιτυχία</string>
+    <string name="request_fetching_data">Ανάκτηση πιο πρόσφατων δεδομένων…</string>
+    <string name="request_build_failed">Δεν είναι δυνατή η δημιουργία αιτήματος εικονιδίου</string>
+    <string name="request_appfilter_failed">Δεν είναι δυνατή η ανάγνωση του appfilter.xml</string>
+    <string name="request_requested">Έχετε ήδη ζητήσει αυτό το εικονίδιο και δεν μπορείτε να το ζητήσετε ξανά.</string>
+    <string name="request_requested_possible">Έχετε ήδη ζητήσει αυτό το εικονίδιο. Είστε βέβαιοι ότι θέλετε να δαπανήσετε άλλο ένα αίτημα σε αυτό;</string>
+    <string name="request_requested_button_cancel">Πάω πίσω</string>
+    <string name="request_requested_button_confirm">Επιλέξτε ούτως ή άλλως</string>
+    <string name="request_email_client">Επιλέξτε την εφαρμογή που θέλετε να χρησιμοποιήσετε για να στείλετε το αίτημα εικονιδίου</string>
+    <string name="request_app_disabled">Χρησιμοποιείτε μια παλαιότερη έκδοση αυτού του πακέτου εικονιδίων. Τα εικονίδια που ζητήσατε ενδέχεται να συμπεριληφθούν στην πιο πρόσφατη έκδοση. Ενημερώστε την εφαρμογή σας στην πιο πρόσφατη έκδοση για να ζητήσετε εικονίδια.</string>
+    <string name="connection_error_long">Δεν είναι δυνατή η φόρτωση δεδομένων από τον διακομιστή. Ελέγξτε τη σύνδεσή σας στο δίκτυο.</string>
+    <string name="unable_to_load_config">Παρουσιάστηκε σφάλμα κατά την ανάκτηση ή την ανάγνωση δεδομένων από τον διακομιστή.</string>
+    <string name="request_limit">Μπορείτε να υποβάλετε %d αιτήματα μόνο με κανονικό αίτημα.</string>
+    <string name="request_used">Έχετε ζητήσει %d εικονίδιο(α).</string>
+    <string name="request_limit_buy">Μπορείτε να αγοράσετε Αιτήματα Premium για να ζητήσετε περισσότερα εικονίδια.</string>
+    <string name="request_limit_reset">Το όριο αιτημάτων εικονιδίων θα επαναφέρεται σε κάθε ενημέρωση.</string>
+
+    <!--Τακτικό αίτημα-->
+    <string name="regular_request">Κανονικό αίτημα εικονιδίων</string>
+    <string name="regular_request_desc">Ζητήστε το εικονίδιο σας και ο προγραμματιστής θα προσπαθήσει να συμπεριλάβει τα εικονίδια που ζητήσατε.</string>
+    <string name="regular_request_count">Σύνολο\n%d αίτημα</string>
+    <string name="regular_request_used">Χρησιμοποιήθηκε\n%d αίτημα</string>
+    <string name="regular_request_available">Διαθέσιμο\n%d αίτημα</string>
+
+    <!--Αίτημα Premium-->
+    <string name="premium_request">Αίτημα για εικονίδιο Premium</string>
+    <string name="premium_request_no_internet">Βεβαιωθείτε ότι το τηλέφωνό σας είναι συνδεδεμένο στο διαδίκτυο πριν στείλετε ένα αίτημα premium</string>
+    <string name="premium_request_desc">Το αίτημα για εικονίδιο Premium είναι αίτημα πληρωμής. Μπορείτε να λάβετε τις εφαρμογές που ζητήσατε πιο γρήγορα χρησιμοποιώντας ένα αίτημα εικονιδίου premium.</string>
+    <string name="premium_request_buy">Αγορά</string>
+    <string name="premium_request_count">Σύνολο\n%d αίτημα</string>
+    <string name="premium_request_used">Χρησιμοποιήθηκε\n%d αίτημα</string>
+    <string name="premium_request_available">Διαθέσιμο\n%d αίτημα</string>
+    <string name="premium_request_already_purchased">Έχετε ακόμα %d αίτημα premium. Πρέπει να τα χρησιμοποιήσετε όλα πριν αγοράσετε ξανά ένα πακέτο αιτήματος premium.</string>
+    <string name="premium_request_limit">Έχετε μόνο %d αιτήματα premium,</string>
+    <string name="premium_request_limit1">αλλά επιλέξατε %d εφαρμογή(ες). \n\nΠρέπει να χρησιμοποιήσετε όλα τα αιτήματα premium πριν χρησιμοποιήσετε ξανά το κανονικό αίτημα.</string>
+    <string name="premium_request_consume_failed">Δεν είναι δυνατή η χρήση του αιτήματος Premium, βεβαιωθείτε ότι έχετε σταθερή σύνδεση στο διαδίκτυο και δοκιμάστε ξανά. Μεταβείτε στις Ρυθμίσεις για να δημιουργήσετε εκ νέου αιτήματα Premium.</string>
+    <string name="premium_request_rebuilding">Ανακατασκευή αιτήματος Premium…</string>
+    <string name="premium_request_rebuilding_empty">Δεν έχετε υποβάλει αίτημα Premium</string>
+    <string name="premium_request_exist">Έχετε ακόμα ένα πακέτο αιτήματος εικονιδίου Premium. Ανοίξτε τις Ρυθμίσεις, επιλέξτε \"Επαναφορά αγορών\" για να τις επαναφέρετε.</string>
+    <string name="premium_request_required">Πρέπει να αγοράσετε ένα πακέτο αιτήματος εικονιδίων premium για να κάνετε αιτήματα εικονιδίων</string>
+
+    <!--Ταπετσαρίες-->
+    <string name="wallpaper_new_added">Νέα ταπετσαρία</string>
+    <string name="wallpaper_already_downloaded">Η ταπετσαρία έχει ήδη ληφθεί</string>
+    <string name="wallpaper_downloading">Λήψη ταπετσαρίας…</string>
+    <string name="wallpaper_download_failed">Δεν είναι δυνατή η λήψη της ταπετσαρίας</string>
+    <string name="wallpaper_download_success">Επιτυχής λήψη ταπετσαρίας</string>
+    <string name="wallpaper_loading">Φόρτωση ταπετσαρίας…</string>
+    <string name="wallpaper_applying">Εφαρμογή ταπετσαρίας…</string>
+    <string name="wallpaper_applied">Εφαρμόστηκε ταπετσαρία</string>
+    <string name="wallpaper_apply_failed">Δεν είναι δυνατή η εφαρμογή ταπετσαρίας</string>
+    <string name="wallpaper_apply_cancelled">Η εφαρμογή ταπετσαρίας ακυρώθηκε</string>
+    <string name="connection_failed">Δεν είναι δυνατή η ανάκτηση δεδομένων από τον διακομιστή</string>
+    <string name="wallpaper_apply">Εφαρμόστε ταπετσαρία</string>
+    <string name="wallpaper_save_to_device">Αποθήκευση ταπετσαρίας</string>
+
+    <!--Προεπιλογές-->
+    <string name="presets_load_failed">Δεν είναι δυνατή η φόρτωση προεπιλογών</string>
+    <string name="presets_storage_permission">Απαιτείται άδεια αποθήκευσης για τη φόρτωση της ταπετσαρίας προεπισκόπησης</string>
+    <string name="presets_required_apps">Απαιτούμενες εφαρμογές για τη χρήση αυτών των προεπιλογών</string>
+    <string name="presets_required_apps_not_installed">Οι εφαρμογές που απαιτούνται για τη χρήση της προεπιλογής δεν έχουν εγκατασταθεί. Εγκαταστήστε τις απαιτούμενες εφαρμογές που λείπουν και δοκιμάστε ξανά.</string>
+
+    <!--Προτιμήσεις-->
+    <string name="pref_data_header">Δεδομένα &amp; προσωρινή μνήμη</string>
+    <string name="pref_data_cache">Εκκαθάριση προσωρινής μνήμης</string>
+    <string name="pref_data_cache_desc">Καταργήστε την κρυφή μνήμη εικόνων από τον αποθηκευτικό χώρο σας, που δημιουργήθηκε κατά την επιλογή μιας εικόνας από αυτήν την εφαρμογή, την υποβολή αιτημάτων για χαμένες εφαρμογές και μετά τη φόρτωση μικρογραφιών ταπετσαρίας cloud.</string>
+    <string name="pref_data_cache_size">Μέγεθος προσωρινής μνήμης: %s</string>
+    <string name="pref_data_cache_clear_dialog">Θέλετε πραγματικά να διαγράψετε την προσωρινή μνήμη;</string>
+    <string name="pref_data_cache_cleared">Η προσωρινή μνήμη διαγράφηκε</string>
+    <string name="pref_data_request">Διαγραφή δεδομένων αιτήματος εικονιδίου</string>
+    <string name="pref_data_request_desc">Καταργήστε τα δεδομένα αιτήματος εικονιδίων, που δημιουργήθηκαν μετά από αίτημα για χαμένες εφαρμογές από το αίτημα εικονιδίων.</string>
+    <string name="pref_data_request_clear_dialog">Θέλετε πραγματικά να διαγράψετε τα δεδομένα αιτήματος εικονιδίων;</string>
+    <string name="pref_data_request_cleared">Τα δεδομένα αιτήματος εικονιδίου διαγράφηκαν</string>
+    <string name="pref_premium_request_header">Αίτημα για εικονίδιο Premium</string>
+    <string name="pref_premium_request_restore">Επαναφορά αγορών</string>
+    <string name="pref_premium_request_restore_desc">Επαναφέρετε το πακέτο αιτήματος premium μετά την επανεγκατάσταση του πακέτου εικονιδίων</string>
+    <string name="pref_premium_request_restore_success">Αποκαταστάθηκε το αίτημα Premium</string>
+    <string name="pref_premium_request_restore_empty">Δεν έχετε αγοράσει πακέτα</string>
+    <string name="pref_premium_request_rebuild">Rebuild Premium Icon Request</string>
+    <string name="pref_premium_request_rebuild_desc">Συλλέξτε όλα τα δεδομένα αιτήματος εικονιδίων premium για να τα στείλετε ξανά</string>
+    <string name="pref_theme_header">Θέμα</string>
+    <string name="pref_theme_dark">Σκοτεινό θέμα</string>
+    <string name="pref_theme_dark_desc">Χρησιμοποιήστε σκούρο χρώμα για το θέμα της εφαρμογής</string>
+    <string name="pref_notifications_header">Ειδοποιήσεις</string>
+    <string name="pref_notifications">Λήψη Ειδοποιήσεων</string>
+    <string name="pref_wallpaper_header">Ταπετσαρία</string>
+    <string name="pref_wallpaper_location">Ταπετσαρία Αποθήκευση τοποθεσίας</string>
+    <string name="pref_language_header">Γλώσσα</string>
+    <string name="pref_others_header">Άλλοι</string>
+    <string name="pref_others_report_bugs">Αναφορά σφαλμάτων</string>
+    <string name="pref_others_changelog">Καταγραφή αλλαγών</string>
+    <string name="pref_others_reset_tutorial">Εκμάθηση επαναφοράς</string>
+    <string name="pref_others_reset_tutorial_reset">Επαναφορά φροντιστηρίου</string>
+
+    <!--Θέματα-->
+    <string name="theme_name_auto">Αυτο</string>
+    <string name="theme_name_light">Φως</string>
+    <string name="theme_name_dark">Σκοτάδι</string>
+    <string name="theme_name_material_you">Υλικό Εσείς</string>
+
+    <!--Αδεια-->
+    <string name="permission_storage_denied">Απαιτείται άδεια αποθήκευσης για την αποθήκευση ταπετσαρίας</string>
+    <string name="permission_notification_denied_1">Απαιτείται άδεια ειδοποίησης για τη λήψη ειδοποιήσεων από τον προγραμματιστή</string>
+    <string name="permission_notification_denied_2">Ενεργοποιήστε τις ειδοποιήσεις από τις ρυθμίσεις της εφαρμογής</string>
+
+    <!--Πρόθεση-->
+    <string name="app_client">Επιλέξτε App</string>
+    <string name="no_email_app">Δεν υπάρχει αίτηση για αποστολή email</string>
+    <string name="no_browser">Δεν υπάρχει εφαρμογή για άνοιγμα διεύθυνσης URL</string>
+    <string name="intent_email_failed">Δεν είναι δυνατή η εμφάνιση της εφαρμογής email</string>
+    <string name="intent_email_supported">Υποστηρίζεται</string>
+    <string name="intent_email_recommended">Συνιστάται</string>
+    <string name="intent_email_not_supported">Δεν υποστηρίζεται</string>
+    <string name="intent_email_not_supported_message">Επιλέχθηκε ένα μη υποστηριζόμενο πρόγραμμα-πελάτη ηλεκτρονικού ταχυδρομείου, επιλέξτε άλλο πρόγραμμα-πελάτη ηλεκτρονικού ταχυδρομείου</string>
+
+    <!--Για-->
+    <string name="about_contributors_title">Συνεισφέροντες</string>
+
+    <!--Αναφορά σφαλμάτων-->
+    <string name="report_bugs_desc">Δώστε μια περιγραφή του είδους του προβλήματος που θέλετε να αναφέρετε</string>
+    <string name="report_bugs_desc_hint">Περιγραφή</string>
+    <string name="report_bugs_desc_empty">Δώστε μια περιγραφή</string>
+    <string name="report_bugs_building">Κατάλογος οικοδομικών δραστηριοτήτων…</string>
+    <string name="report_bugs_failed">Δεν είναι δυνατή η δημιουργία λίστας δραστηριοτήτων</string>
+    <string name="report_bugs_send">Αποστολή αναφοράς</string>
+
+    <!--Υποστήριξη Ανάπτυξης-->
+    <string name="donation_success">Σας ευχαριστούμε για τη δωρεά. Θα το χρησιμοποιήσω για τα καλά.</string>
+
+    <!--Αναφορά σφαλμάτων-->
+    <string name="crash_report">Αναφορά σφαλμάτων</string>
+    <string name="crash_report_message">Δυστυχώς, το %s παρουσίασε σφάλμα. Επιλέξτε Αποστολή αναφοράς παρακάτω για να βοηθήσετε τον προγραμματιστή να διορθώσει το πρόβλημα.</string>
+    <string name="crash_report_send">Αποστολή αναφοράς</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Ανοιχτό</string>
+    <string name="txt_close">Κοντά</string>
+
+    <string name="txt_new">Νέος</string>
+
+    <!--Περιγραφές περιεχομένου για προγράμματα ανάγνωσης οθόνης-->
+    <string name="icon_search_close_button_content_description">Κλείστε την αναζήτηση εικονιδίων</string>
+    <string name="icon_request_submit_button_content_description">Υποβάλετε αίτημα για εικονίδιο</string>
+    <string name="icon_list_content_description">Η λίστα των εικονιδίων που περιλαμβάνονται στο πακέτο εικονιδίων</string>
+    <string name="icon_search_list_content_description">Η λίστα των εικονιδίων που ταιριάζουν με τον όρο αναζήτησης</string>
+    <string name="about_item_social_content_description">Ένας σύνδεσμος προς ένα διαδικτυακό προφίλ του συγγραφέα του πακέτου εικονιδίων:</string>
+    <string name="share_icon_pack_button_content_description">Μοιραστείτε αυτήν την εφαρμογή με κάποιον</string>
+
+    <!--Πολιτική Απορρήτου-->
+    <string name="privacy_policy">Πολιτική Απορρήτου</string>
+    <string name="privacy_policy_desc">Το απόρρητό σας είναι σημαντικό για εμάς. Διαβάστε την πολιτική απορρήτου μας στο Σχετικά για να κατανοήσετε πώς χειριζόμαστε τα δεδομένα σας.</string>
+
+    <!--Όροι & Προϋποθέσεις-->
+    <string name="terms_conditions">Όροι &amp; Προϋποθέσεις</string>
+
+    <!--Αίτηση-->
+    <string name="request_limit_title">Όριο δωρεάν αιτήματος</string>
+    <string name="request_limit_content">Σας απομένουν %d δωρεάν αιτήματα. Εξετάστε το ενδεχόμενο αναβάθμισης σε premium για απεριόριστα αιτήματα.</string>
+    <string name="request_limit_reached">Συμπληρώθηκε το όριο δωρεάν αιτημάτων. Κάντε αναβάθμιση σε premium για περισσότερα αιτήματα.</string>
+    <string name="request_limit_remaining">Μπορείτε να επιλέξετε %d ακόμη εικονίδια</string>
+
+    <!--Έκδοση εφαρμογής-->
+    <string name="version">Εκδοχή</string>
+	
+    <!--Εθιμο-->
+    <string name="home_kustom_desc">Αντιστοίχιση στοιχείων καιρού για %s</string>
+    <string name="kustom_widgets">Widgets</string>
+    <string name="kustom_wallpapers">Ταπετσαρίες</string>
+    <string name="kustom_lockscreens">Οθόνες κλειδώματος</string>
+    <string name="kustom_komponents">Συστατικό</string>
+
+    <!--Διάλογος αιτήματος συναίνεσης-->
+    <string name="request_consent_title">Συγκατάθεση συλλογής δεδομένων</string>
+    <string name="request_consent_content">Για να επεξεργαστούμε το αίτημά σας για εικονίδιο, πρέπει να συλλέξουμε πληροφορίες σχετικά με τις εγκατεστημένες εφαρμογές και τις λεπτομέρειες της συσκευής σας (όπως διαστάσεις οθόνης και έκδοση Android). Αυτό μας βοηθά να σχεδιάσουμε εικονίδια που λειτουργούν καλύτερα για τη συσκευή σας.\n\nΜπορείτε να ανατρέξετε στην Πολιτική απορρήτου στην ενότητα Πληροφορίες για περισσότερες πληροφορίες.</string>
+    <string name="request_consent_accept">ΑΠΟΔΕΧΟΜΑΙ</string>
+    <string name="request_consent_deny">ΑΡΝΟΥΜΑΙ</string>
+
+    <!--Στυλ πλοήγησης-->
+    <string name="pref_navigation_style">Γραμμή πλοήγησης</string>
+
+    <!--Ερευνα-->
+    <string name="search_apps">Αναζήτηση εφαρμογών</string>
+
+</resources>

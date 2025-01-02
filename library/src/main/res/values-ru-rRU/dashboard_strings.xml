@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Заголовок экрана-заставки-->
+    <string name="splash_screen_title">Панель управления CandyBar</string>
+
+    <!--Просмотр навигации-->
+    <string name="navigation_view_home">Дом</string>
+    <string name="navigation_view_apply">Применять</string>
+    <string name="navigation_view_icons">Иконки</string>
+    <string name="navigation_view_request">Запрос значка</string>
+    <string name="navigation_view_wallpapers">Обои</string>
+    <string name="navigation_view_kustom">Kustom</string>
+    <string name="navigation_view_settings">Настройки</string>
+    <string name="navigation_view_faqs">Часто задаваемые вопросы</string>
+    <string name="navigation_view_about">О</string>
+    <string name="navigation_view_donate">Поддержка развития</string>
+
+    <!--Музеи-->
+    <string name="muzei_settings">Настройки музея</string>
+    <string name="minute">минута</string>
+    <string name="hour">Час</string>
+    <string name="save_setting">Сохранять</string>
+    <string name="muzei_refresh_duration">Продолжительность обновления</string>
+    <string name="muzei_wifi_only">Обновить только через Wi-Fi</string>
+    <string name="muzei_downloaded_only">Загружать только загруженные обои</string>
+    <string name="muzei_settings_ignored">Icon Pack не содержит обоев, настройки игнорируются.</string>
+    <string name="muzei_settings_saved">Настройки сохранены</string>
+
+    <!--Меню-->
+    <string name="menu_search">Поиск</string>
+    <string name="menu_save">Сохранить на устройство</string>
+    <string name="menu_select_all">Выбрать все</string>
+    <string name="menu_delete">Удалить</string>
+
+    <string name="menu_wallpaper_crop">Обрезать обои</string>
+    <string name="menu_apply_homescreen">Главный экран</string>
+    <string name="menu_apply_lockscreen">Экран блокировки</string>
+    <string name="menu_apply_homescreen_lockscreen">Главный экран и экран блокировки</string>
+
+    <!--Диалог-->
+    <string name="open">Открыть</string>
+    <string name="close">Закрывать</string>
+    <string name="clear">Прозрачный</string>
+    <string name="ok">ХОРОШО</string>
+    <string name="install">Установить</string>
+    <string name="donate">Пожертвовать</string>
+    <string name="update">Обновлять</string>
+
+    <string name="search_noresult">По запросу «%s» результатов не найдено.</string>
+    <string name="search_faqs">Вопрос или ответ</string>
+    <string name="search_icon">Имя значка</string>
+    <string name="search_wallpapers">Название обоев</string>
+
+    <!--Обновлять-->
+    <string name="checking_for_update">Проверяем наличие обновлений…</string>
+    <string name="update_available">Доступно обновление!</string>
+    <string name="no_update_available">Вы используете последнюю версию!</string>
+
+    <!--Версия журнала изменений-->
+    <string name="changelog_version">Версия</string>
+
+    <!--InAppБиллинг-->
+    <string name="billing_load_product_failed">Невозможно загрузить продукты для покупок в приложении.</string>
+
+    <!--Лицензия-->
+    <string name="license_checking">Проверка лицензии…</string>
+    <string name="license_check">Проверка лицензии</string>
+    <string name="license_check_success">Проверка лицензии прошла успешно. Благодарим вас за загрузку приложения из Play Store.</string>
+    <string name="license_check_failed">Проверка лицензии не удалась; вы не загрузили приложение из Play Store. Вы не сможете его использовать.</string>
+    <string name="license_check_retry">Не удалось проверить лицензию. Повторите попытку через несколько минут.</string>
+
+    <!--Проверка установки Play Store-->
+    <string name="playstore_check">Проверка магазина Play</string>
+    <string name="playstore_check_success">Благодарим за установку приложения из Google Play Store. Наслаждаться!</string>
+    <string name="playstore_check_failed">Похоже, вы установили этот пакет значков не из Google Play Store.
+        Вы не сможете его использовать.</string>
+
+    <!--Делиться-->
+    <string name="share_app_title">Йо! Посмотреть %s</string>
+    <string name="share_app_body">Ознакомьтесь с пакетом значков %1$s в магазине Play Store: %2$s</string>
+
+    <!--Нажмите «Введение»-->
+    <string name="tap_intro_home_navigation">Навигационный ящик</string>
+    <string name="tap_intro_home_navigation_desc">Нажмите здесь или проведите пальцем от левого края экрана, чтобы открыть панель навигации.</string>
+    <string name="tap_intro_home_apply">Применить пакет значков</string>
+    <string name="tap_intro_home_apply_desc">Нажмите здесь, чтобы применить %s к вашей текущей программе запуска. Длительное нажатие, чтобы применить к другим программам запуска.</string>
+    <string name="tap_intro_icons_search">Поиск</string>
+    <string name="tap_intro_icons_search_desc">Нажмите здесь, чтобы найти значок</string>
+    <string name="tap_intro_request_search">Поиск недостающих приложений</string>
+    <string name="tap_intro_request_search_desc">Нажмите здесь, чтобы найти в установленных приложениях отсутствующие значки для запроса «Выбранный значок».</string>
+    <string name="tap_intro_request_select">Выберите пропущенное приложение</string>
+    <string name="tap_intro_request_select_desc">Нажмите здесь, чтобы выбрать пропущенное приложение для запроса значка</string>
+    <string name="tap_intro_request_select_all">Выбрать все пропущенные приложения</string>
+    <string name="tap_intro_request_select_all_desc">Нажмите здесь, чтобы выбрать все пропущенные приложения для запроса значков.</string>
+    <string name="tap_intro_request_send">Отправить запрос на значок</string>
+    <string name="tap_intro_request_send_desc">Нажмите здесь, чтобы отправить выбранные пропущенные приложения</string>
+    <string name="tap_intro_request_premium">Запрос премиум-значка</string>
+    <string name="tap_intro_request_premium_desc">Нажмите здесь, чтобы купить пакет запроса значков премиум-класса. С запросом значков премиум-класса вы сможете быстрее получить запрошенные приложения.</string>
+    <string name="tap_intro_wallpapers_option">Варианты обоев</string>
+    <string name="tap_intro_wallpapers_option_desc">Нажмите и удерживайте здесь, чтобы отобразить варианты обоев; %s наклеивает обои.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">скачать или</string>
+    <string name="tap_intro_wallpapers_preview">Предварительный просмотр обоев</string>
+    <string name="tap_intro_wallpapers_preview_desc">Нажмите здесь, чтобы просмотреть обои в полном размере.</string>
+    <string name="tap_intro_wallpaper_preview_save">Сохранить обои</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Нажмите здесь, чтобы загрузить и сохранить обои на свое устройство, чтобы использовать их позже.</string>
+    <string name="tap_intro_wallpaper_preview_apply">Нанесите обои</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Нажмите здесь, чтобы установить обои в качестве фона рабочего стола.</string>
+
+    <!--Дом-->
+    <string name="home_more_apps_header">Больше приложений</string>
+    <string name="home_more_apps">Проверьте больше пакетов значков в магазине Google Play</string>
+    <string name="home_rate">Ставка</string>
+    <string name="home_share">Делиться</string>
+    <string name="home_check_update">Обновлять</string>
+    <string name="home_apply_icon_pack">Применить %s</string>
+    <string name="home_donate">Пожертвовать</string>
+    <string name="home_donate_desc">Поощряйте разработчика создавать больше пакетов значков</string>
+    <string name="home_icons">Иконки</string>
+    <string name="home_icon_dimension">Размер значка %s пикселей</string>
+    <string name="home_loud_wallpapers">%d облачных обоев</string>
+    <string name="home_muzei">Музеи живые обои</string>
+    <string name="home_icon_request_installed_apps">Всего\n%d установленных приложений</string>
+    <string name="home_icon_request_themed_apps">Тематические\n%d приложения</string>
+    <string name="home_icon_request_missed_apps">Пропущенные\n%d приложения</string>
+
+    <!--Применять-->
+    <string name="apply_installed">Установленный лаунчер</string>
+    <string name="apply_installed_launchers">Установленные лаунчеры</string>
+    <string name="apply_supported">Поддерживаемые программы запуска</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">Программа запуска %s не установлена. Вы можете найти и установить его из Amazon AppStore или из предпочитаемых вами ресурсов и магазинов.</string>
+    <string name="apply_manual">Программа запуска %1$s не поддерживает прямое применение, но вы можете применить %2$s вручную из настроек программы запуска.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso не поддерживает прямое применение, но вы можете выполнить следующие действия:</string>
+    <string name="apply_manual_kvaesitso_step_1">Откройте настройки Кваэситсо.</string>
+    <string name="apply_manual_kvaesitso_step_2">Нажмите «Сетка и значки».</string>
+    <string name="apply_manual_kvaesitso_step_3">Нажмите на «Пакет значков».</string>
+    <string name="apply_manual_kvaesitso_step_4">Выберите %s из списка</string>
+    <string name="apply_manual_kvaesitso_step_5">Коснитесь значка кисти, чтобы включить или отключить фоновую форму.</string>
+    <string name="apply_manual_kiss">KISS не поддерживает прямое применение, но вы можете выполнить следующие действия:</string>
+    <string name="apply_manual_kiss_step_1">Открыть настройки ПОЦЕЛУЯ</string>
+    <string name="apply_manual_kiss_step_2">Нажмите «Пользовательский интерфейс».</string>
+    <string name="apply_manual_kiss_step_3">Нажмите на «Пакет значков».</string>
+    <string name="apply_manual_kiss_step_4">Выберите %s из списка</string>
+    <string name="apply_manual_samsung_oneui">%1$s не поддерживает прямое применение, но начиная с %2$s вы можете применять значки с помощью сопутствующего приложения.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Ваша текущая версия %s слишком старая. Пожалуйста, обновите Android 12 или новее, чтобы иметь возможность напрямую применять значки. Альтернативно, вы можете установить другой лаунчер.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Открыть %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Загрузите приложение %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Нажмите «Значок»</string>
+    <string name="apply_manual_samsung_oneui_step_4">Нажмите «Создать новый»</string>
+    <string name="apply_manual_samsung_oneui_step_5">Нажмите синюю кнопку «Iconpack».</string>
+    <string name="apply_manual_samsung_oneui_step_6">Выберите %s из списка</string>
+    <string name="apply_manual_samsung_oneui_step_7">Повторяйте эти шаги каждый раз при обновлении %s, поскольку новые значки не будут отображаться автоматически.</string>
+    <string name="apply_manual_hios">Программа запуска HiOS не поддерживает прямое применение, но вы можете выполнить следующие действия:</string>
+    <string name="apply_manual_hios_step_1">Откройте «Настройки»</string>
+    <string name="apply_manual_hios_step_2">Нажмите «Тема и экран блокировки».</string>
+    <string name="apply_manual_hios_step_3">Нажмите «Моя тема».</string>
+    <string name="apply_manual_hios_step_4">Нажмите «Набор значков».</string>
+    <string name="apply_manual_hios_step_5">Нажмите %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Нажмите и удерживайте рабочий стол</string>
+    <string name="apply_manual_oxygen_os_step_2">Нажмите «Главные настройки».</string>
+    <string name="apply_manual_oxygen_os_step_3">Нажмите «Пакет значков».</string>
+    <string name="apply_manual_oxygen_os_step_4">Нажмите %s</string>
+    <string name="apply_manual_color_os_step_1">Нажмите и удерживайте рабочий стол</string>
+    <string name="apply_manual_color_os_step_2">Нажмите «Значки»</string>
+    <string name="apply_manual_color_os_step_3">Прокрутите вправо от кнопки «Пользовательский» (это прокручиваемый список!)</string>
+    <string name="apply_manual_color_os_step_4">Нажмите %s</string>
+    <string name="apply_manual_before">Эта версия Before Launcher пока не поддерживает прямое применение значков. Вместо этого выполните следующие действия:</string>
+    <string name="apply_manual_before_step_1">Проведите пальцем влево на главном экране</string>
+    <string name="apply_manual_before_step_2">Нажмите «Настройки».</string>
+    <string name="apply_manual_before_step_3">Нажмите «Стили и темы».</string>
+    <string name="apply_manual_before_step_4">Нажмите «Стили и пакеты значков».</string>
+    <string name="apply_manual_before_step_5">Нажмите %s</string>
+    <string name="apply_manual_nothing_step_1">Откройте «Настройки»</string>
+    <string name="apply_manual_nothing_step_2">Нажмите «Настройка»</string>
+    <string name="apply_manual_nothing_step_3">Нажмите «Пакет значков».</string>
+    <string name="apply_manual_nothing_step_4">Нажмите %s</string>
+    <string name="apply_launch_failed">Невозможно запустить настройки %s</string>
+    <string name="apply_launcher_not_installed">Программа запуска %s не установлена. Хотите открыть Google Play Store, чтобы загрузить и установить его?</string>
+    <string name="apply_launcher_not_installable">Программа запуска %s не установлена. Пожалуйста, попробуйте еще раз после установки лаунчера.</string>
+    <string name="apply_cmtheme_not_available">Менеджер тем CM недоступен на этом устройстве.</string>
+    <string name="apply_cmtheme_failed">Не удалось запустить CM Theme Manager, попробуйте применить Icon Pack вручную из настроек.</string>
+    <string name="apply_lg_home">Чтобы применить этот пакет значков, откройте «Настройки» — «Дисплей» — «Главный экран» — «Тема».</string>
+    <string name="apply_lg_home_not_available">LG Home недоступен на этом устройстве.</string>
+    <string name="apply_lg_home_failed">Не удалось запустить LG Home Settings, попробуйте применить Icon Pack вручную из настроек.</string>
+    <string name="apply_lg_home_nougat">LG Home с Android Nougat больше не поддерживает Icon Pack. Для использования Icon Pack вам понадобится специальная программа запуска.</string>
+    <string name="apply_launcher_incompatible" formatted="true">Программа запуска %s не поддерживает никакие пакеты значков, поэтому вы не можете использовать этот пакет значков с этой программой запуска. Вы можете попробовать стороннее приложение, чтобы использовать этот пакет значков в панели запуска %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Программа запуска %1$s несовместима с %2$s, но может быть совместима с более новыми версиями.</string>
+
+    <!--Иконки-->
+    <string name="icons_load_failed">Невозможно загрузить значки</string>
+    <string name="icon_shape">Форма значка</string>
+    <string name="items_selected">%d выбрано</string>
+
+    <!--Запрос-->
+    <string name="request_title">Запрос значка</string>
+    <string name="request_terms">Прежде чем приступить к запросу значка, обратите внимание, что ваш запрос будет рассмотрен в соответствии с нашими правилами. Премиум-запросы могут обрабатываться быстрее.</string>
+    <string name="request_not_selected">Выберите приложения для запроса</string>
+    <string name="request_not_requested">Не запрошено</string>
+    <string name="request_already_requested">Уже запросили</string>
+    <string name="request_not_available">Невозможно запросить</string>
+    <string name="request_building">Запрос на строительство…</string>
+    <string name="request_pacific_sending">Отправка запроса Тихоокеанскому менеджеру...</string>
+    <string name="request_pacific_error">Произошла ошибка при отправке запроса в Pacific Manager. Ошибка: %s</string>
+    <string name="request_pacific_success">Запрос успешно отправлен Тихоокеанскому менеджеру.</string>
+    <string name="request_custom_error">Произошла ошибка при отправке запроса значка. Если эта ошибка не исчезнет, ​​обратитесь к разработчику. %s</string>
+    <string name="request_custom_success">Запрос на значок успешно отправлен.</string>
+    <string name="request_fetching_data">Получение последних данных…</string>
+    <string name="request_build_failed">Невозможно создать запрос значка</string>
+    <string name="request_appfilter_failed">Невозможно прочитать appfilter.xml</string>
+    <string name="request_requested">Вы уже запросили этот значок и не можете запросить его еще раз.</string>
+    <string name="request_requested_possible">Вы уже запросили этот значок. Вы уверены, что хотите потратить на него еще один запрос?</string>
+    <string name="request_requested_button_cancel">Возвращаться</string>
+    <string name="request_requested_button_confirm">Все равно выбрать</string>
+    <string name="request_email_client">Выберите приложение, которое вы хотите использовать для отправки запроса значка.</string>
+    <string name="request_app_disabled">Вы используете более старую версию этого пакета значков. Запрошенные значки могут быть включены в последнюю версию. Пожалуйста, обновите приложение до последней версии, чтобы запрашивать значки.</string>
+    <string name="connection_error_long">Невозможно загрузить данные с сервера. Пожалуйста, проверьте ваше сетевое соединение.</string>
+    <string name="unable_to_load_config">Произошла ошибка при получении или чтении данных с сервера.</string>
+    <string name="request_limit">Вы можете сделать только %d запросов с помощью обычного запроса.</string>
+    <string name="request_used">Вы запросили %d значков.</string>
+    <string name="request_limit_buy">Вы можете купить премиум-запросы, чтобы запросить больше значков.</string>
+    <string name="request_limit_reset">Ограничение запросов значков будет сбрасываться при каждом обновлении.</string>
+
+    <!--Обычный запрос-->
+    <string name="regular_request">Обычный запрос значков</string>
+    <string name="regular_request_desc">Получите запрос вашего значка, и разработчик постарается включить запрошенные вами значки.</string>
+    <string name="regular_request_count">Всего\n%d запросов</string>
+    <string name="regular_request_used">Использован\n%d запрос</string>
+    <string name="regular_request_available">Доступен\n%d запрос</string>
+
+    <!--Премиум-запрос-->
+    <string name="premium_request">Запрос премиум-значка</string>
+    <string name="premium_request_no_internet">Прежде чем отправлять премиум-запрос, убедитесь, что ваш телефон подключен к Интернету.</string>
+    <string name="premium_request_desc">Запрос премиум-значка является платным. Вы можете получить запрошенные приложения быстрее, используя запрос премиум-значка.</string>
+    <string name="premium_request_buy">Купить</string>
+    <string name="premium_request_count">Всего\n%d запросов</string>
+    <string name="premium_request_used">Использован\n%d запрос</string>
+    <string name="premium_request_available">Доступен\n%d запрос</string>
+    <string name="premium_request_already_purchased">У вас все еще есть %d запрос премиум-класса. Вам необходимо использовать их все, прежде чем снова покупать пакет премиум-запроса.</string>
+    <string name="premium_request_limit">У вас есть только %d премиум-запросов,</string>
+    <string name="premium_request_limit1">но вы выбрали %d приложений. \n\nВам необходимо использовать все свои премиум-запросы, прежде чем снова использовать обычный запрос.</string>
+    <string name="premium_request_consume_failed">Невозможно использовать Премиум-запрос. Убедитесь, что у вас стабильное подключение к Интернету, и повторите попытку. Перейдите в «Настройки», чтобы перестроить премиум-запросы.</string>
+    <string name="premium_request_rebuilding">Восстановление запроса на премиум-версию…</string>
+    <string name="premium_request_rebuilding_empty">Вы не сделали Премиум-запрос</string>
+    <string name="premium_request_exist">У вас все еще есть пакет запроса премиум-значков. Откройте «Настройки», выберите «Восстановить покупки», чтобы восстановить их.</string>
+    <string name="premium_request_required">Чтобы отправлять запросы на значки, вам необходимо купить премиум-пакет запроса значков.</string>
+
+    <!--Обои-->
+    <string name="wallpaper_new_added">Новые обои</string>
+    <string name="wallpaper_already_downloaded">Обои уже скачаны</string>
+    <string name="wallpaper_downloading">Загрузка обоев…</string>
+    <string name="wallpaper_download_failed">Невозможно скачать обои</string>
+    <string name="wallpaper_download_success">Обои загружены успешно</string>
+    <string name="wallpaper_loading">Загрузка обоев…</string>
+    <string name="wallpaper_applying">Наклеивание обоев…</string>
+    <string name="wallpaper_applied">Нанесены обои</string>
+    <string name="wallpaper_apply_failed">Невозможно наклеить обои</string>
+    <string name="wallpaper_apply_cancelled">Применение обоев отменено</string>
+    <string name="connection_failed">Невозможно получить данные с сервера</string>
+    <string name="wallpaper_apply">Нанесите обои</string>
+    <string name="wallpaper_save_to_device">Сохранить обои</string>
+
+    <!--Пресеты-->
+    <string name="presets_load_failed">Невозможно загрузить пресеты</string>
+    <string name="presets_storage_permission">Для загрузки обоев предварительного просмотра требуется разрешение на хранение.</string>
+    <string name="presets_required_apps">Необходимые приложения для использования этих пресетов</string>
+    <string name="presets_required_apps_not_installed">Приложения, необходимые для использования предустановки, не установлены. Пожалуйста, установите недостающие необходимые приложения и повторите попытку.</string>
+
+    <!--Предпочтения-->
+    <string name="pref_data_header">Данные и кэш</string>
+    <string name="pref_data_cache">Очистить кэш</string>
+    <string name="pref_data_cache_desc">Удалите кеш изображений из своего хранилища, созданный при выборе изображения из этого приложения, запросе пропущенных приложений и после загрузки миниатюр облачных обоев.</string>
+    <string name="pref_data_cache_size">Размер кэша: %s</string>
+    <string name="pref_data_cache_clear_dialog">Вы действительно хотите очистить кеш?</string>
+    <string name="pref_data_cache_cleared">Кэш очищен</string>
+    <string name="pref_data_request">Очистить значок запроса данных</string>
+    <string name="pref_data_request_desc">Удалить данные запроса значка, созданные после запроса пропущенных приложений из запроса значка.</string>
+    <string name="pref_data_request_clear_dialog">Вы действительно хотите очистить данные запроса значка?</string>
+    <string name="pref_data_request_cleared">Данные запроса значка удалены.</string>
+    <string name="pref_premium_request_header">Запрос премиум-значка</string>
+    <string name="pref_premium_request_restore">Восстановить покупки</string>
+    <string name="pref_premium_request_restore_desc">Восстановить пакет запроса премиум-класса после переустановки пакета значков</string>
+    <string name="pref_premium_request_restore_success">Премиум-запрос восстановлен</string>
+    <string name="pref_premium_request_restore_empty">У вас нет купленных пакетов</string>
+    <string name="pref_premium_request_rebuild">Запрос на восстановление премиум-значка</string>
+    <string name="pref_premium_request_rebuild_desc">Соберите все данные запроса на премиум-значки, чтобы отправить их повторно.</string>
+    <string name="pref_theme_header">Тема</string>
+    <string name="pref_theme_dark">Темная тема</string>
+    <string name="pref_theme_dark_desc">Используйте темный цвет для темы приложения.</string>
+    <string name="pref_notifications_header">Уведомления</string>
+    <string name="pref_notifications">Получать уведомления</string>
+    <string name="pref_wallpaper_header">Обои</string>
+    <string name="pref_wallpaper_location">Место сохранения обоев</string>
+    <string name="pref_language_header">Язык</string>
+    <string name="pref_others_header">Другие</string>
+    <string name="pref_others_report_bugs">Сообщить об ошибках</string>
+    <string name="pref_others_changelog">Журнал изменений</string>
+    <string name="pref_others_reset_tutorial">Сбросить обучение</string>
+    <string name="pref_others_reset_tutorial_reset">Сброс обучения</string>
+
+    <!--Темы-->
+    <string name="theme_name_auto">Авто</string>
+    <string name="theme_name_light">Свет</string>
+    <string name="theme_name_dark">Темный</string>
+    <string name="theme_name_material_you">Материальный ты</string>
+
+    <!--Разрешение-->
+    <string name="permission_storage_denied">Для сохранения обоев необходимо разрешение на хранение</string>
+    <string name="permission_notification_denied_1">Разрешение на уведомления необходимо для получения уведомлений от разработчика.</string>
+    <string name="permission_notification_denied_2">Включите уведомления в настройках приложения</string>
+
+    <!--Намерение-->
+    <string name="app_client">Выберите приложение</string>
+    <string name="no_email_app">Нет приложения для отправки электронной почты</string>
+    <string name="no_browser">Нет приложения для открытия URL</string>
+    <string name="intent_email_failed">Невозможно отобразить приложение электронной почты</string>
+    <string name="intent_email_supported">Поддерживается</string>
+    <string name="intent_email_recommended">Рекомендуется</string>
+    <string name="intent_email_not_supported">Не поддерживается</string>
+    <string name="intent_email_not_supported_message">Выбран неподдерживаемый почтовый клиент, выберите другой почтовый клиент.</string>
+
+    <!--О-->
+    <string name="about_contributors_title">Авторы</string>
+
+    <!--Сообщить об ошибках-->
+    <string name="report_bugs_desc">Опишите проблему, о которой вы хотите сообщить.</string>
+    <string name="report_bugs_desc_hint">Описание</string>
+    <string name="report_bugs_desc_empty">Пожалуйста, дайте описание</string>
+    <string name="report_bugs_building">Список строительных работ…</string>
+    <string name="report_bugs_failed">Невозможно создать список действий</string>
+    <string name="report_bugs_send">Отправить отчет</string>
+
+    <!--Поддержка развития-->
+    <string name="donation_success">Спасибо за пожертвование. Я буду использовать это во благо.</string>
+
+    <!--Отчет о сбое-->
+    <string name="crash_report">Отчет о сбое</string>
+    <string name="crash_report_message">К сожалению, %s вышел из строя. Выберите «Отправить отчет» ниже, чтобы помочь разработчику решить проблему.</string>
+    <string name="crash_report_send">Отправить отчет</string>
+
+    <!--ЯщикToggle-->
+    <string name="txt_open">Открыть</string>
+    <string name="txt_close">Закрывать</string>
+
+    <string name="txt_new">Новый</string>
+
+    <!--Описания контента для программ чтения с экрана-->
+    <string name="icon_search_close_button_content_description">Закрыть поиск значков</string>
+    <string name="icon_request_submit_button_content_description">Отправить запрос на иконку</string>
+    <string name="icon_list_content_description">Список значков, включенных в пакет значков</string>
+    <string name="icon_search_list_content_description">Список значков, соответствующих поисковому запросу</string>
+    <string name="about_item_social_content_description">Ссылка на онлайн-профиль автора пакета иконок:</string>
+    <string name="share_icon_pack_button_content_description">Поделитесь этим приложением с кем-нибудь</string>
+
+    <!--политика конфиденциальности-->
+    <string name="privacy_policy">политика конфиденциальности</string>
+    <string name="privacy_policy_desc">Ваша конфиденциальность важна для нас. Пожалуйста, прочтите нашу политику конфиденциальности в разделе «О нас», чтобы понять, как мы обрабатываем ваши данные.</string>
+
+    <!--Условия использования-->
+    <string name="terms_conditions">Условия использования</string>
+
+    <!--Запрос-->
+    <string name="request_limit_title">Лимит бесплатных запросов</string>
+    <string name="request_limit_content">У вас осталось %d бесплатных запросов. Рассмотрите возможность перехода на премиум-версию для неограниченного количества запросов.</string>
+    <string name="request_limit_reached">Достигнут лимит бесплатных запросов. Пожалуйста, перейдите на премиум-версию, чтобы получить больше запросов.</string>
+    <string name="request_limit_remaining">Вы можете выбрать еще %d значков</string>
+
+    <!--Версия приложения-->
+    <string name="version">Версия</string>
+	
+    <!--Kustom-->
+    <string name="home_kustom_desc">Соответствие компонентов Weathers для %s</string>
+    <string name="kustom_widgets">Виджеты</string>
+    <string name="kustom_wallpapers">Обои</string>
+    <string name="kustom_lockscreens">Экраны блокировки</string>
+    <string name="kustom_komponents">Компонент</string>
+
+    <!--Диалоговое окно запроса согласия-->
+    <string name="request_consent_title">Согласие на сбор данных</string>
+    <string name="request_consent_content">Чтобы обработать ваш запрос на значок, нам необходимо собрать информацию об установленных вами приложениях и сведениях об устройстве (например, о размерах экрана и версии Android). Это помогает нам создавать значки, которые лучше всего подходят для вашего устройства.\n\nВы можете ознакомиться с нашей Политикой конфиденциальности в разделе «О программе», чтобы получить дополнительную информацию.</string>
+    <string name="request_consent_accept">ПРИНИМАТЬ</string>
+    <string name="request_consent_deny">ОТРИЦАТЬ</string>
+
+    <!--Стиль навигации-->
+    <string name="pref_navigation_style">Панель навигации</string>
+
+    <!--Поиск-->
+    <string name="search_apps">Поиск приложений</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        TODO:
+            Dutch
+            Romanian
+            Tamil
+            Thai
+    -->
+
+    <string-array name="languages_name">
+        <item>Afrikaans</item>
+        <item>Arabic</item>
+        <item>Bengali</item>
+        <item>Bulgarian</item>
+        <item>Catalan</item>
+        <item>Chinese Simplified</item>
+        <item>Chinese Traditional</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Kazakh</item>
+        <item>Korean</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Polish</item>
+        <item>Portuguese (Brazil)</item>
+        <item>Portuguese (Portugal)</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tamil</item>
+        <item>Thai</item>
+        <item>Tagalog</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <string-array name="languages_code">
+        <item>af_rZA</item>
+        <item>ar_rSA</item>
+        <item>bn_rIN</item>
+        <item>bg_rBG</item>
+        <item>ca_rES</item>
+        <item>zh_rCN</item>
+        <item>zh_rTW</item>
+        <item>cs_rCZ</item>
+        <item>da_rDK</item>
+        <item>nl_rNL</item>
+        <item>en_rUS</item>
+        <item>fi_rFI</item>
+        <item>fr_rFR</item>
+        <item>de_rDE</item>
+        <item>el_rGR</item>
+        <item>iw_rIL</item>
+        <item>hi_rIN</item>
+        <item>hu_rHU</item>
+        <item>in_rID</item>
+        <item>it_rIT</item>
+        <item>ja_rJP</item>
+        <item>kk_rKZ</item>
+        <item>ko_rKR</item>
+        <item>ne_rNP</item>
+        <item>no_rNO</item>
+        <item>pl_rPL</item>
+        <item>pt_rBR</item>
+        <item>pt_rPT</item>
+        <item>ro_rRO</item>
+        <item>ru_rRU</item>
+        <item>sr_rSP</item>
+        <item>sk_rSK</item>
+        <item>es_rES</item>
+        <item>sv_rSE</item>
+        <item>ta_rIN</item>
+        <item>th_rTH</item>
+        <item>tl_rPH</item>
+        <item>tr_rTR</item>
+        <item>uk_rUA</item>
+        <item>ur_rPK</item>
+        <item>vi_rVN</item>
+    </string-array>
+</resources>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Заглавие на началния екран-->
+    <string name="splash_screen_title">Табло за управление на CandyBar</string>
+
+    <!--Изглед за навигация-->
+    <string name="navigation_view_home">Начало</string>
+    <string name="navigation_view_apply">Кандидатствайте</string>
+    <string name="navigation_view_icons">Икони</string>
+    <string name="navigation_view_request">Заявка за икона</string>
+    <string name="navigation_view_wallpapers">Тапети</string>
+    <string name="navigation_view_kustom">По поръчка</string>
+    <string name="navigation_view_settings">Настройки</string>
+    <string name="navigation_view_faqs">Често задавани въпроси</string>
+    <string name="navigation_view_about">За</string>
+    <string name="navigation_view_donate">Подкрепа за развитие</string>
+
+    <!--музей-->
+    <string name="muzei_settings">Настройки на музея</string>
+    <string name="minute">минута</string>
+    <string name="hour">час</string>
+    <string name="save_setting">Запазване</string>
+    <string name="muzei_refresh_duration">Продължителност на обновяване</string>
+    <string name="muzei_wifi_only">Опресняване само от Wi-Fi</string>
+    <string name="muzei_downloaded_only">Зареждане само на изтеглени тапети</string>
+    <string name="muzei_settings_ignored">Пакетът с икони не съдържа тапети, настройките се игнорират.</string>
+    <string name="muzei_settings_saved">Настройките са запазени</string>
+
+    <!--Меню-->
+    <string name="menu_search">Търсене</string>
+    <string name="menu_save">Запазване в устройството</string>
+    <string name="menu_select_all">Изберете Всички</string>
+    <string name="menu_delete">Изтриване</string>
+
+    <string name="menu_wallpaper_crop">Изрязване на тапет</string>
+    <string name="menu_apply_homescreen">Начален екран</string>
+    <string name="menu_apply_lockscreen">Заключен екран</string>
+    <string name="menu_apply_homescreen_lockscreen">Начален екран и заключен екран</string>
+
+    <!--Диалог-->
+    <string name="open">Отворете</string>
+    <string name="close">затвори</string>
+    <string name="clear">ясно</string>
+    <string name="ok">добре</string>
+    <string name="install">Инсталирайте</string>
+    <string name="donate">Дарете</string>
+    <string name="update">Актуализация</string>
+
+    <string name="search_noresult">Няма намерени резултати за \"%s\"</string>
+    <string name="search_faqs">Въпрос или отговор</string>
+    <string name="search_icon">Име на иконата</string>
+    <string name="search_wallpapers">Име на тапета</string>
+
+    <!--Актуализация-->
+    <string name="checking_for_update">Проверка за актуализация...</string>
+    <string name="update_available">Налична актуализация!</string>
+    <string name="no_update_available">Вие използвате най-новата версия!</string>
+
+    <!--Версия на регистъра на промените-->
+    <string name="changelog_version">Версия</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Не могат да се заредят продукти за покупка в приложението</string>
+
+    <!--Лиценз-->
+    <string name="license_checking">Проверка на лиценза…</string>
+    <string name="license_check">Проверка на лиценза</string>
+    <string name="license_check_success">Успешна проверка на лиценза. Благодарим ви, че изтеглихте приложението от Play Store.</string>
+    <string name="license_check_failed">Проверката на лиценза е неуспешна; не сте изтеглили приложението от Play Store. Няма да можете да го използвате.</string>
+    <string name="license_check_retry">Не може да се провери лицензът, моля, опитайте отново след няколко минути.</string>
+
+    <!--Проверка на инсталацията на Play Store-->
+    <string name="playstore_check">Проверка на Play Store</string>
+    <string name="playstore_check_success">Благодарим ви, че инсталирахте приложението от Google Play Store. Насладете се!</string>
+    <string name="playstore_check_failed">Изглежда, че сте инсталирали този пакет с икони извън Google Play Store.
+        Няма да можете да го използвате.</string>
+
+    <!--Споделете-->
+    <string name="share_app_title">йо! Вижте %s</string>
+    <string name="share_app_body">Вижте %1$s Icon Pack в Play Store: %2$s</string>
+
+    <!--Докоснете Intro-->
+    <string name="tap_intro_home_navigation">Чекмедже за навигация</string>
+    <string name="tap_intro_home_navigation_desc">Докоснете тук или плъзнете от левия край на екрана, за да отворите чекмеджето за навигация</string>
+    <string name="tap_intro_home_apply">Прилагане на пакет с икони</string>
+    <string name="tap_intro_home_apply_desc">Докоснете тук, за да приложите %s към текущия си стартер. Натиснете продължително, за да приложите към други стартери.</string>
+    <string name="tap_intro_icons_search">Търсене</string>
+    <string name="tap_intro_icons_search_desc">Докоснете тук, за да потърсите икона</string>
+    <string name="tap_intro_request_search">Търсете липсващи приложения</string>
+    <string name="tap_intro_request_search_desc">Докоснете тук, за да търсите във вашите инсталирани приложения за липсващи икони за заявка за избрана икона</string>
+    <string name="tap_intro_request_select">Изберете пропуснато приложение</string>
+    <string name="tap_intro_request_select_desc">Докоснете тук, за да изберете пропуснато приложение за заявка за икона</string>
+    <string name="tap_intro_request_select_all">Изберете всички пропуснати приложения</string>
+    <string name="tap_intro_request_select_all_desc">Докоснете тук, за да изберете всички пропуснати приложения за заявка за икона</string>
+    <string name="tap_intro_request_send">Изпратете заявка за икона</string>
+    <string name="tap_intro_request_send_desc">Докоснете тук, за да изпратите избрани пропуснати приложения</string>
+    <string name="tap_intro_request_premium">Заявка за премиум икона</string>
+    <string name="tap_intro_request_premium_desc">Докоснете тук, за да купите пакета за заявка на първокласна икона, с заявка на първокласна икона можете да получите заявените от вас приложения по-бързо.</string>
+    <string name="tap_intro_wallpapers_option">Опции за тапети</string>
+    <string name="tap_intro_wallpapers_option_desc">Докоснете и задръжте тук, за да покажете опциите за тапет; %s приложи тапет.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">изтегляне или</string>
+    <string name="tap_intro_wallpapers_preview">Преглед на тапет</string>
+    <string name="tap_intro_wallpapers_preview_desc">Докоснете тук, за да прегледате пълния размер на тапета</string>
+    <string name="tap_intro_wallpaper_preview_save">Запазване на тапет</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Докоснете тук, за да изтеглите и запазите тапет на вашето устройство, за да можете да го използвате по-късно</string>
+    <string name="tap_intro_wallpaper_preview_apply">Прилагане на тапет</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Докоснете тук, за да зададете тапет като фон на началния екран</string>
+
+    <!--Начало-->
+    <string name="home_more_apps_header">Още приложения</string>
+    <string name="home_more_apps">Вижте пакета с още икони в Google Play Store</string>
+    <string name="home_rate">Оценете</string>
+    <string name="home_share">Споделете</string>
+    <string name="home_check_update">Актуализация</string>
+    <string name="home_apply_icon_pack">Приложете %s</string>
+    <string name="home_donate">Дарете</string>
+    <string name="home_donate_desc">Насърчете програмиста да направи повече пакети с икони</string>
+    <string name="home_icons">Икони</string>
+    <string name="home_icon_dimension">Размер на иконата %s пиксела</string>
+    <string name="home_loud_wallpapers">%d облачни тапети</string>
+    <string name="home_muzei">Жив тапет на Muzei</string>
+    <string name="home_icon_request_installed_apps">Общо\n%d инсталирани приложения</string>
+    <string name="home_icon_request_themed_apps">Тематични\n%d приложения</string>
+    <string name="home_icon_request_missed_apps">Пропуснати\n%d приложения</string>
+
+    <!--Кандидатствайте-->
+    <string name="apply_installed">Инсталиран Launcher</string>
+    <string name="apply_installed_launchers">Инсталирани стартери</string>
+    <string name="apply_supported">Поддържани стартери</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher не е инсталиран. Можете да го намерите и инсталирате от Amazon AppStore или от предпочитаните от вас ресурси и магазини.</string>
+    <string name="apply_manual">Стартовият панел на %1$s не поддържа директно прилагане, но можете да приложите %2$s ръчно от настройките на стартовия панел.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso не поддържа директно прилагане, но можете да следвате следните стъпки:</string>
+    <string name="apply_manual_kvaesitso_step_1">Отворете настройките на Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">Докоснете \"Решетка и икони\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Докоснете \"Пакет с икони\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Изберете %s от списъка</string>
+    <string name="apply_manual_kvaesitso_step_5">Докоснете иконата на четка за рисуване, за да активирате или деактивирате формата на фона</string>
+    <string name="apply_manual_kiss">KISS не поддържа директно кандидатстване, но можете да следвате следните стъпки:</string>
+    <string name="apply_manual_kiss_step_1">Отворете настройките на KISS</string>
+    <string name="apply_manual_kiss_step_2">Докоснете \"Потребителски интерфейс\"</string>
+    <string name="apply_manual_kiss_step_3">Докоснете \"Пакет с икони\"</string>
+    <string name="apply_manual_kiss_step_4">Изберете %s от списъка</string>
+    <string name="apply_manual_samsung_oneui">%1$s не поддържа директно прилагане, но започвайки с %2$s можете да прилагате икони с придружаващо приложение.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Текущата ви версия на %s е твърде стара. Моля, актуализирайте до Android 12 или по-нова, за да можете да прилагате икони директно. Като алтернатива можете да инсталирате различен стартер.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Отворете %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Изтеглете приложението %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Докоснете \"Икона\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Докоснете \"Създаване на нов\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Докоснете синия бутон \"Пакет с икони\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">Изберете %s от списъка</string>
+    <string name="apply_manual_samsung_oneui_step_7">Повторете тези стъпки всеки път, когато актуализирате %s, тъй като новите икони няма да бъдат картографирани автоматично.</string>
+    <string name="apply_manual_hios">Стартовият панел на HiOS не поддържа директно прилагане, но можете да следвате следните стъпки:</string>
+    <string name="apply_manual_hios_step_1">Отворете \"Настройки\"</string>
+    <string name="apply_manual_hios_step_2">Докоснете \"Тема и заключен екран\"</string>
+    <string name="apply_manual_hios_step_3">Докоснете \"Моята тема\"</string>
+    <string name="apply_manual_hios_step_4">Докоснете \"Пакет с икони\"</string>
+    <string name="apply_manual_hios_step_5">Докоснете %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Докоснете продължително началния екран</string>
+    <string name="apply_manual_oxygen_os_step_2">Докоснете \"Настройки за дома\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Докоснете \"Пакет с икони\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Докоснете %s</string>
+    <string name="apply_manual_color_os_step_1">Докоснете продължително началния екран</string>
+    <string name="apply_manual_color_os_step_2">Докоснете \"Икони\"</string>
+    <string name="apply_manual_color_os_step_3">Превъртете вдясно от бутона \"Персонализиран\" (това е списък с възможност за превъртане!)</string>
+    <string name="apply_manual_color_os_step_4">Докоснете %s</string>
+    <string name="apply_manual_before">Тази версия на Before Launcher все още не поддържа директно прилагане на икони. Вместо това следвайте стъпките по-долу:</string>
+    <string name="apply_manual_before_step_1">Плъзнете наляво на началния екран</string>
+    <string name="apply_manual_before_step_2">Докоснете \"Настройки\"</string>
+    <string name="apply_manual_before_step_3">Докоснете \"Стилове и теми\"</string>
+    <string name="apply_manual_before_step_4">Докоснете \"Стилове и пакети на икони\"</string>
+    <string name="apply_manual_before_step_5">Докоснете %s</string>
+    <string name="apply_manual_nothing_step_1">Отворете \"Настройки\"</string>
+    <string name="apply_manual_nothing_step_2">Докоснете \"Персонализиране\"</string>
+    <string name="apply_manual_nothing_step_3">Докоснете \"Пакет с икони\"</string>
+    <string name="apply_manual_nothing_step_4">Докоснете %s</string>
+    <string name="apply_launch_failed">Настройките на %s не могат да бъдат стартирани</string>
+    <string name="apply_launcher_not_installed">%s Launcher не е инсталиран. Искате ли да отворите Google Play Store, за да го изтеглите и инсталирате?</string>
+    <string name="apply_launcher_not_installable">%s Launcher не е инсталиран. Моля, опитайте отново, след като инсталирате стартовия панел.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager не е наличен на това устройство</string>
+    <string name="apply_cmtheme_failed">Не можете да стартирате CM Theme Manager, можете да опитате да приложите пакета с икони ръчно от Настройки.</string>
+    <string name="apply_lg_home">За да приложите този пакет с икони, отворете Настройки - Дисплей - Начален екран - Тема</string>
+    <string name="apply_lg_home_not_available">LG Home не е наличен на това устройство</string>
+    <string name="apply_lg_home_failed">Не можете да стартирате LG Home Settings, можете да опитате да приложите пакета с икони ръчно от Настройки.</string>
+    <string name="apply_lg_home_nougat">LG Home с Android Nougat вече не поддържа пакет с икони. Имате нужда от персонализиран стартер, за да използвате Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher не поддържа никакви пакети с икони, така че не можете да използвате този пакет с икони с този стартер. Можете да опитате приложение на трета страна, за да използвате този пакет с икони в стартовия панел на %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Стартовият панел на %1$s не е съвместим с %2$s, но може да е съвместим с по-нови версии</string>
+
+    <!--Икони-->
+    <string name="icons_load_failed">Не могат да се заредят икони</string>
+    <string name="icon_shape">Форма на икона</string>
+    <string name="items_selected">%d избрани</string>
+
+    <!--Заявка-->
+    <string name="request_title">Заявка за икона</string>
+    <string name="request_terms">Преди да продължите със заявката за икона, имайте предвид, че вашата заявка ще бъде прегледана съгласно нашите указания. Премиум заявките може да се обработват по-бързо.</string>
+    <string name="request_not_selected">Изберете приложения за заявка</string>
+    <string name="request_not_requested">Не е поискано</string>
+    <string name="request_already_requested">Вече е заявено</string>
+    <string name="request_not_available">Не може да бъде поискано</string>
+    <string name="request_building">Искане за изграждане...</string>
+    <string name="request_pacific_sending">Изпраща се заявка до Pacific Manager...</string>
+    <string name="request_pacific_error">Възникна грешка при изпращане на заявка до Pacific Manager. Грешката е %s</string>
+    <string name="request_pacific_success">Успешно изпратена заявка до Pacific Manager</string>
+    <string name="request_custom_error">Възникна грешка при изпращане на заявка за икона. Ако тази грешка продължава, свържете се с разработчика. %s</string>
+    <string name="request_custom_success">Успешно изпратена заявка за икона</string>
+    <string name="request_fetching_data">Извличат се най-новите данни...</string>
+    <string name="request_build_failed">Не може да се създаде заявка за икона</string>
+    <string name="request_appfilter_failed">Не може да се прочете appfilter.xml</string>
+    <string name="request_requested">Вече поискахте тази икона и не можете да я поискате отново.</string>
+    <string name="request_requested_possible">Вече поискахте тази икона. Сигурни ли сте, че искате да похарчите друга заявка за него?</string>
+    <string name="request_requested_button_cancel">Върни се назад</string>
+    <string name="request_requested_button_confirm">Изберете все пак</string>
+    <string name="request_email_client">Изберете приложението, което искате да използвате, за да изпратите заявката за икона</string>
+    <string name="request_app_disabled">Използвате по-стара версия на този пакет с икони. Заявените икони може да бъдат включени в най-новата версия. Моля, актуализирайте приложението си до най-новата версия, за да изисквате икони.</string>
+    <string name="connection_error_long">Не може да се заредят данни от сървъра. Моля, проверете вашата мрежова връзка.</string>
+    <string name="unable_to_load_config">Възникна грешка при извличане или четене на данни от сървъра.</string>
+    <string name="request_limit">Можете да направите само %d заявка(и) с обикновена заявка.</string>
+    <string name="request_used">Вие поискахте %d икона(и).</string>
+    <string name="request_limit_buy">Можете да закупите Premium Requests, за да поискате повече икони.</string>
+    <string name="request_limit_reset">Ограничението за заявки за икони ще се нулира при всяка актуализация.</string>
+
+    <!--Редовна заявка-->
+    <string name="regular_request">Редовна заявка за икони</string>
+    <string name="regular_request_desc">Получете заявка за вашата икона и разработчикът ще се опита да включи икони, които сте поискали.</string>
+    <string name="regular_request_count">Общо\n%d заявка</string>
+    <string name="regular_request_used">Използвана\n%d заявка</string>
+    <string name="regular_request_available">Налична\n%d заявка</string>
+
+    <!--Премиум заявка-->
+    <string name="premium_request">Заявка за премиум икона</string>
+    <string name="premium_request_no_internet">Уверете се, че телефонът ви е свързан с интернет, преди да изпратите премиум заявка</string>
+    <string name="premium_request_desc">Заявката за премиум икона е заявка за плащане. Можете да получите заявените от вас приложения по-бързо, като използвате заявка за първокласна икона.</string>
+    <string name="premium_request_buy">Купете</string>
+    <string name="premium_request_count">Общо\n%d заявка</string>
+    <string name="premium_request_used">Използвана\n%d заявка</string>
+    <string name="premium_request_available">Налична\n%d заявка</string>
+    <string name="premium_request_already_purchased">Все още имате %d премиум заявка. Трябва да използвате всички тях, преди да закупите отново премиум пакет за заявки.</string>
+    <string name="premium_request_limit">Имате само %d премиум заявка(и),</string>
+    <string name="premium_request_limit1">но сте избрали %d приложение(а). \n\nТрябва да използвате всичките си премиум заявки, преди да използвате отново обикновената заявка.</string>
+    <string name="premium_request_consume_failed">Не можете да използвате Premium Request, уверете се, че имате стабилна интернет връзка и опитайте отново. Отидете в Настройки, за да възстановите Premium Requests.</string>
+    <string name="premium_request_rebuilding">Възстановяване на заявката за премиум...</string>
+    <string name="premium_request_rebuilding_empty">Не сте направили заявка за Premium</string>
+    <string name="premium_request_exist">Все още имате пакет за заявка за премиум икона. Отворете Настройки, изберете \"Възстановяване на покупките\", за да го възстановите.</string>
+    <string name="premium_request_required">Трябва да закупите първокласен пакет за заявки за икони, за да правите заявки за икони</string>
+
+    <!--Тапети-->
+    <string name="wallpaper_new_added">Нов тапет</string>
+    <string name="wallpaper_already_downloaded">Тапетът вече е изтеглен</string>
+    <string name="wallpaper_downloading">Тапет се изтегля...</string>
+    <string name="wallpaper_download_failed">Не може да се изтегли тапет</string>
+    <string name="wallpaper_download_success">Успешно изтегляне на тапет</string>
+    <string name="wallpaper_loading">Тапетът се зарежда...</string>
+    <string name="wallpaper_applying">Прилага се тапет...</string>
+    <string name="wallpaper_applied">Поставен тапет</string>
+    <string name="wallpaper_apply_failed">Не може да се приложи тапет</string>
+    <string name="wallpaper_apply_cancelled">Прилагането на тапет е отменено</string>
+    <string name="connection_failed">Не може да се извлекат данни от сървъра</string>
+    <string name="wallpaper_apply">Прилагане на тапет</string>
+    <string name="wallpaper_save_to_device">Запазване на тапет</string>
+
+    <!--Предварителни настройки-->
+    <string name="presets_load_failed">Предварителните настройки не могат да се заредят</string>
+    <string name="presets_storage_permission">Необходимо е разрешение за съхранение, за да заредите тапета за визуализация</string>
+    <string name="presets_required_apps">Необходими приложения за използване на тези предварително зададени настройки</string>
+    <string name="presets_required_apps_not_installed">Приложенията, необходими за използване на предварително зададената настройка, не са инсталирани. Моля, инсталирайте липсващите необходими приложения и опитайте отново.</string>
+
+    <!--Предпочитания-->
+    <string name="pref_data_header">Данни и кеш</string>
+    <string name="pref_data_cache">Изчистване на кеша</string>
+    <string name="pref_data_cache_desc">Премахнете кеша на изображенията от вашето хранилище, създаден при избиране на изображение от това приложение, заявяване на пропуснати приложения и след зареждане на миниатюри на облачен тапет.</string>
+    <string name="pref_data_cache_size">Размер на кеша: %s</string>
+    <string name="pref_data_cache_clear_dialog">Наистина ли искате да изчистите кеша?</string>
+    <string name="pref_data_cache_cleared">Кешът е изчистен</string>
+    <string name="pref_data_request">Изчистване на данни за заявка за икона</string>
+    <string name="pref_data_request_desc">Премахнете данните за заявка за икони, създадени след заявка за пропуснати приложения от заявка за икони.</string>
+    <string name="pref_data_request_clear_dialog">Наистина ли искате да изчистите данните за искане на икона?</string>
+    <string name="pref_data_request_cleared">Данните за заявка за икона са изчистени</string>
+    <string name="pref_premium_request_header">Заявка за премиум икона</string>
+    <string name="pref_premium_request_restore">Възстановяване на покупките</string>
+    <string name="pref_premium_request_restore_desc">Възстановете премиум пакета за заявка след повторно инсталиране на пакета с икони</string>
+    <string name="pref_premium_request_restore_success">Заявката за премия е възстановена</string>
+    <string name="pref_premium_request_restore_empty">Нямате закупени пакети</string>
+    <string name="pref_premium_request_rebuild">Rebuild Premium Icon Request</string>
+    <string name="pref_premium_request_rebuild_desc">Съберете всички данни за заявки за първокласни икони, за да ги изпратите отново</string>
+    <string name="pref_theme_header">Тема</string>
+    <string name="pref_theme_dark">Тъмна тема</string>
+    <string name="pref_theme_dark_desc">Използвайте тъмен цвят за тема на приложението</string>
+    <string name="pref_notifications_header">Известия</string>
+    <string name="pref_notifications">Получаване на известия</string>
+    <string name="pref_wallpaper_header">Тапет</string>
+    <string name="pref_wallpaper_location">Тапет Запазване на местоположението</string>
+    <string name="pref_language_header">език</string>
+    <string name="pref_others_header">други</string>
+    <string name="pref_others_report_bugs">Докладвайте грешки</string>
+    <string name="pref_others_changelog">Дневник на промените</string>
+    <string name="pref_others_reset_tutorial">Нулиране на урока</string>
+    <string name="pref_others_reset_tutorial_reset">Нулиране на урока</string>
+
+    <!--Теми-->
+    <string name="theme_name_auto">Авто</string>
+    <string name="theme_name_light">светлина</string>
+    <string name="theme_name_dark">Тъмно</string>
+    <string name="theme_name_material_you">Материални Вие</string>
+
+    <!--разрешение-->
+    <string name="permission_storage_denied">Необходимо е разрешение за съхранение, за да запазите тапет</string>
+    <string name="permission_notification_denied_1">Необходимо е разрешение за известяване, за да получавате известия от разработчика</string>
+    <string name="permission_notification_denied_2">Активирайте известията от настройките на приложението</string>
+
+    <!--Намерение-->
+    <string name="app_client">Изберете Приложение</string>
+    <string name="no_email_app">Няма приложение за изпращане на имейл</string>
+    <string name="no_browser">Няма приложение за отваряне на URL</string>
+    <string name="intent_email_failed">Не може да се покаже приложението за имейл</string>
+    <string name="intent_email_supported">Поддържа се</string>
+    <string name="intent_email_recommended">Препоръчва се</string>
+    <string name="intent_email_not_supported">Не се поддържа</string>
+    <string name="intent_email_not_supported_message">Избрахте неподдържан имейл клиент, моля изберете друг имейл клиент</string>
+
+    <!--За-->
+    <string name="about_contributors_title">Сътрудници</string>
+
+    <!--Докладвайте грешки-->
+    <string name="report_bugs_desc">Моля, дайте описание на проблема, който искате да докладвате</string>
+    <string name="report_bugs_desc_hint">Описание</string>
+    <string name="report_bugs_desc_empty">Моля, дайте описание</string>
+    <string name="report_bugs_building">Списък с дейности по изграждане...</string>
+    <string name="report_bugs_failed">Не може да се създаде списък с дейности</string>
+    <string name="report_bugs_send">Изпращане на отчет</string>
+
+    <!--Подкрепа за развитие-->
+    <string name="donation_success">Благодарим ви, че направихте дарение. Ще го използвам за добро.</string>
+
+    <!--Доклад за срив-->
+    <string name="crash_report">Доклад за срив</string>
+    <string name="crash_report_message">За съжаление, %s се срина. Изберете Изпращане на отчет по-долу, за да помогнете на разработчика да коригира проблема.</string>
+    <string name="crash_report_send">Изпращане на отчет</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Отворете</string>
+    <string name="txt_close">затвори</string>
+
+    <string name="txt_new">Нов</string>
+
+    <!--Описания на съдържанието за екранни четци-->
+    <string name="icon_search_close_button_content_description">Затворете търсенето на икони</string>
+    <string name="icon_request_submit_button_content_description">Изпратете заявка за икона</string>
+    <string name="icon_list_content_description">Списъкът с икони, включени в пакета с икони</string>
+    <string name="icon_search_list_content_description">Списъкът с икони, които съответстват на думата за търсене</string>
+    <string name="about_item_social_content_description">Линк към онлайн профил на автора на пакета с икони:</string>
+    <string name="share_icon_pack_button_content_description">Споделете това приложение с някого</string>
+
+    <!--Политика за поверителност-->
+    <string name="privacy_policy">Политика за поверителност</string>
+    <string name="privacy_policy_desc">Вашата поверителност е важна за нас. Моля, прочетете нашата политика за поверителност в Относно, за да разберете как обработваме вашите данни.</string>
+
+    <!--Правила и условия-->
+    <string name="terms_conditions">Правила и условия</string>
+
+    <!--Заявка-->
+    <string name="request_limit_title">Лимит за безплатни заявки</string>
+    <string name="request_limit_content">Имате %d оставащи безплатни заявки. Помислете за надграждане до премиум за неограничени заявки.</string>
+    <string name="request_limit_reached">Лимитът за безплатни заявки е достигнат. Моля, надстройте до премиум за повече заявки.</string>
+    <string name="request_limit_remaining">Можете да изберете още %d икони</string>
+
+    <!--Версия на приложението-->
+    <string name="version">Версия</string>
+	
+    <!--По поръчка-->
+    <string name="home_kustom_desc">Съвпадащи компоненти за времето за %s</string>
+    <string name="kustom_widgets">Джаджи</string>
+    <string name="kustom_wallpapers">Тапети</string>
+    <string name="kustom_lockscreens">Заключващи екрани</string>
+    <string name="kustom_komponents">Компонент</string>
+
+    <!--Диалогов прозорец за искане на съгласие-->
+    <string name="request_consent_title">Съгласие за събиране на данни</string>
+    <string name="request_consent_content">За да обработим вашата заявка за икона, трябва да съберем информация за вашите инсталирани приложения и подробности за устройството (като размери на екрана и версия на Android). Това ни помага да проектираме икони, които работят най-добре за вашето устройство.\n\nМожете да прегледате нашата Политика за поверителност в секцията Всичко за повече информация.</string>
+    <string name="request_consent_accept">ПРИЕМАМ</string>
+    <string name="request_consent_deny">ОТКАЗАЙ</string>
+
+    <!--Стил на навигация-->
+    <string name="pref_navigation_style">Лента за навигация</string>
+
+    <!--Търсене-->
+    <string name="search_apps">Приложения за търсене</string>
+
+</resources>

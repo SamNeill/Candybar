@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        def keystoreFile = file('candybar.jks')
+        if (keystoreFile.exists()) {
+            release {
+                keyAlias 'key0'
+                keyPassword 'candybar'
+                storeFile keystoreFile
+                storePassword 'candybar'
+
+                v1SigningEnabled true
+                v2SigningEnabled true
+            }
+        }
+    }
+
+    compileSdk rootProject.ext.CompileSdk
+
+    namespace 'com.candybar.dev'
+
+    defaultConfig {
+        applicationId 'com.candybar.dev'
+        minSdkVersion rootProject.ext.MinSdk
+        targetSdkVersion rootProject.ext.TargetSdk
+        versionCode 1
+        versionName "1.0"
+
+        // Naming app bundles
+        setArchivesBaseName("${parent.name}-v${defaultConfig.versionName}")
+    }
+
+    buildTypes {
+        release {
+            def keystoreFile = file('candybar.jks')
+            if (keystoreFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation project(':library')
+
+    // TODO: Remove `//` below to enable OneSignal
+    //implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+}

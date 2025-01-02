@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Was ist ein Launcher?-->
+    <!--Was ist ein Icon Pack?-->
+    <!--Wie verwende ich ein Icon Pack?-->
+    <!--Wie wende ich ein Icon Pack an?-->
+    <!--Wie sehe ich alle enthaltenen Symbole?-->
+    <!--Ich kann keinen vollständigen Symbolnamen sehen-->
+    <!--Wie kann ich Symbole durch ein alternatives Symbol ersetzen?-->
+    <!--Wie beantrage ich ein Symbol?-->
+    <!--Wie kann ich die verbleibenden Premium-Anfragen nach der Neuinstallation der App wiederherstellen?-->
+    <!--Nach dem Neustart meines Telefons wird das Symbolpaket nicht angewendet und auf die Standardeinstellungen zurückgesetzt?-->
+    <!--Warum sehen die Symbole auf meinem Telefon zackig oder pixelig aus?-->
+    <!--Ich kann das Symbol in allen Symbolen sehen,
+            Aber warum wird das eigentliche Symbol in der App-Schublade nicht geändert?-->
+    <!--Was ist die Option „Fehler melden“?-->
+    <!--Mein Launcher ist in der Google Play-Beschreibung aufgeführt, aber warum ist er nicht im Abschnitt „Anwenden“ enthalten?-->
+    <!--Das Hintergrundbild kann nicht angewendet werden, es wird nur ein schwarzer Bildschirm angezeigt?-->
+    <!--Muzei: Wie lade ich nur heruntergeladene Hintergrundbilder?-->
+    <!--Muzei: Ich möchte nicht jedes Mal Hintergrundbilder herunterladen, wenn sich das Hintergrundbild ändert?-->
+    <!--Muzei: Ich möchte nur bestimmte Hintergrundbilder verwenden?-->
+    <!--Warum sind Lese- und Schreibberechtigungen für externen Speicher erforderlich?-->
+    <!--Warum ist eine Interneterlaubnis erforderlich?-->
+    <!--Warum ist die Berechtigung „Access Network State“ erforderlich?-->
+    <!--Warum ist die Berechtigung „Access Wi-Fi State“ erforderlich?-->
+    <!--Warum ist die Berechtigung „Hintergrund festlegen“ erforderlich?-->
+    <!--Warum ist eine Wake-Lock-Berechtigung erforderlich?-->
+    <!--Warum ist die Berechtigung „Alarm einstellen“ erforderlich?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Was ist ein Launcher?</item>
+    <item>Was ist ein Icon-Pack?</item>
+    <item>Wie verwende ich ein Icon Pack?</item>
+    <item>Wie wende ich ein Icon-Paket an?</item>
+    <item>Wie sehe ich alle enthaltenen Symbole?</item>
+    <item>Ich kann keinen vollständigen Symbolnamen sehen</item>
+    <item>Wie kann ich Symbole durch ein alternatives Symbol ersetzen?</item>
+    <item>Wie beantrage ich ein Symbol?</item>
+    <item>Wie kann ich die verbleibenden Premium-Anfragen nach der Neuinstallation der App wiederherstellen?</item>
+    <item>Nach dem Neustart meines Telefons wird das Symbolpaket nicht angewendet. es stellt die Standardeinstellungen wieder her?</item>
+    <item>Warum sehen die Symbole auf meinem Telefon zackig oder pixelig aus?</item>
+    <item>Ich kann das Symbol in allen Symbolen sehen,
+            Aber warum wird das eigentliche Symbol in der App-Schublade nicht geändert?</item>
+    <item>Was ist die Option „Fehler melden“?</item>
+    <item>Mein Launcher ist in der Google Play-Beschreibung aufgeführt, aber warum ist er nicht im Abschnitt „Anwenden“ enthalten?</item>
+    <item>Das Hintergrundbild kann nicht angewendet werden, es wird nur ein schwarzer Bildschirm angezeigt?</item>
+    <item>Muzei: Wie lade ich nur heruntergeladene Hintergrundbilder?</item>
+    <item>Muzei: Ich möchte nicht jedes Mal Hintergrundbilder herunterladen, wenn sich das Hintergrundbild ändert?</item>
+    <item>Muzei: Ich möchte nur bestimmte Hintergrundbilder verwenden?</item>
+    <item>Warum sind Lese- und Schreibberechtigungen für externen Speicher erforderlich?</item>
+    <item>Warum ist eine Interneterlaubnis erforderlich?</item>
+    <item>Warum ist die Berechtigung „Access Network State“ erforderlich?</item>
+    <item>Warum ist die Berechtigung „Access Wifi State“ erforderlich?</item>
+    <item>Warum ist die Berechtigung „Hintergrund festlegen“ erforderlich?</item>
+    <item>Warum ist eine Wake-Lock-Berechtigung erforderlich?</item>
+    <item>Warum ist die Berechtigung „Alarm einstellen“ erforderlich?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher ist der Teil der Android-Benutzeroberfläche, mit dem Benutzer den Startbildschirm anpassen können.
+            Starten Sie mobile Apps, tätigen Sie Anrufe und führen Sie andere Aufgaben auf Android-Geräten aus.</item>
+    <item>Eine Reihe von Grafiken, die das Aussehen Ihrer App-Drawer-Symbole verändern</item>
+    <item>Sie benötigen einen Launcher, der benutzerdefinierte Symbolpakete unterstützt.
+            Unterstützte Launcher sind in der Play Store-Beschreibung aufgeführt.
+            Wenn Sie sich nicht sicher sind, welche Starter verwendet werden sollen, gehen Sie einfach zum Abschnitt „Übernehmen“ und installieren Sie von dort aus.</item>
+    <item>Sie können die Navigationsleiste öffnen und dann „Übernehmen“ öffnen. Wählen Sie Ihren Launcher aus der Liste.
+            Wenn Ihr Launcher dort nicht aufgeführt ist, dieses Icon Pack jedoch damit kompatibel ist
+            (Unterstützte Starter finden Sie in der Beschreibung im Google Play Store.)
+            Sie können das Icon Pack manuell in Ihren Launcher-Einstellungen anwenden.</item>
+    <item>Sie können die Navigationsleiste öffnen und dann „Symbole“ öffnen.</item>
+    <item>Tippen Sie einfach auf das Symbol. Es erscheint ein Vorschaudialog mit einem größeren Bild und dem vollständigen Symbolnamen.</item>
+    <item>Es hängt davon ab, welchen Launcher Sie verwendet haben. Nicht jeder Launcher unterstützt die Symbolbearbeitung.
+       	    Meistens können Sie ein Symbol bearbeiten, indem Sie auf das Symbol tippen und es gedrückt halten oder zweimal darauf tippen.</item>
+    <item>Sie können die Navigationsleiste öffnen und dann „Icon Request“ öffnen.</item>
+    <item>Sie können die Navigationsleiste öffnen, dann „Einstellungen“ öffnen und „Käufe wiederherstellen“ auswählen.
+            Wenn Sie vor der Neuinstallation noch Premium-Anfragen hatten, werden diese wiederhergestellt.</item>
+    <item>Dies geschah, weil dieses Symbolpaket auf die SD-Karte verschoben wurde. Sie sollten es im internen Speicher installieren.</item>
+    <item>Das Problem könnte von dem Launcher herrühren, den Sie bei der Verarbeitung großer Symbolauflösungen verwendet haben.
+       	    Sie können das Problem beheben, indem Sie die Symbolgröße auf 115–120 % erhöhen.
+       	    Alternativ können Sie Ihren Launcher ändern.</item>
+    <item>Öffnen Sie die Einstellungen, scrollen Sie nach unten und wählen Sie dann „Fehler melden“.</item>
+    <item>„Fehler melden“ wird verwendet, um Fehler im Zusammenhang mit dem Icon Pack und nicht mit dem Dashboard zu melden.</item>
+    <item>Nicht jeder Launcher unterstützt die direkte Anwendung und auf einige davon kann nicht direkt über das Dashboard zugegriffen werden.
+      	    Sie können dieses Symbolpaket manuell in den einzelnen Launcher-Einstellungen anwenden.</item>
+    <item>Wenn Sie „Hintergrundbild festlegen“ direkt in der App festlegen, wird es in den Cache heruntergeladen.
+      	    dann wird die Dashboard-App versuchen, es anzuwenden. Die Bewerbung wird einige Zeit in Anspruch nehmen und für einen kurzen Zeitraum auch eine große Menge an RAM benötigen.
+      	    Es können Fehlermeldungen vom Typ „Schwarzer Bildschirm“ auftreten, weil Ihr Telefon nicht über genügend freien RAM verfügt, um das Hintergrundbild zu verarbeiten.
+      	    Durch einen Neustart Ihres Telefons wird dieses Problem behoben. Nach dem Neustart steht Ihrem Telefon mehr RAM zur Verfügung.
+            Alternativ können Sie das heruntergeladene Hintergrundbild aus Ihrer Galerie öffnen und es dort als Hintergrundbild festlegen.</item>
+    <item>Öffnen Sie Muzei, wählen Sie dieses Symbolpaket und die Einstellungen. Sie sehen eine Option zum Laden nur heruntergeladener Hintergrundbilder.
+            Sie müssen zunächst Hintergrundbilder vom Dashboard herunterladen.</item>
+    <item>Wenn ein Hintergrundbild bereits heruntergeladen wurde, wird es automatisch aus Ihrem Telefonspeicher geladen.
+            Muzei lädt es nicht weiter herunter, wenn sich das Hintergrundbild ändert. Sie müssen zunächst Hintergrundbilder vom Dashboard herunterladen.</item>
+    <item>Öffnen Sie das Dashboard und laden Sie Hintergrundbilder herunter, die Sie in Muzei verwenden möchten.
+            Öffnen Sie die Muzei-Einstellungen und wählen Sie dann „Nur heruntergeladene Hintergrundbilder laden“.</item>
+    <item>Es wird zum Schreiben und Lesen des Caches sowie zum Sammeln der Symbolanforderungsdaten verwendet.</item>
+    <item>Es wird verwendet, um Cloud-basierte Hintergrundbilder zu laden und herunterzuladen.</item>
+    <item>Es wird verwendet, um zu überprüfen, ob Ihr Telefon über eine Internetverbindung verfügt oder nicht.</item>
+    <item>Es wird verwendet, um zu überprüfen, ob Ihr Telefon über eine Internetverbindung zu einem WLAN verfügt oder nicht, um Cloud-Hintergrundbilder von Muzei zu laden.</item>
+    <item>Es wird verwendet, um Hintergrundbilder direkt aus der Dashboard-App anzuwenden.</item>
+    <item>Es wird von Muzei Live Wallpaper verwendet.</item>
+    <item>Es wird verwendet, um die Uhr-App über das Analoguhr-Widget zu starten.</item>
+  </string-array>
+</resources>

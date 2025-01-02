@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Başlatıcı nedir-->
+    <!--Simge paketi nedir-->
+    <!--Bir simge paketini nasıl kullanırım?-->
+    <!--Bir simge paketini nasıl uygularım?-->
+    <!--Dahil edilen tüm simgeleri nasıl görebilirim?-->
+    <!--Simge adının tamamını göremiyorum-->
+    <!--Simgeleri alternatif bir simgeyle nasıl değiştirebilirim?-->
+    <!--Bir simgeyi nasıl talep edebilirim?-->
+    <!--Uygulamayı yeniden yükledikten sonra kalan Premium İsteklerini nasıl geri yükleyebilirim?-->
+    <!--Telefonumu yeniden başlattıktan sonra simge paketi uygulanmıyor, varsayılanlara geri yükleniyor mu?-->
+    <!--Simgeler telefonumda neden pürüzlü veya pikselli görünüyor?-->
+    <!--Tüm simgelerde bulunan simgeyi görebiliyorum,
+            ama neden uygulama çekmecesindeki gerçek simge değişmiyor?-->
+    <!--\"Hataları bildir\" seçeneği nedir?-->
+    <!--Başlatıcım Google Play açıklamasında listeleniyor ancak neden başvuru bölümünde yer almıyor?-->
+    <!--Duvar kağıdı uygulanamıyor, sadece siyah ekran mı görünüyor?-->
+    <!--Muzei: Yalnızca indirilen duvar kağıtları nasıl yüklenir?-->
+    <!--Muzei: Duvar kağıdı her değiştiğinde duvar kağıdını indirmeye devam etmek istemiyorum?-->
+    <!--Muzei: Yalnızca belirli duvar kağıtlarını mı kullanmak istiyorum?-->
+    <!--Harici Depolama Okuma ve Yazma iznine neden ihtiyaç duyulur?-->
+    <!--İnternet izni neden gerekli?-->
+    <!--Erişim Ağı Durumu iznine neden ihtiyaç duyulur?-->
+    <!--Erişim Wi-Fi Durumu izni neden gerekli?-->
+    <!--Duvar Kağıdını Ayarlama izni neden gerekli?-->
+    <!--Uyandırma Kilidi İzni neden gerekli?-->
+    <!--Alarm Ayarlama izni neden gerekli?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Başlatıcı nedir?</item>
+    <item>Simge paketi nedir?</item>
+    <item>Bir simge paketini nasıl kullanırım?</item>
+    <item>Bir simge paketini nasıl uygularım?</item>
+    <item>Dahil edilen tüm simgeleri nasıl görebilirim?</item>
+    <item>Simge adının tamamını göremiyorum</item>
+    <item>Simgeleri alternatif bir simgeyle nasıl değiştirebilirim?</item>
+    <item>Bir simgeyi nasıl talep edebilirim?</item>
+    <item>Uygulamayı yeniden yükledikten sonra kalan Premium İsteklerini nasıl geri yükleyebilirim?</item>
+    <item>Telefonumu yeniden başlattıktan sonra simge paketi uygulanmıyor; varsayılanlara geri dönüyor mu?</item>
+    <item>Simgeler telefonumda neden pürüzlü veya pikselli görünüyor?</item>
+    <item>Tüm simgelerde bulunan simgeyi görebiliyorum,
+            ama neden uygulama çekmecesindeki gerçek simge değişmiyor?</item>
+    <item>\"Hataları bildir\" seçeneği nedir?</item>
+    <item>Başlatıcım Google Play açıklamasında listeleniyor ancak neden başvuru bölümünde yer almıyor?</item>
+    <item>Duvar kağıdı uygulanamıyor, sadece siyah ekran mı görünüyor?</item>
+    <item>Muzei: Yalnızca indirilen duvar kağıtları nasıl yüklenir?</item>
+    <item>Muzei: Duvar kağıdı her değiştiğinde duvar kağıdını indirmeye devam etmek istemiyorum?</item>
+    <item>Muzei: Yalnızca belirli duvar kağıtlarını mı kullanmak istiyorum?</item>
+    <item>Harici Depolama Okuma ve Yazma iznine neden ihtiyaç duyulur?</item>
+    <item>İnternet izni neden gerekli?</item>
+    <item>Erişim Ağı Durumu iznine neden ihtiyaç duyulur?</item>
+    <item>Erişim Wifi Durumu izni neden gerekli?</item>
+    <item>Duvar Kağıdını Ayarlama izni neden gerekli?</item>
+    <item>Uyandırma Kilidi iznine neden ihtiyaç var?</item>
+    <item>Alarm Ayarlama izni neden gerekli?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Başlatıcı, kullanıcıların ana ekranı özelleştirmesine olanak tanıyan Android kullanıcı arayüzünün bir parçasıdır.
+            Android cihazlarda mobil uygulamaları başlatın, telefon görüşmeleri yapın ve diğer görevleri gerçekleştirin.</item>
+    <item>Uygulama çekmecesi simgelerinizin görünümünü değiştirecek bir dizi grafik</item>
+    <item>Özel simge paketlerini destekleyen bir başlatıcıya ihtiyacınız olacak.
+            Desteklenen başlatıcılar Play Store açıklamasında listelenmiştir.
+            Hangi başlatıcıların kullanılması gerektiği konusunda kafanız karıştıysa \"Uygula\" bölümüne gidin ve oradan yükleyin.</item>
+    <item>Gezinme çekmecesini açabilir ve ardından \"Uygula\"yı açabilirsiniz. Listeden başlatıcınızı seçin.
+            Başlatıcınız orada listelenmiyorsa ancak bu simge paketi onunla uyumluysa
+            (desteklenen başlatıcılar için Google Play Store açıklamasına bakın),
+            simge paketini başlatıcı ayarlarınızda manuel olarak uygulayabilirsiniz.</item>
+    <item>Gezinme çekmecesini açabilir ve ardından \"Simgeler\"i açabilirsiniz</item>
+    <item>Sadece simgeye dokunun. Daha büyük bir resim ve tam simge adının yer aldığı bir önizleme iletişim kutusu görünecektir.</item>
+    <item>Hangi başlatıcıyı kullandığınıza bağlıdır. Her başlatıcı simge düzenlemeyi desteklemez.
+       	    Çoğunlukla bir simgeye dokunup basılı tutarak veya çift dokunarak bir simgeyi düzenleyebilirsiniz.</item>
+    <item>Gezinme çekmecesini açabilir, ardından \"Simge İsteği\"ni açabilirsiniz.</item>
+    <item>Gezinme çekmecesini açabilir, ardından \"Ayarlar\"ı açıp \"Satın Alınanları Geri Yükle\"yi seçebilirsiniz.
+            Yeniden yüklemeden önce kalan Premium İstekleriniz varsa bunlar geri yüklenecektir.</item>
+    <item>Bu simge paketinin SD Karta taşınması nedeniyle oldu; dahili hafızaya kurmalısınız.</item>
+    <item>Sorun, büyük simge çözünürlüğünü işlerken kullandığınız başlatıcıdan kaynaklanıyor olabilir.
+       	    Simge boyutunu %115-120\'ye çıkararak düzeltebilirsiniz.
+       	    Alternatif olarak başlatıcınızı değiştirebilirsiniz.</item>
+    <item>Ayarları açın, aşağı kaydırın ve ardından \"Hataları Bildir\" seçeneğini seçin.</item>
+    <item>\"Hataları Bildir\" kontrol paneliyle değil simge paketiyle ilgili hataları bildirmek için kullanılır.</item>
+    <item>Her başlatıcı doğrudan uygulamayı desteklemez ve bazılarına doğrudan kontrol panelinden erişilemez.
+      	    Bu simge paketini bireysel başlatıcı ayarlarında manuel olarak uygulayabilirsiniz.</item>
+    <item>Doğrudan uygulamadan \"Duvar Kağıdını Ayarla\" seçeneğini seçtiğinizde, önbelleğe indirilecektir,
+      	    daha sonra kontrol paneli uygulaması bunu uygulamaya çalışacaktır. Başvuru biraz zaman alacaktır ve aynı zamanda kısa bir süre için büyük miktarda RAM\'e ihtiyaç duyacaktır.
+      	    Telefonunuzda duvar kağıdını işlemek için yeterli boş RAM bulunmadığından \"Siyah Ekran\" hataları görünebilir.
+      	    Telefonunuzu yeniden başlatmak bu sorunu çözecektir. Yeniden başlattıktan sonra telefonunuzda daha fazla RAM bulunacaktır.
+            Alternatif olarak indirdiğiniz duvar kağıdını Galerinizden açabilir ve oradan duvar kağıdı olarak ayarlayabilirsiniz.</item>
+    <item>Muzei\'yi açın, bu simge paketini seçin, ayarlar. Yalnızca indirilen duvar kağıtlarını yükleme seçeneğini göreceksiniz.
+            Önce kontrol panelinden duvar kağıtlarını indirmeniz gerekecek.</item>
+    <item>Bir duvar kağıdı zaten indirilmişse, telefonunuzun belleğinden otomatik olarak yüklenecektir.
+            Duvar kağıdı değiştiğinde Muzei indirmeye devam etmeyecek. Önce kontrol panelinden duvar kağıtlarını indirmeniz gerekecek.</item>
+    <item>Kontrol Panelini açın, Muzei\'de kullanmak istediğiniz duvar kağıtlarını indirin.
+            Muzei ayarlarını açın ve Yalnızca İndirilen Duvar Kağıtlarını Yükle\'yi seçin.</item>
+    <item>Önbellek yazmak ve okumak ve simge istek verilerini toplamak için kullanılır.</item>
+    <item>Bulut Tabanlı Duvar Kağıtlarını yüklemek ve indirmek için kullanılır.</item>
+    <item>Telefonunuzun internet bağlantısının olup olmadığını kontrol etmek için kullanılır.</item>
+    <item>Muzei\'den bulut duvar kağıtları yüklemek için telefonunuzun bir wifi ile internet bağlantısı olup olmadığını kontrol etmek için kullanılır.</item>
+    <item>Duvar kağıtlarını doğrudan kontrol paneli uygulamasından uygulamak için kullanılır.</item>
+    <item>Muzei Canlı Duvar Kağıdı tarafından kullanılır.</item>
+    <item>Analog saat widget\'ından saat uygulamasını başlatmak için kullanılır.</item>
+  </string-array>
+</resources>

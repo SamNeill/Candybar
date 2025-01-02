@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--سپلیش اسکرین کا عنوان-->
+    <string name="splash_screen_title">کینڈی بار ڈیش بورڈ</string>
+
+    <!--نیویگیشن ویو-->
+    <string name="navigation_view_home">گھر</string>
+    <string name="navigation_view_apply">لگائیں</string>
+    <string name="navigation_view_icons">شبیہیں</string>
+    <string name="navigation_view_request">آئیکن کی درخواست</string>
+    <string name="navigation_view_wallpapers">وال پیپرز</string>
+    <string name="navigation_view_kustom">حسب ضرورت</string>
+    <string name="navigation_view_settings">ترتیبات</string>
+    <string name="navigation_view_faqs">اکثر پوچھے گئے سوالات</string>
+    <string name="navigation_view_about">کے بارے میں</string>
+    <string name="navigation_view_donate">سپورٹ ڈویلپمنٹ</string>
+
+    <!--موزی-->
+    <string name="muzei_settings">موزی کی ترتیبات</string>
+    <string name="minute">منٹ</string>
+    <string name="hour">گھنٹہ</string>
+    <string name="save_setting">محفوظ کریں۔</string>
+    <string name="muzei_refresh_duration">ریفریش کا دورانیہ</string>
+    <string name="muzei_wifi_only">صرف وائی فائی سے ریفریش کریں۔</string>
+    <string name="muzei_downloaded_only">صرف ڈاؤن لوڈ کردہ وال پیپرز لوڈ کریں۔</string>
+    <string name="muzei_settings_ignored">آئیکن پیک میں وال پیپرز نہیں ہیں، ترتیبات کو نظر انداز کر دیا گیا ہے۔</string>
+    <string name="muzei_settings_saved">ترتیبات محفوظ ہو گئیں۔</string>
+
+    <!--مینو-->
+    <string name="menu_search">تلاش کریں۔</string>
+    <string name="menu_save">ڈیوائس میں محفوظ کریں۔</string>
+    <string name="menu_select_all">سبھی کو منتخب کریں۔</string>
+    <string name="menu_delete">حذف کریں۔</string>
+
+    <string name="menu_wallpaper_crop">وال پیپر کو تراشیں۔</string>
+    <string name="menu_apply_homescreen">ہوم اسکرین</string>
+    <string name="menu_apply_lockscreen">لاک اسکرین</string>
+    <string name="menu_apply_homescreen_lockscreen">ہوم اسکرین اور لاک اسکرین</string>
+
+    <!--ڈائیلاگ-->
+    <string name="open">کھولیں۔</string>
+    <string name="close">بند</string>
+    <string name="clear">صاف</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="install">انسٹال کریں۔</string>
+    <string name="donate">عطیہ کریں۔</string>
+    <string name="update">اپ ڈیٹ کریں۔</string>
+
+    <string name="search_noresult">\"%s\" کے لیے کوئی نتیجہ نہیں ملا</string>
+    <string name="search_faqs">سوال یا جواب</string>
+    <string name="search_icon">آئیکن کا نام</string>
+    <string name="search_wallpapers">وال پیپر کا نام</string>
+
+    <!--اپ ڈیٹ کریں۔-->
+    <string name="checking_for_update">اپ ڈیٹ کی جانچ ہو رہی ہے…</string>
+    <string name="update_available">اپ ڈیٹ دستیاب ہے!</string>
+    <string name="no_update_available">آپ تازہ ترین ورژن استعمال کر رہے ہیں!</string>
+
+    <!--چینج لاگ ورژن-->
+    <string name="changelog_version">ورژن</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">درون ایپ خریداری پروڈکٹس لوڈ کرنے سے قاصر</string>
+
+    <!--لائسنس-->
+    <string name="license_checking">لائسنس کی جانچ ہو رہی ہے…</string>
+    <string name="license_check">لائسنس چیک</string>
+    <string name="license_check_success">لائسنس کی جانچ میں کامیابی۔ پلے اسٹور سے ایپ ڈاؤن لوڈ کرنے کا شکریہ۔</string>
+    <string name="license_check_failed">لائسنس کی جانچ ناکام ہوگئی؛ آپ نے پلے اسٹور سے ایپ ڈاؤن لوڈ نہیں کی۔ آپ اسے استعمال نہیں کر پائیں گے۔</string>
+    <string name="license_check_retry">لائسنس چیک کرنے سے قاصر، براہ کرم چند لمحوں میں دوبارہ کوشش کریں۔</string>
+
+    <!--پلے اسٹور انسٹالیشن چیک-->
+    <string name="playstore_check">پلے اسٹور چیک کریں۔</string>
+    <string name="playstore_check_success">گوگل پلے اسٹور سے ایپ انسٹال کرنے کا شکریہ۔ لطف اٹھائیں!</string>
+    <string name="playstore_check_failed">ایسا لگتا ہے کہ آپ نے یہ آئیکن پیک گوگل پلے اسٹور کے باہر سے انسٹال کیا ہے۔
+        آپ اسے استعمال نہیں کر پائیں گے۔</string>
+
+    <!--شیئر کریں۔-->
+    <string name="share_app_title">یو! %s کو چیک کریں۔</string>
+    <string name="share_app_body">Play Store پر %1$s آئیکن پیک چیک کریں: %2$s</string>
+
+    <!--انٹرو پر ٹیپ کریں۔-->
+    <string name="tap_intro_home_navigation">نیویگیشن دراز</string>
+    <string name="tap_intro_home_navigation_desc">نیویگیشن دراز کو کھولنے کے لیے یہاں تھپتھپائیں یا اسکرین کے بائیں کنارے سے سوائپ کریں۔</string>
+    <string name="tap_intro_home_apply">آئیکن پیک لگائیں۔</string>
+    <string name="tap_intro_home_apply_desc">اپنے موجودہ لانچر پر %s لگانے کے لیے یہاں تھپتھپائیں۔ دوسرے لانچرز پر لاگو کرنے کے لیے دیر تک دبائیں۔</string>
+    <string name="tap_intro_icons_search">تلاش کریں۔</string>
+    <string name="tap_intro_icons_search_desc">آئیکن تلاش کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_request_search">گمشدہ ایپس تلاش کریں۔</string>
+    <string name="tap_intro_request_search_desc">منتخب آئیکن کی درخواست کے لیے گمشدہ آئیکنز کے لیے اپنی انسٹال کردہ ایپس کے ذریعے تلاش کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_request_select">مس شدہ ایپ کو منتخب کریں۔</string>
+    <string name="tap_intro_request_select_desc">آئیکن کی درخواست کے لیے مس ایپ کو منتخب کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_request_select_all">تمام چھوٹی ایپس کو منتخب کریں۔</string>
+    <string name="tap_intro_request_select_all_desc">آئیکن کی درخواست کے لیے تمام چھوٹی ایپس کو منتخب کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_request_send">آئیکن کی درخواست بھیجیں۔</string>
+    <string name="tap_intro_request_send_desc">منتخب مس ایپس بھیجنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_request_premium">پریمیم آئیکن کی درخواست</string>
+    <string name="tap_intro_request_premium_desc">پریمیم آئیکن کی درخواست کا پیکیج خریدنے کے لیے یہاں تھپتھپائیں، پریمیم آئیکن کی درخواست کے ساتھ، آپ اپنی درخواست کردہ ایپس کو تیزی سے حاصل کر سکتے ہیں۔</string>
+    <string name="tap_intro_wallpapers_option">وال پیپر کے اختیارات</string>
+    <string name="tap_intro_wallpapers_option_desc">وال پیپر کے اختیارات دکھانے کے لیے یہاں تھپتھپائیں اور تھامیں؛ %s وال پیپر لگائیں۔</string>
+    <string name="tap_intro_wallpapers_option_desc_download">ڈاؤن لوڈ کریں یا</string>
+    <string name="tap_intro_wallpapers_preview">وال پیپر کا پیش نظارہ کریں۔</string>
+    <string name="tap_intro_wallpapers_preview_desc">وال پیپر کے پورے سائز کا پیش نظارہ کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_wallpaper_preview_save">وال پیپر محفوظ کریں۔</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">اپنے آلے پر وال پیپر ڈاؤن لوڈ اور محفوظ کرنے کے لیے یہاں تھپتھپائیں تاکہ آپ اسے بعد میں استعمال کر سکیں</string>
+    <string name="tap_intro_wallpaper_preview_apply">وال پیپر لگائیں۔</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">وال پیپر کو ہوم اسکرین کے پس منظر کے طور پر سیٹ کرنے کے لیے یہاں تھپتھپائیں۔</string>
+
+    <!--گھر-->
+    <string name="home_more_apps_header">مزید ایپس</string>
+    <string name="home_more_apps">گوگل پلے اسٹور پر مزید آئیکونز پیک چیک کریں۔</string>
+    <string name="home_rate">شرح</string>
+    <string name="home_share">شیئر کریں۔</string>
+    <string name="home_check_update">اپ ڈیٹ کریں۔</string>
+    <string name="home_apply_icon_pack">%s اپلائی کریں۔</string>
+    <string name="home_donate">عطیہ کریں۔</string>
+    <string name="home_donate_desc">ڈیولپر کو مزید آئیکن پیک بنانے کی ترغیب دیں۔</string>
+    <string name="home_icons">شبیہیں</string>
+    <string name="home_icon_dimension">%s پکسلز آئیکن کا طول و عرض</string>
+    <string name="home_loud_wallpapers">%d کلاؤڈ وال پیپرز</string>
+    <string name="home_muzei">موزی لائیو وال پیپر</string>
+    <string name="home_icon_request_installed_apps">کل\n%d انسٹال کردہ ایپس</string>
+    <string name="home_icon_request_themed_apps">تھیمڈ\n%d ایپس</string>
+    <string name="home_icon_request_missed_apps">چھوٹ گئی\n%d ایپس</string>
+
+    <!--لگائیں-->
+    <string name="apply_installed">انسٹال شدہ لانچر</string>
+    <string name="apply_installed_launchers">انسٹال شدہ لانچرز</string>
+    <string name="apply_supported">تعاون یافتہ لانچرز</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s لانچر انسٹال نہیں ہے۔ آپ اسے Amazon AppStore یا اپنے ترجیحی وسائل اور اسٹورز سے تلاش اور انسٹال کرسکتے ہیں۔</string>
+    <string name="apply_manual">%1$s لانچر براہ راست لاگو کرنے کی حمایت نہیں کرتا ہے، لیکن آپ لانچر کی ترتیبات سے %2$s کو دستی طور پر لاگو کر سکتے ہیں۔</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso براہ راست درخواست کی حمایت نہیں کرتا ہے لیکن آپ ان اقدامات پر عمل کر سکتے ہیں:</string>
+    <string name="apply_manual_kvaesitso_step_1">Kvaesitso کی ترتیبات کھولیں۔</string>
+    <string name="apply_manual_kvaesitso_step_2">\"گرڈ اور شبیہیں\" کو تھپتھپائیں</string>
+    <string name="apply_manual_kvaesitso_step_3">\"آئیکن پیک\" پر ٹیپ کریں</string>
+    <string name="apply_manual_kvaesitso_step_4">فہرست سے %s کو منتخب کریں۔</string>
+    <string name="apply_manual_kvaesitso_step_5">پس منظر کی شکل کو فعال یا غیر فعال کرنے کے لیے پینٹ برش آئیکن کو تھپتھپائیں۔</string>
+    <string name="apply_manual_kiss">KISS براہ راست درخواست کی حمایت نہیں کرتا، لیکن آپ ان اقدامات پر عمل کر سکتے ہیں:</string>
+    <string name="apply_manual_kiss_step_1">KISS کی ترتیبات کھولیں۔</string>
+    <string name="apply_manual_kiss_step_2">\"یوزر انٹرفیس\" کو تھپتھپائیں</string>
+    <string name="apply_manual_kiss_step_3">\"آئیکن پیک\" پر ٹیپ کریں</string>
+    <string name="apply_manual_kiss_step_4">فہرست سے %s کو منتخب کریں۔</string>
+    <string name="apply_manual_samsung_oneui">%1$s براہ راست اطلاق کو سپورٹ نہیں کرتا ہے، لیکن %2$s سے شروع ہو کر آپ ایک ساتھی ایپ کے ساتھ آئیکنز لگا سکتے ہیں۔</string>
+    <string name="apply_manual_samsung_oneui_too_old">آپ کا %s کا موجودہ ورژن بہت پرانا ہے۔ براہ کرم آئیکنز کو براہ راست لاگو کرنے کے قابل ہونے کے لیے Android 12 یا اس سے نئے پر اپ ڈیٹ کریں۔ متبادل طور پر، آپ ایک مختلف لانچر انسٹال کر سکتے ہیں۔</string>
+    <string name="apply_manual_samsung_oneui_step_1">%s کھولیں۔</string>
+    <string name="apply_manual_samsung_oneui_step_2">ایپ %s ڈاؤن لوڈ کریں۔</string>
+    <string name="apply_manual_samsung_oneui_step_3">\"آئیکن\" کو تھپتھپائیں</string>
+    <string name="apply_manual_samsung_oneui_step_4">\"نیا بنائیں\" کو تھپتھپائیں</string>
+    <string name="apply_manual_samsung_oneui_step_5">نیلے \"Iconpack\" بٹن کو تھپتھپائیں۔</string>
+    <string name="apply_manual_samsung_oneui_step_6">فہرست سے %s کو منتخب کریں۔</string>
+    <string name="apply_manual_samsung_oneui_step_7">ان اقدامات کو ہر بار دہرائیں جب آپ %s کو اپ ڈیٹ کریں کیونکہ نئے آئیکنز خود بخود میپ نہیں ہوں گے۔</string>
+    <string name="apply_manual_hios">HiOS لانچر براہ راست لاگو کی حمایت نہیں کرتا، لیکن آپ ان اقدامات پر عمل کر سکتے ہیں:</string>
+    <string name="apply_manual_hios_step_1">\"ترتیبات\" کھولیں</string>
+    <string name="apply_manual_hios_step_2">\"تھیم اور لاک اسکرین\" کو تھپتھپائیں</string>
+    <string name="apply_manual_hios_step_3">\"میری تھیم\" کو تھپتھپائیں</string>
+    <string name="apply_manual_hios_step_4">\"آئیکن پیک\" کو تھپتھپائیں</string>
+    <string name="apply_manual_hios_step_5">%s کو تھپتھپائیں۔</string>
+    <string name="apply_manual_oxygen_os_step_1">اپنی ہوم اسکرین کو دیر تک تھپتھپائیں۔</string>
+    <string name="apply_manual_oxygen_os_step_2">\"ہوم سیٹنگز\" کو تھپتھپائیں</string>
+    <string name="apply_manual_oxygen_os_step_3">\"آئیکن پیک\" کو تھپتھپائیں</string>
+    <string name="apply_manual_oxygen_os_step_4">%s کو تھپتھپائیں۔</string>
+    <string name="apply_manual_color_os_step_1">اپنی ہوم اسکرین کو دیر تک تھپتھپائیں۔</string>
+    <string name="apply_manual_color_os_step_2">\" شبیہیں\" کو تھپتھپائیں</string>
+    <string name="apply_manual_color_os_step_3">\"حسب ضرورت\" بٹن کے دائیں جانب اسکرول کریں (یہ اسکرول کرنے کے قابل فہرست ہے!)</string>
+    <string name="apply_manual_color_os_step_4">%s کو تھپتھپائیں۔</string>
+    <string name="apply_manual_before">بیف لانچر کا یہ ورژن ابھی تک براہ راست آئیکنز لگانے کی حمایت نہیں کرتا ہے۔ اس کے بجائے، ذیل کے مراحل پر عمل کریں:</string>
+    <string name="apply_manual_before_step_1">ہوم اسکرین پر بائیں طرف سوائپ کریں۔</string>
+    <string name="apply_manual_before_step_2">\"ترتیبات\" کو تھپتھپائیں</string>
+    <string name="apply_manual_before_step_3">\"انداز اور تھیمز\" کو تھپتھپائیں</string>
+    <string name="apply_manual_before_step_4">\"آئیکن اسٹائلز اور پیک\" کو تھپتھپائیں</string>
+    <string name="apply_manual_before_step_5">%s کو تھپتھپائیں۔</string>
+    <string name="apply_manual_nothing_step_1">\"ترتیبات\" کھولیں</string>
+    <string name="apply_manual_nothing_step_2">\"حسب ضرورت\" کو تھپتھپائیں</string>
+    <string name="apply_manual_nothing_step_3">\"آئیکن پیک\" کو تھپتھپائیں</string>
+    <string name="apply_manual_nothing_step_4">%s کو تھپتھپائیں۔</string>
+    <string name="apply_launch_failed">%s کی ترتیبات شروع کرنے سے قاصر</string>
+    <string name="apply_launcher_not_installed">%s لانچر انسٹال نہیں ہے۔ کیا آپ اسے ڈاؤن لوڈ اور انسٹال کرنے کے لیے گوگل پلے اسٹور کھولنا چاہتے ہیں؟</string>
+    <string name="apply_launcher_not_installable">%s لانچر انسٹال نہیں ہے۔ براہ کرم لانچر انسٹال کرنے کے بعد دوبارہ کوشش کریں۔</string>
+    <string name="apply_cmtheme_not_available">CM تھیم مینیجر اس ڈیوائس پر دستیاب نہیں ہے۔</string>
+    <string name="apply_cmtheme_failed">سی ایم تھیم مینیجر کو لانچ کرنے سے قاصر، آپ ترتیبات سے آئیکن پیک کو دستی طور پر لاگو کرنے کی کوشش کر سکتے ہیں۔</string>
+    <string name="apply_lg_home">اس آئیکن پیک کو لاگو کرنے کے لیے سیٹنگز - ڈسپلے - ہوم اسکرین - تھیم کو کھولیں۔</string>
+    <string name="apply_lg_home_not_available">LG Home اس ڈیوائس پر دستیاب نہیں ہے۔</string>
+    <string name="apply_lg_home_failed">LG ہوم سیٹنگز لانچ کرنے سے قاصر، آپ سیٹنگز سے آئیکن پیک کو دستی طور پر لاگو کرنے کی کوشش کر سکتے ہیں۔</string>
+    <string name="apply_lg_home_nougat">Android Nougat کے ساتھ LG ہوم اب آئیکن پیک کو سپورٹ نہیں کرتا ہے۔ آئیکن پیک استعمال کرنے کے لیے آپ کو کسٹم لانچر کی ضرورت ہے۔</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s لانچر کسی بھی آئیکون پیک کو سپورٹ نہیں کرتا ہے، اس لیے آپ اس آئیکن پیک کو اس لانچر کے ساتھ استعمال نہیں کر سکتے۔ آپ %2$s لانچر میں اس آئیکن پیک کو استعمال کرنے کے لیے فریق ثالث ایپ کو آزما سکتے ہیں۔</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s لانچر %2$s کے ساتھ مطابقت نہیں رکھتا، لیکن نئے ورژنز کے ساتھ ہم آہنگ ہو سکتا ہے</string>
+
+    <!--شبیہیں-->
+    <string name="icons_load_failed">شبیہیں لوڈ کرنے سے قاصر</string>
+    <string name="icon_shape">آئیکن کی شکل</string>
+    <string name="items_selected">%d منتخب</string>
+
+    <!--درخواست-->
+    <string name="request_title">آئیکن کی درخواست</string>
+    <string name="request_terms">آئیکن کی درخواست کے ساتھ آگے بڑھنے سے پہلے، براہ کرم نوٹ کریں کہ ہماری رہنما خطوط کے مطابق آپ کی درخواست کا جائزہ لیا جائے گا۔ پریمیم درخواستوں پر تیزی سے کارروائی کی جا سکتی ہے۔</string>
+    <string name="request_not_selected">درخواست کرنے کے لیے ایپس کو منتخب کریں۔</string>
+    <string name="request_not_requested">طلب نہیں کی گئی۔</string>
+    <string name="request_already_requested">پہلے ہی درخواست کی ہے۔</string>
+    <string name="request_not_available">درخواست نہیں کی جا سکتی</string>
+    <string name="request_building">عمارت کی درخواست…</string>
+    <string name="request_pacific_sending">پیسفک مینیجر کو درخواست بھیجی جا رہی ہے...</string>
+    <string name="request_pacific_error">پیسیفک مینیجر کو درخواست بھیجتے وقت خرابی پیش آگئی۔ خرابی %s ہے۔</string>
+    <string name="request_pacific_success">پیسیفک مینیجر کو کامیابی کے ساتھ درخواست بھیج دی گئی۔</string>
+    <string name="request_custom_error">آئیکن کی درخواست بھیجتے وقت خرابی پیش آگئی۔ اگر یہ ایرر برقرار رہے تو ڈویلپر سے رابطہ کریں۔ %s</string>
+    <string name="request_custom_success">آئیکن کی درخواست کامیابی کے ساتھ بھیج دی گئی۔</string>
+    <string name="request_fetching_data">تازہ ترین ڈیٹا حاصل کر رہا ہے…</string>
+    <string name="request_build_failed">آئیکن کی درخواست بنانے سے قاصر</string>
+    <string name="request_appfilter_failed">appfilter.xml پڑھنے سے قاصر ہے۔</string>
+    <string name="request_requested">آپ پہلے ہی اس آئیکن کی درخواست کر چکے ہیں اور دوبارہ درخواست نہیں کر سکتے۔</string>
+    <string name="request_requested_possible">آپ نے پہلے ہی اس آئیکن کی درخواست کی ہے۔ کیا آپ واقعی اس پر ایک اور درخواست خرچ کرنا چاہتے ہیں؟</string>
+    <string name="request_requested_button_cancel">واپس جاؤ</string>
+    <string name="request_requested_button_confirm">بہرحال منتخب کریں۔</string>
+    <string name="request_email_client">وہ ایپ منتخب کریں جسے آپ آئیکن کی درخواست بھیجنے کے لیے استعمال کرنا چاہتے ہیں۔</string>
+    <string name="request_app_disabled">آپ اس آئیکن پیک کا پرانا ورژن استعمال کر رہے ہیں۔ درخواست کردہ شبیہیں تازہ ترین ورژن میں شامل کی جا سکتی ہیں۔ آئیکنز کی درخواست کرنے کے لیے براہ کرم اپنی ایپ کو تازہ ترین ورژن میں اپ ڈیٹ کریں۔</string>
+    <string name="connection_error_long">سرور سے ڈیٹا لوڈ کرنے سے قاصر۔ براہ کرم، اپنا نیٹ ورک کنکشن چیک کریں۔</string>
+    <string name="unable_to_load_config">سرور سے ڈیٹا حاصل کرنے یا پڑھنے کے دوران ایک خرابی پیش آگئی۔</string>
+    <string name="request_limit">آپ باقاعدہ درخواست کے ساتھ صرف %d درخواستیں کر سکتے ہیں۔</string>
+    <string name="request_used">آپ نے %d آئیکن کی درخواست کی ہے۔</string>
+    <string name="request_limit_buy">آپ مزید آئیکنز کی درخواست کرنے کے لیے پریمیم درخواستیں خرید سکتے ہیں۔</string>
+    <string name="request_limit_reset">آئیکن کی درخواست کی حد ہر اپ ڈیٹ پر دوبارہ ترتیب دی جائے گی۔</string>
+
+    <!--باقاعدہ درخواست-->
+    <string name="regular_request">باقاعدہ آئیکن کی درخواست</string>
+    <string name="regular_request_desc">اپنے آئیکن کی درخواست کریں، اور ڈویلپر آپ کی درخواست کردہ شبیہیں شامل کرنے کی کوشش کرے گا۔</string>
+    <string name="regular_request_count">کل\n%d درخواست</string>
+    <string name="regular_request_used">استعمال شدہ\n%d درخواست</string>
+    <string name="regular_request_available">دستیاب\n%d درخواست</string>
+
+    <!--پریمیم کی درخواست-->
+    <string name="premium_request">پریمیم آئیکن کی درخواست</string>
+    <string name="premium_request_no_internet">پریمیم درخواست بھیجنے سے پہلے یقینی بنائیں کہ آپ کا فون انٹرنیٹ سے منسلک ہے۔</string>
+    <string name="premium_request_desc">پریمیم آئیکن کی درخواست ایک ادائیگی کی درخواست ہے۔ آپ پریمیم آئیکن کی درخواست استعمال کرکے اپنی درخواست کردہ ایپس کو تیزی سے حاصل کرسکتے ہیں۔</string>
+    <string name="premium_request_buy">خریدیں۔</string>
+    <string name="premium_request_count">کل\n%d درخواست</string>
+    <string name="premium_request_used">استعمال شدہ\n%d درخواست</string>
+    <string name="premium_request_available">دستیاب\n%d درخواست</string>
+    <string name="premium_request_already_purchased">آپ کے پاس ابھی بھی %d پریمیم درخواست ہے۔ پریمیم درخواست پیکیج دوبارہ خریدنے سے پہلے آپ کو ان سب کو استعمال کرنے کی ضرورت ہے۔</string>
+    <string name="premium_request_limit">آپ کے پاس صرف %d پریمیم درخواستیں ہیں،</string>
+    <string name="premium_request_limit1">لیکن آپ نے %d ایپ کو منتخب کیا۔ \n\nباقاعدہ درخواست دوبارہ استعمال کرنے سے پہلے آپ کو اپنی تمام پریمیم درخواستیں استعمال کرنے کی ضرورت ہے۔</string>
+    <string name="premium_request_consume_failed">پریمیم درخواست استعمال کرنے سے قاصر، یقینی بنائیں کہ آپ کا انٹرنیٹ کنکشن مستحکم ہے اور دوبارہ کوشش کریں۔ پریمیم درخواستوں کو دوبارہ بنانے کے لیے ترتیبات پر جائیں۔</string>
+    <string name="premium_request_rebuilding">پریمیم درخواست کی تعمیر نو کی جا رہی ہے…</string>
+    <string name="premium_request_rebuilding_empty">آپ نے پریمیم کی درخواست نہیں کی ہے۔</string>
+    <string name="premium_request_exist">آپ کے پاس ابھی بھی ایک پریمیم آئیکن درخواست پیکیج ہے۔ ترتیبات کھولیں، اسے بحال کرنے کے لیے \"بحال خریداریاں\" کا انتخاب کریں۔</string>
+    <string name="premium_request_required">آئیکن کی درخواستیں کرنے کے لیے آپ کو ایک پریمیم آئیکن درخواست پیکج خریدنے کی ضرورت ہے۔</string>
+
+    <!--وال پیپرز-->
+    <string name="wallpaper_new_added">نیا وال پیپر</string>
+    <string name="wallpaper_already_downloaded">وال پیپر پہلے ہی ڈاؤن لوڈ ہو چکا ہے۔</string>
+    <string name="wallpaper_downloading">وال پیپر ڈاؤن لوڈ ہو رہا ہے…</string>
+    <string name="wallpaper_download_failed">وال پیپر ڈاؤن لوڈ کرنے سے قاصر</string>
+    <string name="wallpaper_download_success">وال پیپر ڈاؤن لوڈ کامیاب</string>
+    <string name="wallpaper_loading">وال پیپر لوڈ ہو رہا ہے…</string>
+    <string name="wallpaper_applying">وال پیپر لگا رہا ہے…</string>
+    <string name="wallpaper_applied">وال پیپر لگا دیا گیا۔</string>
+    <string name="wallpaper_apply_failed">وال پیپر لگانے سے قاصر</string>
+    <string name="wallpaper_apply_cancelled">وال پیپر کا اطلاق منسوخ کر دیا گیا۔</string>
+    <string name="connection_failed">سرور سے ڈیٹا حاصل کرنے سے قاصر</string>
+    <string name="wallpaper_apply">وال پیپر لگائیں۔</string>
+    <string name="wallpaper_save_to_device">وال پیپر محفوظ کریں۔</string>
+
+    <!--presets-->
+    <string name="presets_load_failed">پیش سیٹ لوڈ کرنے سے قاصر</string>
+    <string name="presets_storage_permission">پیش نظارہ وال پیپر لوڈ کرنے کے لیے اسٹوریج کی اجازت درکار ہے۔</string>
+    <string name="presets_required_apps">ان پیش سیٹوں کو استعمال کرنے کے لیے ایپس کی ضرورت ہے۔</string>
+    <string name="presets_required_apps_not_installed">پیش سیٹ استعمال کرنے کے لیے درکار ایپس انسٹال نہیں ہیں۔ براہ کرم غائب مطلوبہ ایپس انسٹال کریں اور دوبارہ کوشش کریں۔</string>
+
+    <!--ترجیحات-->
+    <string name="pref_data_header">ڈیٹا اور کیش</string>
+    <string name="pref_data_cache">کیشے صاف کریں۔</string>
+    <string name="pref_data_cache_desc">اپنے سٹوریج سے امیج کیشے کو ہٹا دیں، جو اس ایپ سے تصویر چنتے وقت، مس ایپس کی درخواست کرتے وقت، اور کلاؤڈ وال پیپر تھمب نیل لوڈ کرنے کے بعد بنائی جاتی ہے۔</string>
+    <string name="pref_data_cache_size">کیشے کا سائز: %s</string>
+    <string name="pref_data_cache_clear_dialog">کیا آپ واقعی کیشے کو صاف کرنا چاہتے ہیں؟</string>
+    <string name="pref_data_cache_cleared">کیش صاف ہو گیا۔</string>
+    <string name="pref_data_request">آئیکن کی درخواست کا ڈیٹا صاف کریں۔</string>
+    <string name="pref_data_request_desc">آئیکن کی درخواست کے ڈیٹا کو ہٹا دیں، آئیکن کی درخواست سے مس ایپس کی درخواست کرنے کے بعد بنایا گیا ہے۔</string>
+    <string name="pref_data_request_clear_dialog">کیا آپ واقعی آئیکن کی درخواست کا ڈیٹا صاف کرنا چاہتے ہیں؟</string>
+    <string name="pref_data_request_cleared">آئیکن کی درخواست کا ڈیٹا صاف ہو گیا۔</string>
+    <string name="pref_premium_request_header">پریمیم آئیکن کی درخواست</string>
+    <string name="pref_premium_request_restore">خریداریوں کو بحال کریں۔</string>
+    <string name="pref_premium_request_restore_desc">آئیکن پیک کو دوبارہ انسٹال کرنے کے بعد پریمیم درخواست پیکیج کو بحال کریں۔</string>
+    <string name="pref_premium_request_restore_success">پریمیم کی درخواست بحال ہو گئی۔</string>
+    <string name="pref_premium_request_restore_empty">آپ کے پاس کوئی خریدا ہوا پیکیج نہیں ہے۔</string>
+    <string name="pref_premium_request_rebuild">پریمیم آئیکن کی درخواست کو دوبارہ بنائیں</string>
+    <string name="pref_premium_request_rebuild_desc">تمام پریمیم آئیکن کی درخواست کے ڈیٹا کو دوبارہ بھیجنے کے لیے جمع کریں۔</string>
+    <string name="pref_theme_header">تھیم</string>
+    <string name="pref_theme_dark">ڈارک تھیم</string>
+    <string name="pref_theme_dark_desc">ایپلیکیشن تھیم کے لیے گہرا رنگ استعمال کریں۔</string>
+    <string name="pref_notifications_header">اطلاعات</string>
+    <string name="pref_notifications">اطلاعات موصول کریں۔</string>
+    <string name="pref_wallpaper_header">وال پیپر</string>
+    <string name="pref_wallpaper_location">وال پیپر محفوظ کریں مقام</string>
+    <string name="pref_language_header">زبان</string>
+    <string name="pref_others_header">دوسرے</string>
+    <string name="pref_others_report_bugs">کیڑے کی اطلاع دیں۔</string>
+    <string name="pref_others_changelog">چینج لاگ</string>
+    <string name="pref_others_reset_tutorial">ٹیوٹوریل کو ری سیٹ کریں۔</string>
+    <string name="pref_others_reset_tutorial_reset">ٹیوٹوریل ری سیٹ</string>
+
+    <!--تھیمز-->
+    <string name="theme_name_auto">آٹو</string>
+    <string name="theme_name_light">روشنی</string>
+    <string name="theme_name_dark">اندھیرا</string>
+    <string name="theme_name_material_you">مواد آپ</string>
+
+    <!--اجازت-->
+    <string name="permission_storage_denied">وال پیپر کو محفوظ کرنے کے لیے سٹوریج کی اجازت درکار ہے۔</string>
+    <string name="permission_notification_denied_1">ڈویلپر سے اطلاعات موصول کرنے کے لیے اطلاع کی اجازت درکار ہے۔</string>
+    <string name="permission_notification_denied_2">ایپ کی ترتیبات سے اطلاعات کو فعال کریں۔</string>
+
+    <!--ارادہ-->
+    <string name="app_client">ایپ کا انتخاب کریں۔</string>
+    <string name="no_email_app">ای میل بھیجنے کے لیے کوئی درخواست نہیں ہے۔</string>
+    <string name="no_browser">URL کھولنے کے لیے کوئی درخواست نہیں ہے۔</string>
+    <string name="intent_email_failed">ای میل ایپلیکیشن ڈسپلے کرنے سے قاصر</string>
+    <string name="intent_email_supported">حمایت کی</string>
+    <string name="intent_email_recommended">تجویز کردہ</string>
+    <string name="intent_email_not_supported">تعاون یافتہ نہیں۔</string>
+    <string name="intent_email_not_supported_message">ایک غیر تعاون یافتہ ای میل کلائنٹ منتخب کیا گیا، براہ کرم دوسرا ای میل کلائنٹ منتخب کریں۔</string>
+
+    <!--کے بارے میں-->
+    <string name="about_contributors_title">تعاون کرنے والے</string>
+
+    <!--کیڑے کی اطلاع دیں۔-->
+    <string name="report_bugs_desc">براہ کرم اس مسئلے کی تفصیل دیں جس کی آپ رپورٹ کرنا چاہتے ہیں۔</string>
+    <string name="report_bugs_desc_hint">تفصیل</string>
+    <string name="report_bugs_desc_empty">مہربانی فرما کر تفصیل دیں۔</string>
+    <string name="report_bugs_building">تعمیراتی سرگرمیوں کی فہرست…</string>
+    <string name="report_bugs_failed">سرگرمی کی فہرست بنانے سے قاصر</string>
+    <string name="report_bugs_send">رپورٹ بھیجیں۔</string>
+
+    <!--سپورٹ ڈویلپمنٹ-->
+    <string name="donation_success">عطیہ کرنے کے لیے آپ کا شکریہ۔ میں اسے اچھے کے لیے استعمال کروں گا۔</string>
+
+    <!--کریش رپورٹ-->
+    <string name="crash_report">کریش رپورٹ</string>
+    <string name="crash_report_message">بدقسمتی سے، %s کریش ہو گیا ہے۔ اس مسئلے کو حل کرنے میں ڈویلپر کی مدد کے لیے نیچے رپورٹ بھیجیں کو منتخب کریں۔</string>
+    <string name="crash_report_send">رپورٹ بھیجیں۔</string>
+
+    <!--دراز ٹوگل-->
+    <string name="txt_open">کھولیں۔</string>
+    <string name="txt_close">بند</string>
+
+    <string name="txt_new">نیا</string>
+
+    <!--اسکرین ریڈرز کے لیے مواد کی تفصیل-->
+    <string name="icon_search_close_button_content_description">آئیکن کی تلاش کو بند کریں۔</string>
+    <string name="icon_request_submit_button_content_description">آئیکن کی درخواست جمع کروائیں۔</string>
+    <string name="icon_list_content_description">آئیکن پیک میں شامل شبیہیں کی فہرست</string>
+    <string name="icon_search_list_content_description">شبیہیں کی فہرست جو تلاش کی اصطلاح سے ملتی ہے۔</string>
+    <string name="about_item_social_content_description">آئیکن پیک کے مصنف کے آن لائن پروفائل کا لنک:</string>
+    <string name="share_icon_pack_button_content_description">اس ایپ کو کسی کے ساتھ شیئر کریں۔</string>
+
+    <!--رازداری کی پالیسی-->
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="privacy_policy_desc">آپ کی رازداری ہمارے لیے اہم ہے۔ یہ سمجھنے کے لیے کہ ہم آپ کے ڈیٹا کو کیسے ہینڈل کرتے ہیں، براہ کرم \'About\' میں ہماری پرائیویسی پالیسی پڑھیں۔</string>
+
+    <!--شرائط و ضوابط-->
+    <string name="terms_conditions">شرائط و ضوابط</string>
+
+    <!--درخواست-->
+    <string name="request_limit_title">مفت درخواست کی حد</string>
+    <string name="request_limit_content">آپ کے پاس %d مفت درخواستیں باقی ہیں۔ لامحدود درخواستوں کے لیے پریمیم میں اپ گریڈ کرنے پر غور کریں۔</string>
+    <string name="request_limit_reached">مفت درخواست کی حد پوری ہو گئی۔ مزید درخواستوں کے لیے براہ کرم پریمیم میں اپ گریڈ کریں۔</string>
+    <string name="request_limit_remaining">آپ مزید %d شبیہیں منتخب کر سکتے ہیں۔</string>
+
+    <!--ایپ ورژن-->
+    <string name="version">ورژن</string>
+	
+    <!--حسب ضرورت-->
+    <string name="home_kustom_desc">%s کے لیے موسم کے اجزاء سے مماثل</string>
+    <string name="kustom_widgets">وجیٹس</string>
+    <string name="kustom_wallpapers">وال پیپرز</string>
+    <string name="kustom_lockscreens">لاک اسکرینز</string>
+    <string name="kustom_komponents">جزو</string>
+
+    <!--رضامندی کے ڈائیلاگ کی درخواست کریں۔-->
+    <string name="request_consent_title">ڈیٹا اکٹھا کرنے کی رضامندی۔</string>
+    <string name="request_consent_content">آپ کے آئیکن کی درخواست پر کارروائی کرنے کے لیے، ہمیں آپ کی انسٹال کردہ ایپس اور ڈیوائس کی تفصیلات (جیسے اسکرین کے طول و عرض اور Android ورژن) کے بارے میں معلومات جمع کرنے کی ضرورت ہے۔ اس سے ہمیں آئیکنز ڈیزائن کرنے میں مدد ملتی ہے جو آپ کے آلے کے لیے بہترین کام کرتے ہیں۔\n\nآپ مزید معلومات کے لیے \'About سیکشن\' میں ہماری رازداری کی پالیسی کا جائزہ لے سکتے ہیں۔</string>
+    <string name="request_consent_accept">قبول کریں۔</string>
+    <string name="request_consent_deny">انکار کریں۔</string>
+
+    <!--نیویگیشن اسٹائل-->
+    <string name="pref_navigation_style">نیویگیشن بار</string>
+
+    <!--تلاش کریں۔-->
+    <string name="search_apps">ایپس تلاش کریں۔</string>
+
+</resources>

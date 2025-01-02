@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Trình khởi chạy là gì-->
+    <!--Gói biểu tượng là gì-->
+    <!--Làm cách nào để sử dụng gói biểu tượng?-->
+    <!--Làm cách nào để áp dụng gói biểu tượng?-->
+    <!--Làm cách nào để xem tất cả các biểu tượng được bao gồm?-->
+    <!--Tôi không thể thấy tên biểu tượng đầy đủ-->
+    <!--Làm cách nào để thay thế biểu tượng bằng biểu tượng thay thế?-->
+    <!--Làm cách nào để yêu cầu một biểu tượng?-->
+    <!--Làm cách nào tôi có thể khôi phục các Yêu cầu cao cấp còn lại sau khi cài đặt lại ứng dụng?-->
+    <!--Sau khi khởi động lại điện thoại, gói biểu tượng không được áp dụng, nó có khôi phục về mặc định không?-->
+    <!--Tại sao các biểu tượng trông lởm chởm hoặc có pixel trên điện thoại của tôi?-->
+    <!--Tôi có thể thấy biểu tượng có trong tất cả các biểu tượng,
+            nhưng tại sao biểu tượng thực tế trên ngăn kéo ứng dụng lại không thay đổi?-->
+    <!--Tùy chọn \"báo cáo lỗi\" là gì?-->
+    <!--Trình khởi chạy của tôi được liệt kê trong mô tả Google Play nhưng tại sao nó không được đưa vào phần áp dụng?-->
+    <!--Không áp dụng được hình nền, chỉ hiển thị màn hình đen?-->
+    <!--Muzei: Làm thế nào để chỉ tải hình nền đã tải xuống?-->
+    <!--Muzei: Tôi không muốn tiếp tục tải hình nền mỗi khi hình nền thay đổi?-->
+    <!--Muzei: Tôi chỉ muốn sử dụng hình nền cụ thể?-->
+    <!--Tại sao cần có quyền Đọc & Ghi Bộ nhớ ngoài?-->
+    <!--Tại sao cần có sự cho phép của Internet?-->
+    <!--Tại sao cần có sự cho phép của Trạng thái Mạng Truy cập?-->
+    <!--Tại sao cần có quyền truy cập Trạng thái Wi-Fi?-->
+    <!--Tại sao cần có quyền Đặt hình nền?-->
+    <!--Tại sao cần có quyền Wake Lock?-->
+    <!--Tại sao cần có quyền Đặt báo thức?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Trình khởi chạy là gì?</item>
+    <item>Gói biểu tượng là gì?</item>
+    <item>Làm cách nào để sử dụng gói biểu tượng?</item>
+    <item>Làm cách nào để áp dụng gói biểu tượng?</item>
+    <item>Làm cách nào để xem tất cả các biểu tượng được bao gồm?</item>
+    <item>Tôi không thể thấy tên biểu tượng đầy đủ</item>
+    <item>Làm cách nào để thay thế biểu tượng bằng biểu tượng thay thế?</item>
+    <item>Làm cách nào để yêu cầu một biểu tượng?</item>
+    <item>Làm cách nào tôi có thể khôi phục các Yêu cầu cao cấp còn lại sau khi cài đặt lại ứng dụng?</item>
+    <item>Sau khi khởi động lại điện thoại, gói biểu tượng không được áp dụng; nó khôi phục về mặc định à?</item>
+    <item>Tại sao các biểu tượng trông lởm chởm hoặc có pixel trên điện thoại của tôi?</item>
+    <item>Tôi có thể thấy biểu tượng có trong tất cả các biểu tượng,
+            nhưng tại sao biểu tượng thực tế trên ngăn kéo ứng dụng lại không thay đổi?</item>
+    <item>Tùy chọn \"báo cáo lỗi\" là gì?</item>
+    <item>Trình khởi chạy của tôi được liệt kê trong mô tả Google Play nhưng tại sao nó không được đưa vào phần áp dụng?</item>
+    <item>Không áp dụng được hình nền, chỉ hiển thị màn hình đen?</item>
+    <item>Muzei: Làm thế nào để chỉ tải hình nền đã tải xuống?</item>
+    <item>Muzei: Tôi không muốn tiếp tục tải hình nền mỗi khi hình nền thay đổi?</item>
+    <item>Muzei: Tôi chỉ muốn sử dụng hình nền cụ thể?</item>
+    <item>Tại sao cần có quyền Đọc &amp; Ghi Bộ nhớ ngoài?</item>
+    <item>Tại sao cần có sự cho phép của Internet?</item>
+    <item>Tại sao cần có sự cho phép của Trạng thái Mạng Truy cập?</item>
+    <item>Tại sao cần có sự cho phép của Trạng thái truy cập Wifi?</item>
+    <item>Tại sao cần có quyền Đặt hình nền?</item>
+    <item>Tại sao cần có quyền Wake Lock?</item>
+    <item>Tại sao cần có quyền Đặt báo thức?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Trình khởi chạy là một phần của giao diện người dùng Android cho phép người dùng tùy chỉnh màn hình chính,
+            khởi chạy ứng dụng di động, gọi điện thoại và thực hiện các tác vụ khác trên thiết bị Android.</item>
+    <item>Một bộ đồ họa sẽ thay đổi giao diện của các biểu tượng ngăn kéo ứng dụng của bạn</item>
+    <item>Bạn sẽ cần một trình khởi chạy hỗ trợ gói biểu tượng tùy chỉnh.
+            Các trình khởi chạy được hỗ trợ được liệt kê trong phần mô tả Cửa hàng Play.
+            Nếu bạn bối rối không biết nên sử dụng trình khởi chạy nào, chỉ cần đi tới phần \"Áp dụng\" và cài đặt từ đó.</item>
+    <item>Bạn có thể mở ngăn điều hướng, sau đó mở \"Áp dụng\". Chọn trình khởi chạy của bạn từ danh sách.
+            Nếu trình khởi chạy của bạn không được liệt kê ở đó nhưng gói biểu tượng này tương thích với nó
+            (xem phần mô tả Cửa hàng Google Play để biết các trình khởi chạy được hỗ trợ),
+            bạn có thể áp dụng gói biểu tượng theo cách thủ công trong cài đặt trình khởi chạy của mình.</item>
+    <item>Bạn có thể mở ngăn điều hướng rồi mở \"Biểu tượng\"</item>
+    <item>Chỉ cần nhấn vào biểu tượng. Hộp thoại xem trước sẽ xuất hiện với hình ảnh lớn hơn và tên biểu tượng đầy đủ.</item>
+    <item>Nó phụ thuộc vào trình khởi chạy bạn đã sử dụng. Không phải mọi launcher đều hỗ trợ chỉnh sửa biểu tượng.
+       	    Hầu hết bạn có thể chỉnh sửa biểu tượng bằng cách nhấn và giữ biểu tượng hoặc nhấn đúp vào biểu tượng đó.</item>
+    <item>Bạn có thể mở ngăn điều hướng, sau đó mở \"Yêu cầu biểu tượng\".</item>
+    <item>Bạn có thể mở ngăn điều hướng, sau đó mở \"Cài đặt\", chọn \"Khôi phục giao dịch mua\".
+            Nếu bạn còn lại bất kỳ Yêu cầu cao cấp nào trước khi cài đặt lại, chúng sẽ được khôi phục.</item>
+    <item>Điều này xảy ra vì gói biểu tượng này đã được chuyển sang Thẻ SD; bạn nên cài nó vào bộ nhớ trong.</item>
+    <item>Sự cố có thể đến từ trình khởi chạy mà bạn đã sử dụng khi xử lý độ phân giải biểu tượng lớn.
+       	    Bạn có thể khắc phục bằng cách tăng kích thước biểu tượng lên 115–120%.
+       	    Ngoài ra, bạn có thể thay đổi trình khởi chạy của mình.</item>
+    <item>Mở cài đặt, cuộn xuống rồi chọn \"Báo cáo lỗi\".</item>
+    <item>\"Báo cáo lỗi\" được sử dụng để báo cáo các lỗi liên quan đến gói biểu tượng chứ không phải bảng điều khiển.</item>
+    <item>Không phải mọi trình khởi chạy đều hỗ trợ áp dụng trực tiếp và một số trình khởi chạy không thể truy cập trực tiếp từ trang tổng quan.
+      	    Bạn có thể áp dụng gói biểu tượng này theo cách thủ công trong cài đặt trình khởi chạy riêng lẻ.</item>
+    <item>Khi bạn \"Đặt hình nền\" trực tiếp từ ứng dụng, nó sẽ được tải xuống bộ đệm,
+      	    thì ứng dụng bảng điều khiển sẽ thử áp dụng nó. Việc áp dụng sẽ mất một chút thời gian và cũng cần một lượng RAM rất lớn trong một khoảng thời gian ngắn.
+      	    Lỗi \"Màn hình đen\" có thể xuất hiện do điện thoại của bạn không có đủ RAM trống để xử lý hình nền.
+      	    Khởi động lại điện thoại của bạn sẽ khắc phục vấn đề này. Sau khi khởi động lại, điện thoại của bạn sẽ có nhiều RAM hơn.
+            Ngoài ra, bạn có thể mở hình nền đã tải xuống từ Thư viện của mình và đặt nó làm hình nền từ đó.</item>
+    <item>Mở Muzei, chọn gói biểu tượng này, cài đặt. Bạn sẽ thấy tùy chọn chỉ tải hình nền đã tải xuống.
+            Trước tiên, bạn sẽ cần tải xuống hình nền từ bảng điều khiển.</item>
+    <item>Nếu hình nền đã được tải xuống, nó sẽ tự động được tải từ bộ nhớ điện thoại của bạn.
+            Muzei sẽ không tiếp tục tải xuống khi hình nền thay đổi. Trước tiên, bạn sẽ cần tải xuống hình nền từ bảng điều khiển.</item>
+    <item>Mở Bảng điều khiển, tải xuống hình nền bạn muốn sử dụng trong Muzei.
+            Mở cài đặt Muzei, sau đó chọn Chỉ tải hình nền đã tải xuống.</item>
+    <item>Nó được sử dụng để ghi và đọc bộ đệm và thu thập dữ liệu yêu cầu biểu tượng.</item>
+    <item>Nó được sử dụng để tải Hình nền dựa trên đám mây và tải chúng xuống.</item>
+    <item>Nó được sử dụng để kiểm tra xem điện thoại của bạn có kết nối internet hay không.</item>
+    <item>Nó dùng để kiểm tra xem điện thoại của bạn có kết nối internet với wifi hay không, để tải hình nền đám mây từ Muzei.</item>
+    <item>Nó được sử dụng để áp dụng hình nền trực tiếp từ ứng dụng bảng điều khiển.</item>
+    <item>Nó được sử dụng bởi Muzei Live Wallpaper.</item>
+    <item>Nó được sử dụng để khởi chạy ứng dụng đồng hồ từ tiện ích đồng hồ analog.</item>
+  </string-array>
+</resources>

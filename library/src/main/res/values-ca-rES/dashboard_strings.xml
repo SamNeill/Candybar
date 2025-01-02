@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Títol de la pantalla inicial-->
+    <string name="splash_screen_title">Tauler de control de CandyBar</string>
+
+    <!--Vista de navegació-->
+    <string name="navigation_view_home">a casa</string>
+    <string name="navigation_view_apply">Aplicar</string>
+    <string name="navigation_view_icons">Icones</string>
+    <string name="navigation_view_request">Sol·licitud d\'icones</string>
+    <string name="navigation_view_wallpapers">Fons de pantalla</string>
+    <string name="navigation_view_kustom">Personalitzat</string>
+    <string name="navigation_view_settings">Configuració</string>
+    <string name="navigation_view_faqs">Preguntes freqüents</string>
+    <string name="navigation_view_about">Sobre</string>
+    <string name="navigation_view_donate">Suport al Desenvolupament</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Configuració de Muzei</string>
+    <string name="minute">Minut</string>
+    <string name="hour">Hora</string>
+    <string name="save_setting">Desa</string>
+    <string name="muzei_refresh_duration">Durada de l\'actualització</string>
+    <string name="muzei_wifi_only">Actualitza només des de Wi-Fi</string>
+    <string name="muzei_downloaded_only">Carregueu només fons de pantalla baixats</string>
+    <string name="muzei_settings_ignored">El paquet d\'icones no conté fons de pantalla, la configuració ignorada.</string>
+    <string name="muzei_settings_saved">Configuració desada</string>
+
+    <!--Menú-->
+    <string name="menu_search">Cerca</string>
+    <string name="menu_save">Desa al dispositiu</string>
+    <string name="menu_select_all">Seleccioneu Tot</string>
+    <string name="menu_delete">Suprimeix</string>
+
+    <string name="menu_wallpaper_crop">Retalla el fons de pantalla</string>
+    <string name="menu_apply_homescreen">Pantalla d\'inici</string>
+    <string name="menu_apply_lockscreen">Pantalla de bloqueig</string>
+    <string name="menu_apply_homescreen_lockscreen">Pantalla d\'inici i pantalla de bloqueig</string>
+
+    <!--Diàleg-->
+    <string name="open">Obert</string>
+    <string name="close">Tancar</string>
+    <string name="clear">Clar</string>
+    <string name="ok">D\'acord</string>
+    <string name="install">Instal·lar</string>
+    <string name="donate">Donar</string>
+    <string name="update">Actualització</string>
+
+    <string name="search_noresult">No s\'ha trobat cap resultat per a \"%s\"</string>
+    <string name="search_faqs">Pregunta o resposta</string>
+    <string name="search_icon">Nom de la icona</string>
+    <string name="search_wallpapers">Nom del fons de pantalla</string>
+
+    <!--Actualització-->
+    <string name="checking_for_update">S\'està comprovant si hi ha actualitzacions...</string>
+    <string name="update_available">Actualització disponible!</string>
+    <string name="no_update_available">Estàs utilitzant la darrera versió!</string>
+
+    <!--Versió del registre de canvis-->
+    <string name="changelog_version">Versió</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">No es poden carregar productes de compra des de l\'aplicació</string>
+
+    <!--llicència-->
+    <string name="license_checking">S\'està comprovant la llicència...</string>
+    <string name="license_check">Comprovació de llicència</string>
+    <string name="license_check_success">La comprovació de la llicència és correcta. Gràcies per baixar l\'aplicació de Play Store.</string>
+    <string name="license_check_failed">La comprovació de la llicència ha fallat; no has baixat l\'aplicació de Play Store. No el podràs utilitzar.</string>
+    <string name="license_check_retry">No es pot comprovar la llicència, torneu-ho a provar d\'aquí a uns instants.</string>
+
+    <!--Comprovació de la instal·lació de Play Store-->
+    <string name="playstore_check">Comprova Play Store</string>
+    <string name="playstore_check_success">Gràcies per instal·lar l\'aplicació des de Google Play Store. Gaudeix!</string>
+    <string name="playstore_check_failed">Sembla que heu instal·lat aquest paquet d\'icones des de fora de Google Play Store.No el podràs utilitzar.</string>
+
+    <!--Comparteix-->
+    <string name="share_app_title">Jo! Fes una ullada a %s</string>
+    <string name="share_app_body">Fes una ullada al paquet d\'icones %1$s a Play Store: %2$s</string>
+
+    <!--Toqueu Introducció-->
+    <string name="tap_intro_home_navigation">Calaix de navegació</string>
+    <string name="tap_intro_home_navigation_desc">Toqueu aquí o llisqueu des de la vora esquerra de la pantalla per obrir el calaix de navegació</string>
+    <string name="tap_intro_home_apply">Aplica el paquet d\'icones</string>
+    <string name="tap_intro_home_apply_desc">Toqueu aquí per aplicar %s al vostre llançador actual. Premeu llargament per aplicar a altres llançadors.</string>
+    <string name="tap_intro_icons_search">Cerca</string>
+    <string name="tap_intro_icons_search_desc">Toqueu aquí per cercar una icona</string>
+    <string name="tap_intro_request_search">Cerca les aplicacions que falten</string>
+    <string name="tap_intro_request_search_desc">Toqueu aquí per cercar a les vostres aplicacions instal·lades les icones que falten per a la sol·licitud d\'icones seleccionades</string>
+    <string name="tap_intro_request_select">Seleccioneu l\'aplicació perduda</string>
+    <string name="tap_intro_request_select_desc">Toqueu aquí per seleccionar l\'aplicació perduda per a la sol·licitud d\'icona</string>
+    <string name="tap_intro_request_select_all">Seleccioneu totes les aplicacions perdudes</string>
+    <string name="tap_intro_request_select_all_desc">Toqueu aquí per seleccionar totes les aplicacions perdudes per a la sol·licitud d\'icones</string>
+    <string name="tap_intro_request_send">Envia una sol·licitud d\'icona</string>
+    <string name="tap_intro_request_send_desc">Toqueu aquí per enviar les aplicacions perdudes seleccionades</string>
+    <string name="tap_intro_request_premium">Sol·licitud d\'icona Premium</string>
+    <string name="tap_intro_request_premium_desc">Toqueu aquí per comprar el paquet de sol·licitud d\'icona premium, amb una sol·licitud d\'icona premium, podeu obtenir les aplicacions sol·licitades més ràpidament.</string>
+    <string name="tap_intro_wallpapers_option">Opcions de fons de pantalla</string>
+    <string name="tap_intro_wallpapers_option_desc">Mantingueu premut aquí per mostrar les opcions de fons de pantalla; %s aplica fons de pantalla.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">descarregar o</string>
+    <string name="tap_intro_wallpapers_preview">Vista prèvia del fons de pantalla</string>
+    <string name="tap_intro_wallpapers_preview_desc">Toqueu aquí per previsualitzar la mida completa del fons de pantalla</string>
+    <string name="tap_intro_wallpaper_preview_save">Desa fons de pantalla</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Toqueu aquí per baixar i desar fons de pantalla al vostre dispositiu perquè el pugueu utilitzar més tard</string>
+    <string name="tap_intro_wallpaper_preview_apply">Aplica fons de pantalla</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Toqueu aquí per configurar el fons de pantalla com a fons de la pantalla d\'inici</string>
+
+    <!--a casa-->
+    <string name="home_more_apps_header">Més aplicacions</string>
+    <string name="home_more_apps">Comproveu el paquet d\'icones més a Google Play Store</string>
+    <string name="home_rate">Taxa</string>
+    <string name="home_share">Comparteix</string>
+    <string name="home_check_update">Actualització</string>
+    <string name="home_apply_icon_pack">Aplica %s</string>
+    <string name="home_donate">Donar</string>
+    <string name="home_donate_desc">Animeu el desenvolupador a crear més paquets d\'icones</string>
+    <string name="home_icons">Icones</string>
+    <string name="home_icon_dimension">Dimensió de la icona de %s píxels</string>
+    <string name="home_loud_wallpapers">%d fons de pantalla de núvol</string>
+    <string name="home_muzei">Fons de pantalla en viu de Muzei</string>
+    <string name="home_icon_request_installed_apps">Total\n%d aplicacions instal·lades</string>
+    <string name="home_icon_request_themed_apps">\n%d aplicacions temàtiques</string>
+    <string name="home_icon_request_missed_apps">S\'han perdut\n%d aplicacions</string>
+
+    <!--Aplicar-->
+    <string name="apply_installed">Llançador instal·lat</string>
+    <string name="apply_installed_launchers">Llançadors instal·lats</string>
+    <string name="apply_supported">Llançadors compatibles</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher no està instal·lat. Podeu trobar-lo i instal·lar-lo des de l\'Amazon AppStore o des dels vostres recursos i botigues preferides.</string>
+    <string name="apply_manual">%1$s Launcher no admet l\'aplicació directa, però podeu aplicar %2$s manualment des de la configuració del llançador.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso no admet l\'aplicació directa, però podeu seguir aquests passos:</string>
+    <string name="apply_manual_kvaesitso_step_1">Obriu la configuració de Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">Toqueu \"Quadrilla i icones\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Toqueu el \"Paquet d\'icones\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Trieu %s de la llista</string>
+    <string name="apply_manual_kvaesitso_step_5">Toqueu la icona del pinzell per activar o desactivar la forma de fons</string>
+    <string name="apply_manual_kiss">KISS no admet l\'aplicació directa, però podeu seguir aquests passos:</string>
+    <string name="apply_manual_kiss_step_1">Obriu la configuració de KISS</string>
+    <string name="apply_manual_kiss_step_2">Toqueu \"Interfície d\'usuari\"</string>
+    <string name="apply_manual_kiss_step_3">Toqueu el \"Paquet d\'icones\"</string>
+    <string name="apply_manual_kiss_step_4">Trieu %s de la llista</string>
+    <string name="apply_manual_samsung_oneui">%1$s no admet l\'aplicació directa, però a partir de %2$s podeu aplicar icones amb una aplicació complementària.</string>
+    <string name="apply_manual_samsung_oneui_too_old">La vostra versió actual de %s és massa antiga. Actualitzeu a Android 12 o posterior per poder aplicar icones directament. Alternativament, podeu instal·lar un llançador diferent.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Obre %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Baixeu l\'aplicació %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Toqueu \"Icona\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Toqueu \"Crea nou\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Toqueu el botó blau \"Paquet d\'icones\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">Trieu %s de la llista</string>
+    <string name="apply_manual_samsung_oneui_step_7">Repetiu aquests passos cada vegada que actualitzeu %s, ja que les icones noves no s\'assignaran automàticament.</string>
+    <string name="apply_manual_hios">HiOS launcher no admet l\'aplicació directa, però podeu seguir aquests passos:</string>
+    <string name="apply_manual_hios_step_1">Obriu \"Configuració\"</string>
+    <string name="apply_manual_hios_step_2">Toqueu \"Tema i pantalla de bloqueig\"</string>
+    <string name="apply_manual_hios_step_3">Toca \"El meu tema\"</string>
+    <string name="apply_manual_hios_step_4">Toqueu \"Paquet d\'icones\"</string>
+    <string name="apply_manual_hios_step_5">Toqueu %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Toqueu llargament la vostra pantalla d\'inici</string>
+    <string name="apply_manual_oxygen_os_step_2">Toqueu \"Configuració d\'inici\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Toqueu \"Paquet d\'icones\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Toqueu %s</string>
+    <string name="apply_manual_color_os_step_1">Toqueu llargament la vostra pantalla d\'inici</string>
+    <string name="apply_manual_color_os_step_2">Toqueu \"Icones\"</string>
+    <string name="apply_manual_color_os_step_3">Desplaceu-vos cap a la dreta del botó \"Personalitzat\" (aquesta és una llista que es pot desplaçar!)</string>
+    <string name="apply_manual_color_os_step_4">Toqueu %s</string>
+    <string name="apply_manual_before">Aquesta versió de Before Launcher encara no admet l\'aplicació d\'icones directament. En lloc d\'això, seguiu els passos següents:</string>
+    <string name="apply_manual_before_step_1">Feu lliscar el dit cap a l\'esquerra a la pantalla d\'inici</string>
+    <string name="apply_manual_before_step_2">Toqueu \"Configuració\"</string>
+    <string name="apply_manual_before_step_3">Toqueu \"Estils i temes\"</string>
+    <string name="apply_manual_before_step_4">Toqueu \"Estils i paquets d\'icones\"</string>
+    <string name="apply_manual_before_step_5">Toqueu %s</string>
+    <string name="apply_manual_nothing_step_1">Obriu \"Configuració\"</string>
+    <string name="apply_manual_nothing_step_2">Toqueu \"Personalització\"</string>
+    <string name="apply_manual_nothing_step_3">Toqueu \"Paquet d\'icones\"</string>
+    <string name="apply_manual_nothing_step_4">Toqueu %s</string>
+    <string name="apply_launch_failed">No es pot iniciar la configuració de %s</string>
+    <string name="apply_launcher_not_installed">%s Launcher no està instal·lat. Voleu obrir Google Play Store per baixar-lo i instal·lar-lo?</string>
+    <string name="apply_launcher_not_installable">%s Launcher no està instal·lat. Si us plau, torneu-ho a provar després d\'instal·lar el llançador.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager no està disponible en aquest dispositiu</string>
+    <string name="apply_cmtheme_failed">No podeu iniciar CM Theme Manager, podeu provar d\'aplicar el paquet d\'icones manualment des de Configuració.</string>
+    <string name="apply_lg_home">Per aplicar aquest paquet d\'icones, obriu Configuració - Pantalla - Pantalla d\'inici - Tema</string>
+    <string name="apply_lg_home_not_available">LG Home no està disponible en aquest dispositiu</string>
+    <string name="apply_lg_home_failed">No podeu iniciar LG Home Settings, podeu provar d\'aplicar el paquet d\'icones manualment des de Configuració.</string>
+    <string name="apply_lg_home_nougat">LG Home amb Android Nougat ja no admet Icon Pack. Necessites un llançador personalitzat per utilitzar Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher no admet cap paquet d\'icones, de manera que no podeu utilitzar aquest paquet d\'icones amb aquest llançador. Pots provar una aplicació de tercers per utilitzar aquest paquet d\'icones al llançador de %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s launcher no és compatible amb %2$s, però pot ser compatible amb versions més noves</string>
+
+    <!--Icones-->
+    <string name="icons_load_failed">No es poden carregar les icones</string>
+    <string name="icon_shape">Forma d\'icona</string>
+    <string name="items_selected">%d seleccionat</string>
+
+    <!--Sol·licitud-->
+    <string name="request_title">Sol·licitud d\'icones</string>
+    <string name="request_terms">Abans de continuar amb la sol·licitud d\'icona, tingueu en compte que la vostra sol·licitud es revisarà d\'acord amb les nostres directrius. Les sol·licituds premium es poden processar més ràpidament.</string>
+    <string name="request_not_selected">Seleccioneu les aplicacions que voleu sol·licitar</string>
+    <string name="request_not_requested">No sol·licitat</string>
+    <string name="request_already_requested">Ja s\'ha demanat</string>
+    <string name="request_not_available">No es pot demanar</string>
+    <string name="request_building">Sol·licitud de construcció...</string>
+    <string name="request_pacific_sending">S\'està enviant la sol·licitud a Pacific Manager...</string>
+    <string name="request_pacific_error">S\'ha produït un error en enviar una sol·licitud a Pacific Manager. L\'error és %s</string>
+    <string name="request_pacific_success">S\'ha enviat correctament la sol·licitud a Pacific Manager</string>
+    <string name="request_custom_error">S\'ha produït un error en enviar una sol·licitud d\'icona. Si aquest error continua, poseu-vos en contacte amb el desenvolupador. %s</string>
+    <string name="request_custom_success">La sol·licitud d\'icona s\'ha enviat correctament</string>
+    <string name="request_fetching_data">S\'estan obtenint dades més recents...</string>
+    <string name="request_build_failed">No es pot crear la sol·licitud d\'icona</string>
+    <string name="request_appfilter_failed">No es pot llegir appfilter.xml</string>
+    <string name="request_requested">Ja has sol·licitat aquesta icona i no pots tornar-la a demanar.</string>
+    <string name="request_requested_possible">Ja has sol·licitat aquesta icona. Esteu segur que voleu gastar-hi una altra sol·licitud?</string>
+    <string name="request_requested_button_cancel">Torna enrere</string>
+    <string name="request_requested_button_confirm">Seleccioneu de totes maneres</string>
+    <string name="request_email_client">Trieu l\'aplicació que voleu utilitzar per enviar la sol·licitud d\'icona</string>
+    <string name="request_app_disabled">Esteu utilitzant una versió anterior d\'aquest paquet d\'icones. Les icones sol·licitades es poden incloure a la darrera versió. Actualitzeu l\'aplicació a la darrera versió per sol·licitar icones.</string>
+    <string name="connection_error_long">No es poden carregar dades del servidor. Si us plau, comproveu la vostra connexió de xarxa.</string>
+    <string name="unable_to_load_config">S\'ha produït un error en recuperar o llegir dades del servidor.</string>
+    <string name="request_limit">Només podeu fer %d sol·licitud(s) amb sol·licitud habitual.</string>
+    <string name="request_used">Heu sol·licitat %d icones.</string>
+    <string name="request_limit_buy">Podeu comprar sol·licituds Premium per sol·licitar més icones.</string>
+    <string name="request_limit_reset">El límit de sol·licitud d\'icones es restablirà a cada actualització.</string>
+
+    <!--Sol·licitud habitual-->
+    <string name="regular_request">Sol·licitud habitual d\'icones</string>
+    <string name="regular_request_desc">Demaneu la vostra icona i el desenvolupador intentarà incloure les icones que heu sol·licitat.</string>
+    <string name="regular_request_count">Total\n%d sol·licitud</string>
+    <string name="regular_request_used">S\'ha utilitzat\n%d sol·licitud</string>
+    <string name="regular_request_available">Disponible\n%d sol·licitud</string>
+
+    <!--Sol·licitud Premium-->
+    <string name="premium_request">Sol·licitud d\'icona Premium</string>
+    <string name="premium_request_no_internet">Assegureu-vos que el telèfon estigui connectat a Internet abans d\'enviar una sol·licitud premium</string>
+    <string name="premium_request_desc">La sol·licitud d\'icona Premium és una sol·licitud de pagament. Podeu obtenir les aplicacions sol·licitades més ràpidament mitjançant una sol·licitud d\'icona premium.</string>
+    <string name="premium_request_buy">Compra</string>
+    <string name="premium_request_count">Total\n%d sol·licitud</string>
+    <string name="premium_request_used">S\'ha utilitzat\n%d sol·licitud</string>
+    <string name="premium_request_available">Disponible\n%d sol·licitud</string>
+    <string name="premium_request_already_purchased">Encara tens %d sol·licitud premium. Heu d\'utilitzar-los tots abans de tornar a comprar un paquet de sol·licitud premium.</string>
+    <string name="premium_request_limit">Només tens %d sol·licitud(s) premium,</string>
+    <string name="premium_request_limit1">però heu seleccionat %d aplicació(es). \n\nHeu d\'utilitzar totes les vostres sol·licituds premium abans de tornar a utilitzar la sol·licitud normal.</string>
+    <string name="premium_request_consume_failed">No es pot utilitzar la sol·licitud Premium, assegureu-vos que teniu una connexió a Internet estable i torneu-ho a provar. Aneu a Configuració per reconstruir les sol·licituds Premium.</string>
+    <string name="premium_request_rebuilding">S\'està reconstruint la sol·licitud Premium...</string>
+    <string name="premium_request_rebuilding_empty">No heu fet cap sol·licitud Premium</string>
+    <string name="premium_request_exist">Encara tens un paquet de sol·licitud d\'icones Premium. Obriu Configuració, seleccioneu \"Restaurar compres\" per restaurar-lo.</string>
+    <string name="premium_request_required">Heu de comprar un paquet de sol·licitud d\'icones premium per fer sol·licituds d\'icones</string>
+
+    <!--Fons de pantalla-->
+    <string name="wallpaper_new_added">Nou fons de pantalla</string>
+    <string name="wallpaper_already_downloaded">Ja s\'ha baixat el fons de pantalla</string>
+    <string name="wallpaper_downloading">S\'està baixant fons de pantalla…</string>
+    <string name="wallpaper_download_failed">No es pot descarregar fons de pantalla</string>
+    <string name="wallpaper_download_success">La descàrrega del fons de pantalla ha estat correcta</string>
+    <string name="wallpaper_loading">S\'està carregant el fons de pantalla…</string>
+    <string name="wallpaper_applying">S\'està aplicant fons de pantalla...</string>
+    <string name="wallpaper_applied">Fons de pantalla aplicat</string>
+    <string name="wallpaper_apply_failed">No es pot aplicar fons de pantalla</string>
+    <string name="wallpaper_apply_cancelled">S\'ha cancel·lat l\'aplicació de fons de pantalla</string>
+    <string name="connection_failed">No es poden obtenir dades del servidor</string>
+    <string name="wallpaper_apply">Aplica fons de pantalla</string>
+    <string name="wallpaper_save_to_device">Desa fons de pantalla</string>
+
+    <!--Presets-->
+    <string name="presets_load_failed">No es poden carregar els valors predefinits</string>
+    <string name="presets_storage_permission">Es necessita permís d\'emmagatzematge per carregar el fons de pantalla de vista prèvia</string>
+    <string name="presets_required_apps">Aplicacions necessàries per utilitzar aquests valors predefinits</string>
+    <string name="presets_required_apps_not_installed">Les aplicacions necessàries per utilitzar el valor predefinit no estan instal·lades. Instal·leu les aplicacions necessàries que falten i torneu-ho a provar.</string>
+
+    <!--Preferències-->
+    <string name="pref_data_header">Dades i memòria cau</string>
+    <string name="pref_data_cache">Esborra la memòria cau</string>
+    <string name="pref_data_cache_desc">Traieu la memòria cau d\'imatges del vostre emmagatzematge, creada en triar una imatge d\'aquesta aplicació, sol·licitar aplicacions perdudes i després de carregar les miniatures del fons de pantalla del núvol.</string>
+    <string name="pref_data_cache_size">Mida de la memòria cau: %s</string>
+    <string name="pref_data_cache_clear_dialog">Realment voleu esborrar la memòria cau?</string>
+    <string name="pref_data_cache_cleared">S\'ha esborrat la memòria cau</string>
+    <string name="pref_data_request">Esborra les dades de sol·licitud d\'icona</string>
+    <string name="pref_data_request_desc">Elimina les dades de sol·licitud d\'icones, creades després de sol·licitar aplicacions perdudes de la sol·licitud d\'icones.</string>
+    <string name="pref_data_request_clear_dialog">Realment voleu esborrar les dades de sol·licitud d\'icones?</string>
+    <string name="pref_data_request_cleared">S\'han esborrat les dades de la sol·licitud d\'icones</string>
+    <string name="pref_premium_request_header">Sol·licitud d\'icona Premium</string>
+    <string name="pref_premium_request_restore">Restaurar les compres</string>
+    <string name="pref_premium_request_restore_desc">Restaura el paquet de sol·licitud premium després de reinstal·lar el paquet d\'icones</string>
+    <string name="pref_premium_request_restore_success">S\'ha restaurat la sol·licitud Premium</string>
+    <string name="pref_premium_request_restore_empty">No teniu cap paquet comprat</string>
+    <string name="pref_premium_request_rebuild">Sol·licitud de reconstrucció d\'icona Premium</string>
+    <string name="pref_premium_request_rebuild_desc">Recolliu totes les dades de sol·licitud d\'icones premium per tornar-les a enviar</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">Tema fosc</string>
+    <string name="pref_theme_dark_desc">Utilitzeu un color fosc per al tema de l\'aplicació</string>
+    <string name="pref_notifications_header">Notificacions</string>
+    <string name="pref_notifications">Rebre notificacions</string>
+    <string name="pref_wallpaper_header">Fons de pantalla</string>
+    <string name="pref_wallpaper_location">Ubicació de desar fons de pantalla</string>
+    <string name="pref_language_header">Llengua</string>
+    <string name="pref_others_header">Altres</string>
+    <string name="pref_others_report_bugs">Informeu d\'errors</string>
+    <string name="pref_others_changelog">Registre de canvis</string>
+    <string name="pref_others_reset_tutorial">Tutorial de restabliment</string>
+    <string name="pref_others_reset_tutorial_reset">Reinicialització del tutorial</string>
+
+    <!--Temes-->
+    <string name="theme_name_auto">Automàtic</string>
+    <string name="theme_name_light">Llum</string>
+    <string name="theme_name_dark">Fosc</string>
+    <string name="theme_name_material_you">Material tu</string>
+
+    <!--Permís-->
+    <string name="permission_storage_denied">Cal permís d\'emmagatzematge per desar fons de pantalla</string>
+    <string name="permission_notification_denied_1">El permís de notificació és necessari per rebre notificacions del desenvolupador</string>
+    <string name="permission_notification_denied_2">Activa les notificacions des de la configuració de l\'aplicació</string>
+
+    <!--Intenció-->
+    <string name="app_client">Trieu l\'aplicació</string>
+    <string name="no_email_app">No hi ha cap aplicació per enviar correu electrònic</string>
+    <string name="no_browser">No hi ha cap aplicació per obrir l\'URL</string>
+    <string name="intent_email_failed">No es pot mostrar l\'aplicació de correu electrònic</string>
+    <string name="intent_email_supported">Admet</string>
+    <string name="intent_email_recommended">Recomanat</string>
+    <string name="intent_email_not_supported">No s\'admet</string>
+    <string name="intent_email_not_supported_message">S\'ha seleccionat un client de correu electrònic no compatible, seleccioneu un altre client de correu electrònic</string>
+
+    <!--Sobre-->
+    <string name="about_contributors_title">Col·laboradors</string>
+
+    <!--Informeu d\'errors-->
+    <string name="report_bugs_desc">Doneu una descripció del tipus de problema que voleu informar</string>
+    <string name="report_bugs_desc_hint">Descripció</string>
+    <string name="report_bugs_desc_empty">Si us plau, doneu una descripció</string>
+    <string name="report_bugs_building">Llista d\'activitats de construcció...</string>
+    <string name="report_bugs_failed">No es pot crear la llista d\'activitats</string>
+    <string name="report_bugs_send">Enviar informe</string>
+
+    <!--Suport al Desenvolupament-->
+    <string name="donation_success">Gràcies per fer una donació. El faré servir per bé.</string>
+
+    <!--Informe d\'accident-->
+    <string name="crash_report">Informe d\'accident</string>
+    <string name="crash_report_message">Malauradament, %s s\'ha bloquejat. Trieu Enviar informe a continuació per ajudar el desenvolupador a solucionar el problema.</string>
+    <string name="crash_report_send">Enviar informe</string>
+
+    <!--Canvi de calaix-->
+    <string name="txt_open">Obert</string>
+    <string name="txt_close">Tancar</string>
+
+    <string name="txt_new">Nou</string>
+
+    <!--Descripcions de contingut per a lectors de pantalla-->
+    <string name="icon_search_close_button_content_description">Tanqueu la cerca d\'icones</string>
+    <string name="icon_request_submit_button_content_description">Envieu una sol·licitud d\'icona</string>
+    <string name="icon_list_content_description">La llista d\'icones incloses al paquet d\'icones</string>
+    <string name="icon_search_list_content_description">La llista d\'icones que coincideixen amb el terme de cerca</string>
+    <string name="about_item_social_content_description">Un enllaç a un perfil en línia de l\'autor del paquet d\'icones:</string>
+    <string name="share_icon_pack_button_content_description">Comparteix aquesta aplicació amb algú</string>
+
+    <!--Política de privadesa-->
+    <string name="privacy_policy">Política de privadesa</string>
+    <string name="privacy_policy_desc">La vostra privadesa és important per a nosaltres. Si us plau, llegiu la nostra política de privadesa a Quant a per entendre com gestionem les vostres dades.</string>
+
+    <!--Termes i condicions-->
+    <string name="terms_conditions">Termes i condicions</string>
+
+    <!--Sol·licitud-->
+    <string name="request_limit_title">Límit de sol·licitud gratuïta</string>
+    <string name="request_limit_content">Et queden %d sol·licituds gratuïtes. Penseu en l\'actualització a premium per a sol·licituds il·limitades.</string>
+    <string name="request_limit_reached">S\'ha arribat al límit de sol·licitud gratuïta. Si us plau, actualitzeu a Premium per a més sol·licituds.</string>
+    <string name="request_limit_remaining">Podeu seleccionar %d icones més</string>
+
+    <!--Versió de l\'aplicació-->
+    <string name="version">Versió</string>
+	
+    <!--Personalitzat-->
+    <string name="home_kustom_desc">Components meteorològics coincidents per a %s</string>
+    <string name="kustom_widgets">Ginys</string>
+    <string name="kustom_wallpapers">Fons de pantalla</string>
+    <string name="kustom_lockscreens">Pantalles de bloqueig</string>
+    <string name="kustom_komponents">Component</string>
+
+    <!--Diàleg de sol·licitud de consentiment-->
+    <string name="request_consent_title">Consentiment de recollida de dades</string>
+    <string name="request_consent_content">Per processar la vostra sol·licitud d\'icona, hem de recopilar informació sobre les vostres aplicacions instal·lades i els detalls del dispositiu (com les dimensions de la pantalla i la versió d\'Android). Això ens ajuda a dissenyar icones que funcionin millor per al teu dispositiu.\n\nPots revisar la nostra Política de privadesa a la secció Quant a per obtenir més informació.</string>
+    <string name="request_consent_accept">ACEPTAR</string>
+    <string name="request_consent_deny">NEGAR</string>
+
+    <!--Estil de navegació-->
+    <string name="pref_navigation_style">Barra de navegació</string>
+
+    <!--Cerca-->
+    <string name="search_apps">Cerca aplicacions</string>
+
+</resources>

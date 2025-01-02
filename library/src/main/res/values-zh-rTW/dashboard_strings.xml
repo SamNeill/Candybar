@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--啟動畫面標題-->
+    <string name="splash_screen_title">糖果吧儀表板</string>
+
+    <!--導航視圖-->
+    <string name="navigation_view_home">家</string>
+    <string name="navigation_view_apply">申請</string>
+    <string name="navigation_view_icons">圖示</string>
+    <string name="navigation_view_request">圖示請求</string>
+    <string name="navigation_view_wallpapers">壁紙</string>
+    <string name="navigation_view_kustom">風俗</string>
+    <string name="navigation_view_settings">設定</string>
+    <string name="navigation_view_faqs">常見問題解答</string>
+    <string name="navigation_view_about">關於</string>
+    <string name="navigation_view_donate">支持發展</string>
+
+    <!--穆澤伊-->
+    <string name="muzei_settings">音樂設定</string>
+    <string name="minute">分分鐘</string>
+    <string name="hour">小時</string>
+    <string name="save_setting">節省</string>
+    <string name="muzei_refresh_duration">刷新時間</string>
+    <string name="muzei_wifi_only">僅透過 Wi-Fi 刷新</string>
+    <string name="muzei_downloaded_only">僅加載下載的壁紙</string>
+    <string name="muzei_settings_ignored">圖標包不包含壁紙，設定被忽略。</string>
+    <string name="muzei_settings_saved">設定已儲存</string>
+
+    <!--選單-->
+    <string name="menu_search">搜尋</string>
+    <string name="menu_save">儲存到設備</string>
+    <string name="menu_select_all">選擇全部</string>
+    <string name="menu_delete">刪除</string>
+
+    <string name="menu_wallpaper_crop">作物壁紙</string>
+    <string name="menu_apply_homescreen">主螢幕</string>
+    <string name="menu_apply_lockscreen">鎖定畫面</string>
+    <string name="menu_apply_homescreen_lockscreen">主螢幕和鎖定螢幕</string>
+
+    <!--對話-->
+    <string name="open">打開</string>
+    <string name="close">關閉</string>
+    <string name="clear">清除</string>
+    <string name="ok">好的</string>
+    <string name="install">安裝</string>
+    <string name="donate">捐</string>
+    <string name="update">更新</string>
+
+    <string name="search_noresult">未找到“%s”的結果</string>
+    <string name="search_faqs">問題或答案</string>
+    <string name="search_icon">圖標名稱</string>
+    <string name="search_wallpapers">壁紙名稱</string>
+
+    <!--更新-->
+    <string name="checking_for_update">正在檢查更新...</string>
+    <string name="update_available">可用更新！</string>
+    <string name="no_update_available">您正在使用最新版本！</string>
+
+    <!--變更日誌版本-->
+    <string name="changelog_version">版本</string>
+
+    <!--應用內計費-->
+    <string name="billing_load_product_failed">無法載入應用程式內購買產品</string>
+
+    <!--執照-->
+    <string name="license_checking">正在檢查許可證...</string>
+    <string name="license_check">許可證檢查</string>
+    <string name="license_check_success">許可證檢查成功。感謝您從 Play 商店下載應用程式。</string>
+    <string name="license_check_failed">許可證檢查失敗；您沒有從 Play 商店下載該應用程式。您將無法使用它。</string>
+    <string name="license_check_retry">無法檢查許可證，請稍後重試。</string>
+
+    <!--Play 商店安裝檢查-->
+    <string name="playstore_check">Play 商店檢查</string>
+    <string name="playstore_check_success">感謝您從 Google Play 商店安裝該應用程式。享受！</string>
+    <string name="playstore_check_failed">您似乎是從 Google Play 商店外部安裝了此圖標包。
+        您將無法使用它。</string>
+
+    <!--分享-->
+    <string name="share_app_title">喲！查看 %s</string>
+    <string name="share_app_body">在 Play 商店中查看 %1$s 圖示包：%2$s</string>
+
+    <!--點擊介紹-->
+    <string name="tap_intro_home_navigation">抽屜式導航</string>
+    <string name="tap_intro_home_navigation_desc">點擊此處或從螢幕左邊緣滑動以打開導航抽屜</string>
+    <string name="tap_intro_home_apply">應用程式圖標包</string>
+    <string name="tap_intro_home_apply_desc">點擊此處將 %s 應用到您目前的啟動器。長按可應用於其他啟動器。</string>
+    <string name="tap_intro_icons_search">搜尋</string>
+    <string name="tap_intro_icons_search_desc">點擊此處搜尋圖標</string>
+    <string name="tap_intro_request_search">搜尋遺失的應用程式</string>
+    <string name="tap_intro_request_search_desc">點擊此處在您已安裝的應用程式中搜尋所選圖標請求的缺失圖標</string>
+    <string name="tap_intro_request_select">選擇錯過的應用程式</string>
+    <string name="tap_intro_request_select_desc">點擊此處選擇錯過圖標請求的應用程序</string>
+    <string name="tap_intro_request_select_all">選擇所有錯過的應用程式</string>
+    <string name="tap_intro_request_select_all_desc">點擊此處選擇所有錯過圖標請求的應用程序</string>
+    <string name="tap_intro_request_send">發送圖示請求</string>
+    <string name="tap_intro_request_send_desc">點擊此處發送選定的錯過的應用程序</string>
+    <string name="tap_intro_request_premium">高級圖示請求</string>
+    <string name="tap_intro_request_premium_desc">點擊此處購買高級圖示請求包，透過高級圖示請求，您可以更快地取得您所要求的應用程式。</string>
+    <string name="tap_intro_wallpapers_option">壁紙選項</string>
+    <string name="tap_intro_wallpapers_option_desc">點擊並按住此處可顯示壁紙選項； %s 應用壁紙。</string>
+    <string name="tap_intro_wallpapers_option_desc_download">下載或</string>
+    <string name="tap_intro_wallpapers_preview">預覽壁紙</string>
+    <string name="tap_intro_wallpapers_preview_desc">點擊此處預覽壁紙的完整尺寸</string>
+    <string name="tap_intro_wallpaper_preview_save">保存壁紙</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">點擊此處下載壁紙並將其保存到您的設備，以便稍後使用</string>
+    <string name="tap_intro_wallpaper_preview_apply">應用壁紙</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">點擊此處將壁紙設定為主螢幕背景</string>
+
+    <!--家-->
+    <string name="home_more_apps_header">更多應用程式</string>
+    <string name="home_more_apps">在 Google Play 商店中查看更多圖示包</string>
+    <string name="home_rate">速度</string>
+    <string name="home_share">分享</string>
+    <string name="home_check_update">更新</string>
+    <string name="home_apply_icon_pack">應用%s</string>
+    <string name="home_donate">捐</string>
+    <string name="home_donate_desc">鼓勵開發者製作更多圖標包</string>
+    <string name="home_icons">圖示</string>
+    <string name="home_icon_dimension">%s 像素圖示尺寸</string>
+    <string name="home_loud_wallpapers">%d 雲壁紙</string>
+    <string name="home_muzei">Muzei 動態桌布</string>
+    <string name="home_icon_request_installed_apps">總共\n%d 個已安裝的應用程式</string>
+    <string name="home_icon_request_themed_apps">主題\n%d 個應用</string>
+    <string name="home_icon_request_missed_apps">錯過\n%d 個應用</string>
+
+    <!--申請-->
+    <string name="apply_installed">已安裝的啟動器</string>
+    <string name="apply_installed_launchers">已安裝的啟動器</string>
+    <string name="apply_supported">支援的啟動器</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s 啟動器未安裝。您可以從 Amazon AppStore 或您喜歡的資源和商店找到並安裝它。</string>
+    <string name="apply_manual">%1$s 啟動器不支援直接應用，但您可以從啟動器設定手動應用 %2$s。</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso 不支援直接應用，但您可以按照以下步驟操作：</string>
+    <string name="apply_manual_kvaesitso_step_1">開啟 Kvaesitso 的設置</string>
+    <string name="apply_manual_kvaesitso_step_2">點擊“網格和圖示”</string>
+    <string name="apply_manual_kvaesitso_step_3">點擊“圖標包”</string>
+    <string name="apply_manual_kvaesitso_step_4">從清單中選擇 %s</string>
+    <string name="apply_manual_kvaesitso_step_5">點擊畫筆圖示以啟用或停用背景形狀</string>
+    <string name="apply_manual_kiss">KISS 不支援直接申請，但您可以按照以下步驟操作：</string>
+    <string name="apply_manual_kiss_step_1">打開 KISS 設定</string>
+    <string name="apply_manual_kiss_step_2">點選“使用者介面”</string>
+    <string name="apply_manual_kiss_step_3">點擊“圖標包”</string>
+    <string name="apply_manual_kiss_step_4">從清單中選擇 %s</string>
+    <string name="apply_manual_samsung_oneui">%1$s 不支援直接應用，但從 %2$s 開始，您可以透過配套應用程式應用圖示。</string>
+    <string name="apply_manual_samsung_oneui_too_old">您目前的 %s 版本太舊。請更新至 Android 12 或更高版本才能直接套用圖示。或者，您可以安裝不同的啟動器。</string>
+    <string name="apply_manual_samsung_oneui_step_1">打開 %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">下載應用程式 %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">點擊“圖示”</string>
+    <string name="apply_manual_samsung_oneui_step_4">點擊“新建”</string>
+    <string name="apply_manual_samsung_oneui_step_5">點擊藍色的「圖示包」按鈕</string>
+    <string name="apply_manual_samsung_oneui_step_6">從清單中選擇 %s</string>
+    <string name="apply_manual_samsung_oneui_step_7">每次更新 %s 時請重複這些步驟，因為新圖示不會自動對應。</string>
+    <string name="apply_manual_hios">HiOS 啟動器不支援直接應用，但您可以按照以下步驟操作：</string>
+    <string name="apply_manual_hios_step_1">開啟“設定”</string>
+    <string name="apply_manual_hios_step_2">點擊“主題和鎖定螢幕”</string>
+    <string name="apply_manual_hios_step_3">點擊“我的主題”</string>
+    <string name="apply_manual_hios_step_4">點擊“圖標包”</string>
+    <string name="apply_manual_hios_step_5">點擊 %s</string>
+    <string name="apply_manual_oxygen_os_step_1">長按您的主螢幕</string>
+    <string name="apply_manual_oxygen_os_step_2">點擊“主頁設定”</string>
+    <string name="apply_manual_oxygen_os_step_3">點擊“圖標包”</string>
+    <string name="apply_manual_oxygen_os_step_4">點擊 %s</string>
+    <string name="apply_manual_color_os_step_1">長按您的主螢幕</string>
+    <string name="apply_manual_color_os_step_2">點擊“圖示”</string>
+    <string name="apply_manual_color_os_step_3">捲動到“自訂”按鈕的右側（這是可捲動清單！）</string>
+    <string name="apply_manual_color_os_step_4">點擊 %s</string>
+    <string name="apply_manual_before">此版本的Before Launcher尚不支援直接應用圖示。相反，請按照以下步驟操作：</string>
+    <string name="apply_manual_before_step_1">在主畫面上向左滑動</string>
+    <string name="apply_manual_before_step_2">點擊“設定”</string>
+    <string name="apply_manual_before_step_3">點擊“樣式和主題”</string>
+    <string name="apply_manual_before_step_4">點擊“圖示樣式和包”</string>
+    <string name="apply_manual_before_step_5">點擊 %s</string>
+    <string name="apply_manual_nothing_step_1">開啟“設定”</string>
+    <string name="apply_manual_nothing_step_2">點擊“自訂”</string>
+    <string name="apply_manual_nothing_step_3">點擊“圖標包”</string>
+    <string name="apply_manual_nothing_step_4">點擊 %s</string>
+    <string name="apply_launch_failed">無法啟動 %s 設定</string>
+    <string name="apply_launcher_not_installed">%s 啟動器未安裝。您想打開 Google Play 商店來下載並安裝它嗎？</string>
+    <string name="apply_launcher_not_installable">%s 啟動器未安裝。請安裝啟動器後重試。</string>
+    <string name="apply_cmtheme_not_available">CM 主題管理器在此裝置上不可用</string>
+    <string name="apply_cmtheme_failed">無法啟動 CM 主題管理器，您可以嘗試從「設定」手動套用圖示套件。</string>
+    <string name="apply_lg_home">若要套用此圖示包，請開啟“設定”-“顯示”-“主畫面”-“主題”</string>
+    <string name="apply_lg_home_not_available">LG Home 在此裝置上不可用</string>
+    <string name="apply_lg_home_failed">無法啟動 LG Home Settings，您可以嘗試從「設定」手動套用圖示套件。</string>
+    <string name="apply_lg_home_nougat">搭載 Android Nougat 的 LG Home 不再支援 Icon Pack。您需要一個自訂啟動器才能使用圖示包。</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s 啟動器不支援任何圖示包，因此您不能將此圖示包與此啟動器一起使用。您可以嘗試第三方應用程式在 %2$s 啟動器中使用此圖示包。</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s 啟動器與 %2$s 不相容，但可能與較新版本相容</string>
+
+    <!--圖示-->
+    <string name="icons_load_failed">無法加載圖標</string>
+    <string name="icon_shape">圖示形狀</string>
+    <string name="items_selected">已選擇 %d 個</string>
+
+    <!--要求-->
+    <string name="request_title">圖示請求</string>
+    <string name="request_terms">在繼續處理圖標請求之前，請注意，我們將根據我們的指南審核您的請求。高級請求可能會得到更快的處理。</string>
+    <string name="request_not_selected">選擇要請求的應用程式</string>
+    <string name="request_not_requested">沒有要求</string>
+    <string name="request_already_requested">已請求</string>
+    <string name="request_not_available">無法請求</string>
+    <string name="request_building">建築要求...</string>
+    <string name="request_pacific_sending">正在向太平洋經理發送請求...</string>
+    <string name="request_pacific_error">向 Pacific Manager 發送請求時發生錯誤。錯誤是%s</string>
+    <string name="request_pacific_success">已成功向太平洋經理發送請求</string>
+    <string name="request_custom_error">發送圖示請求時發生錯誤。如果此錯誤仍然存在，請聯絡開發人員。 %s</string>
+    <string name="request_custom_success">已成功發送圖示請求</string>
+    <string name="request_fetching_data">正在獲取最新數據...</string>
+    <string name="request_build_failed">無法建立圖示請求</string>
+    <string name="request_appfilter_failed">無法讀取 appfilter.xml</string>
+    <string name="request_requested">您已經請求了此圖標，無法再次要求。</string>
+    <string name="request_requested_possible">您已經請求了此圖示。您確定要再花費一次請求嗎？</string>
+    <string name="request_requested_button_cancel">回去</string>
+    <string name="request_requested_button_confirm">仍然選擇</string>
+    <string name="request_email_client">選擇您要用來發送圖標請求的應用程式</string>
+    <string name="request_app_disabled">您正在使用此圖標包的舊版本。所要求的圖示可能包含在最新版本中。請將您的應用程式更新到最新版本以請求圖示。</string>
+    <string name="connection_error_long">無法從伺服器載入資料。請檢查您的網路連線。</string>
+    <string name="unable_to_load_config">從伺服器取得或讀取資料時發生錯誤。</string>
+    <string name="request_limit">您只能透過常規請求發出 %d 個請求。</string>
+    <string name="request_used">您已請求 %d 個圖示。</string>
+    <string name="request_limit_buy">您可以購買高級請求來請求更多圖示。</string>
+    <string name="request_limit_reset">圖示請求限制將在每次更新時重置。</string>
+
+    <!--常規請求-->
+    <string name="regular_request">常規圖示請求</string>
+    <string name="regular_request_desc">取得您要求的圖標，開發人員將嘗試包含您要求的圖標。</string>
+    <string name="regular_request_count">總共\n%d 個請求</string>
+    <string name="regular_request_used">已使用\n%d 個請求</string>
+    <string name="regular_request_available">可用\n%d 個請求</string>
+
+    <!--保費請求-->
+    <string name="premium_request">高級圖示請求</string>
+    <string name="premium_request_no_internet">在發送高級請求之前，請確保您的手機已連接到互聯網</string>
+    <string name="premium_request_desc">高級圖示請求是付費請求。您可以使用進階圖示請求更快地取得您要求的應用程式。</string>
+    <string name="premium_request_buy">買</string>
+    <string name="premium_request_count">總共\n%d 個請求</string>
+    <string name="premium_request_used">已使用\n%d 個請求</string>
+    <string name="premium_request_available">可用\n%d 個請求</string>
+    <string name="premium_request_already_purchased">您還有 %d 個進階請求。您需要先使用所有這些，然後才能再次購買高級請求包。</string>
+    <string name="premium_request_limit">您只有 %d 個進階請求，</string>
+    <string name="premium_request_limit1">但您選擇了 %d 個應用程式。 \n\n您需要先使用所有進階請求，然後才能再次使用常規請求。</string>
+    <string name="premium_request_consume_failed">無法使用高級請求，請確保您有穩定的互聯網連接，然後重試。轉到“設定”以重建進階請求。</string>
+    <string name="premium_request_rebuilding">重建保費請求…</string>
+    <string name="premium_request_rebuilding_empty">您還沒有提出高級請求</string>
+    <string name="premium_request_exist">您仍然擁有高級圖示請求包。開啟“設定”，選擇“恢復購買”進行恢復。</string>
+    <string name="premium_request_required">您需要購買高級圖示請求包才能進行圖示請求</string>
+
+    <!--壁紙-->
+    <string name="wallpaper_new_added">新壁紙</string>
+    <string name="wallpaper_already_downloaded">桌布已下載</string>
+    <string name="wallpaper_downloading">正在下載桌布...</string>
+    <string name="wallpaper_download_failed">無法下載壁紙</string>
+    <string name="wallpaper_download_success">桌布下載成功</string>
+    <string name="wallpaper_loading">正在加載壁紙...</string>
+    <string name="wallpaper_applying">正在應用壁紙...</string>
+    <string name="wallpaper_applied">應用壁紙</string>
+    <string name="wallpaper_apply_failed">無法應用壁紙</string>
+    <string name="wallpaper_apply_cancelled">壁紙應用已取消</string>
+    <string name="connection_failed">無法從伺服器取得數據</string>
+    <string name="wallpaper_apply">應用壁紙</string>
+    <string name="wallpaper_save_to_device">保存壁紙</string>
+
+    <!--預設-->
+    <string name="presets_load_failed">無法載入預設</string>
+    <string name="presets_storage_permission">載入預覽桌布需要儲存權限</string>
+    <string name="presets_required_apps">使用這些預設所需的應用程式</string>
+    <string name="presets_required_apps_not_installed">未安裝使用預設所需的應用程式。請安裝缺少的必需應用程序，然後重試。</string>
+
+    <!--偏好設定-->
+    <string name="pref_data_header">資料和快取</string>
+    <string name="pref_data_cache">清除快取</string>
+    <string name="pref_data_cache_desc">從儲存中刪除圖像緩存，這些緩存是在從此應用程式中選取圖像、請求錯過的應用程式以及加載雲端壁紙縮圖後創建的。</string>
+    <string name="pref_data_cache_size">快取大小：%s</string>
+    <string name="pref_data_cache_clear_dialog">您真的要清除快取嗎？</string>
+    <string name="pref_data_cache_cleared">快取已清除</string>
+    <string name="pref_data_request">清除圖示請求數據</string>
+    <string name="pref_data_request_desc">刪除從圖示請求請求錯過的應用程式後建立的圖示請求資料。</string>
+    <string name="pref_data_request_clear_dialog">您確實要清除圖示請求資料嗎？</string>
+    <string name="pref_data_request_cleared">圖示請求資料已清除</string>
+    <string name="pref_premium_request_header">高級圖示請求</string>
+    <string name="pref_premium_request_restore">恢復購買</string>
+    <string name="pref_premium_request_restore_desc">重新安裝圖示包後恢復高級請求包</string>
+    <string name="pref_premium_request_restore_success">保費請求已恢復</string>
+    <string name="pref_premium_request_restore_empty">您沒有購買任何套餐</string>
+    <string name="pref_premium_request_rebuild">重建高級圖示請求</string>
+    <string name="pref_premium_request_rebuild_desc">收集所有高級圖標請求資料以重新發送它們</string>
+    <string name="pref_theme_header">主題</string>
+    <string name="pref_theme_dark">黑暗主題</string>
+    <string name="pref_theme_dark_desc">使用深色作為應用程式主題</string>
+    <string name="pref_notifications_header">通知</string>
+    <string name="pref_notifications">接收通知</string>
+    <string name="pref_wallpaper_header">壁紙</string>
+    <string name="pref_wallpaper_location">壁紙保存位置</string>
+    <string name="pref_language_header">語言</string>
+    <string name="pref_others_header">其他的</string>
+    <string name="pref_others_report_bugs">報告錯誤</string>
+    <string name="pref_others_changelog">變更日誌</string>
+    <string name="pref_others_reset_tutorial">重置教程</string>
+    <string name="pref_others_reset_tutorial_reset">教程重置</string>
+
+    <!--主題-->
+    <string name="theme_name_auto">汽車</string>
+    <string name="theme_name_light">光</string>
+    <string name="theme_name_dark">黑暗的</string>
+    <string name="theme_name_material_you">物質的你</string>
+
+    <!--允許-->
+    <string name="permission_storage_denied">保存壁紙需要儲存權限</string>
+    <string name="permission_notification_denied_1">需要通知權限才能接收開發者的通知</string>
+    <string name="permission_notification_denied_2">從應用程式設定啟用通知</string>
+
+    <!--意圖-->
+    <string name="app_client">選擇應用程式</string>
+    <string name="no_email_app">沒有申請發送電子郵件</string>
+    <string name="no_browser">沒有應用程式可以開啟 URL</string>
+    <string name="intent_email_failed">無法顯示電子郵件應用程式</string>
+    <string name="intent_email_supported">支援</string>
+    <string name="intent_email_recommended">受到推崇的</string>
+    <string name="intent_email_not_supported">不支援</string>
+    <string name="intent_email_not_supported_message">選擇了不受支援的電子郵件用戶端，請選擇其他電子郵件用戶端</string>
+
+    <!--關於-->
+    <string name="about_contributors_title">貢獻者</string>
+
+    <!--報告錯誤-->
+    <string name="report_bugs_desc">請描述您要回報的問題類型</string>
+    <string name="report_bugs_desc_hint">描述</string>
+    <string name="report_bugs_desc_empty">請描述一下</string>
+    <string name="report_bugs_building">建立活動清單...</string>
+    <string name="report_bugs_failed">無法建立活動列表</string>
+    <string name="report_bugs_send">發送報告</string>
+
+    <!--支持發展-->
+    <string name="donation_success">感謝您的捐款。我會永遠使用它。</string>
+
+    <!--崩潰報告-->
+    <string name="crash_report">崩潰報告</string>
+    <string name="crash_report_message">不幸的是，%s 崩潰了。選擇下面的發送報告以幫助開發人員解決問題。</string>
+    <string name="crash_report_send">發送報告</string>
+
+    <!--抽屜開關-->
+    <string name="txt_open">打開</string>
+    <string name="txt_close">關閉</string>
+
+    <string name="txt_new">新的</string>
+
+    <!--螢幕閱讀器的內容描述-->
+    <string name="icon_search_close_button_content_description">關閉圖示搜尋</string>
+    <string name="icon_request_submit_button_content_description">提交圖示請求</string>
+    <string name="icon_list_content_description">圖示包中包含的圖示列表</string>
+    <string name="icon_search_list_content_description">與搜尋字詞相符的圖示列表</string>
+    <string name="about_item_social_content_description">圖標包作者線上個人資料的連結：</string>
+    <string name="share_icon_pack_button_content_description">與某人分享此應用程式</string>
+
+    <!--隱私權政策-->
+    <string name="privacy_policy">隱私權政策</string>
+    <string name="privacy_policy_desc">您的隱私對我們很重要。請閱讀關於我們的隱私權政策，以了解我們如何處理您的資料。</string>
+
+    <!--條款及條件-->
+    <string name="terms_conditions">條款及條件</string>
+
+    <!--要求-->
+    <string name="request_limit_title">免費請求限制</string>
+    <string name="request_limit_content">您還剩 %d 個免費請求。考慮升級到高級版以獲得無限制的請求。</string>
+    <string name="request_limit_reached">已達到免費請求限制。如需更多請求，請升級至高級版。</string>
+    <string name="request_limit_remaining">您也可以選擇 %d 個圖標</string>
+
+    <!--應用程式版本-->
+    <string name="version">版本</string>
+	
+    <!--風俗-->
+    <string name="home_kustom_desc">搭配 %s 的天氣組件</string>
+    <string name="kustom_widgets">小部件</string>
+    <string name="kustom_wallpapers">壁紙</string>
+    <string name="kustom_lockscreens">鎖定畫面</string>
+    <string name="kustom_komponents">成分</string>
+
+    <!--請求同意對話框-->
+    <string name="request_consent_title">資料收集同意書</string>
+    <string name="request_consent_content">為了處理您的圖示請求，我們需要收集有關您安裝的應用程式和裝置詳細資訊（例如螢幕尺寸和 Android 版本）的資訊。這有助於我們設計最適合您的裝置的圖示。</string>
+    <string name="request_consent_accept">接受</string>
+    <string name="request_consent_deny">否定</string>
+
+    <!--導航風格-->
+    <string name="pref_navigation_style">導覽列</string>
+
+    <!--搜尋-->
+    <string name="search_apps">搜尋應用程式</string>
+
+</resources>

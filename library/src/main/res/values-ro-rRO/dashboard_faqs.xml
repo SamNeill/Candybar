@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Ce este un lansator-->
+    <!--Ce este un pachet de icoane-->
+    <!--Cum folosesc un pachet de pictograme?-->
+    <!--Cum aplic un pachet de pictograme?-->
+    <!--Cum văd toate pictogramele incluse?-->
+    <!--Nu pot vedea un nume complet al pictogramei-->
+    <!--Cum pot înlocui pictogramele cu o pictogramă alternativă?-->
+    <!--Cum solicit o pictogramă?-->
+    <!--Cum pot restabili solicitările Premium rămase după reinstalarea aplicației?-->
+    <!--După repornirea telefonului, pachetul de pictograme nu este aplicat, revine la valorile implicite?-->
+    <!--De ce pictogramele arata nestingherite sau pixelate pe telefonul meu?-->
+    <!--Pot vedea pictograma inclusă în toate pictogramele,
+            dar de ce nu este schimbată pictograma actuală din sertarul de aplicații?-->
+    <!--Ce este opțiunea „raportează erori”?-->
+    <!--Lansatorul meu este listat în descrierea Google Play, dar de ce nu este inclus în secțiunea de aplicații?-->
+    <!--Tapetul nu poate fi aplicat, arată doar ecran negru?-->
+    <!--Muzei: Cum se încarcă numai imagini de fundal descărcate?-->
+    <!--Muzei: Nu vreau să continui să descarc imagini de fundal de fiecare dată când imaginea de fundal se schimbă?-->
+    <!--Muzei: Vreau să folosesc doar anumite imagini de fundal?-->
+    <!--De ce este necesară permisiunea Citire și scriere pentru stocarea externă?-->
+    <!--De ce este nevoie de permisiunea Internet?-->
+    <!--De ce este necesară permisiunea Access Network State?-->
+    <!--De ce este necesară permisiunea Access Wi-Fi State?-->
+    <!--De ce este necesară permisiunea Set Wallpaper?-->
+    <!--De ce este necesară permisiunea Wake Lock?-->
+    <!--De ce este necesară permisiunea Set Alarm?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Ce este un lansator?</item>
+    <item>Ce este un pachet de icoane?</item>
+    <item>Cum folosesc un pachet de pictograme?</item>
+    <item>Cum aplic un pachet de pictograme?</item>
+    <item>Cum văd toate pictogramele incluse?</item>
+    <item>Nu pot vedea un nume complet al pictogramei</item>
+    <item>Cum pot înlocui pictogramele cu o pictogramă alternativă?</item>
+    <item>Cum solicit o pictogramă?</item>
+    <item>Cum pot restabili solicitările Premium rămase după reinstalarea aplicației?</item>
+    <item>După repornirea telefonului, pachetul de pictograme nu este aplicat; revine la valorile implicite?</item>
+    <item>De ce pictogramele arata nestingherite sau pixelate pe telefonul meu?</item>
+    <item>Pot vedea pictograma inclusă în toate pictogramele,
+            dar de ce nu este schimbată pictograma actuală din sertarul de aplicații?</item>
+    <item>Ce este opțiunea „raportează erori”?</item>
+    <item>Lansatorul meu este listat în descrierea Google Play, dar de ce nu este inclus în secțiunea de aplicații?</item>
+    <item>Tapetul nu poate fi aplicat, arată doar ecran negru?</item>
+    <item>Muzei: Cum se încarcă numai imagini de fundal descărcate?</item>
+    <item>Muzei: Nu vreau să continui să descarc imagini de fundal de fiecare dată când imaginea de fundal se schimbă?</item>
+    <item>Muzei: Vreau să folosesc doar anumite imagini de fundal?</item>
+    <item>De ce este necesară permisiunea Citire și scriere pentru stocarea externă?</item>
+    <item>De ce este nevoie de permisiunea Internet?</item>
+    <item>De ce este necesară permisiunea Access Network State?</item>
+    <item>De ce este necesară permisiunea Access Wifi State?</item>
+    <item>De ce este necesară permisiunea Set Wallpaper?</item>
+    <item>De ce este necesară permisiunea Wake Lock?</item>
+    <item>De ce este necesară permisiunea Set Alarm?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Lansatorul este partea interfeței cu utilizatorul Android care le permite utilizatorilor să personalizeze ecranul de pornire,
+            lansați aplicații mobile, efectuați apeluri telefonice și efectuați alte sarcini pe dispozitivele Android.</item>
+    <item>Un set de elemente grafice care vor schimba aspectul pictogramelor din sertarul aplicațiilor</item>
+    <item>Veți avea nevoie de un lansator care acceptă pachete de pictograme personalizate.
+            Lansatoarele acceptate sunt listate în descrierea Magazinului Play.
+            Dacă sunteți confuz cu privire la lansatoarele care trebuie utilizate, mergeți la secțiunea „Aplicați” și instalați de acolo.</item>
+    <item>Puteți deschide sertarul de navigare, apoi deschideți „Aplicați”. Alegeți lansatorul din listă.
+            Dacă lansatorul dvs. nu este listat acolo, dar acest pachet de pictograme este compatibil cu acesta
+            (vezi descrierea Magazinului Google Play pentru lansatoarele acceptate),
+            puteți aplica manual pachetul de pictograme în setările lansatorului.</item>
+    <item>Puteți deschide sertarul de navigare și apoi deschideți „Icoane”</item>
+    <item>Doar atingeți pictograma. Va apărea un dialog de previzualizare cu o imagine mai mare și un nume complet al pictogramei.</item>
+    <item>Depinde ce lansator ai folosit. Nu orice lansator acceptă editarea pictogramelor.
+       	    În general, puteți edita o pictogramă atingând și ținând apăsată pictograma sau atingând-o de două ori.</item>
+    <item>Puteți deschide sertarul de navigare, apoi deschideți „Solicitare pictogramă”.</item>
+    <item>Puteți deschide sertarul de navigare, apoi deschideți „Setări” și alegeți „Restaurare achiziții”.
+            Dacă ați avut solicitări Premium rămase înainte de a le reinstala, acestea vor fi restaurate.</item>
+    <item>Sa întâmplat deoarece acest pachet de pictograme a fost mutat pe cardul SD; ar trebui să-l instalezi în memoria internă.</item>
+    <item>Problema ar putea veni de la lansatorul pe care l-ați folosit când manipulați rezoluția mare a pictogramelor.
+       	    O puteți remedia mărind dimensiunea pictogramei la 115–120%.
+       	    Alternativ, puteți schimba lansatorul.</item>
+    <item>Deschideți setările, derulați în jos și apoi selectați „Raportați erori”.</item>
+    <item>\"Raportați erori\" este folosit pentru a raporta erori legate de pachetul de pictograme, nu de tabloul de bord.</item>
+    <item>Nu toate lansatoarele acceptă aplicarea directă, iar unele dintre ele nu pot fi accesate direct din tabloul de bord.
+      	    Puteți aplica manual acest pachet de pictograme în setările individuale ale lansatorului.</item>
+    <item>Când \"Setați imaginea de fundal\" direct din aplicație, acesta va fi descărcat în cache,
+      	    apoi aplicația de bord va încerca să o aplice. Aplicarea va dura ceva timp și, de asemenea, va avea nevoie de o cantitate mare de RAM pentru o perioadă scurtă de timp.
+      	    Pot apărea erori „Ecran negru” deoarece telefonul dvs. nu are suficientă memorie RAM liberă pentru a procesa imaginea de fundal.
+      	    Repornirea telefonului va rezolva această problemă. După repornire, telefonul tău va avea mai multă RAM disponibilă.
+            Alternativ, puteți deschide imaginea de fundal descărcată din Galerie și să-l setați ca tapet de acolo.</item>
+    <item>Deschideți Muzei, alegeți acest pachet de pictograme, setări. Veți vedea o opțiune pentru a încărca numai imagini de fundal descărcate.
+            Mai întâi va trebui să descărcați imagini de fundal din tabloul de bord.</item>
+    <item>Dacă un tapet este deja descărcat, acesta va fi încărcat automat din memoria telefonului.
+            Muzei nu va continua să-l descarce când se schimbă imaginea de fundal. Mai întâi va trebui să descărcați imagini de fundal din tabloul de bord.</item>
+    <item>Deschideți Dashboard, descărcați imagini de fundal pe care doriți să le utilizați în Muzei.
+            Deschideți setările Muzei, apoi alegeți Încarcă numai imagini de fundal descărcate.</item>
+    <item>Este folosit pentru a scrie și a citi memoria cache și pentru a colecta datele de solicitare a pictogramei.</item>
+    <item>Este folosit pentru a încărca imagini de fundal bazate pe cloud și pentru a le descărca.</item>
+    <item>Este folosit pentru a verifica dacă telefonul dvs. are sau nu conexiune la internet.</item>
+    <item>Este folosit pentru a verifica dacă telefonul tău are conexiune la internet la un wifi sau nu, pentru a încărca imagini de fundal în cloud de la Muzei.</item>
+    <item>Este folosit pentru a aplica imagini de fundal direct din aplicația tabloului de bord.</item>
+    <item>Este folosit de Muzei Live Wallpaper.</item>
+    <item>Este folosit pentru a lansa aplicația ceas din widgetul ceas analogic.</item>
+  </string-array>
+</resources>

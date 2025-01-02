@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--¿Qué es un lanzador?-->
+    <!--¿Qué es un paquete de iconos?-->
+    <!--¿Cómo uso un paquete de iconos?-->
+    <!--¿Cómo aplico un paquete de iconos?-->
+    <!--¿Cómo veo todos los íconos incluidos?-->
+    <!--No puedo ver el nombre completo del icono-->
+    <!--¿Cómo puedo reemplazar íconos con un ícono alternativo?-->
+    <!--¿Cómo solicito un ícono?-->
+    <!--¿Cómo puedo restaurar las solicitudes Premium restantes después de reinstalar la aplicación?-->
+    <!--Después de reiniciar mi teléfono, el paquete de íconos no se aplica, ¿se restablece a los valores predeterminados?-->
+    <!--¿Por qué los íconos se ven irregulares o pixelados en mi teléfono?-->
+    <!--Puedo ver el ícono incluido en todos los íconos,
+            pero ¿por qué no se cambia el ícono real en el cajón de aplicaciones?-->
+    <!--¿Qué es la opción \"informar errores\"?-->
+    <!--Mi iniciador aparece en la descripción de Google Play, pero ¿por qué no está incluido en la sección Aplicar?-->
+    <!--¿No se puede aplicar el fondo de pantalla, solo se muestra la pantalla en negro?-->
+    <!--Muzei: ¿Cómo cargar solo fondos de pantalla descargados?-->
+    <!--Muzei: ¿No quiero seguir descargando fondos de pantalla cada vez que cambian?-->
+    <!--Muzei: ¿Solo quiero usar fondos de pantalla específicos?-->
+    <!--¿Por qué se necesita el permiso de lectura y escritura de almacenamiento externo?-->
+    <!--¿Por qué se necesita permiso de Internet?-->
+    <!--¿Por qué se necesita el permiso del estado de la red de acceso?-->
+    <!--¿Por qué se necesita el permiso de estado de acceso a Wi-Fi?-->
+    <!--¿Por qué se necesita el permiso Establecer fondo de pantalla?-->
+    <!--¿Por qué se necesita el permiso Wake Lock?-->
+    <!--¿Por qué se necesita el permiso para configurar alarma?-->
+  </string-array>
+  <string-array name="questions">
+    <item>¿Qué es un lanzador?</item>
+    <item>¿Qué es un paquete de iconos?</item>
+    <item>¿Cómo uso un paquete de iconos?</item>
+    <item>¿Cómo aplico un paquete de iconos?</item>
+    <item>¿Cómo veo todos los íconos incluidos?</item>
+    <item>No puedo ver el nombre completo del icono</item>
+    <item>¿Cómo puedo reemplazar íconos con un ícono alternativo?</item>
+    <item>¿Cómo solicito un ícono?</item>
+    <item>¿Cómo puedo restaurar las solicitudes Premium restantes después de reinstalar la aplicación?</item>
+    <item>Después de reiniciar mi teléfono, el paquete de íconos no se aplica; ¿Restaura los valores predeterminados?</item>
+    <item>¿Por qué los íconos se ven irregulares o pixelados en mi teléfono?</item>
+    <item>Puedo ver el ícono incluido en todos los íconos,
+            pero ¿por qué no se cambia el ícono real en el cajón de aplicaciones?</item>
+    <item>¿Qué es la opción \"informar errores\"?</item>
+    <item>Mi iniciador aparece en la descripción de Google Play, pero ¿por qué no está incluido en la sección Aplicar?</item>
+    <item>¿No se puede aplicar el fondo de pantalla, solo se muestra la pantalla en negro?</item>
+    <item>Muzei: ¿Cómo cargar solo fondos de pantalla descargados?</item>
+    <item>Muzei: ¿No quiero seguir descargando fondos de pantalla cada vez que cambian?</item>
+    <item>Muzei: ¿Solo quiero usar fondos de pantalla específicos?</item>
+    <item>¿Por qué se necesita el permiso de lectura y escritura de almacenamiento externo?</item>
+    <item>¿Por qué se necesita permiso de Internet?</item>
+    <item>¿Por qué se necesita el permiso del estado de la red de acceso?</item>
+    <item>¿Por qué se necesita el permiso de estado de Access Wifi?</item>
+    <item>¿Por qué se necesita el permiso Establecer fondo de pantalla?</item>
+    <item>¿Por qué se necesita el permiso Wake Lock?</item>
+    <item>¿Por qué se necesita el permiso para configurar alarma?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher es la parte de la interfaz de usuario de Android que permite a los usuarios personalizar la pantalla de inicio,
+            inicie aplicaciones móviles, realice llamadas telefónicas y realice otras tareas en dispositivos Android.</item>
+    <item>Un conjunto de gráficos que cambiará el aspecto de los íconos del cajón de aplicaciones</item>
+    <item>Necesitará un iniciador que admita paquetes de iconos personalizados.
+            Los lanzadores compatibles se enumeran en la descripción de Play Store.
+            Si no sabe qué lanzadores deben usarse, simplemente vaya a la sección \"Aplicar\" e instálelo desde allí.</item>
+    <item>Puede abrir el cajón de navegación y luego abrir \"Aplicar\". Elija su lanzador de la lista.
+            Si su iniciador no aparece allí, pero este paquete de iconos es compatible con él
+            (consulte la descripción de Google Play Store para conocer los lanzadores compatibles),
+            Puedes aplicar el paquete de iconos manualmente en la configuración de tu iniciador.</item>
+    <item>Puede abrir el cajón de navegación y luego abrir \"Iconos\"</item>
+    <item>Simplemente toque el ícono. Aparecerá un cuadro de diálogo de vista previa con una imagen más grande y el nombre completo del icono.</item>
+    <item>Depende del lanzador que hayas utilizado. No todos los lanzadores admiten la edición de iconos.
+       	    Básicamente, puedes editar un ícono tocando y manteniendo presionado el ícono o tocándolo dos veces.</item>
+    <item>Puede abrir el cajón de navegación y luego abrir \"Solicitud de icono\".</item>
+    <item>Puede abrir el cajón de navegación, luego abrir \"Configuración\", elegir \"Restaurar compras\".
+            Si tenía solicitudes Premium restantes antes de reinstalar, se restaurarán.</item>
+    <item>Sucedió porque este paquete de íconos se movió a la tarjeta SD; debes instalarlo en la memoria interna.</item>
+    <item>El problema puede provenir del iniciador que usó al manejar la resolución de íconos grandes.
+       	    Puede solucionarlo aumentando el tamaño del icono al 115-120%.
+       	    Alternativamente, puedes cambiar tu lanzador.</item>
+    <item>Abra la configuración, desplácese hacia abajo y luego seleccione \"Informar errores\".</item>
+    <item>\"Reportar errores\" se utiliza para informar errores relacionados con el paquete de iconos, no con el panel.</item>
+    <item>No todos los lanzadores admiten la aplicación directa y no se puede acceder a algunos de ellos directamente desde el panel.
+      	    Puede aplicar este paquete de iconos manualmente en la configuración del iniciador individual.</item>
+    <item>Cuando \"Establezcas un fondo de pantalla\" directamente desde la aplicación, se descargará al caché.
+      	    entonces la aplicación del panel intentará aplicarlo. La aplicación llevará algún tiempo y también necesitará una gran cantidad de RAM durante un corto período de tiempo.
+      	    Pueden aparecer errores de \"Pantalla negra\" porque su teléfono no tiene suficiente RAM libre para procesar el fondo de pantalla.
+      	    Reiniciar su teléfono solucionará este problema. Después de reiniciar, su teléfono tendrá más RAM disponible.
+            Alternativamente, puedes abrir el fondo de pantalla descargado desde tu Galería y configurarlo como fondo de pantalla desde allí.</item>
+    <item>Abra Muzei, elija este paquete de iconos, configuración. Verá una opción para cargar solo fondos de pantalla descargados.
+            Primero deberá descargar fondos de pantalla desde el panel.</item>
+    <item>Si ya se descargó un fondo de pantalla, se cargará automáticamente desde la memoria de su teléfono.
+            Muzei no seguirá descargándolo cuando cambie el fondo de pantalla. Primero deberá descargar fondos de pantalla desde el panel.</item>
+    <item>Abra Dashboard, descargue los fondos de pantalla que desee usar en Muzei.
+            Abra la configuración de Muzei, luego elija Cargar solo fondos de pantalla descargados.</item>
+    <item>Se utiliza para escribir y leer caché y recopilar datos de solicitud de íconos.</item>
+    <item>Se utiliza para cargar fondos de pantalla basados ​​en la nube y descargarlos.</item>
+    <item>Se utiliza para comprobar si su teléfono tiene conexión a Internet o no.</item>
+    <item>Se utiliza para comprobar si su teléfono tiene conexión a Internet mediante wifi o no, para cargar fondos de pantalla en la nube desde Muzei.</item>
+    <item>Se utiliza para aplicar fondos de pantalla directamente desde la aplicación del panel.</item>
+    <item>Lo utiliza Muzei Live Wallpaper.</item>
+    <item>Se utiliza para iniciar la aplicación de reloj desde el widget de reloj analógico.</item>
+  </string-array>
+</resources>

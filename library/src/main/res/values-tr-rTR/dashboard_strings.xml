@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Açılış Ekranı Başlığı-->
+    <string name="splash_screen_title">CandyBar Kontrol Paneli</string>
+
+    <!--Gezinme Görünümü-->
+    <string name="navigation_view_home">Ev</string>
+    <string name="navigation_view_apply">Uygula</string>
+    <string name="navigation_view_icons">Simgeler</string>
+    <string name="navigation_view_request">Simge İsteği</string>
+    <string name="navigation_view_wallpapers">Duvar Kağıtları</string>
+    <string name="navigation_view_kustom">Gelenek</string>
+    <string name="navigation_view_settings">Ayarlar</string>
+    <string name="navigation_view_faqs">SSS</string>
+    <string name="navigation_view_about">Hakkında</string>
+    <string name="navigation_view_donate">Geliştirmeyi Destekleyin</string>
+
+    <!--Müze-->
+    <string name="muzei_settings">Müzei Ayarları</string>
+    <string name="minute">Dakika</string>
+    <string name="hour">Saat</string>
+    <string name="save_setting">Kaydetmek</string>
+    <string name="muzei_refresh_duration">Yenileme Süresi</string>
+    <string name="muzei_wifi_only">Yalnızca Wi-Fi\'den Yenile</string>
+    <string name="muzei_downloaded_only">Yalnızca İndirilen Duvar Kağıtlarını Yükle</string>
+    <string name="muzei_settings_ignored">Simge Paketi duvar kağıtları içermiyor, ayarlar göz ardı ediliyor.</string>
+    <string name="muzei_settings_saved">Ayarlar Kaydedildi</string>
+
+    <!--Menü-->
+    <string name="menu_search">Aramak</string>
+    <string name="menu_save">Cihaza Kaydet</string>
+    <string name="menu_select_all">Tümünü Seç</string>
+    <string name="menu_delete">Silmek</string>
+
+    <string name="menu_wallpaper_crop">Kırpma Duvar Kağıdı</string>
+    <string name="menu_apply_homescreen">Ana ekran</string>
+    <string name="menu_apply_lockscreen">Kilit ekranı</string>
+    <string name="menu_apply_homescreen_lockscreen">Ana Ekran ve Kilit Ekranı</string>
+
+    <!--Diyalog-->
+    <string name="open">Açık</string>
+    <string name="close">Kapalı</string>
+    <string name="clear">Temizlemek</string>
+    <string name="ok">TAMAM</string>
+    <string name="install">Düzenlemek</string>
+    <string name="donate">Bağış yapmak</string>
+    <string name="update">Güncelleme</string>
+
+    <string name="search_noresult">\"%s\" için sonuç bulunamadı</string>
+    <string name="search_faqs">Soru veya cevap</string>
+    <string name="search_icon">Simge Adı</string>
+    <string name="search_wallpapers">Duvar kağıdı adı</string>
+
+    <!--Güncelleme-->
+    <string name="checking_for_update">Güncelleme kontrol ediliyor…</string>
+    <string name="update_available">Güncelleme mevcut!</string>
+    <string name="no_update_available">En son sürümü kullanıyorsunuz!</string>
+
+    <!--Değişiklik Günlüğü Sürümü-->
+    <string name="changelog_version">Sürüm</string>
+
+    <!--Uygulama İçi Faturalandırma-->
+    <string name="billing_load_product_failed">Uygulama İçi Satın Alma ürünleri yüklenemiyor</string>
+
+    <!--Lisans-->
+    <string name="license_checking">Lisans kontrol ediliyor…</string>
+    <string name="license_check">Lisans Kontrolü</string>
+    <string name="license_check_success">Lisans kontrolü başarılı. Uygulamayı Play Store\'dan indirdiğiniz için teşekkür ederiz.</string>
+    <string name="license_check_failed">Lisans kontrolü başarısız oldu; uygulamayı Play Store\'dan indirmediniz. Onu kullanamayacaksın.</string>
+    <string name="license_check_retry">Lisans kontrol edilemiyor. Lütfen birkaç dakika sonra tekrar deneyin.</string>
+
+    <!--Play Store Kurulum Kontrolü-->
+    <string name="playstore_check">Play Store Kontrolü</string>
+    <string name="playstore_check_success">Uygulamayı Google Play Store\'dan yüklediğiniz için teşekkür ederiz. Eğlence!</string>
+    <string name="playstore_check_failed">Bu simge paketini Google Play Store\'un dışından yüklemişsiniz gibi görünüyor.
+        Onu kullanamayacaksın.</string>
+
+    <!--Paylaşmak-->
+    <string name="share_app_title">Hey! %s\'e göz atın</string>
+    <string name="share_app_body">Play Store\'daki %1$s Simge Paketine göz atın: %2$s</string>
+
+    <!--Giriş\'e dokunun-->
+    <string name="tap_intro_home_navigation">Gezinme çekmecesi</string>
+    <string name="tap_intro_home_navigation_desc">Gezinme çekmecesini açmak için buraya dokunun veya ekranın sol kenarından kaydırın</string>
+    <string name="tap_intro_home_apply">Simge paketini uygula</string>
+    <string name="tap_intro_home_apply_desc">%s\'i mevcut başlatıcınıza uygulamak için buraya dokunun. Diğer başlatıcılara uygulamak için uzun basın.</string>
+    <string name="tap_intro_icons_search">Aramak</string>
+    <string name="tap_intro_icons_search_desc">Bir simge aramak için buraya dokunun</string>
+    <string name="tap_intro_request_search">Eksik uygulamaları arayın</string>
+    <string name="tap_intro_request_search_desc">Seçilen simge isteğine ilişkin eksik simgeleri yüklü uygulamalarınızda aramak için buraya dokunun</string>
+    <string name="tap_intro_request_select">Kaçırılan uygulamayı seçin</string>
+    <string name="tap_intro_request_select_desc">Simge isteğine yönelik kaçırılan uygulamayı seçmek için buraya dokunun</string>
+    <string name="tap_intro_request_select_all">Kaçırılan tüm uygulamaları seç</string>
+    <string name="tap_intro_request_select_all_desc">Simge isteği için kaçırılan tüm uygulamaları seçmek için buraya dokunun</string>
+    <string name="tap_intro_request_send">Simge isteği gönder</string>
+    <string name="tap_intro_request_send_desc">Seçili cevapsız uygulamaları göndermek için buraya dokunun</string>
+    <string name="tap_intro_request_premium">Premium simge isteği</string>
+    <string name="tap_intro_request_premium_desc">Premium simge istek paketini satın almak için buraya dokunun, premium simge isteği ile istediğiniz uygulamaları daha hızlı alabilirsiniz.</string>
+    <string name="tap_intro_wallpapers_option">Duvar kağıdı seçenekleri</string>
+    <string name="tap_intro_wallpapers_option_desc">Duvar kağıdı seçeneklerini göstermek için buraya dokunun ve basılı tutun; %s duvar kağıdını uygula.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">indir veya</string>
+    <string name="tap_intro_wallpapers_preview">Duvar kağıdını önizle</string>
+    <string name="tap_intro_wallpapers_preview_desc">Duvar kağıdının tam boyutunu önizlemek için buraya dokunun</string>
+    <string name="tap_intro_wallpaper_preview_save">Duvar kağıdını kaydet</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Daha sonra kullanabilmek amacıyla duvar kağıdını cihazınıza indirip kaydetmek için buraya dokunun</string>
+    <string name="tap_intro_wallpaper_preview_apply">Duvar kağıdını uygula</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Duvar kağıdını ana ekranın arka planı olarak ayarlamak için buraya dokunun</string>
+
+    <!--Ev-->
+    <string name="home_more_apps_header">Daha Fazla Uygulama</string>
+    <string name="home_more_apps">Google Play Store\'da Daha Fazla Simge Paketini Kontrol Edin</string>
+    <string name="home_rate">Oran</string>
+    <string name="home_share">Paylaşmak</string>
+    <string name="home_check_update">Güncelleme</string>
+    <string name="home_apply_icon_pack">%s\'yi uygula</string>
+    <string name="home_donate">Bağış yapmak</string>
+    <string name="home_donate_desc">Geliştiriciyi daha fazla simge paketi yapmaya teşvik edin</string>
+    <string name="home_icons">Simgeler</string>
+    <string name="home_icon_dimension">%s piksel simge boyutu</string>
+    <string name="home_loud_wallpapers">%d bulut duvar kağıtları</string>
+    <string name="home_muzei">Muzei canlı duvar kağıdı</string>
+    <string name="home_icon_request_installed_apps">Toplam\n%d yüklü uygulama</string>
+    <string name="home_icon_request_themed_apps">Temalı\n%d uygulama</string>
+    <string name="home_icon_request_missed_apps">\n%d uygulama kaçırıldı</string>
+
+    <!--Uygula-->
+    <string name="apply_installed">Yüklü Başlatıcı</string>
+    <string name="apply_installed_launchers">Yüklü Başlatıcılar</string>
+    <string name="apply_supported">Desteklenen Başlatıcılar</string>
+    <string name="apply_launcher_not_installed_title">%S</string>
+    <string name="apply_launcher_not_installed_message">%s Başlatıcı yüklü değil. Bunu Amazon AppStore\'dan veya tercih ettiğiniz Kaynaklar ve Mağazalardan bulabilir ve yükleyebilirsiniz.</string>
+    <string name="apply_manual">%1$s Başlatıcı doğrudan uygulamayı desteklemez, ancak %2$s\'yi başlatıcı ayarlarından manuel olarak uygulayabilirsiniz.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso doğrudan uygulamayı desteklemiyor ancak şu adımları takip edebilirsiniz:</string>
+    <string name="apply_manual_kvaesitso_step_1">Kvaesitso\'nun ayarlarını aç</string>
+    <string name="apply_manual_kvaesitso_step_2">\"Izgara ve Simgeler\"e dokunun</string>
+    <string name="apply_manual_kvaesitso_step_3">\"Simge Paketi\"ne dokunun</string>
+    <string name="apply_manual_kvaesitso_step_4">Listeden %s\'yi seçin</string>
+    <string name="apply_manual_kvaesitso_step_5">Arka plan şeklini etkinleştirmek veya devre dışı bırakmak için boya fırçası simgesine dokunun</string>
+    <string name="apply_manual_kiss">KISS doğrudan başvuruyu desteklemez ancak şu adımları takip edebilirsiniz:</string>
+    <string name="apply_manual_kiss_step_1">KISS ayarlarını aç</string>
+    <string name="apply_manual_kiss_step_2">\"Kullanıcı Arayüzü\"ne dokunun</string>
+    <string name="apply_manual_kiss_step_3">\"Simge Paketi\"ne dokunun</string>
+    <string name="apply_manual_kiss_step_4">Listeden %s\'yi seçin</string>
+    <string name="apply_manual_samsung_oneui">%1$s doğrudan uygulamayı desteklemiyor, ancak %2$s\'den başlayarak simgeleri tamamlayıcı bir uygulamayla uygulayabilirsiniz.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Mevcut %s sürümünüz çok eski. Simgeleri doğrudan uygulayabilmek için lütfen Android 12 veya daha yeni bir sürüme güncelleyin. Alternatif olarak farklı bir başlatıcı yükleyebilirsiniz.</string>
+    <string name="apply_manual_samsung_oneui_step_1">%s\'yi aç</string>
+    <string name="apply_manual_samsung_oneui_step_2">%s uygulamasını indirin</string>
+    <string name="apply_manual_samsung_oneui_step_3">\"Simge\"ye dokunun</string>
+    <string name="apply_manual_samsung_oneui_step_4">\"Yeni Oluştur\"a dokunun</string>
+    <string name="apply_manual_samsung_oneui_step_5">Mavi \"Simge Paketi\" düğmesine dokunun</string>
+    <string name="apply_manual_samsung_oneui_step_6">Listeden %s\'yi seçin</string>
+    <string name="apply_manual_samsung_oneui_step_7">Yeni simgeler otomatik olarak eşlenmeyeceğinden %s\'i her güncellediğinizde bu adımları tekrarlayın.</string>
+    <string name="apply_manual_hios">HiOS başlatıcısı doğrudan uygulamayı desteklemez ancak şu adımları izleyebilirsiniz:</string>
+    <string name="apply_manual_hios_step_1">\"Ayarlar\"ı açın</string>
+    <string name="apply_manual_hios_step_2">\"Tema ve Kilit Ekranı\"na dokunun</string>
+    <string name="apply_manual_hios_step_3">\"Temam\"a dokunun</string>
+    <string name="apply_manual_hios_step_4">\"Simge paketi\"ne dokunun</string>
+    <string name="apply_manual_hios_step_5">%s\'e dokunun</string>
+    <string name="apply_manual_oxygen_os_step_1">Ana ekranınıza uzun dokunun</string>
+    <string name="apply_manual_oxygen_os_step_2">\"Ev Ayarları\"na dokunun</string>
+    <string name="apply_manual_oxygen_os_step_3">\"Simge Paketi\"ne dokunun</string>
+    <string name="apply_manual_oxygen_os_step_4">%s\'e dokunun</string>
+    <string name="apply_manual_color_os_step_1">Ana ekranınıza uzun dokunun</string>
+    <string name="apply_manual_color_os_step_2">\"Simgeler\"e dokunun</string>
+    <string name="apply_manual_color_os_step_3">\"Özel\" düğmesinin sağına doğru kaydırın (bu kaydırılabilir bir listedir!)</string>
+    <string name="apply_manual_color_os_step_4">%s\'e dokunun</string>
+    <string name="apply_manual_before">Before Launcher\'ın bu sürümü henüz simgelerin doğrudan uygulanmasını desteklemiyor. Bunun yerine aşağıdaki adımları izleyin:</string>
+    <string name="apply_manual_before_step_1">Ana ekranda sola kaydırın</string>
+    <string name="apply_manual_before_step_2">\"Ayarlar\"a dokunun</string>
+    <string name="apply_manual_before_step_3">\"Stiller ve Temalar\"a dokunun</string>
+    <string name="apply_manual_before_step_4">\"Simge Stilleri ve Paketleri\"ne dokunun</string>
+    <string name="apply_manual_before_step_5">%s\'e dokunun</string>
+    <string name="apply_manual_nothing_step_1">\"Ayarlar\"ı açın</string>
+    <string name="apply_manual_nothing_step_2">\"Özelleştirme\"ye dokunun</string>
+    <string name="apply_manual_nothing_step_3">\"Simge Paketi\"ne dokunun</string>
+    <string name="apply_manual_nothing_step_4">%s\'e dokunun</string>
+    <string name="apply_launch_failed">%s ayarları başlatılamıyor</string>
+    <string name="apply_launcher_not_installed">%s Başlatıcı yüklü değil. İndirip yüklemek için Google Play Store\'u açmak ister misiniz?</string>
+    <string name="apply_launcher_not_installable">%s Başlatıcı yüklü değil. Lütfen başlatıcıyı yükledikten sonra tekrar deneyin.</string>
+    <string name="apply_cmtheme_not_available">CM Tema Yöneticisi bu cihazda kullanılamıyor</string>
+    <string name="apply_cmtheme_failed">CM Tema Yöneticisi başlatılamıyor, Simge Paketini Ayarlar\'dan manuel olarak uygulamayı deneyebilirsiniz.</string>
+    <string name="apply_lg_home">Bu Simge Paketini uygulamak için Ayarlar - Ekran - Ana Ekran - Tema\'yı açın</string>
+    <string name="apply_lg_home_not_available">LG Home bu cihazda kullanılamıyor</string>
+    <string name="apply_lg_home_failed">LG Ana Sayfa Ayarları başlatılamıyor, Simge Paketini Ayarlar\'dan manuel olarak uygulamayı deneyebilirsiniz.</string>
+    <string name="apply_lg_home_nougat">Android Nougat\'lı LG Home artık Icon Pack\'i desteklemiyor. Icon Pack\'i kullanmak için özel bir başlatıcıya ihtiyacınız var.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Başlatıcı hiçbir simge paketini desteklemediğinden bu simge paketini bu başlatıcıyla kullanamazsınız. Bu simge paketini %2$s başlatıcısında kullanmak için üçüncü taraf bir uygulamayı deneyebilirsiniz.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s başlatıcısı %2$s ile uyumlu değil ancak daha yeni sürümlerle uyumlu olabilir</string>
+
+    <!--Simgeler-->
+    <string name="icons_load_failed">Simgeler yüklenemiyor</string>
+    <string name="icon_shape">Simge Şekli</string>
+    <string name="items_selected">%d seçildi</string>
+
+    <!--Rica etmek-->
+    <string name="request_title">Simge İsteği</string>
+    <string name="request_terms">Simge isteğine devam etmeden önce isteğinizin yönergelerimize göre inceleneceğini lütfen unutmayın. Premium istekleri daha hızlı işlenebilir.</string>
+    <string name="request_not_selected">Talep edilecek uygulamaları seçin</string>
+    <string name="request_not_requested">Talep edilmedi</string>
+    <string name="request_already_requested">Zaten talep edildi</string>
+    <string name="request_not_available">Talep edilemez</string>
+    <string name="request_building">İnşaat talebi…</string>
+    <string name="request_pacific_sending">İstek Pacific Manager\'a gönderiliyor...</string>
+    <string name="request_pacific_error">Pacific Manager\'a istek gönderilirken hata oluştu. Hata: %s</string>
+    <string name="request_pacific_success">İstek Pacific Manager\'a başarıyla gönderildi</string>
+    <string name="request_custom_error">Bir simge isteği gönderilirken hata oluştu. Bu hata devam ederse geliştiriciyle iletişime geçin. %S</string>
+    <string name="request_custom_success">Simge isteği başarıyla gönderildi</string>
+    <string name="request_fetching_data">En son veriler getiriliyor…</string>
+    <string name="request_build_failed">Simge isteği oluşturulamıyor</string>
+    <string name="request_appfilter_failed">appfilter.xml okunamıyor</string>
+    <string name="request_requested">Bu simgeyi zaten istediniz ve tekrar isteyemezsiniz.</string>
+    <string name="request_requested_possible">Bu simgeyi zaten istediniz. Bunun için başka bir istek harcamak istediğinizden emin misiniz?</string>
+    <string name="request_requested_button_cancel">Geri gitmek</string>
+    <string name="request_requested_button_confirm">Yine de seç</string>
+    <string name="request_email_client">Simge isteğini göndermek için kullanmak istediğiniz uygulamayı seçin</string>
+    <string name="request_app_disabled">Bu simge paketinin eski bir sürümünü kullanıyorsunuz. İstenilen simgeler en son sürüme dahil edilebilir. Simge istemek için lütfen uygulamanızı en son sürüme güncelleyin.</string>
+    <string name="connection_error_long">Sunucudan veri yüklenemiyor. Lütfen ağ bağlantınızı kontrol edin.</string>
+    <string name="unable_to_load_config">Sunucudan veri alınırken veya okunurken bir hata oluştu.</string>
+    <string name="request_limit">Normal istekle yalnızca %d istek(ler) yapabilirsiniz.</string>
+    <string name="request_used">%d simge talep ettiniz.</string>
+    <string name="request_limit_buy">Daha fazla simge istemek için Premium İstekler satın alabilirsiniz.</string>
+    <string name="request_limit_reset">Simge isteği sınırı her güncellemede sıfırlanacaktır.</string>
+
+    <!--Düzenli Talep-->
+    <string name="regular_request">Normal Simge İsteği</string>
+    <string name="regular_request_desc">Simgenizin istenmesini sağlayın; geliştirici, talep ettiğiniz simgeleri eklemeye çalışacaktır.</string>
+    <string name="regular_request_count">Toplam\n%d istek</string>
+    <string name="regular_request_used">\n%d istek kullanıldı</string>
+    <string name="regular_request_available">Kullanılabilir\n%d istek</string>
+
+    <!--Prim Talebi-->
+    <string name="premium_request">Premium Simge İsteği</string>
+    <string name="premium_request_no_internet">Premium istek göndermeden önce telefonunuzun internete bağlı olduğundan emin olun</string>
+    <string name="premium_request_desc">Premium simge isteği, ödemeli bir istektir. Premium simge isteği kullanarak talep ettiğiniz uygulamaları daha hızlı alabilirsiniz.</string>
+    <string name="premium_request_buy">Satın almak</string>
+    <string name="premium_request_count">Toplam\n%d istek</string>
+    <string name="premium_request_used">\n%d istek kullanıldı</string>
+    <string name="premium_request_available">Kullanılabilir\n%d istek</string>
+    <string name="premium_request_already_purchased">Hala %d premium isteğiniz var. Tekrar premium istek paketi satın almadan önce hepsini kullanmanız gerekmektedir.</string>
+    <string name="premium_request_limit">Yalnızca %d premium isteğiniz var,</string>
+    <string name="premium_request_limit1">ancak %d uygulamayı seçtiniz. \n\nNormal isteği tekrar kullanmadan önce tüm premium isteklerinizi kullanmanız gerekir.</string>
+    <string name="premium_request_consume_failed">Premium İsteği kullanılamıyor. Sabit bir internet bağlantınızın olduğundan emin olun ve tekrar deneyin. Premium İsteklerini yeniden oluşturmak için Ayarlar\'a gidin.</string>
+    <string name="premium_request_rebuilding">Premium İsteği yeniden oluşturuluyor…</string>
+    <string name="premium_request_rebuilding_empty">Premium İsteğinde bulunmadınız</string>
+    <string name="premium_request_exist">Hala Premium Simge İsteği paketiniz var. Ayarlar\'ı açın ve geri yüklemek için \"Satın Alınanları Geri Yükle\" seçeneğini seçin.</string>
+    <string name="premium_request_required">Simge istekleri yapabilmek için premium simge istek paketi satın almanız gerekir</string>
+
+    <!--Duvar Kağıtları-->
+    <string name="wallpaper_new_added">Yeni Duvar Kağıdı</string>
+    <string name="wallpaper_already_downloaded">Duvar kağıdı zaten indirildi</string>
+    <string name="wallpaper_downloading">Duvar kağıdı indiriliyor…</string>
+    <string name="wallpaper_download_failed">Duvar kağıdı indirilemiyor</string>
+    <string name="wallpaper_download_success">Duvar kağıdı indirme başarılı</string>
+    <string name="wallpaper_loading">Duvar kağıdı yükleniyor…</string>
+    <string name="wallpaper_applying">Duvar kağıdı uygulanıyor…</string>
+    <string name="wallpaper_applied">Duvar kağıdı uygulandı</string>
+    <string name="wallpaper_apply_failed">Duvar kağıdı uygulanamıyor</string>
+    <string name="wallpaper_apply_cancelled">Duvar kağıdı başvurusu iptal edildi</string>
+    <string name="connection_failed">Sunucudan veri alınamıyor</string>
+    <string name="wallpaper_apply">Duvar kağıdını uygula</string>
+    <string name="wallpaper_save_to_device">Duvar kağıdını kaydet</string>
+
+    <!--Ön ayarlar-->
+    <string name="presets_load_failed">Ön ayarlar yüklenemiyor</string>
+    <string name="presets_storage_permission">Önizleme duvar kağıdını yüklemek için depolama izni gerekiyor</string>
+    <string name="presets_required_apps">Bu ön ayarları kullanmak için gerekli uygulamalar</string>
+    <string name="presets_required_apps_not_installed">Ön ayarı kullanmak için gerekli uygulamalar yüklü değil. Lütfen eksik gerekli uygulamaları yükleyin ve tekrar deneyin.</string>
+
+    <!--Tercihler-->
+    <string name="pref_data_header">Veri ve Önbellek</string>
+    <string name="pref_data_cache">Önbelleği Temizle</string>
+    <string name="pref_data_cache_desc">Bu uygulamadan bir resim seçerken, kaçırılan uygulamaları talep ederken ve bulut duvar kağıdı küçük resimlerini yükledikten sonra oluşturulan resim önbelleğini depolama alanınızdan kaldırın.</string>
+    <string name="pref_data_cache_size">Önbellek Boyutu: %s</string>
+    <string name="pref_data_cache_clear_dialog">Gerçekten önbelleği temizlemek istiyor musunuz?</string>
+    <string name="pref_data_cache_cleared">Önbellek temizlendi</string>
+    <string name="pref_data_request">Simge İsteği Verilerini Temizle</string>
+    <string name="pref_data_request_desc">Simge isteğinden kaçırılan uygulamalar istendikten sonra oluşturulan simge isteği verilerini kaldırın.</string>
+    <string name="pref_data_request_clear_dialog">Simge isteği verilerini gerçekten temizlemek istiyor musunuz?</string>
+    <string name="pref_data_request_cleared">Simge isteği verileri temizlendi</string>
+    <string name="pref_premium_request_header">Premium Simge İsteği</string>
+    <string name="pref_premium_request_restore">Satın Alınanları Geri Yükle</string>
+    <string name="pref_premium_request_restore_desc">Simge paketini yeniden yükledikten sonra premium istek paketini geri yükleyin</string>
+    <string name="pref_premium_request_restore_success">Premium Talebi Geri Yüklendi</string>
+    <string name="pref_premium_request_restore_empty">Satın alınmış herhangi bir paketiniz yok</string>
+    <string name="pref_premium_request_rebuild">Premium Simge İsteğini Yeniden Oluşturma</string>
+    <string name="pref_premium_request_rebuild_desc">Yeniden göndermek için tüm premium simge istek verilerini toplayın</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">Koyu Tema</string>
+    <string name="pref_theme_dark_desc">Uygulama teması için koyu renk kullanın</string>
+    <string name="pref_notifications_header">Bildirimler</string>
+    <string name="pref_notifications">Bildirimleri Al</string>
+    <string name="pref_wallpaper_header">Duvar kağıdı</string>
+    <string name="pref_wallpaper_location">Duvar Kağıdı Konumu Kaydet</string>
+    <string name="pref_language_header">Dil</string>
+    <string name="pref_others_header">Diğerleri</string>
+    <string name="pref_others_report_bugs">Hataları Bildir</string>
+    <string name="pref_others_changelog">Değişiklik günlüğü</string>
+    <string name="pref_others_reset_tutorial">Öğreticiyi Sıfırla</string>
+    <string name="pref_others_reset_tutorial_reset">Öğretici Sıfırlama</string>
+
+    <!--Temalar-->
+    <string name="theme_name_auto">Otomatik</string>
+    <string name="theme_name_light">Işık</string>
+    <string name="theme_name_dark">Karanlık</string>
+    <string name="theme_name_material_you">Malzeme Siz</string>
+
+    <!--İzin-->
+    <string name="permission_storage_denied">Duvar kağıdını kaydetmek için depolama izni gerekiyor</string>
+    <string name="permission_notification_denied_1">Geliştiriciden bildirim almak için bildirim izni gerekiyor</string>
+    <string name="permission_notification_denied_2">Uygulama ayarlarından bildirimleri etkinleştirin</string>
+
+    <!--Niyet-->
+    <string name="app_client">Uygulamayı Seçin</string>
+    <string name="no_email_app">E-posta gönderecek uygulama yok</string>
+    <string name="no_browser">URL\'yi açacak uygulama yok</string>
+    <string name="intent_email_failed">E-posta uygulaması görüntülenemiyor</string>
+    <string name="intent_email_supported">Destekleniyor</string>
+    <string name="intent_email_recommended">Tavsiye edilen</string>
+    <string name="intent_email_not_supported">Desteklenmiyor</string>
+    <string name="intent_email_not_supported_message">Desteklenmeyen bir e-posta istemcisi seçildi, lütfen başka bir e-posta istemcisi seçin</string>
+
+    <!--Hakkında-->
+    <string name="about_contributors_title">Katkıda Bulunanlar</string>
+
+    <!--Hataları Bildir-->
+    <string name="report_bugs_desc">Lütfen bildirmek istediğiniz sorunun türünü açıklayın</string>
+    <string name="report_bugs_desc_hint">Tanım</string>
+    <string name="report_bugs_desc_empty">Lütfen bir açıklama verin</string>
+    <string name="report_bugs_building">Bina aktivite listesi…</string>
+    <string name="report_bugs_failed">Etkinlik listesi oluşturulamıyor</string>
+    <string name="report_bugs_send">Raporu Gönder</string>
+
+    <!--Geliştirmeyi Destekleyin-->
+    <string name="donation_success">Bağış yaptığınız için teşekkür ederiz. Bunu iyilik için kullanacağım.</string>
+
+    <!--Kilitlenme Raporu-->
+    <string name="crash_report">Kilitlenme Raporu</string>
+    <string name="crash_report_message">Maalesef %s çöktü. Geliştiricinin sorunu düzeltmesine yardımcı olmak için aşağıda Rapor Gönder\'i seçin.</string>
+    <string name="crash_report_send">Raporu Gönder</string>
+
+    <!--ÇekmeceDeğiştir-->
+    <string name="txt_open">Açık</string>
+    <string name="txt_close">Kapalı</string>
+
+    <string name="txt_new">Yeni</string>
+
+    <!--Ekran okuyucular için içerik açıklamaları-->
+    <string name="icon_search_close_button_content_description">Simge aramayı kapat</string>
+    <string name="icon_request_submit_button_content_description">Bir simge isteği gönderin</string>
+    <string name="icon_list_content_description">Simge paketinde bulunan simgelerin listesi</string>
+    <string name="icon_search_list_content_description">Arama terimiyle eşleşen simgelerin listesi</string>
+    <string name="about_item_social_content_description">Simge paketinin yazarının çevrimiçi profiline bir bağlantı:</string>
+    <string name="share_icon_pack_button_content_description">Bu uygulamayı birisiyle paylaşın</string>
+
+    <!--Gizlilik Politikası-->
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="privacy_policy_desc">Gizliliğiniz bizim için önemlidir. Verilerinizi nasıl işlediğimizi anlamak için lütfen Hakkında bölümündeki gizlilik politikamızı okuyun.</string>
+
+    <!--Şartlar ve Koşullar-->
+    <string name="terms_conditions">Şartlar ve Koşullar</string>
+
+    <!--Rica etmek-->
+    <string name="request_limit_title">Ücretsiz Talep Limiti</string>
+    <string name="request_limit_content">%d ücretsiz isteğiniz kaldı. Sınırsız istekler için premium\'a yükseltmeyi düşünün.</string>
+    <string name="request_limit_reached">Ücretsiz istek sınırına ulaşıldı. Daha fazla istek için lütfen premium\'a yükseltin.</string>
+    <string name="request_limit_remaining">%d simge daha seçebilirsiniz</string>
+
+    <!--Uygulama Sürümü-->
+    <string name="version">Sürüm</string>
+	
+    <!--Gelenek-->
+    <string name="home_kustom_desc">%s için Hava Durumu bileşenleri eşleşiyor</string>
+    <string name="kustom_widgets">Widget\'lar</string>
+    <string name="kustom_wallpapers">Duvar Kağıtları</string>
+    <string name="kustom_lockscreens">Kilit ekranları</string>
+    <string name="kustom_komponents">Bileşen</string>
+
+    <!--Onay İsteme İletişim Kutusu-->
+    <string name="request_consent_title">Veri Toplama Onayı</string>
+    <string name="request_consent_content">Simge isteğinizi işleme koymak için yüklü uygulamalarınız ve cihaz ayrıntılarınız (ekran boyutları ve Android sürümü gibi) hakkında bilgi toplamamız gerekiyor. Bu, cihazınıza en uygun simgeleri tasarlamamıza yardımcı olur.\n\nDaha fazla bilgi için Hakkında Bölümünde Gizlilik Politikamızı inceleyebilirsiniz.</string>
+    <string name="request_consent_accept">KABUL ETMEK</string>
+    <string name="request_consent_deny">REDDETMEK</string>
+
+    <!--Gezinme Stili-->
+    <string name="pref_navigation_style">Gezinme Çubuğu</string>
+
+    <!--Aramak-->
+    <string name="search_apps">Uygulamalarda Ara</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--스플래시 화면 제목-->
+    <string name="splash_screen_title">캔디바 대시보드</string>
+
+    <!--탐색 보기-->
+    <string name="navigation_view_home">집</string>
+    <string name="navigation_view_apply">적용하다</string>
+    <string name="navigation_view_icons">아이콘</string>
+    <string name="navigation_view_request">아이콘 요청</string>
+    <string name="navigation_view_wallpapers">배경화면</string>
+    <string name="navigation_view_kustom">관습</string>
+    <string name="navigation_view_settings">설정</string>
+    <string name="navigation_view_faqs">자주 묻는 질문</string>
+    <string name="navigation_view_about">에 대한</string>
+    <string name="navigation_view_donate">개발 지원</string>
+
+    <!--무제이-->
+    <string name="muzei_settings">무제이 설정</string>
+    <string name="minute">분</string>
+    <string name="hour">시간</string>
+    <string name="save_setting">구하다</string>
+    <string name="muzei_refresh_duration">새로 고침 기간</string>
+    <string name="muzei_wifi_only">Wi-Fi에서만 새로 고침</string>
+    <string name="muzei_downloaded_only">다운로드한 배경화면만 로드</string>
+    <string name="muzei_settings_ignored">아이콘 팩에는 배경화면이 포함되어 있지 않으며 설정이 무시됩니다.</string>
+    <string name="muzei_settings_saved">설정이 저장되었습니다</string>
+
+    <!--메뉴-->
+    <string name="menu_search">찾다</string>
+    <string name="menu_save">장치에 저장</string>
+    <string name="menu_select_all">모두 선택</string>
+    <string name="menu_delete">삭제</string>
+
+    <string name="menu_wallpaper_crop">배경화면 자르기</string>
+    <string name="menu_apply_homescreen">홈 화면</string>
+    <string name="menu_apply_lockscreen">잠금화면</string>
+    <string name="menu_apply_homescreen_lockscreen">홈 화면 및 잠금 화면</string>
+
+    <!--대화-->
+    <string name="open">열려 있는</string>
+    <string name="close">닫다</string>
+    <string name="clear">분명한</string>
+    <string name="ok">좋아요</string>
+    <string name="install">설치하다</string>
+    <string name="donate">기부</string>
+    <string name="update">업데이트</string>
+
+    <string name="search_noresult">\"%s\"에 대한 결과가 없습니다.</string>
+    <string name="search_faqs">질문 또는 답변</string>
+    <string name="search_icon">아이콘 이름</string>
+    <string name="search_wallpapers">배경화면 이름</string>
+
+    <!--업데이트-->
+    <string name="checking_for_update">업데이트 확인 중…</string>
+    <string name="update_available">업데이트 가능!</string>
+    <string name="no_update_available">최신 버전을 사용하고 계십니다!</string>
+
+    <!--변경 로그 버전-->
+    <string name="changelog_version">버전</string>
+
+    <!--인앱 결제-->
+    <string name="billing_load_product_failed">In-app 구매 제품을 로드할 수 없습니다</string>
+
+    <!--특허-->
+    <string name="license_checking">라이센스 확인 중…</string>
+    <string name="license_check">라이센스 확인</string>
+    <string name="license_check_success">라이센스 확인 성공. Play 스토어에서 앱을 다운로드해 주셔서 감사합니다.</string>
+    <string name="license_check_failed">라이센스 확인에 실패했습니다. Play 스토어에서 앱을 다운로드하지 않았습니다. 당신은 그것을 사용할 수 없습니다.</string>
+    <string name="license_check_retry">라이선스를 확인할 수 없습니다. 잠시 후 다시 시도해 주세요.</string>
+
+    <!--플레이 스토어 설치 확인-->
+    <string name="playstore_check">플레이 스토어 확인</string>
+    <string name="playstore_check_success">Google Play 스토어에서 앱을 설치해 주셔서 감사합니다. 즐기다!</string>
+    <string name="playstore_check_failed">Google Play 스토어 외부에서 이 아이콘 팩을 설치한 것 같습니다.
+        당신은 그것을 사용할 수 없습니다.</string>
+
+    <!--공유하다-->
+    <string name="share_app_title">에야디야! %s을(를) 확인해 보세요</string>
+    <string name="share_app_body">Play 스토어에서 %1$s 아이콘 팩을 확인하세요: %2$s</string>
+
+    <!--소개를 탭하세요-->
+    <string name="tap_intro_home_navigation">탐색 창</string>
+    <string name="tap_intro_home_navigation_desc">탐색 창을 열려면 여기를 탭하거나 화면 왼쪽 가장자리에서 스와이프하세요.</string>
+    <string name="tap_intro_home_apply">아이콘팩 적용</string>
+    <string name="tap_intro_home_apply_desc">현재 실행 프로그램에 %s을(를) 적용하려면 여기를 탭하세요. 다른 실행기에 적용하려면 길게 누르세요.</string>
+    <string name="tap_intro_icons_search">찾다</string>
+    <string name="tap_intro_icons_search_desc">아이콘을 검색하려면 여기를 누르세요.</string>
+    <string name="tap_intro_request_search">누락된 앱 검색</string>
+    <string name="tap_intro_request_search_desc">선택한 아이콘 요청에 대해 누락된 아이콘이 있는지 설치된 앱을 검색하려면 여기를 누르세요.</string>
+    <string name="tap_intro_request_select">놓친 앱 선택</string>
+    <string name="tap_intro_request_select_desc">아이콘 요청을 위해 누락된 앱을 선택하려면 여기를 누르세요.</string>
+    <string name="tap_intro_request_select_all">누락된 앱을 모두 선택하세요.</string>
+    <string name="tap_intro_request_select_all_desc">아이콘 요청을 위해 누락된 앱을 모두 선택하려면 여기를 탭하세요.</string>
+    <string name="tap_intro_request_send">아이콘 요청 보내기</string>
+    <string name="tap_intro_request_send_desc">선택한 누락된 앱을 보내려면 여기를 탭하세요.</string>
+    <string name="tap_intro_request_premium">프리미엄 아이콘 요청</string>
+    <string name="tap_intro_request_premium_desc">프리미엄 아이콘 요청 패키지를 구매하려면 여기를 탭하세요. 프리미엄 아이콘 요청을 통해 요청한 앱을 더 빠르게 얻을 수 있습니다.</string>
+    <string name="tap_intro_wallpapers_option">배경화면 옵션</string>
+    <string name="tap_intro_wallpapers_option_desc">배경화면 옵션을 표시하려면 여기를 길게 탭하세요. %s 배경화면을 적용합니다.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">다운로드 또는</string>
+    <string name="tap_intro_wallpapers_preview">미리보기 배경화면</string>
+    <string name="tap_intro_wallpapers_preview_desc">배경화면의 전체 크기를 미리 보려면 여기를 누르세요.</string>
+    <string name="tap_intro_wallpaper_preview_save">배경화면 저장</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">나중에 사용할 수 있도록 배경화면을 다운로드하고 기기에 저장하려면 여기를 누르세요.</string>
+    <string name="tap_intro_wallpaper_preview_apply">배경화면 적용</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">배경화면을 홈 화면 배경으로 설정하려면 여기를 누르세요.</string>
+
+    <!--집-->
+    <string name="home_more_apps_header">더 많은 앱</string>
+    <string name="home_more_apps">Google Play 스토어에서 더 많은 아이콘 팩을 확인하세요</string>
+    <string name="home_rate">비율</string>
+    <string name="home_share">공유하다</string>
+    <string name="home_check_update">업데이트</string>
+    <string name="home_apply_icon_pack">%s 적용</string>
+    <string name="home_donate">기부</string>
+    <string name="home_donate_desc">개발자에게 더 많은 아이콘 팩을 만들도록 권장</string>
+    <string name="home_icons">아이콘</string>
+    <string name="home_icon_dimension">%s픽셀 아이콘 크기</string>
+    <string name="home_loud_wallpapers">%d개의 구름 배경화면</string>
+    <string name="home_muzei">Muzei 라이브 배경화면</string>
+    <string name="home_icon_request_installed_apps">총\n%d개 설치된 앱</string>
+    <string name="home_icon_request_themed_apps">테마\n%d개 앱</string>
+    <string name="home_icon_request_missed_apps">누락된\n%d개 앱</string>
+
+    <!--적용하다-->
+    <string name="apply_installed">설치된 런처</string>
+    <string name="apply_installed_launchers">설치된 실행기</string>
+    <string name="apply_supported">지원되는 실행기</string>
+    <string name="apply_launcher_not_installed_title">%에스</string>
+    <string name="apply_launcher_not_installed_message">%s 실행기가 설치되지 않았습니다. Amazon AppStore 또는 선호하는 리소스 및 스토어에서 찾아서 설치할 수 있습니다.</string>
+    <string name="apply_manual">%1$s 실행기는 직접 적용을 지원하지 않지만 실행기 설정에서 %2$s를 수동으로 적용할 수 있습니다.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso는 직접 신청을 지원하지 않지만 다음 단계를 따를 수 있습니다.</string>
+    <string name="apply_manual_kvaesitso_step_1">Kvaesitso\의 설정 열기</string>
+    <string name="apply_manual_kvaesitso_step_2">\"그리드 및 아이콘\"을 탭하세요.</string>
+    <string name="apply_manual_kvaesitso_step_3">\"아이콘 팩\"을 탭하세요.</string>
+    <string name="apply_manual_kvaesitso_step_4">목록에서 %s을(를) 선택하세요</string>
+    <string name="apply_manual_kvaesitso_step_5">배경 모양을 활성화 또는 비활성화하려면 페인트 브러시 아이콘을 탭하세요.</string>
+    <string name="apply_manual_kiss">KISS는 직접 신청을 지원하지 않지만 다음 단계를 따를 수 있습니다.</string>
+    <string name="apply_manual_kiss_step_1">KISS 설정 열기</string>
+    <string name="apply_manual_kiss_step_2">\"사용자 인터페이스\"를 탭하세요</string>
+    <string name="apply_manual_kiss_step_3">\"아이콘 팩\"을 탭하세요.</string>
+    <string name="apply_manual_kiss_step_4">목록에서 %s을(를) 선택하세요</string>
+    <string name="apply_manual_samsung_oneui">%1$s는 직접 적용을 지원하지 않지만 %2$s부터 호환 앱으로 아이콘을 적용할 수 있습니다.</string>
+    <string name="apply_manual_samsung_oneui_too_old">%s의 현재 버전이 너무 오래되었습니다. 아이콘을 바로 적용하려면 Android 12 이상으로 업데이트하세요. 또는 다른 실행 프로그램을 설치할 수 있습니다.</string>
+    <string name="apply_manual_samsung_oneui_step_1">%s 열기</string>
+    <string name="apply_manual_samsung_oneui_step_2">%s 앱 다운로드</string>
+    <string name="apply_manual_samsung_oneui_step_3">\"아이콘\"을 탭하세요</string>
+    <string name="apply_manual_samsung_oneui_step_4">\"새로 만들기\"를 탭하세요</string>
+    <string name="apply_manual_samsung_oneui_step_5">파란색 \"Iconpack\" 버튼을 탭하세요.</string>
+    <string name="apply_manual_samsung_oneui_step_6">목록에서 %s을(를) 선택하세요</string>
+    <string name="apply_manual_samsung_oneui_step_7">새 아이콘은 자동으로 매핑되지 않으므로 %s을(를) 업데이트할 때마다 이 단계를 반복하세요.</string>
+    <string name="apply_manual_hios">HiOS 런처는 직접 적용을 지원하지 않지만 다음 단계를 따를 수 있습니다.</string>
+    <string name="apply_manual_hios_step_1">\"설정\" 열기</string>
+    <string name="apply_manual_hios_step_2">\"테마 및 잠금화면\"을 탭하세요</string>
+    <string name="apply_manual_hios_step_3">\"내 테마\"를 탭하세요</string>
+    <string name="apply_manual_hios_step_4">\"아이콘 팩\"을 탭하세요</string>
+    <string name="apply_manual_hios_step_5">%s 탭하기</string>
+    <string name="apply_manual_oxygen_os_step_1">홈 화면을 길게 탭하세요.</string>
+    <string name="apply_manual_oxygen_os_step_2">\"홈 설정\"을 탭하세요</string>
+    <string name="apply_manual_oxygen_os_step_3">\"아이콘 팩\"을 탭하세요</string>
+    <string name="apply_manual_oxygen_os_step_4">%s 탭하기</string>
+    <string name="apply_manual_color_os_step_1">홈 화면을 길게 탭하세요.</string>
+    <string name="apply_manual_color_os_step_2">\"아이콘\"을 탭하세요</string>
+    <string name="apply_manual_color_os_step_3">\"사용자 정의\" 버튼 오른쪽으로 스크롤하세요(이것은 스크롤 가능한 목록입니다!)</string>
+    <string name="apply_manual_color_os_step_4">%s 탭하기</string>
+    <string name="apply_manual_before">이 버전의 Before Launcher는 아직 아이콘을 직접 적용하는 것을 지원하지 않습니다. 대신 아래 단계를 따르세요.</string>
+    <string name="apply_manual_before_step_1">홈 화면에서 왼쪽으로 스와이프</string>
+    <string name="apply_manual_before_step_2">\"설정\"을 탭하세요</string>
+    <string name="apply_manual_before_step_3">\"스타일 및 테마\"를 탭하세요.</string>
+    <string name="apply_manual_before_step_4">\"아이콘 스타일 및 팩\"을 탭하세요.</string>
+    <string name="apply_manual_before_step_5">%s 탭하기</string>
+    <string name="apply_manual_nothing_step_1">\"설정\" 열기</string>
+    <string name="apply_manual_nothing_step_2">\"맞춤설정\"을 탭하세요.</string>
+    <string name="apply_manual_nothing_step_3">\"아이콘 팩\"을 탭하세요</string>
+    <string name="apply_manual_nothing_step_4">%s 탭하기</string>
+    <string name="apply_launch_failed">%s 설정을 시작할 수 없습니다.</string>
+    <string name="apply_launcher_not_installed">%s 실행기가 설치되지 않았습니다. Google Play 스토어를 열어 다운로드하고 설치하시겠습니까?</string>
+    <string name="apply_launcher_not_installable">%s 실행기가 설치되지 않았습니다. 런처를 설치하신 후 다시 시도해 주세요.</string>
+    <string name="apply_cmtheme_not_available">이 기기에서는 CM 테마 관리자를 사용할 수 없습니다</string>
+    <string name="apply_cmtheme_failed">CM 테마 관리자를 시작할 수 없습니다. 설정에서 아이콘 팩을 수동으로 적용해 보세요.</string>
+    <string name="apply_lg_home">이 아이콘 팩을 적용하려면 설정 - 디스플레이 - 홈 화면 - 테마를 엽니다.</string>
+    <string name="apply_lg_home_not_available">이 기기에서는 LG 홈을 사용할 수 없습니다</string>
+    <string name="apply_lg_home_failed">LG 홈 설정을 실행할 수 없는 경우, 설정에서 아이콘 팩을 수동으로 적용해 보세요.</string>
+    <string name="apply_lg_home_nougat">Android Nougat를 탑재한 LG 홈은 더 이상 아이콘 팩을 지원하지 않습니다. Icon Pack을 사용하려면 사용자 정의 실행 프로그램이 필요합니다.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s 실행기는 어떤 아이콘 팩도 지원하지 않으므로 이 실행기와 함께 이 아이콘 팩을 사용할 수 없습니다. 타사 앱을 사용하여 %2$s 실행기에서 이 아이콘 팩을 사용해 볼 수 있습니다.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s 실행기는 %2$s와 호환되지 않지만 최신 버전과 호환될 수 있습니다.</string>
+
+    <!--아이콘-->
+    <string name="icons_load_failed">아이콘을 로드할 수 없습니다.</string>
+    <string name="icon_shape">아이콘 모양</string>
+    <string name="items_selected">%d개 선택됨</string>
+
+    <!--요구-->
+    <string name="request_title">아이콘 요청</string>
+    <string name="request_terms">아이콘 요청을 진행하기 전에 귀하의 요청은 당사의 지침에 따라 검토된다는 점을 참고하시기 바랍니다. 프리미엄 요청이 더 빨리 처리될 수 있습니다.</string>
+    <string name="request_not_selected">요청할 앱 선택</string>
+    <string name="request_not_requested">요청되지 않음</string>
+    <string name="request_already_requested">이미 요청됨</string>
+    <string name="request_not_available">요청할 수 없습니다</string>
+    <string name="request_building">건축요청…</string>
+    <string name="request_pacific_sending">Pacific Manager에게 요청을 보내는 중...</string>
+    <string name="request_pacific_error">Pacific Manager에 요청을 보내는 동안 오류가 발생했습니다. 오류는 %s입니다.</string>
+    <string name="request_pacific_success">Pacific Manager에게 요청이 성공적으로 전송되었습니다.</string>
+    <string name="request_custom_error">아이콘 요청을 보내는 동안 오류가 발생했습니다. 이 오류가 지속되면 개발자에게 문의하세요. %에스</string>
+    <string name="request_custom_success">아이콘 요청이 성공적으로 전송되었습니다.</string>
+    <string name="request_fetching_data">최신 데이터를 가져오는 중…</string>
+    <string name="request_build_failed">아이콘 요청을 작성할 수 없습니다.</string>
+    <string name="request_appfilter_failed">appfilter.xml을 읽을 수 없습니다.</string>
+    <string name="request_requested">이 아이콘은 이미 요청하셨으므로 다시 요청할 수 없습니다.</string>
+    <string name="request_requested_possible">이미 이 아이콘을 요청하셨습니다. 정말로 다른 요청을 사용하시겠습니까?</string>
+    <string name="request_requested_button_cancel">돌아가기</string>
+    <string name="request_requested_button_confirm">무시하고 선택하세요</string>
+    <string name="request_email_client">아이콘 요청을 보내는 데 사용할 앱을 선택하세요.</string>
+    <string name="request_app_disabled">이 아이콘 팩의 이전 버전을 사용하고 있습니다. 요청하신 아이콘은 최신 버전에 포함될 수 있습니다. 아이콘을 요청하려면 앱을 최신 버전으로 업데이트하세요.</string>
+    <string name="connection_error_long">서버에서 데이터를 로드할 수 없습니다. 네트워크 연결을 확인하세요.</string>
+    <string name="unable_to_load_config">서버에서 데이터를 가져오거나 읽는 동안 오류가 발생했습니다.</string>
+    <string name="request_limit">일반 요청으로는 %d개의 요청만 할 수 있습니다.</string>
+    <string name="request_used">%d개의 아이콘을 요청하셨습니다.</string>
+    <string name="request_limit_buy">더 많은 아이콘을 요청하려면 프리미엄 요청을 구매하세요.</string>
+    <string name="request_limit_reset">아이콘 요청 제한은 업데이트할 때마다 재설정됩니다.</string>
+
+    <!--정기요청-->
+    <string name="regular_request">일반 아이콘 요청</string>
+    <string name="regular_request_desc">요청한 아이콘을 받으면 개발자는 요청한 아이콘을 포함하려고 시도합니다.</string>
+    <string name="regular_request_count">총\n%d개 요청</string>
+    <string name="regular_request_used">사용된\n%d 요청</string>
+    <string name="regular_request_available">사용 가능\n%d 요청</string>
+
+    <!--프리미엄 요청-->
+    <string name="premium_request">프리미엄 아이콘 요청</string>
+    <string name="premium_request_no_internet">프리미엄 요청을 보내기 전에 휴대폰이 인터넷에 연결되어 있는지 확인하세요.</string>
+    <string name="premium_request_desc">프리미엄 아이콘 요청은 유료 요청입니다. 프리미엄 아이콘 요청을 사용하면 요청한 앱을 더 빠르게 얻을 수 있습니다.</string>
+    <string name="premium_request_buy">구입하다</string>
+    <string name="premium_request_count">총\n%d개 요청</string>
+    <string name="premium_request_used">사용된\n%d 요청</string>
+    <string name="premium_request_available">사용 가능\n%d 요청</string>
+    <string name="premium_request_already_purchased">아직 %d개의 프리미엄 요청이 있습니다. 프리미엄 요청 패키지를 다시 구매하기 전에 모두 사용해야 합니다.</string>
+    <string name="premium_request_limit">%d개의 프리미엄 요청만 있습니다.</string>
+    <string name="premium_request_limit1">하지만 %d개의 앱을 선택하셨습니다. \n\n일반 요청을 다시 사용하려면 프리미엄 요청을 모두 사용해야 합니다.</string>
+    <string name="premium_request_consume_failed">프리미엄 요청을 사용할 수 없습니다. 인터넷 연결이 안정적인지 확인하고 다시 시도하세요. 프리미엄 요청을 다시 작성하려면 설정으로 이동하세요.</string>
+    <string name="premium_request_rebuilding">프리미엄 요청 재구축 중…</string>
+    <string name="premium_request_rebuilding_empty">프리미엄 요청을 하지 않으셨습니다</string>
+    <string name="premium_request_exist">여전히 프리미엄 아이콘 요청 패키지가 있습니다. 설정을 열고 \"구매 복원\"을 선택하여 복원하세요.</string>
+    <string name="premium_request_required">아이콘을 요청하려면 프리미엄 아이콘 요청 패키지를 구입해야 합니다.</string>
+
+    <!--배경화면-->
+    <string name="wallpaper_new_added">새로운 배경화면</string>
+    <string name="wallpaper_already_downloaded">이미 다운로드한 배경화면</string>
+    <string name="wallpaper_downloading">배경화면 다운로드 중…</string>
+    <string name="wallpaper_download_failed">배경화면을 다운로드할 수 없습니다.</string>
+    <string name="wallpaper_download_success">배경화면 다운로드 성공</string>
+    <string name="wallpaper_loading">배경화면 로드 중…</string>
+    <string name="wallpaper_applying">배경화면 적용 중…</string>
+    <string name="wallpaper_applied">배경화면 적용됨</string>
+    <string name="wallpaper_apply_failed">배경화면을 적용할 수 없습니다.</string>
+    <string name="wallpaper_apply_cancelled">배경화면 적용이 취소되었습니다.</string>
+    <string name="connection_failed">서버에서 데이터를 가져올 수 없습니다.</string>
+    <string name="wallpaper_apply">배경화면 적용</string>
+    <string name="wallpaper_save_to_device">배경화면 저장</string>
+
+    <!--사전 설정-->
+    <string name="presets_load_failed">사전 설정을 로드할 수 없습니다.</string>
+    <string name="presets_storage_permission">미리보기 배경화면을 로드하려면 저장 권한이 필요합니다.</string>
+    <string name="presets_required_apps">이러한 사전 설정을 사용하는 데 필요한 앱</string>
+    <string name="presets_required_apps_not_installed">사전 설정을 사용하는 데 필요한 앱이 설치되지 않았습니다. 누락된 필수 앱을 설치하고 다시 시도해 주세요.</string>
+
+    <!--환경설정-->
+    <string name="pref_data_header">데이터 및 캐시</string>
+    <string name="pref_data_cache">캐시 지우기</string>
+    <string name="pref_data_cache_desc">이 앱에서 이미지를 선택할 때, 누락된 앱을 요청할 때, 클라우드 배경화면 썸네일을 로드할 때 생성된 이미지 캐시를 저장소에서 제거하세요.</string>
+    <string name="pref_data_cache_size">캐시 크기: %s</string>
+    <string name="pref_data_cache_clear_dialog">정말로 캐시를 지우시겠습니까?</string>
+    <string name="pref_data_cache_cleared">캐시가 삭제되었습니다.</string>
+    <string name="pref_data_request">아이콘 요청 데이터 지우기</string>
+    <string name="pref_data_request_desc">아이콘 요청에서 누락된 앱을 요청한 후 생성된 아이콘 요청 데이터를 제거합니다.</string>
+    <string name="pref_data_request_clear_dialog">아이콘 요청 데이터를 정말로 지우시겠습니까?</string>
+    <string name="pref_data_request_cleared">아이콘 요청 데이터가 삭제되었습니다.</string>
+    <string name="pref_premium_request_header">프리미엄 아이콘 요청</string>
+    <string name="pref_premium_request_restore">구매 복원</string>
+    <string name="pref_premium_request_restore_desc">아이콘 팩 재설치 후 프리미엄 요청 패키지 복원</string>
+    <string name="pref_premium_request_restore_success">프리미엄 요청이 복원되었습니다.</string>
+    <string name="pref_premium_request_restore_empty">구매한 패키지가 없습니다.</string>
+    <string name="pref_premium_request_rebuild">프리미엄 아이콘 재구축 요청</string>
+    <string name="pref_premium_request_rebuild_desc">모든 프리미엄 아이콘 요청 데이터를 수집하여 다시 보내세요.</string>
+    <string name="pref_theme_header">주제</string>
+    <string name="pref_theme_dark">어두운 테마</string>
+    <string name="pref_theme_dark_desc">애플리케이션 테마에 어두운 색상 사용</string>
+    <string name="pref_notifications_header">알림</string>
+    <string name="pref_notifications">알림 수신</string>
+    <string name="pref_wallpaper_header">벽지</string>
+    <string name="pref_wallpaper_location">배경화면 저장 위치</string>
+    <string name="pref_language_header">언어</string>
+    <string name="pref_others_header">기타</string>
+    <string name="pref_others_report_bugs">버그 신고</string>
+    <string name="pref_others_changelog">변경 내역</string>
+    <string name="pref_others_reset_tutorial">튜토리얼 재설정</string>
+    <string name="pref_others_reset_tutorial_reset">튜토리얼 재설정</string>
+
+    <!--테마-->
+    <string name="theme_name_auto">자동</string>
+    <string name="theme_name_light">빛</string>
+    <string name="theme_name_dark">어두운</string>
+    <string name="theme_name_material_you">재료 당신</string>
+
+    <!--허가-->
+    <string name="permission_storage_denied">배경화면을 저장하려면 저장 권한이 필요합니다.</string>
+    <string name="permission_notification_denied_1">개발자로부터 알림을 받으려면 알림 권한이 필요합니다.</string>
+    <string name="permission_notification_denied_2">앱 설정에서 알림을 활성화하세요</string>
+
+    <!--의지-->
+    <string name="app_client">앱 선택</string>
+    <string name="no_email_app">이메일을 보낼 응용 프로그램이 없습니다</string>
+    <string name="no_browser">URL을 열 수 있는 애플리케이션이 없습니다.</string>
+    <string name="intent_email_failed">이메일 애플리케이션을 표시할 수 없습니다.</string>
+    <string name="intent_email_supported">지원됨</string>
+    <string name="intent_email_recommended">추천</string>
+    <string name="intent_email_not_supported">지원되지 않음</string>
+    <string name="intent_email_not_supported_message">지원되지 않는 이메일 클라이언트를 선택했습니다. 다른 이메일 클라이언트를 선택하세요.</string>
+
+    <!--에 대한-->
+    <string name="about_contributors_title">기여자</string>
+
+    <!--버그 신고-->
+    <string name="report_bugs_desc">신고하고 싶은 문제의 종류를 설명해 주세요.</string>
+    <string name="report_bugs_desc_hint">설명</string>
+    <string name="report_bugs_desc_empty">설명을 입력해주세요</string>
+    <string name="report_bugs_building">활동 목록 작성 중…</string>
+    <string name="report_bugs_failed">활동 목록을 작성할 수 없습니다.</string>
+    <string name="report_bugs_send">보고서 보내기</string>
+
+    <!--개발 지원-->
+    <string name="donation_success">기부해 주셔서 감사합니다. 나는 그것을 잘 사용할 것이다.</string>
+
+    <!--충돌 보고서-->
+    <string name="crash_report">충돌 보고서</string>
+    <string name="crash_report_message">불행하게도 %s이(가) 충돌했습니다. 개발자가 문제를 해결할 수 있도록 아래 보고서 보내기를 선택하세요.</string>
+    <string name="crash_report_send">보고서 보내기</string>
+
+    <!--서랍전환-->
+    <string name="txt_open">열려 있는</string>
+    <string name="txt_close">닫다</string>
+
+    <string name="txt_new">새로운</string>
+
+    <!--스크린 리더에 대한 콘텐츠 설명-->
+    <string name="icon_search_close_button_content_description">아이콘 검색 닫기</string>
+    <string name="icon_request_submit_button_content_description">아이콘 요청 제출</string>
+    <string name="icon_list_content_description">아이콘 팩에 포함된 아이콘 목록</string>
+    <string name="icon_search_list_content_description">검색어와 일치하는 아이콘 목록</string>
+    <string name="about_item_social_content_description">아이콘 팩 작성자의 온라인 프로필 링크:</string>
+    <string name="share_icon_pack_button_content_description">이 앱을 다른 사람과 공유하세요</string>
+
+    <!--개인 정보 보호 정책-->
+    <string name="privacy_policy">개인 정보 보호 정책</string>
+    <string name="privacy_policy_desc">귀하의 개인정보는 우리에게 중요합니다. 당사가 귀하의 데이터를 처리하는 방법을 이해하려면 정보의 개인 정보 보호 정책을 읽어보십시오.</string>
+
+    <!--이용약관-->
+    <string name="terms_conditions">이용약관</string>
+
+    <!--요구-->
+    <string name="request_limit_title">무료 요청 한도</string>
+    <string name="request_limit_content">무료 요청이 %d개 남았습니다. 무제한 요청을 위해 프리미엄으로 업그레이드하는 것을 고려해 보세요.</string>
+    <string name="request_limit_reached">무료 요청 한도에 도달했습니다. 더 많은 요청을 원하시면 프리미엄으로 업그레이드하세요.</string>
+    <string name="request_limit_remaining">아이콘을 %d개 더 선택할 수 있습니다</string>
+
+    <!--앱 버전-->
+    <string name="version">버전</string>
+	
+    <!--관습-->
+    <string name="home_kustom_desc">%s에 대한 일치하는 Weathers 구성 요소</string>
+    <string name="kustom_widgets">위젯</string>
+    <string name="kustom_wallpapers">배경화면</string>
+    <string name="kustom_lockscreens">잠금화면</string>
+    <string name="kustom_komponents">요소</string>
+
+    <!--동의 요청 대화 상자-->
+    <string name="request_consent_title">데이터 수집 동의</string>
+    <string name="request_consent_content">아이콘 요청을 처리하려면 설치된 앱에 대한 정보와 기기 세부정보(예: 화면 크기, Android 버전)를 수집해야 합니다. 이는 귀하의 장치에 가장 적합한 아이콘을 디자인하는 데 도움이 됩니다.\n\n자세한 내용은 정보 섹션에서 개인정보 보호정책을 검토할 수 있습니다.</string>
+    <string name="request_consent_accept">수용하다</string>
+    <string name="request_consent_deny">부인하다</string>
+
+    <!--탐색 스타일-->
+    <string name="pref_navigation_style">네비게이션 바</string>
+
+    <!--찾다-->
+    <string name="search_apps">앱 검색</string>
+
+</resources>

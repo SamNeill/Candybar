@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Pamagat ng Splash Screen-->
+    <string name="splash_screen_title">CandyBar Dashboard</string>
+
+    <!--Navigation View-->
+    <string name="navigation_view_home">Bahay</string>
+    <string name="navigation_view_apply">Mag-apply</string>
+    <string name="navigation_view_icons">Mga icon</string>
+    <string name="navigation_view_request">Icon na Kahilingan</string>
+    <string name="navigation_view_wallpapers">Mga Wallpaper</string>
+    <string name="navigation_view_kustom">Custom</string>
+    <string name="navigation_view_settings">Mga setting</string>
+    <string name="navigation_view_faqs">Mga FAQ</string>
+    <string name="navigation_view_about">Tungkol sa</string>
+    <string name="navigation_view_donate">Suporta sa Pag-unlad</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Mga Setting ng Muzei</string>
+    <string name="minute">minuto</string>
+    <string name="hour">Oras</string>
+    <string name="save_setting">I-save</string>
+    <string name="muzei_refresh_duration">Tagal ng Pag-refresh</string>
+    <string name="muzei_wifi_only">I-refresh mula sa Wi-Fi Lamang</string>
+    <string name="muzei_downloaded_only">I-load ang Mga Na-download na Wallpaper Lamang</string>
+    <string name="muzei_settings_ignored">Ang Icon Pack ay hindi naglalaman ng mga wallpaper, binalewala ang mga setting.</string>
+    <string name="muzei_settings_saved">Na-save ang Mga Setting</string>
+
+    <!--Menu-->
+    <string name="menu_search">Maghanap</string>
+    <string name="menu_save">I-save sa Device</string>
+    <string name="menu_select_all">Piliin ang Lahat</string>
+    <string name="menu_delete">Tanggalin</string>
+
+    <string name="menu_wallpaper_crop">I-crop ang Wallpaper</string>
+    <string name="menu_apply_homescreen">Homescreen</string>
+    <string name="menu_apply_lockscreen">Lockscreen</string>
+    <string name="menu_apply_homescreen_lockscreen">Homescreen at Lockscreen</string>
+
+    <!--Dialog-->
+    <string name="open">Bukas</string>
+    <string name="close">Isara</string>
+    <string name="clear">Maaliwalas</string>
+    <string name="ok">OK</string>
+    <string name="install">Install</string>
+    <string name="donate">Mag-donate</string>
+    <string name="update">Update</string>
+
+    <string name="search_noresult">Walang nakitang resulta para sa \"%s\"</string>
+    <string name="search_faqs">Tanong o sagot</string>
+    <string name="search_icon">Pangalan ng Icon</string>
+    <string name="search_wallpapers">Pangalan ng wallpaper</string>
+
+    <!--Update-->
+    <string name="checking_for_update">Sinusuri ang update…</string>
+    <string name="update_available">Available ang update!</string>
+    <string name="no_update_available">Ginagamit mo ang pinakabagong bersyon!</string>
+
+    <!--Changelog Version-->
+    <string name="changelog_version">Bersyon</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Hindi ma-load ang mga produkto ng In-app na Pagbili</string>
+
+    <!--Lisensya-->
+    <string name="license_checking">Sinusuri ang lisensya…</string>
+    <string name="license_check">Pagsusuri ng Lisensya</string>
+    <string name="license_check_success">Tagumpay sa pagsusuri ng lisensya. Salamat sa pag-download ng app mula sa Play Store.</string>
+    <string name="license_check_failed">Nabigo ang pagsusuri sa lisensya; hindi mo na-download ang app mula sa Play Store. Hindi mo ito magagamit.</string>
+    <string name="license_check_retry">Hindi masuri ang lisensya, pakisubukang muli pagkalipas ng ilang sandali.</string>
+
+    <!--Pagsusuri sa Pag-install ng Play Store-->
+    <string name="playstore_check">Pagsusuri sa Play Store</string>
+    <string name="playstore_check_success">Salamat sa pag-install ng app mula sa Google Play Store. Enjoy!</string>
+    <string name="playstore_check_failed">Mukhang na-install mo ang icon pack na ito mula sa labas ng Google Play Store.
+        Hindi mo ito magagamit.</string>
+
+    <!--Ibahagi-->
+    <string name="share_app_title">Yo! Tingnan ang %s</string>
+    <string name="share_app_body">Tingnan ang %1$s Icon Pack sa Play Store: %2$s</string>
+
+    <!--I-tap ang Intro-->
+    <string name="tap_intro_home_navigation">Navigation drawer</string>
+    <string name="tap_intro_home_navigation_desc">Mag-tap dito o mag-swipe mula sa kaliwang gilid ng screen para buksan ang navigation drawer</string>
+    <string name="tap_intro_home_apply">Ilapat ang icon pack</string>
+    <string name="tap_intro_home_apply_desc">Mag-tap dito para ilapat ang %s sa iyong kasalukuyang launcher. Pindutin nang matagal upang ilapat sa iba pang mga launcher.</string>
+    <string name="tap_intro_icons_search">Maghanap</string>
+    <string name="tap_intro_icons_search_desc">Mag-tap dito para maghanap ng icon</string>
+    <string name="tap_intro_request_search">Maghanap ng mga nawawalang app</string>
+    <string name="tap_intro_request_search_desc">Mag-tap dito upang maghanap sa iyong mga naka-install na app para sa mga nawawalang icon para sa kahilingan sa Napiling icon</string>
+    <string name="tap_intro_request_select">Piliin ang napalampas na app</string>
+    <string name="tap_intro_request_select_desc">Mag-tap dito para piliin ang napalampas na app para sa kahilingan sa icon</string>
+    <string name="tap_intro_request_select_all">Piliin ang lahat ng napalampas na app</string>
+    <string name="tap_intro_request_select_all_desc">Mag-tap dito para piliin ang lahat ng napalampas na app para sa kahilingan sa icon</string>
+    <string name="tap_intro_request_send">Ipadala ang kahilingan sa icon</string>
+    <string name="tap_intro_request_send_desc">Mag-tap dito para ipadala ang mga napiling napalampas na app</string>
+    <string name="tap_intro_request_premium">Hiling ng premium na icon</string>
+    <string name="tap_intro_request_premium_desc">Mag-tap dito para bilhin ang package ng kahilingan sa premium na icon, na may kahilingan sa premium na icon, mas mabilis mong makukuha ang iyong mga hiniling na app.</string>
+    <string name="tap_intro_wallpapers_option">Mga pagpipilian sa wallpaper</string>
+    <string name="tap_intro_wallpapers_option_desc">I-tap nang matagal dito upang ipakita ang mga opsyon sa wallpaper; %s ang naglapat ng wallpaper.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">i-download o</string>
+    <string name="tap_intro_wallpapers_preview">I-preview ang wallpaper</string>
+    <string name="tap_intro_wallpapers_preview_desc">Mag-tap dito para i-preview ang buong laki ng wallpaper</string>
+    <string name="tap_intro_wallpaper_preview_save">I-save ang wallpaper</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Mag-tap dito para i-download at i-save ang wallpaper sa iyong device para magamit mo ito sa ibang pagkakataon</string>
+    <string name="tap_intro_wallpaper_preview_apply">Maglagay ng wallpaper</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Mag-tap dito para itakda ang wallpaper bilang background ng homescreen</string>
+
+    <!--Bahay-->
+    <string name="home_more_apps_header">Higit pang Apps</string>
+    <string name="home_more_apps">Tingnan ang Higit pang Mga Icon Pack sa Google Play Store</string>
+    <string name="home_rate">Rate</string>
+    <string name="home_share">Ibahagi</string>
+    <string name="home_check_update">Update</string>
+    <string name="home_apply_icon_pack">Ilapat ang %s</string>
+    <string name="home_donate">Mag-donate</string>
+    <string name="home_donate_desc">Hikayatin ang Developer na gumawa ng higit pang icon pack</string>
+    <string name="home_icons">Mga icon</string>
+    <string name="home_icon_dimension">%s pixels na dimensyon ng icon</string>
+    <string name="home_loud_wallpapers">%d cloud wallpaper</string>
+    <string name="home_muzei">Muzei live na wallpaper</string>
+    <string name="home_icon_request_installed_apps">Kabuuan\n%d na mga naka-install na app</string>
+    <string name="home_icon_request_themed_apps">May temang\n%d app</string>
+    <string name="home_icon_request_missed_apps">Nakaligtaan\n%d app</string>
+
+    <!--Mag-apply-->
+    <string name="apply_installed">Naka-install na Launcher</string>
+    <string name="apply_installed_launchers">Mga Naka-install na Launcher</string>
+    <string name="apply_supported">Mga sinusuportahang launcher</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">Hindi naka-install ang %s Launcher. Maaari mong mahanap at mai-install ito mula sa Amazon AppStore o mula sa iyong gustong Mga Mapagkukunan at Tindahan.</string>
+    <string name="apply_manual">Hindi sinusuportahan ng %1$s Launcher ang direktang paglalapat, ngunit maaari mong ilapat nang manu-mano ang %2$s mula sa mga setting ng launcher.</string>
+    <string name="apply_manual_kvaesitso">Hindi sinusuportahan ng Kvaesitso ang direktang paglalapat ngunit maaari mong sundin ang mga hakbang na ito:</string>
+    <string name="apply_manual_kvaesitso_step_1">Buksan ang mga setting ng Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">I-tap ang \"Grid at Mga Icon\"</string>
+    <string name="apply_manual_kvaesitso_step_3">I-tap ang \"Icon Pack\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Pumili ng %s mula sa listahan</string>
+    <string name="apply_manual_kvaesitso_step_5">I-tap ang icon ng paint brush para paganahin o huwag paganahin ang hugis ng background</string>
+    <string name="apply_manual_kiss">Hindi sinusuportahan ng KISS ang direktang paglalapat, ngunit maaari mong sundin ang mga hakbang na ito:</string>
+    <string name="apply_manual_kiss_step_1">Buksan ang mga setting ng KISS</string>
+    <string name="apply_manual_kiss_step_2">I-tap ang \"User Interface\"</string>
+    <string name="apply_manual_kiss_step_3">I-tap ang \"Icon Pack\"</string>
+    <string name="apply_manual_kiss_step_4">Pumili ng %s mula sa listahan</string>
+    <string name="apply_manual_samsung_oneui">Hindi sinusuportahan ng %1$s ang direktang paglalapat, ngunit simula sa %2$s maaari kang maglapat ng mga icon gamit ang isang kasamang app.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Ang iyong kasalukuyang bersyon ng %s ay masyadong luma. Mangyaring mag-update sa Android 12 o mas bago para makapaglapat ng mga icon nang direkta. Bilang kahalili, maaari kang mag-install ng ibang launcher.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Buksan ang %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">I-download ang app na %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">I-tap ang \"Icon\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">I-tap ang \"Gumawa ng Bago\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">I-tap ang asul na \"Iconpack\" na button</string>
+    <string name="apply_manual_samsung_oneui_step_6">Pumili ng %s mula sa listahan</string>
+    <string name="apply_manual_samsung_oneui_step_7">Ulitin ang mga hakbang na ito sa tuwing ina-update mo ang %s dahil hindi awtomatikong mamamapa ang mga bagong icon.</string>
+    <string name="apply_manual_hios">Hindi sinusuportahan ng HiOS launcher ang direktang paglalapat, ngunit maaari mong sundin ang mga hakbang na ito:</string>
+    <string name="apply_manual_hios_step_1">Buksan ang \"Mga Setting\"</string>
+    <string name="apply_manual_hios_step_2">I-tap ang \"Tema at Lockscreen\"</string>
+    <string name="apply_manual_hios_step_3">I-tap ang \"Aking tema\"</string>
+    <string name="apply_manual_hios_step_4">I-tap ang \"Icon pack\"</string>
+    <string name="apply_manual_hios_step_5">I-tap ang %s</string>
+    <string name="apply_manual_oxygen_os_step_1">I-tap nang matagal ang iyong homescreen</string>
+    <string name="apply_manual_oxygen_os_step_2">I-tap ang \"Mga Setting ng Bahay\"</string>
+    <string name="apply_manual_oxygen_os_step_3">I-tap ang \"Icon Pack\"</string>
+    <string name="apply_manual_oxygen_os_step_4">I-tap ang %s</string>
+    <string name="apply_manual_color_os_step_1">I-tap nang matagal ang iyong homescreen</string>
+    <string name="apply_manual_color_os_step_2">I-tap ang \"Mga Icon\"</string>
+    <string name="apply_manual_color_os_step_3">Mag-scroll sa kanan ng button na \"Custom\" (ito ay isang scrollable na listahan!)</string>
+    <string name="apply_manual_color_os_step_4">I-tap ang %s</string>
+    <string name="apply_manual_before">Hindi pa sinusuportahan ng bersyong ito ng Before Launcher ang direktang paglalapat ng mga icon. Sa halip, sundin ang mga hakbang sa ibaba:</string>
+    <string name="apply_manual_before_step_1">Mag-swipe pakaliwa sa homescreen</string>
+    <string name="apply_manual_before_step_2">I-tap ang \"Mga Setting\"</string>
+    <string name="apply_manual_before_step_3">I-tap ang \"Mga Estilo at Tema\"</string>
+    <string name="apply_manual_before_step_4">I-tap ang \"Icon Styles &amp; Packs\"</string>
+    <string name="apply_manual_before_step_5">I-tap ang %s</string>
+    <string name="apply_manual_nothing_step_1">Buksan ang \"Mga Setting\"</string>
+    <string name="apply_manual_nothing_step_2">I-tap ang \"Customization\"</string>
+    <string name="apply_manual_nothing_step_3">I-tap ang \"Icon Pack\"</string>
+    <string name="apply_manual_nothing_step_4">I-tap ang %s</string>
+    <string name="apply_launch_failed">Hindi mailunsad ang mga setting ng %s</string>
+    <string name="apply_launcher_not_installed">Hindi naka-install ang %s Launcher. Gusto mo bang buksan ang Google Play Store para i-download at i-install ito?</string>
+    <string name="apply_launcher_not_installable">Hindi naka-install ang %s Launcher. Pakisubukang muli pagkatapos i-install ang launcher.</string>
+    <string name="apply_cmtheme_not_available">Hindi available ang CM Theme Manager sa device na ito</string>
+    <string name="apply_cmtheme_failed">Hindi mailunsad ang CM Theme Manager, maaari mong subukang ilapat nang manu-mano ang Icon Pack mula sa Mga Setting.</string>
+    <string name="apply_lg_home">Upang ilapat ang Icon Pack na ito, buksan ang Mga Setting - Display - Home Screen - Tema</string>
+    <string name="apply_lg_home_not_available">Hindi available ang LG Home sa device na ito</string>
+    <string name="apply_lg_home_failed">Hindi mailunsad ang Mga Setting ng LG Home, maaari mong subukang ilapat nang manu-mano ang Icon Pack mula sa Mga Setting.</string>
+    <string name="apply_lg_home_nougat">Hindi na sinusuportahan ng LG Home na may Android Nougat ang Icon Pack. Kailangan mo ng custom na launcher para magamit ang Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">Hindi sinusuportahan ng %s Launcher ang anumang mga icon pack, kaya hindi mo magagamit ang icon pack na ito sa launcher na ito. Maaari mong subukan ang isang third-party na app upang gamitin ang icon pack na ito sa %2$s launcher.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Ang %1$s launcher ay hindi tugma sa %2$s, ngunit maaaring tugma sa mga mas bagong bersyon</string>
+
+    <!--Mga icon-->
+    <string name="icons_load_failed">Hindi ma-load ang mga icon</string>
+    <string name="icon_shape">Hugis ng Icon</string>
+    <string name="items_selected">%d ang napili</string>
+
+    <!--Kahilingan-->
+    <string name="request_title">Icon na Kahilingan</string>
+    <string name="request_terms">Bago magpatuloy sa kahilingan sa icon, pakitandaan na ang iyong kahilingan ay susuriin ayon sa aming mga alituntunin. Ang mga premium na kahilingan ay maaaring maproseso nang mas mabilis.</string>
+    <string name="request_not_selected">Pumili ng mga app na hihilingin</string>
+    <string name="request_not_requested">Hindi hiniling</string>
+    <string name="request_already_requested">Hiniling na</string>
+    <string name="request_not_available">Hindi maaaring hilingin</string>
+    <string name="request_building">Kahilingan sa gusali…</string>
+    <string name="request_pacific_sending">Nagpapadala ng kahilingan sa Pacific Manager...</string>
+    <string name="request_pacific_error">Nagkaroon ng error habang nagpapadala ng kahilingan sa Pacific Manager. Ang error ay %s</string>
+    <string name="request_pacific_success">Matagumpay na naipadala ang kahilingan sa Pacific Manager</string>
+    <string name="request_custom_error">Nagkaroon ng error habang nagpapadala ng kahilingan sa icon. Kung magpapatuloy ang error na ito, makipag-ugnayan sa developer. %s</string>
+    <string name="request_custom_success">Matagumpay na naipadala ang kahilingan sa icon</string>
+    <string name="request_fetching_data">Kinukuha ang pinakabagong data…</string>
+    <string name="request_build_failed">Hindi makabuo ng kahilingan sa icon</string>
+    <string name="request_appfilter_failed">Hindi mabasa ang appfilter.xml</string>
+    <string name="request_requested">Hiniling mo na ang icon na ito at hindi mo na ito maaaring hilingin muli.</string>
+    <string name="request_requested_possible">Hiniling mo na ang icon na ito. Sigurado ka bang gusto mong gumastos ng isa pang kahilingan para dito?</string>
+    <string name="request_requested_button_cancel">Bumalik ka</string>
+    <string name="request_requested_button_confirm">Pumili pa rin</string>
+    <string name="request_email_client">Piliin ang app na gusto mong gamitin para ipadala ang kahilingan sa icon</string>
+    <string name="request_app_disabled">Gumagamit ka ng mas lumang bersyon ng icon pack na ito. Ang hiniling na mga icon ay maaaring isama sa pinakabagong bersyon. Paki-update ang iyong app sa pinakabagong bersyon upang humiling ng mga icon.</string>
+    <string name="connection_error_long">Hindi ma-load ang data mula sa server. Mangyaring, suriin ang iyong koneksyon sa network.</string>
+    <string name="unable_to_load_config">May naganap na error habang kumukuha o nagbabasa ng data mula sa server.</string>
+    <string name="request_limit">Maaari ka lamang gumawa ng %d (mga) kahilingan na may regular na kahilingan.</string>
+    <string name="request_used">Humiling ka ng %d (mga) icon.</string>
+    <string name="request_limit_buy">Maaari kang bumili ng Mga Premium na Kahilingan para humiling ng higit pang mga icon.</string>
+    <string name="request_limit_reset">Ire-reset ang limitasyon sa kahilingan sa icon sa bawat pag-update.</string>
+
+    <!--Regular na Kahilingan-->
+    <string name="regular_request">Regular na Kahilingan sa Icon</string>
+    <string name="regular_request_desc">Hilingin ang iyong icon, at susubukan ng developer na isama ang mga icon na iyong hiniling.</string>
+    <string name="regular_request_count">Kabuuan\n%d na kahilingan</string>
+    <string name="regular_request_used">Ginamit\n%d kahilingan</string>
+    <string name="regular_request_available">Available\n%d kahilingan</string>
+
+    <!--Premium na Kahilingan-->
+    <string name="premium_request">Kahilingan sa Premium na Icon</string>
+    <string name="premium_request_no_internet">Tiyaking nakakonekta ang iyong telepono sa internet bago magpadala ng premium na kahilingan</string>
+    <string name="premium_request_desc">Ang kahilingan sa premium na icon ay isang pay-to na kahilingan. Makukuha mo nang mas mabilis ang iyong mga hiniling na app sa pamamagitan ng paggamit ng kahilingan sa premium na icon.</string>
+    <string name="premium_request_buy">Bumili</string>
+    <string name="premium_request_count">Kabuuan\n%d na kahilingan</string>
+    <string name="premium_request_used">Ginamit\n%d kahilingan</string>
+    <string name="premium_request_available">Available\n%d kahilingan</string>
+    <string name="premium_request_already_purchased">Mayroon ka pa ring %d premium na kahilingan. Kailangan mong gamitin ang lahat ng ito bago bumili muli ng isang premium na pakete ng kahilingan.</string>
+    <string name="premium_request_limit">Mayroon ka lamang %d (mga) premium na kahilingan,</string>
+    <string name="premium_request_limit1">ngunit pinili mo ang %d (mga) app. \n\nKailangan mong gamitin ang lahat ng iyong premium na kahilingan bago gamitin muli ang regular na kahilingan.</string>
+    <string name="premium_request_consume_failed">Hindi magamit ang Premium Request, tiyaking mayroon kang stable na koneksyon sa internet at subukang muli. Pumunta sa Mga Setting para muling buuin ang Mga Premium na Kahilingan.</string>
+    <string name="premium_request_rebuilding">Rebuilding Premium Request…</string>
+    <string name="premium_request_rebuilding_empty">Hindi ka nakagawa ng isang Premium na Kahilingan</string>
+    <string name="premium_request_exist">Mayroon ka pa ring Premium Icon Request package. Buksan ang Mga Setting, piliin ang \"I-restore ang Mga Pagbili\" para i-restore ito.</string>
+    <string name="premium_request_required">Kailangan mong bumili ng isang premium na pakete ng kahilingan sa icon upang makagawa ng mga kahilingan sa icon</string>
+
+    <!--Mga Wallpaper-->
+    <string name="wallpaper_new_added">Bagong Wallpaper</string>
+    <string name="wallpaper_already_downloaded">Na-download na ang wallpaper</string>
+    <string name="wallpaper_downloading">Nagda-download ng wallpaper…</string>
+    <string name="wallpaper_download_failed">Hindi makapag-download ng wallpaper</string>
+    <string name="wallpaper_download_success">Matagumpay ang pag-download ng wallpaper</string>
+    <string name="wallpaper_loading">Nilo-load ang wallpaper…</string>
+    <string name="wallpaper_applying">Inilapat ang wallpaper…</string>
+    <string name="wallpaper_applied">Inilapat ang wallpaper</string>
+    <string name="wallpaper_apply_failed">Hindi mailapat ang wallpaper</string>
+    <string name="wallpaper_apply_cancelled">Kinansela ang paglalapat ng wallpaper</string>
+    <string name="connection_failed">Hindi makuha ang data mula sa server</string>
+    <string name="wallpaper_apply">Maglagay ng wallpaper</string>
+    <string name="wallpaper_save_to_device">I-save ang wallpaper</string>
+
+    <!--Preset-->
+    <string name="presets_load_failed">Hindi ma-load ang mga preset</string>
+    <string name="presets_storage_permission">Kailangan ng pahintulot sa pag-iimbak para i-load ang preview na wallpaper</string>
+    <string name="presets_required_apps">Mga kinakailangang app para magamit ang mga preset na ito</string>
+    <string name="presets_required_apps_not_installed">Hindi naka-install ang mga kinakailangang app para magamit ang preset. Paki-install ang mga nawawalang kinakailangang app at subukang muli.</string>
+
+    <!--Mga Kagustuhan-->
+    <string name="pref_data_header">Data at Cache</string>
+    <string name="pref_data_cache">I-clear ang Cache</string>
+    <string name="pref_data_cache_desc">Alisin ang cache ng larawan mula sa iyong storage, na ginawa kapag pumipili ng larawan mula sa app na ito, humihiling ng mga napalampas na app, at pagkatapos mag-load ng mga thumbnail ng cloud wallpaper.</string>
+    <string name="pref_data_cache_size">Laki ng Cache: %s</string>
+    <string name="pref_data_cache_clear_dialog">Gusto mo ba talagang i-clear ang cache?</string>
+    <string name="pref_data_cache_cleared">Na-clear ang cache</string>
+    <string name="pref_data_request">I-clear ang Data ng Kahilingan sa Icon</string>
+    <string name="pref_data_request_desc">Alisin ang data ng kahilingan sa icon, na ginawa pagkatapos humiling ng mga napalampas na app mula sa kahilingan sa icon.</string>
+    <string name="pref_data_request_clear_dialog">Gusto mo ba talagang i-clear ang data ng kahilingan sa icon?</string>
+    <string name="pref_data_request_cleared">Na-clear ang data ng kahilingan sa icon</string>
+    <string name="pref_premium_request_header">Kahilingan sa Premium na Icon</string>
+    <string name="pref_premium_request_restore">Ibalik ang Mga Pagbili</string>
+    <string name="pref_premium_request_restore_desc">Ibalik ang premium request package pagkatapos i-install muli ang icon pack</string>
+    <string name="pref_premium_request_restore_success">Na-restore ang Premium na Kahilingan</string>
+    <string name="pref_premium_request_restore_empty">Wala kang anumang biniling package</string>
+    <string name="pref_premium_request_rebuild">Rebuild Premium Icon Request</string>
+    <string name="pref_premium_request_rebuild_desc">Kolektahin ang lahat ng data ng kahilingan sa premium na icon upang muling ipadala ang mga ito</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">Madilim na Tema</string>
+    <string name="pref_theme_dark_desc">Gumamit ng madilim na kulay para sa tema ng application</string>
+    <string name="pref_notifications_header">Mga abiso</string>
+    <string name="pref_notifications">Tumanggap ng Mga Notification</string>
+    <string name="pref_wallpaper_header">Wallpaper</string>
+    <string name="pref_wallpaper_location">Wallpaper I-save ang Lokasyon</string>
+    <string name="pref_language_header">Wika</string>
+    <string name="pref_others_header">Iba</string>
+    <string name="pref_others_report_bugs">Mag-ulat ng Mga Bug</string>
+    <string name="pref_others_changelog">Changelog</string>
+    <string name="pref_others_reset_tutorial">I-reset ang Tutorial</string>
+    <string name="pref_others_reset_tutorial_reset">I-reset ang Tutorial</string>
+
+    <!--Mga tema-->
+    <string name="theme_name_auto">Auto</string>
+    <string name="theme_name_light">Liwanag</string>
+    <string name="theme_name_dark">Madilim</string>
+    <string name="theme_name_material_you">Materyal Ikaw</string>
+
+    <!--Pahintulot-->
+    <string name="permission_storage_denied">Kailangan ng pahintulot sa pag-iimbak para i-save ang wallpaper</string>
+    <string name="permission_notification_denied_1">Kailangan ng pahintulot sa notification para makatanggap ng mga notification mula sa developer</string>
+    <string name="permission_notification_denied_2">Paganahin ang mga notification mula sa mga setting ng app</string>
+
+    <!--Layunin-->
+    <string name="app_client">Piliin ang App</string>
+    <string name="no_email_app">Walang aplikasyon para magpadala ng email</string>
+    <string name="no_browser">Walang application para buksan ang URL</string>
+    <string name="intent_email_failed">Hindi maipakita ang email application</string>
+    <string name="intent_email_supported">Sinusuportahan</string>
+    <string name="intent_email_recommended">Inirerekomenda</string>
+    <string name="intent_email_not_supported">Hindi Sinusuportahan</string>
+    <string name="intent_email_not_supported_message">Pumili ng hindi sinusuportahang email client, mangyaring pumili ng isa pang email client</string>
+
+    <!--Tungkol sa-->
+    <string name="about_contributors_title">Mga kontribyutor</string>
+
+    <!--Mag-ulat ng Mga Bug-->
+    <string name="report_bugs_desc">Mangyaring magbigay ng paglalarawan ng uri ng problema na gusto mong iulat</string>
+    <string name="report_bugs_desc_hint">Paglalarawan</string>
+    <string name="report_bugs_desc_empty">Mangyaring magbigay ng paglalarawan</string>
+    <string name="report_bugs_building">Listahan ng aktibidad sa pagbuo…</string>
+    <string name="report_bugs_failed">Hindi makabuo ng listahan ng aktibidad</string>
+    <string name="report_bugs_send">Magpadala ng Ulat</string>
+
+    <!--Suporta sa Pag-unlad-->
+    <string name="donation_success">Salamat sa pagbibigay ng donasyon. Gagamitin ko ito para sa kabutihan.</string>
+
+    <!--Ulat ng Pag-crash-->
+    <string name="crash_report">Ulat ng Pag-crash</string>
+    <string name="crash_report_message">Sa kasamaang palad, nag-crash ang %s. Piliin ang Ipadala ang Ulat sa ibaba upang matulungan ang developer na ayusin ang isyu.</string>
+    <string name="crash_report_send">Magpadala ng Ulat</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Bukas</string>
+    <string name="txt_close">Isara</string>
+
+    <string name="txt_new">Bago</string>
+
+    <!--Mga paglalarawan ng nilalaman para sa mga screen reader-->
+    <string name="icon_search_close_button_content_description">Isara ang paghahanap sa icon</string>
+    <string name="icon_request_submit_button_content_description">Magsumite ng kahilingan sa icon</string>
+    <string name="icon_list_content_description">Ang listahan ng mga icon na kasama sa icon pack</string>
+    <string name="icon_search_list_content_description">Ang listahan ng mga icon na tumutugma sa termino para sa paghahanap</string>
+    <string name="about_item_social_content_description">Isang link sa isang online na profile ng may-akda ng icon pack:</string>
+    <string name="share_icon_pack_button_content_description">Ibahagi ang app na ito sa sinuman</string>
+
+    <!--Patakaran sa Privacy-->
+    <string name="privacy_policy">Patakaran sa Privacy</string>
+    <string name="privacy_policy_desc">Mahalaga sa amin ang iyong privacy. Mangyaring basahin ang aming patakaran sa privacy sa Tungkol sa upang maunawaan kung paano namin pinangangasiwaan ang iyong data.</string>
+
+    <!--Mga Tuntunin at Kundisyon-->
+    <string name="terms_conditions">Mga Tuntunin at Kundisyon</string>
+
+    <!--Kahilingan-->
+    <string name="request_limit_title">Limitasyon ng Libreng Kahilingan</string>
+    <string name="request_limit_content">Mayroon kang %d libreng kahilingan na natitira. Isaalang-alang ang pag-upgrade sa premium para sa walang limitasyong mga kahilingan.</string>
+    <string name="request_limit_reached">Naabot na ang limitasyon ng libreng kahilingan. Mangyaring mag-upgrade sa premium para sa higit pang mga kahilingan.</string>
+    <string name="request_limit_remaining">Maaari kang pumili ng %d pang icon</string>
+
+    <!--Bersyon ng App-->
+    <string name="version">Bersyon</string>
+	
+    <!--Custom-->
+    <string name="home_kustom_desc">Tumutugma sa mga sangkap ng Weathers para sa %s</string>
+    <string name="kustom_widgets">Mga Widget</string>
+    <string name="kustom_wallpapers">Mga Wallpaper</string>
+    <string name="kustom_lockscreens">Mga Lockscreen</string>
+    <string name="kustom_komponents">Component</string>
+
+    <!--Humiling ng Pahintulot na Dialog-->
+    <string name="request_consent_title">Pahintulot sa Pagkolekta ng Data</string>
+    <string name="request_consent_content">Upang iproseso ang iyong kahilingan sa icon, kailangan naming mangolekta ng impormasyon tungkol sa iyong mga naka-install na app at mga detalye ng device (tulad ng mga sukat ng screen at bersyon ng Android). Nakakatulong ito sa amin na magdisenyo ng mga icon na pinakamahusay na gumagana para sa iyong device.\n\nMaaari mong suriin ang aming Patakaran sa Privacy sa About Section para sa higit pang impormasyon.</string>
+    <string name="request_consent_accept">TANGGAPIN</string>
+    <string name="request_consent_deny">TANGGILAN</string>
+
+    <!--Estilo ng Nabigasyon-->
+    <string name="pref_navigation_style">Navigation Bar</string>
+
+    <!--Maghanap-->
+    <string name="search_apps">Maghanap ng mga App</string>
+
+</resources>

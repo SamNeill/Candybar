@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Экранның атауы-->
+    <string name="splash_screen_title">CandyBar бақылау тақтасы</string>
+
+    <!--Навигация көрінісі-->
+    <string name="navigation_view_home">Үй</string>
+    <string name="navigation_view_apply">Қолдану</string>
+    <string name="navigation_view_icons">Белгішелер</string>
+    <string name="navigation_view_request">Белгіше сұрауы</string>
+    <string name="navigation_view_wallpapers">Түсқағаздар</string>
+    <string name="navigation_view_kustom">Арнаулы</string>
+    <string name="navigation_view_settings">Параметрлер</string>
+    <string name="navigation_view_faqs">Жиі қойылатын сұрақтар</string>
+    <string name="navigation_view_about">туралы</string>
+    <string name="navigation_view_donate">Дамуды қолдау</string>
+
+    <!--Музей-->
+    <string name="muzei_settings">Muzei параметрлері</string>
+    <string name="minute">Минут</string>
+    <string name="hour">Сағат</string>
+    <string name="save_setting">Сақтау</string>
+    <string name="muzei_refresh_duration">Жаңарту ұзақтығы</string>
+    <string name="muzei_wifi_only">Тек Wi-Fi арқылы жаңартыңыз</string>
+    <string name="muzei_downloaded_only">Жүктеп алынған тұсқағаздарды ғана жүктеңіз</string>
+    <string name="muzei_settings_ignored">Белгіше бумасында тұсқағаздар жоқ, параметрлер еленбейді.</string>
+    <string name="muzei_settings_saved">Параметрлер сақталды</string>
+
+    <!--Мәзір-->
+    <string name="menu_search">Іздеу</string>
+    <string name="menu_save">Құрылғыға сақтау</string>
+    <string name="menu_select_all">Барлығын таңдаңыз</string>
+    <string name="menu_delete">Жою</string>
+
+    <string name="menu_wallpaper_crop">Түсқағазды кесу</string>
+    <string name="menu_apply_homescreen">Негізгі экран</string>
+    <string name="menu_apply_lockscreen">Құлыптау экраны</string>
+    <string name="menu_apply_homescreen_lockscreen">Негізгі экран және құлыптау экраны</string>
+
+    <!--Диалог-->
+    <string name="open">Ашық</string>
+    <string name="close">Жабу</string>
+    <string name="clear">Таза</string>
+    <string name="ok">Жарайды</string>
+    <string name="install">Орнату</string>
+    <string name="donate">Садақа беру</string>
+    <string name="update">Жаңарту</string>
+
+    <string name="search_noresult">\"%s\" бойынша нәтиже табылмады</string>
+    <string name="search_faqs">Сұрақ немесе жауап</string>
+    <string name="search_icon">Белгіше атауы</string>
+    <string name="search_wallpapers">Түсқағаз атауы</string>
+
+    <!--Жаңарту-->
+    <string name="checking_for_update">Жаңарту тексерілуде…</string>
+    <string name="update_available">Жаңарту қолжетімді!</string>
+    <string name="no_update_available">Сіз соңғы нұсқаны пайдаланып жатырсыз!</string>
+
+    <!--Өзгеріс журналының нұсқасы-->
+    <string name="changelog_version">Нұсқа</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Қолданба арқылы сатып алу өнімдерін жүктеу мүмкін емес</string>
+
+    <!--Лицензия-->
+    <string name="license_checking">Лицензия тексерілуде…</string>
+    <string name="license_check">Лицензияны тексеру</string>
+    <string name="license_check_success">Лицензияны тексеру сәтті болды. Қолданбаны Play Store дүкенінен жүктеп алғаныңызға рахмет.</string>
+    <string name="license_check_failed">Лицензияны тексеру сәтсіз аяқталды; қолданбаны Play Store дүкенінен жүктеп алған жоқсыз. Сіз оны пайдалана алмайсыз.</string>
+    <string name="license_check_retry">Лицензияны тексеру мүмкін емес, бірнеше минуттан кейін әрекетті қайталаңыз.</string>
+
+    <!--Play Store орнатуды тексеру-->
+    <string name="playstore_check">Play Store тексеру</string>
+    <string name="playstore_check_success">Қолданбаны Google Play дүкенінен орнатқаныңыз үшін рахмет. Ләззат алыңыз!</string>
+    <string name="playstore_check_failed">Сіз бұл белгіше бумасын Google Play дүкенінен тыс орнатқан сияқтысыз.
+        Сіз оны пайдалана алмайсыз.</string>
+
+    <!--Бөлісу-->
+    <string name="share_app_title">Йо! %s қараңыз</string>
+    <string name="share_app_body">Play Store дүкенінде %1$s белгіше бумасын қараңыз: %2$s</string>
+
+    <!--Кіріспе түймесін түртіңіз-->
+    <string name="tap_intro_home_navigation">Навигация тартпасы</string>
+    <string name="tap_intro_home_navigation_desc">Шарлау тартпасын ашу үшін осы жерді түртіңіз немесе экранның сол жақ жиегінен сырғытыңыз</string>
+    <string name="tap_intro_home_apply">Белгіше бумасын қолданыңыз</string>
+    <string name="tap_intro_home_apply_desc">Ағымдағы қосқышқа %s қолдану үшін осы жерді түртіңіз. Басқа қосқыштарға қолдану үшін ұзақ басыңыз.</string>
+    <string name="tap_intro_icons_search">Іздеу</string>
+    <string name="tap_intro_icons_search_desc">Белгішені іздеу үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_request_search">Жетіспейтін қолданбаларды іздеңіз</string>
+    <string name="tap_intro_request_search_desc">Таңдалған белгіше сұрауы үшін жоқ белгішелерді орнатылған қолданбалар арқылы іздеу үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_request_select">Қабылданбаған қолданбаны таңдаңыз</string>
+    <string name="tap_intro_request_select_desc">Белгіше сұрауы үшін өткізіп алған қолданбаны таңдау үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_request_select_all">Барлық өткізіп алған қолданбаларды таңдаңыз</string>
+    <string name="tap_intro_request_select_all_desc">Белгіше сұрауына жіберілген барлық қолданбаларды таңдау үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_request_send">Белгіше сұрауын жіберу</string>
+    <string name="tap_intro_request_send_desc">Таңдалған өткізіп алған қолданбаларды жіберу үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_request_premium">Премиум белгіше сұрауы</string>
+    <string name="tap_intro_request_premium_desc">Премиум белгіше сұрау пакетін сатып алу үшін осы жерді түртіңіз, премиум белгіше сұрауы арқылы сұралған қолданбаларды жылдамырақ алуға болады.</string>
+    <string name="tap_intro_wallpapers_option">Түсқағаз опциялары</string>
+    <string name="tap_intro_wallpapers_option_desc">Түсқағаз опцияларын көрсету үшін осы жерді басып тұрыңыз; %s тұсқағазды қолданады.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">жүктеп алыңыз немесе</string>
+    <string name="tap_intro_wallpapers_preview">Түсқағазды алдын ала қарау</string>
+    <string name="tap_intro_wallpapers_preview_desc">Түсқағаздың толық өлшемін алдын ала қарау үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_wallpaper_preview_save">Түсқағазды сақтаңыз</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Түсқағазды жүктеп алу және кейінірек пайдалану үшін құрылғыңызға сақтау үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_wallpaper_preview_apply">Түсқағазды жағыңыз</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Түсқағазды негізгі экранның фоны ретінде орнату үшін осы жерді түртіңіз</string>
+
+    <!--Үй-->
+    <string name="home_more_apps_header">Қосымша қолданбалар</string>
+    <string name="home_more_apps">Google Play дүкенінде қосымша белгішелер жинағын тексеріңіз</string>
+    <string name="home_rate">Бағалау</string>
+    <string name="home_share">Бөлісу</string>
+    <string name="home_check_update">Жаңарту</string>
+    <string name="home_apply_icon_pack">%s қолдану</string>
+    <string name="home_donate">Садақа беру</string>
+    <string name="home_donate_desc">Әзірлеушіге көбірек белгішелер бумасын жасауға шақырыңыз</string>
+    <string name="home_icons">Белгішелер</string>
+    <string name="home_icon_dimension">%s пиксель белгішесі өлшемі</string>
+    <string name="home_loud_wallpapers">%d бұлттық тұсқағаз</string>
+    <string name="home_muzei">Muzei тірі тұсқағаз</string>
+    <string name="home_icon_request_installed_apps">Барлығы\n%d орнатылған қолданба</string>
+    <string name="home_icon_request_themed_apps">Тақырыптық\n%d қолданба</string>
+    <string name="home_icon_request_missed_apps">Өткізіп алған\n%d қолданба</string>
+
+    <!--Қолдану-->
+    <string name="apply_installed">Орнатылған қосқыш</string>
+    <string name="apply_installed_launchers">Орнатылған іске қосқыштар</string>
+    <string name="apply_supported">Қолдау көрсетілетін қосқыштар</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher орнатылмаған. Оны Amazon AppStore дүкенінен немесе өзіңіз қалаған Ресурстар мен Дүкендерден табуға және орнатуға болады.</string>
+    <string name="apply_manual">%1$s Launcher тікелей қолдануды қолдамайды, бірақ қосқыш параметрлерінен %2$s қолданбасын қолмен қолдануға болады.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso тікелей қолдануды қолдамайды, бірақ келесі қадамдарды орындауға болады:</string>
+    <string name="apply_manual_kvaesitso_step_1">Kvaesitso параметрлерін ашыңыз</string>
+    <string name="apply_manual_kvaesitso_step_2">\"Тор мен белгішелер\" түртіңіз.</string>
+    <string name="apply_manual_kvaesitso_step_3">\"Icon Pack\" түймесін түртіңіз.</string>
+    <string name="apply_manual_kvaesitso_step_4">Тізімнен %s таңдаңыз</string>
+    <string name="apply_manual_kvaesitso_step_5">Фон пішінін қосу немесе өшіру үшін бояу щеткасының белгішесін түртіңіз</string>
+    <string name="apply_manual_kiss">KISS тікелей қолдануды қолдамайды, бірақ келесі қадамдарды орындауға болады:</string>
+    <string name="apply_manual_kiss_step_1">KISS параметрлерін ашыңыз</string>
+    <string name="apply_manual_kiss_step_2">\"Пайдаланушы интерфейсі\" түртіңіз.</string>
+    <string name="apply_manual_kiss_step_3">\"Icon Pack\" түймесін түртіңіз.</string>
+    <string name="apply_manual_kiss_step_4">Тізімнен %s таңдаңыз</string>
+    <string name="apply_manual_samsung_oneui">%1$s тікелей қолдануды қолдамайды, бірақ %2$s бастап белгішелерді қосымша қолданба арқылы қолдануға болады.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Ағымдағы %s нұсқасы тым ескі. Белгішелерді тікелей қолдану үшін Android 12 немесе одан жаңа нұсқасына жаңартыңыз. Немесе басқа іске қосу құралын орнатуға болады.</string>
+    <string name="apply_manual_samsung_oneui_step_1">%s ашыңыз</string>
+    <string name="apply_manual_samsung_oneui_step_2">%s қолданбасын жүктеп алыңыз</string>
+    <string name="apply_manual_samsung_oneui_step_3">\"Иконка\" түртіңіз</string>
+    <string name="apply_manual_samsung_oneui_step_4">\"Жаңа жасау\" түймесін түртіңіз.</string>
+    <string name="apply_manual_samsung_oneui_step_5">Көк \"Iconpack\" түймесін түртіңіз</string>
+    <string name="apply_manual_samsung_oneui_step_6">Тізімнен %s таңдаңыз</string>
+    <string name="apply_manual_samsung_oneui_step_7">%s жаңартқан сайын осы қадамдарды қайталаңыз, себебі жаңа белгішелер автоматты түрде салыстырылмайды.</string>
+    <string name="apply_manual_hios">HiOS іске қосу құралы тікелей қолдануды қолдамайды, бірақ келесі қадамдарды орындауға болады:</string>
+    <string name="apply_manual_hios_step_1">\"Параметрлер\" ашыңыз</string>
+    <string name="apply_manual_hios_step_2">\"Тақырып және құлыптау экраны\" түртіңіз.</string>
+    <string name="apply_manual_hios_step_3">\"Менің тақырыбым\" түртіңіз.</string>
+    <string name="apply_manual_hios_step_4">\"Иконкалар жинағы\" түртіңіз.</string>
+    <string name="apply_manual_hios_step_5">%s түймесін түртіңіз</string>
+    <string name="apply_manual_oxygen_os_step_1">Негізгі экранды ұзақ түртіңіз</string>
+    <string name="apply_manual_oxygen_os_step_2">\"Үй параметрлері\" түртіңіз.</string>
+    <string name="apply_manual_oxygen_os_step_3">\"Icon Pack\" түртіңіз.</string>
+    <string name="apply_manual_oxygen_os_step_4">%s түймесін түртіңіз</string>
+    <string name="apply_manual_color_os_step_1">Негізгі экранды ұзақ түртіңіз</string>
+    <string name="apply_manual_color_os_step_2">\"Иконкалар\" түртіңіз.</string>
+    <string name="apply_manual_color_os_step_3">\"Пайдаланушы\" түймесінің оң жағына айналдырыңыз (бұл айналдырылатын тізім!)</string>
+    <string name="apply_manual_color_os_step_4">%s түймесін түртіңіз</string>
+    <string name="apply_manual_before">Бұрын Launcher қолданбасының бұл нұсқасы белгішелерді тікелей қолдануға әлі қолдау көрсетпейді. Оның орнына төмендегі қадамдарды орындаңыз:</string>
+    <string name="apply_manual_before_step_1">Негізгі экранда солға сырғытыңыз</string>
+    <string name="apply_manual_before_step_2">\"Параметрлер\" түймесін түртіңіз.</string>
+    <string name="apply_manual_before_step_3">\"Стильдер мен тақырыптар\" түймесін түртіңіз.</string>
+    <string name="apply_manual_before_step_4">\"Иконка мәнерлері мен бумалары\" түртіңіз.</string>
+    <string name="apply_manual_before_step_5">%s түймесін түртіңіз</string>
+    <string name="apply_manual_nothing_step_1">\"Параметрлер\" ашыңыз</string>
+    <string name="apply_manual_nothing_step_2">\"Реттеу\" түймесін түртіңіз.</string>
+    <string name="apply_manual_nothing_step_3">\"Icon Pack\" түртіңіз.</string>
+    <string name="apply_manual_nothing_step_4">%s түймесін түртіңіз</string>
+    <string name="apply_launch_failed">%s параметрлерін іске қосу мүмкін емес</string>
+    <string name="apply_launcher_not_installed">%s Launcher орнатылмаған. Жүктеп алу және орнату үшін Google Play дүкенін ашқыңыз келе ме?</string>
+    <string name="apply_launcher_not_installable">%s Launcher орнатылмаған. Іске қосу құралын орнатқаннан кейін әрекетті қайталаңыз.</string>
+    <string name="apply_cmtheme_not_available">CM тақырып менеджері бұл құрылғыда қолжетімді емес</string>
+    <string name="apply_cmtheme_failed">CM тақырып реттеушісін іске қосу мүмкін болмаса, "Параметрлер" бөлімінен белгіше бумасын қолмен қолдануға болады.</string>
+    <string name="apply_lg_home">Осы белгішелер жинағын қолдану үшін Параметрлер - Дисплей - Негізгі экран - Тақырып тармағын ашыңыз</string>
+    <string name="apply_lg_home_not_available">LG Home бұл құрылғыда қолжетімді емес</string>
+    <string name="apply_lg_home_failed">LG Home Settings қолданбасын іске қосу мүмкін болмаса, "Параметрлер" бөлімінен белгіше бумасын қолмен қолдануға болады.</string>
+    <string name="apply_lg_home_nougat">Android Nougat жүйесі бар LG Home бұдан былай Icon Pack қолданбасын қолдамайды. Белгіше бумасын пайдалану үшін пайдаланушы іске қосу құралы қажет.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher ешбір белгіше бумаларына қолдау көрсетпейді, сондықтан бұл белгішелер жинағын осы қосқышпен пайдалана алмайсыз. Бұл белгішелер жинағын %2$s іске қосу құралында пайдалану үшін үшінші тарап қолданбасын қолданып көруге болады.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s қосқышы %2$s қолданбасымен үйлесімді емес, бірақ жаңарақ нұсқалармен үйлесімді болуы мүмкін</string>
+
+    <!--Белгішелер-->
+    <string name="icons_load_failed">Белгішелерді жүктеу мүмкін емес</string>
+    <string name="icon_shape">Белгіше пішіні</string>
+    <string name="items_selected">%d таңдалды</string>
+
+    <!--Сұраныс-->
+    <string name="request_title">Белгіше сұрауы</string>
+    <string name="request_terms">Белгіше сұрауын жалғастырмас бұрын, сұрауыңыз біздің нұсқауларымызға сәйкес қаралатынын ескеріңіз. Премиум сұраулар жылдамырақ өңделуі мүмкін.</string>
+    <string name="request_not_selected">Сұрау үшін қолданбаларды таңдаңыз</string>
+    <string name="request_not_requested">Сұралған жоқ</string>
+    <string name="request_already_requested">Қазірдің өзінде сұралған</string>
+    <string name="request_not_available">Сұрау мүмкін емес</string>
+    <string name="request_building">Құрылыс сұрауы…</string>
+    <string name="request_pacific_sending">Тынық мұхиты менеджеріне сұрау жіберілуде...</string>
+    <string name="request_pacific_error">Тынық мұхиты менеджеріне сұрау жіберу кезінде қате орын алды. Қате – %s</string>
+    <string name="request_pacific_success">Тынық мұхиты менеджеріне сұрау сәтті жіберілді</string>
+    <string name="request_custom_error">Белгіше сұрауын жіберу кезінде қате орын алды. Бұл қате жойылмаса, әзірлеушіге хабарласыңыз. %s</string>
+    <string name="request_custom_success">Белгіше сұрауы сәтті жіберілді</string>
+    <string name="request_fetching_data">Соңғы деректер алынуда…</string>
+    <string name="request_build_failed">Белгіше сұрауын құрастыру мүмкін емес</string>
+    <string name="request_appfilter_failed">appfilter.xml оқу мүмкін емес</string>
+    <string name="request_requested">Сіз бұл белгішені сұрап қойғансыз және оны қайта сұрау мүмкін емес.</string>
+    <string name="request_requested_possible">Сіз бұл белгішені сұрап қойғансыз. Оған тағы бір сұрау жұмсағыңыз келетініне сенімдісіз бе?</string>
+    <string name="request_requested_button_cancel">Қайтып келу</string>
+    <string name="request_requested_button_confirm">Бәрібір таңдаңыз</string>
+    <string name="request_email_client">Белгіше сұрауын жіберу үшін пайдаланғыңыз келетін қолданбаны таңдаңыз</string>
+    <string name="request_app_disabled">Сіз осы белгішелер бумасының ескі нұсқасын пайдаланып жатырсыз. Сұралған белгішелер соңғы нұсқада болуы мүмкін. Белгішелерді сұрау үшін қолданбаны соңғы нұсқаға жаңартыңыз.</string>
+    <string name="connection_error_long">Серверден деректерді жүктеу мүмкін емес. Желі қосылымыңызды тексеріңіз.</string>
+    <string name="unable_to_load_config">Серверден деректерді алу немесе оқу кезінде қате орын алды.</string>
+    <string name="request_limit">Сіз тек тұрақты сұраумен %d сұрау жасай аласыз.</string>
+    <string name="request_used">Сіз %d белгішені сұрадыңыз.</string>
+    <string name="request_limit_buy">Қосымша белгішелерді сұрау үшін Premium сұрауларын сатып алуға болады.</string>
+    <string name="request_limit_reset">Белгіше сұрау шегі әрбір жаңартуда қалпына келтіріледі.</string>
+
+    <!--Тұрақты сұраныс-->
+    <string name="regular_request">Тұрақты белгіше сұрауы</string>
+    <string name="regular_request_desc">Белгішеңізді сұраңыз және әзірлеуші ​​сіз сұраған белгішелерді қосуға тырысады.</string>
+    <string name="regular_request_count">Барлығы\n%d сұрау</string>
+    <string name="regular_request_used">Қолданылған\n%d сұрау</string>
+    <string name="regular_request_available">Қолжетімді\n%d сұрау</string>
+
+    <!--Премиум сұраныс-->
+    <string name="premium_request">Премиум белгіше сұрауы</string>
+    <string name="premium_request_no_internet">Премиум сұрау жібермес бұрын телефоныңыздың интернетке қосылғанына көз жеткізіңіз</string>
+    <string name="premium_request_desc">Премиум иконка сұрауы - бұл ақылы сұрау. Премиум белгіше сұрауын пайдалану арқылы сұралған қолданбаларды жылдам алуға болады.</string>
+    <string name="premium_request_buy">Сатып алу</string>
+    <string name="premium_request_count">Барлығы\n%d сұрау</string>
+    <string name="premium_request_used">Қолданылған\n%d сұрау</string>
+    <string name="premium_request_available">Қолжетімді\n%d сұрау</string>
+    <string name="premium_request_already_purchased">Сізде әлі %d премиум сұрау бар. Премиум сұрау пакетін қайта сатып алмас бұрын олардың барлығын пайдалану керек.</string>
+    <string name="premium_request_limit">Сізде тек %d премиум сұрау(лар) бар,</string>
+    <string name="premium_request_limit1">бірақ %d қолданбаны таңдадыңыз. \n\nКәдімгі сұрауды қайта пайдаланбас бұрын барлық премиум сұрауларыңызды пайдалануыңыз керек.</string>
+    <string name="premium_request_consume_failed">Premium сұрауды пайдалану мүмкін емес, тұрақты интернет байланысы бар екеніне көз жеткізіп, әрекетті қайталаңыз. Премиум сұрауларды қайта құру үшін "Параметрлер" бөліміне өтіңіз.</string>
+    <string name="premium_request_rebuilding">Премиум сұранысы қайта құрылуда…</string>
+    <string name="premium_request_rebuilding_empty">Сіз премиум сұранысын жасаған жоқсыз</string>
+    <string name="premium_request_exist">Сізде әлі де Premium Icon Request пакеті бар. Параметрлерді ашыңыз, оны қалпына келтіру үшін \"Сатып алуларды қалпына келтіру\" таңдаңыз.</string>
+    <string name="premium_request_required">Белгіше сұрауларын жасау үшін премиум белгіше сұрау пакетін сатып алу қажет</string>
+
+    <!--Түсқағаздар-->
+    <string name="wallpaper_new_added">Жаңа тұсқағаз</string>
+    <string name="wallpaper_already_downloaded">Түсқағаз жүктеліп қойған</string>
+    <string name="wallpaper_downloading">Түсқағаз жүктелуде…</string>
+    <string name="wallpaper_download_failed">Түсқағазды жүктеп алу мүмкін емес</string>
+    <string name="wallpaper_download_success">Түсқағазды жүктеп алу сәтті болды</string>
+    <string name="wallpaper_loading">Түсқағаз жүктелуде…</string>
+    <string name="wallpaper_applying">Түсқағаз қолданылуда…</string>
+    <string name="wallpaper_applied">Түсқағаз қолданылды</string>
+    <string name="wallpaper_apply_failed">Түсқағазды қолдану мүмкін емес</string>
+    <string name="wallpaper_apply_cancelled">Түсқағазды қолданудан бас тартылды</string>
+    <string name="connection_failed">Серверден деректерді алу мүмкін емес</string>
+    <string name="wallpaper_apply">Түсқағазды жағыңыз</string>
+    <string name="wallpaper_save_to_device">Түсқағазды сақтаңыз</string>
+
+    <!--Алдын ала орнатулар-->
+    <string name="presets_load_failed">Алдын ала орнатуларды жүктеу мүмкін емес</string>
+    <string name="presets_storage_permission">Алдын ала қарау тұсқағазын жүктеу үшін сақтау рұқсаты қажет</string>
+    <string name="presets_required_apps">Бұл алдын ала орнатуларды пайдалану үшін қажетті қолданбалар</string>
+    <string name="presets_required_apps_not_installed">Алдын ала орнатуды пайдалану үшін қажетті қолданбалар орнатылмаған. Жетіспейтін қажетті қолданбаларды орнатып, әрекетті қайталаңыз.</string>
+
+    <!--Параметрлер-->
+    <string name="pref_data_header">Деректер және кэш</string>
+    <string name="pref_data_cache">Кэшті тазалау</string>
+    <string name="pref_data_cache_desc">Осы қолданбадан суретті таңдағанда, жіберіп алған қолданбаларды сұрау кезінде және бұлт тұсқағазының нобайларын жүктегеннен кейін жасалған кескін кэшін жадтан жойыңыз.</string>
+    <string name="pref_data_cache_size">Кэш өлшемі: %s</string>
+    <string name="pref_data_cache_clear_dialog">Кэшті шынымен тазалағыңыз келе ме?</string>
+    <string name="pref_data_cache_cleared">Кэш тазартылды</string>
+    <string name="pref_data_request">Белгіше сұрау деректерін өшіріңіз</string>
+    <string name="pref_data_request_desc">Белгіше сұрауынан өткізіп алған қолданбаларды сұрағаннан кейін жасалған белгіше сұрау деректерін жойыңыз.</string>
+    <string name="pref_data_request_clear_dialog">Белгіше сұрау деректерін шынымен өшіргіңіз келе ме?</string>
+    <string name="pref_data_request_cleared">Белгіше сұрау деректері өшірілді</string>
+    <string name="pref_premium_request_header">Премиум белгіше сұрауы</string>
+    <string name="pref_premium_request_restore">Сатып алуларды қалпына келтіру</string>
+    <string name="pref_premium_request_restore_desc">Белгіше бумасын қайта орнатқаннан кейін премиум сұрау бумасын қалпына келтіріңіз</string>
+    <string name="pref_premium_request_restore_success">Премиум сұранысы қалпына келтірілді</string>
+    <string name="pref_premium_request_restore_empty">Сізде сатып алынған пакеттер жоқ</string>
+    <string name="pref_premium_request_rebuild">Премиум белгіше сұрауын қайта құру</string>
+    <string name="pref_premium_request_rebuild_desc">Қайта жіберу үшін барлық премиум белгіше сұрау деректерін жинаңыз</string>
+    <string name="pref_theme_header">Тақырып</string>
+    <string name="pref_theme_dark">Қараңғы тақырып</string>
+    <string name="pref_theme_dark_desc">Қолданба тақырыбы үшін қою түсті пайдаланыңыз</string>
+    <string name="pref_notifications_header">Хабарландырулар</string>
+    <string name="pref_notifications">Хабарландыруларды алу</string>
+    <string name="pref_wallpaper_header">Түсқағаз</string>
+    <string name="pref_wallpaper_location">Түсқағазды сақтау орны</string>
+    <string name="pref_language_header">Тіл</string>
+    <string name="pref_others_header">Басқалар</string>
+    <string name="pref_others_report_bugs">Қателерді хабарлау</string>
+    <string name="pref_others_changelog">Өзгеріс журналы</string>
+    <string name="pref_others_reset_tutorial">Оқулықты қалпына келтіру</string>
+    <string name="pref_others_reset_tutorial_reset">Оқулықты қалпына келтіру</string>
+
+    <!--Тақырыптар-->
+    <string name="theme_name_auto">Авто</string>
+    <string name="theme_name_light">Жарық</string>
+    <string name="theme_name_dark">Қараңғы</string>
+    <string name="theme_name_material_you">Материал Сіз</string>
+
+    <!--Рұқсат-->
+    <string name="permission_storage_denied">Түсқағазды сақтау үшін сақтау рұқсаты қажет</string>
+    <string name="permission_notification_denied_1">Әзірлеушіден хабарландыруларды алу үшін хабарландыру рұқсаты қажет</string>
+    <string name="permission_notification_denied_2">Қолданба параметрлерінен хабарландыруларды қосыңыз</string>
+
+    <!--Ниет-->
+    <string name="app_client">Қолданбаны таңдаңыз</string>
+    <string name="no_email_app">Электрондық поштаны жіберетін қолданба жоқ</string>
+    <string name="no_browser">URL ашатын қолданба жоқ</string>
+    <string name="intent_email_failed">Электрондық пошта қолданбасын көрсету мүмкін емес</string>
+    <string name="intent_email_supported">Қолдау көрсетіледі</string>
+    <string name="intent_email_recommended">Ұсынылады</string>
+    <string name="intent_email_not_supported">Қолдау көрсетілмейді</string>
+    <string name="intent_email_not_supported_message">Қолдау көрсетілмейтін электрондық пошта клиенті таңдалды, басқа электрондық пошта клиентін таңдаңыз</string>
+
+    <!--туралы-->
+    <string name="about_contributors_title">Қатысушылар</string>
+
+    <!--Қателерді хабарлау-->
+    <string name="report_bugs_desc">Хабарлағыңыз келетін мәселе түрінің сипаттамасын беріңіз</string>
+    <string name="report_bugs_desc_hint">Сипаттама</string>
+    <string name="report_bugs_desc_empty">Сипаттама беріңіз</string>
+    <string name="report_bugs_building">Әрекеттер тізімін құру…</string>
+    <string name="report_bugs_failed">Әрекеттер тізімін құру мүмкін емес</string>
+    <string name="report_bugs_send">Есеп жіберу</string>
+
+    <!--Дамуды қолдау-->
+    <string name="donation_success">Қайырымдылық жасағаныңыз үшін рахмет. Мен оны жақсылыққа пайдаланамын.</string>
+
+    <!--Бұзылу туралы есеп-->
+    <string name="crash_report">Бұзылу туралы есеп</string>
+    <string name="crash_report_message">Өкінішке орай, %s бұзылды. Әзірлеушіге мәселені шешуге көмектесу үшін төмендегі Есепті жіберу опциясын таңдаңыз.</string>
+    <string name="crash_report_send">Есеп жіберу</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Ашық</string>
+    <string name="txt_close">Жабу</string>
+
+    <string name="txt_new">Жаңа</string>
+
+    <!--Экранды оқуға арналған мазмұн сипаттамалары-->
+    <string name="icon_search_close_button_content_description">Белгіше іздеуді жабыңыз</string>
+    <string name="icon_request_submit_button_content_description">Белгіше сұрауын жіберіңіз</string>
+    <string name="icon_list_content_description">Белгішелер бумасына енгізілген белгішелер тізімі</string>
+    <string name="icon_search_list_content_description">Іздеу шартына сәйкес келетін белгішелер тізімі</string>
+    <string name="about_item_social_content_description">Белгішелер жинағы авторының онлайн профиліне сілтеме:</string>
+    <string name="share_icon_pack_button_content_description">Бұл қолданбаны біреумен бөлісіңіз</string>
+
+    <!--Құпиялылық саясаты-->
+    <string name="privacy_policy">Құпиялылық саясаты</string>
+    <string name="privacy_policy_desc">Сіздің құпиялылығыңыз біз үшін маңызды. Деректеріңізді қалай өңдейтінімізді түсіну үшін туралы бөліміндегі құпиялылық саясатымызды оқып шығыңыз.</string>
+
+    <!--Шарттар мен талаптар-->
+    <string name="terms_conditions">Шарттар мен талаптар</string>
+
+    <!--Сұраныс-->
+    <string name="request_limit_title">Тегін сұрау шегі</string>
+    <string name="request_limit_content">Сізде %d тегін сұрау қалды. Шектеусіз сұраулар үшін премиумға жаңартуды қарастырыңыз.</string>
+    <string name="request_limit_reached">Тегін сұрау шегіне жетті. Қосымша сұраулар үшін премиумға жаңартыңыз.</string>
+    <string name="request_limit_remaining">Тағы %d белгішені таңдауға болады</string>
+
+    <!--Қолданба нұсқасы-->
+    <string name="version">Нұсқа</string>
+	
+    <!--Арнаулы-->
+    <string name="home_kustom_desc">%s үшін Weathers құрамдастары сәйкес келеді</string>
+    <string name="kustom_widgets">Виджеттер</string>
+    <string name="kustom_wallpapers">Түсқағаздар</string>
+    <string name="kustom_lockscreens">Құлыптау экрандары</string>
+    <string name="kustom_komponents">Құрамдас</string>
+
+    <!--Келісімді сұрау диалогтық терезесі-->
+    <string name="request_consent_title">Деректерді жинауға келісім</string>
+    <string name="request_consent_content">Белгіше сұрауыңызды өңдеу үшін орнатылған қолданбалар мен құрылғы мәліметтері (мысалы, экран өлшемдері және Android нұсқасы) туралы ақпаратты жинауымыз керек. Бұл құрылғыңыз үшін ең жақсы жұмыс істейтін белгішелерді жасауға көмектеседі.\n\nҚосымша ақпарат алу үшін "Ақпарат туралы" бөліміндегі Құпиялық саясатымызды қарап шығуға болады.</string>
+    <string name="request_consent_accept">ҚАБЫЛДАУ</string>
+    <string name="request_consent_deny">ЖОҚ</string>
+
+    <!--Навигация стилі-->
+    <string name="pref_navigation_style">Навигация жолағы</string>
+
+    <!--Іздеу-->
+    <string name="search_apps">Қолданбаларды іздеу</string>
+
+</resources>

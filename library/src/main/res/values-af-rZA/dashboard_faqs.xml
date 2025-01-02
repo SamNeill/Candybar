@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Wat is \'n lanseerder-->
+    <!--Wat is \'n ikoonpakket-->
+    <!--Hoe gebruik ek \'n ikoonpakket?-->
+    <!--Hoe pas ek \'n ikoonpakket toe?-->
+    <!--Hoe sien ek alle ikone ingesluit?-->
+    <!--Ek kan nie \'n volledige ikoonnaam sien nie-->
+    <!--Hoe kan ek ikone vervang met \'n alternatiewe ikoon?-->
+    <!--Hoe versoek ek \'n ikoon?-->
+    <!--Hoe kan ek die oorblywende Premium-versoeke herstel nadat ek die toepassing herinstalleer het?-->
+    <!--Nadat ek my foon herbegin het, word die ikoonpakket nie toegepas nie, dit herstel na verstek?-->
+    <!--Hoekom lyk die ikone skerp of gepixel op my foon?-->
+    <!--Ek kan die ikoon in alle ikone sien,
+            maar hoekom word die werklike ikoon op die programlaai nie verander nie?-->
+    <!--Wat is die opsie \"rapporteer foute\"?-->
+    <!--My lanseerder word in die Google Play-beskrywing gelys, maar hoekom is dit nie by die toepassingsafdeling ingesluit nie?-->
+    <!--Kan muurpapier nie toegepas word nie, wys net swart skerm?-->
+    <!--Muzei: Hoe om slegs afgelaaide agtergronde te laai?-->
+    <!--Muzei: Ek wil nie aanhou om agtergronde af te laai elke keer as die muurpapier verander nie?-->
+    <!--Muzei: Ek wil net spesifieke agtergronde gebruik?-->
+    <!--Waarom is toestemming nodig vir lees en skryf vir eksterne berging?-->
+    <!--Hoekom is internettoestemming nodig?-->
+    <!--Waarom is toestemming vir Toegangnetwerkstaat nodig?-->
+    <!--Waarom is toestemming vir Toegang Wi-Fi-staat nodig?-->
+    <!--Waarom is toestemming vir Stel muurpapier nodig?-->
+    <!--Waarom is Wake Lock-toestemming nodig?-->
+    <!--Hoekom is die Stel Alarm-toestemming nodig?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Wat is \'n lanseerder?</item>
+    <item>Wat is \'n ikoonpakket?</item>
+    <item>Hoe gebruik ek \'n ikoonpakket?</item>
+    <item>Hoe pas ek \'n ikoonpakket toe?</item>
+    <item>Hoe sien ek alle ikone ingesluit?</item>
+    <item>Ek kan nie \'n volledige ikoonnaam sien nie</item>
+    <item>Hoe kan ek ikone vervang met \'n alternatiewe ikoon?</item>
+    <item>Hoe versoek ek \'n ikoon?</item>
+    <item>Hoe kan ek die oorblywende Premium-versoeke herstel nadat ek die toepassing herinstalleer het?</item>
+    <item>Nadat ek my foon herbegin het, word die ikoonpakket nie toegepas nie; herstel dit na verstek?</item>
+    <item>Hoekom lyk die ikone skerp of gepixel op my foon?</item>
+    <item>Ek kan die ikoon in alle ikone sien,
+            maar hoekom word die werklike ikoon op die programlaai nie verander nie?</item>
+    <item>Wat is die opsie \"rapporteer foute\"?</item>
+    <item>My lanseerder word in die Google Play-beskrywing gelys, maar hoekom is dit nie by die toepassingsafdeling ingesluit nie?</item>
+    <item>Kan muurpapier nie toegepas word nie, wys net swart skerm?</item>
+    <item>Muzei: Hoe om slegs afgelaaide agtergronde te laai?</item>
+    <item>Muzei: Ek wil nie aanhou om agtergronde af te laai elke keer as die muurpapier verander nie?</item>
+    <item>Muzei: Ek wil net spesifieke agtergronde gebruik?</item>
+    <item>Waarom is toestemming nodig vir lees en skryf vir eksterne berging?</item>
+    <item>Hoekom is internettoestemming nodig?</item>
+    <item>Waarom is toestemming vir Toegangnetwerkstaat nodig?</item>
+    <item>Waarom is toestemming vir Access Wifi State nodig?</item>
+    <item>Waarom is toestemming vir Stel muurpapier nodig?</item>
+    <item>Hoekom is Wake Lock-toestemming nodig?</item>
+    <item>Hoekom is die Stel Alarm-toestemming nodig?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher is die deel van die Android-gebruikerskoppelvlak waarmee gebruikers die tuisskerm kan aanpas,
+            begin mobiele toepassings, maak telefoonoproepe en voer ander take op Android-toestelle uit.</item>
+    <item>\'n Stel grafika wat die voorkoms van jou applaai-ikone sal verander</item>
+    <item>U benodig \'n lanseerder wat pasgemaakte ikoonpakkette ondersteun.
+            Ondersteunde lanseerders word in die Play Winkel-beskrywing gelys.
+            As jy verward is oor watter lanseerders gebruik moet word, gaan net na die \"Pas toe\"-afdeling en installeer van daar af.</item>
+    <item>Jy kan die navigasielaai oopmaak en dan \"Apply\" oopmaak. Kies jou lanseerder uit die lys.
+            As jou lanseerder nie daar gelys is nie, maar hierdie ikoonpakket is versoenbaar daarmee
+            (sien op Google Play Winkel beskrywing vir ondersteunde lanseerders),
+            jy kan die ikoonpakket handmatig toepas in jou lanseerderinstellings.</item>
+    <item>Jy kan die navigasielaai oopmaak en dan \"Icons\" oopmaak</item>
+    <item>Tik net op die ikoon. \'n Voorskoudialoog sal verskyn met \'n groter prent en volledige ikoonnaam.</item>
+    <item>Dit hang af van watter lanseerder jy gebruik het. Nie elke lanseerder ondersteun ikoonredigering nie.
+       	    Meestal kan jy \'n ikoon wysig deur die ikoon te tik en te hou of dit te dubbeltik.</item>
+    <item>Jy kan die navigasielaai oopmaak en dan \"Icon Request\" oopmaak.</item>
+    <item>Jy kan die navigasielaai oopmaak, dan \"Instellings\" oopmaak, \"Herstel aankope\" kies.
+            As jy enige oorblywende Premium-versoeke gehad het voordat jy herinstalleer het, sal dit herstel word.</item>
+    <item>Dit het gebeur omdat hierdie ikoonpakket na die SD-kaart geskuif is; jy moet dit in die interne geheue installeer.</item>
+    <item>Die probleem kom dalk van die lanseerder wat jy gebruik het toe jy groot ikoonresolusie hanteer het.
+       	    Jy kan dit regmaak deur die ikoongrootte na 115–120% te vergroot.
+       	    Alternatiewelik kan jy jou lanseerder verander.</item>
+    <item>Maak instellings oop, rol af en kies dan \"Rapporteer foute\".</item>
+    <item>\"Rapporteer foute\" word gebruik om foute wat verband hou met die ikoonpakket aan te meld, nie die dashboard nie.</item>
+    <item>Nie elke lanseerder ondersteun direkte toepassing nie, en sommige van hulle kan nie direk vanaf die dashboard verkry word nie.
+      	    U kan hierdie ikoonpakket handmatig toepas in die individuele lanseerderinstellings.</item>
+    <item>Wanneer jy \"Stel Wallpaper\" direk vanaf die toepassing, sal dit na die kas afgelaai word,
+      	    dan sal die dashboard-toepassing dit probeer toepas. Om aansoek te doen sal \'n geruime tyd neem en ook \'n groot hoeveelheid RAM benodig vir \'n kort tydperk.
+      	    \"Swartskerm\"-foute kan dalk verskyn omdat jou foon nie genoeg vrye RAM het om die muurpapier te verwerk nie.
+      	    Die herbegin van jou foon sal hierdie probleem regstel. Nadat jy herbegin het, sal jou foon meer RAM beskikbaar hê.
+            Alternatiewelik kan jy die afgelaaide muurpapier van jou Gallery oopmaak en dit van daar af as muurpapier stel.</item>
+    <item>Maak Muzei oop, kies hierdie ikoonpakket, instellings. Jy sal \'n opsie sien om slegs afgelaaide agtergronde te laai.
+            Jy sal eers agtergronde van die dashboard moet aflaai.</item>
+    <item>As \'n muurpapier reeds afgelaai is, sal dit outomaties uit jou foongeheue gelaai word.
+            Muzei sal nie aanhou om dit af te laai wanneer die muurpapier verander nie. Jy sal eers agtergronde van die dashboard moet aflaai.</item>
+    <item>Maak Dashboard oop, laai agtergronde af wat jy in Muzei wil gebruik.
+            Maak Muzei-instellings oop, kies dan Laai slegs afgelaaide agtergronde.</item>
+    <item>Dit word gebruik om kas te skryf en te lees, en die ikoonversoekdata in te samel.</item>
+    <item>Dit word gebruik om wolkgebaseerde agtergronde te laai en dit af te laai.</item>
+    <item>Dit word gebruik om te kyk of jou foon \'n internetverbinding het of nie.</item>
+    <item>Dit word gebruik om te kyk of jou foon \'n internetverbinding met \'n wifi het of nie, om wolk-agtergronde van Muzei af te laai.</item>
+    <item>Dit word gebruik om agtergronde direk vanaf die dashboard-toepassing toe te pas.</item>
+    <item>Dit word gebruik deur Muzei Live Wallpaper.</item>
+    <item>Dit word gebruik om die klok-app vanaf die analooghorlosie-legstuk te begin.</item>
+  </string-array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Wat is een draagraket-->
+    <!--Wat is een pictogrampakket-->
+    <!--Hoe gebruik ik een icon pack?-->
+    <!--Hoe pas ik een icon pack toe?-->
+    <!--Hoe zie ik dat alle pictogrammen zijn opgenomen?-->
+    <!--Ik kan geen volledige pictogramnaam zien-->
+    <!--Hoe kan ik pictogrammen vervangen door een alternatief pictogram?-->
+    <!--Hoe vraag ik een icoon aan?-->
+    <!--Hoe kan ik de resterende Premium Requests herstellen nadat ik de app opnieuw heb geïnstalleerd?-->
+    <!--Nadat ik mijn telefoon opnieuw heb opgestart, wordt het pictogrampakket niet toegepast. Wordt het teruggezet naar de standaardwaarden?-->
+    <!--Waarom zien de pictogrammen er grillig of korrelig uit op mijn telefoon?-->
+    <!--Ik zie dat het pictogram in alle pictogrammen is opgenomen,
+            maar waarom is het daadwerkelijke pictogram in de app-lade niet gewijzigd?-->
+    <!--Wat is de optie \"bugs rapporteren\"?-->
+    <!--Mijn opstartprogramma wordt vermeld in de Google Play-beschrijving, maar waarom is dit niet opgenomen in het toepassingsgedeelte?-->
+    <!--Achtergrond kan niet worden toegepast, maar toont alleen een zwart scherm?-->
+    <!--Muzei: Hoe kan ik alleen gedownloade wallpapers laden?-->
+    <!--Muzei: Ik wil niet steeds wallpapers downloaden als de wallpaper verandert?-->
+    <!--Muzei: Ik wil alleen specifieke achtergronden gebruiken?-->
+    <!--Waarom zijn lees- en schrijfrechten voor externe opslag nodig?-->
+    <!--Waarom is internettoestemming nodig?-->
+    <!--Waarom is toestemming voor Access Network State nodig?-->
+    <!--Waarom is toegang tot Wi-Fi State nodig?-->
+    <!--Waarom is Achtergrondtoestemming nodig?-->
+    <!--Waarom is Wake Lock-toestemming nodig?-->
+    <!--Waarom is de toestemming Alarm instellen nodig?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Wat is een draagraket?</item>
+    <item>Wat is een pictogrampakket?</item>
+    <item>Hoe gebruik ik een icon pack?</item>
+    <item>Hoe pas ik een icon pack toe?</item>
+    <item>Hoe zie ik dat alle pictogrammen zijn opgenomen?</item>
+    <item>Ik kan geen volledige pictogramnaam zien</item>
+    <item>Hoe kan ik pictogrammen vervangen door een alternatief pictogram?</item>
+    <item>Hoe vraag ik een icoon aan?</item>
+    <item>Hoe kan ik de resterende Premium Requests herstellen nadat ik de app opnieuw heb geïnstalleerd?</item>
+    <item>Nadat ik mijn telefoon opnieuw heb opgestart, wordt het pictogrampakket niet toegepast; het herstelt naar de standaardwaarden?</item>
+    <item>Waarom zien de pictogrammen er grillig of korrelig uit op mijn telefoon?</item>
+    <item>Ik zie dat het pictogram in alle pictogrammen is opgenomen,
+            maar waarom is het daadwerkelijke pictogram in de app-lade niet gewijzigd?</item>
+    <item>Wat is de optie \"bugs rapporteren\"?</item>
+    <item>Mijn opstartprogramma wordt vermeld in de Google Play-beschrijving, maar waarom is dit niet opgenomen in het toepassingsgedeelte?</item>
+    <item>Achtergrond kan niet worden toegepast, maar toont alleen een zwart scherm?</item>
+    <item>Muzei: Hoe kan ik alleen gedownloade wallpapers laden?</item>
+    <item>Muzei: Ik wil niet steeds wallpapers downloaden als de wallpaper verandert?</item>
+    <item>Muzei: Ik wil alleen specifieke achtergronden gebruiken?</item>
+    <item>Waarom zijn lees- en schrijfrechten voor externe opslag nodig?</item>
+    <item>Waarom is internettoestemming nodig?</item>
+    <item>Waarom is toestemming voor Access Network State nodig?</item>
+    <item>Waarom is Access Wifi State-toestemming nodig?</item>
+    <item>Waarom is Achtergrondtoestemming nodig?</item>
+    <item>Waarom is Wake Lock-toestemming nodig?</item>
+    <item>Waarom is de toestemming Alarm instellen nodig?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher is het onderdeel van de Android-gebruikersinterface waarmee gebruikers het startscherm kunnen aanpassen,
+            start mobiele apps, voer telefoongesprekken en voer andere taken uit op Android-apparaten.</item>
+    <item>Een reeks afbeeldingen die het uiterlijk van uw app-ladepictogrammen zullen veranderen</item>
+    <item>Je hebt een opstartprogramma nodig dat aangepaste pictogrampakketten ondersteunt.
+            Ondersteunde draagraketten worden vermeld in de Play Store-beschrijving.
+            Als je niet zeker weet welke launchers je moet gebruiken, ga dan naar de sectie \"Toepassen\" en installeer vanaf daar.</item>
+    <item>U kunt de navigatielade openen en vervolgens \"Toepassen\" openen. Kies uw opstartprogramma uit de lijst.
+            Als uw opstartprogramma daar niet wordt vermeld, maar dit pictogrampakket ermee compatibel is
+            (zie de beschrijving in de Google Play Store voor ondersteunde draagraketten),
+            u kunt het pictogrampakket handmatig toepassen in uw opstartinstellingen.</item>
+    <item>U kunt de navigatielade openen en vervolgens \"Pictogrammen\" openen</item>
+    <item>Tik gewoon op het pictogram. Er verschijnt een voorbeelddialoogvenster met een grotere afbeelding en de volledige pictogramnaam.</item>
+    <item>Het hangt af van welke launcher je hebt gebruikt. Niet elk opstartprogramma ondersteunt het bewerken van pictogrammen.
+       	    Meestal kunt u een pictogram bewerken door het pictogram aan te raken en vast te houden, of door erop te dubbeltikken.</item>
+    <item>U kunt de navigatielade openen en vervolgens \"Icon Request\" openen.</item>
+    <item>U kunt de navigatielade openen, vervolgens \"Instellingen\" openen en \"Aankopen herstellen\" kiezen.
+            Als u vóór de herinstallatie nog Premium-verzoeken had, worden deze hersteld.</item>
+    <item>Het gebeurde omdat dit pictogrampakket naar de SD-kaart was verplaatst; u moet het in het interne geheugen installeren.</item>
+    <item>Het probleem kan worden veroorzaakt door het opstartprogramma dat u gebruikte bij het omgaan met de resolutie van grote pictogrammen.
+       	    U kunt dit probleem oplossen door de pictogramgrootte te vergroten tot 115–120%.
+       	    Als alternatief kunt u uw opstartprogramma wijzigen.</item>
+    <item>Open de instellingen, scroll naar beneden en selecteer vervolgens \"Bugs rapporteren\".</item>
+    <item>\"Bugs rapporteren\" wordt gebruikt om bugs te rapporteren die betrekking hebben op het pictogrampakket, niet op het dashboard.</item>
+    <item>Niet elk opstartprogramma ondersteunt direct toepassen, en sommige zijn niet rechtstreeks toegankelijk vanaf het dashboard.
+      	    U kunt dit pictogrampakket handmatig toepassen in de individuele opstartinstellingen.</item>
+    <item>Wanneer u rechtstreeks vanuit de app \"Achtergrond instellen\" wordt gedownload naar de cache,
+      	    dan zal de dashboard-app proberen het toe te passen. Het aanvragen zal enige tijd duren en vereist ook een enorme hoeveelheid RAM voor een korte tijdsduur.
+      	    Er kunnen \"Zwart scherm\"-fouten verschijnen omdat uw telefoon niet voldoende vrije RAM heeft om de achtergrond te verwerken.
+      	    Als u uw telefoon opnieuw opstart, wordt dit probleem opgelost. Na het opnieuw opstarten heeft uw telefoon meer RAM beschikbaar.
+            Als alternatief kunt u de gedownloade achtergrond openen vanuit uw galerij en deze vanaf daar instellen als achtergrond.</item>
+    <item>Open Muzei, kies dit pictogrampakket, instellingen. U ziet een optie om alleen gedownloade achtergronden te laden.
+            U moet eerst achtergronden downloaden vanaf het dashboard.</item>
+    <item>Als er al een achtergrond is gedownload, wordt deze automatisch uit uw telefoongeheugen geladen.
+            Muzei blijft het niet downloaden als de achtergrond verandert. U moet eerst achtergronden downloaden vanaf het dashboard.</item>
+    <item>Open Dashboard, download achtergronden die u in Muzei wilt gebruiken.
+            Open de Muzei-instellingen en kies vervolgens Alleen gedownloade achtergronden laden.</item>
+    <item>Het wordt gebruikt om de cache te schrijven en te lezen en de pictogramverzoekgegevens te verzamelen.</item>
+    <item>Het wordt gebruikt om cloudgebaseerde achtergronden te laden en te downloaden.</item>
+    <item>Het wordt gebruikt om te controleren of uw telefoon een internetverbinding heeft of niet.</item>
+    <item>Het wordt gebruikt om te controleren of uw telefoon een internetverbinding met wifi heeft of niet, om cloudachtergronden van Muzei te laden.</item>
+    <item>Het wordt gebruikt om achtergronden rechtstreeks vanuit de dashboard-app toe te passen.</item>
+    <item>Het wordt gebruikt door Muzei Live Wallpaper.</item>
+    <item>Het wordt gebruikt om de klok-app te starten vanuit de analoge klokwidget.</item>
+  </string-array>
+</resources>

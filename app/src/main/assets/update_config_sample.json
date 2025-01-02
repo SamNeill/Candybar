@@ -1,0 +1,13 @@
+{
+  "latestVersion": "1.0.0",
+  "latestVersionCode": 1,
+  "url": "https://play.google.com/store/apps/details?id=your.package.name",
+  "releaseNotes": [
+    "Change 1",
+    "Change 2"
+  ]
+}
+
+1. In dashboard_configurations.xml, change enable_check_update from false to true:
+2. You need to configure a JSON URL that contains your app's update information. This is checked in the code:
+3.The JSON file should be hosted somewhere (like GitHub) and contain information about your app's latest version. The JSON should have structure Like Above Example:

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- ======================================================================================= -->
+    <!-- ============================== DASHBOARD CONFIGURATIONS =============================== -->
+    <!-- ======================================================================================= -->
+
+    <!-- CONFIG: DEFAULT THEME -->
+    <string name="default_theme">auto</string>
+    <bool name="material_you_by_default">true</bool>
+
+    <!-- CONFIG: MUZEI -->
+    <string name="muzei_art_source_name">CandyBar Dashboard</string>
+    <string name="muzei_art_source_desc">Pleasing wallpapers from CandyBar Dashboard</string>
+    <color name="muzei_color">#0082B4</color>
+
+    <!-- CONFIG: KUSTOM -->
+    <string name="kustom_pack_title">@string/app_name</string>
+    <string name="kustom_pack_description">Beautiful Matching Weather\'s Komponents and Widget\'s for KWGT</string>
+    <!-- Enable/disable Kustom presets section -->
+    <bool name="enable_kustom">true</bool>
+
+    <!-- CONFIG: HOME -->
+    <string name="home_title">CandyBar Dashboard</string>
+    <string name="home_image">home_image</string>
+    <string name="home_image_style">card_landscape</string>
+    <string name="home_description">
+        <![CDATA[
+        CandyBar Dashboard is an <b>Android Icon Pack Dashboard</b>. It has <i>many features</i>. Backed by the <u>community</u>.
+        Get it from <a href="https://github.com/SamNeill">GitHub</a>.
+        ]]>
+    </string>
+    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <string name="share_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <bool name="enable_check_update">true</bool>
+    <string name="google_play_dev">https://play.google.com/store/apps/dev?id=your_developer_id</string>
+    <bool name="use_flat_card">true</bool>
+
+    <!-- CONFIG: NAVIGATION VIEW HEADER -->
+    <string name="navigation_view_header">nav_head</string>
+    <string name="navigation_view_header_title">CandyBar Dashboard</string>
+    <bool name="enable_apply">true</bool>
+
+    <!-- CONFIG: ICONS -->
+    <bool name="enable_icons_sort">false</bool>
+    <bool name="show_icon_name">true</bool>
+    <bool name="includes_adaptive_icons">true</bool>
+
+    <!-- CONFIG: ICON REQUEST -->
+    <bool name="enable_icon_request">true</bool>
+    <bool name="enable_icon_request_limit">true</bool>
+    <integer name="icon_request_limit">1000</integer>
+    <bool name="reset_icon_request_limit">true</bool>
+    <bool name="json_check_before_request">false</bool>
+    <bool name="enable_ps_signature">false</bool>
+    <bool name="enable_premium_request">true</bool>
+    <bool name="enable_restore_purchases">false</bool>
+    <bool name="enable_non_mail_app_request">false</bool>
+    <bool name="hide_missing_app_count">false</bool>
+    <string name="regular_request_method">email</string>
+    <string name="premium_request_method"></string>
+    <string name="regular_request_email">yourusername@gmail.com</string>
+    <string name="premium_request_email"></string>
+    <string name="regular_request_email_subject"></string>
+    <string name="premium_request_email_subject"></string>
+    <string name="regular_request_pacific_api_key"><!--318db445-de03-4e24-bc4f-36b95cf16d22--></string>
+    <string name="premium_request_pacific_api_key"></string>
+
+    <!-- CONFIG: CLOUD WALLPAPERS -->
+    <bool name="enable_wallpapers">true</bool>
+    <string name="wallpaper_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
+    <!--<string name="wallpaper_json">assets://wallpapers_offline.json</string>-->
+    <bool name="enable_wallpaper_download">true</bool>
+    <bool name="wallpaper_show_name_author">true</bool>
+    <string name="wallpaper_grid_preview_style">square</string>
+
+    <!-- CONFIG: ABOUT -->
+    <string name="about_image"></string>
+    <string name="about_profile_image">about_image</string>
+    <string name="about_title">CandyBar Dashboard</string>
+    <string name="about_desc">
+        <![CDATA[
+        CandyBar Dashboard is an <b>Android Icon Pack Dashboard</b>. It has <i>many features</i>. Backed by the <u>community</u>.
+        Get it from <a href="https://github.com/SamNeill/CandyBar-Modish">GitHub</a>.
+        ]]>
+    </string>
+    <string-array name="about_social_links">
+        <item>https://bsky.app/profile/YourProfile</item>
+        <item>https://buymeacoffee.com/yourusername</item>
+        <item>https://www.instagram.com/_u/yourusername</item>
+        <item>https://twitter.com/</item>
+        <item>https://www.behance.net/</item>
+        <item>http://github.com/yourusername</item>
+        <item>http://www.yourwebsite.com</item>
+        <item>your@email.com</item>
+        <item>https://t.me/yourname</item>
+
+
+    </string-array>
+    <!-- Privacy policy link.
+        Leave empty to disable this.
+        You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
+    <string name="privacy_policy_link">https://app-privacy-policy-generator.firebaseapp.com/</string>
+
+    <!-- Terms and Conditions link.
+        Leave empty to disable this.
+        You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
+    <string name="terms_and_conditions_link">https://app-privacy-policy-generator.firebaseapp.com/</string>
+
+    <!-- CONFIG: DONATE -->
+    <bool name="enable_donation">true</bool>
+
+    <!-- CONFIG: MISC -->
+    <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
+    <bool name="show_intro">true</bool>
+    <bool name="use_legacy_intro_colors">true</bool>
+
+    <bool name="quick_apply">true</bool>
+    <bool name="show_random_icon">true</bool>
+
+    <!-- Navigation View Style -->
+    <!-- Set to true to use bottom navigation by default, false for sidebar navigation -->
+    <bool name="enable_bottom_navigation">true</bool>
+
+
+</resources>

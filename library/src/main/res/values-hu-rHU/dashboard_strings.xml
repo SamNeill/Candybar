@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Splash Screen Cím-->
+    <string name="splash_screen_title">CandyBar műszerfal</string>
+
+    <!--Navigációs nézet-->
+    <string name="navigation_view_home">Otthon</string>
+    <string name="navigation_view_apply">Alkalmazni</string>
+    <string name="navigation_view_icons">Ikonok</string>
+    <string name="navigation_view_request">Ikon kérés</string>
+    <string name="navigation_view_wallpapers">Háttérképek</string>
+    <string name="navigation_view_kustom">Szokás</string>
+    <string name="navigation_view_settings">Beállítások elemre</string>
+    <string name="navigation_view_faqs">GYIK</string>
+    <string name="navigation_view_about">Körülbelül</string>
+    <string name="navigation_view_donate">Fejlesztés támogatása</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Muzei beállítások</string>
+    <string name="minute">Perc</string>
+    <string name="hour">Óra</string>
+    <string name="save_setting">Megtakarítás</string>
+    <string name="muzei_refresh_duration">Frissítés időtartama</string>
+    <string name="muzei_wifi_only">Frissítés Csak Wi-Fi-ről</string>
+    <string name="muzei_downloaded_only">Csak letöltött háttérképek betöltése</string>
+    <string name="muzei_settings_ignored">Az Icon Pack nem tartalmaz háttérképeket, a beállítások figyelmen kívül hagyva.</string>
+    <string name="muzei_settings_saved">Beállítások elmentve</string>
+
+    <!--Menü-->
+    <string name="menu_search">Keresés</string>
+    <string name="menu_save">Mentés az eszközre</string>
+    <string name="menu_select_all">Válassza az Összes lehetőséget</string>
+    <string name="menu_delete">Töröl</string>
+
+    <string name="menu_wallpaper_crop">Crop Wallpaper</string>
+    <string name="menu_apply_homescreen">Kezdőképernyő</string>
+    <string name="menu_apply_lockscreen">Lezárási képernyő</string>
+    <string name="menu_apply_homescreen_lockscreen">Kezdőképernyő és Lockscreen</string>
+
+    <!--Párbeszéd-->
+    <string name="open">Nyitott</string>
+    <string name="close">Közeli</string>
+    <string name="clear">Világos</string>
+    <string name="ok">RENDBEN</string>
+    <string name="install">Telepítés</string>
+    <string name="donate">Adományoz</string>
+    <string name="update">Frissítés</string>
+
+    <string name="search_noresult">Nem található eredmény a következőre: \"%s\"</string>
+    <string name="search_faqs">Kérdés vagy válasz</string>
+    <string name="search_icon">Ikon neve</string>
+    <string name="search_wallpapers">Háttérkép neve</string>
+
+    <!--Frissítés-->
+    <string name="checking_for_update">Frissítések keresése…</string>
+    <string name="update_available">Frissítés elérhető!</string>
+    <string name="no_update_available">Ön a legújabb verziót használja!</string>
+
+    <!--Változásnapló verzió-->
+    <string name="changelog_version">Változat</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Nem sikerült betölteni az alkalmazáson belüli vásárlás termékeit</string>
+
+    <!--Engedély-->
+    <string name="license_checking">Jogosítvány ellenőrzése…</string>
+    <string name="license_check">Licenc ellenőrzése</string>
+    <string name="license_check_success">Az engedély ellenőrzése sikeres. Köszönjük, hogy letöltötte az alkalmazást a Play Áruházból.</string>
+    <string name="license_check_failed">A licenc ellenőrzése sikertelen; nem a Play Áruházból töltötted le az alkalmazást. Nem fogja tudni használni.</string>
+    <string name="license_check_retry">Nem sikerült ellenőrizni a licencet, próbálja újra néhány pillanat múlva.</string>
+
+    <!--Play Áruház telepítési ellenőrzése-->
+    <string name="playstore_check">Play Áruház ellenőrzése</string>
+    <string name="playstore_check_success">Köszönjük, hogy telepítette az alkalmazást a Google Play Áruházból. Élvez!</string>
+    <string name="playstore_check_failed">Úgy tűnik, hogy ezt az ikoncsomagot a Google Play Áruházon kívülről telepítette.
+        Nem fogja tudni használni.</string>
+
+    <!--Részesedés-->
+    <string name="share_app_title">Jaj! Nézze meg: %s</string>
+    <string name="share_app_body">Tekintse meg a %1$s ikoncsomagot a Play Áruházban: %2$s</string>
+
+    <!--Koppintson az Intro elemre-->
+    <string name="tap_intro_home_navigation">Navigációs fiók</string>
+    <string name="tap_intro_home_navigation_desc">Koppintson ide, vagy húzza ujját a képernyő bal szélétől a navigációs fiók megnyitásához</string>
+    <string name="tap_intro_home_apply">Ikoncsomag alkalmazása</string>
+    <string name="tap_intro_home_apply_desc">Koppintson ide a %s alkalmazásához az aktuális indítóprogramra. Tartsa lenyomva a többi indító alkalmazáshoz.</string>
+    <string name="tap_intro_icons_search">Keresés</string>
+    <string name="tap_intro_icons_search_desc">Koppintson ide egy ikon kereséséhez</string>
+    <string name="tap_intro_request_search">Hiányzó alkalmazások keresése</string>
+    <string name="tap_intro_request_search_desc">Koppintson ide, hogy a telepített alkalmazásaiban keressen hiányzó ikonokat a Kiválasztott ikonkéréshez</string>
+    <string name="tap_intro_request_select">Válassza ki a kihagyott alkalmazást</string>
+    <string name="tap_intro_request_select_desc">Koppintson ide az elmulasztott alkalmazás kiválasztásához az ikonkéréshez</string>
+    <string name="tap_intro_request_select_all">Válassza ki az összes kihagyott alkalmazást</string>
+    <string name="tap_intro_request_select_all_desc">Koppintson ide az összes elmulasztott alkalmazás kiválasztásához az ikonkéréshez</string>
+    <string name="tap_intro_request_send">Ikon kérés küldése</string>
+    <string name="tap_intro_request_send_desc">Koppintson ide a kiválasztott nem fogadott alkalmazások elküldéséhez</string>
+    <string name="tap_intro_request_premium">Prémium ikon kérés</string>
+    <string name="tap_intro_request_premium_desc">Koppintson ide a prémium ikon kérés csomag megvásárlásához, a prémium ikon kéréssel gyorsabban megkaphatja a kért alkalmazásait.</string>
+    <string name="tap_intro_wallpapers_option">Háttérkép opciók</string>
+    <string name="tap_intro_wallpapers_option_desc">Érintse meg és tartsa lenyomva ide a háttérkép opciók megjelenítéséhez; %s háttérképet alkalmaz.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">letöltés ill</string>
+    <string name="tap_intro_wallpapers_preview">Háttérkép előnézete</string>
+    <string name="tap_intro_wallpapers_preview_desc">Koppintson ide a háttérkép teljes méretének előnézetéhez</string>
+    <string name="tap_intro_wallpaper_preview_save">Háttérkép mentése</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Koppintson ide a háttérkép letöltéséhez és mentéséhez, hogy később felhasználhassa</string>
+    <string name="tap_intro_wallpaper_preview_apply">Alkalmazzon háttérképet</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Koppintson ide a háttérkép beállításához a kezdőképernyő háttereként</string>
+
+    <!--Otthon-->
+    <string name="home_more_apps_header">További alkalmazások</string>
+    <string name="home_more_apps">Tekintse meg a További ikonok csomagot a Google Play Áruházban</string>
+    <string name="home_rate">Arány</string>
+    <string name="home_share">Részesedés</string>
+    <string name="home_check_update">Frissítés</string>
+    <string name="home_apply_icon_pack">%s alkalmazása</string>
+    <string name="home_donate">Adományoz</string>
+    <string name="home_donate_desc">Bátorítsa a fejlesztőt, hogy készítsen több ikoncsomagot</string>
+    <string name="home_icons">Ikonok</string>
+    <string name="home_icon_dimension">%s pixel ikonméret</string>
+    <string name="home_loud_wallpapers">%d felhő háttérkép</string>
+    <string name="home_muzei">Muzei élő háttérkép</string>
+    <string name="home_icon_request_installed_apps">Összesen\n%d telepített alkalmazás</string>
+    <string name="home_icon_request_themed_apps">Tematikus\n%d alkalmazás</string>
+    <string name="home_icon_request_missed_apps">Elmaradt\n%d alkalmazás</string>
+
+    <!--Alkalmazni-->
+    <string name="apply_installed">Telepített Launcher</string>
+    <string name="apply_installed_launchers">Telepített indítók</string>
+    <string name="apply_supported">Támogatott indítók</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">A %s Launcher nincs telepítve. Megtalálhatja és telepítheti az Amazon AppStore-ból vagy a kívánt forrásokból és üzletekből.</string>
+    <string name="apply_manual">A %1$s Indító nem támogatja a közvetlen alkalmazást, de a %2$s alkalmazást manuálisan is alkalmazhatja az indító beállításaiból.</string>
+    <string name="apply_manual_kvaesitso">A Kvaesitso nem támogatja a közvetlen alkalmazást, de kövesse az alábbi lépéseket:</string>
+    <string name="apply_manual_kvaesitso_step_1">Nyissa meg a Kvaesitso beállításait</string>
+    <string name="apply_manual_kvaesitso_step_2">Koppintson a \"Rács és ikonok\" elemre</string>
+    <string name="apply_manual_kvaesitso_step_3">Koppintson az \"Ikoncsomag\" elemre</string>
+    <string name="apply_manual_kvaesitso_step_4">Válassza a %s lehetőséget a listából</string>
+    <string name="apply_manual_kvaesitso_step_5">Érintse meg az ecset ikont a háttérforma engedélyezéséhez vagy letiltásához</string>
+    <string name="apply_manual_kiss">A KISS nem támogatja a közvetlen alkalmazást, de kövesse az alábbi lépéseket:</string>
+    <string name="apply_manual_kiss_step_1">Nyissa meg a KISS beállításait</string>
+    <string name="apply_manual_kiss_step_2">Koppintson a \"Felhasználói felület\" elemre</string>
+    <string name="apply_manual_kiss_step_3">Koppintson az \"Ikoncsomag\" elemre</string>
+    <string name="apply_manual_kiss_step_4">Válassza a %s lehetőséget a listából</string>
+    <string name="apply_manual_samsung_oneui">A %1$s nem támogatja a közvetlen alkalmazást, de a %2$s-tól kezdve alkalmazhat ikonokat egy kísérőalkalmazással.</string>
+    <string name="apply_manual_samsung_oneui_too_old">A %s jelenlegi verziója túl régi. Kérjük, frissítsen Android 12-re vagy újabbra, hogy közvetlenül alkalmazhassa az ikonokat. Alternatív megoldásként telepíthet egy másik indítót.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Nyissa meg: %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Töltse le a %s alkalmazást</string>
+    <string name="apply_manual_samsung_oneui_step_3">Koppintson az \"Ikon\" elemre</string>
+    <string name="apply_manual_samsung_oneui_step_4">Koppintson az \"Új létrehozása\" lehetőségre</string>
+    <string name="apply_manual_samsung_oneui_step_5">Koppintson a kék \"Iconpack\" gombra</string>
+    <string name="apply_manual_samsung_oneui_step_6">Válassza a %s lehetőséget a listából</string>
+    <string name="apply_manual_samsung_oneui_step_7">Ismételje meg ezeket a lépéseket minden alkalommal, amikor frissíti a %s alkalmazást, mivel az új ikonok nem lesznek automatikusan leképezve.</string>
+    <string name="apply_manual_hios">A HiOS launcher nem támogatja a közvetlen alkalmazást, de kövesse az alábbi lépéseket:</string>
+    <string name="apply_manual_hios_step_1">Nyissa meg a \"Beállítások\"</string>
+    <string name="apply_manual_hios_step_2">Koppintson a \"Téma és lezárási képernyő\" lehetőségre</string>
+    <string name="apply_manual_hios_step_3">Koppintson a \"Saját téma\" lehetőségre</string>
+    <string name="apply_manual_hios_step_4">Koppintson az \"Ikoncsomag\" elemre</string>
+    <string name="apply_manual_hios_step_5">Koppintson a %s elemre</string>
+    <string name="apply_manual_oxygen_os_step_1">Koppintson hosszan a kezdőképernyőre</string>
+    <string name="apply_manual_oxygen_os_step_2">Koppintson az \"Otthon beállításai\" lehetőségre</string>
+    <string name="apply_manual_oxygen_os_step_3">Koppintson az \"Ikoncsomag\" elemre</string>
+    <string name="apply_manual_oxygen_os_step_4">Koppintson a %s elemre</string>
+    <string name="apply_manual_color_os_step_1">Koppintson hosszan a kezdőképernyőre</string>
+    <string name="apply_manual_color_os_step_2">Koppintson az \"Ikonok\" elemre</string>
+    <string name="apply_manual_color_os_step_3">Görgessen jobbra az \"Egyéni\" gombtól (ez egy görgethető lista!)</string>
+    <string name="apply_manual_color_os_step_4">Koppintson a %s elemre</string>
+    <string name="apply_manual_before">A Before Launcher ezen verziója még nem támogatja az ikonok közvetlen alkalmazását. Ehelyett kövesse az alábbi lépéseket:</string>
+    <string name="apply_manual_before_step_1">Csúsztasson balra a kezdőképernyőn</string>
+    <string name="apply_manual_before_step_2">Koppintson a \"Beállítások\" elemre</string>
+    <string name="apply_manual_before_step_3">Koppintson a \"Stílusok és témák\" elemre</string>
+    <string name="apply_manual_before_step_4">Koppintson az \"Ikonstílusok és csomagok\" lehetőségre</string>
+    <string name="apply_manual_before_step_5">Koppintson a %s elemre</string>
+    <string name="apply_manual_nothing_step_1">Nyissa meg a \"Beállítások\"</string>
+    <string name="apply_manual_nothing_step_2">Koppintson a \"Testreszabás\" elemre</string>
+    <string name="apply_manual_nothing_step_3">Koppintson az \"Ikoncsomag\" elemre</string>
+    <string name="apply_manual_nothing_step_4">Koppintson a %s elemre</string>
+    <string name="apply_launch_failed">Nem sikerült elindítani a %s beállításait</string>
+    <string name="apply_launcher_not_installed">A %s Launcher nincs telepítve. Meg akarja nyitni a Google Play Áruházat a letöltéshez és telepítéshez?</string>
+    <string name="apply_launcher_not_installable">A %s Launcher nincs telepítve. Kérjük, próbálja újra az indító telepítése után.</string>
+    <string name="apply_cmtheme_not_available">A CM Theme Manager nem érhető el ezen az eszközön</string>
+    <string name="apply_cmtheme_failed">Nem tudja elindítani a CM Theme Manager alkalmazást, megpróbálhatja manuálisan alkalmazni az Icon Pack-et a Beállításokból.</string>
+    <string name="apply_lg_home">Az ikoncsomag alkalmazásához nyissa meg a Beállítások - Kijelző - Kezdőképernyő - Téma menüpontot</string>
+    <string name="apply_lg_home_not_available">Az LG Home nem érhető el ezen az eszközön</string>
+    <string name="apply_lg_home_failed">Nem tudja elindítani az LG Home Settings alkalmazást, megpróbálhatja manuálisan alkalmazni az Icon Pack-et a Beállítások menüből.</string>
+    <string name="apply_lg_home_nougat">Az Android Nougat rendszerrel rendelkező LG Home már nem támogatja az Icon Pack alkalmazást. Az Icon Pack használatához egyéni indítóra van szüksége.</string>
+    <string name="apply_launcher_incompatible" formatted="true">A %s Launcher nem támogat egyetlen ikoncsomagot sem, ezért ezt az ikoncsomagot nem használhatja ezzel az indítóval. Kipróbálhat egy harmadik féltől származó alkalmazást az ikoncsomag használatához a %2$s indítóban.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">A %1$s indító nem kompatibilis a következővel: %2$s, de kompatibilis lehet az újabb verziókkal</string>
+
+    <!--Ikonok-->
+    <string name="icons_load_failed">Nem sikerült betölteni az ikonokat</string>
+    <string name="icon_shape">Ikon alakja</string>
+    <string name="items_selected">%d kiválasztva</string>
+
+    <!--Kér-->
+    <string name="request_title">Ikon kérés</string>
+    <string name="request_terms">Mielőtt folytatná az ikonkérést, kérjük, vegye figyelembe, hogy kérését irányelveinknek megfelelően felülvizsgáljuk. A prémium kérelmek gyorsabban feldolgozhatók.</string>
+    <string name="request_not_selected">Válassza ki a kérni kívánt alkalmazásokat</string>
+    <string name="request_not_requested">Nem kérték</string>
+    <string name="request_already_requested">Már kérték</string>
+    <string name="request_not_available">Nem kérhető</string>
+    <string name="request_building">Építési igény…</string>
+    <string name="request_pacific_sending">Kérés küldése a Pacific Managernek...</string>
+    <string name="request_pacific_error">Hiba történt a Pacific Managernek való kérés elküldésekor. A hiba %s</string>
+    <string name="request_pacific_success">A kérés sikeresen elküldve a Pacific Managernek</string>
+    <string name="request_custom_error">Hiba történt az ikonkérés küldésekor. Ha a hiba továbbra is fennáll, lépjen kapcsolatba a fejlesztővel. %s</string>
+    <string name="request_custom_success">Az ikonkérelem sikeresen elküldve</string>
+    <string name="request_fetching_data">Legfrissebb adatok lekérése…</string>
+    <string name="request_build_failed">Nem sikerült létrehozni az ikonkérést</string>
+    <string name="request_appfilter_failed">Az appfilter.xml fájl nem olvasható</string>
+    <string name="request_requested">Már kérte ezt az ikont, de nem kérheti újra.</string>
+    <string name="request_requested_possible">Már kérted ezt az ikont. Biztos, hogy újabb kérést szeretne rá költeni?</string>
+    <string name="request_requested_button_cancel">Menj vissza</string>
+    <string name="request_requested_button_confirm">Mindenképpen válasszon</string>
+    <string name="request_email_client">Válassza ki az ikonkérés elküldéséhez használni kívánt alkalmazást</string>
+    <string name="request_app_disabled">Ön ennek az ikoncsomagnak egy régebbi verzióját használja. A kért ikonok a legújabb verzióban is szerepelhetnek. Kérjük, frissítse alkalmazását a legújabb verzióra az ikonok kéréséhez.</string>
+    <string name="connection_error_long">Nem sikerült betölteni az adatokat a szerverről. Kérjük, ellenőrizze a hálózati kapcsolatot.</string>
+    <string name="unable_to_load_config">Hiba történt az adatok kiszolgálóról való lekérése vagy beolvasása közben.</string>
+    <string name="request_limit">Normál kéréssel csak %d kérelmet küldhet.</string>
+    <string name="request_used">%d ikont kértél.</string>
+    <string name="request_limit_buy">Prémium kéréseket vásárolhat további ikonok kéréséhez.</string>
+    <string name="request_limit_reset">Az ikonkérés korlátja minden frissítéskor visszaáll.</string>
+
+    <!--Rendszeres kérés-->
+    <string name="regular_request">Rendszeres ikonkérés</string>
+    <string name="regular_request_desc">Kérje le az ikonját, és a fejlesztő megpróbálja belefoglalni az Ön által kért ikonokat.</string>
+    <string name="regular_request_count">Összesen\n%d kérelem</string>
+    <string name="regular_request_used">Felhasználva\n%d kérés</string>
+    <string name="regular_request_available">Elérhető\n%d kérés</string>
+
+    <!--Prémium kérés-->
+    <string name="premium_request">Prémium ikon kérés</string>
+    <string name="premium_request_no_internet">Prémium kérés elküldése előtt győződjön meg arról, hogy telefonja csatlakozik az internethez</string>
+    <string name="premium_request_desc">A prémium ikonra vonatkozó kérés fizetési kérés. A kért alkalmazásait gyorsabban érheti el egy prémium ikon kéréssel.</string>
+    <string name="premium_request_buy">Vétel</string>
+    <string name="premium_request_count">Összesen\n%d kérelem</string>
+    <string name="premium_request_used">Felhasználva\n%d kérés</string>
+    <string name="premium_request_available">Elérhető\n%d kérés</string>
+    <string name="premium_request_already_purchased">Még mindig %d prémium kérelme van. Mindegyiket fel kell használnia, mielőtt újból vásárolna egy prémium igénylési csomagot.</string>
+    <string name="premium_request_limit">Csak %d prémium kérelme van,</string>
+    <string name="premium_request_limit1">de kiválasztottál %d alkalmazást. \n\nMinden prémium kérelmét fel kell használnia, mielőtt újra használná a normál kérést.</string>
+    <string name="premium_request_consume_failed">Nem tudja használni a Premium Request szolgáltatást, ellenőrizze, hogy van-e stabil internetkapcsolata, és próbálja újra. Nyissa meg a Beállításokat a Premium Requests újraépítéséhez.</string>
+    <string name="premium_request_rebuilding">Újjáépítési prémium kérés…</string>
+    <string name="premium_request_rebuilding_empty">Nem nyújtott be prémium kérelmet</string>
+    <string name="premium_request_exist">Még mindig rendelkezik Premium Icon Request csomaggal. Nyissa meg a Beállításokat, és válassza a \"Vásárlások visszaállítása\" lehetőséget a visszaállításhoz.</string>
+    <string name="premium_request_required">Az ikonkérésekhez prémium ikonkérő csomagot kell vásárolnia</string>
+
+    <!--Háttérképek-->
+    <string name="wallpaper_new_added">Új háttérkép</string>
+    <string name="wallpaper_already_downloaded">A háttérkép már letöltve</string>
+    <string name="wallpaper_downloading">Háttérkép letöltése…</string>
+    <string name="wallpaper_download_failed">Nem lehet letölteni a háttérképet</string>
+    <string name="wallpaper_download_success">Sikeres háttérkép letöltés</string>
+    <string name="wallpaper_loading">Háttérkép betöltése…</string>
+    <string name="wallpaper_applying">Háttérkép felhelyezése…</string>
+    <string name="wallpaper_applied">Háttérkép alkalmazva</string>
+    <string name="wallpaper_apply_failed">Nem lehet háttérképet alkalmazni</string>
+    <string name="wallpaper_apply_cancelled">A háttérkép alkalmazása törölve</string>
+    <string name="connection_failed">Nem sikerült lekérni az adatokat a szerverről</string>
+    <string name="wallpaper_apply">Alkalmazzon háttérképet</string>
+    <string name="wallpaper_save_to_device">Háttérkép mentése</string>
+
+    <!--Előbeállítások-->
+    <string name="presets_load_failed">Nem lehet betölteni az előre beállított értékeket</string>
+    <string name="presets_storage_permission">Az előnézeti háttérkép betöltéséhez tárolási engedély szükséges</string>
+    <string name="presets_required_apps">Szükséges alkalmazások az előre beállított értékek használatához</string>
+    <string name="presets_required_apps_not_installed">Az előbeállítás használatához szükséges alkalmazások nincsenek telepítve. Kérjük, telepítse a hiányzó szükséges alkalmazásokat, és próbálja újra.</string>
+
+    <!--Preferences-->
+    <string name="pref_data_header">Adatok és gyorsítótár</string>
+    <string name="pref_data_cache">Törölje a gyorsítótárat</string>
+    <string name="pref_data_cache_desc">Távolítsa el a tárhelyről a kép-gyorsítótárat, amelyet az alkalmazásból való kép kiválasztásakor, nem fogadott alkalmazások kérésekor, valamint a felhőháttérkép-bélyegképek betöltése után hoztak létre.</string>
+    <string name="pref_data_cache_size">Gyorsítótár mérete: %s</string>
+    <string name="pref_data_cache_clear_dialog">Valóban törölni szeretné a gyorsítótárat?</string>
+    <string name="pref_data_cache_cleared">A gyorsítótár törölve</string>
+    <string name="pref_data_request">Törölje az ikonkérés adatait</string>
+    <string name="pref_data_request_desc">Távolítsa el az ikonkérés adatait, amelyeket az elmulasztott alkalmazások kérése után hoztak létre az ikonkérésből.</string>
+    <string name="pref_data_request_clear_dialog">Biztosan törölni szeretné az ikonkérés adatait?</string>
+    <string name="pref_data_request_cleared">Az ikonkérés adatai törölve</string>
+    <string name="pref_premium_request_header">Prémium ikon kérés</string>
+    <string name="pref_premium_request_restore">Vásárlások visszaállítása</string>
+    <string name="pref_premium_request_restore_desc">Állítsa vissza a prémium kéréscsomagot az ikoncsomag újratelepítése után</string>
+    <string name="pref_premium_request_restore_success">Prémium kérés visszaállítva</string>
+    <string name="pref_premium_request_restore_empty">Nincsenek megvásárolt csomagjai</string>
+    <string name="pref_premium_request_rebuild">Rebuild Premium Icon Request</string>
+    <string name="pref_premium_request_rebuild_desc">Gyűjtse össze az összes prémium ikonra vonatkozó kérési adatot az újraküldéshez</string>
+    <string name="pref_theme_header">Téma</string>
+    <string name="pref_theme_dark">Sötét téma</string>
+    <string name="pref_theme_dark_desc">Használjon sötét színt az alkalmazási témához</string>
+    <string name="pref_notifications_header">Értesítések</string>
+    <string name="pref_notifications">Értesítések fogadása</string>
+    <string name="pref_wallpaper_header">Tapéta</string>
+    <string name="pref_wallpaper_location">Háttérkép Hely mentése</string>
+    <string name="pref_language_header">Nyelv</string>
+    <string name="pref_others_header">Mások</string>
+    <string name="pref_others_report_bugs">Hibák jelentése</string>
+    <string name="pref_others_changelog">Változásnapló</string>
+    <string name="pref_others_reset_tutorial">Reset Tutorial</string>
+    <string name="pref_others_reset_tutorial_reset">Oktatóanyag visszaállítása</string>
+
+    <!--Témák-->
+    <string name="theme_name_auto">Auto</string>
+    <string name="theme_name_light">Fény</string>
+    <string name="theme_name_dark">Sötét</string>
+    <string name="theme_name_material_you">Anyag Te</string>
+
+    <!--Engedély-->
+    <string name="permission_storage_denied">Tárolási engedély szükséges a háttérkép mentéséhez</string>
+    <string name="permission_notification_denied_1">A fejlesztő értesítéseinek fogadásához értesítési engedély szükséges</string>
+    <string name="permission_notification_denied_2">Engedélyezze az értesítéseket az alkalmazás beállításainál</string>
+
+    <!--Szándék-->
+    <string name="app_client">Válassza az Alkalmazást</string>
+    <string name="no_email_app">Nincs alkalmazás e-mail küldésére</string>
+    <string name="no_browser">Nincs alkalmazás az URL megnyitásához</string>
+    <string name="intent_email_failed">Nem lehet megjeleníteni az e-mail alkalmazást</string>
+    <string name="intent_email_supported">Támogatott</string>
+    <string name="intent_email_recommended">Ajánlott</string>
+    <string name="intent_email_not_supported">Nem támogatott</string>
+    <string name="intent_email_not_supported_message">Nem támogatott levelezőprogramot választott, kérjük, válasszon másik levelezőprogramot</string>
+
+    <!--Körülbelül-->
+    <string name="about_contributors_title">Közreműködők</string>
+
+    <!--Hibák jelentése-->
+    <string name="report_bugs_desc">Kérjük, írja le a jelenteni kívánt problémát</string>
+    <string name="report_bugs_desc_hint">Leírás</string>
+    <string name="report_bugs_desc_empty">Kérjük, adjon leírást</string>
+    <string name="report_bugs_building">Tevékenységi lista építése…</string>
+    <string name="report_bugs_failed">Nem sikerült összeállítani a tevékenységlistát</string>
+    <string name="report_bugs_send">Jelentés küldése</string>
+
+    <!--Fejlesztés támogatása-->
+    <string name="donation_success">Köszönjük az adományozást. jóra fogom használni.</string>
+
+    <!--Összeomlási jelentés-->
+    <string name="crash_report">Összeomlási jelentés</string>
+    <string name="crash_report_message">Sajnos %s összeomlott. Válassza az alábbi Jelentés küldése lehetőséget, hogy segítsen a fejlesztőnek megoldani a problémát.</string>
+    <string name="crash_report_send">Jelentés küldése</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Nyitott</string>
+    <string name="txt_close">Közeli</string>
+
+    <string name="txt_new">Új</string>
+
+    <!--Tartalomleírások képernyőolvasók számára-->
+    <string name="icon_search_close_button_content_description">Zárja be az ikonkeresést</string>
+    <string name="icon_request_submit_button_content_description">Nyújtson be ikonkérést</string>
+    <string name="icon_list_content_description">Az ikoncsomagban található ikonok listája</string>
+    <string name="icon_search_list_content_description">A keresett kifejezésnek megfelelő ikonok listája</string>
+    <string name="about_item_social_content_description">Link az ikoncsomag szerzőjének online profiljához:</string>
+    <string name="share_icon_pack_button_content_description">Ossza meg ezt az alkalmazást valakivel</string>
+
+    <!--Adatvédelmi szabályzat-->
+    <string name="privacy_policy">Adatvédelmi szabályzat</string>
+    <string name="privacy_policy_desc">Az Ön adatainak védelme fontos számunkra. Kérjük, olvassa el adatvédelmi szabályzatunkat a Névjegy oldalon, hogy megértse, hogyan kezeljük adatait.</string>
+
+    <!--Általános Szerződési Feltételek-->
+    <string name="terms_conditions">Általános Szerződési Feltételek</string>
+
+    <!--Kér-->
+    <string name="request_limit_title">Ingyenes igénylési limit</string>
+    <string name="request_limit_content">%d ingyenes kérése van hátra. Fontolja meg a prémium verzióra való frissítést a korlátlan kérésekhez.</string>
+    <string name="request_limit_reached">Elérte az ingyenes kérések határát. További kérésekért frissítsen prémiumra.</string>
+    <string name="request_limit_remaining">Még %d ikont választhat</string>
+
+    <!--Alkalmazás verziója-->
+    <string name="version">Változat</string>
+	
+    <!--Szokás-->
+    <string name="home_kustom_desc">Egyező időjárási összetevők a következőhöz: %s</string>
+    <string name="kustom_widgets">Widgetek</string>
+    <string name="kustom_wallpapers">Háttérképek</string>
+    <string name="kustom_lockscreens">Zárképernyők</string>
+    <string name="kustom_komponents">Összetevő</string>
+
+    <!--Beleegyezés kérése párbeszédpanel-->
+    <string name="request_consent_title">Adatgyűjtési hozzájárulás</string>
+    <string name="request_consent_content">Ikonkérésének feldolgozásához információkat kell gyűjtenünk a telepített alkalmazásairól és az eszköz adatairól (például a képernyő méreteiről és az Android verziójáról). Ez segít nekünk olyan ikonokat tervezni, amelyek a legjobban működnek az Ön eszközén.\n\nTovábbi információért tekintse át Adatvédelmi irányelveinket a Névjegy részben.</string>
+    <string name="request_consent_accept">ELFOGADJA</string>
+    <string name="request_consent_deny">TAGADÁS</string>
+
+    <!--Navigációs stílus-->
+    <string name="pref_navigation_style">Navigációs sáv</string>
+
+    <!--Keresés-->
+    <string name="search_apps">Alkalmazások keresése</string>
+
+</resources>

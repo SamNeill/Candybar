@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Judul Layar Pembuka-->
+    <string name="splash_screen_title">Dasbor CandyBar</string>
+
+    <!--Tampilan Navigasi-->
+    <string name="navigation_view_home">Rumah</string>
+    <string name="navigation_view_apply">Menerapkan</string>
+    <string name="navigation_view_icons">Ikon</string>
+    <string name="navigation_view_request">Permintaan Ikon</string>
+    <string name="navigation_view_wallpapers">Wallpaper</string>
+    <string name="navigation_view_kustom">Kustom</string>
+    <string name="navigation_view_settings">Pengaturan</string>
+    <string name="navigation_view_faqs">FAQ</string>
+    <string name="navigation_view_about">Tentang</string>
+    <string name="navigation_view_donate">Mendukung Pembangunan</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Pengaturan Muzei</string>
+    <string name="minute">Menit</string>
+    <string name="hour">Jam</string>
+    <string name="save_setting">Menyimpan</string>
+    <string name="muzei_refresh_duration">Durasi Penyegaran</string>
+    <string name="muzei_wifi_only">Segarkan dari Wi-Fi Saja</string>
+    <string name="muzei_downloaded_only">Muat Wallpaper yang Diunduh Saja</string>
+    <string name="muzei_settings_ignored">Paket Ikon tidak berisi wallpaper, pengaturan diabaikan.</string>
+    <string name="muzei_settings_saved">Pengaturan Disimpan</string>
+
+    <!--Menu-->
+    <string name="menu_search">Mencari</string>
+    <string name="menu_save">Simpan ke Perangkat</string>
+    <string name="menu_select_all">Pilih Semua</string>
+    <string name="menu_delete">Menghapus</string>
+
+    <string name="menu_wallpaper_crop">Pangkas Wallpaper</string>
+    <string name="menu_apply_homescreen">Layar Beranda</string>
+    <string name="menu_apply_lockscreen">Layar kunci</string>
+    <string name="menu_apply_homescreen_lockscreen">Homescreen &amp; Lockscreen</string>
+
+    <!--Dialog-->
+    <string name="open">Membuka</string>
+    <string name="close">Menutup</string>
+    <string name="clear">Jernih</string>
+    <string name="ok">OKE</string>
+    <string name="install">Memasang</string>
+    <string name="donate">Menyumbangkan</string>
+    <string name="update">Memperbarui</string>
+
+    <string name="search_noresult">Tidak ada hasil yang ditemukan untuk \"%s\"</string>
+    <string name="search_faqs">Pertanyaan atau jawaban</string>
+    <string name="search_icon">Nama Ikon</string>
+    <string name="search_wallpapers">Nama kertas dinding</string>
+
+    <!--Memperbarui-->
+    <string name="checking_for_update">Memeriksa pembaruan…</string>
+    <string name="update_available">Pembaruan tersedia!</string>
+    <string name="no_update_available">Anda menggunakan versi terbaru!</string>
+
+    <!--Versi Changelog-->
+    <string name="changelog_version">Versi</string>
+
+    <!--Penagihan Dalam Aplikasi-->
+    <string name="billing_load_product_failed">Tidak dapat memuat produk Pembelian dalam Aplikasi</string>
+
+    <!--Lisensi-->
+    <string name="license_checking">Memeriksa lisensi…</string>
+    <string name="license_check">Pemeriksaan Lisensi</string>
+    <string name="license_check_success">Pemeriksaan lisensi berhasil. Terima kasih telah mengunduh aplikasi dari Play Store.</string>
+    <string name="license_check_failed">Pemeriksaan lisensi gagal; Anda tidak mengunduh aplikasi dari Play Store. Anda tidak akan dapat menggunakannya.</string>
+    <string name="license_check_retry">Tidak dapat memeriksa lisensi, coba lagi dalam beberapa saat.</string>
+
+    <!--Pemeriksaan Instalasi Play Store-->
+    <string name="playstore_check">Periksa Play Store</string>
+    <string name="playstore_check_success">Terima kasih telah menginstal aplikasi dari Google Play Store. Menikmati!</string>
+    <string name="playstore_check_failed">Sepertinya Anda telah memasang paket ikon ini dari luar Google Play Store.
+        Anda tidak akan dapat menggunakannya.</string>
+
+    <!--Membagikan-->
+    <string name="share_app_title">Hai! Periksa %s</string>
+    <string name="share_app_body">Lihat Paket Ikon %1$s di Play Store: %2$s</string>
+
+    <!--Ketuk Intro-->
+    <string name="tap_intro_home_navigation">Laci navigasi</string>
+    <string name="tap_intro_home_navigation_desc">Ketuk di sini atau usap dari tepi kiri layar untuk membuka panel samping navigasi</string>
+    <string name="tap_intro_home_apply">Terapkan paket ikon</string>
+    <string name="tap_intro_home_apply_desc">Ketuk di sini untuk menerapkan %s ke peluncur Anda saat ini. Tekan lama untuk diterapkan ke peluncur lain.</string>
+    <string name="tap_intro_icons_search">Mencari</string>
+    <string name="tap_intro_icons_search_desc">Ketuk di sini untuk mencari ikon</string>
+    <string name="tap_intro_request_search">Cari aplikasi yang hilang</string>
+    <string name="tap_intro_request_search_desc">Ketuk di sini untuk menelusuri aplikasi yang Anda instal untuk menemukan ikon yang hilang untuk Permintaan ikon yang dipilih</string>
+    <string name="tap_intro_request_select">Pilih aplikasi yang terlewat</string>
+    <string name="tap_intro_request_select_desc">Ketuk di sini untuk memilih aplikasi yang terlewat untuk permintaan ikon</string>
+    <string name="tap_intro_request_select_all">Pilih semua aplikasi yang terlewat</string>
+    <string name="tap_intro_request_select_all_desc">Ketuk di sini untuk memilih semua aplikasi yang terlewat untuk permintaan ikon</string>
+    <string name="tap_intro_request_send">Kirim permintaan ikon</string>
+    <string name="tap_intro_request_send_desc">Ketuk di sini untuk mengirim aplikasi terpilih yang terlewat</string>
+    <string name="tap_intro_request_premium">Permintaan ikon premium</string>
+    <string name="tap_intro_request_premium_desc">Ketuk di sini untuk membeli paket permintaan ikon premium, dengan permintaan ikon premium, Anda bisa mendapatkan aplikasi yang diminta lebih cepat.</string>
+    <string name="tap_intro_wallpapers_option">Pilihan kertas dinding</string>
+    <string name="tap_intro_wallpapers_option_desc">Ketuk dan tahan di sini untuk menampilkan opsi wallpaper; %s menerapkan kertas dinding.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">unduh atau</string>
+    <string name="tap_intro_wallpapers_preview">Pratinjau kertas dinding</string>
+    <string name="tap_intro_wallpapers_preview_desc">Ketuk di sini untuk melihat pratinjau ukuran penuh wallpaper</string>
+    <string name="tap_intro_wallpaper_preview_save">Simpan kertas dinding</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Ketuk di sini untuk mengunduh dan menyimpan wallpaper ke perangkat Anda sehingga Anda dapat menggunakannya nanti</string>
+    <string name="tap_intro_wallpaper_preview_apply">Terapkan kertas dinding</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Ketuk di sini untuk menyetel wallpaper sebagai latar belakang layar beranda</string>
+
+    <!--Rumah-->
+    <string name="home_more_apps_header">Aplikasi Lainnya</string>
+    <string name="home_more_apps">Periksa Lebih Banyak Paket Ikon di Google Play Store</string>
+    <string name="home_rate">Kecepatan</string>
+    <string name="home_share">Membagikan</string>
+    <string name="home_check_update">Memperbarui</string>
+    <string name="home_apply_icon_pack">Terapkan %s</string>
+    <string name="home_donate">Menyumbangkan</string>
+    <string name="home_donate_desc">Dorong Pengembang untuk membuat lebih banyak paket ikon</string>
+    <string name="home_icons">Ikon</string>
+    <string name="home_icon_dimension">dimensi ikon %s piksel</string>
+    <string name="home_loud_wallpapers">%d wallpaper awan</string>
+    <string name="home_muzei">Wallpaper hidup Muzei</string>
+    <string name="home_icon_request_installed_apps">Total\n%d aplikasi terpasang</string>
+    <string name="home_icon_request_themed_apps">Aplikasi bertema\n%d</string>
+    <string name="home_icon_request_missed_apps">Hilang\n%d aplikasi</string>
+
+    <!--Menerapkan-->
+    <string name="apply_installed">Peluncur Terpasang</string>
+    <string name="apply_installed_launchers">Peluncur Terpasang</string>
+    <string name="apply_supported">Peluncur yang Didukung</string>
+    <string name="apply_launcher_not_installed_title">%S</string>
+    <string name="apply_launcher_not_installed_message">%s Peluncur belum terpasang. Anda dapat menemukan dan menginstalnya dari Amazon AppStore atau dari Sumber &amp; Toko pilihan Anda.</string>
+    <string name="apply_manual">Peluncur %1$s tidak mendukung penerapan langsung, namun Anda dapat menerapkan %2$s secara manual dari setelan peluncur.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso tidak mendukung penerapan langsung tetapi Anda dapat mengikuti langkah-langkah berikut:</string>
+    <string name="apply_manual_kvaesitso_step_1">Buka pengaturan Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">Ketuk \"Kotak &amp; Ikon\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Ketuk \"Paket Ikon\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Pilih %s dari daftar</string>
+    <string name="apply_manual_kvaesitso_step_5">Ketuk ikon kuas cat untuk mengaktifkan atau menonaktifkan bentuk latar belakang</string>
+    <string name="apply_manual_kiss">KISS tidak mendukung pengajuan langsung, tetapi Anda dapat mengikuti langkah-langkah berikut:</string>
+    <string name="apply_manual_kiss_step_1">Buka pengaturan KISS</string>
+    <string name="apply_manual_kiss_step_2">Ketuk \"Antarmuka Pengguna\"</string>
+    <string name="apply_manual_kiss_step_3">Ketuk \"Paket Ikon\"</string>
+    <string name="apply_manual_kiss_step_4">Pilih %s dari daftar</string>
+    <string name="apply_manual_samsung_oneui">%1$s tidak mendukung penerapan langsung, namun dimulai dengan %2$s Anda dapat menerapkan ikon dengan aplikasi pendamping.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Versi %s Anda saat ini terlalu lama. Harap perbarui ke Android 12 atau lebih baru agar dapat menerapkan ikon secara langsung. Alternatifnya, Anda dapat memasang peluncur lain.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Buka %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Unduh aplikasi %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Ketuk \"Ikon\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Ketuk \"Buat Baru\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Ketuk tombol biru \"Iconpack\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">Pilih %s dari daftar</string>
+    <string name="apply_manual_samsung_oneui_step_7">Ulangi langkah ini setiap kali Anda memperbarui %s karena ikon baru tidak akan dipetakan secara otomatis.</string>
+    <string name="apply_manual_hios">Peluncur HiOS tidak mendukung penerapan langsung, tetapi Anda dapat mengikuti langkah-langkah berikut:</string>
+    <string name="apply_manual_hios_step_1">Buka \"Pengaturan\"</string>
+    <string name="apply_manual_hios_step_2">Ketuk \"Tema &amp; Layar Kunci\"</string>
+    <string name="apply_manual_hios_step_3">Ketuk \"Tema saya\"</string>
+    <string name="apply_manual_hios_step_4">Ketuk \"Paket ikon\"</string>
+    <string name="apply_manual_hios_step_5">Ketuk %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Ketuk lama layar beranda Anda</string>
+    <string name="apply_manual_oxygen_os_step_2">Ketuk \"Pengaturan Rumah\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Ketuk \"Paket Ikon\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Ketuk %s</string>
+    <string name="apply_manual_color_os_step_1">Ketuk lama layar beranda Anda</string>
+    <string name="apply_manual_color_os_step_2">Ketuk \"Ikon\"</string>
+    <string name="apply_manual_color_os_step_3">Gulir ke kanan tombol \"Kustom\" (ini adalah daftar yang dapat digulir!)</string>
+    <string name="apply_manual_color_os_step_4">Ketuk %s</string>
+    <string name="apply_manual_before">Versi Before Launcher ini belum mendukung penerapan ikon secara langsung. Sebagai gantinya, ikuti langkah-langkah di bawah ini:</string>
+    <string name="apply_manual_before_step_1">Geser ke kiri di layar beranda</string>
+    <string name="apply_manual_before_step_2">Ketuk \"Setelan\"</string>
+    <string name="apply_manual_before_step_3">Ketuk \"Gaya dan Tema\"</string>
+    <string name="apply_manual_before_step_4">Ketuk \"Gaya &amp; Paket Ikon\"</string>
+    <string name="apply_manual_before_step_5">Ketuk %s</string>
+    <string name="apply_manual_nothing_step_1">Buka \"Pengaturan\"</string>
+    <string name="apply_manual_nothing_step_2">Ketuk \"Penyesuaian\"</string>
+    <string name="apply_manual_nothing_step_3">Ketuk \"Paket Ikon\"</string>
+    <string name="apply_manual_nothing_step_4">Ketuk %s</string>
+    <string name="apply_launch_failed">Tidak dapat meluncurkan pengaturan %s</string>
+    <string name="apply_launcher_not_installed">%s Peluncur belum terpasang. Apakah Anda ingin membuka Google Play Store untuk mengunduh dan menginstalnya?</string>
+    <string name="apply_launcher_not_installable">%s Peluncur belum terpasang. Silakan coba lagi setelah menginstal peluncur.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager tidak tersedia di perangkat ini</string>
+    <string name="apply_cmtheme_failed">Tidak dapat meluncurkan CM Theme Manager, Anda dapat mencoba menerapkan Paket Ikon secara manual dari Pengaturan.</string>
+    <string name="apply_lg_home">Untuk menerapkan Paket Ikon ini, buka Pengaturan - Tampilan - Layar Beranda - Tema</string>
+    <string name="apply_lg_home_not_available">LG Home tidak tersedia di perangkat ini</string>
+    <string name="apply_lg_home_failed">Tidak dapat meluncurkan Pengaturan Rumah LG, Anda dapat mencoba menerapkan Paket Ikon secara manual dari Pengaturan.</string>
+    <string name="apply_lg_home_nougat">LG Home dengan Android Nougat tidak lagi mendukung Icon Pack. Anda memerlukan peluncur khusus untuk menggunakan Paket Ikon.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Peluncur tidak mendukung paket ikon apa pun, jadi Anda tidak dapat menggunakan paket ikon ini dengan peluncur ini. Anda dapat mencoba aplikasi pihak ketiga untuk menggunakan paket ikon ini di peluncur %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Peluncur %1$s tidak kompatibel dengan %2$s, namun mungkin kompatibel dengan versi yang lebih baru</string>
+
+    <!--Ikon-->
+    <string name="icons_load_failed">Tidak dapat memuat ikon</string>
+    <string name="icon_shape">Bentuk Ikon</string>
+    <string name="items_selected">%d dipilih</string>
+
+    <!--Meminta-->
+    <string name="request_title">Permintaan Ikon</string>
+    <string name="request_terms">Sebelum melanjutkan dengan permintaan ikon, harap perhatikan bahwa permintaan Anda akan ditinjau sesuai dengan pedoman kami. Permintaan premium dapat diproses lebih cepat.</string>
+    <string name="request_not_selected">Pilih aplikasi yang akan diminta</string>
+    <string name="request_not_requested">Tidak diminta</string>
+    <string name="request_already_requested">Sudah diminta</string>
+    <string name="request_not_available">Tidak dapat diminta</string>
+    <string name="request_building">Permintaan bangunan…</string>
+    <string name="request_pacific_sending">Mengirim permintaan ke Manajer Pasifik...</string>
+    <string name="request_pacific_error">Terjadi kesalahan saat mengirimkan permintaan ke Manajer Pasifik. Kesalahannya adalah %s</string>
+    <string name="request_pacific_success">Berhasil mengirim permintaan ke Manajer Pasifik</string>
+    <string name="request_custom_error">Terjadi kesalahan saat mengirim permintaan ikon. Jika kesalahan ini terus berlanjut, hubungi pengembang. %S</string>
+    <string name="request_custom_success">Permintaan ikon berhasil dikirim</string>
+    <string name="request_fetching_data">Mengambil data terbaru…</string>
+    <string name="request_build_failed">Tidak dapat membuat permintaan ikon</string>
+    <string name="request_appfilter_failed">Tidak dapat membaca appfilter.xml</string>
+    <string name="request_requested">Anda sudah meminta ikon ini dan tidak dapat memintanya lagi.</string>
+    <string name="request_requested_possible">Anda sudah meminta ikon ini. Apakah Anda yakin ingin menggunakan permintaan lain untuk itu?</string>
+    <string name="request_requested_button_cancel">Kembali</string>
+    <string name="request_requested_button_confirm">Tetap pilih</string>
+    <string name="request_email_client">Pilih aplikasi yang ingin Anda gunakan untuk mengirim permintaan ikon</string>
+    <string name="request_app_disabled">Anda menggunakan versi lama paket ikon ini. Ikon yang diminta mungkin disertakan dalam versi terbaru. Harap perbarui aplikasi Anda ke versi terbaru untuk meminta ikon.</string>
+    <string name="connection_error_long">Tidak dapat memuat data dari server. Silakan periksa koneksi jaringan Anda.</string>
+    <string name="unable_to_load_config">Terjadi kesalahan saat mengambil atau membaca data dari server.</string>
+    <string name="request_limit">Anda hanya dapat membuat %d permintaan dengan permintaan reguler.</string>
+    <string name="request_used">Anda telah meminta %d ikon.</string>
+    <string name="request_limit_buy">Anda dapat membeli Permintaan Premium untuk meminta lebih banyak ikon.</string>
+    <string name="request_limit_reset">Batas permintaan ikon akan diatur ulang pada setiap pembaruan.</string>
+
+    <!--Permintaan Reguler-->
+    <string name="regular_request">Permintaan Ikon Reguler</string>
+    <string name="regular_request_desc">Mintalah ikon Anda diminta, dan pengembang akan mencoba memasukkan ikon yang Anda minta.</string>
+    <string name="regular_request_count">Total\n%d permintaan</string>
+    <string name="regular_request_used">Permintaan\n%d telah digunakan</string>
+    <string name="regular_request_available">Tersedia\n%d permintaan</string>
+
+    <!--Permintaan Premi-->
+    <string name="premium_request">Permintaan Ikon Premium</string>
+    <string name="premium_request_no_internet">Pastikan ponsel Anda terhubung ke internet sebelum mengirim permintaan premium</string>
+    <string name="premium_request_desc">Permintaan ikon premium adalah permintaan bayar untuk. Anda bisa mendapatkan aplikasi yang diminta lebih cepat dengan menggunakan permintaan ikon premium.</string>
+    <string name="premium_request_buy">Membeli</string>
+    <string name="premium_request_count">Total\n%d permintaan</string>
+    <string name="premium_request_used">Permintaan\n%d telah digunakan</string>
+    <string name="premium_request_available">Tersedia\n%d permintaan</string>
+    <string name="premium_request_already_purchased">Anda masih memiliki %d permintaan premium. Anda perlu menggunakan semuanya sebelum membeli paket permintaan premium lagi.</string>
+    <string name="premium_request_limit">Anda hanya memiliki %d permintaan premium,</string>
+    <string name="premium_request_limit1">tapi Anda memilih %d aplikasi. \n\nAnda harus menggunakan semua permintaan premium Anda sebelum menggunakan permintaan reguler lagi.</string>
+    <string name="premium_request_consume_failed">Tidak dapat menggunakan Permintaan Premium, pastikan Anda memiliki koneksi internet yang stabil dan coba lagi. Buka Pengaturan untuk membangun kembali Permintaan Premium.</string>
+    <string name="premium_request_rebuilding">Membangun Kembali Permintaan Premium…</string>
+    <string name="premium_request_rebuilding_empty">Anda belum membuat Permintaan Premium</string>
+    <string name="premium_request_exist">Anda masih memiliki paket Permintaan Ikon Premium. Buka Pengaturan, pilih \"Pulihkan Pembelian\" untuk memulihkannya.</string>
+    <string name="premium_request_required">Anda perlu membeli paket permintaan ikon premium untuk membuat permintaan ikon</string>
+
+    <!--Wallpaper-->
+    <string name="wallpaper_new_added">Wallpaper Baru</string>
+    <string name="wallpaper_already_downloaded">Wallpaper sudah diunduh</string>
+    <string name="wallpaper_downloading">Downloading wallpaper …</string>
+    <string name="wallpaper_download_failed">Tidak dapat mengunduh wallpaper</string>
+    <string name="wallpaper_download_success">Pengunduhan wallpaper berhasil</string>
+    <string name="wallpaper_loading">Memuat kertas dinding…</string>
+    <string name="wallpaper_applying">Menerapkan kertas dinding…</string>
+    <string name="wallpaper_applied">Wallpaper diterapkan</string>
+    <string name="wallpaper_apply_failed">Tidak dapat menerapkan wallpaper</string>
+    <string name="wallpaper_apply_cancelled">Penerapan wallpaper dibatalkan</string>
+    <string name="connection_failed">Tidak dapat mengambil data dari server</string>
+    <string name="wallpaper_apply">Terapkan kertas dinding</string>
+    <string name="wallpaper_save_to_device">Simpan kertas dinding</string>
+
+    <!--Preset-->
+    <string name="presets_load_failed">Tidak dapat memuat preset</string>
+    <string name="presets_storage_permission">Izin penyimpanan diperlukan untuk memuat wallpaper pratinjau</string>
+    <string name="presets_required_apps">Aplikasi yang diperlukan untuk menggunakan preset ini</string>
+    <string name="presets_required_apps_not_installed">Aplikasi yang diperlukan untuk menggunakan preset tidak diinstal. Silakan instal aplikasi diperlukan yang hilang dan coba lagi.</string>
+
+    <!--Preferensi-->
+    <string name="pref_data_header">Data &amp; Tembolok</string>
+    <string name="pref_data_cache">Hapus Tembolok</string>
+    <string name="pref_data_cache_desc">Hapus cache gambar dari penyimpanan Anda, yang dibuat saat mengambil gambar dari aplikasi ini, meminta aplikasi yang terlewat, dan setelah memuat gambar mini wallpaper cloud.</string>
+    <string name="pref_data_cache_size">Ukuran Tembolok: %s</string>
+    <string name="pref_data_cache_clear_dialog">Apakah Anda benar-benar ingin menghapus cache?</string>
+    <string name="pref_data_cache_cleared">Tembolok dibersihkan</string>
+    <string name="pref_data_request">Hapus Data Permintaan Ikon</string>
+    <string name="pref_data_request_desc">Hapus data permintaan ikon, yang dibuat setelah meminta aplikasi yang terlewat dari permintaan ikon.</string>
+    <string name="pref_data_request_clear_dialog">Apakah Anda benar-benar ingin menghapus data permintaan ikon?</string>
+    <string name="pref_data_request_cleared">Data permintaan ikon dihapus</string>
+    <string name="pref_premium_request_header">Permintaan Ikon Premium</string>
+    <string name="pref_premium_request_restore">Pulihkan Pembelian</string>
+    <string name="pref_premium_request_restore_desc">Pulihkan paket permintaan premium setelah menginstal ulang paket ikon</string>
+    <string name="pref_premium_request_restore_success">Permintaan Premium Dipulihkan</string>
+    <string name="pref_premium_request_restore_empty">Anda tidak memiliki paket yang dibeli</string>
+    <string name="pref_premium_request_rebuild">Bangun kembali Permintaan Ikon Premium</string>
+    <string name="pref_premium_request_rebuild_desc">Kumpulkan semua data permintaan ikon premium untuk dikirim ulang</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">Tema Gelap</string>
+    <string name="pref_theme_dark_desc">Gunakan warna gelap untuk tema aplikasi</string>
+    <string name="pref_notifications_header">Pemberitahuan</string>
+    <string name="pref_notifications">Terima Pemberitahuan</string>
+    <string name="pref_wallpaper_header">Wallpaper</string>
+    <string name="pref_wallpaper_location">Wallpaper Simpan Lokasi</string>
+    <string name="pref_language_header">Bahasa</string>
+    <string name="pref_others_header">Yang lain</string>
+    <string name="pref_others_report_bugs">Laporkan Bug</string>
+    <string name="pref_others_changelog">log perubahan</string>
+    <string name="pref_others_reset_tutorial">Atur Ulang Tutorial</string>
+    <string name="pref_others_reset_tutorial_reset">Tutorial Atur Ulang</string>
+
+    <!--Tema-->
+    <string name="theme_name_auto">Mobil</string>
+    <string name="theme_name_light">Lampu</string>
+    <string name="theme_name_dark">Gelap</string>
+    <string name="theme_name_material_you">Materi Anda</string>
+
+    <!--Izin-->
+    <string name="permission_storage_denied">Izin penyimpanan diperlukan untuk menyimpan wallpaper</string>
+    <string name="permission_notification_denied_1">Izin notifikasi diperlukan untuk menerima notifikasi dari pengembang</string>
+    <string name="permission_notification_denied_2">Aktifkan notifikasi dari pengaturan aplikasi</string>
+
+    <!--Maksud-->
+    <string name="app_client">Pilih Aplikasi</string>
+    <string name="no_email_app">Tidak ada aplikasi untuk mengirim email</string>
+    <string name="no_browser">Tidak ada aplikasi untuk membuka URL</string>
+    <string name="intent_email_failed">Tidak dapat menampilkan aplikasi email</string>
+    <string name="intent_email_supported">Didukung</string>
+    <string name="intent_email_recommended">Direkomendasikan</string>
+    <string name="intent_email_not_supported">Tidak Didukung</string>
+    <string name="intent_email_not_supported_message">Memilih klien email yang tidak didukung, silakan pilih klien email lain</string>
+
+    <!--Tentang-->
+    <string name="about_contributors_title">Kontributor</string>
+
+    <!--Laporkan Bug-->
+    <string name="report_bugs_desc">Mohon berikan penjelasan mengenai jenis masalah yang ingin Anda laporkan</string>
+    <string name="report_bugs_desc_hint">Keterangan</string>
+    <string name="report_bugs_desc_empty">Tolong beri deskripsi</string>
+    <string name="report_bugs_building">Membangun daftar aktivitas…</string>
+    <string name="report_bugs_failed">Tidak dapat membuat daftar aktivitas</string>
+    <string name="report_bugs_send">Kirim Laporan</string>
+
+    <!--Mendukung Pembangunan-->
+    <string name="donation_success">Terima kasih telah memberikan donasi. Saya akan menggunakannya untuk kebaikan.</string>
+
+    <!--Laporan Kecelakaan-->
+    <string name="crash_report">Laporan Kecelakaan</string>
+    <string name="crash_report_message">Sayangnya, %s mengalami error. Pilih Kirim Laporan di bawah untuk membantu pengembang memperbaiki masalah tersebut.</string>
+    <string name="crash_report_send">Kirim Laporan</string>
+
+    <!--LaciToggle-->
+    <string name="txt_open">Membuka</string>
+    <string name="txt_close">Menutup</string>
+
+    <string name="txt_new">Baru</string>
+
+    <!--Deskripsi konten untuk pembaca layar-->
+    <string name="icon_search_close_button_content_description">Tutup pencarian ikon</string>
+    <string name="icon_request_submit_button_content_description">Kirimkan permintaan ikon</string>
+    <string name="icon_list_content_description">Daftar ikon yang disertakan dalam paket ikon</string>
+    <string name="icon_search_list_content_description">Daftar ikon yang cocok dengan istilah pencarian</string>
+    <string name="about_item_social_content_description">Tautan ke profil online pembuat paket ikon:</string>
+    <string name="share_icon_pack_button_content_description">Bagikan aplikasi ini dengan seseorang</string>
+
+    <!--Kebijakan Privasi-->
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="privacy_policy_desc">Privasi Anda penting bagi kami. Silakan baca kebijakan privasi kami di Tentang untuk memahami cara kami menangani data Anda.</string>
+
+    <!--Syarat & Ketentuan-->
+    <string name="terms_conditions">Syarat &amp; Ketentuan</string>
+
+    <!--Meminta-->
+    <string name="request_limit_title">Batas Permintaan Gratis</string>
+    <string name="request_limit_content">Anda memiliki %d permintaan gratis yang tersisa. Pertimbangkan untuk meningkatkan ke premium untuk permintaan tak terbatas.</string>
+    <string name="request_limit_reached">Batas permintaan gratis tercapai. Silakan tingkatkan ke premium untuk permintaan lebih lanjut.</string>
+    <string name="request_limit_remaining">Anda dapat memilih %d ikon lainnya</string>
+
+    <!--Versi Aplikasi-->
+    <string name="version">Versi</string>
+	
+    <!--Kustom-->
+    <string name="home_kustom_desc">Mencocokkan komponen Weathers untuk %s</string>
+    <string name="kustom_widgets">Widget</string>
+    <string name="kustom_wallpapers">Wallpaper</string>
+    <string name="kustom_lockscreens">Layar kunci</string>
+    <string name="kustom_komponents">Komponen</string>
+
+    <!--Dialog Permintaan Persetujuan-->
+    <string name="request_consent_title">Persetujuan Pengumpulan Data</string>
+    <string name="request_consent_content">Untuk memproses permintaan ikon Anda, kami perlu mengumpulkan informasi tentang aplikasi yang Anda instal dan detail perangkat (seperti dimensi layar dan versi Android). Hal ini membantu kami merancang ikon yang paling sesuai untuk perangkat Anda.\n\nAnda dapat meninjau Kebijakan Privasi kami di Bagian Tentang untuk informasi lebih lanjut.</string>
+    <string name="request_consent_accept">MENERIMA</string>
+    <string name="request_consent_deny">MEMBANTAH</string>
+
+    <!--Gaya Navigasi-->
+    <string name="pref_navigation_style">Bilah Navigasi</string>
+
+    <!--Mencari-->
+    <string name="search_apps">Aplikasi Pencarian</string>
+
+</resources>

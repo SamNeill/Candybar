@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="changelog_date" translatable="false">December 23, 2024</string>
+
+    <string-array name="changelog">
+        <item>Fixed dependency issue with photoview</item>
+        <item>Updated social icons in the about section</item>
+        <item><![CDATA[
+            Added Projectivy Launcher support (thanks to <a href="https://github.com/spocky">@spocky</a>)
+        ]]></item>
+        <item>Updated translations</item>
+        <item>Updated Gradle and AGP</item>
+        <item>Updated dependencies</item>
+    </string-array>
+
+</resources>

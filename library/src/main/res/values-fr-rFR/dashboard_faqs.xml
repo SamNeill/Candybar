@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Qu\'est-ce qu\'un lanceur-->
+    <!--Qu\'est-ce qu\'un pack d\'icônes-->
+    <!--Comment utiliser un pack d\'icônes ?-->
+    <!--Comment appliquer un pack d\'icônes ?-->
+    <!--Comment puis-je voir toutes les icônes incluses ?-->
+    <!--Je ne vois pas le nom complet de l\'icône-->
+    <!--Comment puis-je remplacer les icônes par une autre icône ?-->
+    <!--Comment demander une icône ?-->
+    <!--Comment puis-je restaurer les demandes Premium restantes après la réinstallation de l\'application ?-->
+    <!--Après avoir redémarré mon téléphone, le pack d\'icônes n\'est pas appliqué, il est restauré aux paramètres par défaut ?-->
+    <!--Pourquoi les icônes sont-elles irrégulières ou pixellisées sur mon téléphone ?-->
+    <!--Je peux voir l\'icône incluse dans toutes les icônes,
+            mais pourquoi l\'icône réelle sur le tiroir d\'applications n\'est-elle pas modifiée ?-->
+    <!--Qu\'est-ce que l\'option « signaler les bugs » ?-->
+    <!--Mon lanceur est répertorié dans la description de Google Play, mais pourquoi n\'est-il pas inclus dans la section Appliquer ?-->
+    <!--Le papier peint ne peut pas être appliqué, affichant simplement un écran noir ?-->
+    <!--Muzei : Comment charger uniquement les fonds d\'écran téléchargés ?-->
+    <!--Muzei : Je ne veux pas continuer à télécharger des fonds d\'écran à chaque fois que le fond d\'écran change ?-->
+    <!--Muzei : Je souhaite uniquement utiliser des fonds d\'écran spécifiques ?-->
+    <!--Pourquoi une autorisation de lecture et d\'écriture sur le stockage externe est-elle nécessaire ?-->
+    <!--Pourquoi une autorisation Internet est-elle nécessaire ?-->
+    <!--Pourquoi l’autorisation d’accès à l’état du réseau est-elle nécessaire ?-->
+    <!--Pourquoi l’autorisation d’accès au Wi-Fi State est-elle nécessaire ?-->
+    <!--Pourquoi l\'autorisation Définir le fond d\'écran est-elle nécessaire ?-->
+    <!--Pourquoi l’autorisation Wake Lock est-elle nécessaire ?-->
+    <!--Pourquoi l’autorisation Définir l’alarme est-elle nécessaire ?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Qu\'est-ce qu\'un lanceur ?</item>
+    <item>Qu\'est-ce qu\'un pack d\'icônes ?</item>
+    <item>Comment utiliser un pack d\'icônes ?</item>
+    <item>Comment appliquer un pack d\'icônes ?</item>
+    <item>Comment puis-je voir toutes les icônes incluses ?</item>
+    <item>Je ne vois pas le nom complet de l\'icône</item>
+    <item>Comment puis-je remplacer les icônes par une autre icône ?</item>
+    <item>Comment demander une icône ?</item>
+    <item>Comment puis-je restaurer les demandes Premium restantes après la réinstallation de l\'application ?</item>
+    <item>Après avoir redémarré mon téléphone, le pack d\'icônes n\'est pas appliqué ; il restaure les valeurs par défaut ?</item>
+    <item>Pourquoi les icônes sont-elles irrégulières ou pixellisées sur mon téléphone ?</item>
+    <item>Je peux voir l\'icône incluse dans toutes les icônes,
+            mais pourquoi l\'icône réelle sur le tiroir d\'applications n\'est-elle pas modifiée ?</item>
+    <item>Qu\'est-ce que l\'option « signaler les bugs » ?</item>
+    <item>Mon lanceur est répertorié dans la description de Google Play, mais pourquoi n\'est-il pas inclus dans la section Appliquer ?</item>
+    <item>Le papier peint ne peut pas être appliqué, affichant simplement un écran noir ?</item>
+    <item>Muzei : Comment charger uniquement les fonds d\'écran téléchargés ?</item>
+    <item>Muzei : Je ne veux pas continuer à télécharger des fonds d\'écran à chaque fois que le fond d\'écran change ?</item>
+    <item>Muzei : Je souhaite uniquement utiliser des fonds d\'écran spécifiques ?</item>
+    <item>Pourquoi une autorisation de lecture et d\'écriture sur le stockage externe est-elle nécessaire ?</item>
+    <item>Pourquoi une autorisation Internet est-elle nécessaire ?</item>
+    <item>Pourquoi l’autorisation d’accès à l’état du réseau est-elle nécessaire ?</item>
+    <item>Pourquoi l’autorisation Access Wifi State est-elle nécessaire ?</item>
+    <item>Pourquoi l\'autorisation Définir le fond d\'écran est-elle nécessaire ?</item>
+    <item>Pourquoi l’autorisation Wake Lock est-elle nécessaire ?</item>
+    <item>Pourquoi l’autorisation Définir l’alarme est-elle nécessaire ?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Le lanceur est la partie de l\'interface utilisateur Android qui permet aux utilisateurs de personnaliser l\'écran d\'accueil,
+            lancez des applications mobiles, passez des appels téléphoniques et effectuez d\'autres tâches sur les appareils Android.</item>
+    <item>Un ensemble de graphiques qui changeront l\'apparence des icônes de votre tiroir d\'applications</item>
+    <item>Vous aurez besoin d\'un lanceur prenant en charge les packs d\'icônes personnalisés.
+            Les lanceurs pris en charge sont répertoriés dans la description du Play Store.
+            Si vous ne savez pas quels lanceurs doivent être utilisés, accédez simplement à la section « Appliquer » et installez-le à partir de là.</item>
+    <item>Vous pouvez ouvrir le tiroir de navigation, puis ouvrir « Appliquer ». Choisissez votre lanceur dans la liste.
+            Si votre lanceur n\'y est pas répertorié, mais que ce pack d\'icônes est compatible avec celui-ci
+            (voir la description sur Google Play Store pour les lanceurs pris en charge),
+            vous pouvez appliquer le pack d\'icônes manuellement dans les paramètres de votre lanceur.</item>
+    <item>Vous pouvez ouvrir le tiroir de navigation, puis ouvrir les « Icônes »</item>
+    <item>Appuyez simplement sur l\'icône. Une boîte de dialogue d\'aperçu apparaîtra avec une image plus grande et le nom complet de l\'icône.</item>
+    <item>Cela dépend du lanceur que vous avez utilisé. Tous les lanceurs ne prennent pas en charge l\'édition d\'icônes.
+       	    La plupart du temps, vous pouvez modifier une icône en appuyant longuement sur l\'icône ou en appuyant deux fois dessus.</item>
+    <item>Vous pouvez ouvrir le tiroir de navigation, puis ouvrir \"Icon Request\".</item>
+    <item>Vous pouvez ouvrir le tiroir de navigation, puis ouvrir \"Paramètres\", choisir \"Restaurer les achats\".
+            S\'il vous restait des demandes Premium avant la réinstallation, elles seront restaurées.</item>
+    <item>C\'est dû au fait que ce pack d\'icônes a été déplacé vers la carte SD ; vous devez l\'installer dans la mémoire interne.</item>
+    <item>Le problème peut provenir du lanceur que vous avez utilisé lors de la gestion de la résolution des grandes icônes.
+       	    Vous pouvez résoudre ce problème en augmentant la taille de l\'icône entre 115 et 120 %.
+       	    Alternativement, vous pouvez changer de lanceur.</item>
+    <item>Ouvrez les paramètres, faites défiler vers le bas, puis sélectionnez \"Signaler les bogues\".</item>
+    <item>\"Rapport de bogues\" est utilisé pour signaler les bogues liés au pack d\'icônes, pas au tableau de bord.</item>
+    <item>Tous les lanceurs ne prennent pas en charge l\'application directe, et certains d\'entre eux ne sont pas accessibles directement depuis le tableau de bord.
+      	    Vous pouvez appliquer ce pack d\'icônes manuellement dans les paramètres individuels du lanceur.</item>
+    <item>Lorsque vous \"Définissez le fond d\'écran\" directement depuis l\'application, il sera téléchargé dans le cache,
+      	    alors l\'application du tableau de bord essaiera de l\'appliquer. L\'application prendra un certain temps et nécessitera également une énorme quantité de RAM pendant une courte période.
+      	    Des erreurs « Écran noir » peuvent apparaître car votre téléphone ne dispose pas de suffisamment de RAM libre pour traiter le fond d\'écran.
+      	    Le redémarrage de votre téléphone résoudra ce problème. Après le redémarrage, votre téléphone disposera de plus de RAM disponible.
+            Vous pouvez également ouvrir le fond d\'écran téléchargé depuis votre galerie et le définir comme fond d\'écran à partir de là.</item>
+    <item>Ouvrez Muzei, choisissez ce pack d\'icônes, paramètres. Vous verrez une option permettant de charger uniquement les fonds d\'écran téléchargés.
+            Vous devrez d\'abord télécharger les fonds d\'écran depuis le tableau de bord.</item>
+    <item>Si un fond d\'écran est déjà téléchargé, il sera automatiquement chargé depuis la mémoire de votre téléphone.
+            Muzei ne continuera pas à le télécharger lorsque le fond d\'écran change. Vous devrez d\'abord télécharger les fonds d\'écran depuis le tableau de bord.</item>
+    <item>Ouvrez le tableau de bord, téléchargez les fonds d\'écran que vous souhaitez utiliser dans Muzei.
+            Ouvrez les paramètres Muzei, puis choisissez Charger les fonds d\'écran téléchargés uniquement.</item>
+    <item>Il est utilisé pour écrire et lire le cache et collecter les données de demande d\'icône.</item>
+    <item>Il est utilisé pour charger des fonds d\'écran basés sur le cloud et les télécharger.</item>
+    <item>Il est utilisé pour vérifier si votre téléphone dispose d’une connexion Internet ou non.</item>
+    <item>Il est utilisé pour vérifier si votre téléphone dispose d\'une connexion Internet à un wifi ou non, pour charger des fonds d\'écran cloud depuis Muzei.</item>
+    <item>Il est utilisé pour appliquer des fonds d\'écran directement depuis l\'application du tableau de bord.</item>
+    <item>Il est utilisé par Muzei Live Wallpaper.</item>
+    <item>Il est utilisé pour lancer l\'application horloge à partir du widget horloge analogique.</item>
+  </string-array>
+</resources>

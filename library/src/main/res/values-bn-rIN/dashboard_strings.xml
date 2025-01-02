@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--স্প্ল্যাশ স্ক্রিন শিরোনাম-->
+    <string name="splash_screen_title">ক্যান্ডিবার ড্যাশবোর্ড</string>
+
+    <!--নেভিগেশন ভিউ-->
+    <string name="navigation_view_home">বাড়ি</string>
+    <string name="navigation_view_apply">আবেদন করুন</string>
+    <string name="navigation_view_icons">আইকন</string>
+    <string name="navigation_view_request">আইকন অনুরোধ</string>
+    <string name="navigation_view_wallpapers">ওয়ালপেপার</string>
+    <string name="navigation_view_kustom">কাস্টম</string>
+    <string name="navigation_view_settings">সেটিংস</string>
+    <string name="navigation_view_faqs">FAQs</string>
+    <string name="navigation_view_about">সম্পর্কে</string>
+    <string name="navigation_view_donate">সাপোর্ট ডেভেলপমেন্ট</string>
+
+    <!--মুজেই-->
+    <string name="muzei_settings">মুজেই সেটিংস</string>
+    <string name="minute">মিনিট</string>
+    <string name="hour">ঘন্টা</string>
+    <string name="save_setting">সংরক্ষণ করুন</string>
+    <string name="muzei_refresh_duration">রিফ্রেশ সময়কাল</string>
+    <string name="muzei_wifi_only">শুধুমাত্র Wi-Fi থেকে রিফ্রেশ করুন</string>
+    <string name="muzei_downloaded_only">শুধুমাত্র ডাউনলোড করা ওয়ালপেপার লোড করুন</string>
+    <string name="muzei_settings_ignored">আইকন প্যাকে ওয়ালপেপার নেই, সেটিংস উপেক্ষা করা হয়েছে।</string>
+    <string name="muzei_settings_saved">সেটিংস সংরক্ষিত</string>
+
+    <!--মেনু-->
+    <string name="menu_search">অনুসন্ধান করুন</string>
+    <string name="menu_save">ডিভাইসে সংরক্ষণ করুন</string>
+    <string name="menu_select_all">সব নির্বাচন করুন</string>
+    <string name="menu_delete">মুছে দিন</string>
+
+    <string name="menu_wallpaper_crop">ক্রপ ওয়ালপেপার</string>
+    <string name="menu_apply_homescreen">হোমস্ক্রিন</string>
+    <string name="menu_apply_lockscreen">লকস্ক্রিন</string>
+    <string name="menu_apply_homescreen_lockscreen">হোমস্ক্রিন এবং লকস্ক্রিন</string>
+
+    <!--ডায়ালগ-->
+    <string name="open">খোলা</string>
+    <string name="close">বন্ধ</string>
+    <string name="clear">পরিষ্কার</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="install">ইনস্টল করুন</string>
+    <string name="donate">দান করুন</string>
+    <string name="update">আপডেট</string>
+
+    <string name="search_noresult">\"%s\" এর জন্য কোন ফলাফল পাওয়া যায়নি</string>
+    <string name="search_faqs">প্রশ্ন বা উত্তর</string>
+    <string name="search_icon">আইকনের নাম</string>
+    <string name="search_wallpapers">ওয়ালপেপার নাম</string>
+
+    <!--আপডেট-->
+    <string name="checking_for_update">আপডেটের জন্য পরীক্ষা করা হচ্ছে...</string>
+    <string name="update_available">আপডেট উপলব্ধ!</string>
+    <string name="no_update_available">আপনি সর্বশেষ সংস্করণ ব্যবহার করছেন!</string>
+
+    <!--চেঞ্জলগ সংস্করণ-->
+    <string name="changelog_version">সংস্করণ</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">অ্যাপ-মধ্যস্থ ক্রয় পণ্য লোড করতে অক্ষম৷</string>
+
+    <!--লাইসেন্স-->
+    <string name="license_checking">লাইসেন্স চেক করা হচ্ছে...</string>
+    <string name="license_check">লাইসেন্স চেক</string>
+    <string name="license_check_success">লাইসেন্স চেক সাফল্য. প্লে স্টোর থেকে অ্যাপটি ডাউনলোড করার জন্য আপনাকে ধন্যবাদ।</string>
+    <string name="license_check_failed">লাইসেন্স চেক ব্যর্থ হয়েছে; আপনি প্লে স্টোর থেকে অ্যাপটি ডাউনলোড করেননি। আপনি এটি ব্যবহার করতে সক্ষম হবে না.</string>
+    <string name="license_check_retry">লাইসেন্স চেক করতে অক্ষম, কয়েক মুহূর্তের মধ্যে আবার চেষ্টা করুন.</string>
+
+    <!--প্লে স্টোর ইনস্টলেশন চেক-->
+    <string name="playstore_check">প্লে স্টোর চেক করুন</string>
+    <string name="playstore_check_success">গুগল প্লে স্টোর থেকে অ্যাপটি ইনস্টল করার জন্য আপনাকে ধন্যবাদ। উপভোগ করুন!</string>
+    <string name="playstore_check_failed">মনে হচ্ছে আপনি Google Play Store এর বাইরে থেকে এই আইকন প্যাকটি ইনস্টল করেছেন৷
+        আপনি এটি ব্যবহার করতে সক্ষম হবে না.</string>
+
+    <!--শেয়ার করুন-->
+    <string name="share_app_title">ইয়ো! %s দেখুন</string>
+    <string name="share_app_body">প্লে স্টোরে %1$s আইকন প্যাক দেখুন: %2$s</string>
+
+    <!--ভূমিকা আলতো চাপুন-->
+    <string name="tap_intro_home_navigation">নেভিগেশন ড্রয়ার</string>
+    <string name="tap_intro_home_navigation_desc">এখানে আলতো চাপুন বা নেভিগেশন ড্রয়ার খুলতে স্ক্রিনের বাম প্রান্ত থেকে সোয়াইপ করুন</string>
+    <string name="tap_intro_home_apply">আইকন প্যাক প্রয়োগ করুন</string>
+    <string name="tap_intro_home_apply_desc">আপনার বর্তমান লঞ্চারে %s প্রয়োগ করতে এখানে আলতো চাপুন। অন্যান্য লঞ্চারে প্রয়োগ করতে দীর্ঘক্ষণ টিপুন।</string>
+    <string name="tap_intro_icons_search">অনুসন্ধান করুন</string>
+    <string name="tap_intro_icons_search_desc">একটি আইকন অনুসন্ধান করতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_request_search">অনুপস্থিত অ্যাপ্লিকেশন অনুসন্ধান করুন</string>
+    <string name="tap_intro_request_search_desc">নির্বাচিত আইকন অনুরোধের জন্য অনুপস্থিত আইকনগুলির জন্য আপনার ইনস্টল করা অ্যাপগুলির মাধ্যমে অনুসন্ধান করতে এখানে আলতো চাপুন৷</string>
+    <string name="tap_intro_request_select">মিস করা অ্যাপ নির্বাচন করুন</string>
+    <string name="tap_intro_request_select_desc">আইকন অনুরোধের জন্য মিস অ্যাপ নির্বাচন করতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_request_select_all">সব মিস অ্যাপ নির্বাচন করুন</string>
+    <string name="tap_intro_request_select_all_desc">আইকন অনুরোধের জন্য সমস্ত মিস করা অ্যাপ নির্বাচন করতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_request_send">আইকন অনুরোধ পাঠান</string>
+    <string name="tap_intro_request_send_desc">নির্বাচিত মিস করা অ্যাপ পাঠাতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_request_premium">প্রিমিয়াম আইকন অনুরোধ</string>
+    <string name="tap_intro_request_premium_desc">প্রিমিয়াম আইকন অনুরোধ প্যাকেজ কিনতে এখানে আলতো চাপুন, একটি প্রিমিয়াম আইকন অনুরোধ সহ, আপনি আপনার অনুরোধ করা অ্যাপগুলি দ্রুত পেতে পারেন।</string>
+    <string name="tap_intro_wallpapers_option">ওয়ালপেপার বিকল্প</string>
+    <string name="tap_intro_wallpapers_option_desc">ওয়ালপেপার বিকল্পগুলি দেখাতে এখানে আলতো চাপুন এবং ধরে রাখুন; %s ওয়ালপেপার প্রয়োগ করুন।</string>
+    <string name="tap_intro_wallpapers_option_desc_download">ডাউনলোড করুন বা</string>
+    <string name="tap_intro_wallpapers_preview">প্রাকদর্শন ওয়ালপেপার</string>
+    <string name="tap_intro_wallpapers_preview_desc">ওয়ালপেপারের সম্পূর্ণ আকারের পূর্বরূপ দেখতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_wallpaper_preview_save">ওয়ালপেপার সংরক্ষণ করুন</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">আপনার ডিভাইসে ওয়ালপেপার ডাউনলোড এবং সংরক্ষণ করতে এখানে আলতো চাপুন যাতে আপনি এটি পরে ব্যবহার করতে পারেন</string>
+    <string name="tap_intro_wallpaper_preview_apply">ওয়ালপেপার প্রয়োগ করুন</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">হোমস্ক্রিন ব্যাকগ্রাউন্ড হিসাবে ওয়ালপেপার সেট করতে এখানে আলতো চাপুন</string>
+
+    <!--বাড়ি-->
+    <string name="home_more_apps_header">আরও অ্যাপ</string>
+    <string name="home_more_apps">গুগল প্লে স্টোরে আরও আইকন প্যাক দেখুন</string>
+    <string name="home_rate">হার</string>
+    <string name="home_share">শেয়ার করুন</string>
+    <string name="home_check_update">আপডেট</string>
+    <string name="home_apply_icon_pack">%s প্রয়োগ করুন</string>
+    <string name="home_donate">দান করুন</string>
+    <string name="home_donate_desc">আরও আইকন প্যাক তৈরি করতে বিকাশকারীকে উত্সাহিত করুন৷</string>
+    <string name="home_icons">আইকন</string>
+    <string name="home_icon_dimension">%s পিক্সেল আইকন মাত্রা</string>
+    <string name="home_loud_wallpapers">%dটি ক্লাউড ওয়ালপেপার</string>
+    <string name="home_muzei">Muzei লাইভ ওয়ালপেপার</string>
+    <string name="home_icon_request_installed_apps">মোট\n%dটি ইনস্টল করা অ্যাপ</string>
+    <string name="home_icon_request_themed_apps">থিমযুক্ত\n%dটি অ্যাপ</string>
+    <string name="home_icon_request_missed_apps">মিস করা হয়েছে\n%dটি অ্যাপ</string>
+
+    <!--আবেদন করুন-->
+    <string name="apply_installed">ইনস্টল করা লঞ্চার</string>
+    <string name="apply_installed_launchers">ইনস্টল করা লঞ্চার</string>
+    <string name="apply_supported">সমর্থিত লঞ্চার</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s লঞ্চার ইনস্টল করা নেই। আপনি Amazon AppStore বা আপনার পছন্দের রিসোর্স এবং স্টোর থেকে এটি খুঁজে পেতে এবং ইনস্টল করতে পারেন।</string>
+    <string name="apply_manual">%1$s লঞ্চার সরাসরি প্রয়োগ সমর্থন করে না, তবে আপনি লঞ্চার সেটিংস থেকে ম্যানুয়ালি %2$s প্রয়োগ করতে পারেন৷</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso সরাসরি প্রয়োগ সমর্থন করে না তবে আপনি এই পদক্ষেপগুলি অনুসরণ করতে পারেন:</string>
+    <string name="apply_manual_kvaesitso_step_1">Kvaesitso এর সেটিংস খুলুন</string>
+    <string name="apply_manual_kvaesitso_step_2">\"গ্রিড এবং আইকন\" আলতো চাপুন</string>
+    <string name="apply_manual_kvaesitso_step_3">\"আইকন প্যাক\"-এ আলতো চাপুন</string>
+    <string name="apply_manual_kvaesitso_step_4">তালিকা থেকে %s বেছে নিন</string>
+    <string name="apply_manual_kvaesitso_step_5">পটভূমি আকৃতি সক্ষম বা অক্ষম করতে পেইন্ট ব্রাশ আইকনে আলতো চাপুন</string>
+    <string name="apply_manual_kiss">KISS সরাসরি প্রয়োগ সমর্থন করে না, তবে আপনি এই পদক্ষেপগুলি অনুসরণ করতে পারেন:</string>
+    <string name="apply_manual_kiss_step_1">KISS সেটিংস খুলুন</string>
+    <string name="apply_manual_kiss_step_2">\"ইউজার ইন্টারফেস\" আলতো চাপুন</string>
+    <string name="apply_manual_kiss_step_3">\"আইকন প্যাক\"-এ আলতো চাপুন</string>
+    <string name="apply_manual_kiss_step_4">তালিকা থেকে %s বেছে নিন</string>
+    <string name="apply_manual_samsung_oneui">%1$s সরাসরি প্রয়োগ সমর্থন করে না, তবে %2$s থেকে শুরু করে আপনি একটি সহচর অ্যাপের মাধ্যমে আইকন প্রয়োগ করতে পারেন৷</string>
+    <string name="apply_manual_samsung_oneui_too_old">আপনার %s এর বর্তমান সংস্করণটি অনেক পুরানো৷ সরাসরি আইকন প্রয়োগ করতে সক্ষম হতে অনুগ্রহ করে Android 12 বা নতুন সংস্করণে আপডেট করুন। বিকল্পভাবে, আপনি একটি ভিন্ন লঞ্চার ইনস্টল করতে পারেন।</string>
+    <string name="apply_manual_samsung_oneui_step_1">%s খুলুন</string>
+    <string name="apply_manual_samsung_oneui_step_2">%s অ্যাপটি ডাউনলোড করুন</string>
+    <string name="apply_manual_samsung_oneui_step_3">\"আইকন\" আলতো চাপুন</string>
+    <string name="apply_manual_samsung_oneui_step_4">\"নতুন তৈরি করুন\" আলতো চাপুন</string>
+    <string name="apply_manual_samsung_oneui_step_5">নীল \"আইকনপ্যাক\" বোতামে আলতো চাপুন</string>
+    <string name="apply_manual_samsung_oneui_step_6">তালিকা থেকে %s বেছে নিন</string>
+    <string name="apply_manual_samsung_oneui_step_7">প্রতিবার আপনি %s আপডেট করার সময় এই পদক্ষেপগুলি পুনরাবৃত্তি করুন কারণ নতুন আইকনগুলি স্বয়ংক্রিয়ভাবে ম্যাপ করা হবে না৷</string>
+    <string name="apply_manual_hios">HiOS লঞ্চার সরাসরি প্রয়োগ সমর্থন করে না, তবে আপনি এই পদক্ষেপগুলি অনুসরণ করতে পারেন:</string>
+    <string name="apply_manual_hios_step_1">\"সেটিংস\" খুলুন</string>
+    <string name="apply_manual_hios_step_2">\"থিম এবং লকস্ক্রিন\" আলতো চাপুন</string>
+    <string name="apply_manual_hios_step_3">\"আমার থিম\" আলতো চাপুন</string>
+    <string name="apply_manual_hios_step_4">\"আইকন প্যাক\" আলতো চাপুন</string>
+    <string name="apply_manual_hios_step_5">%s এ আলতো চাপুন</string>
+    <string name="apply_manual_oxygen_os_step_1">আপনার হোমস্ক্রীন দীর্ঘ-ট্যাপ করুন</string>
+    <string name="apply_manual_oxygen_os_step_2">\"হোম সেটিংস\" আলতো চাপুন</string>
+    <string name="apply_manual_oxygen_os_step_3">\"আইকন প্যাক\" আলতো চাপুন</string>
+    <string name="apply_manual_oxygen_os_step_4">%s এ আলতো চাপুন</string>
+    <string name="apply_manual_color_os_step_1">আপনার হোমস্ক্রীন দীর্ঘ-ট্যাপ করুন</string>
+    <string name="apply_manual_color_os_step_2">\"আইকন\" আলতো চাপুন</string>
+    <string name="apply_manual_color_os_step_3">\"কাস্টম\" বোতামের ডানদিকে স্ক্রোল করুন (এটি একটি স্ক্রোলযোগ্য তালিকা!)</string>
+    <string name="apply_manual_color_os_step_4">%s এ আলতো চাপুন</string>
+    <string name="apply_manual_before">বিফোর লঞ্চারের এই সংস্করণটি এখনও সরাসরি আইকন প্রয়োগ করা সমর্থন করে না। পরিবর্তে, নীচের পদক্ষেপগুলি অনুসরণ করুন:</string>
+    <string name="apply_manual_before_step_1">হোমস্ক্রীনে বাম দিকে সোয়াইপ করুন</string>
+    <string name="apply_manual_before_step_2">\"সেটিংস\" আলতো চাপুন</string>
+    <string name="apply_manual_before_step_3">\"শৈলী এবং থিম\" আলতো চাপুন</string>
+    <string name="apply_manual_before_step_4">\"আইকন শৈলী এবং প্যাক\" আলতো চাপুন</string>
+    <string name="apply_manual_before_step_5">%s এ আলতো চাপুন</string>
+    <string name="apply_manual_nothing_step_1">\"সেটিংস\" খুলুন</string>
+    <string name="apply_manual_nothing_step_2">\"কাস্টমাইজেশন\" আলতো চাপুন</string>
+    <string name="apply_manual_nothing_step_3">\"আইকন প্যাক\" আলতো চাপুন</string>
+    <string name="apply_manual_nothing_step_4">%s এ আলতো চাপুন</string>
+    <string name="apply_launch_failed">%s সেটিংস চালু করতে অক্ষম৷</string>
+    <string name="apply_launcher_not_installed">%s লঞ্চার ইনস্টল করা নেই। আপনি কি এটি ডাউনলোড এবং ইনস্টল করতে Google Play Store খুলতে চান?</string>
+    <string name="apply_launcher_not_installable">%s লঞ্চার ইনস্টল করা নেই। লঞ্চার ইনস্টল করার পরে আবার চেষ্টা করুন.</string>
+    <string name="apply_cmtheme_not_available">এই ডিভাইসে CM থিম ম্যানেজার উপলব্ধ নেই৷</string>
+    <string name="apply_cmtheme_failed">CM থিম ম্যানেজার চালু করতে অক্ষম, আপনি সেটিংস থেকে ম্যানুয়ালি আইকন প্যাক প্রয়োগ করার চেষ্টা করতে পারেন।</string>
+    <string name="apply_lg_home">এই আইকন প্যাকটি প্রয়োগ করতে সেটিংস - ডিসপ্লে - হোম স্ক্রীন - থিম খুলুন</string>
+    <string name="apply_lg_home_not_available">এই ডিভাইসে LG Home উপলব্ধ নেই</string>
+    <string name="apply_lg_home_failed">LG হোম সেটিংস চালু করতে অক্ষম, আপনি সেটিংস থেকে ম্যানুয়ালি আইকন প্যাক প্রয়োগ করার চেষ্টা করতে পারেন।</string>
+    <string name="apply_lg_home_nougat">Android Nougat সহ LG হোম আর আইকন প্যাক সমর্থন করে না। আইকন প্যাক ব্যবহার করার জন্য আপনার একটি কাস্টম লঞ্চার প্রয়োজন।</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s লঞ্চার কোনো আইকন প্যাক সমর্থন করে না, তাই আপনি এই লঞ্চারের সাথে এই আইকন প্যাকটি ব্যবহার করতে পারবেন না। আপনি %2$s লঞ্চারে এই আইকন প্যাকটি ব্যবহার করার জন্য একটি তৃতীয় পক্ষের অ্যাপ ব্যবহার করে দেখতে পারেন৷</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s লঞ্চার %2$s এর সাথে সামঞ্জস্যপূর্ণ নয়, তবে নতুন সংস্করণের সাথে সামঞ্জস্যপূর্ণ হতে পারে</string>
+
+    <!--আইকন-->
+    <string name="icons_load_failed">আইকন লোড করতে অক্ষম</string>
+    <string name="icon_shape">আইকন আকৃতি</string>
+    <string name="items_selected">%d নির্বাচিত</string>
+
+    <!--অনুরোধ-->
+    <string name="request_title">আইকন অনুরোধ</string>
+    <string name="request_terms">আইকন অনুরোধের সাথে এগিয়ে যাওয়ার আগে, দয়া করে মনে রাখবেন যে আপনার অনুরোধটি আমাদের নির্দেশিকা অনুযায়ী পর্যালোচনা করা হবে। প্রিমিয়াম অনুরোধ দ্রুত প্রক্রিয়া করা হতে পারে.</string>
+    <string name="request_not_selected">অনুরোধ করার জন্য অ্যাপ নির্বাচন করুন</string>
+    <string name="request_not_requested">অনুরোধ করা হয়নি</string>
+    <string name="request_already_requested">ইতিমধ্যে অনুরোধ করা হয়েছে</string>
+    <string name="request_not_available">অনুরোধ করা যাবে না</string>
+    <string name="request_building">নির্মাণের অনুরোধ…</string>
+    <string name="request_pacific_sending">প্যাসিফিক ম্যানেজারকে অনুরোধ পাঠানো হচ্ছে...</string>
+    <string name="request_pacific_error">প্যাসিফিক ম্যানেজারকে একটি অনুরোধ পাঠানোর সময় ত্রুটি ঘটেছে৷ ত্রুটি হল %s</string>
+    <string name="request_pacific_success">প্যাসিফিক ম্যানেজারকে সফলভাবে অনুরোধ পাঠানো হয়েছে</string>
+    <string name="request_custom_error">একটি আইকন অনুরোধ পাঠানোর সময় ত্রুটি ঘটেছে৷ এই ত্রুটি অব্যাহত থাকলে, বিকাশকারীর সাথে যোগাযোগ করুন। %s</string>
+    <string name="request_custom_success">আইকন অনুরোধ সফলভাবে পাঠানো হয়েছে</string>
+    <string name="request_fetching_data">সাম্প্রতিক ডেটা আনা হচ্ছে...</string>
+    <string name="request_build_failed">আইকন অনুরোধ তৈরি করতে অক্ষম</string>
+    <string name="request_appfilter_failed">appfilter.xml পড়তে অক্ষম</string>
+    <string name="request_requested">আপনি ইতিমধ্যে এই আইকন অনুরোধ করেছেন এবং এটি আবার অনুরোধ করতে পারবেন না.</string>
+    <string name="request_requested_possible">আপনি ইতিমধ্যে এই আইকন অনুরোধ. আপনি কি নিশ্চিত যে আপনি এটিতে অন্য একটি অনুরোধ ব্যয় করতে চান?</string>
+    <string name="request_requested_button_cancel">ফিরে যান</string>
+    <string name="request_requested_button_confirm">যাইহোক নির্বাচন করুন</string>
+    <string name="request_email_client">আইকন অনুরোধ পাঠাতে আপনি যে অ্যাপটি ব্যবহার করতে চান সেটি বেছে নিন</string>
+    <string name="request_app_disabled">আপনি এই আইকন প্যাকের একটি পুরানো সংস্করণ ব্যবহার করছেন৷ অনুরোধ করা আইকন সর্বশেষ সংস্করণে অন্তর্ভুক্ত করা যেতে পারে. আইকন অনুরোধ করতে আপনার অ্যাপ্লিকেশন সর্বশেষ সংস্করণ আপডেট করুন.</string>
+    <string name="connection_error_long">সার্ভার থেকে ডেটা লোড করতে অক্ষম৷ অনুগ্রহ করে, আপনার নেটওয়ার্ক সংযোগ পরীক্ষা করুন.</string>
+    <string name="unable_to_load_config">সার্ভার থেকে ডেটা আনা বা পড়ার সময় একটি ত্রুটি ঘটেছে৷</string>
+    <string name="request_limit">আপনি নিয়মিত অনুরোধের সাথে শুধুমাত্র %d অনুরোধ(গুলি) করতে পারেন।</string>
+    <string name="request_used">আপনি %d আইকন(গুলি) অনুরোধ করেছেন৷</string>
+    <string name="request_limit_buy">আপনি আরো আইকন অনুরোধ করতে প্রিমিয়াম অনুরোধ কিনতে পারেন.</string>
+    <string name="request_limit_reset">প্রতিটি আপডেটে আইকন অনুরোধের সীমা রিসেট করা হবে।</string>
+
+    <!--নিয়মিত অনুরোধ-->
+    <string name="regular_request">নিয়মিত আইকন অনুরোধ</string>
+    <string name="regular_request_desc">আপনার আইকন অনুরোধ করুন, এবং বিকাশকারী আপনার অনুরোধ করা আইকন অন্তর্ভুক্ত করার চেষ্টা করবে।</string>
+    <string name="regular_request_count">মোট\n%dটি অনুরোধ</string>
+    <string name="regular_request_used">ব্যবহার করা হয়েছে\n%d অনুরোধ</string>
+    <string name="regular_request_available">উপলব্ধ\n%d অনুরোধ</string>
+
+    <!--প্রিমিয়াম অনুরোধ-->
+    <string name="premium_request">প্রিমিয়াম আইকন অনুরোধ</string>
+    <string name="premium_request_no_internet">একটি প্রিমিয়াম অনুরোধ পাঠানোর আগে নিশ্চিত করুন যে আপনার ফোন ইন্টারনেটের সাথে সংযুক্ত আছে</string>
+    <string name="premium_request_desc">প্রিমিয়াম আইকন অনুরোধ একটি পে-টু অনুরোধ। আপনি একটি প্রিমিয়াম আইকন অনুরোধ ব্যবহার করে আপনার অনুরোধ করা অ্যাপগুলি দ্রুত পেতে পারেন৷</string>
+    <string name="premium_request_buy">কিনুন</string>
+    <string name="premium_request_count">মোট\n%dটি অনুরোধ</string>
+    <string name="premium_request_used">ব্যবহার করা হয়েছে\n%d অনুরোধ</string>
+    <string name="premium_request_available">উপলব্ধ\n%d অনুরোধ</string>
+    <string name="premium_request_already_purchased">আপনি এখনও %d প্রিমিয়াম অনুরোধ আছে. আবার একটি প্রিমিয়াম অনুরোধ প্যাকেজ কেনার আগে আপনাকে সেগুলি সব ব্যবহার করতে হবে৷</string>
+    <string name="premium_request_limit">আপনার কাছে শুধুমাত্র %d প্রিমিয়াম অনুরোধ(গুলি) আছে,</string>
+    <string name="premium_request_limit1">কিন্তু আপনি %d অ্যাপ(গুলি) নির্বাচন করেছেন। \n\nআবার নিয়মিত অনুরোধ ব্যবহার করার আগে আপনাকে আপনার সমস্ত প্রিমিয়াম অনুরোধগুলি ব্যবহার করতে হবে।</string>
+    <string name="premium_request_consume_failed">প্রিমিয়াম অনুরোধ ব্যবহার করতে অক্ষম, নিশ্চিত করুন যে আপনার একটি স্থিতিশীল ইন্টারনেট সংযোগ আছে এবং আবার চেষ্টা করুন। প্রিমিয়াম অনুরোধগুলি পুনর্নির্মাণ করতে সেটিংসে যান৷</string>
+    <string name="premium_request_rebuilding">প্রিমিয়াম অনুরোধ পুনর্নির্মাণ…</string>
+    <string name="premium_request_rebuilding_empty">আপনি একটি প্রিমিয়াম অনুরোধ করেননি</string>
+    <string name="premium_request_exist">আপনি এখনও একটি প্রিমিয়াম আইকন অনুরোধ প্যাকেজ আছে. সেটিংস খুলুন, এটি পুনরুদ্ধার করতে \"পুনরুদ্ধার ক্রয়\" নির্বাচন করুন।</string>
+    <string name="premium_request_required">আইকন অনুরোধ করার জন্য আপনাকে একটি প্রিমিয়াম আইকন অনুরোধ প্যাকেজ কিনতে হবে</string>
+
+    <!--ওয়ালপেপার-->
+    <string name="wallpaper_new_added">নতুন ওয়ালপেপার</string>
+    <string name="wallpaper_already_downloaded">ওয়ালপেপার ইতিমধ্যে ডাউনলোড করা হয়েছে</string>
+    <string name="wallpaper_downloading">ওয়ালপেপার ডাউনলোড হচ্ছে…</string>
+    <string name="wallpaper_download_failed">ওয়ালপেপার ডাউনলোড করতে অক্ষম</string>
+    <string name="wallpaper_download_success">ওয়ালপেপার ডাউনলোড সফল হয়েছে</string>
+    <string name="wallpaper_loading">ওয়ালপেপার লোড হচ্ছে...</string>
+    <string name="wallpaper_applying">ওয়ালপেপার প্রয়োগ করা হচ্ছে...</string>
+    <string name="wallpaper_applied">ওয়ালপেপার প্রয়োগ করা হয়েছে</string>
+    <string name="wallpaper_apply_failed">ওয়ালপেপার প্রয়োগ করতে অক্ষম</string>
+    <string name="wallpaper_apply_cancelled">ওয়ালপেপারের আবেদন বাতিল করা হয়েছে</string>
+    <string name="connection_failed">সার্ভার থেকে ডেটা আনতে অক্ষম৷</string>
+    <string name="wallpaper_apply">ওয়ালপেপার প্রয়োগ করুন</string>
+    <string name="wallpaper_save_to_device">ওয়ালপেপার সংরক্ষণ করুন</string>
+
+    <!--প্রিসেট-->
+    <string name="presets_load_failed">প্রিসেট লোড করতে অক্ষম</string>
+    <string name="presets_storage_permission">প্রিভিউ ওয়ালপেপার লোড করার জন্য স্টোরেজ অনুমতি প্রয়োজন</string>
+    <string name="presets_required_apps">এই প্রিসেটগুলি ব্যবহার করার জন্য প্রয়োজনীয় অ্যাপগুলি</string>
+    <string name="presets_required_apps_not_installed">প্রিসেট ব্যবহার করার জন্য প্রয়োজনীয় অ্যাপ ইনস্টল করা নেই। অনুগ্রহ করে অনুপস্থিত প্রয়োজনীয় অ্যাপ ইনস্টল করুন এবং আবার চেষ্টা করুন।</string>
+
+    <!--পছন্দসমূহ-->
+    <string name="pref_data_header">ডেটা এবং ক্যাশে</string>
+    <string name="pref_data_cache">ক্যাশে সাফ করুন</string>
+    <string name="pref_data_cache_desc">আপনার স্টোরেজ থেকে ইমেজ ক্যাশে সরান, এই অ্যাপ থেকে একটি ছবি বাছাই করার সময় তৈরি করা, মিস করা অ্যাপের অনুরোধ করা এবং ক্লাউড ওয়ালপেপার থাম্বনেইল লোড করার পরে।</string>
+    <string name="pref_data_cache_size">ক্যাশে সাইজ: %s</string>
+    <string name="pref_data_cache_clear_dialog">আপনি কি সত্যিই ক্যাশে সাফ করতে চান?</string>
+    <string name="pref_data_cache_cleared">ক্যাশে সাফ করা হয়েছে</string>
+    <string name="pref_data_request">আইকন অনুরোধ ডেটা সাফ করুন</string>
+    <string name="pref_data_request_desc">আইকন অনুরোধের ডেটা সরান, আইকন অনুরোধ থেকে মিস করা অ্যাপগুলির অনুরোধ করার পরে তৈরি৷</string>
+    <string name="pref_data_request_clear_dialog">আপনি কি সত্যিই আইকন অনুরোধ ডেটা সাফ করতে চান?</string>
+    <string name="pref_data_request_cleared">আইকন অনুরোধ ডেটা সাফ করা হয়েছে</string>
+    <string name="pref_premium_request_header">প্রিমিয়াম আইকন অনুরোধ</string>
+    <string name="pref_premium_request_restore">কেনাকাটা পুনরুদ্ধার করুন</string>
+    <string name="pref_premium_request_restore_desc">আইকন প্যাক পুনরায় ইনস্টল করার পরে প্রিমিয়াম অনুরোধ প্যাকেজ পুনরুদ্ধার করুন</string>
+    <string name="pref_premium_request_restore_success">প্রিমিয়াম অনুরোধ পুনরুদ্ধার করা হয়েছে</string>
+    <string name="pref_premium_request_restore_empty">আপনার কোনো কেনা প্যাকেজ নেই</string>
+    <string name="pref_premium_request_rebuild">প্রিমিয়াম আইকন অনুরোধ পুনর্নির্মাণ</string>
+    <string name="pref_premium_request_rebuild_desc">তাদের পুনরায় পাঠাতে সমস্ত প্রিমিয়াম আইকন অনুরোধ ডেটা সংগ্রহ করুন</string>
+    <string name="pref_theme_header">থিম</string>
+    <string name="pref_theme_dark">ডার্ক থিম</string>
+    <string name="pref_theme_dark_desc">অ্যাপ্লিকেশন থিম জন্য গাঢ় রং ব্যবহার করুন</string>
+    <string name="pref_notifications_header">বিজ্ঞপ্তি</string>
+    <string name="pref_notifications">বিজ্ঞপ্তি পান</string>
+    <string name="pref_wallpaper_header">ওয়ালপেপার</string>
+    <string name="pref_wallpaper_location">ওয়ালপেপার সংরক্ষণ অবস্থান</string>
+    <string name="pref_language_header">ভাষা</string>
+    <string name="pref_others_header">অন্যরা</string>
+    <string name="pref_others_report_bugs">বাগ রিপোর্ট করুন</string>
+    <string name="pref_others_changelog">চেঞ্জলগ</string>
+    <string name="pref_others_reset_tutorial">টিউটোরিয়াল রিসেট করুন</string>
+    <string name="pref_others_reset_tutorial_reset">টিউটোরিয়াল রিসেট</string>
+
+    <!--থিম-->
+    <string name="theme_name_auto">অটো</string>
+    <string name="theme_name_light">আলো</string>
+    <string name="theme_name_dark">অন্ধকার</string>
+    <string name="theme_name_material_you">উপাদান আপনি</string>
+
+    <!--অনুমতি-->
+    <string name="permission_storage_denied">ওয়ালপেপার সংরক্ষণ করার জন্য স্টোরেজ অনুমতি প্রয়োজন</string>
+    <string name="permission_notification_denied_1">বিকাশকারীর কাছ থেকে বিজ্ঞপ্তি পেতে বিজ্ঞপ্তি অনুমতি প্রয়োজন</string>
+    <string name="permission_notification_denied_2">অ্যাপ সেটিংস থেকে বিজ্ঞপ্তি সক্রিয় করুন</string>
+
+    <!--অভিপ্রায়-->
+    <string name="app_client">অ্যাপ নির্বাচন করুন</string>
+    <string name="no_email_app">ইমেল পাঠানোর জন্য কোন আবেদন নেই</string>
+    <string name="no_browser">URL খোলার জন্য কোনো অ্যাপ্লিকেশন নেই</string>
+    <string name="intent_email_failed">ইমেল অ্যাপ্লিকেশন প্রদর্শন করতে অক্ষম</string>
+    <string name="intent_email_supported">সমর্থিত</string>
+    <string name="intent_email_recommended">প্রস্তাবিত</string>
+    <string name="intent_email_not_supported">সমর্থিত নয়</string>
+    <string name="intent_email_not_supported_message">একটি অসমর্থিত ইমেল ক্লায়েন্ট নির্বাচন করা হয়েছে, অনুগ্রহ করে অন্য একটি ইমেল ক্লায়েন্ট নির্বাচন করুন৷</string>
+
+    <!--সম্পর্কে-->
+    <string name="about_contributors_title">অবদানকারী</string>
+
+    <!--বাগ রিপোর্ট করুন-->
+    <string name="report_bugs_desc">আপনি যে ধরনের সমস্যা রিপোর্ট করতে চান তার বর্ণনা দিন</string>
+    <string name="report_bugs_desc_hint">বর্ণনা</string>
+    <string name="report_bugs_desc_empty">একটি বর্ণনা দিন</string>
+    <string name="report_bugs_building">বিল্ডিং কার্যকলাপ তালিকা…</string>
+    <string name="report_bugs_failed">কার্যকলাপ তালিকা তৈরি করতে অক্ষম</string>
+    <string name="report_bugs_send">রিপোর্ট পাঠান</string>
+
+    <!--সাপোর্ট ডেভেলপমেন্ট-->
+    <string name="donation_success">একটি দান করার জন্য আপনাকে ধন্যবাদ. আমি এটা ভাল জন্য ব্যবহার করব.</string>
+
+    <!--ক্র্যাশ রিপোর্ট-->
+    <string name="crash_report">ক্র্যাশ রিপোর্ট</string>
+    <string name="crash_report_message">দুর্ভাগ্যবশত, %s ক্র্যাশ হয়েছে। বিকাশকারীকে সমস্যাটি সমাধান করতে সাহায্য করতে নীচে প্রতিবেদন পাঠান বেছে নিন।</string>
+    <string name="crash_report_send">রিপোর্ট পাঠান</string>
+
+    <!--ড্রয়ারটগল-->
+    <string name="txt_open">খোলা</string>
+    <string name="txt_close">বন্ধ</string>
+
+    <string name="txt_new">নতুন</string>
+
+    <!--স্ক্রিন রিডারদের জন্য বিষয়বস্তুর বিবরণ-->
+    <string name="icon_search_close_button_content_description">আইকন অনুসন্ধান বন্ধ করুন</string>
+    <string name="icon_request_submit_button_content_description">একটি আইকন অনুরোধ জমা দিন</string>
+    <string name="icon_list_content_description">আইকন প্যাকে অন্তর্ভুক্ত আইকনগুলির তালিকা</string>
+    <string name="icon_search_list_content_description">আইকনগুলির তালিকা যা সার্চ টার্মের সাথে মেলে</string>
+    <string name="about_item_social_content_description">আইকন প্যাকের লেখকের একটি অনলাইন প্রোফাইলের একটি লিঙ্ক:</string>
+    <string name="share_icon_pack_button_content_description">এই অ্যাপটি কারো সাথে শেয়ার করুন</string>
+
+    <!--গোপনীয়তা নীতি-->
+    <string name="privacy_policy">গোপনীয়তা নীতি</string>
+    <string name="privacy_policy_desc">আপনার গোপনীয়তা আমাদের জন্য গুরুত্বপূর্ণ. আমরা কীভাবে আপনার ডেটা পরিচালনা করি তা বুঝতে অনুগ্রহ করে আমাদের সম্পর্কে গোপনীয়তা নীতি পড়ুন।</string>
+
+    <!--শর্তাবলী-->
+    <string name="terms_conditions">শর্তাবলী</string>
+
+    <!--অনুরোধ-->
+    <string name="request_limit_title">বিনামূল্যে অনুরোধ সীমা</string>
+    <string name="request_limit_content">আপনার %dটি বিনামূল্যের অনুরোধ বাকি আছে। সীমাহীন অনুরোধের জন্য প্রিমিয়ামে আপগ্রেড করার কথা বিবেচনা করুন।</string>
+    <string name="request_limit_reached">বিনামূল্যে অনুরোধ সীমা পৌঁছেছে. আরো অনুরোধের জন্য প্রিমিয়াম আপগ্রেড করুন.</string>
+    <string name="request_limit_remaining">আপনি আরও %dটি আইকন নির্বাচন করতে পারেন</string>
+
+    <!--অ্যাপ সংস্করণ-->
+    <string name="version">সংস্করণ</string>
+	
+    <!--কাস্টম-->
+    <string name="home_kustom_desc">%s এর জন্য ম্যাচিং ওয়েদার কম্পোনেন্ট</string>
+    <string name="kustom_widgets">উইজেট</string>
+    <string name="kustom_wallpapers">ওয়ালপেপার</string>
+    <string name="kustom_lockscreens">লকস্ক্রিন</string>
+    <string name="kustom_komponents">কম্পোনেন্ট</string>
+
+    <!--সম্মতি ডায়ালগের অনুরোধ করুন-->
+    <string name="request_consent_title">ডেটা সংগ্রহের সম্মতি</string>
+    <string name="request_consent_content">আপনার আইকন অনুরোধ প্রক্রিয়া করার জন্য, আমাদের আপনার ইনস্টল করা অ্যাপ এবং ডিভাইসের বিবরণ (যেমন স্ক্রীনের মাত্রা এবং Android সংস্করণ) সম্পর্কে তথ্য সংগ্রহ করতে হবে। এটি আমাদের আইকনগুলি ডিজাইন করতে সাহায্য করে যা আপনার ডিভাইসের জন্য সবচেয়ে ভাল কাজ করে৷\n\nআরো তথ্যের জন্য আপনি সম্পর্কে বিভাগে আমাদের গোপনীয়তা নীতি পর্যালোচনা করতে পারেন৷</string>
+    <string name="request_consent_accept">স্বীকার করুন</string>
+    <string name="request_consent_deny">অস্বীকার করুন</string>
+
+    <!--নেভিগেশন শৈলী-->
+    <string name="pref_navigation_style">নেভিগেশন বার</string>
+
+    <!--অনুসন্ধান করুন-->
+    <string name="search_apps">অ্যাপস অনুসন্ধান করুন</string>
+
+</resources>

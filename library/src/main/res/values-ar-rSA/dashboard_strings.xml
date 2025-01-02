@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--عنوان شاشة البداية-->
+    <string name="splash_screen_title">لوحة تحكم كاندي بار</string>
+
+    <!--عرض التنقل-->
+    <string name="navigation_view_home">بيت</string>
+    <string name="navigation_view_apply">يتقدم</string>
+    <string name="navigation_view_icons">أيقونات</string>
+    <string name="navigation_view_request">طلب أيقونة</string>
+    <string name="navigation_view_wallpapers">خلفيات</string>
+    <string name="navigation_view_kustom">مخصص</string>
+    <string name="navigation_view_settings">إعدادات</string>
+    <string name="navigation_view_faqs">الأسئلة الشائعة</string>
+    <string name="navigation_view_about">عن</string>
+    <string name="navigation_view_donate">دعم التنمية</string>
+
+    <!--موزي-->
+    <string name="muzei_settings">إعدادات موزي</string>
+    <string name="minute">دقيقة</string>
+    <string name="hour">ساعة</string>
+    <string name="save_setting">يحفظ</string>
+    <string name="muzei_refresh_duration">مدة التحديث</string>
+    <string name="muzei_wifi_only">قم بالتحديث من شبكة Wi-Fi فقط</string>
+    <string name="muzei_downloaded_only">تحميل الخلفيات التي تم تنزيلها فقط</string>
+    <string name="muzei_settings_ignored">لا تحتوي حزمة الأيقونات على خلفيات، وتم تجاهل الإعدادات.</string>
+    <string name="muzei_settings_saved">تم حفظ الإعدادات</string>
+
+    <!--قائمة طعام-->
+    <string name="menu_search">يبحث</string>
+    <string name="menu_save">حفظ إلى الجهاز</string>
+    <string name="menu_select_all">حدد الكل</string>
+    <string name="menu_delete">يمسح</string>
+
+    <string name="menu_wallpaper_crop">خلفيات المحاصيل</string>
+    <string name="menu_apply_homescreen">الشاشة الرئيسية</string>
+    <string name="menu_apply_lockscreen">شاشة القفل</string>
+    <string name="menu_apply_homescreen_lockscreen">الشاشة الرئيسية وشاشة القفل</string>
+
+    <!--الحوار-->
+    <string name="open">يفتح</string>
+    <string name="close">يغلق</string>
+    <string name="clear">واضح</string>
+    <string name="ok">نعم</string>
+    <string name="install">ثَبَّتَ</string>
+    <string name="donate">يتبرع</string>
+    <string name="update">تحديث</string>
+
+    <string name="search_noresult">لم يتم العثور على نتيجة لـ \"%s\"</string>
+    <string name="search_faqs">سؤال أو إجابة</string>
+    <string name="search_icon">اسم الأيقونة</string>
+    <string name="search_wallpapers">اسم ورق الجدران</string>
+
+    <!--تحديث-->
+    <string name="checking_for_update">جارٍ التحقق من التحديث…</string>
+    <string name="update_available">التحديث متاح!</string>
+    <string name="no_update_available">أنت تستخدم أحدث إصدار!</string>
+
+    <!--نسخة سجل التغيير-->
+    <string name="changelog_version">إصدار</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">غير قادر على تحميل منتجات الشراء داخل التطبيق</string>
+
+    <!--رخصة-->
+    <string name="license_checking">التحقق من الترخيص…</string>
+    <string name="license_check">فحص الترخيص</string>
+    <string name="license_check_success">نجاح التحقق من الترخيص. شكرًا لك على تنزيل التطبيق من متجر Play.</string>
+    <string name="license_check_failed">فشل التحقق من الترخيص؛ لم تقم بتنزيل التطبيق من متجر Play. لن تتمكن من استخدامه.</string>
+    <string name="license_check_retry">غير قادر على التحقق من الترخيص، يرجى المحاولة مرة أخرى خلال لحظات قليلة.</string>
+
+    <!--التحقق من تثبيت متجر Play-->
+    <string name="playstore_check">فحص متجر اللعب</string>
+    <string name="playstore_check_success">شكرًا لك على تثبيت التطبيق من متجر Google Play. يتمتع!</string>
+    <string name="playstore_check_failed">يبدو أنك قمت بتثبيت حزمة الرموز هذه من خارج متجر Google Play.
+        لن تتمكن من استخدامه.</string>
+
+    <!--يشارك-->
+    <string name="share_app_title">يو! تحقق من %s</string>
+    <string name="share_app_body">اطلع على %1$s Icon Pack على متجر Play: %2$s</string>
+
+    <!--اضغط على مقدمة-->
+    <string name="tap_intro_home_navigation">درج التنقل</string>
+    <string name="tap_intro_home_navigation_desc">انقر هنا أو اسحب من الحافة اليسرى للشاشة لفتح درج التنقل</string>
+    <string name="tap_intro_home_apply">تطبيق حزمة أيقونة</string>
+    <string name="tap_intro_home_apply_desc">انقر هنا لتطبيق %s على المشغل الحالي الخاص بك. اضغط لفترة طويلة لتطبيقها على قاذفات أخرى.</string>
+    <string name="tap_intro_icons_search">يبحث</string>
+    <string name="tap_intro_icons_search_desc">انقر هنا للبحث عن أيقونة</string>
+    <string name="tap_intro_request_search">البحث في التطبيقات المفقودة</string>
+    <string name="tap_intro_request_search_desc">انقر هنا للبحث في تطبيقاتك المثبتة عن الرموز المفقودة لطلب الرمز المحدد</string>
+    <string name="tap_intro_request_select">حدد التطبيق الفائت</string>
+    <string name="tap_intro_request_select_desc">انقر هنا لتحديد التطبيق الفائت لطلب الرمز</string>
+    <string name="tap_intro_request_select_all">حدد جميع التطبيقات الفائتة</string>
+    <string name="tap_intro_request_select_all_desc">انقر هنا لتحديد جميع التطبيقات الفائتة لطلب الرمز</string>
+    <string name="tap_intro_request_send">إرسال طلب الرمز</string>
+    <string name="tap_intro_request_send_desc">انقر هنا لإرسال التطبيقات الفائتة المحددة</string>
+    <string name="tap_intro_request_premium">طلب أيقونة متميزة</string>
+    <string name="tap_intro_request_premium_desc">انقر هنا لشراء حزمة طلب الأيقونة المتميزة، مع طلب الأيقونة المميزة، يمكنك الحصول على التطبيقات المطلوبة بشكل أسرع.</string>
+    <string name="tap_intro_wallpapers_option">خيارات ورق الحائط</string>
+    <string name="tap_intro_wallpapers_option_desc">انقر مع الاستمرار هنا لإظهار خيارات الخلفية؛ %s يستخدم ورق الحائط.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">تحميل أو</string>
+    <string name="tap_intro_wallpapers_preview">معاينة خلفية الشاشة</string>
+    <string name="tap_intro_wallpapers_preview_desc">انقر هنا لمعاينة الحجم الكامل لخلفية الشاشة</string>
+    <string name="tap_intro_wallpaper_preview_save">حفظ ورق الجدران</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">انقر هنا لتنزيل الخلفية وحفظها على جهازك حتى تتمكن من استخدامها لاحقًا</string>
+    <string name="tap_intro_wallpaper_preview_apply">تطبيق ورق الجدران</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">انقر هنا لتعيين خلفية الشاشة كخلفية للشاشة الرئيسية</string>
+
+    <!--بيت-->
+    <string name="home_more_apps_header">المزيد من التطبيقات</string>
+    <string name="home_more_apps">تحقق من المزيد من حزمة الأيقونات على متجر Google Play</string>
+    <string name="home_rate">معدل</string>
+    <string name="home_share">يشارك</string>
+    <string name="home_check_update">تحديث</string>
+    <string name="home_apply_icon_pack">تطبيق %s</string>
+    <string name="home_donate">يتبرع</string>
+    <string name="home_donate_desc">شجع المطور على إنشاء المزيد من حزم الأيقونات</string>
+    <string name="home_icons">أيقونات</string>
+    <string name="home_icon_dimension">أبعاد الأيقونة %s بكسل</string>
+    <string name="home_loud_wallpapers">%d خلفيات سحابية</string>
+    <string name="home_muzei">موزي خلفية حية</string>
+    <string name="home_icon_request_installed_apps">إجمالي\n%d من التطبيقات المثبتة</string>
+    <string name="home_icon_request_themed_apps">تطبيقات ذات سمة\n%d</string>
+    <string name="home_icon_request_missed_apps">تم تفويت\n%d من التطبيقات</string>
+
+    <!--يتقدم-->
+    <string name="apply_installed">قاذفة المثبتة</string>
+    <string name="apply_installed_launchers">قاذفات المثبتة</string>
+    <string name="apply_supported">قاذفات المدعومة</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">لم يتم تثبيت مشغل %s. يمكنك العثور عليه وتثبيته من Amazon AppStore أو من الموارد والمتاجر المفضلة لديك.</string>
+    <string name="apply_manual">لا يدعم مشغل %1$s التطبيق المباشر، ولكن يمكنك تطبيق %2$s يدويًا من إعدادات المشغل.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso لا يدعم التطبيق المباشر ولكن يمكنك اتباع الخطوات التالية:</string>
+    <string name="apply_manual_kvaesitso_step_1">افتح إعدادات Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">انقر على \"الشبكة والأيقونات\"</string>
+    <string name="apply_manual_kvaesitso_step_3">اضغط على \"حزمة الأيقونات\"</string>
+    <string name="apply_manual_kvaesitso_step_4">اختر %s من القائمة</string>
+    <string name="apply_manual_kvaesitso_step_5">اضغط على أيقونة فرشاة الرسم لتمكين شكل الخلفية أو تعطيله</string>
+    <string name="apply_manual_kiss">لا يدعم KISS التطبيق المباشر، ولكن يمكنك اتباع الخطوات التالية:</string>
+    <string name="apply_manual_kiss_step_1">افتح إعدادات KISS</string>
+    <string name="apply_manual_kiss_step_2">انقر على \"واجهة المستخدم\"</string>
+    <string name="apply_manual_kiss_step_3">اضغط على \"حزمة الأيقونات\"</string>
+    <string name="apply_manual_kiss_step_4">اختر %s من القائمة</string>
+    <string name="apply_manual_samsung_oneui">%1$s لا يدعم التطبيق المباشر، ولكن بدءًا من %2$s يمكنك تطبيق الرموز باستخدام تطبيق مصاحب.</string>
+    <string name="apply_manual_samsung_oneui_too_old">الإصدار الحالي من %s قديم جدًا. يرجى التحديث إلى Android 12 أو الأحدث لتتمكن من تطبيق الرموز مباشرة. بدلا من ذلك، يمكنك تثبيت قاذفة مختلفة.</string>
+    <string name="apply_manual_samsung_oneui_step_1">افتح %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">قم بتنزيل التطبيق %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">انقر على \"الرمز\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">انقر على \"إنشاء جديد\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">اضغط على زر \"Iconpack\" الأزرق</string>
+    <string name="apply_manual_samsung_oneui_step_6">اختر %s من القائمة</string>
+    <string name="apply_manual_samsung_oneui_step_7">كرر هذه الخطوات في كل مرة تقوم فيها بتحديث %s حيث لن يتم تعيين الرموز الجديدة تلقائيًا.</string>
+    <string name="apply_manual_hios">لا يدعم مشغل HiOS التطبيق المباشر، ولكن يمكنك اتباع الخطوات التالية:</string>
+    <string name="apply_manual_hios_step_1">افتح \"الإعدادات\"</string>
+    <string name="apply_manual_hios_step_2">انقر على \"المظهر وشاشة القفل\"</string>
+    <string name="apply_manual_hios_step_3">انقر على \"موضوعي\"</string>
+    <string name="apply_manual_hios_step_4">انقر على \"حزمة الأيقونات\"</string>
+    <string name="apply_manual_hios_step_5">اضغط على %s</string>
+    <string name="apply_manual_oxygen_os_step_1">اضغط لفترة طويلة على الشاشة الرئيسية الخاصة بك</string>
+    <string name="apply_manual_oxygen_os_step_2">انقر على \"إعدادات الصفحة الرئيسية\"</string>
+    <string name="apply_manual_oxygen_os_step_3">انقر على \"حزمة الأيقونات\"</string>
+    <string name="apply_manual_oxygen_os_step_4">اضغط على %s</string>
+    <string name="apply_manual_color_os_step_1">اضغط لفترة طويلة على الشاشة الرئيسية الخاصة بك</string>
+    <string name="apply_manual_color_os_step_2">انقر على \"الأيقونات\"</string>
+    <string name="apply_manual_color_os_step_3">قم بالتمرير إلى يمين الزر \"مخصص\" (هذه قائمة قابلة للتمرير!)</string>
+    <string name="apply_manual_color_os_step_4">اضغط على %s</string>
+    <string name="apply_manual_before">هذا الإصدار من Before Launcher لا يدعم بعد تطبيق الرموز مباشرة. بدلاً من ذلك، اتبع الخطوات التالية:</string>
+    <string name="apply_manual_before_step_1">اسحب لليسار على الشاشة الرئيسية</string>
+    <string name="apply_manual_before_step_2">انقر على \"الإعدادات\"</string>
+    <string name="apply_manual_before_step_3">انقر على \"الأنماط والسمات\"</string>
+    <string name="apply_manual_before_step_4">اضغط على \"أنماط وحزم الأيقونات\"</string>
+    <string name="apply_manual_before_step_5">اضغط على %s</string>
+    <string name="apply_manual_nothing_step_1">افتح \"الإعدادات\"</string>
+    <string name="apply_manual_nothing_step_2">انقر على \"التخصيص\"</string>
+    <string name="apply_manual_nothing_step_3">انقر على \"حزمة الأيقونات\"</string>
+    <string name="apply_manual_nothing_step_4">اضغط على %s</string>
+    <string name="apply_launch_failed">غير قادر على تشغيل إعدادات %s</string>
+    <string name="apply_launcher_not_installed">لم يتم تثبيت مشغل %s. هل تريد فتح متجر Google Play لتنزيله وتثبيته؟</string>
+    <string name="apply_launcher_not_installable">لم يتم تثبيت مشغل %s. يرجى المحاولة مرة أخرى بعد تثبيت المشغل.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager غير متوفر على هذا الجهاز</string>
+    <string name="apply_cmtheme_failed">غير قادر على تشغيل CM Theme Manager، يمكنك محاولة تطبيق Icon Pack يدويًا من الإعدادات.</string>
+    <string name="apply_lg_home">لتطبيق حزمة الأيقونات هذه، افتح الإعدادات - العرض - الشاشة الرئيسية - السمة</string>
+    <string name="apply_lg_home_not_available">LG Home غير متوفر على هذا الجهاز</string>
+    <string name="apply_lg_home_failed">غير قادر على تشغيل إعدادات LG Home، يمكنك محاولة تطبيق Icon Pack يدويًا من الإعدادات.</string>
+    <string name="apply_lg_home_nougat">لم يعد LG Home الذي يعمل بنظام Android Nougat يدعم Icon Pack. أنت بحاجة إلى مشغل مخصص لاستخدام Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">لا يدعم %s Launcher أي حزم أيقونات، لذا لا يمكنك استخدام حزمة الأيقونات هذه مع هذا المشغل. يمكنك تجربة تطبيق تابع لجهة خارجية لاستخدام حزمة الأيقونات هذه في مشغل %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">مشغل %1$s غير متوافق مع %2$s، ولكنه قد يكون متوافقًا مع الإصدارات الأحدث</string>
+
+    <!--أيقونات-->
+    <string name="icons_load_failed">غير قادر على تحميل الرموز</string>
+    <string name="icon_shape">شكل الأيقونة</string>
+    <string name="items_selected">تم تحديد %d</string>
+
+    <!--طلب-->
+    <string name="request_title">طلب أيقونة</string>
+    <string name="request_terms">قبل متابعة طلب الرمز، يرجى ملاحظة أنه ستتم مراجعة طلبك وفقًا لإرشاداتنا. قد تتم معالجة الطلبات المميزة بشكل أسرع.</string>
+    <string name="request_not_selected">حدد التطبيقات التي تريد طلبها</string>
+    <string name="request_not_requested">لم يطلب</string>
+    <string name="request_already_requested">طلبت بالفعل</string>
+    <string name="request_not_available">لا يمكن طلبها</string>
+    <string name="request_building">طلب بناء…</string>
+    <string name="request_pacific_sending">جارٍ إرسال الطلب إلى مدير المحيط الهادئ...</string>
+    <string name="request_pacific_error">حدث خطأ أثناء إرسال طلب إلى Pacific Manager. الخطأ هو %s</string>
+    <string name="request_pacific_success">تم إرسال الطلب بنجاح إلى مدير المحيط الهادئ</string>
+    <string name="request_custom_error">حدث خطأ أثناء إرسال طلب الرمز. إذا استمر هذا الخطأ، فاتصل بالمطور. %s</string>
+    <string name="request_custom_success">تم إرسال طلب الرمز بنجاح</string>
+    <string name="request_fetching_data">جارٍ جلب أحدث البيانات...</string>
+    <string name="request_build_failed">غير قادر على بناء طلب الرمز</string>
+    <string name="request_appfilter_failed">غير قادر على قراءة appfilter.xml</string>
+    <string name="request_requested">لقد طلبت هذا الرمز بالفعل ولا يمكنك طلبه مرة أخرى.</string>
+    <string name="request_requested_possible">لقد طلبت هذا الرمز بالفعل. هل أنت متأكد أنك تريد إنفاق طلب آخر عليه؟</string>
+    <string name="request_requested_button_cancel">عُد</string>
+    <string name="request_requested_button_confirm">اختر على أي حال</string>
+    <string name="request_email_client">اختر التطبيق الذي تريد استخدامه لإرسال طلب الرمز</string>
+    <string name="request_app_disabled">أنت تستخدم إصدارًا أقدم من حزمة الرموز هذه. قد يتم تضمين الرموز المطلوبة في الإصدار الأحدث. يرجى تحديث تطبيقك إلى الإصدار الأحدث لطلب الرموز.</string>
+    <string name="connection_error_long">غير قادر على تحميل البيانات من الخادم. من فضلك، تحقق من اتصالك بالشبكة.</string>
+    <string name="unable_to_load_config">حدث خطأ أثناء جلب البيانات أو قراءتها من الخادم.</string>
+    <string name="request_limit">يمكنك فقط تقديم %d طلب (طلبات) مع الطلب العادي.</string>
+    <string name="request_used">لقد طلبت %d أيقونة (أيقونات).</string>
+    <string name="request_limit_buy">يمكنك شراء الطلبات المميزة لطلب المزيد من الرموز.</string>
+    <string name="request_limit_reset">سيتم إعادة تعيين حد طلب الرمز في كل تحديث.</string>
+
+    <!--طلب منتظم-->
+    <string name="regular_request">طلب أيقونة عادية</string>
+    <string name="regular_request_desc">احصل على الرمز الخاص بك المطلوب، وسيحاول المطور تضمين الرموز التي طلبتها.</string>
+    <string name="regular_request_count">إجمالي\n%d طلب</string>
+    <string name="regular_request_used">تم استخدام\n%d طلب</string>
+    <string name="regular_request_available">متوفر\n%d طلب</string>
+
+    <!--طلب قسط-->
+    <string name="premium_request">طلب أيقونة متميزة</string>
+    <string name="premium_request_no_internet">تأكد من اتصال هاتفك بالإنترنت قبل إرسال طلب مميز</string>
+    <string name="premium_request_desc">طلب الرمز المميز هو طلب الدفع. يمكنك الحصول على تطبيقاتك المطلوبة بشكل أسرع باستخدام طلب رمز مميز.</string>
+    <string name="premium_request_buy">يشتري</string>
+    <string name="premium_request_count">إجمالي\n%d طلب</string>
+    <string name="premium_request_used">تم استخدام\n%d طلب</string>
+    <string name="premium_request_available">متوفر\n%d طلب</string>
+    <string name="premium_request_already_purchased">لا يزال لديك %d طلب مميز. تحتاج إلى استخدامها جميعًا قبل شراء حزمة الطلب المميزة مرة أخرى.</string>
+    <string name="premium_request_limit">لديك فقط %d طلب (طلبات) مميزة،</string>
+    <string name="premium_request_limit1">لكنك قمت بتحديد %d تطبيق (تطبيقات). \n\nتحتاج إلى استخدام جميع طلباتك المميزة قبل استخدام الطلب العادي مرة أخرى.</string>
+    <string name="premium_request_consume_failed">غير قادر على استخدام Premium Request، تأكد من أن لديك اتصالاً ثابتًا بالإنترنت وحاول مرة أخرى. انتقل إلى الإعدادات لإعادة إنشاء الطلبات المميزة.</string>
+    <string name="premium_request_rebuilding">إعادة بناء الطلب المميز...</string>
+    <string name="premium_request_rebuilding_empty">لم تقم بتقديم طلب مميز</string>
+    <string name="premium_request_exist">لا يزال لديك حزمة طلب أيقونة مميزة. افتح الإعدادات، واختر \"استعادة المشتريات\" لاستعادتها.</string>
+    <string name="premium_request_required">تحتاج إلى شراء حزمة طلب رمز مميز لتقديم طلبات الرمز</string>
+
+    <!--خلفيات-->
+    <string name="wallpaper_new_added">خلفية جديدة</string>
+    <string name="wallpaper_already_downloaded">تم تنزيل الخلفية بالفعل</string>
+    <string name="wallpaper_downloading">جارٍ تنزيل الخلفية…</string>
+    <string name="wallpaper_download_failed">غير قادر على تنزيل الخلفية</string>
+    <string name="wallpaper_download_success">تم تنزيل الخلفية بنجاح</string>
+    <string name="wallpaper_loading">جارٍ تحميل الخلفية…</string>
+    <string name="wallpaper_applying">جارٍ تطبيق الخلفية…</string>
+    <string name="wallpaper_applied">تم تطبيق ورق الحائط</string>
+    <string name="wallpaper_apply_failed">غير قادر على تطبيق خلفية الشاشة</string>
+    <string name="wallpaper_apply_cancelled">تم إلغاء تطبيق الخلفية</string>
+    <string name="connection_failed">غير قادر على جلب البيانات من الخادم</string>
+    <string name="wallpaper_apply">تطبيق ورق الجدران</string>
+    <string name="wallpaper_save_to_device">حفظ ورق الجدران</string>
+
+    <!--الإعدادات المسبقة-->
+    <string name="presets_load_failed">غير قادر على تحميل الإعدادات المسبقة</string>
+    <string name="presets_storage_permission">هناك حاجة إلى إذن التخزين لتحميل خلفية المعاينة</string>
+    <string name="presets_required_apps">التطبيقات المطلوبة لاستخدام هذه الإعدادات المسبقة</string>
+    <string name="presets_required_apps_not_installed">لم يتم تثبيت التطبيقات المطلوبة لاستخدام الإعداد المسبق. الرجاء تثبيت التطبيقات المطلوبة المفقودة والمحاولة مرة أخرى.</string>
+
+    <!--التفضيلات-->
+    <string name="pref_data_header">البيانات وذاكرة التخزين المؤقت</string>
+    <string name="pref_data_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="pref_data_cache_desc">قم بإزالة ذاكرة التخزين المؤقت للصور من وحدة التخزين الخاصة بك، والتي تم إنشاؤها عند اختيار صورة من هذا التطبيق، وطلب التطبيقات الفائتة، وبعد تحميل الصور المصغرة لخلفية السحابة.</string>
+    <string name="pref_data_cache_size">حجم ذاكرة التخزين المؤقت: %s</string>
+    <string name="pref_data_cache_clear_dialog">هل تريد حقا مسح ذاكرة التخزين المؤقت؟</string>
+    <string name="pref_data_cache_cleared">تم مسح ذاكرة التخزين المؤقت</string>
+    <string name="pref_data_request">مسح بيانات طلب الرمز</string>
+    <string name="pref_data_request_desc">إزالة بيانات طلب الرمز، التي تم إنشاؤها بعد طلب التطبيقات الفائتة من طلب الرمز.</string>
+    <string name="pref_data_request_clear_dialog">هل تريد حقًا مسح بيانات طلب الرمز؟</string>
+    <string name="pref_data_request_cleared">تم مسح بيانات طلب الرمز</string>
+    <string name="pref_premium_request_header">طلب أيقونة متميزة</string>
+    <string name="pref_premium_request_restore">استعادة المشتريات</string>
+    <string name="pref_premium_request_restore_desc">قم باستعادة حزمة الطلب المميزة بعد إعادة تثبيت حزمة الأيقونات</string>
+    <string name="pref_premium_request_restore_success">تمت استعادة طلب قسط</string>
+    <string name="pref_premium_request_restore_empty">ليس لديك أي حزم تم شراؤها</string>
+    <string name="pref_premium_request_rebuild">إعادة بناء طلب أيقونة مميزة</string>
+    <string name="pref_premium_request_rebuild_desc">اجمع كل بيانات طلب الأيقونة المميزة لإعادة إرسالها</string>
+    <string name="pref_theme_header">سمة</string>
+    <string name="pref_theme_dark">موضوع الظلام</string>
+    <string name="pref_theme_dark_desc">استخدم اللون الداكن لموضوع التطبيق</string>
+    <string name="pref_notifications_header">إشعارات</string>
+    <string name="pref_notifications">تلقي الإخطارات</string>
+    <string name="pref_wallpaper_header">ورق جدران</string>
+    <string name="pref_wallpaper_location">خلفية حفظ الموقع</string>
+    <string name="pref_language_header">لغة</string>
+    <string name="pref_others_header">آحرون</string>
+    <string name="pref_others_report_bugs">الإبلاغ عن الأخطاء</string>
+    <string name="pref_others_changelog">سجل التغيير</string>
+    <string name="pref_others_reset_tutorial">إعادة تعيين البرنامج التعليمي</string>
+    <string name="pref_others_reset_tutorial_reset">إعادة تعيين البرنامج التعليمي</string>
+
+    <!--المواضيع-->
+    <string name="theme_name_auto">آلي</string>
+    <string name="theme_name_light">ضوء</string>
+    <string name="theme_name_dark">مظلم</string>
+    <string name="theme_name_material_you">المادة أنت</string>
+
+    <!--إذن-->
+    <string name="permission_storage_denied">إذن التخزين مطلوب لحفظ ورق الحائط</string>
+    <string name="permission_notification_denied_1">هناك حاجة إلى إذن الإخطار لتلقي الإخطارات من المطور</string>
+    <string name="permission_notification_denied_2">تمكين الإخطارات من إعدادات التطبيق</string>
+
+    <!--نية-->
+    <string name="app_client">اختر التطبيق</string>
+    <string name="no_email_app">لا يوجد تطبيق لإرسال البريد الإلكتروني</string>
+    <string name="no_browser">لا يوجد تطبيق لفتح URL</string>
+    <string name="intent_email_failed">غير قادر على عرض تطبيق البريد الإلكتروني</string>
+    <string name="intent_email_supported">المدعومة</string>
+    <string name="intent_email_recommended">مُستَحسَن</string>
+    <string name="intent_email_not_supported">غير مدعوم</string>
+    <string name="intent_email_not_supported_message">تم تحديد عميل بريد إلكتروني غير مدعوم، يرجى تحديد عميل بريد إلكتروني آخر</string>
+
+    <!--عن-->
+    <string name="about_contributors_title">المساهمين</string>
+
+    <!--الإبلاغ عن الأخطاء-->
+    <string name="report_bugs_desc">يرجى تقديم وصف لنوع المشكلة التي تريد الإبلاغ عنها</string>
+    <string name="report_bugs_desc_hint">وصف</string>
+    <string name="report_bugs_desc_empty">يرجى إعطاء الوصف</string>
+    <string name="report_bugs_building">جارٍ إنشاء قائمة الأنشطة...</string>
+    <string name="report_bugs_failed">غير قادر على بناء قائمة الأنشطة</string>
+    <string name="report_bugs_send">إرسال التقرير</string>
+
+    <!--دعم التنمية-->
+    <string name="donation_success">شكرا لك على التبرع. سأستخدمه للخير.</string>
+
+    <!--تقرير الأعطال-->
+    <string name="crash_report">تقرير الأعطال</string>
+    <string name="crash_report_message">لسوء الحظ، لقد تعطل %s. اختر إرسال تقرير أدناه لمساعدة المطور على حل المشكلة.</string>
+    <string name="crash_report_send">إرسال التقرير</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">يفتح</string>
+    <string name="txt_close">يغلق</string>
+
+    <string name="txt_new">جديد</string>
+
+    <!--أوصاف المحتوى لقارئات الشاشة-->
+    <string name="icon_search_close_button_content_description">أغلق بحث الأيقونات</string>
+    <string name="icon_request_submit_button_content_description">إرسال طلب أيقونة</string>
+    <string name="icon_list_content_description">قائمة الرموز المضمنة في حزمة الرموز</string>
+    <string name="icon_search_list_content_description">قائمة الرموز المطابقة لمصطلح البحث</string>
+    <string name="about_item_social_content_description">رابط إلى الملف الشخصي عبر الإنترنت لمؤلف حزمة الأيقونات:</string>
+    <string name="share_icon_pack_button_content_description">مشاركة هذا التطبيق مع شخص ما</string>
+
+    <!--سياسة الخصوصية-->
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="privacy_policy_desc">خصوصيتك مهمة بالنسبة لنا. يرجى قراءة سياسة الخصوصية الخاصة بنا في About لفهم كيفية تعاملنا مع بياناتك.</string>
+
+    <!--الشروط والأحكام-->
+    <string name="terms_conditions">الشروط والأحكام</string>
+
+    <!--طلب-->
+    <string name="request_limit_title">حد الطلب المجاني</string>
+    <string name="request_limit_content">لديك %d من الطلبات المجانية المتبقية. فكر في الترقية إلى الإصدار المميز للطلبات غير المحدودة.</string>
+    <string name="request_limit_reached">تم الوصول إلى حد الطلب المجاني. يرجى الترقية إلى الإصدار المميز لمزيد من الطلبات.</string>
+    <string name="request_limit_remaining">يمكنك تحديد %d رمزًا إضافيًا</string>
+
+    <!--إصدار التطبيق-->
+    <string name="version">إصدار</string>
+	
+    <!--مخصص-->
+    <string name="home_kustom_desc">مطابقة مكونات الطقس لـ %s</string>
+    <string name="kustom_widgets">الحاجيات</string>
+    <string name="kustom_wallpapers">خلفيات</string>
+    <string name="kustom_lockscreens">شاشات القفل</string>
+    <string name="kustom_komponents">عنصر</string>
+
+    <!--مربع حوار طلب الموافقة-->
+    <string name="request_consent_title">الموافقة على جمع البيانات</string>
+    <string name="request_consent_content">لمعالجة طلب الرمز الخاص بك، نحتاج إلى جمع معلومات حول التطبيقات المثبتة وتفاصيل الجهاز (مثل أبعاد الشاشة وإصدار Android). يساعدنا هذا في تصميم الرموز التي تناسب جهازك بشكل أفضل.\n\nيمكنك مراجعة سياسة الخصوصية الخاصة بنا في قسم "حول" للحصول على مزيد من المعلومات.</string>
+    <string name="request_consent_accept">يقبل</string>
+    <string name="request_consent_deny">ينكر</string>
+
+    <!--نمط التنقل-->
+    <string name="pref_navigation_style">شريط التنقل</string>
+
+    <!--يبحث-->
+    <string name="search_apps">تطبيقات البحث</string>
+
+</resources>

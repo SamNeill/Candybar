@@ -1,0 +1,7 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Sample branch files to ignore
+sample/** -diff
+sample-* -diff
+**/sample/** -diff 

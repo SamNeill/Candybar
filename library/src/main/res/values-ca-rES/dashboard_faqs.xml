@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Què és un llançador-->
+    <!--Què és un paquet d\'icones-->
+    <!--Com puc utilitzar un paquet d\'icones?-->
+    <!--Com aplico un paquet d\'icones?-->
+    <!--Com veig totes les icones incloses?-->
+    <!--No veig el nom complet de la icona-->
+    <!--Com puc substituir les icones per una icona alternativa?-->
+    <!--Com puc demanar una icona?-->
+    <!--Com puc restaurar les sol·licituds Premium restants després de reinstal·lar l\'aplicació?-->
+    <!--Després de reiniciar el meu telèfon, el paquet d\'icones no s\'aplica, es restaurà als valors predeterminats?-->
+    <!--Per què les icones semblen irregulars o pixelades al meu telèfon?-->
+    <!--Puc veure la icona inclosa a totes les icones,
+            però per què no es canvia la icona real del calaix d\'aplicacions?-->
+    <!--Quina és l\'opció \"informar d\'errors\"?-->
+    <!--El meu llançador apareix a la descripció de Google Play, però per què no s\'inclou a la secció d\'aplicacions?-->
+    <!--No es pot aplicar fons de pantalla, només mostra una pantalla negra?-->
+    <!--Muzei: Com carregar només fons de pantalla baixats?-->
+    <!--Muzei: No vull continuar baixant fons de pantalla cada vegada que canvia el fons de pantalla?-->
+    <!--Muzei: Només vull utilitzar fons de pantalla específics?-->
+    <!--Per què cal un permís d\'emmagatzematge extern de lectura i escriptura?-->
+    <!--Per què es necessita permís d\'Internet?-->
+    <!--Per què es necessita el permís d\'estat de la xarxa d\'accés?-->
+    <!--Per què cal el permís d\'accés Wi-Fi State?-->
+    <!--Per què cal el permís Configurar fons de pantalla?-->
+    <!--Per què es necessita el permís de Wake Lock?-->
+    <!--Per què es necessita el permís Configurar alarma?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Què és un llançador?</item>
+    <item>Què és un paquet d\'icones?</item>
+    <item>Com puc utilitzar un paquet d\'icones?</item>
+    <item>Com aplico un paquet d\'icones?</item>
+    <item>Com veig totes les icones incloses?</item>
+    <item>No veig el nom complet de la icona</item>
+    <item>Com puc substituir les icones per una icona alternativa?</item>
+    <item>Com sol·licito una icona?</item>
+    <item>Com puc restaurar les sol·licituds Premium restants després de tornar a instal·lar l\'aplicació?</item>
+    <item>Després de reiniciar el meu telèfon, el paquet d\'icones no s\'aplica; restaura els valors predeterminats?</item>
+    <item>Per què les icones semblen irregulars o pixelades al meu telèfon?</item>
+    <item>Puc veure la icona inclosa a totes les icones,
+            però per què no es canvia la icona real del calaix d\'aplicacions?</item>
+    <item>Quina és l\'opció \"informar d\'errors\"?</item>
+    <item>El meu llançador apareix a la descripció de Google Play, però per què no s\'inclou a la secció d\'aplicacions?</item>
+    <item>No es pot aplicar fons de pantalla, només mostra una pantalla negra?</item>
+    <item>Muzei: Com carregar només fons de pantalla baixats?</item>
+    <item>Muzei: No vull continuar baixant fons de pantalla cada vegada que canvia el fons de pantalla?</item>
+    <item>Muzei: Només vull utilitzar fons de pantalla específics?</item>
+    <item>Per què cal un permís d\'emmagatzematge extern de lectura i escriptura?</item>
+    <item>Per què es necessita permís d\'Internet?</item>
+    <item>Per què es necessita el permís d\'estat de la xarxa d\'accés?</item>
+    <item>Per què es necessita el permís d\'accés Wifi State?</item>
+    <item>Per què cal el permís Configurar fons de pantalla?</item>
+    <item>Per què cal el permís de Wake Lock?</item>
+    <item>Per què es necessita el permís Configurar alarma?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher és la part de la interfície d\'usuari d\'Android que permet als usuaris personalitzar la pantalla d\'inici,
+            llançar aplicacions mòbils, fer trucades telefòniques i realitzar altres tasques en dispositius Android.</item>
+    <item>Un conjunt de gràfics que canviaran l\'aspecte de les icones del calaix d\'aplicacions</item>
+    <item>Necessitareu un llançador que admeti paquets d\'icones personalitzats.
+            Els llançadors compatibles es mostren a la descripció de Play Store.
+            Si esteu confós sobre quins llançadors s\'han d\'utilitzar, aneu a la secció \"Aplicar\" i instal·leu des d\'allà.</item>
+    <item>Podeu obrir el calaix de navegació i, a continuació, obrir \"Aplica\". Trieu el vostre llançador de la llista.
+            Si el vostre llançador no apareix allà, però aquest paquet d\'icones és compatible amb ell
+            (vegeu la descripció de Google Play Store per obtenir els llançadors compatibles),
+            podeu aplicar el paquet d\'icones manualment a la configuració del llançador.</item>
+    <item>Podeu obrir el calaix de navegació i després obrir \"Icones\"</item>
+    <item>Només cal que toqueu la icona. Apareixerà un diàleg de vista prèvia amb una imatge més gran i un nom complet de la icona.</item>
+    <item>Depèn del llançador que utilitzeu. No tots els llançadors admeten l\'edició d\'icones.
+       	    Majoritàriament, podeu editar una icona tocant i mantenint-la premuda o fent-hi doble clic.</item>
+    <item>Podeu obrir el calaix de navegació i, a continuació, obrir \"Sol·licitud d\'icona\".</item>
+    <item>Podeu obrir el calaix de navegació, després obrir \"Configuració\", triar \"Restaurar compres\".
+            Si teníeu sol·licituds Premium restants abans de reinstal·lar-les, es restauraran.</item>
+    <item>Va passar perquè aquest paquet d\'icones es va moure a la targeta SD; hauríeu d\'instal·lar-lo a la memòria interna.</item>
+    <item>El problema pot provenir del llançador que vau utilitzar per gestionar la resolució d\'icones grans.
+       	    Podeu solucionar-ho augmentant la mida de la icona al 115-120%.
+       	    Alternativament, podeu canviar el vostre llançador.</item>
+    <item>Obriu la configuració, desplaceu-vos cap avall i seleccioneu \"Informa d\'errors\".</item>
+    <item>\"Informa d\'errors\" s\'utilitza per informar d\'errors relacionats amb el paquet d\'icones, no amb el tauler.</item>
+    <item>No tots els llançadors admeten l\'aplicació directa, i alguns d\'ells no es poden accedir directament des del tauler.
+      	    Podeu aplicar aquest paquet d\'icones manualment a la configuració individual del llançador.</item>
+    <item>Quan \"Defineix el fons de pantalla\" directament des de l\'aplicació, es baixarà a la memòria cau,
+      	    aleshores l\'aplicació del tauler intentarà aplicar-la. L\'aplicació trigarà una mica de temps i també necessitarà una gran quantitat de memòria RAM durant un curt període de temps.
+      	    Els errors de \"Pantalla negra\" poden aparèixer perquè el vostre telèfon no té prou RAM lliure per processar el fons de pantalla.
+      	    Reiniciar el telèfon solucionarà aquest problema. Després de reiniciar, el telèfon tindrà més memòria RAM disponible.
+            Alternativament, podeu obrir el fons de pantalla descarregat des de la vostra galeria i configurar-lo com a fons de pantalla des d\'allà.</item>
+    <item>Obriu Muzei, trieu aquest paquet d\'icones, configuració. Veureu una opció per carregar només fons de pantalla baixats.
+            Primer haureu de descarregar fons de pantalla des del tauler.</item>
+    <item>Si ja s\'ha baixat un fons de pantalla, es carregarà automàticament des de la memòria del telèfon.
+            Muzei no continuarà baixant-lo quan canviï el fons de pantalla. Primer haureu de descarregar fons de pantalla des del tauler.</item>
+    <item>Obriu el tauler, baixeu fons de pantalla que vulgueu utilitzar a Muzei.
+            Obriu la configuració de Muzei i, a continuació, trieu Carrega només fons de pantalla baixats.</item>
+    <item>S\'utilitza per escriure i llegir la memòria cau i recopilar les dades de sol·licitud d\'icones.</item>
+    <item>S\'utilitza per carregar fons de pantalla basats en núvol i descarregar-los.</item>
+    <item>S\'utilitza per comprovar si el vostre telèfon té connexió a Internet o no.</item>
+    <item>S\'utilitza per comprovar si el vostre telèfon té connexió a Internet a una wifi o no, per carregar fons de pantalla al núvol de Muzei.</item>
+    <item>S\'utilitza per aplicar fons de pantalla directament des de l\'aplicació del tauler.</item>
+    <item>L\'utilitza Muzei Live Wallpaper.</item>
+    <item>S\'utilitza per iniciar l\'aplicació del rellotge des del giny del rellotge analògic.</item>
+  </string-array>
+</resources>

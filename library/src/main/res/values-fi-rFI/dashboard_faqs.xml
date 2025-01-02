@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Mikä on kantoraketti-->
+    <!--Mikä on kuvakepaketti-->
+    <!--Kuinka käytän kuvakepakettia?-->
+    <!--Kuinka käytän kuvakepakettia?-->
+    <!--Miten näen kaikki kuvakkeet mukana?-->
+    <!--En näe kuvakkeen täydellistä nimeä-->
+    <!--Kuinka voin korvata kuvakkeet vaihtoehtoisella kuvakkeella?-->
+    <!--Kuinka voin pyytää kuvaketta?-->
+    <!--Kuinka voin palauttaa jäljellä olevat Premium-pyynnöt sovelluksen uudelleenasennuksen jälkeen?-->
+    <!--Kun puhelimeni on käynnistetty uudelleen, kuvakepakettia ei käytetä, se palautuu oletusasetuksiin?-->
+    <!--Miksi kuvakkeet näyttävät rosoisilta tai pikseleiltä puhelimessani?-->
+    <!--Näen kuvakkeen sisältyvän kaikkiin kuvakkeisiin,
+            mutta miksi sovelluslaatikon varsinaista kuvaketta ei ole muutettu?-->
+    <!--Mikä on \"ilmoita virheistä\" -vaihtoehto?-->
+    <!--Käynnistysohjelmani on lueteltu Google Play -kuvauksessa, mutta miksi se ei sisälly soveltamisosioon?-->
+    <!--Taustakuvaa ei voi käyttää, näkyykö vain musta näyttö?-->
+    <!--Muzei: Kuinka ladata vain ladattuja taustakuvia?-->
+    <!--Muzei: En halua ladata taustakuvia aina, kun taustakuva vaihtuu?-->
+    <!--Muzei: Haluan käyttää vain tiettyjä taustakuvia?-->
+    <!--Miksi ulkoisen tallennustilan luku- ja kirjoituslupa tarvitaan?-->
+    <!--Miksi Internet-lupa tarvitaan?-->
+    <!--Miksi Access Network State -lupa tarvitaan?-->
+    <!--Miksi Access Wi-Fi State -lupa tarvitaan?-->
+    <!--Miksi Set Wallpaper -lupa tarvitaan?-->
+    <!--Miksi Wake Lock -lupa tarvitaan?-->
+    <!--Miksi Set Alarm -lupa tarvitaan?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Mikä on kantoraketti?</item>
+    <item>Mikä on ikonipaketti?</item>
+    <item>Kuinka käytän kuvakepakettia?</item>
+    <item>Kuinka käytän kuvakepakettia?</item>
+    <item>Miten näen kaikki kuvakkeet mukana?</item>
+    <item>En näe kuvakkeen täydellistä nimeä</item>
+    <item>Kuinka voin korvata kuvakkeet vaihtoehtoisella kuvakkeella?</item>
+    <item>Kuinka voin pyytää kuvaketta?</item>
+    <item>Kuinka voin palauttaa jäljellä olevat Premium-pyynnöt sovelluksen uudelleenasennuksen jälkeen?</item>
+    <item>Kun puhelimeni on käynnistetty uudelleen, kuvakepakettia ei käytetä; palautuu oletusarvoihin?</item>
+    <item>Miksi kuvakkeet näyttävät rosoisilta tai pikseleiltä puhelimessani?</item>
+    <item>Näen kuvakkeen sisältyvän kaikkiin kuvakkeisiin,
+            mutta miksi sovelluslaatikon varsinaista kuvaketta ei ole muutettu?</item>
+    <item>Mikä on \"ilmoita virheistä\" -vaihtoehto?</item>
+    <item>Käynnistysohjelmani on lueteltu Google Play -kuvauksessa, mutta miksi se ei sisälly soveltamisosioon?</item>
+    <item>Taustakuvaa ei voi käyttää, näkyykö vain musta näyttö?</item>
+    <item>Muzei: Kuinka ladata vain ladattuja taustakuvia?</item>
+    <item>Muzei: En halua ladata taustakuvia aina, kun taustakuva vaihtuu?</item>
+    <item>Muzei: Haluan käyttää vain tiettyjä taustakuvia?</item>
+    <item>Miksi ulkoisen tallennustilan luku- ja kirjoituslupa tarvitaan?</item>
+    <item>Miksi Internet-lupa tarvitaan?</item>
+    <item>Miksi Access Network State -lupa tarvitaan?</item>
+    <item>Miksi Access Wifi State -lupa tarvitaan?</item>
+    <item>Miksi Set Wallpaper -lupa tarvitaan?</item>
+    <item>Miksi Wake Lock -lupa tarvitaan?</item>
+    <item>Miksi Set Alarm -lupa tarvitaan?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher on osa Android-käyttöliittymää, jonka avulla käyttäjät voivat muokata aloitusnäyttöä,
+            käynnistää mobiilisovelluksia, soittaa puheluita ja suorittaa muita tehtäviä Android-laitteilla.</item>
+    <item>Joukko grafiikkaa, joka muuttaa sovelluslaatikon kuvakkeiden ulkoasua</item>
+    <item>Tarvitset käynnistysohjelman, joka tukee mukautettuja kuvakepaketteja.
+            Tuetut käynnistysohjelmat on lueteltu Play Kaupan kuvauksessa.
+            Jos olet epävarma siitä, mitä kantoraketteja tulisi käyttää, siirry \"Käytä\"-osioon ja asenna sieltä.</item>
+    <item>Voit avata navigointipaneelin ja avata sitten \"Käytä\". Valitse käynnistysohjelma luettelosta.
+            Jos kantorakettiasi ei ole luettelossa, mutta tämä kuvakepaketti on yhteensopiva sen kanssa
+            (katso tuetut käynnistysohjelmat Google Play Kaupan kuvauksesta),
+            voit käyttää kuvakepakettia manuaalisesti käynnistysohjelman asetuksissa.</item>
+    <item>Voit avata navigointilaatikon ja avata sitten \"Kuvakkeet\"</item>
+    <item>Napauta vain kuvaketta. Esikatseluikkuna tulee näkyviin, jossa on suurempi kuva ja täydellinen kuvakkeen nimi.</item>
+    <item>Se riippuu käytetystä kantoraketista. Kaikki käynnistysohjelmat eivät tue kuvakkeiden muokkausta.
+       	    Useimmiten voit muokata kuvaketta napauttamalla kuvaketta pitkään tai kaksoisnapauttamalla sitä.</item>
+    <item>Voit avata navigointilaatikon ja avata sitten \"Icon Request\".</item>
+    <item>Voit avata navigointilaatikon, avata \"Asetukset\" ja valita \"Palauta ostokset\".
+            Jos sinulla oli jäljellä Premium-pyyntöjä ennen uudelleenasennusta, ne palautetaan.</item>
+    <item>Se tapahtui, koska tämä kuvakepaketti siirrettiin SD-kortille; sinun pitäisi asentaa se sisäiseen muistiin.</item>
+    <item>Ongelma saattaa johtua käynnistysohjelmasta, jota käytit suuren kuvakkeen resoluution käsittelyssä.
+       	    Voit korjata sen lisäämällä kuvakkeen kokoa 115–120 prosenttiin.
+       	    Vaihtoehtoisesti voit vaihtaa käynnistysohjelmaa.</item>
+    <item>Avaa asetukset, vieritä alas ja valitse sitten \"Ilmoita virheistä\".</item>
+    <item>\"Report Bugs\" käytetään ilmoittamaan virheistä, jotka liittyvät kuvakepakettiin, ei kojelautaan.</item>
+    <item>Kaikki käynnistysohjelmat eivät tue suoraa sovellusta, ja joihinkin niistä ei pääse suoraan hallintapaneelista.
+      	    Voit käyttää tätä kuvakepakettia manuaalisesti yksittäisten käynnistysohjelman asetuksissa.</item>
+    <item>Kun \"Aseta taustakuva\" suoraan sovelluksesta, se ladataan välimuistiin,
+      	    sitten kojelautasovellus yrittää ottaa sen käyttöön. Hakeminen vie jonkin aikaa ja vaatii myös valtavan määrän RAM-muistia lyhyeksi ajaksi.
+      	    \"Musta näyttö\" -virheitä saattaa tulla näkyviin, koska puhelimessasi ei ole tarpeeksi vapaata RAM-muistia taustakuvan käsittelyyn.
+      	    Puhelimen uudelleenkäynnistys korjaa tämän ongelman. Uudelleenkäynnistyksen jälkeen puhelimessasi on enemmän RAM-muistia käytettävissä.
+            Vaihtoehtoisesti voit avata ladatun taustakuvan Galleriasta ja asettaa sen taustakuvaksi sieltä.</item>
+    <item>Avaa Muzei, valitse tämä kuvakepaketti, asetukset. Näet vaihtoehdon ladata vain ladatut taustakuvat.
+            Sinun on ensin ladattava taustakuvat kojelaudalta.</item>
+    <item>Jos taustakuva on jo ladattu, se ladataan automaattisesti puhelimen muistista.
+            Muzei ei jatka sen lataamista, kun taustakuva vaihtuu. Sinun on ensin ladattava taustakuvat kojelaudalta.</item>
+    <item>Avaa Dashboard, lataa taustakuvat, joita haluat käyttää Muzeissa.
+            Avaa Muzei-asetukset ja valitse sitten Lataa vain ladatut taustakuvat.</item>
+    <item>Sitä käytetään välimuistin kirjoittamiseen ja lukemiseen sekä kuvakepyyntötietojen keräämiseen.</item>
+    <item>Sitä käytetään pilvipohjaisten taustakuvien lataamiseen ja lataamiseen.</item>
+    <item>Sitä käytetään tarkistamaan, onko puhelimessasi Internet-yhteys vai ei.</item>
+    <item>Sitä käytetään tarkistamaan, onko puhelimessasi Internet-yhteys wifi-verkkoon vai ei, pilvitaustakuvien lataamiseen Muzeista.</item>
+    <item>Sitä käytetään taustakuvien levittämiseen suoraan kojelautasovelluksesta.</item>
+    <item>Sitä käyttää Muzei Live Wallpaper.</item>
+    <item>Sitä käytetään kellosovelluksen käynnistämiseen analogisesta kello-widgetistä.</item>
+  </string-array>
+</resources>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Splash Screen Titel-->
+    <string name="splash_screen_title">CandyBar Dashboard</string>
+
+    <!--Navigationsvy-->
+    <string name="navigation_view_home">Hem</string>
+    <string name="navigation_view_apply">Tillämpas</string>
+    <string name="navigation_view_icons">Ikoner</string>
+    <string name="navigation_view_request">Ikonförfrågan</string>
+    <string name="navigation_view_wallpapers">Bakgrundsbilder</string>
+    <string name="navigation_view_kustom">Beställnings</string>
+    <string name="navigation_view_settings">Inställningar</string>
+    <string name="navigation_view_faqs">Vanliga frågor</string>
+    <string name="navigation_view_about">Om</string>
+    <string name="navigation_view_donate">Stöd utveckling</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Muzei-inställningar</string>
+    <string name="minute">Minut</string>
+    <string name="hour">Timme</string>
+    <string name="save_setting">Spara</string>
+    <string name="muzei_refresh_duration">Uppdateringslängd</string>
+    <string name="muzei_wifi_only">Uppdatera endast från Wi-Fi</string>
+    <string name="muzei_downloaded_only">Ladda endast nedladdade bakgrunder</string>
+    <string name="muzei_settings_ignored">Icon Pack innehåller inte bakgrundsbilder, inställningar ignoreras.</string>
+    <string name="muzei_settings_saved">Inställningar sparade</string>
+
+    <!--Meny-->
+    <string name="menu_search">Söka</string>
+    <string name="menu_save">Spara till enhet</string>
+    <string name="menu_select_all">Välj Alla</string>
+    <string name="menu_delete">Radera</string>
+
+    <string name="menu_wallpaper_crop">Beskär bakgrund</string>
+    <string name="menu_apply_homescreen">Hemskärm</string>
+    <string name="menu_apply_lockscreen">Låsskärm</string>
+    <string name="menu_apply_homescreen_lockscreen">Hemskärm och låsskärm</string>
+
+    <!--Dialog-->
+    <string name="open">Öppna</string>
+    <string name="close">Nära</string>
+    <string name="clear">Rensa</string>
+    <string name="ok">OK</string>
+    <string name="install">Installera</string>
+    <string name="donate">Donera</string>
+    <string name="update">Uppdatera</string>
+
+    <string name="search_noresult">Inget resultat hittades för \"%s\"</string>
+    <string name="search_faqs">Fråga eller svar</string>
+    <string name="search_icon">Ikon Namn</string>
+    <string name="search_wallpapers">Tapetnamn</string>
+
+    <!--Uppdatera-->
+    <string name="checking_for_update">Söker efter uppdatering...</string>
+    <string name="update_available">Uppdatering tillgänglig!</string>
+    <string name="no_update_available">Du använder den senaste versionen!</string>
+
+    <!--Ändringsloggversion-->
+    <string name="changelog_version">Version</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">Det går inte att ladda produkter för köp i appen</string>
+
+    <!--Licens-->
+    <string name="license_checking">Kontrollerar licens...</string>
+    <string name="license_check">Licenskontroll</string>
+    <string name="license_check_success">Licenskontrollen lyckades. Tack för att du laddar ner appen från Play Butik.</string>
+    <string name="license_check_failed">Licenskontrollen misslyckades; du laddade inte ner appen från Play Butik. Du kommer inte att kunna använda den.</string>
+    <string name="license_check_retry">Det gick inte att kontrollera licensen, försök igen om en liten stund.</string>
+
+    <!--Play Butik Installationskontroll-->
+    <string name="playstore_check">Play Butik Check</string>
+    <string name="playstore_check_success">Tack för att du installerade appen från Google Play Butik. Njuta!</string>
+    <string name="playstore_check_failed">Det verkar som om du har installerat det här ikonpaketet utanför Google Play Butik.
+        Du kommer inte att kunna använda den.</string>
+
+    <!--Dela-->
+    <string name="share_app_title">Yo! Kolla in %s</string>
+    <string name="share_app_body">Kolla in %1$s Icon Pack på Play Butik: %2$s</string>
+
+    <!--Tryck på Intro-->
+    <string name="tap_intro_home_navigation">Navigationslåda</string>
+    <string name="tap_intro_home_navigation_desc">Tryck här eller svep från den vänstra kanten av skärmen för att öppna navigeringslådan</string>
+    <string name="tap_intro_home_apply">Använd ikonpaket</string>
+    <string name="tap_intro_home_apply_desc">Tryck här för att tillämpa %s på din nuvarande startare. Tryck länge för att tillämpa på andra startprogram.</string>
+    <string name="tap_intro_icons_search">Söka</string>
+    <string name="tap_intro_icons_search_desc">Tryck här för att söka efter en ikon</string>
+    <string name="tap_intro_request_search">Sök efter saknade appar</string>
+    <string name="tap_intro_request_search_desc">Tryck här för att söka igenom dina installerade appar efter saknade ikoner för vald ikonförfrågan</string>
+    <string name="tap_intro_request_select">Välj missad app</string>
+    <string name="tap_intro_request_select_desc">Tryck här för att välja missad app för ikonförfrågan</string>
+    <string name="tap_intro_request_select_all">Välj alla missade appar</string>
+    <string name="tap_intro_request_select_all_desc">Tryck här för att välja alla missade appar för ikonförfrågan</string>
+    <string name="tap_intro_request_send">Skicka ikonförfrågan</string>
+    <string name="tap_intro_request_send_desc">Tryck här för att skicka valda missade appar</string>
+    <string name="tap_intro_request_premium">Premium ikon begäran</string>
+    <string name="tap_intro_request_premium_desc">Tryck här för att köpa premiumikonförfrågan, med en premiumikonförfrågan kan du få dina begärda appar snabbare.</string>
+    <string name="tap_intro_wallpapers_option">Bakgrundsalternativ</string>
+    <string name="tap_intro_wallpapers_option_desc">Tryck och håll här för att visa bakgrundsalternativ; %s använder tapeter.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">ladda ner eller</string>
+    <string name="tap_intro_wallpapers_preview">Förhandsgranska bakgrundsbild</string>
+    <string name="tap_intro_wallpapers_preview_desc">Tryck här för att förhandsgranska bakgrunden i full storlek</string>
+    <string name="tap_intro_wallpaper_preview_save">Spara tapeter</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Tryck här för att ladda ner och spara bakgrundsbilder till din enhet så att du kan använda den senare</string>
+    <string name="tap_intro_wallpaper_preview_apply">Applicera tapeter</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Tryck här för att ställa in bakgrunden som bakgrund på startskärmen</string>
+
+    <!--Hem-->
+    <string name="home_more_apps_header">Fler appar</string>
+    <string name="home_more_apps">Kolla fler ikoner i Google Play Butik</string>
+    <string name="home_rate">Hastighet</string>
+    <string name="home_share">Dela</string>
+    <string name="home_check_update">Uppdatera</string>
+    <string name="home_apply_icon_pack">Använd %s</string>
+    <string name="home_donate">Donera</string>
+    <string name="home_donate_desc">Uppmuntra utvecklare att göra fler ikonpaket</string>
+    <string name="home_icons">Ikoner</string>
+    <string name="home_icon_dimension">%s pixlar ikondimension</string>
+    <string name="home_loud_wallpapers">%d moln bakgrundsbilder</string>
+    <string name="home_muzei">Muzei levande tapeter</string>
+    <string name="home_icon_request_installed_apps">Totalt\n%d installerade appar</string>
+    <string name="home_icon_request_themed_apps">Tema\n%d appar</string>
+    <string name="home_icon_request_missed_apps">Missade\n%d appar</string>
+
+    <!--Tillämpas-->
+    <string name="apply_installed">Installerad Launcher</string>
+    <string name="apply_installed_launchers">Installerade Launchers</string>
+    <string name="apply_supported">Launchers som stöds</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">%s Launcher är inte installerad. Du kan hitta och installera den från Amazon AppStore eller från dina favoritresurser och butiker.</string>
+    <string name="apply_manual">%1$s Launcher stöder inte direkt applicering, men du kan använda %2$s manuellt från startprogrammets inställningar.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso stöder inte direktansökan men du kan följa dessa steg:</string>
+    <string name="apply_manual_kvaesitso_step_1">Öppna Kvaesitsos inställningar</string>
+    <string name="apply_manual_kvaesitso_step_2">Tryck på \"Grid och ikoner\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Tryck på \"Icon Pack\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Välj %s från listan</string>
+    <string name="apply_manual_kvaesitso_step_5">Tryck på penselikonen för att aktivera eller inaktivera bakgrundsformen</string>
+    <string name="apply_manual_kiss">KISS stöder inte direktansökan, men du kan följa dessa steg:</string>
+    <string name="apply_manual_kiss_step_1">Öppna KISS-inställningar</string>
+    <string name="apply_manual_kiss_step_2">Tryck på \"Användargränssnitt\"</string>
+    <string name="apply_manual_kiss_step_3">Tryck på \"Icon Pack\"</string>
+    <string name="apply_manual_kiss_step_4">Välj %s från listan</string>
+    <string name="apply_manual_samsung_oneui">%1$s stöder inte direkt applicering, men från och med %2$s kan du använda ikoner med en kompletterande app.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Din nuvarande version av %s är för gammal. Uppdatera till Android 12 eller senare för att kunna tillämpa ikoner direkt. Alternativt kan du installera ett annat startprogram.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Öppna %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Ladda ner appen %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Tryck på \"Ikon\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Tryck på \"Skapa nytt\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Tryck på den blå knappen \"Iconpack\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">Välj %s från listan</string>
+    <string name="apply_manual_samsung_oneui_step_7">Upprepa dessa steg varje gång du uppdaterar %s eftersom nya ikoner inte kommer att mappas automatiskt.</string>
+    <string name="apply_manual_hios">HiOS launcher stöder inte direkt applicering, men du kan följa dessa steg:</string>
+    <string name="apply_manual_hios_step_1">Öppna \"Inställningar\"</string>
+    <string name="apply_manual_hios_step_2">Tryck på \"Tema och låsskärm\"</string>
+    <string name="apply_manual_hios_step_3">Tryck på \"Mitt tema\"</string>
+    <string name="apply_manual_hios_step_4">Tryck på \"Ikonpaket\"</string>
+    <string name="apply_manual_hios_step_5">Tryck på %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Tryck länge på startskärmen</string>
+    <string name="apply_manual_oxygen_os_step_2">Tryck på \"Heminställningar\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Tryck på \"Icon Pack\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Tryck på %s</string>
+    <string name="apply_manual_color_os_step_1">Tryck länge på startskärmen</string>
+    <string name="apply_manual_color_os_step_2">Tryck på \"Ikoner\"</string>
+    <string name="apply_manual_color_os_step_3">Rulla till höger om knappen \"Anpassad\" (detta är en rullningsbar lista!)</string>
+    <string name="apply_manual_color_os_step_4">Tryck på %s</string>
+    <string name="apply_manual_before">Den här versionen av Before Launcher stöder ännu inte applicering av ikoner direkt. Följ istället stegen nedan:</string>
+    <string name="apply_manual_before_step_1">Svep åt vänster på startskärmen</string>
+    <string name="apply_manual_before_step_2">Tryck på \"Inställningar\"</string>
+    <string name="apply_manual_before_step_3">Tryck på \"Stilar och teman\"</string>
+    <string name="apply_manual_before_step_4">Tryck på \"Ikonstilar och paket\"</string>
+    <string name="apply_manual_before_step_5">Tryck på %s</string>
+    <string name="apply_manual_nothing_step_1">Öppna \"Inställningar\"</string>
+    <string name="apply_manual_nothing_step_2">Tryck på \"Anpassning\"</string>
+    <string name="apply_manual_nothing_step_3">Tryck på \"Icon Pack\"</string>
+    <string name="apply_manual_nothing_step_4">Tryck på %s</string>
+    <string name="apply_launch_failed">Det gick inte att starta %s inställningar</string>
+    <string name="apply_launcher_not_installed">%s Launcher är inte installerad. Vill du öppna Google Play Butik för att ladda ner och installera den?</string>
+    <string name="apply_launcher_not_installable">%s Launcher är inte installerad. Försök igen efter att ha installerat startprogrammet.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager är inte tillgänglig på den här enheten</string>
+    <string name="apply_cmtheme_failed">Det går inte att starta CM Theme Manager, du kan försöka använda ikonpaketet manuellt från Inställningar.</string>
+    <string name="apply_lg_home">För att tillämpa detta Icon Pack, öppna Inställningar - Display - Hemskärm - Tema</string>
+    <string name="apply_lg_home_not_available">LG Home är inte tillgängligt på den här enheten</string>
+    <string name="apply_lg_home_failed">Det går inte att starta LG Home Settings, du kan försöka använda Icon Pack manuellt från Inställningar.</string>
+    <string name="apply_lg_home_nougat">LG Home med Android Nougat stöder inte längre Icon Pack. Du behöver ett anpassat startprogram för att använda Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher stöder inte några ikonpaket, så du kan inte använda det här ikonpaketet med det här programmet. Du kan prova en app från tredje part för att använda detta ikonpaket i startprogrammet för %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">%1$s launcher är inte kompatibel med %2$s, men kan vara kompatibel med nyare versioner</string>
+
+    <!--Ikoner-->
+    <string name="icons_load_failed">Det gick inte att ladda ikoner</string>
+    <string name="icon_shape">Ikon Form</string>
+    <string name="items_selected">%d har valts</string>
+
+    <!--Begäran-->
+    <string name="request_title">Ikonförfrågan</string>
+    <string name="request_terms">Innan du fortsätter med ikonförfrågan, observera att din begäran kommer att granskas enligt våra riktlinjer. Premiumförfrågningar kan behandlas snabbare.</string>
+    <string name="request_not_selected">Välj appar att begära</string>
+    <string name="request_not_requested">Ej efterfrågat</string>
+    <string name="request_already_requested">Redan efterfrågat</string>
+    <string name="request_not_available">Kan inte begäras</string>
+    <string name="request_building">Byggansökan...</string>
+    <string name="request_pacific_sending">Skickar förfrågan till Pacific Manager...</string>
+    <string name="request_pacific_error">Ett fel uppstod när en begäran skickades till Pacific Manager. Felet är %s</string>
+    <string name="request_pacific_success">Skickade begäran till Pacific Manager</string>
+    <string name="request_custom_error">Ett fel uppstod när en ikonförfrågan skulle skickas. Kontakta utvecklaren om det här felet kvarstår. %s</string>
+    <string name="request_custom_success">Ikonförfrågan har skickats</string>
+    <string name="request_fetching_data">Hämtar senaste data …</string>
+    <string name="request_build_failed">Det gick inte att skapa ikonbegäran</string>
+    <string name="request_appfilter_failed">Det går inte att läsa appfilter.xml</string>
+    <string name="request_requested">Du har redan begärt den här ikonen och kan inte begära den igen.</string>
+    <string name="request_requested_possible">Du har redan begärt den här ikonen. Är du säker på att du vill lägga ytterligare en begäran på det?</string>
+    <string name="request_requested_button_cancel">Gå tillbaka</string>
+    <string name="request_requested_button_confirm">Välj ändå</string>
+    <string name="request_email_client">Välj den app du vill använda för att skicka ikonförfrågan</string>
+    <string name="request_app_disabled">Du använder en äldre version av detta ikonpaket. De begärda ikonerna kan inkluderas i den senaste versionen. Uppdatera din app till den senaste versionen för att begära ikoner.</string>
+    <string name="connection_error_long">Det gick inte att ladda data från servern. Kontrollera din nätverksanslutning.</string>
+    <string name="unable_to_load_config">Ett fel uppstod vid hämtning eller läsning av data från servern.</string>
+    <string name="request_limit">Du kan bara göra %d begäran(n) med vanlig begäran.</string>
+    <string name="request_used">Du har begärt %d ikon(er).</string>
+    <string name="request_limit_buy">Du kan köpa Premium Requests för att begära fler ikoner.</string>
+    <string name="request_limit_reset">Gränsen för ikonbegäran återställs vid varje uppdatering.</string>
+
+    <!--Vanlig förfrågan-->
+    <string name="regular_request">Vanlig ikonförfrågan</string>
+    <string name="regular_request_desc">Få din ikon efterfrågad och utvecklaren kommer att försöka inkludera ikoner som du har begärt.</string>
+    <string name="regular_request_count">Totalt\n%d begäran</string>
+    <string name="regular_request_used">Används\n%d begäran</string>
+    <string name="regular_request_available">Tillgänglig\n%d begäran</string>
+
+    <!--Premium-förfrågan-->
+    <string name="premium_request">Begäran om premiumikon</string>
+    <string name="premium_request_no_internet">Se till att din telefon är ansluten till internet innan du skickar en premiumförfrågan</string>
+    <string name="premium_request_desc">Premium-ikonförfrågan är en betalningsförfrågan. Du kan få dina begärda appar snabbare genom att använda en premiumikonförfrågan.</string>
+    <string name="premium_request_buy">Köpa</string>
+    <string name="premium_request_count">Totalt\n%d begäran</string>
+    <string name="premium_request_used">Används\n%d begäran</string>
+    <string name="premium_request_available">Tillgänglig\n%d begäran</string>
+    <string name="premium_request_already_purchased">Du har fortfarande %d premiumförfrågan. Du måste använda dem alla innan du köper ett premiumförfrågningspaket igen.</string>
+    <string name="premium_request_limit">Du har bara %d premiumförfrågningar,</string>
+    <string name="premium_request_limit1">men du valde %d app(ar). \n\nDu måste använda alla dina premiumförfrågningar innan du använder vanlig begäran igen.</string>
+    <string name="premium_request_consume_failed">Det går inte att använda Premium Request, se till att du har en stabil internetanslutning och försök igen. Gå till Inställningar för att återskapa Premium Requests.</string>
+    <string name="premium_request_rebuilding">Återskapar Premium-förfrågan …</string>
+    <string name="premium_request_rebuilding_empty">Du har inte gjort en Premium-förfrågan</string>
+    <string name="premium_request_exist">Du har fortfarande ett Premium Icon Request-paket. Öppna Inställningar, välj \"Återställ köp\" för att återställa den.</string>
+    <string name="premium_request_required">Du måste köpa ett premiumikonförfrågningspaket för att göra ikonförfrågningar</string>
+
+    <!--Bakgrundsbilder-->
+    <string name="wallpaper_new_added">Ny bakgrund</string>
+    <string name="wallpaper_already_downloaded">Bakgrund har redan laddats ner</string>
+    <string name="wallpaper_downloading">Laddar ned bakgrundsbild …</string>
+    <string name="wallpaper_download_failed">Det går inte att ladda ner bakgrundsbild</string>
+    <string name="wallpaper_download_success">Bakgrundsnedladdningen lyckades</string>
+    <string name="wallpaper_loading">Laddar bakgrund...</string>
+    <string name="wallpaper_applying">Applicerar tapeter …</string>
+    <string name="wallpaper_applied">Tapet applicerad</string>
+    <string name="wallpaper_apply_failed">Det gick inte att applicera tapeter</string>
+    <string name="wallpaper_apply_cancelled">Bakgrundstillämpningen avbröts</string>
+    <string name="connection_failed">Det går inte att hämta data från servern</string>
+    <string name="wallpaper_apply">Applicera tapeter</string>
+    <string name="wallpaper_save_to_device">Spara tapeter</string>
+
+    <!--Förinställningar-->
+    <string name="presets_load_failed">Det går inte att ladda förinställningar</string>
+    <string name="presets_storage_permission">Lagringstillstånd krävs för att ladda förhandsgranskningsbakgrunden</string>
+    <string name="presets_required_apps">Krävs appar för att använda dessa förinställningar</string>
+    <string name="presets_required_apps_not_installed">De appar som krävs för att använda förinställningen är inte installerade. Installera de saknade nödvändiga apparna och försök igen.</string>
+
+    <!--Inställningar-->
+    <string name="pref_data_header">Data &amp; cache</string>
+    <string name="pref_data_cache">Rensa cache</string>
+    <string name="pref_data_cache_desc">Ta bort bildcache från din lagring, skapad när du väljer en bild från den här appen, begär missade appar och efter att ha laddat in miniatyrbilder av molntapeter.</string>
+    <string name="pref_data_cache_size">Cachestorlek: %s</string>
+    <string name="pref_data_cache_clear_dialog">Vill du verkligen rensa cacheminnet?</string>
+    <string name="pref_data_cache_cleared">Cache rensad</string>
+    <string name="pref_data_request">Rensa ikonbegärandata</string>
+    <string name="pref_data_request_desc">Ta bort ikonbegäran, skapad efter att ha begärt missade appar från ikonbegäran.</string>
+    <string name="pref_data_request_clear_dialog">Vill du verkligen rensa ikonbegäran?</string>
+    <string name="pref_data_request_cleared">Data för ikonbegäran rensades</string>
+    <string name="pref_premium_request_header">Begäran om premiumikon</string>
+    <string name="pref_premium_request_restore">Återställ inköp</string>
+    <string name="pref_premium_request_restore_desc">Återställ premium-förfrågan-paketet efter att du har installerat om ikonpaketet</string>
+    <string name="pref_premium_request_restore_success">Premium-förfrågan återställd</string>
+    <string name="pref_premium_request_restore_empty">Du har inga köpta paket</string>
+    <string name="pref_premium_request_rebuild">Rebuild Premium Icon Request</string>
+    <string name="pref_premium_request_rebuild_desc">Samla alla data för begäran om premiumikoner för att skicka dem igen</string>
+    <string name="pref_theme_header">Tema</string>
+    <string name="pref_theme_dark">mörkt tema</string>
+    <string name="pref_theme_dark_desc">Använd mörk färg för applikationstema</string>
+    <string name="pref_notifications_header">Aviseringar</string>
+    <string name="pref_notifications">Ta emot aviseringar</string>
+    <string name="pref_wallpaper_header">Tapet</string>
+    <string name="pref_wallpaper_location">Bakgrund Spara plats</string>
+    <string name="pref_language_header">Språk</string>
+    <string name="pref_others_header">Andra</string>
+    <string name="pref_others_report_bugs">Rapportera buggar</string>
+    <string name="pref_others_changelog">Ändringslogg</string>
+    <string name="pref_others_reset_tutorial">Återställ handledning</string>
+    <string name="pref_others_reset_tutorial_reset">Självstudieåterställning</string>
+
+    <!--teman-->
+    <string name="theme_name_auto">Bil</string>
+    <string name="theme_name_light">Ljus</string>
+    <string name="theme_name_dark">Mörk</string>
+    <string name="theme_name_material_you">Material du</string>
+
+    <!--Tillstånd-->
+    <string name="permission_storage_denied">Lagringsbehörighet krävs för att spara bakgrundsbild</string>
+    <string name="permission_notification_denied_1">Aviseringstillstånd krävs för att ta emot meddelanden från utvecklaren</string>
+    <string name="permission_notification_denied_2">Aktivera aviseringar från appinställningarna</string>
+
+    <!--Avsikt-->
+    <string name="app_client">Välj App</string>
+    <string name="no_email_app">Ingen applikation för att skicka e-post</string>
+    <string name="no_browser">Inget program för att öppna URL</string>
+    <string name="intent_email_failed">Det gick inte att visa e-postprogrammet</string>
+    <string name="intent_email_supported">Stöds</string>
+    <string name="intent_email_recommended">Rekommenderad</string>
+    <string name="intent_email_not_supported">Stöds inte</string>
+    <string name="intent_email_not_supported_message">Har valt en e-postklient som inte stöds, välj en annan e-postklient</string>
+
+    <!--Om-->
+    <string name="about_contributors_title">Bidragsgivare</string>
+
+    <!--Rapportera buggar-->
+    <string name="report_bugs_desc">Ge en beskrivning av vilken typ av problem du vill rapportera</string>
+    <string name="report_bugs_desc_hint">Beskrivning</string>
+    <string name="report_bugs_desc_empty">Vänligen ge en beskrivning</string>
+    <string name="report_bugs_building">Byggaktivitetslista …</string>
+    <string name="report_bugs_failed">Det gick inte att skapa aktivitetslista</string>
+    <string name="report_bugs_send">Skicka rapport</string>
+
+    <!--Stöd utveckling-->
+    <string name="donation_success">Tack för att du gör en donation. Jag kommer att använda den för gott.</string>
+
+    <!--Kraschrapport-->
+    <string name="crash_report">Kraschrapport</string>
+    <string name="crash_report_message">Tyvärr har %s kraschat. Välj Skicka rapport nedan för att hjälpa utvecklaren att lösa problemet.</string>
+    <string name="crash_report_send">Skicka rapport</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">Öppna</string>
+    <string name="txt_close">Nära</string>
+
+    <string name="txt_new">Ny</string>
+
+    <!--Innehållsbeskrivningar för skärmläsare-->
+    <string name="icon_search_close_button_content_description">Stäng ikonsökningen</string>
+    <string name="icon_request_submit_button_content_description">Skicka en ikonförfrågan</string>
+    <string name="icon_list_content_description">Listan över ikoner som ingår i ikonpaketet</string>
+    <string name="icon_search_list_content_description">Listan över ikoner som matchar söktermen</string>
+    <string name="about_item_social_content_description">En länk till en onlineprofil för författaren till ikonpaketet:</string>
+    <string name="share_icon_pack_button_content_description">Dela den här appen med någon</string>
+
+    <!--Sekretesspolicy-->
+    <string name="privacy_policy">Sekretesspolicy</string>
+    <string name="privacy_policy_desc">Din integritet är viktig för oss. Läs vår integritetspolicy i Om för att förstå hur vi hanterar dina uppgifter.</string>
+
+    <!--Allmänna villkor-->
+    <string name="terms_conditions">Allmänna villkor</string>
+
+    <!--Begäran-->
+    <string name="request_limit_title">Gratis förfrågningsgräns</string>
+    <string name="request_limit_content">Du har %d gratisförfrågningar kvar. Överväg att uppgradera till premium för obegränsade förfrågningar.</string>
+    <string name="request_limit_reached">Gränsen för gratis begäran har nåtts. Uppgradera till premium för fler förfrågningar.</string>
+    <string name="request_limit_remaining">Du kan välja %d fler ikoner</string>
+
+    <!--Appversion-->
+    <string name="version">Version</string>
+	
+    <!--Beställnings-->
+    <string name="home_kustom_desc">Matchande väderkomponenter för %s</string>
+    <string name="kustom_widgets">Widgets</string>
+    <string name="kustom_wallpapers">Bakgrundsbilder</string>
+    <string name="kustom_lockscreens">Låsskärmar</string>
+    <string name="kustom_komponents">Komponent</string>
+
+    <!--Dialogrutan Begär samtycke-->
+    <string name="request_consent_title">Samtycke för datainsamling</string>
+    <string name="request_consent_content">För att behandla din ikonförfrågan måste vi samla in information om dina installerade appar och enhetsdetaljer (som skärmdimensioner och Android-version). Detta hjälper oss att designa ikoner som fungerar bäst för din enhet.\n\nDu kan läsa vår sekretesspolicy i avsnittet Om för mer information.</string>
+    <string name="request_consent_accept">ACCEPTERA</string>
+    <string name="request_consent_deny">FÖRNEKA</string>
+
+    <!--Navigationsstil-->
+    <string name="pref_navigation_style">Navigationsfält</string>
+
+    <!--Söka-->
+    <string name="search_apps">Sök appar</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Co to jest launcher-->
+    <!--Co to jest pakiet ikon-->
+    <!--Jak korzystać z pakietu ikon?-->
+    <!--Jak zastosować pakiet ikon?-->
+    <!--Jak wyświetlić wszystkie ikony?-->
+    <!--Nie widzę pełnej nazwy ikony-->
+    <!--Jak mogę zastąpić ikony inną ikoną?-->
+    <!--Jak poprosić o ikonę?-->
+    <!--Jak mogę przywrócić pozostałe żądania premium po ponownej instalacji aplikacji?-->
+    <!--Po ponownym uruchomieniu telefonu pakiet ikon nie zostaje zastosowany. Przywraca ustawienia domyślne?-->
+    <!--Dlaczego ikony na moim telefonie są postrzępione lub piksele?-->
+    <!--Widzę ikonę znajdującą się we wszystkich ikonach,
+            ale dlaczego rzeczywista ikona w szufladzie aplikacji nie uległa zmianie?-->
+    <!--Czym jest opcja „zgłoś błędy”?-->
+    <!--Mój program uruchamiający jest wymieniony w opisie Google Play, ale dlaczego nie znajduje się w sekcji „Zastosuj”?-->
+    <!--Nie można zastosować tapety, wyświetla się tylko czarny ekran?-->
+    <!--Muzei: Jak załadować tylko pobrane tapety?-->
+    <!--Muzei: Nie chcę pobierać tapet za każdym razem, gdy tapeta się zmienia?-->
+    <!--Muzei: Chcę używać tylko określonych tapet?-->
+    <!--Dlaczego potrzebne są uprawnienia do odczytu i zapisu pamięci zewnętrznej?-->
+    <!--Dlaczego potrzebne jest pozwolenie na korzystanie z Internetu?-->
+    <!--Dlaczego potrzebne jest pozwolenie na stan sieci dostępu?-->
+    <!--Dlaczego potrzebne jest pozwolenie na dostęp do stanu Wi-Fi?-->
+    <!--Dlaczego potrzebne jest pozwolenie na ustawienie tapety?-->
+    <!--Dlaczego potrzebne jest zezwolenie na blokadę budzenia?-->
+    <!--Dlaczego potrzebne jest pozwolenie na ustawienie alarmu?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Co to jest launcher?</item>
+    <item>Co to jest pakiet ikon?</item>
+    <item>Jak korzystać z pakietu ikon?</item>
+    <item>Jak zastosować pakiet ikon?</item>
+    <item>Jak wyświetlić wszystkie ikony?</item>
+    <item>Nie widzę pełnej nazwy ikony</item>
+    <item>Jak mogę zastąpić ikony inną ikoną?</item>
+    <item>Jak poprosić o ikonę?</item>
+    <item>Jak mogę przywrócić pozostałe żądania premium po ponownej instalacji aplikacji?</item>
+    <item>Po ponownym uruchomieniu telefonu pakiet ikon nie jest stosowany; przywraca ustawienia domyślne?</item>
+    <item>Dlaczego ikony na moim telefonie są postrzępione lub piksele?</item>
+    <item>Widzę ikonę znajdującą się we wszystkich ikonach,
+            ale dlaczego rzeczywista ikona w szufladzie aplikacji nie uległa zmianie?</item>
+    <item>Czym jest opcja „zgłoś błędy”?</item>
+    <item>Mój program uruchamiający jest wymieniony w opisie Google Play, ale dlaczego nie znajduje się w sekcji „Zastosuj”?</item>
+    <item>Nie można zastosować tapety, wyświetla się tylko czarny ekran?</item>
+    <item>Muzei: Jak załadować tylko pobrane tapety?</item>
+    <item>Muzei: Nie chcę pobierać tapet za każdym razem, gdy tapeta się zmienia?</item>
+    <item>Muzei: Chcę używać tylko określonych tapet?</item>
+    <item>Dlaczego potrzebne są uprawnienia do odczytu i zapisu pamięci zewnętrznej?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na korzystanie z Internetu?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na stan sieci dostępu?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na dostęp do stanu Wi-Fi?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na ustawienie tapety?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na budzenie blokady?</item>
+    <item>Dlaczego potrzebne jest pozwolenie na ustawienie alarmu?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher to część interfejsu użytkownika Androida, która pozwala użytkownikom dostosować ekran główny,
+            uruchamiaj aplikacje mobilne, wykonuj połączenia telefoniczne i wykonuj inne zadania na urządzeniach z Androidem.</item>
+    <item>Zestaw grafik, które odmienią wygląd ikon w szufladzie aplikacji</item>
+    <item>Będziesz potrzebował programu uruchamiającego obsługującego niestandardowe pakiety ikon.
+            Obsługiwane programy uruchamiające są wymienione w opisie Sklepu Play.
+            Jeśli nie wiesz, jakich programów uruchamiających należy użyć, po prostu przejdź do sekcji „Zastosuj” i stamtąd zainstaluj.</item>
+    <item>Możesz otworzyć szufladę nawigacji, a następnie otworzyć „Zastosuj”. Wybierz swój program uruchamiający z listy.
+            Jeśli Twojego programu uruchamiającego nie ma na liście, ale ten pakiet ikon jest z nim kompatybilny
+            (zobacz opis obsługiwanych launcherów w sklepie Google Play),
+            możesz zastosować pakiet ikon ręcznie w ustawieniach programu uruchamiającego.</item>
+    <item>Możesz otworzyć szufladę nawigacji, a następnie otworzyć „Ikony”</item>
+    <item>Po prostu dotknij ikony. Pojawi się okno dialogowe podglądu z większym obrazem i pełną nazwą ikony.</item>
+    <item>To zależy od tego, jakiego launchera użyłeś. Nie każdy program uruchamiający obsługuje edycję ikon.
+       	    Przeważnie możesz edytować ikonę, dotykając i przytrzymując ikonę lub dotykając jej dwukrotnie.</item>
+    <item>Możesz otworzyć szufladę nawigacji, a następnie otworzyć „Żądanie ikony”.</item>
+    <item>Możesz otworzyć szufladę nawigacji, następnie otworzyć „Ustawienia”, wybrać „Przywróć zakupy”.
+            Jeśli przed ponowną instalacją pozostały Ci Żądania Premium, zostaną one przywrócone.</item>
+    <item>Stało się to, ponieważ ten pakiet ikon został przeniesiony na kartę SD; powinieneś zainstalować go w pamięci wewnętrznej.</item>
+    <item>Problem może wynikać z programu uruchamiającego, którego użyłeś podczas obsługi rozdzielczości dużych ikon.
+       	    Można to naprawić, zwiększając rozmiar ikony do 115–120%.
+       	    Alternatywnie możesz zmienić program uruchamiający.</item>
+    <item>Otwórz ustawienia, przewiń w dół i wybierz „Zgłoś błędy”.</item>
+    <item>Opcja „Zgłoś błędy” służy do zgłaszania błędów związanych z pakietem ikon, a nie z panelem kontrolnym.</item>
+    <item>Nie każdy program uruchamiający obsługuje bezpośrednie zastosowanie, a do niektórych z nich nie można uzyskać dostępu bezpośrednio z pulpitu nawigacyjnego.
+      	    Możesz zastosować ten pakiet ikon ręcznie w indywidualnych ustawieniach programu uruchamiającego.</item>
+    <item>Jeśli wybierzesz opcję „Ustaw tapetę” bezpośrednio z aplikacji, zostanie ona pobrana do pamięci podręcznej,
+      	    następnie aplikacja dashboardu spróbuje ją zastosować. Nakładanie zajmie trochę czasu i będzie wymagało ogromnej ilości pamięci RAM w krótkim czasie.
+      	    Mogą pojawić się błędy „Czarny ekran”, ponieważ Twój telefon nie ma wystarczającej ilości wolnej pamięci RAM, aby przetworzyć tapetę.
+      	    Ponowne uruchomienie telefonu rozwiąże ten problem. Po ponownym uruchomieniu telefonu będzie dostępna większa ilość pamięci RAM.
+            Alternatywnie możesz otworzyć pobraną tapetę ze swojej Galerii i ustawić ją jako tapetę.</item>
+    <item>Otwórz Muzei, wybierz ten pakiet ikon, ustawienia. Zobaczysz opcję ładowania tylko pobranych tapet.
+            Najpierw musisz pobrać tapety z pulpitu nawigacyjnego.</item>
+    <item>Jeśli tapeta jest już pobrana, zostanie automatycznie załadowana z pamięci telefonu.
+            Muzei nie będzie kontynuował pobierania po zmianie tapety. Najpierw musisz pobrać tapety z pulpitu nawigacyjnego.</item>
+    <item>Otwórz Panel, pobierz tapety, których chcesz używać w Muzei.
+            Otwórz ustawienia Muzei, a następnie wybierz opcję Wczytaj tylko pobrane tapety.</item>
+    <item>Służy do zapisywania i odczytywania pamięci podręcznej oraz zbierania danych żądań ikon.</item>
+    <item>Służy do ładowania tapet w chmurze i ich pobierania.</item>
+    <item>Służy do sprawdzania, czy Twój telefon ma połączenie z Internetem, czy nie.</item>
+    <item>Służy do sprawdzania, czy Twój telefon ma połączenie internetowe z Wi-Fi, czy nie, do ładowania tapet w chmurze z Muzei.</item>
+    <item>Służy do nakładania tapet bezpośrednio z aplikacji na desce rozdzielczej.</item>
+    <item>Jest używany przez Muzei Live Wallpaper.</item>
+    <item>Służy do uruchamiania aplikacji zegara z widżetu zegara analogowego.</item>
+  </string-array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Vad är en launcher-->
+    <!--Vad är ett ikonpaket-->
+    <!--Hur använder jag ett ikonpaket?-->
+    <!--Hur applicerar jag ett ikonpaket?-->
+    <!--Hur ser jag alla ikoner som ingår?-->
+    <!--Jag kan inte se ett fullständigt ikonnamn-->
+    <!--Hur kan jag ersätta ikoner med en alternativ ikon?-->
+    <!--Hur begär jag en ikon?-->
+    <!--Hur kan jag återställa de återstående Premium-förfrågningarna efter att ha installerat om appen?-->
+    <!--Efter att ha startat om min telefon tillämpas inte ikonpaketet, det återställs till standardinställningarna?-->
+    <!--Varför ser ikonerna taggiga eller pixlade ut på min telefon?-->
+    <!--Jag kan se ikonen som ingår i alla ikoner,
+            men varför ändras inte den faktiska ikonen i applådan?-->
+    <!--Vad är alternativet \"rapportera buggar\"?-->
+    <!--Min startprogram listas i Google Play-beskrivningen, men varför ingår den inte i appliceringsavsnittet?-->
+    <!--Går det inte att använda bakgrundsbild, visar bara svart skärm?-->
+    <!--Muzei: Hur laddar man bara ned nedladdade bakgrundsbilder?-->
+    <!--Muzei: Jag vill inte fortsätta ladda ner bakgrundsbilder varje gång bakgrunden ändras?-->
+    <!--Muzei: Jag vill bara använda specifika bakgrundsbilder?-->
+    <!--Varför behövs läs- och skrivtillstånd för extern lagring?-->
+    <!--Varför behövs internettillstånd?-->
+    <!--Varför krävs tillstånd för Access Network State?-->
+    <!--Varför behövs åtkomst till Wi-Fi State-tillstånd?-->
+    <!--Varför krävs tillstånd för Set Wallpaper?-->
+    <!--Varför behövs Wake Lock-tillstånd?-->
+    <!--Varför krävs behörighet för inställning av larm?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Vad är en launcher?</item>
+    <item>Vad är ett ikonpaket?</item>
+    <item>Hur använder jag ett ikonpaket?</item>
+    <item>Hur använder jag ett ikonpaket?</item>
+    <item>Hur ser jag alla ikoner som ingår?</item>
+    <item>Jag kan inte se ett fullständigt ikonnamn</item>
+    <item>Hur kan jag ersätta ikoner med en alternativ ikon?</item>
+    <item>Hur begär jag en ikon?</item>
+    <item>Hur kan jag återställa de återstående Premium-förfrågningarna efter att ha installerat om appen?</item>
+    <item>Efter att ha startat om min telefon tillämpas inte ikonpaketet; den återställer till standardinställningarna?</item>
+    <item>Varför ser ikonerna taggiga eller pixlade ut på min telefon?</item>
+    <item>Jag kan se ikonen som ingår i alla ikoner,
+            men varför ändras inte den faktiska ikonen i applådan?</item>
+    <item>Vad är alternativet \"rapportera buggar\"?</item>
+    <item>Min startprogram listas i Google Play-beskrivningen, men varför ingår den inte i appliceringsavsnittet?</item>
+    <item>Går det inte att använda bakgrundsbild, visar bara svart skärm?</item>
+    <item>Muzei: Hur laddar man bara ned nedladdade bakgrundsbilder?</item>
+    <item>Muzei: Jag vill inte fortsätta ladda ner bakgrundsbilder varje gång bakgrunden ändras?</item>
+    <item>Muzei: Jag vill bara använda specifika bakgrundsbilder?</item>
+    <item>Varför behövs läs- och skrivtillstånd för extern lagring?</item>
+    <item>Varför behövs internettillstånd?</item>
+    <item>Varför krävs tillstånd för Access Network State?</item>
+    <item>Varför krävs tillstånd för Access Wifi State?</item>
+    <item>Varför krävs tillstånd för Set Wallpaper?</item>
+    <item>Varför behövs Wake Lock-tillstånd?</item>
+    <item>Varför krävs behörighet för inställning av larm?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher är den del av Android-användargränssnittet som låter användare anpassa hemskärmen,
+            starta mobilappar, ringa telefonsamtal och utföra andra uppgifter på Android-enheter.</item>
+    <item>En uppsättning grafik som kommer att ändra utseendet på din applådas ikoner</item>
+    <item>Du behöver en startprogram som stöder anpassade ikonpaket.
+            Startare som stöds listas i Play Butiks beskrivning.
+            Om du är förvirrad över vilka startprogram som ska användas, gå bara till avsnittet \"Apply\" och installera därifrån.</item>
+    <item>Du kan öppna navigeringslådan och sedan öppna \"Apply\". Välj ditt startprogram från listan.
+            Om ditt startprogram inte är listat där, men detta ikonpaket är kompatibelt med det
+            (se beskrivningen i Google Play Butik för startprogram som stöds),
+            du kan använda ikonpaketet manuellt i dina startprograminställningar.</item>
+    <item>Du kan öppna navigeringslådan och sedan öppna \"Ikoner\"</item>
+    <item>Tryck bara på ikonen. En dialogruta för förhandsgranskning visas med en större bild och ett fullständigt ikonnamn.</item>
+    <item>Det beror på vilken launcher du använde. Inte alla startprogram stöder ikonredigering.
+       	    Oftast kan du redigera en ikon genom att trycka och hålla ned ikonen eller dubbelklicka på den.</item>
+    <item>Du kan öppna navigeringslådan och sedan öppna \"Icon Request\".</item>
+    <item>Du kan öppna navigeringslådan och sedan öppna \"Inställningar\", välj \"Återställ köp\".
+            Om du hade några återstående Premium-förfrågningar innan du installerade om, kommer de att återställas.</item>
+    <item>Det hände för att detta ikonpaket flyttades till SD-kortet; du bör installera den i internminnet.</item>
+    <item>Problemet kan komma från startprogrammet som du använde när du hanterade stor ikonupplösning.
+       	    Du kan fixa det genom att öka ikonstorleken till 115–120 %.
+       	    Alternativt kan du byta startprogram.</item>
+    <item>Öppna inställningar, scrolla ned och välj sedan \"Rapportera buggar\".</item>
+    <item>\"Rapportera buggar\" används för att rapportera buggar relaterade till ikonpaketet, inte instrumentpanelen.</item>
+    <item>Inte alla startprogram stöder direkttillämpning, och vissa av dem kan inte nås direkt från instrumentpanelen.
+      	    Du kan använda detta ikonpaket manuellt i de individuella startinställningarna.</item>
+    <item>När du \"ställer in bakgrund\" direkt från appen kommer den att laddas ner till cachen,
+      	    sedan kommer instrumentpanelsappen att försöka tillämpa den. Ansökan kommer att ta lite tid och kräver också en enorm mängd RAM-minne under en kort tidsperiod.
+      	    \"Svart skärm\"-fel kan visas eftersom din telefon inte har tillräckligt med ledigt RAM-minne för att bearbeta bakgrunden.
+      	    Om du startar om din telefon löser du det här problemet. Efter omstart kommer din telefon att ha mer RAM tillgängligt.
+            Alternativt kan du öppna den nedladdade bakgrunden från ditt Galleri och ställa in den som bakgrund därifrån.</item>
+    <item>Öppna Muzei, välj detta ikonpaket, inställningar. Du kommer att se ett alternativ för att bara ladda nedladdade bakgrundsbilder.
+            Du måste ladda ner bakgrundsbilder från instrumentpanelen först.</item>
+    <item>Om en bakgrundsbild redan är nedladdad laddas den automatiskt från telefonens minne.
+            Muzei kommer inte att fortsätta ladda ner det när bakgrunden ändras. Du måste ladda ner bakgrundsbilder från instrumentpanelen först.</item>
+    <item>Öppna Dashboard, ladda ner bakgrundsbilder som du vill använda i Muzei.
+            Öppna Muzei-inställningarna och välj sedan Ladda endast nedladdade bakgrunder.</item>
+    <item>Den används för att skriva och läsa cache och samla in ikonbegäransdata.</item>
+    <item>Den används för att ladda molnbaserade bakgrunder och ladda ner dem.</item>
+    <item>Den används för att kontrollera om din telefon har en internetanslutning eller inte.</item>
+    <item>Den används för att kontrollera om din telefon har en internetanslutning till ett wifi eller inte, för att ladda molntapeter från Muzei.</item>
+    <item>Den används för att applicera bakgrundsbilder direkt från instrumentpanelsappen.</item>
+    <item>Den används av Muzei Live Wallpaper.</item>
+    <item>Den används för att starta klockappen från den analoga klockwidgeten.</item>
+  </string-array>
+</resources>

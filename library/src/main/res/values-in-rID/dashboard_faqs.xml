@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Apa itu peluncur-->
+    <!--Apa itu paket ikon-->
+    <!--Bagaimana cara menggunakan paket ikon?-->
+    <!--Bagaimana cara menerapkan paket ikon?-->
+    <!--Bagaimana cara melihat semua ikon disertakan?-->
+    <!--Saya tidak dapat melihat nama ikon secara lengkap-->
+    <!--Bagaimana cara mengganti ikon dengan ikon alternatif?-->
+    <!--Bagaimana cara meminta ikon?-->
+    <!--Bagaimana cara mengembalikan Permintaan Premium yang tersisa setelah menginstal ulang aplikasi?-->
+    <!--Setelah menghidupkan ulang ponsel saya, paket ikon tidak diterapkan, apakah kembali ke default?-->
+    <!--Mengapa ikon di ponsel saya tampak bergerigi atau berpiksel?-->
+    <!--Saya dapat melihat ikon disertakan di semua ikon,
+            tapi kenapa ikon sebenarnya di laci aplikasi tidak berubah?-->
+    <!--Apa yang dimaksud dengan opsi \"laporkan bug\"?-->
+    <!--Peluncur saya tercantum dalam deskripsi Google Play, namun mengapa tidak disertakan dalam bagian penerapan?-->
+    <!--Wallpaper tidak dapat diterapkan, hanya menampilkan layar hitam?-->
+    <!--Muzei: Bagaimana cara memuat wallpaper yang diunduh saja?-->
+    <!--Muzei: Saya tidak ingin terus mendownload wallpaper setiap kali wallpaper berubah?-->
+    <!--Muzei: Saya hanya ingin menggunakan wallpaper tertentu?-->
+    <!--Mengapa izin Baca & Tulis Penyimpanan Eksternal diperlukan?-->
+    <!--Mengapa izin Internet diperlukan?-->
+    <!--Mengapa izin Access Network State diperlukan?-->
+    <!--Mengapa izin Akses Status Wi-Fi diperlukan?-->
+    <!--Mengapa izin Set Wallpaper diperlukan?-->
+    <!--Mengapa Izin Wake Lock diperlukan?-->
+    <!--Mengapa izin Set Alarm diperlukan?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Apa itu peluncur?</item>
+    <item>Apa itu paket ikon?</item>
+    <item>Bagaimana cara menggunakan paket ikon?</item>
+    <item>Bagaimana cara menerapkan paket ikon?</item>
+    <item>Bagaimana cara melihat semua ikon disertakan?</item>
+    <item>Saya tidak dapat melihat nama ikon secara lengkap</item>
+    <item>Bagaimana cara mengganti ikon dengan ikon alternatif?</item>
+    <item>Bagaimana cara meminta ikon?</item>
+    <item>Bagaimana cara memulihkan Permintaan Premium yang tersisa setelah menginstal ulang aplikasi?</item>
+    <item>Setelah menghidupkan ulang ponsel saya, paket ikon tidak diterapkan; itu mengembalikan ke default?</item>
+    <item>Mengapa ikon di ponsel saya tampak bergerigi atau berpiksel?</item>
+    <item>Saya dapat melihat ikon disertakan di semua ikon,
+            tapi kenapa ikon sebenarnya di laci aplikasi tidak berubah?</item>
+    <item>Apa yang dimaksud dengan opsi \"laporkan bug\"?</item>
+    <item>Peluncur saya tercantum dalam deskripsi Google Play, namun mengapa tidak disertakan dalam bagian penerapan?</item>
+    <item>Wallpaper tidak dapat diterapkan, hanya menampilkan layar hitam?</item>
+    <item>Muzei: Bagaimana cara memuat wallpaper yang diunduh saja?</item>
+    <item>Muzei: Saya tidak ingin terus mendownload wallpaper setiap kali wallpaper berubah?</item>
+    <item>Muzei: Saya hanya ingin menggunakan wallpaper tertentu?</item>
+    <item>Mengapa izin Baca &amp; Tulis Penyimpanan Eksternal diperlukan?</item>
+    <item>Mengapa izin Internet diperlukan?</item>
+    <item>Mengapa izin Access Network State diperlukan?</item>
+    <item>Mengapa izin Access Wifi State diperlukan?</item>
+    <item>Mengapa izin Set Wallpaper diperlukan?</item>
+    <item>Mengapa izin Wake Lock diperlukan?</item>
+    <item>Mengapa izin Set Alarm diperlukan?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Peluncur adalah bagian dari antarmuka pengguna Android yang memungkinkan pengguna menyesuaikan layar beranda,
+            meluncurkan aplikasi seluler, melakukan panggilan telepon, dan melakukan tugas lain di perangkat Android.</item>
+    <item>Seperangkat grafik yang akan mengubah tampilan ikon laci aplikasi Anda</item>
+    <item>Anda memerlukan peluncur yang mendukung paket ikon khusus.
+            Peluncur yang didukung tercantum dalam deskripsi Play Store.
+            Jika Anda bingung peluncur mana yang harus digunakan, buka saja bagian \"Terapkan\" dan instal dari sana.</item>
+    <item>Anda dapat membuka panel samping navigasi, lalu membuka \"Terapkan\". Pilih peluncur Anda dari daftar.
+            Jika peluncur Anda tidak terdaftar di sana, namun paket ikon ini kompatibel dengannya
+            (lihat deskripsi Google Play Store untuk peluncur yang didukung),
+            Anda dapat menerapkan paket ikon secara manual di pengaturan peluncur Anda.</item>
+    <item>Anda dapat membuka panel samping navigasi lalu membuka \"Ikon\"</item>
+    <item>Cukup ketuk ikonnya. Dialog pratinjau akan muncul dengan gambar lebih besar dan nama ikon lengkap.</item>
+    <item>Itu tergantung pada peluncur yang Anda gunakan. Tidak semua peluncur mendukung pengeditan ikon.
+       	    Biasanya Anda dapat mengedit ikon dengan mengetuk &amp; menahan ikon atau mengetuknya dua kali.</item>
+    <item>Anda dapat membuka panel samping navigasi, lalu membuka \"Permintaan Ikon\".</item>
+    <item>Anda dapat membuka panel samping navigasi, lalu buka \"Pengaturan\", pilih \"Pulihkan Pembelian\".
+            Jika Anda memiliki Permintaan Premium yang tersisa sebelum menginstal ulang, Permintaan tersebut akan dipulihkan.</item>
+    <item>Hal ini terjadi karena paket ikon ini dipindahkan ke Kartu SD; Anda harus menginstalnya di memori internal.</item>
+    <item>Masalahnya mungkin berasal dari peluncur yang Anda gunakan saat menangani resolusi ikon besar.
+       	    Anda dapat memperbaikinya dengan meningkatkan ukuran ikon menjadi 115–120%.
+       	    Alternatifnya, Anda dapat mengganti peluncur.</item>
+    <item>Buka pengaturan, gulir ke bawah, lalu pilih \"Laporkan Bug\".</item>
+    <item>\"Laporkan Bug\" digunakan untuk melaporkan bug yang terkait dengan paket ikon, bukan dasbor.</item>
+    <item>Tidak semua peluncur mendukung penerapan langsung, dan beberapa di antaranya tidak dapat diakses langsung dari dasbor.
+      	    Anda dapat menerapkan paket ikon ini secara manual di pengaturan peluncur individual.</item>
+    <item>Saat Anda \"Setel Wallpaper\" langsung dari aplikasi, itu akan diunduh ke cache,
+      	    maka aplikasi dashboard akan mencoba menerapkannya. Penerapannya akan memakan waktu dan juga membutuhkan RAM dalam jumlah besar untuk jangka waktu yang singkat.
+      	    Kesalahan \"Layar Hitam\" mungkin muncul karena ponsel Anda tidak memiliki cukup RAM untuk memproses wallpaper.
+      	    Memulai ulang ponsel Anda akan memperbaiki masalah ini. Setelah restart, ponsel Anda akan memiliki lebih banyak RAM yang tersedia.
+            Alternatifnya, Anda dapat membuka wallpaper yang diunduh dari Galeri Anda dan mengaturnya sebagai wallpaper dari sana.</item>
+    <item>Buka Muzei, pilih paket ikon ini, pengaturan. Anda akan melihat opsi untuk memuat wallpaper yang diunduh saja.
+            Anda harus mengunduh wallpaper dari dasbor terlebih dahulu.</item>
+    <item>Jika wallpaper sudah diunduh, wallpaper tersebut akan dimuat dari memori ponsel Anda secara otomatis.
+            Muzei tidak akan terus mengunduhnya saat wallpaper berubah. Anda harus mengunduh wallpaper dari dasbor terlebih dahulu.</item>
+    <item>Buka Dashboard, download wallpaper yang ingin Anda gunakan di Muzei.
+            Buka pengaturan Muzei, lalu pilih Muat Wallpaper yang Diunduh Saja.</item>
+    <item>Ini digunakan untuk menulis &amp; membaca cache, dan mengumpulkan data permintaan ikon.</item>
+    <item>Ini digunakan untuk memuat Wallpaper Berbasis Cloud dan mengunduhnya.</item>
+    <item>Ini digunakan untuk memeriksa apakah ponsel Anda memiliki koneksi internet atau tidak.</item>
+    <item>Ini digunakan untuk memeriksa apakah ponsel Anda memiliki koneksi internet ke wifi atau tidak, untuk memuat wallpaper cloud dari Muzei.</item>
+    <item>Ini digunakan untuk menerapkan wallpaper langsung dari aplikasi dasbor.</item>
+    <item>Ini digunakan oleh Muzei Live Wallpaper.</item>
+    <item>Ini digunakan untuk meluncurkan aplikasi jam dari widget jam analog.</item>
+  </string-array>
+</resources>

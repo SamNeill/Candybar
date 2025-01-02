@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CandyBar.Text.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">@dimen/text_content_subtitle</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="textAppearanceSubtitle2">@style/CandyBar.Text.Subtitle2</item>
+        <item name="android:listPreferredItemHeightSmall">48dp</item>
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="itemShapeFillColor">@color/navigation_item_background_color</item>
+        <item name="itemTextAppearance">@style/CandyBar.Text.Subtitle2</item>
+        <item name="itemTextAppearanceActiveBoldEnabled">false</item>
+    </style>
+
+    <style name="RippleStyle">
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+    <style name="RippleStyleLight">
+        <item name="colorControlHighlight">#44FFFFFF</item>
+    </style>
+
+    <style name="RippleAccentStyle">
+        <item name="colorControlHighlight">?cb_rippleAccent</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="colorButtonNormal">?cb_colorAccent</item>
+    </style>
+
+    <style name="CheckBoxStyle">
+        <item name="colorPrimary">?cb_colorAccent</item>
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlActivated">?cb_colorAccent</item>
+    </style>
+
+    <style name="AccentChange">
+        <item name="colorPrimary">?cb_colorAccent</item>
+    </style>
+
+    <style name="ToolbarThemeOverlay">
+        <item name="colorControlNormal">?cb_toolbarIcon</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="materialThemeOverlay">@style/ToolbarThemeOverlay</item>
+    </style>
+
+    <style name="ActionBarOverlay">
+        <item name="colorControlNormal">?cb_toolbarIcon</item>
+        <item name="android:textColorPrimary">?cb_toolbarIcon</item>
+    </style>
+
+    <style name="ActionModeStyle" parent="Widget.AppCompat.ActionMode">
+        <item name="background">?cb_colorPrimary</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+	
+    <!-- Text Styles -->
+    <style name="TextAppearance.CandyBar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.CandyBar.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Icon Styles -->
+    <style name="Icon.CandyBar" parent="">
+        <item name="tint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="CandyBar.Dialog" parent="@style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">?cb_cardBackground</item>
+        <item name="android:background">?cb_cardBackground</item>
+    </style>
+
+    <style name="CandyBar.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@drawable/overflow_menu_card_background</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:textColor">?cb_primaryText</item>
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+    <style name="CandyBar.PopupMenu.Overflow" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/overflow_menu_card_background</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:textColor">?cb_primaryText</item>
+        <item name="colorControlHighlight">?cb_rippleColor</item>
+    </style>
+
+    <style name="Widget.Material3.MaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:thumbTint">@color/material_you_switch_thumb</item>
+        <item name="android:trackTint">@color/material_you_switch_track</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Widget.Material2.MaterialSwitch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:minWidth">34dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">34dp</item>
+        <item name="android:switchMinWidth">34dp</item>
+        <item name="android:thumbTint">@color/material_switch_thumb</item>
+        <item name="android:trackTint">@color/material_switch_track</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="HomeHeaderButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="strokeColor">?cb_colorAccent</item>
+        <item name="backgroundTint">@color/accent_transparent_color</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.AccentTransparent</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="iconTint">?android:attr/textColorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="ThemeOverlay.AccentTransparent" parent="">
+        <item name="colorSurface">@color/accent_transparent_color</item>
+        <item name="colorOnSurface">?cb_colorAccent</item>
+    </style>
+
+    <style name="ThemeOverlay.PrimaryTransparent" parent="">
+        <item name="colorSurface">@android:color/transparent</item>
+        <item name="colorOnSurface">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>

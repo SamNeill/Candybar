@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--כותרת מסך הפתיחה-->
+    <string name="splash_screen_title">לוח המחוונים של CandyBar</string>
+
+    <!--תצוגת ניווט-->
+    <string name="navigation_view_home">בַּיִת</string>
+    <string name="navigation_view_apply">לִפְנוֹת</string>
+    <string name="navigation_view_icons">אייקונים</string>
+    <string name="navigation_view_request">בקשת סמל</string>
+    <string name="navigation_view_wallpapers">טפטים</string>
+    <string name="navigation_view_kustom">מִנְהָג</string>
+    <string name="navigation_view_settings">הגדרות</string>
+    <string name="navigation_view_faqs">שאלות נפוצות</string>
+    <string name="navigation_view_about">אוֹדוֹת</string>
+    <string name="navigation_view_donate">תמיכה בפיתוח</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">הגדרות Muzei</string>
+    <string name="minute">דַקָה</string>
+    <string name="hour">שָׁעָה</string>
+    <string name="save_setting">לְהַצִיל</string>
+    <string name="muzei_refresh_duration">משך הרענון</string>
+    <string name="muzei_wifi_only">רענן מ-Wi-Fi בלבד</string>
+    <string name="muzei_downloaded_only">טען רקעים שהורדו בלבד</string>
+    <string name="muzei_settings_ignored">ערכת אייקונים אינה מכילה רקעים, התעלמו מההגדרות.</string>
+    <string name="muzei_settings_saved">ההגדרות נשמרו</string>
+
+    <!--תַפרִיט-->
+    <string name="menu_search">לְחַפֵּשׂ</string>
+    <string name="menu_save">שמור במכשיר</string>
+    <string name="menu_select_all">בחר הכל</string>
+    <string name="menu_delete">לִמְחוֹק</string>
+
+    <string name="menu_wallpaper_crop">טפט לחתוך</string>
+    <string name="menu_apply_homescreen">מסך הבית</string>
+    <string name="menu_apply_lockscreen">מסך נעילה</string>
+    <string name="menu_apply_homescreen_lockscreen">מסך בית ומסך נעילה</string>
+
+    <!--דיאלוג-->
+    <string name="open">לִפְתוֹחַ</string>
+    <string name="close">לִסְגוֹר</string>
+    <string name="clear">בָּרוּר</string>
+    <string name="ok">בְּסֵדֶר</string>
+    <string name="install">לְהַתְקִין</string>
+    <string name="donate">לִתְרוֹם</string>
+    <string name="update">לְעַדְכֵּן</string>
+
+    <string name="search_noresult">לא נמצאה תוצאה עבור \"%s\"</string>
+    <string name="search_faqs">שאלה או תשובה</string>
+    <string name="search_icon">שם סמל</string>
+    <string name="search_wallpapers">שם טפט</string>
+
+    <!--לְעַדְכֵּן-->
+    <string name="checking_for_update">מחפש עדכון...</string>
+    <string name="update_available">עדכון זמין!</string>
+    <string name="no_update_available">אתה משתמש בגרסה העדכנית ביותר!</string>
+
+    <!--גרסת Changelog-->
+    <string name="changelog_version">גִרְסָה</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">לא ניתן לטעון מוצרי רכישה מתוך האפליקציה</string>
+
+    <!--רִשָׁיוֹן-->
+    <string name="license_checking">בודק רישיון...</string>
+    <string name="license_check">בדיקת רישיון</string>
+    <string name="license_check_success">בדיקת רישיון הצליחה. תודה שהורדת את האפליקציה מחנות Play.</string>
+    <string name="license_check_failed">בדיקת הרישיון נכשלה; לא הורדת את האפליקציה מחנות Play. לא תוכל להשתמש בו.</string>
+    <string name="license_check_retry">לא ניתן לבדוק את הרישיון, אנא נסה שוב בעוד מספר רגעים.</string>
+
+    <!--בדיקת התקנת חנות Play-->
+    <string name="playstore_check">בדיקת חנות Play</string>
+    <string name="playstore_check_success">תודה שהתקנת את האפליקציה מחנות Google Play. תהנה!</string>
+    <string name="playstore_check_failed">נראה שהתקנת את חבילת הסמלים הזו מחוץ לחנות Google Play.
+        לא תוכל להשתמש בו.</string>
+
+    <!--לַחֲלוֹק-->
+    <string name="share_app_title">יו! בדוק את %s</string>
+    <string name="share_app_body">בדוק את חבילת הסמלים של %1$s בחנות Play: %2$s</string>
+
+    <!--הקש על מבוא-->
+    <string name="tap_intro_home_navigation">מגירת ניווט</string>
+    <string name="tap_intro_home_navigation_desc">הקש כאן או החלק מהקצה השמאלי של המסך כדי לפתוח את מגירת הניווט</string>
+    <string name="tap_intro_home_apply">החל חבילת אייקונים</string>
+    <string name="tap_intro_home_apply_desc">הקש כאן כדי להחיל את %s על המשגר ​​הנוכחי שלך. לחץ לחיצה ארוכה כדי להחיל על משגרים אחרים.</string>
+    <string name="tap_intro_icons_search">לְחַפֵּשׂ</string>
+    <string name="tap_intro_icons_search_desc">הקש כאן כדי לחפש סמל</string>
+    <string name="tap_intro_request_search">חפש אפליקציות חסרות</string>
+    <string name="tap_intro_request_search_desc">הקש כאן כדי לחפש באפליקציות המותקנות שלך סמלים חסרים עבור בקשת הסמל שנבחר</string>
+    <string name="tap_intro_request_select">בחר אפליקציה שהוחמצה</string>
+    <string name="tap_intro_request_select_desc">הקש כאן כדי לבחור אפליקציה שלא נענתה לבקשת סמל</string>
+    <string name="tap_intro_request_select_all">בחר את כל האפליקציות שהוחמצו</string>
+    <string name="tap_intro_request_select_all_desc">הקש כאן כדי לבחור את כל האפליקציות שהוחמצו לבקשת סמל</string>
+    <string name="tap_intro_request_send">שלח בקשה לסמל</string>
+    <string name="tap_intro_request_send_desc">הקש כאן כדי לשלוח אפליקציות שנבחרו שלא נענו</string>
+    <string name="tap_intro_request_premium">בקשה לסמל פרימיום</string>
+    <string name="tap_intro_request_premium_desc">הקש כאן כדי לקנות את חבילת בקשת סמל הפרימיום, עם בקשת סמל פרימיום תוכל לקבל את האפליקציות המבוקשות מהר יותר.</string>
+    <string name="tap_intro_wallpapers_option">אפשרויות טפט</string>
+    <string name="tap_intro_wallpapers_option_desc">הקש והחזק כאן כדי להציג אפשרויות טפט; %s החל טפט.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">להוריד או</string>
+    <string name="tap_intro_wallpapers_preview">תצוגה מקדימה של טפט</string>
+    <string name="tap_intro_wallpapers_preview_desc">הקש כאן כדי להציג בתצוגה מקדימה את הגודל המלא של הטפט</string>
+    <string name="tap_intro_wallpaper_preview_save">שמור טפט</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">הקש כאן כדי להוריד ולשמור טפטים במכשיר שלך כדי שתוכל להשתמש בו מאוחר יותר</string>
+    <string name="tap_intro_wallpaper_preview_apply">החל טפט</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">הקש כאן כדי להגדיר טפט כרקע למסך הבית</string>
+
+    <!--בַּיִת-->
+    <string name="home_more_apps_header">אפליקציות נוספות</string>
+    <string name="home_more_apps">בדוק חבילת אייקונים נוספים בחנות Google Play</string>
+    <string name="home_rate">קֶצֶב</string>
+    <string name="home_share">לַחֲלוֹק</string>
+    <string name="home_check_update">לְעַדְכֵּן</string>
+    <string name="home_apply_icon_pack">החל %s</string>
+    <string name="home_donate">לִתְרוֹם</string>
+    <string name="home_donate_desc">עודד את המפתח ליצור חבילת אייקונים נוספת</string>
+    <string name="home_icons">אייקונים</string>
+    <string name="home_icon_dimension">ממד הסמל של %s פיקסלים</string>
+    <string name="home_loud_wallpapers">%d רקעים בענן</string>
+    <string name="home_muzei">טפט חי של Muzei</string>
+    <string name="home_icon_request_installed_apps">סה"כ%d אפליקציות מותקנות</string>
+    <string name="home_icon_request_themed_apps">מוטיב\n%d אפליקציות</string>
+    <string name="home_icon_request_missed_apps">פספסו\nd אפליקציות</string>
+
+    <!--לִפְנוֹת-->
+    <string name="apply_installed">משגר מותקן</string>
+    <string name="apply_installed_launchers">משגרים מותקנים</string>
+    <string name="apply_supported">משגרים נתמכים</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">המשגר ​​%s אינו מותקן. אתה יכול למצוא ולהתקין אותו מאמזון AppStore או מהמשאבים והחנויות המועדפות עליך.</string>
+    <string name="apply_manual">מפעיל המשגר ​​%1$s אינו תומך בהחלה ישירה, אך ניתן להחיל %2$s באופן ידני מהגדרות המפעיל.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso אינו תומך ביישום ישיר אך אתה יכול לבצע את השלבים הבאים:</string>
+    <string name="apply_manual_kvaesitso_step_1">פתח את ההגדרות של Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">הקש על \"רשת וסמלים\"</string>
+    <string name="apply_manual_kvaesitso_step_3">הקש על \"חבילת האייקונים\"</string>
+    <string name="apply_manual_kvaesitso_step_4">בחר %s מהרשימה</string>
+    <string name="apply_manual_kvaesitso_step_5">הקש על סמל מברשת הצבע כדי להפעיל או להשבית את צורת הרקע</string>
+    <string name="apply_manual_kiss">KISS לא תומך ביישום ישיר, אבל אתה יכול לבצע את השלבים הבאים:</string>
+    <string name="apply_manual_kiss_step_1">פתח את הגדרות KISS</string>
+    <string name="apply_manual_kiss_step_2">הקש על \"ממשק משתמש\"</string>
+    <string name="apply_manual_kiss_step_3">הקש על \"חבילת האייקונים\"</string>
+    <string name="apply_manual_kiss_step_4">בחר %s מהרשימה</string>
+    <string name="apply_manual_samsung_oneui">%1$s אינו תומך ביישום ישיר, אך החל מ-%2$s אתה יכול להחיל סמלים עם אפליקציה נלווית.</string>
+    <string name="apply_manual_samsung_oneui_too_old">הגרסה הנוכחית שלך של %s ישנה מדי. עדכן לאנדרואיד 12 ואילך כדי שתוכל להחיל אייקונים ישירות. לחלופין, אתה יכול להתקין משגר אחר.</string>
+    <string name="apply_manual_samsung_oneui_step_1">פתח את %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">הורד את האפליקציה %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">הקש על \"סמל\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">הקש על \"צור חדש\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">הקש על הלחצן הכחול \"Iconpack\".</string>
+    <string name="apply_manual_samsung_oneui_step_6">בחר %s מהרשימה</string>
+    <string name="apply_manual_samsung_oneui_step_7">חזור על שלבים אלה בכל פעם שאתה מעדכן את %s מכיוון שסמלים חדשים לא ימופו באופן אוטומטי.</string>
+    <string name="apply_manual_hios">משגר HiOS אינו תומך ביישום ישיר, אך אתה יכול לבצע את השלבים הבאים:</string>
+    <string name="apply_manual_hios_step_1">פתח את \"הגדרות\"</string>
+    <string name="apply_manual_hios_step_2">הקש על \"נושא ומסך נעילה\"</string>
+    <string name="apply_manual_hios_step_3">הקש על \"העיצוב שלי\"</string>
+    <string name="apply_manual_hios_step_4">הקש על \"חבילת אייקונים\"</string>
+    <string name="apply_manual_hios_step_5">הקש על %s</string>
+    <string name="apply_manual_oxygen_os_step_1">הקש ארוכות על מסך הבית שלך</string>
+    <string name="apply_manual_oxygen_os_step_2">הקש על \"הגדרות בית\"</string>
+    <string name="apply_manual_oxygen_os_step_3">הקש על \"חבילת אייקונים\"</string>
+    <string name="apply_manual_oxygen_os_step_4">הקש על %s</string>
+    <string name="apply_manual_color_os_step_1">הקש ארוכות על מסך הבית שלך</string>
+    <string name="apply_manual_color_os_step_2">הקש על \"סמלים\"</string>
+    <string name="apply_manual_color_os_step_3">גלול מימין ללחצן \"מותאם אישית\" (זו רשימה ניתנת לגלילה!)</string>
+    <string name="apply_manual_color_os_step_4">הקש על %s</string>
+    <string name="apply_manual_before">גרסה זו של Before Launcher עדיין לא תומכת ביישום סמלים ישירות. במקום זאת, בצע את השלבים הבאים:</string>
+    <string name="apply_manual_before_step_1">החלק שמאלה במסך הבית</string>
+    <string name="apply_manual_before_step_2">הקש על \"הגדרות\"</string>
+    <string name="apply_manual_before_step_3">הקש על \"סגנונות ועיצובים\"</string>
+    <string name="apply_manual_before_step_4">הקש על \"סגנונות וחבילות סמלים\"</string>
+    <string name="apply_manual_before_step_5">הקש על %s</string>
+    <string name="apply_manual_nothing_step_1">פתח את \"הגדרות\"</string>
+    <string name="apply_manual_nothing_step_2">הקש על \"התאמה אישית\"</string>
+    <string name="apply_manual_nothing_step_3">הקש על \"חבילת אייקונים\"</string>
+    <string name="apply_manual_nothing_step_4">הקש על %s</string>
+    <string name="apply_launch_failed">לא ניתן להפעיל את הגדרות %s</string>
+    <string name="apply_launcher_not_installed">המשגר ​​%s אינו מותקן. האם אתה רוצה לפתוח את חנות Google Play כדי להוריד ולהתקין אותה?</string>
+    <string name="apply_launcher_not_installable">המשגר ​​%s אינו מותקן. אנא נסה שוב לאחר התקנת המפעיל.</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager אינו זמין במכשיר זה</string>
+    <string name="apply_cmtheme_failed">לא ניתן להפעיל את מנהל הנושא של CM, אתה יכול לנסות להחיל את חבילת האייקונים באופן ידני מהגדרות.</string>
+    <string name="apply_lg_home">כדי להחיל ערכת אייקונים זו, פתח את הגדרות - תצוגה - מסך בית - ערכת נושא</string>
+    <string name="apply_lg_home_not_available">LG Home אינו זמין במכשיר זה</string>
+    <string name="apply_lg_home_failed">לא ניתן להפעיל את הגדרות הבית של LG, אתה יכול לנסות להחיל את חבילת האייקונים באופן ידני מהגדרות.</string>
+    <string name="apply_lg_home_nougat">LG Home עם Android Nougat כבר לא תומך ב-Icon Pack. אתה צריך משגר מותאם אישית כדי להשתמש ב-Icon Pack.</string>
+    <string name="apply_launcher_incompatible" formatted="true">המשגר ​​של %s אינו תומך בחבילות אייקונים כלשהן, לכן אינך יכול להשתמש בחבילת האייקונים הזו עם המשגר ​​הזה. אתה יכול לנסות אפליקציה של צד שלישי כדי להשתמש בחבילת הסמלים הזו במפעיל %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">המשגר ​​%1$s אינו תואם ל-%2$s, אך עשוי להיות תואם לגרסאות חדשות יותר</string>
+
+    <!--אייקונים-->
+    <string name="icons_load_failed">לא ניתן לטעון סמלים</string>
+    <string name="icon_shape">צורת סמל</string>
+    <string name="items_selected">נבחרו %d</string>
+
+    <!--בַּקָשָׁה-->
+    <string name="request_title">בקשת סמל</string>
+    <string name="request_terms">לפני שתמשיך עם בקשת הסמל, שים לב שהבקשה שלך תיבדק בהתאם להנחיות שלנו. בקשות פרימיום עשויות להיעשות מהר יותר.</string>
+    <string name="request_not_selected">בחר אפליקציות לבקש</string>
+    <string name="request_not_requested">לא מתבקש</string>
+    <string name="request_already_requested">כבר ביקשו</string>
+    <string name="request_not_available">לא ניתן לבקש</string>
+    <string name="request_building">בקשת בנייה…</string>
+    <string name="request_pacific_sending">שולח בקשה למנהל פסיפיק...</string>
+    <string name="request_pacific_error">אירעה שגיאה בעת שליחת בקשה ל-Pacific Manager. השגיאה היא %s</string>
+    <string name="request_pacific_success">הבקשה נשלחה בהצלחה למנהל פסיפיק</string>
+    <string name="request_custom_error">אירעה שגיאה בעת שליחת בקשת סמל. אם שגיאה זו נמשכת, פנה למפתח. %s</string>
+    <string name="request_custom_success">בקשת הסמל נשלחה בהצלחה</string>
+    <string name="request_fetching_data">שואב את הנתונים העדכניים ביותר...</string>
+    <string name="request_build_failed">לא ניתן לבנות בקשת סמל</string>
+    <string name="request_appfilter_failed">לא ניתן לקרוא appfilter.xml</string>
+    <string name="request_requested">כבר ביקשת את הסמל הזה ולא תוכל לבקש אותו שוב.</string>
+    <string name="request_requested_possible">כבר ביקשת את הסמל הזה. האם אתה בטוח שברצונך לבזבז בקשה נוספת על זה?</string>
+    <string name="request_requested_button_cancel">לַחֲזוֹר</string>
+    <string name="request_requested_button_confirm">בחר בכל זאת</string>
+    <string name="request_email_client">בחר את האפליקציה שבה ברצונך להשתמש כדי לשלוח את בקשת הסמל</string>
+    <string name="request_app_disabled">אתה משתמש בגרסה ישנה יותר של חבילת אייקונים זו. הסמלים המבוקשים עשויים להיכלל בגרסה העדכנית ביותר. עדכן את האפליקציה שלך לגרסה העדכנית ביותר כדי לבקש אייקונים.</string>
+    <string name="connection_error_long">לא ניתן לטעון נתונים מהשרת. אנא בדוק את חיבור הרשת שלך.</string>
+    <string name="unable_to_load_config">אירעה שגיאה בעת אחזור או קריאת נתונים מהשרת.</string>
+    <string name="request_limit">אתה יכול להגיש %d בקשות רק עם בקשה רגילה.</string>
+    <string name="request_used">ביקשת %d סמל(ים).</string>
+    <string name="request_limit_buy">אתה יכול לקנות בקשות פרימיום כדי לבקש סמלים נוספים.</string>
+    <string name="request_limit_reset">מגבלת בקשת הסמל תאופס בכל עדכון.</string>
+
+    <!--בקשה רגילה-->
+    <string name="regular_request">בקשת אייקונים רגילה</string>
+    <string name="regular_request_desc">קבל את הסמל שלך המבוקש, והמפתח ינסה לכלול אייקונים שביקשת.</string>
+    <string name="regular_request_count">סה"כ\n%d בקשה</string>
+    <string name="regular_request_used">בשימוש\n%d בקשה</string>
+    <string name="regular_request_available">בקשה זמינה\n%d</string>
+
+    <!--בקשת פרימיום-->
+    <string name="premium_request">בקשת סמל פרימיום</string>
+    <string name="premium_request_no_internet">ודא שהטלפון שלך מחובר לאינטרנט לפני שליחת בקשת פרימיום</string>
+    <string name="premium_request_desc">בקשת סמל פרימיום היא בקשה לתשלום. אתה יכול לקבל את האפליקציות המבוקשות מהר יותר על ידי שימוש בבקשת סמל פרימיום.</string>
+    <string name="premium_request_buy">לִקְנוֹת</string>
+    <string name="premium_request_count">סה"כ\n%d בקשה</string>
+    <string name="premium_request_used">בשימוש\n%d בקשה</string>
+    <string name="premium_request_available">בקשה זמינה\n%d</string>
+    <string name="premium_request_already_purchased">עדיין יש לך %d בקשת פרימיום. עליך להשתמש בכולם לפני רכישת חבילת בקשת פרימיום שוב.</string>
+    <string name="premium_request_limit">יש לך רק %d בקשות פרימיום,</string>
+    <string name="premium_request_limit1">אבל בחרת %d אפליקציות. \n\nעליך להשתמש בכל בקשות הפרימיום שלך לפני שתשתמש שוב בבקשות הרגילות.</string>
+    <string name="premium_request_consume_failed">לא ניתן להשתמש ב-Premium Request, ודא שיש לך חיבור אינטרנט יציב ונסה שוב. עבור להגדרות כדי לבנות מחדש את בקשות פרימיום.</string>
+    <string name="premium_request_rebuilding">בנייה מחדש של בקשת פרימיום…</string>
+    <string name="premium_request_rebuilding_empty">לא הגשת בקשת פרימיום</string>
+    <string name="premium_request_exist">עדיין יש לך חבילת Premium Icon Request. פתח את ההגדרות, בחר \"שחזר רכישות\" כדי לשחזר אותו.</string>
+    <string name="premium_request_required">אתה צריך לקנות חבילת בקשות אייקונים מובחרים כדי לבצע בקשות אייקונים</string>
+
+    <!--טפטים-->
+    <string name="wallpaper_new_added">טפט חדש</string>
+    <string name="wallpaper_already_downloaded">הטפט כבר הורד</string>
+    <string name="wallpaper_downloading">מוריד טפט...</string>
+    <string name="wallpaper_download_failed">לא ניתן להוריד טפטים</string>
+    <string name="wallpaper_download_success">הורדת הטפט הצליחה</string>
+    <string name="wallpaper_loading">טוען טפט...</string>
+    <string name="wallpaper_applying">מחיל טפט...</string>
+    <string name="wallpaper_applied">טפט מוחל</string>
+    <string name="wallpaper_apply_failed">לא ניתן להחיל טפט</string>
+    <string name="wallpaper_apply_cancelled">החלת הטפט בוטלה</string>
+    <string name="connection_failed">לא ניתן להביא נתונים מהשרת</string>
+    <string name="wallpaper_apply">החל טפט</string>
+    <string name="wallpaper_save_to_device">שמור טפט</string>
+
+    <!--הגדרות קבועות מראש-->
+    <string name="presets_load_failed">לא ניתן לטעון הגדרות מוגדרות מראש</string>
+    <string name="presets_storage_permission">יש צורך בהרשאת אחסון כדי לטעון את טפט התצוגה המקדימה</string>
+    <string name="presets_required_apps">אפליקציות נדרשות כדי להשתמש בהגדרות המוגדרות מראש אלה</string>
+    <string name="presets_required_apps_not_installed">האפליקציות הנדרשות לשימוש בהגדרה מראש אינן מותקנות. התקן את האפליקציות הנדרשות החסרות ונסה שוב.</string>
+
+    <!--העדפות-->
+    <string name="pref_data_header">נתונים ומטמון</string>
+    <string name="pref_data_cache">נקה את המטמון</string>
+    <string name="pref_data_cache_desc">הסר את מטמון התמונה מהאחסון שלך, שנוצר בעת בחירת תמונה מאפליקציה זו, בקשת אפליקציות שלא נענו ולאחר טעינת תמונות ממוזערות של טפט בענן.</string>
+    <string name="pref_data_cache_size">גודל מטמון: %s</string>
+    <string name="pref_data_cache_clear_dialog">האם אתה באמת רוצה לנקות את המטמון?</string>
+    <string name="pref_data_cache_cleared">המטמון נוקה</string>
+    <string name="pref_data_request">נקה נתוני בקשת סמל</string>
+    <string name="pref_data_request_desc">הסר נתוני בקשת סמל, שנוצרו לאחר בקשת אפליקציות שלא נענו מבקשת הסמל.</string>
+    <string name="pref_data_request_clear_dialog">האם אתה באמת רוצה לנקות את נתוני בקשת הסמלים?</string>
+    <string name="pref_data_request_cleared">נתוני בקשת הסמל נוקו</string>
+    <string name="pref_premium_request_header">בקשת סמל פרימיום</string>
+    <string name="pref_premium_request_restore">שחזור רכישות</string>
+    <string name="pref_premium_request_restore_desc">שחזר את חבילת בקשת הפרימיום לאחר התקנה מחדש של חבילת הסמלים</string>
+    <string name="pref_premium_request_restore_success">בקשת פרימיום שוחזרה</string>
+    <string name="pref_premium_request_restore_empty">אין לך חבילות שנרכשו</string>
+    <string name="pref_premium_request_rebuild">בנייה מחדש של בקשת סמל פרימיום</string>
+    <string name="pref_premium_request_rebuild_desc">אסוף את כל נתוני הבקשות של אייקוני פרימיום כדי לשלוח אותם מחדש</string>
+    <string name="pref_theme_header">נוֹשֵׂא</string>
+    <string name="pref_theme_dark">נושא אפל</string>
+    <string name="pref_theme_dark_desc">השתמש בצבע כהה לנושא היישום</string>
+    <string name="pref_notifications_header">התראות</string>
+    <string name="pref_notifications">קבלת הודעות</string>
+    <string name="pref_wallpaper_header">טָפֵּט</string>
+    <string name="pref_wallpaper_location">טפט שמור מיקום</string>
+    <string name="pref_language_header">שָׂפָה</string>
+    <string name="pref_others_header">אחרים</string>
+    <string name="pref_others_report_bugs">דווח על באגים</string>
+    <string name="pref_others_changelog">יומן שינויים</string>
+    <string name="pref_others_reset_tutorial">איפוס הדרכה</string>
+    <string name="pref_others_reset_tutorial_reset">איפוס הדרכה</string>
+
+    <!--ערכות נושא-->
+    <string name="theme_name_auto">אוטומטי</string>
+    <string name="theme_name_light">אוֹר</string>
+    <string name="theme_name_dark">כֵּהֶה</string>
+    <string name="theme_name_material_you">חומר אתה</string>
+
+    <!--רְשׁוּת-->
+    <string name="permission_storage_denied">נדרשת הרשאת אחסון כדי לשמור טפטים</string>
+    <string name="permission_notification_denied_1">יש צורך בהרשאת הודעה כדי לקבל הודעות מהמפתח</string>
+    <string name="permission_notification_denied_2">אפשר התראות מהגדרות האפליקציה</string>
+
+    <!--מְרוּכָּז-->
+    <string name="app_client">בחר אפליקציה</string>
+    <string name="no_email_app">אין אפליקציה לשלוח דוא"ל</string>
+    <string name="no_browser">אין אפליקציה לפתיחת כתובת URL</string>
+    <string name="intent_email_failed">לא ניתן להציג את אפליקציית הדוא"ל</string>
+    <string name="intent_email_supported">נתמך</string>
+    <string name="intent_email_recommended">מוּמלָץ</string>
+    <string name="intent_email_not_supported">לא נתמך</string>
+    <string name="intent_email_not_supported_message">בחר לקוח דוא"ל לא נתמך, אנא בחר לקוח דוא"ל אחר</string>
+
+    <!--אוֹדוֹת-->
+    <string name="about_contributors_title">תורמים</string>
+
+    <!--דווח על באגים-->
+    <string name="report_bugs_desc">תן תיאור של סוג הבעיה שאתה רוצה לדווח עליה</string>
+    <string name="report_bugs_desc_hint">תֵאוּר</string>
+    <string name="report_bugs_desc_empty">בבקשה תן תיאור</string>
+    <string name="report_bugs_building">בניית רשימת פעילויות…</string>
+    <string name="report_bugs_failed">לא ניתן לבנות רשימת פעילויות</string>
+    <string name="report_bugs_send">שלח דוח</string>
+
+    <!--תמיכה בפיתוח-->
+    <string name="donation_success">תודה על התרומה. אני אשתמש בו לתמיד.</string>
+
+    <!--דוח קריסה-->
+    <string name="crash_report">דוח קריסה</string>
+    <string name="crash_report_message">למרבה הצער, %s קרס. בחר שלח דוח למטה כדי לעזור למפתח לפתור את הבעיה.</string>
+    <string name="crash_report_send">שלח דוח</string>
+
+    <!--החלפת מגירה-->
+    <string name="txt_open">לִפְתוֹחַ</string>
+    <string name="txt_close">לִסְגוֹר</string>
+
+    <string name="txt_new">חָדָשׁ</string>
+
+    <!--תיאורי תוכן לקוראי מסך-->
+    <string name="icon_search_close_button_content_description">סגור את חיפוש הסמלים</string>
+    <string name="icon_request_submit_button_content_description">שלח בקשה לסמל</string>
+    <string name="icon_list_content_description">רשימת הסמלים הכלולים בחבילת הסמלים</string>
+    <string name="icon_search_list_content_description">רשימת הסמלים התואמים למונח החיפוש</string>
+    <string name="about_item_social_content_description">קישור לפרופיל מקוון של מחבר חבילת האייקונים:</string>
+    <string name="share_icon_pack_button_content_description">שתף את האפליקציה הזו עם מישהו</string>
+
+    <!--מדיניות פרטיות-->
+    <string name="privacy_policy">מדיניות פרטיות</string>
+    <string name="privacy_policy_desc">הפרטיות שלך חשובה לנו. אנא קרא את מדיניות הפרטיות שלנו במידע אודות כדי להבין כיצד אנו מטפלים בנתונים שלך.</string>
+
+    <!--תנאים והגבלות-->
+    <string name="terms_conditions">תנאים והגבלות</string>
+
+    <!--בַּקָשָׁה-->
+    <string name="request_limit_title">מגבלת בקשות חינם</string>
+    <string name="request_limit_content">נותרו לך %d בקשות בחינם. שקול לשדרג לפרימיום עבור בקשות בלתי מוגבלות.</string>
+    <string name="request_limit_reached">הגעת למגבלת הבקשות בחינם. אנא שדרג לפרימיום לבקשות נוספות.</string>
+    <string name="request_limit_remaining">אתה יכול לבחור %d אייקונים נוספים</string>
+
+    <!--גרסת האפליקציה-->
+    <string name="version">גִרְסָה</string>
+	
+    <!--מִנְהָג-->
+    <string name="home_kustom_desc">רכיבי מזג אוויר תואמים עבור %s</string>
+    <string name="kustom_widgets">ווידג\'טים</string>
+    <string name="kustom_wallpapers">טפטים</string>
+    <string name="kustom_lockscreens">מסכי נעילה</string>
+    <string name="kustom_komponents">רְכִיב</string>
+
+    <!--שיח בקשת הסכמה-->
+    <string name="request_consent_title">הסכמה לאיסוף נתונים</string>
+    <string name="request_consent_content">כדי לעבד את בקשת הסמל שלך, עלינו לאסוף מידע על האפליקציות המותקנות שלך ופרטי המכשיר (כמו ממדי מסך וגרסת אנדרואיד). זה עוזר לנו לעצב סמלים המתאימים ביותר למכשיר שלך.\n\nתוכל לעיין במדיניות הפרטיות שלנו בקטע \'אודות\' לקבלת מידע נוסף.</string>
+    <string name="request_consent_accept">לְקַבֵּל</string>
+    <string name="request_consent_deny">לְהַכּחִישׁ</string>
+
+    <!--סגנון ניווט-->
+    <string name="pref_navigation_style">סרגל ניווט</string>
+
+    <!--לְחַפֵּשׂ-->
+    <string name="search_apps">חפש אפליקציות</string>
+
+</resources>

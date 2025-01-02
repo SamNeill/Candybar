@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Tiêu đề màn hình giật gân-->
+    <string name="splash_screen_title">Bảng điều khiển CandyBar</string>
+
+    <!--Chế độ xem điều hướng-->
+    <string name="navigation_view_home">Trang chủ</string>
+    <string name="navigation_view_apply">Áp dụng</string>
+    <string name="navigation_view_icons">Biểu tượng</string>
+    <string name="navigation_view_request">Yêu cầu biểu tượng</string>
+    <string name="navigation_view_wallpapers">Hình nền</string>
+    <string name="navigation_view_kustom">Phong tục</string>
+    <string name="navigation_view_settings">Cài đặt</string>
+    <string name="navigation_view_faqs">Câu hỏi thường gặp</string>
+    <string name="navigation_view_about">Về</string>
+    <string name="navigation_view_donate">Hỗ trợ phát triển</string>
+
+    <!--Muzei-->
+    <string name="muzei_settings">Cài đặt Muzei</string>
+    <string name="minute">Phút</string>
+    <string name="hour">Giờ</string>
+    <string name="save_setting">Cứu</string>
+    <string name="muzei_refresh_duration">Thời lượng làm mới</string>
+    <string name="muzei_wifi_only">Chỉ làm mới từ Wi-Fi</string>
+    <string name="muzei_downloaded_only">Chỉ tải hình nền đã tải xuống</string>
+    <string name="muzei_settings_ignored">Gói Biểu tượng không chứa hình nền, cài đặt bị bỏ qua.</string>
+    <string name="muzei_settings_saved">Đã lưu cài đặt</string>
+
+    <!--Thực đơn-->
+    <string name="menu_search">Tìm kiếm</string>
+    <string name="menu_save">Lưu vào thiết bị</string>
+    <string name="menu_select_all">Chọn tất cả</string>
+    <string name="menu_delete">Xóa bỏ</string>
+
+    <string name="menu_wallpaper_crop">Cắt hình nền</string>
+    <string name="menu_apply_homescreen">Màn hình chính</string>
+    <string name="menu_apply_lockscreen">Màn hình khóa</string>
+    <string name="menu_apply_homescreen_lockscreen">Màn hình chính và Màn hình khóa</string>
+
+    <!--Hộp thoại-->
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="clear">Thông thoáng</string>
+    <string name="ok">ĐƯỢC RỒI</string>
+    <string name="install">Cài đặt</string>
+    <string name="donate">Quyên tặng</string>
+    <string name="update">Cập nhật</string>
+
+    <string name="search_noresult">Không tìm thấy kết quả nào cho \"%s\"</string>
+    <string name="search_faqs">Câu hỏi hoặc câu trả lời</string>
+    <string name="search_icon">Tên biểu tượng</string>
+    <string name="search_wallpapers">Tên hình nền</string>
+
+    <!--Cập nhật-->
+    <string name="checking_for_update">Đang kiểm tra cập nhật…</string>
+    <string name="update_available">Cập nhật có sẵn!</string>
+    <string name="no_update_available">Bạn đang sử dụng phiên bản mới nhất!</string>
+
+    <!--Phiên bản nhật ký thay đổi-->
+    <string name="changelog_version">Phiên bản</string>
+
+    <!--Thanh toán trong ứng dụng-->
+    <string name="billing_load_product_failed">Không thể tải sản phẩm Mua trong ứng dụng</string>
+
+    <!--Giấy phép-->
+    <string name="license_checking">Đang kiểm tra giấy phép…</string>
+    <string name="license_check">Kiểm tra giấy phép</string>
+    <string name="license_check_success">Kiểm tra giấy phép thành công. Cảm ơn bạn đã tải xuống ứng dụng từ Play Store.</string>
+    <string name="license_check_failed">Kiểm tra giấy phép không thành công; bạn chưa tải xuống ứng dụng từ Cửa hàng Play. Bạn sẽ không thể sử dụng nó.</string>
+    <string name="license_check_retry">Không thể kiểm tra giấy phép, vui lòng thử lại sau giây lát.</string>
+
+    <!--Kiểm tra cài đặt Cửa hàng Play-->
+    <string name="playstore_check">Kiểm tra cửa hàng Play</string>
+    <string name="playstore_check_success">Cảm ơn bạn đã cài đặt ứng dụng từ Cửa hàng Google Play. Thưởng thức!</string>
+    <string name="playstore_check_failed">Có vẻ như bạn đã cài đặt gói biểu tượng này từ bên ngoài Cửa hàng Google Play.
+        Bạn sẽ không thể sử dụng nó.</string>
+
+    <!--Chia sẻ-->
+    <string name="share_app_title">Này! Kiểm tra %s</string>
+    <string name="share_app_body">Xem Gói biểu tượng %1$s trên Cửa hàng Play: %2$s</string>
+
+    <!--Nhấn vào phần giới thiệu-->
+    <string name="tap_intro_home_navigation">Ngăn điều hướng</string>
+    <string name="tap_intro_home_navigation_desc">Nhấn vào đây hoặc vuốt từ cạnh trái của màn hình để mở ngăn điều hướng</string>
+    <string name="tap_intro_home_apply">Áp dụng gói biểu tượng</string>
+    <string name="tap_intro_home_apply_desc">Nhấn vào đây để áp dụng %s cho trình khởi chạy hiện tại của bạn. Nhấn và giữ để áp dụng cho các launcher khác.</string>
+    <string name="tap_intro_icons_search">Tìm kiếm</string>
+    <string name="tap_intro_icons_search_desc">Nhấn vào đây để tìm kiếm biểu tượng</string>
+    <string name="tap_intro_request_search">Tìm kiếm ứng dụng bị thiếu</string>
+    <string name="tap_intro_request_search_desc">Nhấn vào đây để tìm kiếm các biểu tượng bị thiếu trong các ứng dụng đã cài đặt của bạn cho yêu cầu Biểu tượng đã chọn</string>
+    <string name="tap_intro_request_select">Chọn ứng dụng bị bỏ lỡ</string>
+    <string name="tap_intro_request_select_desc">Nhấn vào đây để chọn ứng dụng bị bỏ lỡ cho yêu cầu biểu tượng</string>
+    <string name="tap_intro_request_select_all">Chọn tất cả các ứng dụng bị bỏ lỡ</string>
+    <string name="tap_intro_request_select_all_desc">Nhấn vào đây để chọn tất cả các ứng dụng bị bỏ lỡ để yêu cầu biểu tượng</string>
+    <string name="tap_intro_request_send">Gửi yêu cầu biểu tượng</string>
+    <string name="tap_intro_request_send_desc">Nhấn vào đây để gửi các ứng dụng bị bỏ lỡ đã chọn</string>
+    <string name="tap_intro_request_premium">Yêu cầu biểu tượng cao cấp</string>
+    <string name="tap_intro_request_premium_desc">Nhấn vào đây để mua gói yêu cầu biểu tượng cao cấp, với yêu cầu biểu tượng cao cấp, bạn có thể nhận được các ứng dụng được yêu cầu nhanh hơn.</string>
+    <string name="tap_intro_wallpapers_option">Tùy chọn hình nền</string>
+    <string name="tap_intro_wallpapers_option_desc">Nhấn và giữ ở đây để hiển thị các tùy chọn hình nền; %s áp dụng hình nền.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">tải xuống hoặc</string>
+    <string name="tap_intro_wallpapers_preview">Xem trước hình nền</string>
+    <string name="tap_intro_wallpapers_preview_desc">Nhấn vào đây để xem trước kích thước đầy đủ của hình nền</string>
+    <string name="tap_intro_wallpaper_preview_save">Lưu hình nền</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Nhấn vào đây để tải xuống và lưu hình nền vào thiết bị của bạn để bạn có thể sử dụng sau này</string>
+    <string name="tap_intro_wallpaper_preview_apply">Áp dụng hình nền</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Nhấn vào đây để đặt hình nền làm hình nền màn hình chính</string>
+
+    <!--Trang chủ-->
+    <string name="home_more_apps_header">Nhiều ứng dụng hơn</string>
+    <string name="home_more_apps">Kiểm tra thêm gói biểu tượng trên Cửa hàng Google Play</string>
+    <string name="home_rate">Tỷ lệ</string>
+    <string name="home_share">Chia sẻ</string>
+    <string name="home_check_update">Cập nhật</string>
+    <string name="home_apply_icon_pack">Áp dụng %s</string>
+    <string name="home_donate">Quyên tặng</string>
+    <string name="home_donate_desc">Khuyến khích Nhà phát triển tạo thêm gói biểu tượng</string>
+    <string name="home_icons">Biểu tượng</string>
+    <string name="home_icon_dimension">kích thước biểu tượng %s pixel</string>
+    <string name="home_loud_wallpapers">hình nền đám mây %d</string>
+    <string name="home_muzei">Hình nền sống Muzei</string>
+    <string name="home_icon_request_installed_apps">Tổng số\n%d ứng dụng đã cài đặt</string>
+    <string name="home_icon_request_themed_apps">Ứng dụng\n%d theo chủ đề</string>
+    <string name="home_icon_request_missed_apps">Ứng dụng\n%d bị bỏ lỡ</string>
+
+    <!--Áp dụng-->
+    <string name="apply_installed">Trình khởi chạy đã cài đặt</string>
+    <string name="apply_installed_launchers">Trình khởi chạy đã cài đặt</string>
+    <string name="apply_supported">Trình khởi chạy được hỗ trợ</string>
+    <string name="apply_launcher_not_installed_title">%S</string>
+    <string name="apply_launcher_not_installed_message">Trình khởi chạy %s chưa được cài đặt. Bạn có thể tìm và cài đặt nó từ Amazon AppStore hoặc từ Tài nguyên &amp; Cửa hàng ưa thích của bạn.</string>
+    <string name="apply_manual">Trình khởi chạy %1$s không hỗ trợ áp dụng trực tiếp nhưng bạn có thể áp dụng %2$s theo cách thủ công từ cài đặt trình khởi chạy.</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso không hỗ trợ nộp đơn trực tiếp nhưng bạn có thể làm theo các bước sau:</string>
+    <string name="apply_manual_kvaesitso_step_1">Mở cài đặt của Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">Nhấn vào \"Lưới &amp; Biểu tượng\"</string>
+    <string name="apply_manual_kvaesitso_step_3">Nhấn vào \"Gói biểu tượng\"</string>
+    <string name="apply_manual_kvaesitso_step_4">Chọn %s từ danh sách</string>
+    <string name="apply_manual_kvaesitso_step_5">Nhấn vào biểu tượng cọ sơn để bật hoặc tắt hình nền</string>
+    <string name="apply_manual_kiss">KISS không hỗ trợ nộp hồ sơ trực tiếp nhưng bạn có thể làm theo các bước sau:</string>
+    <string name="apply_manual_kiss_step_1">Mở cài đặt KISS</string>
+    <string name="apply_manual_kiss_step_2">Nhấn vào \"Giao diện người dùng\"</string>
+    <string name="apply_manual_kiss_step_3">Nhấn vào \"Gói biểu tượng\"</string>
+    <string name="apply_manual_kiss_step_4">Chọn %s từ danh sách</string>
+    <string name="apply_manual_samsung_oneui">%1$s không hỗ trợ áp dụng trực tiếp nhưng bắt đầu với %2$s, bạn có thể áp dụng các biểu tượng bằng ứng dụng đồng hành.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Phiên bản %s hiện tại của bạn đã quá cũ. Vui lòng cập nhật lên Android 12 trở lên để có thể áp dụng trực tiếp các biểu tượng. Ngoài ra, bạn có thể cài đặt một launcher khác.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Mở %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">Tải xuống ứng dụng %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">Nhấn vào \"Biểu tượng\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">Nhấn vào \"Tạo mới\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">Nhấn vào nút \"Gói biểu tượng\" màu xanh lam</string>
+    <string name="apply_manual_samsung_oneui_step_6">Chọn %s từ danh sách</string>
+    <string name="apply_manual_samsung_oneui_step_7">Lặp lại các bước này mỗi lần bạn cập nhật %s vì các biểu tượng mới sẽ không được ánh xạ tự động.</string>
+    <string name="apply_manual_hios">Trình khởi chạy HiOS không hỗ trợ áp dụng trực tiếp nhưng bạn có thể làm theo các bước sau:</string>
+    <string name="apply_manual_hios_step_1">Mở \"Cài đặt\"</string>
+    <string name="apply_manual_hios_step_2">Nhấn vào \"Chủ đề &amp; Màn hình khóa\"</string>
+    <string name="apply_manual_hios_step_3">Nhấn vào \"Chủ đề của tôi\"</string>
+    <string name="apply_manual_hios_step_4">Nhấn vào \"Gói biểu tượng\"</string>
+    <string name="apply_manual_hios_step_5">Nhấn vào %s</string>
+    <string name="apply_manual_oxygen_os_step_1">Nhấn và giữ màn hình chính của bạn</string>
+    <string name="apply_manual_oxygen_os_step_2">Nhấn vào \"Cài đặt màn hình chính\"</string>
+    <string name="apply_manual_oxygen_os_step_3">Nhấn vào \"Gói biểu tượng\"</string>
+    <string name="apply_manual_oxygen_os_step_4">Nhấn vào %s</string>
+    <string name="apply_manual_color_os_step_1">Nhấn và giữ màn hình chính của bạn</string>
+    <string name="apply_manual_color_os_step_2">Nhấn vào \"Biểu tượng\"</string>
+    <string name="apply_manual_color_os_step_3">Cuộn sang bên phải nút \"Tùy chỉnh\" (đây là danh sách có thể cuộn!)</string>
+    <string name="apply_manual_color_os_step_4">Nhấn vào %s</string>
+    <string name="apply_manual_before">Phiên bản Before Launcher này chưa hỗ trợ áp dụng trực tiếp các biểu tượng. Thay vào đó, hãy làm theo các bước dưới đây:</string>
+    <string name="apply_manual_before_step_1">Vuốt sang trái trên màn hình chính</string>
+    <string name="apply_manual_before_step_2">Nhấn vào \"Cài đặt\"</string>
+    <string name="apply_manual_before_step_3">Nhấn vào \"Phong cách và Chủ đề\"</string>
+    <string name="apply_manual_before_step_4">Nhấn vào \"Gói và kiểu biểu tượng\"</string>
+    <string name="apply_manual_before_step_5">Nhấn vào %s</string>
+    <string name="apply_manual_nothing_step_1">Mở \"Cài đặt\"</string>
+    <string name="apply_manual_nothing_step_2">Nhấn vào \"Tùy chỉnh\"</string>
+    <string name="apply_manual_nothing_step_3">Nhấn vào \"Gói biểu tượng\"</string>
+    <string name="apply_manual_nothing_step_4">Nhấn vào %s</string>
+    <string name="apply_launch_failed">Không thể khởi chạy cài đặt %s</string>
+    <string name="apply_launcher_not_installed">Trình khởi chạy %s chưa được cài đặt. Bạn có muốn mở Google Play Store để tải xuống và cài đặt không?</string>
+    <string name="apply_launcher_not_installable">Trình khởi chạy %s chưa được cài đặt. Vui lòng thử lại sau khi cài đặt launcher.</string>
+    <string name="apply_cmtheme_not_available">Trình quản lý chủ đề CM không khả dụng trên thiết bị này</string>
+    <string name="apply_cmtheme_failed">Không thể khởi chạy Trình quản lý chủ đề CM, bạn có thể thử áp dụng Gói biểu tượng theo cách thủ công từ Cài đặt.</string>
+    <string name="apply_lg_home">Để áp dụng Gói biểu tượng này, hãy mở Cài đặt - Hiển thị - Màn hình chính - Chủ đề</string>
+    <string name="apply_lg_home_not_available">LG Home không khả dụng trên thiết bị này</string>
+    <string name="apply_lg_home_failed">Không thể khởi chạy Cài đặt LG Home, bạn có thể thử áp dụng Gói Biểu tượng theo cách thủ công từ Cài đặt.</string>
+    <string name="apply_lg_home_nougat">LG Home với Android Nougat không còn hỗ trợ Icon Pack nữa. Bạn cần một trình khởi chạy tùy chỉnh để sử dụng Gói Biểu tượng.</string>
+    <string name="apply_launcher_incompatible" formatted="true">Trình khởi chạy %s không hỗ trợ bất kỳ gói biểu tượng nào, vì vậy bạn không thể sử dụng gói biểu tượng này với trình khởi chạy này. Bạn có thể dùng thử ứng dụng của bên thứ ba để sử dụng gói biểu tượng này trong trình khởi chạy %2$s.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Trình khởi chạy %1$s không tương thích với %2$s nhưng có thể tương thích với các phiên bản mới hơn</string>
+
+    <!--Biểu tượng-->
+    <string name="icons_load_failed">Không thể tải biểu tượng</string>
+    <string name="icon_shape">Hình dạng biểu tượng</string>
+    <string name="items_selected">%d đã chọn</string>
+
+    <!--Lời yêu cầu-->
+    <string name="request_title">Yêu cầu biểu tượng</string>
+    <string name="request_terms">Trước khi tiếp tục yêu cầu biểu tượng, xin lưu ý rằng yêu cầu của bạn sẽ được xem xét theo nguyên tắc của chúng tôi. Yêu cầu cao cấp có thể được xử lý nhanh hơn.</string>
+    <string name="request_not_selected">Chọn ứng dụng để yêu cầu</string>
+    <string name="request_not_requested">Không được yêu cầu</string>
+    <string name="request_already_requested">Đã yêu cầu</string>
+    <string name="request_not_available">Không thể yêu cầu</string>
+    <string name="request_building">Yêu cầu xây dựng…</string>
+    <string name="request_pacific_sending">Đang gửi yêu cầu tới Giám đốc Thái Bình Dương...</string>
+    <string name="request_pacific_error">Đã xảy ra lỗi khi gửi yêu cầu tới Pacific Manager. Lỗi là %s</string>
+    <string name="request_pacific_success">Đã gửi yêu cầu thành công tới Pacific Manager</string>
+    <string name="request_custom_error">Đã xảy ra lỗi khi gửi yêu cầu biểu tượng. Nếu lỗi này vẫn tiếp diễn, hãy liên hệ với nhà phát triển. %S</string>
+    <string name="request_custom_success">Đã gửi yêu cầu biểu tượng thành công</string>
+    <string name="request_fetching_data">Đang tìm nạp dữ liệu mới nhất…</string>
+    <string name="request_build_failed">Không thể tạo yêu cầu biểu tượng</string>
+    <string name="request_appfilter_failed">Không thể đọc appfilter.xml</string>
+    <string name="request_requested">Bạn đã yêu cầu biểu tượng này và không thể yêu cầu lại.</string>
+    <string name="request_requested_possible">Bạn đã yêu cầu biểu tượng này. Bạn có chắc chắn muốn thực hiện một yêu cầu khác cho nó không?</string>
+    <string name="request_requested_button_cancel">Quay lại</string>
+    <string name="request_requested_button_confirm">Vẫn chọn</string>
+    <string name="request_email_client">Chọn ứng dụng bạn muốn sử dụng để gửi yêu cầu biểu tượng</string>
+    <string name="request_app_disabled">Bạn đang sử dụng phiên bản cũ hơn của gói biểu tượng này. Các biểu tượng được yêu cầu có thể được đưa vào phiên bản mới nhất. Vui lòng cập nhật ứng dụng của bạn lên phiên bản mới nhất để yêu cầu biểu tượng.</string>
+    <string name="connection_error_long">Không thể tải dữ liệu từ máy chủ. Vui lòng kiểm tra kết nối mạng của bạn.</string>
+    <string name="unable_to_load_config">Đã xảy ra lỗi khi tìm nạp hoặc đọc dữ liệu từ máy chủ.</string>
+    <string name="request_limit">Bạn chỉ có thể thực hiện %d yêu cầu với yêu cầu thông thường.</string>
+    <string name="request_used">Bạn đã yêu cầu (các) biểu tượng %d.</string>
+    <string name="request_limit_buy">Bạn có thể mua Yêu cầu cao cấp để yêu cầu thêm biểu tượng.</string>
+    <string name="request_limit_reset">Giới hạn yêu cầu biểu tượng sẽ được đặt lại trên mỗi bản cập nhật.</string>
+
+    <!--Yêu cầu thường xuyên-->
+    <string name="regular_request">Yêu cầu biểu tượng thông thường</string>
+    <string name="regular_request_desc">Nhận biểu tượng của bạn được yêu cầu và nhà phát triển sẽ cố gắng đưa vào các biểu tượng bạn yêu cầu.</string>
+    <string name="regular_request_count">Tổng số\n%d yêu cầu</string>
+    <string name="regular_request_used">Đã sử dụng\n%d yêu cầu</string>
+    <string name="regular_request_available">Có sẵn\n%d yêu cầu</string>
+
+    <!--Yêu cầu đặc biệt-->
+    <string name="premium_request">Yêu cầu biểu tượng cao cấp</string>
+    <string name="premium_request_no_internet">Đảm bảo điện thoại của bạn được kết nối với internet trước khi gửi yêu cầu cao cấp</string>
+    <string name="premium_request_desc">Yêu cầu biểu tượng cao cấp là yêu cầu trả tiền. Bạn có thể nhận được các ứng dụng được yêu cầu nhanh hơn bằng cách sử dụng yêu cầu biểu tượng cao cấp.</string>
+    <string name="premium_request_buy">Mua</string>
+    <string name="premium_request_count">Tổng số\n%d yêu cầu</string>
+    <string name="premium_request_used">Đã sử dụng\n%d yêu cầu</string>
+    <string name="premium_request_available">Có sẵn\n%d yêu cầu</string>
+    <string name="premium_request_already_purchased">Bạn vẫn có %d yêu cầu đặc biệt. Bạn cần sử dụng tất cả chúng trước khi mua lại gói yêu cầu cao cấp.</string>
+    <string name="premium_request_limit">Bạn chỉ có %d yêu cầu đặc biệt,</string>
+    <string name="premium_request_limit1">nhưng bạn đã chọn %d ứng dụng. \n\nBạn cần sử dụng tất cả các yêu cầu cao cấp của mình trước khi sử dụng lại yêu cầu thông thường.</string>
+    <string name="premium_request_consume_failed">Không thể sử dụng Yêu cầu cao cấp, hãy đảm bảo bạn có kết nối Internet ổn định và thử lại. Đi tới Cài đặt để xây dựng lại Yêu cầu trả phí.</string>
+    <string name="premium_request_rebuilding">Xây dựng lại yêu cầu trả phí…</string>
+    <string name="premium_request_rebuilding_empty">Bạn chưa thực hiện Yêu cầu đặc biệt</string>
+    <string name="premium_request_exist">Bạn vẫn có gói Yêu cầu Biểu tượng Cao cấp. Mở Cài đặt, chọn \"Khôi phục giao dịch mua\" để khôi phục nó.</string>
+    <string name="premium_request_required">Bạn cần mua gói yêu cầu biểu tượng cao cấp để thực hiện yêu cầu biểu tượng</string>
+
+    <!--Hình nền-->
+    <string name="wallpaper_new_added">Hình nền mới</string>
+    <string name="wallpaper_already_downloaded">Hình nền đã được tải xuống</string>
+    <string name="wallpaper_downloading">Đang tải hình nền…</string>
+    <string name="wallpaper_download_failed">Không thể tải xuống hình nền</string>
+    <string name="wallpaper_download_success">Tải hình nền thành công</string>
+    <string name="wallpaper_loading">Đang tải hình nền…</string>
+    <string name="wallpaper_applying">Áp dụng hình nền…</string>
+    <string name="wallpaper_applied">Đã áp dụng hình nền</string>
+    <string name="wallpaper_apply_failed">Không thể áp dụng hình nền</string>
+    <string name="wallpaper_apply_cancelled">Áp dụng hình nền đã bị hủy</string>
+    <string name="connection_failed">Không thể lấy dữ liệu từ máy chủ</string>
+    <string name="wallpaper_apply">Áp dụng hình nền</string>
+    <string name="wallpaper_save_to_device">Lưu hình nền</string>
+
+    <!--cài đặt trước-->
+    <string name="presets_load_failed">Không thể tải cài đặt trước</string>
+    <string name="presets_storage_permission">Cần có quyền lưu trữ để tải hình nền xem trước</string>
+    <string name="presets_required_apps">Các ứng dụng bắt buộc phải sử dụng các giá trị đặt trước này</string>
+    <string name="presets_required_apps_not_installed">Các ứng dụng cần thiết để sử dụng cài đặt trước chưa được cài đặt. Vui lòng cài đặt các ứng dụng cần thiết còn thiếu và thử lại.</string>
+
+    <!--Tùy chọn-->
+    <string name="pref_data_header">Dữ liệu &amp; Bộ nhớ đệm</string>
+    <string name="pref_data_cache">Xóa bộ nhớ đệm</string>
+    <string name="pref_data_cache_desc">Xóa bộ nhớ đệm hình ảnh khỏi bộ nhớ của bạn, được tạo khi chọn hình ảnh từ ứng dụng này, yêu cầu các ứng dụng bị bỏ lỡ và sau khi tải hình thu nhỏ của hình nền đám mây.</string>
+    <string name="pref_data_cache_size">Kích thước bộ đệm: %s</string>
+    <string name="pref_data_cache_clear_dialog">Bạn có thực sự muốn xóa bộ nhớ đệm không?</string>
+    <string name="pref_data_cache_cleared">Đã xóa bộ nhớ đệm</string>
+    <string name="pref_data_request">Xóa dữ liệu yêu cầu biểu tượng</string>
+    <string name="pref_data_request_desc">Xóa dữ liệu yêu cầu biểu tượng, được tạo sau khi yêu cầu các ứng dụng bị bỏ lỡ khỏi yêu cầu biểu tượng.</string>
+    <string name="pref_data_request_clear_dialog">Bạn có thực sự muốn xóa dữ liệu yêu cầu biểu tượng không?</string>
+    <string name="pref_data_request_cleared">Đã xóa dữ liệu yêu cầu biểu tượng</string>
+    <string name="pref_premium_request_header">Yêu cầu biểu tượng cao cấp</string>
+    <string name="pref_premium_request_restore">Khôi phục mua hàng</string>
+    <string name="pref_premium_request_restore_desc">Khôi phục gói yêu cầu cao cấp sau khi cài đặt lại gói biểu tượng</string>
+    <string name="pref_premium_request_restore_success">Yêu cầu trả phí đã được khôi phục</string>
+    <string name="pref_premium_request_restore_empty">Bạn không có gói nào đã mua</string>
+    <string name="pref_premium_request_rebuild">Yêu cầu biểu tượng cao cấp xây dựng lại</string>
+    <string name="pref_premium_request_rebuild_desc">Thu thập tất cả dữ liệu yêu cầu biểu tượng cao cấp để gửi lại chúng</string>
+    <string name="pref_theme_header">chủ đề</string>
+    <string name="pref_theme_dark">Chủ đề tối</string>
+    <string name="pref_theme_dark_desc">Sử dụng màu tối cho chủ đề ứng dụng</string>
+    <string name="pref_notifications_header">Thông báo</string>
+    <string name="pref_notifications">Nhận thông báo</string>
+    <string name="pref_wallpaper_header">Hình nền</string>
+    <string name="pref_wallpaper_location">Vị trí lưu hình nền</string>
+    <string name="pref_language_header">Ngôn ngữ</string>
+    <string name="pref_others_header">Người khác</string>
+    <string name="pref_others_report_bugs">Báo cáo lỗi</string>
+    <string name="pref_others_changelog">Nhật ký thay đổi</string>
+    <string name="pref_others_reset_tutorial">Đặt lại hướng dẫn</string>
+    <string name="pref_others_reset_tutorial_reset">Đặt lại hướng dẫn</string>
+
+    <!--Chủ đề-->
+    <string name="theme_name_auto">Tự động</string>
+    <string name="theme_name_light">Ánh sáng</string>
+    <string name="theme_name_dark">Tối tăm</string>
+    <string name="theme_name_material_you">tài liệu bạn</string>
+
+    <!--Sự cho phép-->
+    <string name="permission_storage_denied">Cần có quyền lưu trữ để lưu hình nền</string>
+    <string name="permission_notification_denied_1">Cần có quyền thông báo để nhận thông báo từ nhà phát triển</string>
+    <string name="permission_notification_denied_2">Bật thông báo từ cài đặt ứng dụng</string>
+
+    <!--ý định-->
+    <string name="app_client">Chọn ứng dụng</string>
+    <string name="no_email_app">Không có ứng dụng gửi email</string>
+    <string name="no_browser">Không có ứng dụng để mở URL</string>
+    <string name="intent_email_failed">Không thể hiển thị ứng dụng email</string>
+    <string name="intent_email_supported">Được hỗ trợ</string>
+    <string name="intent_email_recommended">Khuyến khích</string>
+    <string name="intent_email_not_supported">Không được hỗ trợ</string>
+    <string name="intent_email_not_supported_message">Đã chọn một ứng dụng email không được hỗ trợ, vui lòng chọn một ứng dụng email khác</string>
+
+    <!--Về-->
+    <string name="about_contributors_title">Người đóng góp</string>
+
+    <!--Báo cáo lỗi-->
+    <string name="report_bugs_desc">Vui lòng mô tả loại vấn đề bạn muốn báo cáo</string>
+    <string name="report_bugs_desc_hint">Sự miêu tả</string>
+    <string name="report_bugs_desc_empty">Vui lòng đưa ra mô tả</string>
+    <string name="report_bugs_building">Xây dựng danh sách hoạt động…</string>
+    <string name="report_bugs_failed">Không thể xây dựng danh sách hoạt động</string>
+    <string name="report_bugs_send">Gửi báo cáo</string>
+
+    <!--Hỗ trợ phát triển-->
+    <string name="donation_success">Cảm ơn bạn đã quyên góp. Tôi sẽ sử dụng nó cho tốt.</string>
+
+    <!--Báo cáo sự cố-->
+    <string name="crash_report">Báo cáo sự cố</string>
+    <string name="crash_report_message">Thật không may, %s đã bị lỗi. Chọn Gửi báo cáo bên dưới để giúp nhà phát triển khắc phục sự cố.</string>
+    <string name="crash_report_send">Gửi báo cáo</string>
+
+    <!--ngăn kéoChuyển đổi-->
+    <string name="txt_open">Mở</string>
+    <string name="txt_close">Đóng</string>
+
+    <string name="txt_new">Mới</string>
+
+    <!--Mô tả nội dung cho trình đọc màn hình-->
+    <string name="icon_search_close_button_content_description">Đóng tìm kiếm biểu tượng</string>
+    <string name="icon_request_submit_button_content_description">Gửi yêu cầu biểu tượng</string>
+    <string name="icon_list_content_description">Danh sách các biểu tượng có trong gói biểu tượng</string>
+    <string name="icon_search_list_content_description">Danh sách các biểu tượng phù hợp với cụm từ tìm kiếm</string>
+    <string name="about_item_social_content_description">Liên kết tới hồ sơ trực tuyến của tác giả gói biểu tượng:</string>
+    <string name="share_icon_pack_button_content_description">Chia sẻ ứng dụng này với ai đó</string>
+
+    <!--Chính sách bảo mật-->
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="privacy_policy_desc">Sự riêng tư của bạn rất quan trọng đối với chúng tôi. Vui lòng đọc chính sách quyền riêng tư của chúng tôi trong phần Giới thiệu để hiểu cách chúng tôi xử lý dữ liệu của bạn.</string>
+
+    <!--Điều khoản & Điều kiện-->
+    <string name="terms_conditions">Điều khoản &amp; Điều kiện</string>
+
+    <!--Lời yêu cầu-->
+    <string name="request_limit_title">Giới hạn yêu cầu miễn phí</string>
+    <string name="request_limit_content">Bạn còn lại %d yêu cầu miễn phí. Hãy cân nhắc nâng cấp lên bản trả phí để có số lượng yêu cầu không giới hạn.</string>
+    <string name="request_limit_reached">Đã đạt đến giới hạn yêu cầu miễn phí. Vui lòng nâng cấp lên cao cấp để có thêm yêu cầu.</string>
+    <string name="request_limit_remaining">Bạn có thể chọn thêm %d biểu tượng</string>
+
+    <!--Phiên bản ứng dụng-->
+    <string name="version">Phiên bản</string>
+	
+    <!--Phong tục-->
+    <string name="home_kustom_desc">Các thông số Thời tiết phù hợp cho %s</string>
+    <string name="kustom_widgets">Widget</string>
+    <string name="kustom_wallpapers">Hình nền</string>
+    <string name="kustom_lockscreens">Màn hình khóa</string>
+    <string name="kustom_komponents">Thành phần</string>
+
+    <!--Hộp thoại yêu cầu chấp thuận-->
+    <string name="request_consent_title">Đồng ý thu thập dữ liệu</string>
+    <string name="request_consent_content">Để xử lý yêu cầu biểu tượng của bạn, chúng tôi cần thu thập thông tin về các ứng dụng đã cài đặt và chi tiết thiết bị của bạn (như kích thước màn hình và phiên bản Android). Điều này giúp chúng tôi thiết kế các biểu tượng hoạt động tốt nhất cho thiết bị của bạn.\n\nBạn có thể xem lại Chính sách quyền riêng tư của chúng tôi trong Phần Giới thiệu để biết thêm thông tin.</string>
+    <string name="request_consent_accept">CHẤP NHẬN</string>
+    <string name="request_consent_deny">TỪ CHỐI</string>
+
+    <!--Kiểu điều hướng-->
+    <string name="pref_navigation_style">Thanh điều hướng</string>
+
+    <!--Tìm kiếm-->
+    <string name="search_apps">Tìm kiếm ứng dụng</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--Наслов почетног екрана-->
+    <string name="splash_screen_title">ЦандиБар Дасхбоард</string>
+
+    <!--Навигатион Виев-->
+    <string name="navigation_view_home">Хоме</string>
+    <string name="navigation_view_apply">Пријавите се</string>
+    <string name="navigation_view_icons">Иконе</string>
+    <string name="navigation_view_request">Ицон Рекуест</string>
+    <string name="navigation_view_wallpapers">Позадине</string>
+    <string name="navigation_view_kustom">Цустом</string>
+    <string name="navigation_view_settings">Подешавања</string>
+    <string name="navigation_view_faqs">ФАКс</string>
+    <string name="navigation_view_about">Абоут</string>
+    <string name="navigation_view_donate">Подршка развоју</string>
+
+    <!--Музеи-->
+    <string name="muzei_settings">Музеи Сеттингс</string>
+    <string name="minute">Минута</string>
+    <string name="hour">Сат</string>
+    <string name="save_setting">Сачувај</string>
+    <string name="muzei_refresh_duration">Трајање освежавања</string>
+    <string name="muzei_wifi_only">Освежите само са Ви-Фи мреже</string>
+    <string name="muzei_downloaded_only">Учитај само преузете позадине</string>
+    <string name="muzei_settings_ignored">Пакет икона не садржи позадине, подешавања се занемарују.</string>
+    <string name="muzei_settings_saved">Подешавања су сачувана</string>
+
+    <!--Мени-->
+    <string name="menu_search">Тражи</string>
+    <string name="menu_save">Сачувај на уређају</string>
+    <string name="menu_select_all">Изаберите Све</string>
+    <string name="menu_delete">Избриши</string>
+
+    <string name="menu_wallpaper_crop">Цроп Валлпапер</string>
+    <string name="menu_apply_homescreen">Почетни екран</string>
+    <string name="menu_apply_lockscreen">Лоцксцреен</string>
+    <string name="menu_apply_homescreen_lockscreen">Почетни екран и закључани екран</string>
+
+    <!--Дијалог-->
+    <string name="open">Отвори</string>
+    <string name="close">Затвори</string>
+    <string name="clear">Јасно</string>
+    <string name="ok">ОК</string>
+    <string name="install">Инсталирај</string>
+    <string name="donate">Донирајте</string>
+    <string name="update">Ажурирај</string>
+
+    <string name="search_noresult">Није пронађен ниједан резултат за \"%с\"</string>
+    <string name="search_faqs">Питање или одговор</string>
+    <string name="search_icon">Име иконе</string>
+    <string name="search_wallpapers">Назив позадине</string>
+
+    <!--Ажурирај-->
+    <string name="checking_for_update">Проверавам ажурирање…</string>
+    <string name="update_available">Доступно је ажурирање!</string>
+    <string name="no_update_available">Користите најновију верзију!</string>
+
+    <!--Цхангелог Версион-->
+    <string name="changelog_version">Верзија</string>
+
+    <!--ИнАппБиллинг-->
+    <string name="billing_load_product_failed">Није могуће учитати производе за куповину у апликацији</string>
+
+    <!--Лиценца-->
+    <string name="license_checking">Провера лиценце…</string>
+    <string name="license_check">Провера лиценце</string>
+    <string name="license_check_success">Успешна провера лиценце. Хвала вам што сте преузели апликацију из Плаи продавнице.</string>
+    <string name="license_check_failed">Провера лиценце није успела; нисте преузели апликацију из Плаи продавнице. Нећете моћи да га користите.</string>
+    <string name="license_check_retry">Није могуће проверити лиценцу, покушајте поново за неколико тренутака.</string>
+
+    <!--Провера инсталације Плаи продавнице-->
+    <string name="playstore_check">Провера Плаи продавнице</string>
+    <string name="playstore_check_success">Хвала вам што сте инсталирали апликацију из Гоогле Плаи продавнице. Ењои!</string>
+    <string name="playstore_check_failed">Чини се да сте инсталирали овај пакет икона изван Гоогле Плаи продавнице.
+        Нећете моћи да га користите.</string>
+
+    <!--Схаре-->
+    <string name="share_app_title">Ио! Погледајте %с</string>
+    <string name="share_app_body">Погледајте пакет икона %1$с у Плаи продавници: %2$с</string>
+
+    <!--Додирните Интро-->
+    <string name="tap_intro_home_navigation">Фиока за навигацију</string>
+    <string name="tap_intro_home_navigation_desc">Додирните овде или превуците са леве ивице екрана да бисте отворили фиоку за навигацију</string>
+    <string name="tap_intro_home_apply">Примените пакет икона</string>
+    <string name="tap_intro_home_apply_desc">Додирните овде да примените %с на ваш тренутни покретач. Дуго притисните да бисте применили на друге лансере.</string>
+    <string name="tap_intro_icons_search">Тражи</string>
+    <string name="tap_intro_icons_search_desc">Додирните овде да бисте потражили икону</string>
+    <string name="tap_intro_request_search">Претражите апликације које недостају</string>
+    <string name="tap_intro_request_search_desc">Додирните овде да бисте у инсталираним апликацијама претражили иконе које недостају за захтев за изабраном иконом</string>
+    <string name="tap_intro_request_select">Изаберите пропуштену апликацију</string>
+    <string name="tap_intro_request_select_desc">Додирните овде да бисте изабрали пропуштену апликацију за захтев за иконом</string>
+    <string name="tap_intro_request_select_all">Изаберите све пропуштене апликације</string>
+    <string name="tap_intro_request_select_all_desc">Додирните овде да бисте изабрали све пропуштене апликације за захтев за иконом</string>
+    <string name="tap_intro_request_send">Пошаљите захтев за иконе</string>
+    <string name="tap_intro_request_send_desc">Додирните овде да бисте послали изабране пропуштене апликације</string>
+    <string name="tap_intro_request_premium">Захтев за премиум икону</string>
+    <string name="tap_intro_request_premium_desc">Додирните овде да бисте купили пакет захтева за премиум иконе, са захтевом за премиум иконе, можете брже да добијете тражене апликације.</string>
+    <string name="tap_intro_wallpapers_option">Опције позадине</string>
+    <string name="tap_intro_wallpapers_option_desc">Додирните и држите овде да бисте приказали опције позадине; %с примени позадину.</string>
+    <string name="tap_intro_wallpapers_option_desc_download">преузети или</string>
+    <string name="tap_intro_wallpapers_preview">Преглед позадине</string>
+    <string name="tap_intro_wallpapers_preview_desc">Додирните овде да бисте прегледали пуну величину позадине</string>
+    <string name="tap_intro_wallpaper_preview_save">Сачувај позадину</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">Додирните овде да преузмете и сачувате позадину на свом уређају како бисте је могли користити касније</string>
+    <string name="tap_intro_wallpaper_preview_apply">Нанесите позадину</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">Додирните овде да поставите позадину као позадину почетног екрана</string>
+
+    <!--Хоме-->
+    <string name="home_more_apps_header">Више апликација</string>
+    <string name="home_more_apps">Проверите још пакета икона у Гоогле Плаи продавници</string>
+    <string name="home_rate">Рате</string>
+    <string name="home_share">Схаре</string>
+    <string name="home_check_update">Ажурирај</string>
+    <string name="home_apply_icon_pack">Примени %с</string>
+    <string name="home_donate">Донирајте</string>
+    <string name="home_donate_desc">Охрабрите програмера да направи још пакета икона</string>
+    <string name="home_icons">Иконе</string>
+    <string name="home_icon_dimension">Димензија иконе %с пиксела</string>
+    <string name="home_loud_wallpapers">%д позадине у облаку</string>
+    <string name="home_muzei">Музеи жива позадина</string>
+    <string name="home_icon_request_installed_apps">Укупно\н%д инсталираних апликација</string>
+    <string name="home_icon_request_themed_apps">Тематске\н%д апликације</string>
+    <string name="home_icon_request_missed_apps">Пропуштених\н%д апликација</string>
+
+    <!--Пријавите се-->
+    <string name="apply_installed">Инсталирани покретач</string>
+    <string name="apply_installed_launchers">Инсталирани покретачи</string>
+    <string name="apply_supported">Подржани покретачи</string>
+    <string name="apply_launcher_not_installed_title">%с</string>
+    <string name="apply_launcher_not_installed_message">Покретач %с није инсталиран. Можете га пронаћи и инсталирати из Амазон АппСторе-а или из жељених ресурса и продавница.</string>
+    <string name="apply_manual">Покретач %1$с не подржава директну примену, али можете да примените %2$с ручно из подешавања покретача.</string>
+    <string name="apply_manual_kvaesitso">Кваеситсо не подржава директну примену, али можете да пратите ове кораке:</string>
+    <string name="apply_manual_kvaesitso_step_1">Отворите Кваеситсо-ова подешавања</string>
+    <string name="apply_manual_kvaesitso_step_2">Додирните „Мрежа и иконе“</string>
+    <string name="apply_manual_kvaesitso_step_3">Додирните „Пакет икона“</string>
+    <string name="apply_manual_kvaesitso_step_4">Изаберите %с са листе</string>
+    <string name="apply_manual_kvaesitso_step_5">Додирните икону четкице да бисте омогућили или онемогућили облик позадине</string>
+    <string name="apply_manual_kiss">КИСС не подржава директну примену, али можете да пратите ове кораке:</string>
+    <string name="apply_manual_kiss_step_1">Отворите КИСС подешавања</string>
+    <string name="apply_manual_kiss_step_2">Додирните „Кориснички интерфејс“</string>
+    <string name="apply_manual_kiss_step_3">Додирните „Пакет икона“</string>
+    <string name="apply_manual_kiss_step_4">Изаберите %с са листе</string>
+    <string name="apply_manual_samsung_oneui">%1$с не подржава директну примену, али почевши од %2$с можете применити иконе помоћу пратеће апликације.</string>
+    <string name="apply_manual_samsung_oneui_too_old">Ваша тренутна верзија %с је престара. Ажурирајте на Андроид 12 или новији да бисте могли директно да примењујете иконе. Алтернативно, можете инсталирати други покретач.</string>
+    <string name="apply_manual_samsung_oneui_step_1">Отворите %с</string>
+    <string name="apply_manual_samsung_oneui_step_2">Преузмите апликацију %с</string>
+    <string name="apply_manual_samsung_oneui_step_3">Додирните „Икона“</string>
+    <string name="apply_manual_samsung_oneui_step_4">Додирните „Креирај ново“</string>
+    <string name="apply_manual_samsung_oneui_step_5">Додирните плаво дугме „Пакет икона“.</string>
+    <string name="apply_manual_samsung_oneui_step_6">Изаберите %с са листе</string>
+    <string name="apply_manual_samsung_oneui_step_7">Поновите ове кораке сваки пут када ажурирате %с јер нове иконе неће бити аутоматски мапиране.</string>
+    <string name="apply_manual_hios">ХиОС покретач не подржава директну примену, али можете да пратите ове кораке:</string>
+    <string name="apply_manual_hios_step_1">Отворите \"Подешавања\"</string>
+    <string name="apply_manual_hios_step_2">Додирните „Тема и закључани екран“</string>
+    <string name="apply_manual_hios_step_3">Додирните \"Моја тема\"</string>
+    <string name="apply_manual_hios_step_4">Додирните \"Пакет икона\"</string>
+    <string name="apply_manual_hios_step_5">Додирните %с</string>
+    <string name="apply_manual_oxygen_os_step_1">Дуго додирните почетни екран</string>
+    <string name="apply_manual_oxygen_os_step_2">Додирните „Подешавања куће“</string>
+    <string name="apply_manual_oxygen_os_step_3">Додирните „Пакет икона“</string>
+    <string name="apply_manual_oxygen_os_step_4">Додирните %с</string>
+    <string name="apply_manual_color_os_step_1">Дуго додирните почетни екран</string>
+    <string name="apply_manual_color_os_step_2">Додирните „Иконе“</string>
+    <string name="apply_manual_color_os_step_3">Померите се десно од дугмета \"Прилагођено\" (ово је листа која се може померати!)</string>
+    <string name="apply_manual_color_os_step_4">Додирните %с</string>
+    <string name="apply_manual_before">Ова верзија програма Пре покретања још увек не подржава директну примену икона. Уместо тога, следите доле наведене кораке:</string>
+    <string name="apply_manual_before_step_1">Превуците налево на почетном екрану</string>
+    <string name="apply_manual_before_step_2">Додирните \"Подешавања\"</string>
+    <string name="apply_manual_before_step_3">Додирните „Стилови и теме“</string>
+    <string name="apply_manual_before_step_4">Додирните „Стилови и пакети икона“</string>
+    <string name="apply_manual_before_step_5">Додирните %с</string>
+    <string name="apply_manual_nothing_step_1">Отворите \"Подешавања\"</string>
+    <string name="apply_manual_nothing_step_2">Додирните \"Прилагођавање\"</string>
+    <string name="apply_manual_nothing_step_3">Додирните „Пакет икона“</string>
+    <string name="apply_manual_nothing_step_4">Додирните %с</string>
+    <string name="apply_launch_failed">Није могуће покренути подешавања %с</string>
+    <string name="apply_launcher_not_installed">Покретач %с није инсталиран. Да ли желите да отворите Гоогле Плаи продавницу да бисте је преузели и инсталирали?</string>
+    <string name="apply_launcher_not_installable">Покретач %с није инсталиран. Покушајте поново након инсталирања покретача.</string>
+    <string name="apply_cmtheme_not_available">ЦМ Тхеме Манагер није доступан на овом уређају</string>
+    <string name="apply_cmtheme_failed">Није могуће покренути ЦМ Тхеме Манагер, можете покушати да примените пакет икона ручно из подешавања.</string>
+    <string name="apply_lg_home">Да бисте применили овај пакет икона, отворите Подешавања - Екран - Почетни екран - Тема</string>
+    <string name="apply_lg_home_not_available">ЛГ Хоме није доступан на овом уређају</string>
+    <string name="apply_lg_home_failed">Није могуће покренути ЛГ Хоме Сеттингс, можете покушати да примените пакет икона ручно из подешавања.</string>
+    <string name="apply_lg_home_nougat">ЛГ Хоме са Андроид Ноугат-ом више не подржава пакет икона. Потребан вам је прилагођени покретач да бисте користили пакет икона.</string>
+    <string name="apply_launcher_incompatible" formatted="true">Покретач %с не подржава ниједан пакет икона, тако да не можете да користите овај пакет икона са овим покретачем. Можете да испробате апликацију треће стране да користите овај пакет икона у покретачу %2$с.</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">Покретач %1$с није компатибилан са %2$с, али може бити компатибилан са новијим верзијама</string>
+
+    <!--Иконе-->
+    <string name="icons_load_failed">Није могуће учитати иконе</string>
+    <string name="icon_shape">Облик иконе</string>
+    <string name="items_selected">Изабрано је %д</string>
+
+    <!--Захтев-->
+    <string name="request_title">Ицон Рекуест</string>
+    <string name="request_terms">Пре него што наставите са захтевом за иконом, имајте на уму да ће ваш захтев бити прегледан у складу са нашим смерницама. Премиум захтеви се могу брже обрађивати.</string>
+    <string name="request_not_selected">Изаберите апликације које желите да затражите</string>
+    <string name="request_not_requested">Није тражено</string>
+    <string name="request_already_requested">Већ тражено</string>
+    <string name="request_not_available">Не може се тражити</string>
+    <string name="request_building">Захтев за изградњу…</string>
+    <string name="request_pacific_sending">Слање захтева Пацифиц Манагеру...</string>
+    <string name="request_pacific_error">Дошло је до грешке при слању захтева Пацифиц Манагеру. Грешка је %с</string>
+    <string name="request_pacific_success">Захтев је успешно послат Пацифиц Манагеру</string>
+    <string name="request_custom_error">Дошло је до грешке при слању захтева за иконе. Ако се ова грешка и даље јавља, контактирајте програмера. %с</string>
+    <string name="request_custom_success">Захтев за икону је успешно послат</string>
+    <string name="request_fetching_data">Преузимање најновијих података…</string>
+    <string name="request_build_failed">Није могуће направити захтев за иконом</string>
+    <string name="request_appfilter_failed">Није могуће прочитати аппфилтер.кмл</string>
+    <string name="request_requested">Већ сте захтевали ову икону и не можете је поново затражити.</string>
+    <string name="request_requested_possible">Већ сте захтевали ову икону. Да ли сте сигурни да желите да потрошите још један захтев на то?</string>
+    <string name="request_requested_button_cancel">Иди назад</string>
+    <string name="request_requested_button_confirm">Ипак изаберите</string>
+    <string name="request_email_client">Изаберите апликацију коју желите да користите за слање захтева за иконе</string>
+    <string name="request_app_disabled">Користите старију верзију овог пакета икона. Тражене иконе могу бити укључене у најновију верзију. Ажурирајте апликацију на најновију верзију да бисте захтевали иконе.</string>
+    <string name="connection_error_long">Није могуће учитати податке са сервера. Молимо вас да проверите вашу мрежну везу.</string>
+    <string name="unable_to_load_config">Дошло је до грешке при преузимању или читању података са сервера.</string>
+    <string name="request_limit">Можете упутити само %д захтева са редовним захтевом.</string>
+    <string name="request_used">Захтевали сте %д иконе.</string>
+    <string name="request_limit_buy">Можете купити Премиум Рекуестс да бисте затражили више икона.</string>
+    <string name="request_limit_reset">Ограничење захтева за иконе ће бити ресетовано при сваком ажурирању.</string>
+
+    <!--Регулар Рекуест-->
+    <string name="regular_request">Редовни захтев за иконом</string>
+    <string name="regular_request_desc">Затражите вашу икону, а програмер ће покушати да укључи иконе које сте тражили.</string>
+    <string name="regular_request_count">Укупно\н%д захтев</string>
+    <string name="regular_request_used">Искоришћен\н%д захтев</string>
+    <string name="regular_request_available">Доступан\н%д захтев</string>
+
+    <!--Премиум Рекуест-->
+    <string name="premium_request">Захтев за премиум иконе</string>
+    <string name="premium_request_no_internet">Уверите се да је ваш телефон повезан на интернет пре него што пошаљете премиум захтев</string>
+    <string name="premium_request_desc">Захтев за премијум икону је захтев за плаћање. Захтеване апликације можете добити брже коришћењем захтева за премиум икону.</string>
+    <string name="premium_request_buy">Купи</string>
+    <string name="premium_request_count">Укупно\н%д захтев</string>
+    <string name="premium_request_used">Искоришћен\н%д захтев</string>
+    <string name="premium_request_available">Доступан\н%д захтев</string>
+    <string name="premium_request_already_purchased">Још увек имате %д премиум захтев. Морате их све искористити пре него што поново купите премиум пакет захтева.</string>
+    <string name="premium_request_limit">Имате само %д премијум захтева,</string>
+    <string name="premium_request_limit1">али сте изабрали %д апликације. \н\нМорате да искористите све своје премијум захтеве пре него што поново користите обичан захтев.</string>
+    <string name="premium_request_consume_failed">Не можете да користите Премиум Рекуест, проверите да ли имате стабилну интернет везу и покушајте поново. Идите на Подешавања да бисте поново направили Премиум захтеве.</string>
+    <string name="premium_request_rebuilding">Обнова премиум захтева…</string>
+    <string name="premium_request_rebuilding_empty">Нисте направили Премиум захтев</string>
+    <string name="premium_request_exist">Још увек имате пакет захтева за Премиум иконе. Отворите Подешавања, изаберите \"Врати куповине\" да бисте га вратили.</string>
+    <string name="premium_request_required">Морате да купите премиум пакет захтева за иконом да бисте поднели захтеве за иконе</string>
+
+    <!--Позадине-->
+    <string name="wallpaper_new_added">Нев Валлпапер</string>
+    <string name="wallpaper_already_downloaded">Позадина је већ преузета</string>
+    <string name="wallpaper_downloading">Преузимање позадине…</string>
+    <string name="wallpaper_download_failed">Није могуће преузети позадину</string>
+    <string name="wallpaper_download_success">Преузимање позадине је успешно</string>
+    <string name="wallpaper_loading">Учитавање позадине…</string>
+    <string name="wallpaper_applying">Примена позадине…</string>
+    <string name="wallpaper_applied">Тапета је примењена</string>
+    <string name="wallpaper_apply_failed">Није могуће применити позадину</string>
+    <string name="wallpaper_apply_cancelled">Примена позадине је отказана</string>
+    <string name="connection_failed">Није могуће преузети податке са сервера</string>
+    <string name="wallpaper_apply">Нанесите позадину</string>
+    <string name="wallpaper_save_to_device">Сачувај позадину</string>
+
+    <!--Пресетс-->
+    <string name="presets_load_failed">Није могуће учитати унапред подешене поставке</string>
+    <string name="presets_storage_permission">Дозвола за складиштење је потребна за учитавање позадине за преглед</string>
+    <string name="presets_required_apps">Потребне апликације за коришћење ових унапред подешених поставки</string>
+    <string name="presets_required_apps_not_installed">Нису инсталиране апликације потребне за коришћење унапред подешених поставки. Инсталирајте потребне апликације које недостају и покушајте поново.</string>
+
+    <!--Преференцес-->
+    <string name="pref_data_header">Подаци и кеш</string>
+    <string name="pref_data_cache">Цлеар Цацхе</string>
+    <string name="pref_data_cache_desc">Уклоните кеш меморију слика из складишта, креирану приликом одабира слике из ове апликације, захтевања пропуштених апликација и након учитавања сличица позадине у облаку.</string>
+    <string name="pref_data_cache_size">Величина кеша: %с</string>
+    <string name="pref_data_cache_clear_dialog">Да ли заиста желите да обришете кеш меморију?</string>
+    <string name="pref_data_cache_cleared">Кеш је обрисан</string>
+    <string name="pref_data_request">Обриши податке захтева за иконе</string>
+    <string name="pref_data_request_desc">Уклоните податке захтева за иконе, креиране након захтевања пропуштених апликација из захтева за иконе.</string>
+    <string name="pref_data_request_clear_dialog">Да ли заиста желите да обришете податке захтева за иконе?</string>
+    <string name="pref_data_request_cleared">Подаци захтева иконе су обрисани</string>
+    <string name="pref_premium_request_header">Захтев за премиум иконе</string>
+    <string name="pref_premium_request_restore">Ресторе Пурцхасес</string>
+    <string name="pref_premium_request_restore_desc">Вратите премиум пакет захтева након поновног инсталирања пакета икона</string>
+    <string name="pref_premium_request_restore_success">Премиум захтев је враћен</string>
+    <string name="pref_premium_request_restore_empty">Немате ниједан купљени пакет</string>
+    <string name="pref_premium_request_rebuild">Ребуилд Премиум Ицон Рекуест</string>
+    <string name="pref_premium_request_rebuild_desc">Прикупите све податке захтева за премиум иконе да бисте их поново послали</string>
+    <string name="pref_theme_header">Тема</string>
+    <string name="pref_theme_dark">Дарк Тхеме</string>
+    <string name="pref_theme_dark_desc">Користите тамну боју за тему апликације</string>
+    <string name="pref_notifications_header">Обавештења</string>
+    <string name="pref_notifications">Примање обавештења</string>
+    <string name="pref_wallpaper_header">Валлпапер</string>
+    <string name="pref_wallpaper_location">Локација чувања позадине</string>
+    <string name="pref_language_header">Језик</string>
+    <string name="pref_others_header">Други</string>
+    <string name="pref_others_report_bugs">Пријавите грешке</string>
+    <string name="pref_others_changelog">Цхангелог</string>
+    <string name="pref_others_reset_tutorial">Ресет Туториал</string>
+    <string name="pref_others_reset_tutorial_reset">Туториал Ресет</string>
+
+    <!--Теме-->
+    <string name="theme_name_auto">Ауто</string>
+    <string name="theme_name_light">Светлост</string>
+    <string name="theme_name_dark">Дарк</string>
+    <string name="theme_name_material_you">Материјал Ви</string>
+
+    <!--Дозвола-->
+    <string name="permission_storage_denied">Дозвола за складиштење је потребна да бисте сачували позадину</string>
+    <string name="permission_notification_denied_1">Дозвола за обавештења је потребна да бисте примали обавештења од програмера</string>
+    <string name="permission_notification_denied_2">Омогућите обавештења из подешавања апликације</string>
+
+    <!--Намера-->
+    <string name="app_client">Изаберите апликацију</string>
+    <string name="no_email_app">Нема апликације за слање е-поште</string>
+    <string name="no_browser">Нема апликације за отварање УРЛ-а</string>
+    <string name="intent_email_failed">Није могуће приказати апликацију за е-пошту</string>
+    <string name="intent_email_supported">Подржано</string>
+    <string name="intent_email_recommended">Препоручено</string>
+    <string name="intent_email_not_supported">Није подржано</string>
+    <string name="intent_email_not_supported_message">Изабрали сте неподржани клијент е-поште, изаберите други клијент е-поште</string>
+
+    <!--Абоут-->
+    <string name="about_contributors_title">Сарадници</string>
+
+    <!--Пријавите грешке-->
+    <string name="report_bugs_desc">Молимо вас да опишете врсту проблема који желите да пријавите</string>
+    <string name="report_bugs_desc_hint">Опис</string>
+    <string name="report_bugs_desc_empty">Молимо дајте опис</string>
+    <string name="report_bugs_building">Листа активности у изградњи…</string>
+    <string name="report_bugs_failed">Није могуће направити листу активности</string>
+    <string name="report_bugs_send">Пошаљи извештај</string>
+
+    <!--Подршка развоју-->
+    <string name="donation_success">Хвала вам што сте дали донацију. Користићу га за добро.</string>
+
+    <!--Извештај о паду-->
+    <string name="crash_report">Извештај о паду</string>
+    <string name="crash_report_message">Нажалост, %с се срушио. Изаберите Пошаљи извештај испод да бисте помогли програмеру да реши проблем.</string>
+    <string name="crash_report_send">Пошаљи извештај</string>
+
+    <!--ДраверТоггле-->
+    <string name="txt_open">Отвори</string>
+    <string name="txt_close">Затвори</string>
+
+    <string name="txt_new">Ново</string>
+
+    <!--Описи садржаја за читаче екрана-->
+    <string name="icon_search_close_button_content_description">Затворите претрагу икона</string>
+    <string name="icon_request_submit_button_content_description">Пошаљите захтев за иконе</string>
+    <string name="icon_list_content_description">Листа икона укључених у пакет икона</string>
+    <string name="icon_search_list_content_description">Листа икона које одговарају термину за претрагу</string>
+    <string name="about_item_social_content_description">Веза до онлајн профила аутора пакета икона:</string>
+    <string name="share_icon_pack_button_content_description">Поделите ову апликацију са неким</string>
+
+    <!--Политика приватности-->
+    <string name="privacy_policy">Политика приватности</string>
+    <string name="privacy_policy_desc">Ваша приватност нам је важна. Прочитајте нашу политику приватности у О нама да бисте разумели како поступамо са вашим подацима.</string>
+
+    <!--Услови и одредбе-->
+    <string name="terms_conditions">Услови и одредбе</string>
+
+    <!--Захтев-->
+    <string name="request_limit_title">Ограничење бесплатног захтева</string>
+    <string name="request_limit_content">Имате још %д бесплатних захтева. Размислите о надоградњи на премиум за неограничене захтеве.</string>
+    <string name="request_limit_reached">Достигнуто је ограничење бесплатног захтева. Надоградите на премиум за више захтева.</string>
+    <string name="request_limit_remaining">Можете изабрати још %д икона</string>
+
+    <!--Верзија апликације-->
+    <string name="version">Верзија</string>
+	
+    <!--Цустом-->
+    <string name="home_kustom_desc">Одговарајући временски услови за %с</string>
+    <string name="kustom_widgets">Видгетс</string>
+    <string name="kustom_wallpapers">Позадине</string>
+    <string name="kustom_lockscreens">Лоцксцреенс</string>
+    <string name="kustom_komponents">Компонента</string>
+
+    <!--Дијалог захтева за сагласност-->
+    <string name="request_consent_title">Сагласност за прикупљање података</string>
+    <string name="request_consent_content">Да бисмо обрадили ваш захтев за иконом, морамо да прикупимо информације о вашим инсталираним апликацијама и детаљима о уређају (као што су димензије екрана и верзија Андроид-а). Ово нам помаже да дизајнирамо иконе које најбоље функционишу за ваш уређај.\н\нМожете да прегледате нашу Политику приватности у одељку О нама за више информација.</string>
+    <string name="request_consent_accept">АЦЦЕПТ</string>
+    <string name="request_consent_deny">ДЕНИ</string>
+
+    <!--Стил навигације-->
+    <string name="pref_navigation_style">Трака за навигацију</string>
+
+    <!--Тражи-->
+    <string name="search_apps">Претражи апликације</string>
+
+</resources>

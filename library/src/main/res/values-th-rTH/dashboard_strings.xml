@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+	<!--ชื่อหน้าจอเริ่มต้น-->
+    <string name="splash_screen_title">แดชบอร์ด CandyBar</string>
+
+    <!--มุมมองการนำทาง-->
+    <string name="navigation_view_home">บ้าน</string>
+    <string name="navigation_view_apply">นำมาใช้</string>
+    <string name="navigation_view_icons">ไอคอน</string>
+    <string name="navigation_view_request">คำขอไอคอน</string>
+    <string name="navigation_view_wallpapers">วอลเปเปอร์</string>
+    <string name="navigation_view_kustom">กำหนดเอง</string>
+    <string name="navigation_view_settings">การตั้งค่า</string>
+    <string name="navigation_view_faqs">คำถามที่พบบ่อย</string>
+    <string name="navigation_view_about">เกี่ยวกับ</string>
+    <string name="navigation_view_donate">รองรับการพัฒนา</string>
+
+    <!--มูเซย์-->
+    <string name="muzei_settings">การตั้งค่ามูเซอิ</string>
+    <string name="minute">นาที</string>
+    <string name="hour">ชั่วโมง</string>
+    <string name="save_setting">บันทึก</string>
+    <string name="muzei_refresh_duration">ระยะเวลารีเฟรช</string>
+    <string name="muzei_wifi_only">รีเฟรชจาก Wi-Fi เท่านั้น</string>
+    <string name="muzei_downloaded_only">โหลดวอลเปเปอร์ที่ดาวน์โหลดมาเท่านั้น</string>
+    <string name="muzei_settings_ignored">ชุดไอคอนไม่มีวอลเปเปอร์ การตั้งค่าจะถูกละเว้น</string>
+    <string name="muzei_settings_saved">บันทึกการตั้งค่าแล้ว</string>
+
+    <!--เมนู-->
+    <string name="menu_search">ค้นหา</string>
+    <string name="menu_save">บันทึกลงในอุปกรณ์</string>
+    <string name="menu_select_all">เลือกทั้งหมด</string>
+    <string name="menu_delete">ลบ</string>
+
+    <string name="menu_wallpaper_crop">ครอบตัดวอลล์เปเปอร์</string>
+    <string name="menu_apply_homescreen">หน้าจอหลัก</string>
+    <string name="menu_apply_lockscreen">ล็อคหน้าจอ</string>
+    <string name="menu_apply_homescreen_lockscreen">หน้าจอหลักและหน้าจอล็อค</string>
+
+    <!--กล่องโต้ตอบ-->
+    <string name="open">เปิด</string>
+    <string name="close">ปิด</string>
+    <string name="clear">ชัดเจน</string>
+    <string name="ok">ตกลง</string>
+    <string name="install">ติดตั้ง</string>
+    <string name="donate">บริจาค</string>
+    <string name="update">อัปเดต</string>
+
+    <string name="search_noresult">ไม่พบผลลัพธ์สำหรับ \"%s\"</string>
+    <string name="search_faqs">คำถามหรือคำตอบ</string>
+    <string name="search_icon">ชื่อไอคอน</string>
+    <string name="search_wallpapers">ชื่อวอลเปเปอร์</string>
+
+    <!--อัปเดต-->
+    <string name="checking_for_update">กำลังตรวจสอบการอัปเดต…</string>
+    <string name="update_available">อัพเดตได้แล้ว!</string>
+    <string name="no_update_available">คุณกำลังใช้เวอร์ชันล่าสุด!</string>
+
+    <!--เวอร์ชันบันทึกการเปลี่ยนแปลง-->
+    <string name="changelog_version">เวอร์ชัน</string>
+
+    <!--InAppBilling-->
+    <string name="billing_load_product_failed">ไม่สามารถโหลดผลิตภัณฑ์การซื้อในแอปได้</string>
+
+    <!--ใบอนุญาต-->
+    <string name="license_checking">กำลังตรวจสอบใบอนุญาต…</string>
+    <string name="license_check">ตรวจสอบใบอนุญาต</string>
+    <string name="license_check_success">การตรวจสอบใบอนุญาตสำเร็จ ขอขอบคุณที่ดาวน์โหลดแอปจาก Play Store</string>
+    <string name="license_check_failed">การตรวจสอบใบอนุญาตล้มเหลว คุณไม่ได้ดาวน์โหลดแอปจาก Play Store คุณจะไม่สามารถใช้มันได้</string>
+    <string name="license_check_retry">ไม่สามารถตรวจสอบใบอนุญาตได้ โปรดลองอีกครั้งในอีกสักครู่</string>
+
+    <!--ตรวจสอบการติดตั้ง Play Store-->
+    <string name="playstore_check">ตรวจสอบ Play สโตร์</string>
+    <string name="playstore_check_success">ขอขอบคุณที่ติดตั้งแอปจาก Google Play Store สนุก!</string>
+    <string name="playstore_check_failed">ดูเหมือนว่าคุณได้ติดตั้งชุดไอคอนนี้จากภายนอก Google Play Store
+        คุณจะไม่สามารถใช้มันได้</string>
+
+    <!--แบ่งปัน-->
+    <string name="share_app_title">โย่! ตรวจสอบ %s</string>
+    <string name="share_app_body">ลองดูชุดไอคอน %1$s บน Play Store: %2$s</string>
+
+    <!--แตะบทนำ-->
+    <string name="tap_intro_home_navigation">ลิ้นชักการนำทาง</string>
+    <string name="tap_intro_home_navigation_desc">แตะที่นี่หรือปัดจากขอบซ้ายของหน้าจอเพื่อเปิดลิ้นชักการนำทาง</string>
+    <string name="tap_intro_home_apply">ใช้ชุดไอคอน</string>
+    <string name="tap_intro_home_apply_desc">แตะที่นี่เพื่อใช้ %s กับตัวเรียกใช้งานปัจจุบันของคุณ กดค้างเพื่อนำไปใช้กับตัวเรียกใช้งานอื่น</string>
+    <string name="tap_intro_icons_search">ค้นหา</string>
+    <string name="tap_intro_icons_search_desc">แตะที่นี่เพื่อค้นหาไอคอน</string>
+    <string name="tap_intro_request_search">ค้นหาแอพที่หายไป</string>
+    <string name="tap_intro_request_search_desc">แตะที่นี่เพื่อค้นหาแอปที่ติดตั้งของคุณเพื่อหาไอคอนที่หายไปสำหรับคำขอไอคอนที่เลือก</string>
+    <string name="tap_intro_request_select">เลือกแอปที่ไม่ได้รับ</string>
+    <string name="tap_intro_request_select_desc">แตะที่นี่เพื่อเลือกแอปที่ไม่ได้รับสำหรับคำขอไอคอน</string>
+    <string name="tap_intro_request_select_all">เลือกแอปที่ไม่ได้รับทั้งหมด</string>
+    <string name="tap_intro_request_select_all_desc">แตะที่นี่เพื่อเลือกแอปที่ไม่ได้รับทั้งหมดสำหรับคำขอไอคอน</string>
+    <string name="tap_intro_request_send">ส่งคำขอไอคอน</string>
+    <string name="tap_intro_request_send_desc">แตะที่นี่เพื่อส่งแอปที่ไม่ได้รับที่เลือกไว้</string>
+    <string name="tap_intro_request_premium">คำขอไอคอนพรีเมียม</string>
+    <string name="tap_intro_request_premium_desc">แตะที่นี่เพื่อซื้อแพ็คเกจคำขอไอคอนพรีเมียม ด้วยคำขอไอคอนพรีเมียม คุณจะได้รับแอปที่คุณร้องขอเร็วขึ้น</string>
+    <string name="tap_intro_wallpapers_option">ตัวเลือกวอลเปเปอร์</string>
+    <string name="tap_intro_wallpapers_option_desc">แตะค้างไว้ที่นี่เพื่อแสดงตัวเลือกวอลเปเปอร์ %s ใช้วอลเปเปอร์</string>
+    <string name="tap_intro_wallpapers_option_desc_download">ดาวน์โหลดหรือ</string>
+    <string name="tap_intro_wallpapers_preview">ดูตัวอย่างวอลเปเปอร์</string>
+    <string name="tap_intro_wallpapers_preview_desc">แตะที่นี่เพื่อดูตัวอย่างวอลเปเปอร์ขนาดเต็ม</string>
+    <string name="tap_intro_wallpaper_preview_save">บันทึกวอลเปเปอร์</string>
+    <string name="tap_intro_wallpaper_preview_save_desc">แตะที่นี่เพื่อดาวน์โหลดและบันทึกวอลเปเปอร์ลงในอุปกรณ์ของคุณเพื่อให้คุณใช้ในภายหลังได้</string>
+    <string name="tap_intro_wallpaper_preview_apply">ติดวอลเปเปอร์</string>
+    <string name="tap_intro_wallpaper_preview_apply_desc">แตะที่นี่เพื่อตั้งวอลเปเปอร์เป็นพื้นหลังหน้าจอหลัก</string>
+
+    <!--บ้าน-->
+    <string name="home_more_apps_header">แอพเพิ่มเติม</string>
+    <string name="home_more_apps">ตรวจสอบชุดไอคอนเพิ่มเติมบน Google Play Store</string>
+    <string name="home_rate">ประเมิน</string>
+    <string name="home_share">แบ่งปัน</string>
+    <string name="home_check_update">อัปเดต</string>
+    <string name="home_apply_icon_pack">ใช้ %s</string>
+    <string name="home_donate">บริจาค</string>
+    <string name="home_donate_desc">สนับสนุนให้นักพัฒนาสร้างชุดไอคอนเพิ่มเติม</string>
+    <string name="home_icons">ไอคอน</string>
+    <string name="home_icon_dimension">ขนาดไอคอน %s พิกเซล</string>
+    <string name="home_loud_wallpapers">%d วอลเปเปอร์รูปเมฆ</string>
+    <string name="home_muzei">วอลล์เปเปอร์เคลื่อนไหว Muzei</string>
+    <string name="home_icon_request_installed_apps">แอปที่ติดตั้งทั้งหมด\n%d แอป</string>
+    <string name="home_icon_request_themed_apps">แอปที่มีธีม\n%d แอป</string>
+    <string name="home_icon_request_missed_apps">พลาด\n%d แอป</string>
+
+    <!--นำมาใช้-->
+    <string name="apply_installed">ติดตั้งตัวเรียกใช้งาน</string>
+    <string name="apply_installed_launchers">ติดตั้งตัวเรียกใช้งาน</string>
+    <string name="apply_supported">ตัวเรียกใช้งานที่รองรับ</string>
+    <string name="apply_launcher_not_installed_title">%s</string>
+    <string name="apply_launcher_not_installed_message">ไม่ได้ติดตั้ง %s Launcher คุณสามารถค้นหาและติดตั้งได้จาก Amazon AppStore หรือจากแหล่งข้อมูลและร้านค้าที่คุณต้องการ</string>
+    <string name="apply_manual">%1$s Launcher ไม่รองรับการใช้โดยตรง แต่คุณสามารถใช้ %2$s ด้วยตนเองได้จากการตั้งค่า Launcher</string>
+    <string name="apply_manual_kvaesitso">Kvaesitso ไม่รองรับการสมัครโดยตรง แต่คุณสามารถทำตามขั้นตอนเหล่านี้ได้:</string>
+    <string name="apply_manual_kvaesitso_step_1">เปิดการตั้งค่าของ Kvaesitso</string>
+    <string name="apply_manual_kvaesitso_step_2">แตะ \"ตารางและไอคอน\"</string>
+    <string name="apply_manual_kvaesitso_step_3">แตะที่ \"ชุดไอคอน\"</string>
+    <string name="apply_manual_kvaesitso_step_4">เลือก %s จากรายการ</string>
+    <string name="apply_manual_kvaesitso_step_5">แตะไอคอนแปรงทาสีเพื่อเปิดหรือปิดรูปร่างพื้นหลัง</string>
+    <string name="apply_manual_kiss">KISS ไม่รองรับการสมัครโดยตรง แต่คุณสามารถทำตามขั้นตอนเหล่านี้ได้:</string>
+    <string name="apply_manual_kiss_step_1">เปิดการตั้งค่า KISS</string>
+    <string name="apply_manual_kiss_step_2">แตะ \"อินเทอร์เฟซผู้ใช้\"</string>
+    <string name="apply_manual_kiss_step_3">แตะที่ \"ชุดไอคอน\"</string>
+    <string name="apply_manual_kiss_step_4">เลือก %s จากรายการ</string>
+    <string name="apply_manual_samsung_oneui">%1$s ไม่รองรับการใช้โดยตรง แต่เริ่มต้นด้วย %2$s คุณสามารถใช้ไอคอนกับแอปที่แสดงร่วมได้</string>
+    <string name="apply_manual_samsung_oneui_too_old">%s เวอร์ชันปัจจุบันของคุณเก่าเกินไป โปรดอัปเดตเป็น Android 12 หรือใหม่กว่าเพื่อให้สามารถใช้ไอคอนได้โดยตรง หรือคุณสามารถติดตั้งตัวเรียกใช้งานอื่นได้</string>
+    <string name="apply_manual_samsung_oneui_step_1">เปิด %s</string>
+    <string name="apply_manual_samsung_oneui_step_2">ดาวน์โหลดแอป %s</string>
+    <string name="apply_manual_samsung_oneui_step_3">แตะ \"ไอคอน\"</string>
+    <string name="apply_manual_samsung_oneui_step_4">แตะ \"สร้างใหม่\"</string>
+    <string name="apply_manual_samsung_oneui_step_5">แตะปุ่ม \"Iconpack\" สีน้ำเงิน</string>
+    <string name="apply_manual_samsung_oneui_step_6">เลือก %s จากรายการ</string>
+    <string name="apply_manual_samsung_oneui_step_7">ทำซ้ำขั้นตอนเหล่านี้ทุกครั้งที่คุณอัปเดต %s เนื่องจากไอคอนใหม่จะไม่ถูกแมปโดยอัตโนมัติ</string>
+    <string name="apply_manual_hios">HiOS Launcher ไม่รองรับการใช้งานโดยตรง แต่คุณสามารถทำตามขั้นตอนเหล่านี้ได้:</string>
+    <string name="apply_manual_hios_step_1">เปิด \"การตั้งค่า\"</string>
+    <string name="apply_manual_hios_step_2">แตะ \"ธีมและหน้าจอล็อก\"</string>
+    <string name="apply_manual_hios_step_3">แตะ \"ธีมของฉัน\"</string>
+    <string name="apply_manual_hios_step_4">แตะ \"ชุดไอคอน\"</string>
+    <string name="apply_manual_hios_step_5">แตะ %s</string>
+    <string name="apply_manual_oxygen_os_step_1">แตะหน้าจอหลักของคุณค้างไว้</string>
+    <string name="apply_manual_oxygen_os_step_2">แตะ \"การตั้งค่าบ้าน\"</string>
+    <string name="apply_manual_oxygen_os_step_3">แตะ \"ชุดไอคอน\"</string>
+    <string name="apply_manual_oxygen_os_step_4">แตะ %s</string>
+    <string name="apply_manual_color_os_step_1">แตะหน้าจอหลักของคุณค้างไว้</string>
+    <string name="apply_manual_color_os_step_2">แตะ \"ไอคอน\"</string>
+    <string name="apply_manual_color_os_step_3">เลื่อนไปทางด้านขวาของปุ่ม \"กำหนดเอง\" (นี่คือรายการที่เลื่อนได้!)</string>
+    <string name="apply_manual_color_os_step_4">แตะ %s</string>
+    <string name="apply_manual_before">Before Launcher เวอร์ชันนี้ยังไม่รองรับการใช้ไอคอนโดยตรง ให้ทำตามขั้นตอนด้านล่างแทน:</string>
+    <string name="apply_manual_before_step_1">ปัดไปทางซ้ายบนหน้าจอหลัก</string>
+    <string name="apply_manual_before_step_2">แตะ \"การตั้งค่า\"</string>
+    <string name="apply_manual_before_step_3">แตะ \"รูปแบบและธีม\"</string>
+    <string name="apply_manual_before_step_4">แตะ \"รูปแบบและแพ็คของไอคอน\"</string>
+    <string name="apply_manual_before_step_5">แตะ %s</string>
+    <string name="apply_manual_nothing_step_1">เปิด \"การตั้งค่า\"</string>
+    <string name="apply_manual_nothing_step_2">แตะ \"การปรับแต่ง\"</string>
+    <string name="apply_manual_nothing_step_3">แตะ \"ชุดไอคอน\"</string>
+    <string name="apply_manual_nothing_step_4">แตะ %s</string>
+    <string name="apply_launch_failed">ไม่สามารถเปิดการตั้งค่า %s ได้</string>
+    <string name="apply_launcher_not_installed">ไม่ได้ติดตั้ง %s Launcher คุณต้องการเปิด Google Play Store เพื่อดาวน์โหลดและติดตั้งหรือไม่?</string>
+    <string name="apply_launcher_not_installable">ไม่ได้ติดตั้ง %s Launcher โปรดลองอีกครั้งหลังจากติดตั้งตัวเรียกใช้งาน</string>
+    <string name="apply_cmtheme_not_available">CM Theme Manager ไม่พร้อมใช้งานบนอุปกรณ์นี้</string>
+    <string name="apply_cmtheme_failed">ไม่สามารถเปิดตัว CM Theme Manager ได้ คุณสามารถลองใช้ชุดไอคอนด้วยตนเองจากการตั้งค่า</string>
+    <string name="apply_lg_home">หากต้องการใช้ชุดไอคอนนี้ ให้เปิดการตั้งค่า - จอแสดงผล - หน้าจอหลัก - ธีม</string>
+    <string name="apply_lg_home_not_available">LG Home ไม่พร้อมใช้งานบนอุปกรณ์นี้</string>
+    <string name="apply_lg_home_failed">ไม่สามารถเปิดการตั้งค่าหน้าแรกของ LG ได้ คุณสามารถลองใช้ชุดไอคอนด้วยตนเองได้จากการตั้งค่า</string>
+    <string name="apply_lg_home_nougat">LG Home พร้อม Android Nougat ไม่รองรับ Icon Pack อีกต่อไป คุณต้องมีตัวเรียกใช้งานที่กำหนดเองเพื่อใช้ Icon Pack</string>
+    <string name="apply_launcher_incompatible" formatted="true">%s Launcher ไม่รองรับชุดไอคอนใดๆ ดังนั้นคุณจึงไม่สามารถใช้ชุดไอคอนนี้กับ Launcher นี้ คุณสามารถลองใช้แอปของบุคคลที่สามเพื่อใช้ชุดไอคอนนี้ในตัวเรียกใช้งาน %2$s</string>
+    <string name="apply_launcher_incompatible_depending_on_version" formatted="true">ตัวเรียกใช้งาน %1$s เข้ากันไม่ได้กับ %2$s แต่อาจเข้ากันได้กับเวอร์ชันที่ใหม่กว่า</string>
+
+    <!--ไอคอน-->
+    <string name="icons_load_failed">ไม่สามารถโหลดไอคอนได้</string>
+    <string name="icon_shape">รูปร่างไอคอน</string>
+    <string name="items_selected">เลือกแล้ว %d</string>
+
+    <!--ขอ-->
+    <string name="request_title">คำขอไอคอน</string>
+    <string name="request_terms">ก่อนดำเนินการตามคำขอไอคอน โปรดทราบว่าคำขอของคุณจะได้รับการตรวจสอบตามหลักเกณฑ์ของเรา คำขอพรีเมียมอาจได้รับการดำเนินการเร็วขึ้น</string>
+    <string name="request_not_selected">เลือกแอปที่จะขอ</string>
+    <string name="request_not_requested">ไม่ได้รับการร้องขอ</string>
+    <string name="request_already_requested">ขอไปแล้ว</string>
+    <string name="request_not_available">ไม่สามารถขอได้</string>
+    <string name="request_building">คำขอก่อสร้าง…</string>
+    <string name="request_pacific_sending">กำลังส่งคำขอไปยัง Pacific Manager...</string>
+    <string name="request_pacific_error">เกิดข้อผิดพลาดขณะส่งคำขอไปยัง Pacific Manager ข้อผิดพลาดคือ %s</string>
+    <string name="request_pacific_success">ส่งคำขอไปยัง Pacific Manager เรียบร้อยแล้ว</string>
+    <string name="request_custom_error">เกิดข้อผิดพลาดขณะส่งคำขอไอคอน หากข้อผิดพลาดนี้ยังคงอยู่ โปรดติดต่อผู้พัฒนา %s</string>
+    <string name="request_custom_success">ส่งคำขอไอคอนเรียบร้อยแล้ว</string>
+    <string name="request_fetching_data">กำลังเรียกข้อมูลล่าสุด…</string>
+    <string name="request_build_failed">ไม่สามารถสร้างคำขอไอคอนได้</string>
+    <string name="request_appfilter_failed">ไม่สามารถอ่าน appfilter.xml</string>
+    <string name="request_requested">คุณได้ร้องขอไอคอนนี้แล้ว และไม่สามารถขอได้อีก</string>
+    <string name="request_requested_possible">คุณได้ขอไอคอนนี้แล้ว คุณแน่ใจหรือไม่ว่าต้องการใช้คำขออื่นกับเรื่องนี้</string>
+    <string name="request_requested_button_cancel">กลับไป</string>
+    <string name="request_requested_button_confirm">เลือกเลย</string>
+    <string name="request_email_client">เลือกแอปที่คุณต้องการใช้เพื่อส่งคำขอไอคอน</string>
+    <string name="request_app_disabled">คุณกำลังใช้ชุดไอคอนเวอร์ชันเก่านี้ ไอคอนที่ร้องขออาจรวมอยู่ในเวอร์ชันล่าสุด โปรดอัปเดตแอปของคุณเป็นเวอร์ชันล่าสุดเพื่อขอไอคอน</string>
+    <string name="connection_error_long">ไม่สามารถโหลดข้อมูลจากเซิร์ฟเวอร์ได้ กรุณาตรวจสอบการเชื่อมต่อเครือข่ายของคุณ</string>
+    <string name="unable_to_load_config">เกิดข้อผิดพลาดขณะดึงหรืออ่านข้อมูลจากเซิร์ฟเวอร์</string>
+    <string name="request_limit">คุณสามารถส่งคำขอได้เพียง %d รายการด้วยคำขอปกติ</string>
+    <string name="request_used">คุณได้ร้องขอ %d ไอคอน</string>
+    <string name="request_limit_buy">คุณสามารถซื้อคำขอพรีเมียมเพื่อขอไอคอนเพิ่มเติมได้</string>
+    <string name="request_limit_reset">ขีดจำกัดคำขอไอคอนจะถูกรีเซ็ตทุกครั้งที่อัปเดต</string>
+
+    <!--คำขอปกติ-->
+    <string name="regular_request">คำขอไอคอนปกติ</string>
+    <string name="regular_request_desc">ได้รับการร้องขอไอคอนของคุณ และนักพัฒนาจะพยายามรวมไอคอนที่คุณร้องขอ</string>
+    <string name="regular_request_count">รวม\n%d คำขอ</string>
+    <string name="regular_request_used">ใช้\n%d คำขอแล้ว</string>
+    <string name="regular_request_available">คำขอที่มีอยู่\n%d</string>
+
+    <!--คำขอพรีเมี่ยม-->
+    <string name="premium_request">คำขอไอคอนพรีเมียม</string>
+    <string name="premium_request_no_internet">ตรวจสอบให้แน่ใจว่าโทรศัพท์ของคุณเชื่อมต่อกับอินเทอร์เน็ตก่อนที่จะส่งคำขอแบบพรีเมียม</string>
+    <string name="premium_request_desc">คำขอไอคอนพรีเมียมเป็นการร้องขอแบบจ่ายเพื่อ คุณสามารถรับแอปที่คุณร้องขอได้เร็วขึ้นโดยใช้คำขอไอคอนพรีเมียม</string>
+    <string name="premium_request_buy">ซื้อ</string>
+    <string name="premium_request_count">รวม\n%d คำขอ</string>
+    <string name="premium_request_used">ใช้\n%d คำขอแล้ว</string>
+    <string name="premium_request_available">คำขอที่มีอยู่\n%d</string>
+    <string name="premium_request_already_purchased">คุณยังมีคำขอพรีเมียมอีก %d รายการ คุณต้องใช้ทั้งหมดก่อนที่จะซื้อแพ็คเกจคำขอพรีเมียมอีกครั้ง</string>
+    <string name="premium_request_limit">คุณมีคำขอพรีเมียมเพียง %d รายการเท่านั้น</string>
+    <string name="premium_request_limit1">แต่คุณเลือก %d แอป \n\nคุณต้องใช้คำขอพรีเมียมทั้งหมดก่อนที่จะใช้คำขอปกติอีกครั้ง</string>
+    <string name="premium_request_consume_failed">ไม่สามารถใช้คำขอพรีเมียมได้ ตรวจสอบให้แน่ใจว่าคุณมีการเชื่อมต่ออินเทอร์เน็ตที่เสถียรแล้วลองอีกครั้ง ไปที่การตั้งค่าเพื่อสร้างคำขอพรีเมียมใหม่</string>
+    <string name="premium_request_rebuilding">สร้างคำขอพรีเมียมใหม่…</string>
+    <string name="premium_request_rebuilding_empty">คุณยังไม่ได้ส่งคำขอระดับพรีเมียม</string>
+    <string name="premium_request_exist">คุณยังคงมีแพ็คเกจคำขอไอคอนพรีเมียม เปิดการตั้งค่า เลือก \"กู้คืนการซื้อ\" เพื่อกู้คืน</string>
+    <string name="premium_request_required">คุณต้องซื้อแพ็คเกจคำขอไอคอนพรีเมียมเพื่อส่งคำขอไอคอน</string>
+
+    <!--วอลเปเปอร์-->
+    <string name="wallpaper_new_added">วอลล์เปเปอร์ใหม่</string>
+    <string name="wallpaper_already_downloaded">ดาวน์โหลดวอลเปเปอร์แล้ว</string>
+    <string name="wallpaper_downloading">กำลังดาวน์โหลดวอลเปเปอร์…</string>
+    <string name="wallpaper_download_failed">ไม่สามารถดาวน์โหลดวอลเปเปอร์ได้</string>
+    <string name="wallpaper_download_success">ดาวน์โหลดวอลเปเปอร์สำเร็จ</string>
+    <string name="wallpaper_loading">กำลังโหลดวอลเปเปอร์…</string>
+    <string name="wallpaper_applying">กำลังใช้วอลเปเปอร์…</string>
+    <string name="wallpaper_applied">ใช้วอลเปเปอร์แล้ว</string>
+    <string name="wallpaper_apply_failed">ไม่สามารถติดวอลเปเปอร์ได้</string>
+    <string name="wallpaper_apply_cancelled">ใช้วอลเปเปอร์ถูกยกเลิก</string>
+    <string name="connection_failed">ไม่สามารถดึงข้อมูลจากเซิร์ฟเวอร์ได้</string>
+    <string name="wallpaper_apply">ติดวอลเปเปอร์</string>
+    <string name="wallpaper_save_to_device">บันทึกวอลเปเปอร์</string>
+
+    <!--ค่าที่ตั้งล่วงหน้า-->
+    <string name="presets_load_failed">ไม่สามารถโหลดค่าที่ตั้งล่วงหน้าได้</string>
+    <string name="presets_storage_permission">จำเป็นต้องได้รับอนุญาตจากพื้นที่เก็บข้อมูลเพื่อโหลดวอลเปเปอร์แสดงตัวอย่าง</string>
+    <string name="presets_required_apps">แอพที่จำเป็นเพื่อใช้การตั้งค่าล่วงหน้าเหล่านี้</string>
+    <string name="presets_required_apps_not_installed">ไม่ได้ติดตั้งแอปที่จำเป็นเพื่อใช้การตั้งค่าล่วงหน้า โปรดติดตั้งแอปที่จำเป็นที่ขาดหายไปแล้วลองอีกครั้ง</string>
+
+    <!--การตั้งค่า-->
+    <string name="pref_data_header">ข้อมูลและแคช</string>
+    <string name="pref_data_cache">ล้างแคช</string>
+    <string name="pref_data_cache_desc">ลบแคชรูปภาพออกจากที่เก็บข้อมูลของคุณ ซึ่งสร้างขึ้นเมื่อเลือกรูปภาพจากแอพนี้ ขอแอพที่ไม่ได้รับ และหลังจากโหลดภาพขนาดย่อของวอลเปเปอร์คลาวด์</string>
+    <string name="pref_data_cache_size">ขนาดแคช: %s</string>
+    <string name="pref_data_cache_clear_dialog">คุณต้องการล้างแคชจริง ๆ หรือไม่?</string>
+    <string name="pref_data_cache_cleared">ล้างแคชแล้ว</string>
+    <string name="pref_data_request">ล้างข้อมูลคำขอไอคอน</string>
+    <string name="pref_data_request_desc">ลบข้อมูลคำขอไอคอนที่สร้างขึ้นหลังจากการร้องขอแอปที่ไม่ได้รับจากคำขอไอคอน</string>
+    <string name="pref_data_request_clear_dialog">คุณต้องการล้างข้อมูลคำขอไอคอนจริง ๆ หรือไม่?</string>
+    <string name="pref_data_request_cleared">ล้างข้อมูลคำขอไอคอนแล้ว</string>
+    <string name="pref_premium_request_header">คำขอไอคอนพรีเมียม</string>
+    <string name="pref_premium_request_restore">คืนค่าการซื้อ</string>
+    <string name="pref_premium_request_restore_desc">คืนค่าแพ็คเกจคำขอระดับพรีเมียมหลังจากติดตั้งชุดไอคอนใหม่</string>
+    <string name="pref_premium_request_restore_success">กู้คืนคำขอพรีเมียมแล้ว</string>
+    <string name="pref_premium_request_restore_empty">คุณไม่มีแพ็คเกจที่ซื้อ</string>
+    <string name="pref_premium_request_rebuild">สร้างคำขอไอคอนพรีเมียมใหม่</string>
+    <string name="pref_premium_request_rebuild_desc">รวบรวมข้อมูลคำขอไอคอนพรีเมียมทั้งหมดเพื่อส่งอีกครั้ง</string>
+    <string name="pref_theme_header">ธีม</string>
+    <string name="pref_theme_dark">ธีมสีเข้ม</string>
+    <string name="pref_theme_dark_desc">ใช้สีเข้มสำหรับธีมแอปพลิเคชัน</string>
+    <string name="pref_notifications_header">การแจ้งเตือน</string>
+    <string name="pref_notifications">รับการแจ้งเตือน</string>
+    <string name="pref_wallpaper_header">วอลล์เปเปอร์</string>
+    <string name="pref_wallpaper_location">วอลล์เปเปอร์บันทึกตำแหน่ง</string>
+    <string name="pref_language_header">ภาษา</string>
+    <string name="pref_others_header">คนอื่น</string>
+    <string name="pref_others_report_bugs">รายงานข้อบกพร่อง</string>
+    <string name="pref_others_changelog">บันทึกการเปลี่ยนแปลง</string>
+    <string name="pref_others_reset_tutorial">รีเซ็ตบทช่วยสอน</string>
+    <string name="pref_others_reset_tutorial_reset">รีเซ็ตบทช่วยสอน</string>
+
+    <!--ธีมส์-->
+    <string name="theme_name_auto">อัตโนมัติ</string>
+    <string name="theme_name_light">แสงสว่าง</string>
+    <string name="theme_name_dark">มืด</string>
+    <string name="theme_name_material_you">วัสดุคุณ</string>
+
+    <!--การอนุญาต-->
+    <string name="permission_storage_denied">จำเป็นต้องได้รับอนุญาตในการจัดเก็บเพื่อบันทึกวอลเปเปอร์</string>
+    <string name="permission_notification_denied_1">จำเป็นต้องได้รับอนุญาตในการแจ้งเตือนเพื่อรับการแจ้งเตือนจากนักพัฒนา</string>
+    <string name="permission_notification_denied_2">เปิดใช้งานการแจ้งเตือนจากการตั้งค่าแอพ</string>
+
+    <!--เจตนา-->
+    <string name="app_client">เลือกแอพ</string>
+    <string name="no_email_app">ไม่มีใบสมัครที่จะส่งอีเมล</string>
+    <string name="no_browser">ไม่มีแอปพลิเคชันสำหรับเปิด URL</string>
+    <string name="intent_email_failed">ไม่สามารถแสดงแอปพลิเคชันอีเมลได้</string>
+    <string name="intent_email_supported">รองรับ</string>
+    <string name="intent_email_recommended">ที่แนะนำ</string>
+    <string name="intent_email_not_supported">ไม่รองรับ</string>
+    <string name="intent_email_not_supported_message">เลือกไคลเอนต์อีเมลที่ไม่รองรับ โปรดเลือกไคลเอนต์อีเมลอื่น</string>
+
+    <!--เกี่ยวกับ-->
+    <string name="about_contributors_title">ผู้ร่วมให้ข้อมูล</string>
+
+    <!--รายงานข้อบกพร่อง-->
+    <string name="report_bugs_desc">โปรดระบุคำอธิบายประเภทปัญหาที่คุณต้องการรายงาน</string>
+    <string name="report_bugs_desc_hint">คำอธิบาย</string>
+    <string name="report_bugs_desc_empty">กรุณาให้คำอธิบาย</string>
+    <string name="report_bugs_building">รายการกิจกรรมการสร้าง…</string>
+    <string name="report_bugs_failed">ไม่สามารถสร้างรายการกิจกรรมได้</string>
+    <string name="report_bugs_send">ส่งรายงาน</string>
+
+    <!--รองรับการพัฒนา-->
+    <string name="donation_success">ขอบคุณสำหรับการบริจาค ฉันจะใช้มันให้ดี</string>
+
+    <!--รายงานข้อขัดข้อง-->
+    <string name="crash_report">รายงานข้อขัดข้อง</string>
+    <string name="crash_report_message">ขออภัย %s ขัดข้อง เลือกส่งรายงานด้านล่างเพื่อช่วยนักพัฒนาแก้ไขปัญหา</string>
+    <string name="crash_report_send">ส่งรายงาน</string>
+
+    <!--DrawerToggle-->
+    <string name="txt_open">เปิด</string>
+    <string name="txt_close">ปิด</string>
+
+    <string name="txt_new">ใหม่</string>
+
+    <!--คำอธิบายเนื้อหาสำหรับโปรแกรมอ่านหน้าจอ-->
+    <string name="icon_search_close_button_content_description">ปิดการค้นหาไอคอน</string>
+    <string name="icon_request_submit_button_content_description">ส่งคำขอไอคอน</string>
+    <string name="icon_list_content_description">รายการไอคอนที่รวมอยู่ในชุดไอคอน</string>
+    <string name="icon_search_list_content_description">รายการไอคอนที่ตรงกับคำค้นหา</string>
+    <string name="about_item_social_content_description">ลิงก์ไปยังโปรไฟล์ออนไลน์ของผู้เขียนชุดไอคอน:</string>
+    <string name="share_icon_pack_button_content_description">แชร์แอพนี้กับใครสักคน</string>
+
+    <!--นโยบายความเป็นส่วนตัว-->
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="privacy_policy_desc">ความเป็นส่วนตัวของคุณเป็นสิ่งสำคัญสำหรับเรา โปรดอ่านนโยบายความเป็นส่วนตัวของเราในเกี่ยวกับเพื่อทำความเข้าใจวิธีที่เราจัดการข้อมูลของคุณ</string>
+
+    <!--ข้อกำหนดและเงื่อนไข-->
+    <string name="terms_conditions">ข้อกำหนดและเงื่อนไข</string>
+
+    <!--ขอ-->
+    <string name="request_limit_title">ขีดจำกัดคำขอฟรี</string>
+    <string name="request_limit_content">คุณมีคำขอฟรีเหลืออีก %d รายการ พิจารณาอัปเกรดเป็นพรีเมียมสำหรับคำขอไม่จำกัด</string>
+    <string name="request_limit_reached">ถึงขีดจำกัดคำขอฟรีแล้ว โปรดอัปเกรดเป็นพรีเมียมเพื่อขอข้อมูลเพิ่มเติม</string>
+    <string name="request_limit_remaining">คุณสามารถเลือกได้อีก %d ไอคอน</string>
+
+    <!--เวอร์ชันของแอป-->
+    <string name="version">เวอร์ชัน</string>
+	
+    <!--กำหนดเอง-->
+    <string name="home_kustom_desc">การจับคู่องค์ประกอบ Weathers สำหรับ %s</string>
+    <string name="kustom_widgets">วิดเจ็ต</string>
+    <string name="kustom_wallpapers">วอลเปเปอร์</string>
+    <string name="kustom_lockscreens">ล็อคหน้าจอ</string>
+    <string name="kustom_komponents">ส่วนประกอบ</string>
+
+    <!--กล่องโต้ตอบขอความยินยอม-->
+    <string name="request_consent_title">ความยินยอมในการรวบรวมข้อมูล</string>
+    <string name="request_consent_content">ในการดำเนินการตามคำขอไอคอนของคุณ เราจำเป็นต้องรวบรวมข้อมูลเกี่ยวกับแอปที่ติดตั้งและรายละเอียดอุปกรณ์ (เช่น ขนาดหน้าจอและเวอร์ชัน Android) สิ่งนี้ช่วยให้เราออกแบบไอคอนที่เหมาะกับอุปกรณ์ของคุณที่สุด\n\nคุณสามารถตรวจสอบนโยบายความเป็นส่วนตัวของเราในส่วนเกี่ยวกับเพื่อดูข้อมูลเพิ่มเติม</string>
+    <string name="request_consent_accept">ยอมรับ</string>
+    <string name="request_consent_deny">ปฏิเสธ</string>
+
+    <!--รูปแบบการนำทาง-->
+    <string name="pref_navigation_style">แถบนำทาง</string>
+
+    <!--ค้นหา-->
+    <string name="search_apps">ค้นหาแอพ</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string-array name="base">
+    <!--Cos\'è un lanciatore-->
+    <!--Cos\'è un pacchetto di icone-->
+    <!--Come si usa un pacchetto di icone?-->
+    <!--Come posso applicare un pacchetto di icone?-->
+    <!--Come faccio a vedere tutte le icone incluse?-->
+    <!--Non riesco a vedere il nome completo dell\'icona-->
+    <!--Come posso sostituire le icone con un\'icona alternativa?-->
+    <!--Come posso richiedere un\'icona?-->
+    <!--Come posso ripristinare le restanti richieste Premium dopo aver reinstallato l\'app?-->
+    <!--Dopo aver riavviato il telefono, il pacchetto di icone non viene applicato, viene ripristinato alle impostazioni predefinite?-->
+    <!--Perché le icone appaiono frastagliate o pixelate sul mio telefono?-->
+    <!--Posso vedere l\'icona inclusa in tutte le icone,
+            ma perché l\'icona effettiva nel cassetto delle app non è cambiata?-->
+    <!--Cos\'è l\'opzione \"segnala bug\"?-->
+    <!--Il mio launcher è elencato nella descrizione di Google Play, ma perché non è incluso nella sezione di richiesta?-->
+    <!--Non è possibile applicare lo sfondo, ma viene mostrato solo lo schermo nero?-->
+    <!--Muzei: come caricare solo gli sfondi scaricati?-->
+    <!--Muzei: Non voglio continuare a scaricare sfondi ogni volta che cambiano?-->
+    <!--Muzei: Voglio usare solo sfondi specifici?-->
+    <!--Perché è necessaria l\'autorizzazione di lettura e scrittura per l\'archiviazione esterna?-->
+    <!--Perché è necessaria l\'autorizzazione Internet?-->
+    <!--Perché è necessaria l\'autorizzazione per lo stato della rete di accesso?-->
+    <!--Perché è necessaria l\'autorizzazione per l\'accesso allo stato Wi-Fi?-->
+    <!--Perché è necessaria l\'autorizzazione Imposta sfondo?-->
+    <!--Perché è necessaria l\'autorizzazione Wake Lock?-->
+    <!--Perché è necessaria l\'autorizzazione Imposta allarme?-->
+  </string-array>
+  <string-array name="questions">
+    <item>Cos\'è un lanciatore?</item>
+    <item>Cos\'è un pacchetto di icone?</item>
+    <item>Come utilizzo un pacchetto di icone?</item>
+    <item>Come posso applicare un pacchetto di icone?</item>
+    <item>Come faccio a vedere tutte le icone incluse?</item>
+    <item>Non riesco a vedere il nome completo dell\'icona</item>
+    <item>Come posso sostituire le icone con un\'icona alternativa?</item>
+    <item>Come posso richiedere un\'icona?</item>
+    <item>Come posso ripristinare le restanti richieste Premium dopo aver reinstallato l\'app?</item>
+    <item>Dopo aver riavviato il telefono, il pacchetto di icone non viene applicato; ripristina le impostazioni predefinite?</item>
+    <item>Perché le icone appaiono frastagliate o pixelate sul mio telefono?</item>
+    <item>Posso vedere l\'icona inclusa in tutte le icone,
+            ma perché l\'icona effettiva nel cassetto delle app non è cambiata?</item>
+    <item>Cos\'è l\'opzione \"segnala bug\"?</item>
+    <item>Il mio launcher è elencato nella descrizione di Google Play, ma perché non è incluso nella sezione di richiesta?</item>
+    <item>Non è possibile applicare lo sfondo, ma viene mostrato solo lo schermo nero?</item>
+    <item>Muzei: come caricare solo gli sfondi scaricati?</item>
+    <item>Muzei: Non voglio continuare a scaricare sfondi ogni volta che cambiano?</item>
+    <item>Muzei: Voglio usare solo sfondi specifici?</item>
+    <item>Perché è necessaria l\'autorizzazione di lettura e scrittura per l\'archiviazione esterna?</item>
+    <item>Perché è necessaria l\'autorizzazione Internet?</item>
+    <item>Perché è necessaria l\'autorizzazione per lo stato della rete di accesso?</item>
+    <item>Perché è necessaria l\'autorizzazione Access Wifi State?</item>
+    <item>Perché è necessaria l\'autorizzazione Imposta sfondo?</item>
+    <item>Perché è necessaria l\'autorizzazione Wake Lock?</item>
+    <item>Perché è necessaria l\'autorizzazione Imposta allarme?</item>
+  </string-array>
+  <string-array name="answers">
+    <item>Launcher è la parte dell\'interfaccia utente di Android che consente agli utenti di personalizzare la schermata iniziale,
+            avvia app mobili, effettua telefonate ed esegui altre attività sui dispositivi Android.</item>
+    <item>Una serie di elementi grafici che cambieranno l\'aspetto delle icone del cassetto delle app</item>
+    <item>Avrai bisogno di un launcher che supporti i pacchetti di icone personalizzati.
+            I launcher supportati sono elencati nella descrizione del Play Store.
+            Se hai dubbi su quali launcher utilizzare, vai alla sezione \"Applica\" e installa da lì.</item>
+    <item>Puoi aprire il riquadro di navigazione, quindi aprire \"Applica\". Scegli il tuo launcher dall\'elenco.
+            Se il tuo launcher non è elencato lì, ma questo pacchetto di icone è compatibile con esso
+            (vedi la descrizione di Google Play Store per i launcher supportati),
+            puoi applicare manualmente il pacchetto di icone nelle impostazioni del launcher.</item>
+    <item>Puoi aprire il riquadro di navigazione e quindi aprire \"Icone\"</item>
+    <item>Basta toccare l\'icona. Apparirà una finestra di dialogo di anteprima con un\'immagine più grande e il nome completo dell\'icona.</item>
+    <item>Dipende da quale launcher hai utilizzato. Non tutti i launcher supportano la modifica delle icone.
+       	    Principalmente puoi modificare un\'icona toccando e tenendo premuta l\'icona o toccandola due volte.</item>
+    <item>Puoi aprire il riquadro di navigazione, quindi aprire \"Richiesta icona\".</item>
+    <item>Puoi aprire il riquadro di navigazione, quindi aprire \"Impostazioni\", scegliere \"Ripristina acquisti\".
+            Se avevi delle richieste Premium rimanenti prima della reinstallazione, verranno ripristinate.</item>
+    <item>È successo perché questo pacchetto di icone è stato spostato sulla scheda SD; dovresti installarlo nella memoria interna.</item>
+    <item>Il problema potrebbe derivare dal launcher che hai utilizzato durante la gestione della risoluzione delle icone grandi.
+       	    Puoi risolverlo aumentando la dimensione dell\'icona al 115-120%.
+       	    In alternativa, potresti cambiare il tuo launcher.</item>
+    <item>Apri le impostazioni, scorri verso il basso e seleziona \"Segnala bug\".</item>
+    <item>\"Segnala bug\" viene utilizzato per segnalare bug relativi al pacchetto di icone, non alla dashboard.</item>
+    <item>Non tutti i launcher supportano l\'applicazione diretta e ad alcuni di essi non è possibile accedere direttamente dalla dashboard.
+      	    Puoi applicare questo pacchetto di icone manualmente nelle singole impostazioni del launcher.</item>
+    <item>Quando \"Imposta sfondo\" direttamente dall\'app, verrà scaricato nella cache,
+      	    quindi l\'app dashboard proverà ad applicarlo. L\'applicazione richiederà del tempo e richiederà anche un\'enorme quantità di RAM per un breve periodo di tempo.
+      	    Potrebbero essere visualizzati errori di \"Schermata nera\" perché il telefono non dispone di RAM libera sufficiente per elaborare lo sfondo.
+      	    Il riavvio del telefono risolverà questo problema. Dopo il riavvio, il telefono avrà più RAM disponibile.
+            In alternativa, puoi aprire lo sfondo scaricato dalla Galleria e impostarlo come sfondo da lì.</item>
+    <item>Apri Muzei, scegli questo pacchetto di icone, impostazioni. Vedrai un\'opzione per caricare solo gli sfondi scaricati.
+            Dovrai prima scaricare gli sfondi dalla dashboard.</item>
+    <item>Se uno sfondo è già scaricato, verrà caricato automaticamente dalla memoria del telefono.
+            Muzei non continuerà a scaricarlo quando cambia lo sfondo. Dovrai prima scaricare gli sfondi dalla dashboard.</item>
+    <item>Apri Dashboard, scarica gli sfondi che desideri utilizzare in Muzei.
+            Apri le impostazioni di Muzei, quindi scegli Carica solo sfondi scaricati.</item>
+    <item>Viene utilizzato per scrivere e leggere la cache e raccogliere i dati di richiesta dell\'icona.</item>
+    <item>Viene utilizzato per caricare sfondi basati su cloud e scaricarli.</item>
+    <item>Viene utilizzato per verificare se il tuo telefono ha una connessione Internet o meno.</item>
+    <item>Viene utilizzato per verificare se il tuo telefono ha una connessione Internet Wi-Fi o meno, per caricare sfondi cloud da Muzei.</item>
+    <item>Viene utilizzato per applicare gli sfondi direttamente dall\'app dashboard.</item>
+    <item>È utilizzato da Muzei Live Wallpaper.</item>
+    <item>Viene utilizzato per avviare l\'app dell\'orologio dal widget dell\'orologio analogico.</item>
+  </string-array>
+</resources>
