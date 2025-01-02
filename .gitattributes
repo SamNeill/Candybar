@@ -5,3 +5,8 @@
 sample/** -diff
 sample-* -diff
 **/sample/** -diff 
+
+# Lock specific paths
+library/** -diff
+extLibs/** -diff
+app/build.gradle -diff 
