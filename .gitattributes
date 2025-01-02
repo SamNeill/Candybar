@@ -37,4 +37,10 @@ refs/remotes/origin/sample rebase=no
 
 # Exclude files from exporting
 .gitattributes export-ignore
-.gitignore export-ignore 
+.gitignore export-ignore
+
+library/** merge=ours
+extLibs/** merge=ours
+app/build/** merge=ours
+app/release/** merge=ours
+app/debug/** merge=ours 

@@ -184,3 +184,8 @@ app/src/main/res/xml-v31/
 # Local library modules and dependencies
 library/
 extLibs/
+
+# App module build files
+app/build/
+app/release/
+app/debug/
