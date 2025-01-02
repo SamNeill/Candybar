@@ -39,8 +39,7 @@ refs/remotes/origin/sample rebase=no
 .gitattributes export-ignore
 .gitignore export-ignore
 
-library/** merge=ours
-extLibs/** merge=ours
-app/build/** merge=ours
-app/release/** merge=ours
-app/debug/** merge=ours 
+# Never merge these files/folders
+library/** -merge
+extLibs/** -merge
+app/build.gradle merge=ours 
