@@ -181,7 +181,6 @@ release/
 app/src/main/res/drawable-v31/
 app/src/main/res/xml-v31/
 
-# Sample branch related
-sample/
-sample-*
-**/sample/**
+# Local library modules and dependencies
+library/
+extLibs/
