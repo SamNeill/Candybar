@@ -198,6 +198,11 @@
             </intent-filter>
         </activity>
 
+        <activity 
+            android:name=".activities.PrivacyPolicyActivity"
+            android:label="Privacy Policy"
+            android:exported="false" />
+
         <provider
             android:name=".services.MuzeiService"
             android:authorities="${applicationId}.ArtProvider"
