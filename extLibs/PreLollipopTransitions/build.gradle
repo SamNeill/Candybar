@@ -23,7 +23,7 @@ plugins {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.github.SamNeill.CandyBar-Modish'
+            groupId = 'com.github.SamNeill.Candybar'
             artifactId = 'PreLollipopTransitions'
             version = rootProject.ext.VersionName
 
