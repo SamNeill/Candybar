@@ -63,8 +63,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/SamNeill/Candybar")
             credentials {
-                username = System.getenv("JAVA_USERNAME") ?: project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                password = System.getenv("JAVA_TOKEN") ?: project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+                username = System.getenv("JAVA_USERNAME") ?: github.actor
+                password = System.getenv("JAVA_TOKEN") ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }

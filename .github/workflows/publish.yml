@@ -16,20 +16,15 @@ jobs:
     permissions:
       contents: read
       packages: write
-      actions: write
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          server-id: github
-          settings-path: ${{ github.workspace }}
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
@@ -42,8 +37,9 @@ jobs:
 
       - name: Publish Package
         run: |
-          echo "Publishing with user: ${{ secrets.JAVA_USERNAME }}"
+          echo "Publishing package to GitHub Packages"
           ./gradlew publish --info --stacktrace
         env:
-          JAVA_USERNAME: ${{ secrets.JAVA_USERNAME }}
-          JAVA_TOKEN: ${{ secrets.JAVA_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JAVA_USERNAME: ${{ github.actor }}
+          JAVA_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
