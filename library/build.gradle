@@ -120,3 +120,34 @@ dependencies {
     implementation 'com.github.danimahardhika.android-helpers:permission:0.1.0'
     implementation 'com.github.danimahardhika:DrawMe:4a672e78fc'
 }
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.SamNeill'
+                artifactId = 'Candybar'
+                version = rootProject.ext.VersionName
+
+                pom {
+                    name = 'Candybar'
+                    description = 'Android Icon Pack Dashboard Library'
+                    url = 'https://github.com/SamNeill/Candybar'
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'samneill'
+                            name = 'Sam Neill'
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
