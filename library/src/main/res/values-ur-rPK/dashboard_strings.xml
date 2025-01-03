@@ -110,6 +110,7 @@
     <!--گھر-->
     <string name="home_more_apps_header">مزید ایپس</string>
     <string name="home_more_apps">گوگل پلے اسٹور پر مزید آئیکونز پیک چیک کریں۔</string>
+    <string name="home_more_apps_amazon">امازون ایپ اسٹور پر مزید آئیکونز پیک چیک کریں۔</string>
     <string name="home_rate">شرح</string>
     <string name="home_share">شیئر کریں۔</string>
     <string name="home_check_update">اپ ڈیٹ کریں۔</string>

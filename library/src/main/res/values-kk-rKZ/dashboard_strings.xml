@@ -110,6 +110,7 @@
     <!--Үй-->
     <string name="home_more_apps_header">Қосымша қолданбалар</string>
     <string name="home_more_apps">Google Play дүкенінде қосымша белгішелер жинағын тексеріңіз</string>
+    <string name="home_more_apps_amazon">Amazon App Store дүкенінде қосымша белгішелер жинағын тексеріңіз</string>
     <string name="home_rate">Бағалау</string>
     <string name="home_share">Бөлісу</string>
     <string name="home_check_update">Жаңарту</string>

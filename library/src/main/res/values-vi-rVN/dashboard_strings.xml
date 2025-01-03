@@ -110,6 +110,7 @@
     <!--Trang chủ-->
     <string name="home_more_apps_header">Nhiều ứng dụng hơn</string>
     <string name="home_more_apps">Kiểm tra thêm gói biểu tượng trên Cửa hàng Google Play</string>
+    <string name="home_more_apps_amazon">Kiểm tra thêm gói biểu tượng trên Cửa hàng Amazon App Store</string>
     <string name="home_rate">Tỷ lệ</string>
     <string name="home_share">Chia sẻ</string>
     <string name="home_check_update">Cập nhật</string>

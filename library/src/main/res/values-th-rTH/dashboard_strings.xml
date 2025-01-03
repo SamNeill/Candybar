@@ -110,6 +110,7 @@
     <!--บ้าน-->
     <string name="home_more_apps_header">แอพเพิ่มเติม</string>
     <string name="home_more_apps">ตรวจสอบชุดไอคอนเพิ่มเติมบน Google Play Store</string>
+    <string name="home_more_apps_amazon">ตรวจสอบชุดไอคอนเพิ่มเติมบน Amazon App Store</string>
     <string name="home_rate">ประเมิน</string>
     <string name="home_share">แบ่งปัน</string>
     <string name="home_check_update">อัปเดต</string>

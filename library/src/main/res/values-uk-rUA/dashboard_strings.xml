@@ -110,6 +110,7 @@
     <!--додому-->
     <string name="home_more_apps_header">Більше програм</string>
     <string name="home_more_apps">Перевірте пакет додаткових значків у Google Play Store</string>
+    <string name="home_more_apps_amazon">Перевірте більше пакетів значків у Amazon App Store</string>
     <string name="home_rate">Оцінка</string>
     <string name="home_share">Поділіться</string>
     <string name="home_check_update">оновлення</string>

@@ -110,6 +110,7 @@
     <!--Hjem-->
     <string name="home_more_apps_header">Flere apper</string>
     <string name="home_more_apps">Sjekk More Icons Pack på Google Play Store</string>
+    <string name="home_more_apps_amazon">Sjekk More Icons Pack på Amazon App Store</string>
     <string name="home_rate">Sats</string>
     <string name="home_share">Dele</string>
     <string name="home_check_update">Oppdater</string>

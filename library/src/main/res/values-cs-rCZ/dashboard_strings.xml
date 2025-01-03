@@ -110,6 +110,7 @@
     <!--Domov-->
     <string name="home_more_apps_header">Další aplikace</string>
     <string name="home_more_apps">Zkontrolujte balíček dalších ikon v Obchodě Google Play</string>
+    <string name="home_more_apps_amazon">Zkontrolujte balíček dalších ikon na Amazon App Store</string>
     <string name="home_rate">Hodnotit</string>
     <string name="home_share">Podíl</string>
     <string name="home_check_update">Aktualizovat</string>

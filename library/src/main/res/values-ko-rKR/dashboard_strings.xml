@@ -110,6 +110,7 @@
     <!--집-->
     <string name="home_more_apps_header">더 많은 앱</string>
     <string name="home_more_apps">Google Play 스토어에서 더 많은 아이콘 팩을 확인하세요</string>
+    <string name="home_more_apps_amazon">Amazon App Store에서 더 많은 아이콘 팩을 확인하세요</string>
     <string name="home_rate">비율</string>
     <string name="home_share">공유하다</string>
     <string name="home_check_update">업데이트</string>

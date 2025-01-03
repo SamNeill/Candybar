@@ -109,6 +109,7 @@
     <!--a casa-->
     <string name="home_more_apps_header">Més aplicacions</string>
     <string name="home_more_apps">Comproveu el paquet d\'icones més a Google Play Store</string>
+    <string name="home_more_apps_amazon">Comproveu el paquet d\'icones més a Amazon App Store</string>
     <string name="home_rate">Taxa</string>
     <string name="home_share">Comparteix</string>
     <string name="home_check_update">Actualització</string>

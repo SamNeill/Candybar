@@ -110,6 +110,7 @@
     <!--Bahay-->
     <string name="home_more_apps_header">Higit pang Apps</string>
     <string name="home_more_apps">Tingnan ang Higit pang Mga Icon Pack sa Google Play Store</string>
+    <string name="home_more_apps_amazon">Tingnan ang Higit pang Mga Icon Pack sa Amazon App Store</string>
     <string name="home_rate">Rate</string>
     <string name="home_share">Ibahagi</string>
     <string name="home_check_update">Update</string>

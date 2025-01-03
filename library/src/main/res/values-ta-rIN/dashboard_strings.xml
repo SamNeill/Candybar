@@ -110,6 +110,7 @@
     <!--வீடு-->
     <string name="home_more_apps_header">மேலும் பயன்பாடுகள்</string>
     <string name="home_more_apps">கூகுள் ப்ளே ஸ்டோரில் மேலும் ஐகான் பேக் பார்க்கவும்</string>
+    <string name="home_more_apps_amazon">Amazon App Store இல் மேலும் ஐகான் பேக் பார்க்கவும்</string>
     <string name="home_rate">மதிப்பிடவும்</string>
     <string name="home_share">பகிரவும்</string>
     <string name="home_check_update">புதுப்பிக்கவும்</string>

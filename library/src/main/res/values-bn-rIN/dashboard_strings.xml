@@ -110,6 +110,7 @@
     <!--বাড়ি-->
     <string name="home_more_apps_header">আরও অ্যাপ</string>
     <string name="home_more_apps">গুগল প্লে স্টোরে আরও আইকন প্যাক দেখুন</string>
+    <string name="home_more_apps_amazon">অ্যামাজন অ্যাপ স্টোরে আরও আইকন প্যাক দেখুন</string>
     <string name="home_rate">হার</string>
     <string name="home_share">শেয়ার করুন</string>
     <string name="home_check_update">আপডেট</string>

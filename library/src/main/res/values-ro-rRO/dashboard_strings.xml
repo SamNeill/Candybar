@@ -110,6 +110,7 @@
     <!--Acasă-->
     <string name="home_more_apps_header">Mai multe aplicații</string>
     <string name="home_more_apps">Verificați pachetul de pictograme mai multe în Magazinul Google Play</string>
+    <string name="home_more_apps_amazon">Verificați pachetul de pictograme mai multe în Magazinul Amazon App Store</string>
     <string name="home_rate">Rata</string>
     <string name="home_share">Distribuie</string>
     <string name="home_check_update">Actualizare</string>

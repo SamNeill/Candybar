@@ -110,6 +110,7 @@
     <!--Σπίτι-->
     <string name="home_more_apps_header">Περισσότερες εφαρμογές</string>
     <string name="home_more_apps">Ελέγξτε Περισσότερα πακέτο εικονιδίων στο Google Play Store</string>
+    <string name="home_more_apps_amazon">Περισσότερα πακέτα εικονιδίων στο Amazon App Store</string>
     <string name="home_rate">Τιμή</string>
     <string name="home_share">Μερίδιο</string>
     <string name="home_check_update">Εκσυγχρονίζω</string>

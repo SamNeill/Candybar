@@ -110,6 +110,7 @@
     <!--Начало-->
     <string name="home_more_apps_header">Още приложения</string>
     <string name="home_more_apps">Вижте пакета с още икони в Google Play Store</string>
+    <string name="home_more_apps_amazon">Вижте пакета с още икони в Amazon App Store</string>
     <string name="home_rate">Оценете</string>
     <string name="home_share">Споделете</string>
     <string name="home_check_update">Актуализация</string>

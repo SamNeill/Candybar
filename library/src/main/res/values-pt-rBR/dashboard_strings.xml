@@ -110,6 +110,7 @@
     <!--Lar-->
     <string name="home_more_apps_header">Mais aplicativos</string>
     <string name="home_more_apps">Verifique mais pacotes de ícones na Google Play Store</string>
+    <string name="home_more_apps_amazon">Verifique mais pacotes de ícones na Amazon App Store</string>
     <string name="home_rate">Avaliar</string>
     <string name="home_share">Compartilhar</string>
     <string name="home_check_update">Atualizar</string>

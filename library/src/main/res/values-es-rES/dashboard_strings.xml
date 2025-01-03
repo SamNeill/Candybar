@@ -110,6 +110,7 @@
     <!--Hogar-->
     <string name="home_more_apps_header">Más aplicaciones</string>
     <string name="home_more_apps">Consulte más paquetes de iconos en Google Play Store</string>
+    <string name="home_more_apps_amazon">Consulte más paquetes de iconos en Amazon App Store</string>
     <string name="home_rate">Tasa</string>
     <string name="home_share">Compartir</string>
     <string name="home_check_update">Actualizar</string>

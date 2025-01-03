@@ -110,6 +110,7 @@
     <!--घर-->
     <string name="home_more_apps_header">थप एपहरू</string>
     <string name="home_more_apps">गुगल प्ले स्टोरमा थप आइकन प्याक जाँच गर्नुहोस्</string>
+    <string name="home_more_apps_amazon">अमेज़न ऐप स्टोर मा थप आइकन पैक जाँच गर्नुहोस्</string>
     <string name="home_rate">दर</string>
     <string name="home_share">सेयर गर्नुहोस्</string>
     <string name="home_check_update">अपडेट गर्नुहोस्</string>

@@ -110,6 +110,7 @@
     <!--בַּיִת-->
     <string name="home_more_apps_header">אפליקציות נוספות</string>
     <string name="home_more_apps">בדוק חבילת אייקונים נוספים בחנות Google Play</string>
+    <string name="home_more_apps_amazon">בדוק חבילת אייקונים נוספים בחנות האפליקציות של אמזון</string>
     <string name="home_rate">קֶצֶב</string>
     <string name="home_share">לַחֲלוֹק</string>
     <string name="home_check_update">לְעַדְכֵּן</string>

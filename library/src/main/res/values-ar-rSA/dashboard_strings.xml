@@ -110,6 +110,7 @@
     <!--بيت-->
     <string name="home_more_apps_header">المزيد من التطبيقات</string>
     <string name="home_more_apps">تحقق من المزيد من حزمة الأيقونات على متجر Google Play</string>
+    <string name="home_more_apps_amazon">تحقق من المزيد من حزمة الأيقونات على متجر تطبيقات أمازون</string>
     <string name="home_rate">معدل</string>
     <string name="home_share">يشارك</string>
     <string name="home_check_update">تحديث</string>

@@ -110,6 +110,7 @@
     <!--Kotiin-->
     <string name="home_more_apps_header">Lisää sovelluksia</string>
     <string name="home_more_apps">Tarkista Lisää kuvakepaketti Google Play Kaupasta</string>
+    <string name="home_more_apps_amazon">Tarkista Lisää kuvakepaketti Amazon App Storesta</string>
     <string name="home_rate">Rate</string>
     <string name="home_share">Jakaa</string>
     <string name="home_check_update">Päivittää</string>

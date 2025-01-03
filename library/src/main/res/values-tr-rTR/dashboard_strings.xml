@@ -110,6 +110,7 @@
     <!--Ev-->
     <string name="home_more_apps_header">Daha Fazla Uygulama</string>
     <string name="home_more_apps">Google Play Store\'da Daha Fazla Simge Paketini Kontrol Edin</string>
+    <string name="home_more_apps_amazon">Amazon App Store\'da Daha Fazla Simge Paketini Kontrol Edin</string>
     <string name="home_rate">Oran</string>
     <string name="home_share">Paylaşmak</string>
     <string name="home_check_update">Güncelleme</string>

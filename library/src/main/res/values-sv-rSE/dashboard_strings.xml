@@ -110,6 +110,7 @@
     <!--Hem-->
     <string name="home_more_apps_header">Fler appar</string>
     <string name="home_more_apps">Kolla fler ikoner i Google Play Butik</string>
+    <string name="home_more_apps_amazon">Kolla fler ikoner i Amazon App Store</string>
     <string name="home_rate">Hastighet</string>
     <string name="home_share">Dela</string>
     <string name="home_check_update">Uppdatera</string>

@@ -110,6 +110,7 @@
     <!--Dom-->
     <string name="home_more_apps_header">Więcej aplikacji</string>
     <string name="home_more_apps">Sprawdź więcej pakietu ikon w sklepie Google Play</string>
+    <string name="home_more_apps_amazon">Sprawdź więcej pakietu ikon w sklepie Amazon App Store</string>
     <string name="home_rate">Wskaźnik</string>
     <string name="home_share">Udział</string>
     <string name="home_check_update">Aktualizacja</string>

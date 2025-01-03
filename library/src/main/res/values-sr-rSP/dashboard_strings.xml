@@ -110,6 +110,7 @@
     <!--Хоме-->
     <string name="home_more_apps_header">Више апликација</string>
     <string name="home_more_apps">Проверите још пакета икона у Гоогле Плаи продавници</string>
+    <string name="home_more_apps_amazon">Проверите још пакета икона у Амазон АппСторе-у</string>
     <string name="home_rate">Рате</string>
     <string name="home_share">Схаре</string>
     <string name="home_check_update">Ажурирај</string>

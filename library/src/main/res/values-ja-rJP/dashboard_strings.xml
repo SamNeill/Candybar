@@ -110,6 +110,7 @@
     <!--家-->
     <string name="home_more_apps_header">その他のアプリ</string>
     <string name="home_more_apps">Google Play ストアでその他のアイコン パックをチェックする</string>
+    <string name="home_more_apps_amazon">Amazon App Store でその他のアイコン パックをチェックする</string>
     <string name="home_rate">レート</string>
     <string name="home_share">共有</string>
     <string name="home_check_update">アップデート</string>

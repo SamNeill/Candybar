@@ -110,6 +110,7 @@
     <!--Maison-->
     <string name="home_more_apps_header">Plus d\'applications</string>
     <string name="home_more_apps">Vérifiez plus de pack d\'icônes sur Google Play Store</string>
+    <string name="home_more_apps_amazon">Vérifiez plus de pack d\'icônes sur Amazon App Store</string>
     <string name="home_rate">Taux</string>
     <string name="home_share">Partager</string>
     <string name="home_check_update">Mise à jour</string>

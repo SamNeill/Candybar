@@ -110,6 +110,7 @@
     <!--Rumah-->
     <string name="home_more_apps_header">Aplikasi Lainnya</string>
     <string name="home_more_apps">Periksa Lebih Banyak Paket Ikon di Google Play Store</string>
+    <string name="home_more_apps_amazon">Periksa Lebih Banyak Paket Ikon di Amazon App Store</string>
     <string name="home_rate">Kecepatan</string>
     <string name="home_share">Membagikan</string>
     <string name="home_check_update">Memperbarui</string>

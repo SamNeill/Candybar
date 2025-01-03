@@ -110,6 +110,7 @@
     <!--Heim-->
     <string name="home_more_apps_header">Weitere Apps</string>
     <string name="home_more_apps">Weitere Icons-Pakete finden Sie im Google Play Store</string>
+    <string name="home_more_apps_amazon">Weitere Icons-Pakete finden Sie im Amazon App Store</string>
     <string name="home_rate">Rate</string>
     <string name="home_share">Aktie</string>
     <string name="home_check_update">Aktualisieren</string>

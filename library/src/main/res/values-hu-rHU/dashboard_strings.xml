@@ -110,6 +110,7 @@
     <!--Otthon-->
     <string name="home_more_apps_header">További alkalmazások</string>
     <string name="home_more_apps">Tekintse meg a További ikonok csomagot a Google Play Áruházban</string>
+    <string name="home_more_apps_amazon">Tekintse meg a További ikoncsomagokat az Amazon App Store-ban</string>
     <string name="home_rate">Arány</string>
     <string name="home_share">Részesedés</string>
     <string name="home_check_update">Frissítés</string>
