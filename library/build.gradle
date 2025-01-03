@@ -125,21 +125,27 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            maven(MavenPublication) {
+            release(MavenPublication) {
                 from components.release
 
                 groupId = 'com.github.SamNeill'
-                artifactId = 'candybar'
+                artifactId = 'Candybar'
                 version = rootProject.ext.VersionName
 
                 pom {
-                    name = 'CandyBar'
-                    description = 'Android Icon Pack Dashboard'
+                    name = 'Candyama'
+                    description = 'Android Icon Pack Dashboard Library'
                     url = 'https://github.com/SamNeill/Candybar'
                     licenses {
                         license {
                             name = 'The Apache License, Version 2.0'
                             url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'samneill'
+                            name = 'Sam Neill'
                         }
                     }
                 }
