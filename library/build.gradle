@@ -24,7 +24,7 @@ plugins {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'io.github.samneill'
+            groupId = 'com.github.samneill'
             artifactId = 'candybar'
             version = rootProject.ext.VersionName
 
@@ -63,8 +63,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/SamNeill/Candybar")
             credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }
