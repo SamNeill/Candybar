@@ -4,6 +4,8 @@ on:
   release:
     types: [created, published]
   push:
+    branches:
+      - main
     tags:
       - '*'
   workflow_dispatch:
