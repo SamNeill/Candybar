@@ -31,6 +31,18 @@ publishing {
             afterEvaluate {
                 from components.release
             }
+            
+            pom {
+                name = 'Candybar'
+                description = 'Material Dashboard'
+                url = 'https://github.com/SamNeill/Candybar'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+            }
         }
     }
     
@@ -39,8 +51,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/SamNeill/Candybar")
             credentials {
-                username = System.getenv("USERNAME")
-                password = System.getenv("TOKEN")
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
