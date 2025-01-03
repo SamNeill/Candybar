@@ -1,6 +1,4 @@
-jdk:
-  - openjdk11
-before_install:
-  - ./gradlew clean
+jdk: openjdk17
 install:
-  - ./gradlew :library:publishToMavenLocal
+  - chmod +x gradlew
+  - ./gradlew build :extLibs:PreLollipopTransitions:publishToMavenLocal :library:publishToMavenLocal
