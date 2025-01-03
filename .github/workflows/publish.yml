@@ -14,9 +14,10 @@ jobs:
     permissions:
       contents: read
       packages: write
+      actions: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       
@@ -38,7 +39,9 @@ jobs:
         run: ./gradlew build
 
       - name: Publish Package
-        run: ./gradlew publish --info
+        run: |
+          echo "Publishing with user: ${{ secrets.JAVA_USERNAME }}"
+          ./gradlew publish --info --stacktrace
         env:
-          GITHUB_ACTOR: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          JAVA_USERNAME: ${{ secrets.JAVA_USERNAME }}
+          JAVA_TOKEN: ${{ secrets.JAVA_TOKEN }} 
