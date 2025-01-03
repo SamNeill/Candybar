@@ -18,6 +18,7 @@
 
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
 allprojects {
@@ -119,4 +120,17 @@ dependencies {
     implementation 'com.github.danimahardhika.android-helpers:license:0.1.0'
     implementation 'com.github.danimahardhika.android-helpers:permission:0.1.0'
     implementation 'com.github.danimahardhika:DrawMe:4a672e78fc'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.SamNeill'
+                artifactId = 'candybar'
+                version = rootProject.ext.VersionName
+            }
+        }
+    }
 }
