@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
     paths-ignore:
       - 'sample/**'
+    tags:
+      - 'v*'
   pull_request:
     branches: [ "main" ]
     paths-ignore:
@@ -36,3 +38,60 @@ jobs:
         with:
           name: Debug APK
           path: app/build/outputs/apk/debug/*.apk
+
+  publish-library:
+    needs: build
+    runs-on: ubuntu-latest
+    # Only publish on tag push or main branch
+    if: github.event_name == 'push' && (startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main')
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+          
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
+      - name: Build Library
+        run: ./gradlew :library:assembleRelease
+        
+      - name: Publish Library
+        run: ./gradlew :library:publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+  publish-app:
+    needs: build
+    runs-on: ubuntu-latest
+    # Skip publishing for pull requests and only publish on main branch
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+          
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
+      - name: Publish App
+        run: ./gradlew :app:publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
