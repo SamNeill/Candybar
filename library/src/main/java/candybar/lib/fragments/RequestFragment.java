@@ -158,8 +158,7 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
                 ColorHelper.getAttributeColor(getActivity(), com.google.android.material.R.attr.colorSecondary),
                 PorterDuff.Mode.SRC_IN);
 
-        int color = ColorHelper.getTitleTextColor(ColorHelper
-                .getAttributeColor(getActivity(), com.google.android.material.R.attr.colorSecondary));
+	        int color = ColorHelper.getAttributeColor(getActivity(), android.R.attr.textColorPrimary);
         Drawable tintedDrawable = ResourcesCompat.getDrawable(requireActivity().getResources(), R.drawable.ic_fab_send, null);
         assert tintedDrawable != null;
         tintedDrawable.mutate().setColorFilter(color, PorterDuff.Mode.SRC_IN);

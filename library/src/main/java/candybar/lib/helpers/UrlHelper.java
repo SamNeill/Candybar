@@ -43,6 +43,8 @@ public class UrlHelper {
                 return getTintedDrawable(context, R.drawable.ic_toolbar_behance, color);
             case BLUESKY:
                 return getTintedDrawable(context, R.drawable.ic_toolbar_bluesky, color);
+            case BUYMEACOFFEE:
+                return getTintedDrawable(context, R.drawable.ic_toolbar_buymeacoffee, color);
             case DRIBBBLE:
                 return getTintedDrawable(context, R.drawable.ic_toolbar_dribbble, color);
             case DISCORD:
@@ -55,6 +57,8 @@ public class UrlHelper {
                 return getTintedDrawable(context, R.drawable.ic_toolbar_gitlab, color);
             case GOOGLEPLAY:
                 return getTintedDrawable(context, R.drawable.ic_toolbar_googleplay, color);
+            case GUMROAD:
+                return getTintedDrawable(context, R.drawable.ic_toolbar_gumroad, color);
             case INSTAGRAM:
                 return getTintedDrawable(context, R.drawable.ic_toolbar_instagram, color);
             case KOFI:
@@ -91,6 +95,8 @@ public class UrlHelper {
             return Type.BEHANCE;
         } else if (url.contains("bsky.")) {
             return Type.BLUESKY;
+        } else if (url.contains("buymeacoffee.")) {
+            return Type.BUYMEACOFFEE;
         } else if (url.contains("dribbble.")) {
             return Type.DRIBBBLE;
         } else if (url.contains("discord.")) {
@@ -101,6 +107,8 @@ public class UrlHelper {
             return Type.GITHUB;
         } else if (url.contains("gitlab.")) {
             return Type.GITLAB;
+        } else if (url.contains("gumroad.")) {
+            return Type.GUMROAD;
         } else if (url.contains("play.google.")) {
             return Type.GOOGLEPLAY;
         } else if (url.contains("instagram.")) {
@@ -115,7 +123,7 @@ public class UrlHelper {
             return Type.PINTEREST;
         } else if (url.contains("twitter.")|| url.contains("https://x.com/")) {
             return Type.TWITTER;
-        } else if (url.contains("threads.")) {
+        } else if (url.contains("threads.net")) {
             return Type.THREADS;
         } else if (url.contains("t.me/") || url.contains("telegram.me/")) {
             return Type.TELEGRAM;
@@ -130,12 +138,14 @@ public class UrlHelper {
         EMAIL,
         BEHANCE,
         BLUESKY,
+        BUYMEACOFFEE,
         DRIBBBLE,
         DISCORD,
         FACEBOOK,
         GITHUB,
         GITLAB,
         GOOGLEPLAY,
+        GUMROAD,
         INSTAGRAM,
         KOFI,
         MASTODON,
