@@ -110,8 +110,10 @@
     <!-- CONFIG: DONATE -->
     <bool name="enable_donation">true</bool>
 
-    <!-- CONFIG: MISC -->
+    <!--Update Json -->
     <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
+    
+    <!-- CONFIG: MISC -->
     <bool name="show_intro">true</bool>
     <bool name="use_legacy_intro_colors">true</bool>
 
