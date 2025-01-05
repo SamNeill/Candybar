@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --default-light-color: #000000;
+            --default-dark-color: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            padding: 16px;
+            margin: 0;
+            font-size: 14px;
+            color: var(--text-color, var(--default-light-color));
+            background: transparent;
+            scroll-behavior: smooth;
+        }
+
+        /* Dark theme styles */
+        @media (prefers-color-scheme: dark) {
+            * {
+                color: var(--text-color, var(--default-dark-color));
+            }
+            
+            h2, strong, #contact-email {
+                color: var(--accent-color);
+            }
+        }
+
+        h1 { 
+            display: none;
+        }
+        h2 { 
+            color: var(--accent-color);
+            font-size: 15px;
+            margin: 12px 0 4px 0;
+        }
+        .section { 
+            margin-bottom: 8px;
+        }
+        ul { 
+            padding-left: 16px;
+            margin: 4px 0; 
+        }
+        li { 
+            margin-bottom: 4px;
+        }
+        p {
+            margin: 4px 0;
+        }
+        strong {
+            color: var(--accent-color);
+        }
+        #contact-email {
+            color: var(--accent-color);
+        }
+        .divider {
+            height: 1px;
+            background-color: var(--accent-color);
+            margin: 24px 0;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <p><strong>示例图标包隐私政策</strong></p>
+
+        <p>开发者：John Doe<br>
+        生效日期：2024年1月1日</p>
+        
+        <p>本隐私政策描述了当您使用示例图标包（"应用程序"）时，我们如何收集、使用和披露您的信息，并告知您有关您的隐私权以及法律如何保护您。使用本应用程序即表示您同意按照本政策收集和使用信息。</p>
+    </div>
+
+    <h2>1. 简介</h2>
+    <div class="section">
+        <p>示例图标包（"我们"、"我们的"或"我们"）致力于保护您的隐私。本隐私政策概述了我们收集的信息、如何使用以及如何保护这些信息。本政策适用于应用程序的所有用户，包括公司提供的所有软件程序和服务。</p>
+    </div>
+
+    <h2>2. 我们收集的信息</h2>
+    <div class="section">
+        <ul>
+            <li><strong>设备信息：</strong>品牌、屏幕尺寸、系统设置</li>
+            <li><strong>存储访问：</strong>读取共享存储内容</li>
+            <li><strong>网络信息：</strong>用于更新和服务器交互</li>
+            <li><strong>使用数据：</strong>匿名统计和性能数据</li>
+        </ul>
+    </div>
+
+    <h2>3. 我们如何使用您的信息</h2>
+    <div class="section">
+        <ul>
+            <li>优化图标包性能</li>
+            <li>改进应用功能</li>
+            <li>提供更新和支持</li>
+            <li>提升用户体验</li>
+        </ul>
+    </div>
+
+    <h2>4. 所需权限</h2>
+    <div class="section">
+        <ul>
+            <li>访问存储以使用壁纸和图标</li>
+            <li>修改系统设置</li>
+            <li>访问网络以进行更新</li>
+            <li>查看网络连接</li>
+        </ul>
+    </div>
+
+    <h2>5. 数据安全</h2>
+    <div class="section">
+        <p>我们采取适当的安全措施来保护您的数据。但是，没有任何互联网传输是100%安全的。我们使用商业上可接受的方式来保护您的信息，但不能保证绝对的安全性。</p>
+    </div>
+
+    <h2>6. 联系我们</h2>
+    <div class="section">
+        <p>如有关于本隐私政策的问题，请联系我们：<span id="contact-email">example@email.com</span></p>
+    </div>
+
+    <div class="divider"></div>
+</body>
+</html>

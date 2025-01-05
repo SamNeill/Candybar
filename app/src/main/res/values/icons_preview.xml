@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress CheckTagEmptyBody -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <!-- Make sure to put at least 8 icons -->
+    <string-array name="icons_preview">
+
+        <item>icon_85</item>
+        <item>icon_86</item>
+        <item>icon_87</item>
+        <item>icon_88</item>
+        <item>icon_89</item>
+        <item>icon_90</item>
+        <item>icon_91</item>
+        <item>icon_92</item>
+        <item>icon_93</item>
+        <item>icon_94</item>
+        <item>icon_95</item>
+        <item>icon_96</item>
+        <item>icon_97</item>
+        <item>icon_98</item>
+        <item>icon_99</item>
+        <item>icon_100</item>
+        
+    </string-array>
+
+</resources>
