@@ -862,7 +862,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             int color = ColorHelper.getAttributeColor(this, R.attr.cb_toolbarIcon);
             toolbar.setNavigationIcon(DrawableHelper.getTintedDrawable(
                     this, R.drawable.ic_toolbar_back, color));
-            
+
             // Only handle bottom navigation visibility when using bottom navigation mode
             if (isBottomNavigation && mBottomNavigationView != null) {
                 mBottomNavigationView.setVisibility(View.GONE);
@@ -1004,7 +1004,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             return;
         }
 
-        String imageUrl = getResources().getString(R.string.navigation_view_header);
+
         String titleText = getResources().getString(R.string.navigation_view_header_title);
         View header = mNavigationView.getHeaderView(0);
         HeaderView image = header.findViewById(R.id.header_image);
@@ -1028,26 +1028,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             }
         }
 
-        if (ColorHelper.isValidColor(imageUrl)) {
-            image.setBackgroundColor(Color.parseColor(imageUrl));
-            return;
-        }
 
-        if (!URLUtil.isValidUrl(imageUrl)) {
-            imageUrl = "drawable://" + getDrawableId(imageUrl);
-        }
-
-        final Context context = this;
-        if (CandyBarGlideModule.isValidContextForGlide(context)) {
-            Glide.with(context)
-                    .load(imageUrl)
-                    .override(720)
-                    .optionalCenterInside()
-                    .diskCacheStrategy(imageUrl.contains("drawable://")
-                            ? DiskCacheStrategy.NONE
-                            : DiskCacheStrategy.RESOURCE)
-                    .into(image);
-        }
     }
 
     private void checkWallpapers() {
@@ -1577,8 +1558,8 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.container);
 
         if (id == R.id.navigation_view_faqs ||
-            id == R.id.navigation_view_settings ||
-            id == R.id.navigation_view_about) {
+                id == R.id.navigation_view_settings ||
+                id == R.id.navigation_view_about) {
             // Store previous position before navigating to overflow menu item
             // Note: Removed Kustom from here as it's a main section
             mPreviousPosition = mPosition;
@@ -1604,10 +1585,10 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 if (searchItem != null && searchItem.isActionViewExpanded()) {
                     // Force close keyboard first
                     SoftKeyboardHelper.closeKeyboard(this);
-                    
+
                     // Collapse search view
                     searchItem.collapseActionView();
-                    
+
                     // Restore bottom navigation if using bottom navigation mode
                     if (isBottomNavigation && mBottomNavigationView != null) {
                         mBottomNavigationView.setVisibility(View.VISIBLE);
