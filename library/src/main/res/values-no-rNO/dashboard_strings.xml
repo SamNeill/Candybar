@@ -79,6 +79,7 @@
     <!--Dele-->
     <string name="share_app_title">Yo! Sjekk ut %s</string>
     <string name="share_app_body">Sjekk ut %1$s Icon Pack på Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Sjekk ut %1$s Icon Pack på Amazon App Store: %2$s</string>
 
     <!--Trykk på Intro-->
     <string name="tap_intro_home_navigation">Navigasjonsskuff</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Trykk her for å laste ned og lagre bakgrunnsbilde på enheten din slik at du kan bruke den senere</string>
     <string name="tap_intro_wallpaper_preview_apply">Påfør tapet</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Trykk her for å angi bakgrunn som hjemmeskjermbakgrunn</string>
+    <string name="tap_intro_navigation_view">Navigasjonsstil</string>
+    <string name="tap_intro_navigation_view_desc">Switch mellom navigasjonsskuff og nedre navigasjonsbånd som din likhet</string>
 
     <!--Hjem-->
     <string name="home_more_apps_header">Flere apper</string>

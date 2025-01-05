@@ -79,6 +79,7 @@
     <!--Condividere-->
     <string name="share_app_title">Ehi! Controlla %s</string>
     <string name="share_app_body">Dai un\'occhiata al pacchetto di icone %1$s sul Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Dai un\'occhiata al pacchetto di icone %1$s sul Amazon App Store: %2$s</string>
 
     <!--Tocca Introduzione-->
     <string name="tap_intro_home_navigation">Cassetto di navigazione</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tocca qui per scaricare e salvare lo sfondo sul tuo dispositivo in modo da poterlo utilizzare in seguito</string>
     <string name="tap_intro_wallpaper_preview_apply">Applica la carta da parati</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tocca qui per impostare lo sfondo come sfondo della schermata iniziale</string>
+    <string name="tap_intro_navigation_view">Stile di navigazione</string>
+    <string name="tap_intro_navigation_view_desc">Switch tra il pannello di navigazione e la barra di navigazione inferiore in base alla tua preferenza</string>
 
     <!--Casa-->
     <string name="home_more_apps_header">Più app</string>

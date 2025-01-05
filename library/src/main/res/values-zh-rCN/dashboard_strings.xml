@@ -79,6 +79,7 @@
     <!--分享-->
     <string name="share_app_title">哟！查看 %s</string>
     <string name="share_app_body">在 Play 商店中查看 %1$s 图标包：%2$s</string>
+    <string name="share_app_body_amazon">在亚马逊应用商店中查看 %1$s 图标包：%2$s</string>
 
     <!--点击介绍-->
     <string name="tap_intro_home_navigation">抽屉式导航</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">点击此处下载壁纸并将其保存到您的设备，以便稍后使用</string>
     <string name="tap_intro_wallpaper_preview_apply">应用壁纸</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">点击此处将壁纸设置为主屏幕背景</string>
+    <string name="tap_intro_navigation_view">导航视图</string>
+    <string name="tap_intro_navigation_view_desc">点击此处或从屏幕左边缘滑动以打开导航抽屉</string>
 
     <!--家-->
     <string name="home_more_apps_header">更多应用程序</string>

@@ -79,6 +79,7 @@
     <!--Membagikan-->
     <string name="share_app_title">Hai! Periksa %s</string>
     <string name="share_app_body">Lihat Paket Ikon %1$s di Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Lihat Paket Ikon %1$s di Amazon App Store: %2$s</string>
 
     <!--Ketuk Intro-->
     <string name="tap_intro_home_navigation">Laci navigasi</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Ketuk di sini untuk mengunduh dan menyimpan wallpaper ke perangkat Anda sehingga Anda dapat menggunakannya nanti</string>
     <string name="tap_intro_wallpaper_preview_apply">Terapkan kertas dinding</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Ketuk di sini untuk menyetel wallpaper sebagai latar belakang layar beranda</string>
+    <string name="tap_intro_navigation_view">Gaya Navigasi</string>
+    <string name="tap_intro_navigation_view_desc">Beralih antara panel samping navigasi dan bilah navigasi bawah sesuai keinginan Anda</string>
 
     <!--Rumah-->
     <string name="home_more_apps_header">Aplikasi Lainnya</string>

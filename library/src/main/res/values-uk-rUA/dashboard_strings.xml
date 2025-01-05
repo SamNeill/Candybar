@@ -79,6 +79,7 @@
     <!--Поділіться-->
     <string name="share_app_title">Йо! Перевірте %s</string>
     <string name="share_app_body">Перегляньте пакет значків %1$s у Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Перегляньте пакет значків %1$s у Amazon App Store: %2$s</string>
 
     <!--Натисніть Intro-->
     <string name="tap_intro_home_navigation">Панель навігації</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Торкніться тут, щоб завантажити та зберегти шпалери на свій пристрій, щоб використовувати їх пізніше</string>
     <string name="tap_intro_wallpaper_preview_apply">Нанести шпалери</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Торкніться тут, щоб встановити шпалери як фон головного екрана</string>
+    <string name="tap_intro_navigation_view">Стиль навигации</string>
+    <string name="tap_intro_navigation_view_desc">Нажмите здесь, чтобы переключиться между панелью навигации и нижней панелью навигации в зависимости от вашего предпочтения</string>
 
     <!--додому-->
     <string name="home_more_apps_header">Більше програм</string>

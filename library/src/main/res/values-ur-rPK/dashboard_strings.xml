@@ -79,6 +79,7 @@
     <!--شیئر کریں۔-->
     <string name="share_app_title">یو! %s کو چیک کریں۔</string>
     <string name="share_app_body">Play Store پر %1$s آئیکن پیک چیک کریں: %2$s</string>
+    <string name="share_app_body_amazon">ایمیزون ایپ اسٹور پر %1$s آئیکن پیک چیک کریں: %2$s</string>
 
     <!--انٹرو پر ٹیپ کریں۔-->
     <string name="tap_intro_home_navigation">نیویگیشن دراز</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">اپنے آلے پر وال پیپر ڈاؤن لوڈ اور محفوظ کرنے کے لیے یہاں تھپتھپائیں تاکہ آپ اسے بعد میں استعمال کر سکیں</string>
     <string name="tap_intro_wallpaper_preview_apply">وال پیپر لگائیں۔</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">وال پیپر کو ہوم اسکرین کے پس منظر کے طور پر سیٹ کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_navigation_view">نیویگیشن دراز کا نظام</string>
+    <string name="tap_intro_navigation_view_desc">نیویگیشن دراز کا نظام کو منتخب کرنے کے لیے یہاں تھپتھپائیں۔</string>
 
     <!--گھر-->
     <string name="home_more_apps_header">مزید ایپس</string>

@@ -79,6 +79,7 @@
     <!--Dele-->
     <string name="share_app_title">Yo! Tjek %s</string>
     <string name="share_app_body">Tjek %1$s Icon Pack i Play Butik: %2$s</string>
+    <string name="share_app_body_amazon">Tjek %1$s Icon Pack i Amazon App Store: %2$s</string>
 
     <!--Tryk på Intro-->
     <string name="tap_intro_home_navigation">Navigationsskuffe</string>

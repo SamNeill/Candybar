@@ -79,6 +79,7 @@
     <!--לַחֲלוֹק-->
     <string name="share_app_title">יו! בדוק את %s</string>
     <string name="share_app_body">בדוק את חבילת הסמלים של %1$s בחנות Play: %2$s</string>
+    <string name="share_app_body_amazon">בדוק את חבילת הסמלים של %1$s בחנות האפליקציות של אמזון: %2$s</string>
 
     <!--הקש על מבוא-->
     <string name="tap_intro_home_navigation">מגירת ניווט</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">הקש כאן כדי להוריד ולשמור טפטים במכשיר שלך כדי שתוכל להשתמש בו מאוחר יותר</string>
     <string name="tap_intro_wallpaper_preview_apply">החל טפט</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">הקש כאן כדי להגדיר טפט כרקע למסך הבית</string>
+    <string name="tap_intro_navigation_view">סגנון ניווט</string>
+    <string name="tap_intro_navigation_view_desc">הקש כאן כדי להחליף בין מסך הניווט למסך הניווט התחתון כפי שהיא מותאמת לך</string>
 
     <!--בַּיִת-->
     <string name="home_more_apps_header">אפליקציות נוספות</string>

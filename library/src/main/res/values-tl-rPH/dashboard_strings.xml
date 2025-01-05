@@ -79,6 +79,7 @@
     <!--Ibahagi-->
     <string name="share_app_title">Yo! Tingnan ang %s</string>
     <string name="share_app_body">Tingnan ang %1$s Icon Pack sa Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Tingnan ang %1$s Icon Pack sa Amazon App Store: %2$s</string>
 
     <!--I-tap ang Intro-->
     <string name="tap_intro_home_navigation">Navigation drawer</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Mag-tap dito para i-download at i-save ang wallpaper sa iyong device para magamit mo ito sa ibang pagkakataon</string>
     <string name="tap_intro_wallpaper_preview_apply">Maglagay ng wallpaper</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Mag-tap dito para itakda ang wallpaper bilang background ng homescreen</string>
+    <string name="tap_intro_navigation_view">Stilo ng Navigation</string>
+    <string name="tap_intro_navigation_view_desc">I-tap dito para i-switch ang Navigation Drawer at ang Bottom Navigation Bar</string>
 
     <!--Bahay-->
     <string name="home_more_apps_header">Higit pang Apps</string>

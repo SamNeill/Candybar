@@ -79,6 +79,7 @@
     <!--Jakaa-->
     <string name="share_app_title">Hei! Katso %s</string>
     <string name="share_app_body">Tutustu %1$s Icon Packiin Play Kaupassa: %2$s</string>
+    <string name="share_app_body_amazon">Tutustu %1$s Icon Packiin Amazon App Storesta: %2$s</string>
 
     <!--Napauta Intro-->
     <string name="tap_intro_home_navigation">Navigointilaatikko</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Napauta tätä ladataksesi ja tallentaaksesi taustakuvan laitteellesi, jotta voit käyttää sitä myöhemmin</string>
     <string name="tap_intro_wallpaper_preview_apply">Levitä taustakuva</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Napauta tätä asettaaksesi taustakuvan aloitusnäytön taustaksi</string>
+    <string name="tap_intro_navigation_view">Navigointitapa</string>
+    <string name="tap_intro_navigation_view_desc">Vaihda navigointilaatikko ja alapalkki navigointitavan mukaan</string>
 
     <!--Kotiin-->
     <string name="home_more_apps_header">Lisää sovelluksia</string>

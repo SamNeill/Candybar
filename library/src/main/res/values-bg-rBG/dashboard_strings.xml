@@ -79,6 +79,7 @@
     <!--Споделете-->
     <string name="share_app_title">йо! Вижте %s</string>
     <string name="share_app_body">Вижте %1$s Icon Pack в Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Вижте %1$s Icon Pack в Amazon App Store: %2$s</string>
 
     <!--Докоснете Intro-->
     <string name="tap_intro_home_navigation">Чекмедже за навигация</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Докоснете тук, за да изтеглите и запазите тапет на вашето устройство, за да можете да го използвате по-късно</string>
     <string name="tap_intro_wallpaper_preview_apply">Прилагане на тапет</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Докоснете тук, за да зададете тапет като фон на началния екран</string>
+    <string name="tap_intro_navigation_view">Стиль на навигация</string>
+    <string name="tap_intro_navigation_view_desc">Превключете между навигационен ларди и навигационна ларди на дъното, като вашето предпочитание</string>
 
     <!--Начало-->
     <string name="home_more_apps_header">Още приложения</string>

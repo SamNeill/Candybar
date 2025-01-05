@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --default-light-color: #000000;
+            --default-dark-color: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans Arabic', Tahoma, sans-serif;
+            line-height: 1.6;
+            padding: 16px;
+            margin: 0;
+            font-size: 14px;
+            color: var(--text-color, var(--default-light-color));
+            background: transparent;
+            scroll-behavior: smooth;
+            text-align: right;
+            direction: rtl;
+        }
+
+        /* Dark theme styles */
+        @media (prefers-color-scheme: dark) {
+            * {
+                color: var(--text-color, var(--default-dark-color));
+            }
+            
+            h2, strong, #contact-email {
+                color: var(--accent-color);
+            }
+        }
+
+        h1 { 
+            display: none;
+        }
+        h2 { 
+            color: var(--accent-color);
+            font-size: 15px;
+            margin: 12px 0 4px 0;
+        }
+        .section { 
+            margin-bottom: 8px;
+        }
+        ul { 
+            padding-right: 16px;
+            margin: 4px 0; 
+            list-style-position: inside;
+        }
+        li { 
+            margin-bottom: 4px;
+        }
+        p {
+            margin: 4px 0;
+        }
+        strong {
+            color: var(--accent-color);
+        }
+        #contact-email {
+            color: var(--accent-color);
+            direction: ltr;
+            display: inline-block;
+        }
+        .divider {
+            height: 1px;
+            background-color: var(--accent-color);
+            margin: 24px 0;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <p><strong>سياسة الخصوصية لحزمة الأيقونات التجريبية</strong></p>
+
+        <p>المطور: John Doe<br>
+        تاريخ السريان: 1 يناير 2024</p>
+        
+        <p>تصف سياسة الخصوصية هذه سياساتنا وإجراءاتنا المتعلقة بجمع واستخدام والكشف عن معلوماتك عند استخدام حزمة الأيقونات التجريبية ("التطبيق") وتخبرك عن حقوق الخصوصية الخاصة بك وكيف يحميك القانون. باستخدام التطبيق، فإنك توافق على جمع واستخدام المعلومات وفقًا لهذه السياسة.</p>
+    </div>
+
+    <h2>1. المقدمة</h2>
+    <div class="section">
+        <p>حزمة الأيقونات التجريبية ("نحن" أو "لنا" أو "خاصتنا") ملتزمة بحماية خصوصيتك. توضح سياسة الخصوصية هذه المعلومات التي نجمعها وكيفية استخدامها وكيفية حمايتها. تنطبق على جميع مستخدمي التطبيق، بما في ذلك جميع البرامج والخدمات التي تقدمها الشركة.</p>
+    </div>
+
+    <h2>2. المعلومات التي نجمعها</h2>
+    <div class="section">
+        <ul>
+            <li><strong>معلومات الجهاز:</strong> العلامة التجارية، أبعاد الشاشة، إعدادات النظام</li>
+            <li><strong>الوصول إلى التخزين:</strong> قراءة محتويات التخزين المشترك</li>
+            <li><strong>معلومات الشبكة:</strong> للتحديثات والتفاعلات مع الخادم</li>
+            <li><strong>بيانات الاستخدام:</strong> إحصائيات مجهولة وبيانات الأداء</li>
+        </ul>
+    </div>
+
+    <h2>3. كيف نستخدم معلوماتك</h2>
+    <div class="section">
+        <ul>
+            <li>تحسين أداء حزمة الأيقونات</li>
+            <li>تحسين ميزات التطبيق</li>
+            <li>توفير التحديثات والدعم</li>
+            <li>تعزيز تجربة المستخدم</li>
+        </ul>
+    </div>
+
+    <h2>4. الأذونات المطلوبة</h2>
+    <div class="section">
+        <ul>
+            <li>الوصول إلى التخزين للخلفيات والأيقونات</li>
+            <li>تعديل إعدادات النظام</li>
+            <li>الوصول إلى الشبكة للتحديثات</li>
+            <li>عرض اتصالات الشبكة</li>
+        </ul>
+    </div>
+
+    <h2>5. أمن البيانات</h2>
+    <div class="section">
+        <p>نقوم بتنفيذ إجراءات أمنية مناسبة لحماية بياناتك. ومع ذلك، لا يوجد نقل عبر الإنترنت آمن بنسبة 100٪. نحن نستخدم وسائل مقبولة تجاريًا لحماية معلوماتك ولكن لا يمكننا ضمان الأمان المطلق.</p>
+    </div>
+
+    <h2>6. اتصل بنا</h2>
+    <div class="section">
+        <p>للأسئلة حول سياسة الخصوصية هذه، اتصل بنا على: <span id="contact-email">example@email.com</span></p>
+    </div>
+
+    <div class="divider"></div>
+</body>
+</html> 

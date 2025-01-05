@@ -1,173 +1,26 @@
-package candybar.lib.fragments.dialog;
+package candybar.lib.utils;
 
-import android.app.Dialog;
+import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.os.Bundle;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.Window;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-
-import com.afollestad.materialdialogs.MaterialDialog;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
-import candybar.lib.R;
-import candybar.lib.fragments.HomeFragment;
-import candybar.lib.preferences.Preferences;
-import candybar.lib.utils.listeners.HomeListener;
-import candybar.lib.helpers.TypefaceHelper;
-import candybar.lib.helpers.ColorHelper;
+public class PrivacyPolicyLoader {
+    private static final String TAG = "PrivacyPolicyLoader";
+    private static final String APP_PRIVACY_PATH = "privacy/privacy_policy.html";
+    private static final String LIB_PRIVACY_PATH = "candybar/privacy/privacy_policy.html";
 
-public class PrivacyPolicyDialog extends DialogFragment {
-
-    private static final String TAG = "privacy_policy_dialog";
-
-    public static void show(FragmentActivity activity) {
-        show(activity, true);
-    }
-
-    public static void show(FragmentActivity activity, boolean checkPreferences) {
-        if (activity == null || activity.isFinishing()) {
-            return;
-        }
-
-        if (checkPreferences) {
-            Preferences preferences = Preferences.get(activity);
-            // Don't show dialog during configuration changes (like theme changes)
-            if (activity.isChangingConfigurations()) {
-                return;
-            }
-            
-            // Only show dialog on first launch or when privacy is explicitly reset
-            if (preferences.isPrivacyPolicyAccepted()) {
-                return;
-            }
-        }
-
-        FragmentManager fm = activity.getSupportFragmentManager();
-        Fragment fragment = fm.findFragmentByTag(TAG);
-        if (fragment == null) {
-            fragment = new PrivacyPolicyDialog();
-            fm.beginTransaction()
-                    .add(fragment, TAG)
-                    .commit();
-        }
-    }
-
-    @NonNull
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity())
-                .inflate(R.layout.fragment_privacy_policy, null);
-
-        WebView webView = view.findViewById(R.id.webview);
-        View btnAccept = view.findViewById(R.id.btn_accept);
-        View btnDeny = view.findViewById(R.id.btn_deny);
-
-        // Get theme colors
-        TypedValue typedValue = new TypedValue();
-        requireContext().getTheme().resolveAttribute(android.R.attr.textColorPrimary, typedValue, true);
-        int textColorPrimary = typedValue.data;
-
-        requireContext().getTheme().resolveAttribute(android.R.attr.textColorSecondary, typedValue, true);
-        int textColorSecondary = typedValue.data;
-
-        requireContext().getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
-        int accentColor = typedValue.data;
-
-        // Convert colors to hex strings
-        String textColorPrimaryHex = String.format("#%06X", (0xFFFFFF & textColorPrimary));
-        String textColorSecondaryHex = String.format("#%06X", (0xFFFFFF & textColorSecondary));
-        String accentColorHex = String.format("#%06X", (0xFFFFFF & accentColor));
-
-        // Configure WebView
-        webView.setBackgroundColor(0x00000000); // Transparent background
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setUseWideViewPort(false);
-        webView.getSettings().setBuiltInZoomControls(false);
-        webView.getSettings().setDisplayZoomControls(false);
-        webView.setVerticalScrollBarEnabled(false);
-
-        // Set text styles based on app theme
-        String css = String.format(
-            "body { " +
-            "   color: %s !important; " +
-            "   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important; " +
-            "   font-size: 14px !important; " +
-            "   line-height: 1.5 !important; " +
-            "} " +
-            "h1, h2 { " +
-            "   color: %s !important; " +
-            "   font-size: 18px !important; " +
-            "   font-weight: 500 !important; " +
-            "   margin-top: 16px !important; " +
-            "   margin-bottom: 8px !important; " +
-            "} " +
-            "h3, h4, h5, h6 { " +
-            "   color: %s !important; " +
-            "   font-size: 16px !important; " +
-            "   font-weight: 500 !important; " +
-            "   margin-top: 12px !important; " +
-            "   margin-bottom: 8px !important; " +
-            "} " +
-            "p, li { " +
-            "   color: %s !important; " +
-            "   font-size: 14px !important; " +
-            "   line-height: 1.5 !important; " +
-            "   margin-bottom: 8px !important; " +
-            "} " +
-            "strong { " +
-            "   color: %s !important; " +
-            "   font-weight: 500 !important; " +
-            "} " +
-            "a { " +
-            "   color: %s !important; " +
-            "   text-decoration: none !important; " +
-            "} ",
-            textColorSecondaryHex, // body text
-            textColorPrimaryHex,   // h1, h2
-            textColorPrimaryHex,   // h3-h6
-            textColorSecondaryHex, // p, li
-            textColorPrimaryHex,   // strong
-            accentColorHex         // links
-        );
-
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                String js = String.format(
-                    "document.documentElement.style.setProperty('--text-color', '%s');" +
-                    "document.documentElement.style.setProperty('--accent-color', '%s');" +
-                    "document.body.style.padding = '0px';" +
-                    "document.body.style.margin = '0px';" +
-                    "var style = document.createElement('style');" +
-                    "style.type = 'text/css';" +
-                    "style.innerHTML = '%s';" +
-                    "document.head.appendChild(style);",
-                    textColorSecondaryHex,
-                    accentColorHex,
-                    css.replace("'", "\\'")
-                );
-                webView.evaluateJavascript(js, null);
-            }
-        });
-
-        // Get current locale
+    public static String loadPrivacyPolicy(Context context) {
+        // Get system locale
         Locale systemLocale;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             systemLocale = Resources.getSystem().getConfiguration().getLocales().get(0);
@@ -179,9 +32,9 @@ public class PrivacyPolicyDialog extends DialogFragment {
         // Get app locale
         Locale appLocale;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            appLocale = requireContext().getResources().getConfiguration().getLocales().get(0);
+            appLocale = context.getResources().getConfiguration().getLocales().get(0);
         } else {
-            appLocale = requireContext().getResources().getConfiguration().locale;
+            appLocale = context.getResources().getConfiguration().locale;
         }
         Log.d(TAG, "App locale: " + appLocale.getLanguage() + "_" + appLocale.getCountry());
 
@@ -506,178 +359,325 @@ public class PrivacyPolicyDialog extends DialogFragment {
         Log.d(TAG, "Is App Portuguese (Portugal): " + isAppPortuguesePT);
         Log.d(TAG, "Using Portuguese (Portugal): " + isPortuguesePT);
 
-        // Load the appropriate privacy policy HTML
-        String htmlPath;
+        // Try to load language-specific version first
+        String privacyHtml = null;
         if (isUrdu) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ur-rPK.html";
-            Log.d(TAG, "Loading Urdu privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Urdu privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ur-rPK.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Urdu privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ur-rPK.html");
+            }
         } else if (isChinese) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_zh-rCN.html";
-            Log.d(TAG, "Loading Chinese privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Chinese privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_zh-rCN.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Chinese privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_zh-rCN.html");
+            }
         } else if (isArabic) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ar-rSA.html";
-            Log.d(TAG, "Loading Arabic privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Arabic privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ar-rSA.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Arabic privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ar-rSA.html");
+            }
         } else if (isAfrikaans) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_af-rZA.html";
-            Log.d(TAG, "Loading Afrikaans privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Afrikaans privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_af-rZA.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Afrikaans privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_af-rZA.html");
+            }
         } else if (isBulgarian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_bg-rBG.html";
-            Log.d(TAG, "Loading Bulgarian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Bulgarian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_bg-rBG.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Bulgarian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_bg-rBG.html");
+            }
         } else if (isBengali) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_bn-rIN.html";
-            Log.d(TAG, "Loading Bengali privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Bengali privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_bn-rIN.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Bengali privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_bn-rIN.html");
+            }
         } else if (isCatalan) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ca-rES.html";
-            Log.d(TAG, "Loading Catalan privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Catalan privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ca-rES.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Catalan privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ca-rES.html");
+            }
         } else if (isCzech) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_cs-rCZ.html";
-            Log.d(TAG, "Loading Czech privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Czech privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_cs-rCZ.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Czech privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_cs-rCZ.html");
+            }
         } else if (isDanish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_da-rDK.html";
-            Log.d(TAG, "Loading Danish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Danish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_da-rDK.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Danish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_da-rDK.html");
+            }
         } else if (isGerman) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_de-rDE.html";
-            Log.d(TAG, "Loading German privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load German privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_de-rDE.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "German privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_de-rDE.html");
+            }
         } else if (isGreek) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_el-rGR.html";
-            Log.d(TAG, "Loading Greek privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Greek privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_el-rGR.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Greek privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_el-rGR.html");
+            }
         } else if (isSpanish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_es-rES.html";
-            Log.d(TAG, "Loading Spanish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Spanish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_es-rES.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Spanish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_es-rES.html");
+            }
         } else if (isFinnish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_fi-rFI.html";
-            Log.d(TAG, "Loading Finnish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Finnish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_fi-rFI.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Finnish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_fi-rFI.html");
+            }
         } else if (isFrench) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_fr-rFR.html";
-            Log.d(TAG, "Loading French privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load French privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_fr-rFR.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "French privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_fr-rFR.html");
+            }
         } else if (isHindi) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_hi-rIN.html";
-            Log.d(TAG, "Loading Hindi privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Hindi privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_hi-rIN.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Hindi privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_hi-rIN.html");
+            }
         } else if (isHungarian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_hu-rHU.html";
-            Log.d(TAG, "Loading Hungarian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Hungarian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_hu-rHU.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Hungarian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_hu-rHU.html");
+            }
         } else if (isIndonesian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_in-rID.html";
-            Log.d(TAG, "Loading Indonesian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Indonesian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_in-rID.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Indonesian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_in-rID.html");
+            }
         } else if (isItalian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_it-rIT.html";
-            Log.d(TAG, "Loading Italian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Italian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_it-rIT.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Italian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_it-rIT.html");
+            }
         } else if (isHebrew) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_iw-rIL.html";
-            Log.d(TAG, "Loading Hebrew privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Hebrew privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_iw-rIL.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Hebrew privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_iw-rIL.html");
+            }
         } else if (isJapanese) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ja-rJP.html";
-            Log.d(TAG, "Loading Japanese privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Japanese privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ja-rJP.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Japanese privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ja-rJP.html");
+            }
         } else if (isKorean) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ko-rKR.html";
-            Log.d(TAG, "Loading Korean privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Korean privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ko-rKR.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Korean privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ko-rKR.html");
+            }
         } else if (isNepali) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ne-rNP.html";
-            Log.d(TAG, "Loading Nepali privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Nepali privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ne-rNP.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Nepali privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ne-rNP.html");
+            }
         } else if (isRomanian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ro-rRO.html";
-            Log.d(TAG, "Loading Romanian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Romanian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ro-rRO.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Romanian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ro-rRO.html");
+            }
         } else if (isRussian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ru-rRU.html";
-            Log.d(TAG, "Loading Russian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Russian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ru-rRU.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Russian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ru-rRU.html");
+            }
         } else if (isSerbian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_sr-rSP.html";
-            Log.d(TAG, "Loading Serbian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Serbian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_sr-rSP.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Serbian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_sr-rSP.html");
+            }
         } else if (isSwedish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_sv-rSE.html";
-            Log.d(TAG, "Loading Swedish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Swedish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_sv-rSE.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Swedish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_sv-rSE.html");
+            }
         } else if (isTamil) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_ta-rIN.html";
-            Log.d(TAG, "Loading Tamil privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Tamil privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_ta-rIN.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Tamil privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_ta-rIN.html");
+            }
         } else if (isThai) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_th-rTH.html";
-            Log.d(TAG, "Loading Thai privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Thai privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_th-rTH.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Thai privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_th-rTH.html");
+            }
         } else if (isTurkish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_tr-rTR.html";
-            Log.d(TAG, "Loading Turkish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Turkish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_tr-rTR.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Turkish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_tr-rTR.html");
+            }
         } else if (isUkrainian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_uk-rUA.html";
-            Log.d(TAG, "Loading Ukrainian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Ukrainian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_uk-rUA.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Ukrainian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_uk-rUA.html");
+            }
         } else if (isVietnamese) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_vi-rVN.html";
-            Log.d(TAG, "Loading Vietnamese privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Vietnamese privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_vi-rVN.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Vietnamese privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_vi-rVN.html");
+            }
         } else if (isChineseTraditional) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_zh-rTW.html";
-            Log.d(TAG, "Loading Chinese Traditional privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Chinese Traditional privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_zh-rTW.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Chinese Traditional privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_zh-rTW.html");
+            }
         } else if (isKazakh) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_kk-rKZ.html";
-            Log.d(TAG, "Loading Kazakh privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Kazakh privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_kk-rKZ.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Kazakh privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_kk-rKZ.html");
+            }
         } else if (isTagalog) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_tl-rPH.html";
-            Log.d(TAG, "Loading Tagalog privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Tagalog privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_tl-rPH.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Tagalog privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_tl-rPH.html");
+            }
         } else if (isSlovak) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_sk-rSK.html";
-            Log.d(TAG, "Loading Slovak privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Slovak privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_sk-rSK.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Slovak privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_sk-rSK.html");
+            }
         } else if (isDutch) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_nl-rNL.html";
-            Log.d(TAG, "Loading Dutch privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Dutch privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_nl-rNL.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Dutch privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_nl-rNL.html");
+            }
         } else if (isNorwegian) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_no-rNO.html";
-            Log.d(TAG, "Loading Norwegian privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Norwegian privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_no-rNO.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Norwegian privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_no-rNO.html");
+            }
         } else if (isPolish) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_pl-rPL.html";
-            Log.d(TAG, "Loading Polish privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Polish privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_pl-rPL.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Polish privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_pl-rPL.html");
+            }
         } else if (isPortugueseBR) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_pt-rBR.html";
-            Log.d(TAG, "Loading Portuguese (Brazil) privacy policy: " + htmlPath);
+            Log.d(TAG, "Attempting to load Portuguese (Brazil) privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_pt-rBR.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Portuguese (Brazil) privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_pt-rBR.html");
+            }
         } else if (isPortuguesePT) {
-            htmlPath = "file:///android_asset/privacy/privacy_policy_pt-rPT.html";
-            Log.d(TAG, "Loading Portuguese (Portugal) privacy policy: " + htmlPath);
-        } else {
-            htmlPath = "file:///android_asset/privacy/privacy_policy.html";
-            Log.d(TAG, "Loading English privacy policy: " + htmlPath);
-        }
-        webView.loadUrl(htmlPath);
-
-        btnAccept.setOnClickListener(v -> {
-            Preferences.get(requireContext()).setPrivacyPolicyAccepted(true);
-            FragmentActivity activity = requireActivity();
-            Log.d("CandyBar", "Privacy Policy accepted, showing changelog next");
-            
-            // Initialize home fragment first
-            Fragment homeFragment = new HomeFragment();
-            activity.getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, homeFragment, HomeFragment.TAG)
-                    .commitNow(); // Use commitNow to ensure fragment is added immediately
-            
-            // Now show changelog
-            ChangelogFragment.showChangelog(activity.getSupportFragmentManager(), () -> {
-                Log.d("CandyBar", "Changelog closed, attempting to show intro");
-            });
-            dismiss();
-        });
-        
-        btnDeny.setOnClickListener(v -> {
-            requireActivity().finishAffinity();
-        });
-
-        MaterialDialog dialog = new MaterialDialog.Builder(requireActivity())
-                .typeface(TypefaceHelper.getMedium(requireActivity()), TypefaceHelper.getRegular(requireActivity()))
-                .customView(view, false)
-                .cancelable(false)
-                .canceledOnTouchOutside(false)
-                .backgroundColorAttr(R.attr.cb_cardBackground)
-                .build();
-        
-        if (dialog.getWindow() != null) {
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+            Log.d(TAG, "Attempting to load Portuguese (Portugal) privacy policy");
+            privacyHtml = loadFromAppAssets(context, "privacy/privacy_policy_pt-rPT.html");
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                Log.d(TAG, "Portuguese (Portugal) privacy policy not found in app assets, trying library assets");
+                privacyHtml = loadFromLibraryAssets(context, "privacy/privacy_policy_pt-rPT.html");
+            }
         }
 
-        return dialog;
+        // Fall back to default English version if needed
+        if (privacyHtml == null || privacyHtml.isEmpty()) {
+            Log.d(TAG, "Loading default English privacy policy");
+            privacyHtml = loadFromAppAssets(context, APP_PRIVACY_PATH);
+            if (privacyHtml == null || privacyHtml.isEmpty()) {
+                privacyHtml = loadFromLibraryAssets(context, LIB_PRIVACY_PATH);
+            }
+        }
+
+        return privacyHtml != null ? privacyHtml : "";
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        Dialog dialog = getDialog();
-        if (dialog != null) {
-            dialog.setCancelable(false);
-            dialog.setCanceledOnTouchOutside(false);
+    private static String loadFromAppAssets(Context context, String filename) {
+        Log.d(TAG, "Trying to load from app assets: " + filename);
+        return loadAssetFile(context, filename);
+    }
+
+    private static String loadFromLibraryAssets(Context context, String filename) {
+        Log.d(TAG, "Trying to load from library assets: candybar/" + filename);
+        return loadAssetFile(context, "candybar/" + filename);
+    }
+
+    private static String loadAssetFile(Context context, String filename) {
+        AssetManager assetManager = context.getAssets();
+        try (InputStream is = assetManager.open(filename);
+             BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
+            StringBuilder content = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+            return content.toString();
+        } catch (IOException e) {
+            Log.d(TAG, "Error loading " + filename + ": " + e.getMessage());
+            return null;
         }
     }
-}
+} 

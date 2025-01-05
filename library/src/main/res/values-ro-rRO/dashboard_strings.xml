@@ -79,6 +79,7 @@
     <!--Distribuie-->
     <string name="share_app_title">Yo! Verificați %s</string>
     <string name="share_app_body">Consultați pachetul de pictograme %1$s în Magazinul Play: %2$s</string>
+    <string name="share_app_body_amazon">Consultați pachetul de pictograme %1$s în Magazinul Amazon App Store: %2$s</string>
 
     <!--Atingeți Introducere-->
     <string name="tap_intro_home_navigation">Sertarul de navigare</string>
@@ -106,7 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Atingeți aici pentru a descărca și salva imaginea de fundal pe dispozitivul dvs., astfel încât să îl puteți utiliza mai târziu</string>
     <string name="tap_intro_wallpaper_preview_apply">Aplicați tapet</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Atingeți aici pentru a seta imaginea de fundal ca fundal pentru ecranul de pornire</string>
-
+    <string name="tap_intro_navigation_view">Stil de navigare</string>
+    <string name="tap_intro_navigation_view_desc">Switch entre panoul de navigare și bara de navigare inferioară în funcție de preferința dvs.</string>
     <!--Acasă-->
     <string name="home_more_apps_header">Mai multe aplicații</string>
     <string name="home_more_apps">Verificați pachetul de pictograme mai multe în Magazinul Google Play</string>

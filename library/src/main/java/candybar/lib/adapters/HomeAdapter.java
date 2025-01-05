@@ -1,8 +1,9 @@
 package candybar.lib.adapters;
 
-import static candybar.lib.helpers.DrawableHelper.getDrawableId;
-
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -24,6 +25,8 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
 import android.webkit.URLUtil;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -63,8 +66,12 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -229,23 +236,42 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     mContext.getResources().getString(R.string.home_description), HtmlCompat.FROM_HTML_MODE_COMPACT));
             headerViewHolder.content.setMovementMethod(LinkMovementMethod.getInstance());
 
-            String uri = mContext.getResources().getString(R.string.home_image);
-            if (ColorHelper.isValidColor(uri)) {
-                headerViewHolder.image.setBackgroundColor(Color.parseColor(uri));
-            } else {
-                if (!URLUtil.isValidUrl(uri)) {
-                    uri = "drawable://" + getDrawableId(uri);
-                }
-
-                if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
+            if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
+                // Get all icon resources
+                List<String> iconList = getRandomIconResources();
+                
+                // If we have enough icons, shuffle and pick 4
+                if (iconList.size() >= 4) {
+                    Collections.shuffle(iconList);
+                    
+                    // Load random images into each ImageView
                     Glide.with(mContext)
-                            .load(uri)
+                            .load(mContext.getResources().getIdentifier(iconList.get(0), "drawable", mContext.getPackageName()))
                             .transition(DrawableTransitionOptions.withCrossFade(300))
                             .skipMemoryCache(true)
-                            .diskCacheStrategy(uri.contains("drawable://")
-                                    ? DiskCacheStrategy.NONE
-                                    : DiskCacheStrategy.RESOURCE)
-                            .into(headerViewHolder.image);
+                            .diskCacheStrategy(DiskCacheStrategy.NONE)
+                            .into(headerViewHolder.headerImage1);
+
+                    Glide.with(mContext)
+                            .load(mContext.getResources().getIdentifier(iconList.get(1), "drawable", mContext.getPackageName()))
+                            .transition(DrawableTransitionOptions.withCrossFade(300))
+                            .skipMemoryCache(true)
+                            .diskCacheStrategy(DiskCacheStrategy.NONE)
+                            .into(headerViewHolder.headerImage2);
+
+                    Glide.with(mContext)
+                            .load(mContext.getResources().getIdentifier(iconList.get(2), "drawable", mContext.getPackageName()))
+                            .transition(DrawableTransitionOptions.withCrossFade(300))
+                            .skipMemoryCache(true)
+                            .diskCacheStrategy(DiskCacheStrategy.NONE)
+                            .into(headerViewHolder.headerImage3);
+
+                    Glide.with(mContext)
+                            .load(mContext.getResources().getIdentifier(iconList.get(3), "drawable", mContext.getPackageName()))
+                            .transition(DrawableTransitionOptions.withCrossFade(300))
+                            .skipMemoryCache(true)
+                            .diskCacheStrategy(DiskCacheStrategy.NONE)
+                            .into(headerViewHolder.headerImage4);
                 }
             }
         } else if (holder.getItemViewType() == TYPE_CONTENT) {
@@ -405,18 +431,27 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private class HeaderViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private final HeaderView image;
+        private final ImageView headerImage1;
+        private final ImageView headerImage2;
+        private final ImageView headerImage3;
+        private final ImageView headerImage4;
         private final TextView title;
         private final TextView content;
 
         HeaderViewHolder(View itemView) {
             super(itemView);
-            image = itemView.findViewById(R.id.header_image);
+            headerImage1 = itemView.findViewById(R.id.header_image_1);
+            headerImage2 = itemView.findViewById(R.id.header_image_2);
+            headerImage3 = itemView.findViewById(R.id.header_image_3);
+            headerImage4 = itemView.findViewById(R.id.header_image_4);
             title = itemView.findViewById(R.id.title);
             content = itemView.findViewById(R.id.content);
             MaterialButton rate = itemView.findViewById(R.id.rate);
             MaterialButton share = itemView.findViewById(R.id.share);
             MaterialButton update = itemView.findViewById(R.id.update);
+
+            // Get the LinearLayout that contains all header images
+            LinearLayout headerImagesContainer = (LinearLayout) headerImage1.getParent();
 
             if (mContext.getResources().getString(R.string.rate_and_review_link).length() == 0) {
                 rate.setVisibility(View.GONE);
@@ -461,11 +496,60 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 update.setBackgroundTintList(ColorStateList.valueOf(cardColor));
             }
 
-            image.setRatio(mImageStyle.getPoint().x, mImageStyle.getPoint().y);
-
             rate.setOnClickListener(this);
             share.setOnClickListener(this);
             update.setOnClickListener(this);
+
+            // Add click listener to header images container to randomize all icons
+            headerImagesContainer.setOnClickListener(v -> {
+                // Start zoom out animation for all images
+                ImageView[] headerImages = {headerImage1, headerImage2, headerImage3, headerImage4};
+                List<String> randomIcons = getRandomIconResources();
+                if (randomIcons.size() >= 4) {
+                    Collections.shuffle(randomIcons);
+                    
+                    // First zoom out the current icons with decelerate interpolator
+                    for (ImageView image : headerImages) {
+                        image.animate()
+                            .scaleX(0.7f)
+                            .scaleY(0.7f)
+                            .alpha(0f)
+                            .setDuration(250)
+                            .setInterpolator(new DecelerateInterpolator())
+                            .withEndAction(() -> {
+                                // When zoom out is complete, load and zoom in new icons
+                                for (int i = 0; i < 4; i++) {
+                                    int resId = mContext.getResources().getIdentifier(
+                                        randomIcons.get(i), "drawable", mContext.getPackageName());
+                                    
+                                    // Set initial state for new icons
+                                    headerImages[i].setScaleX(0.7f);
+                                    headerImages[i].setScaleY(0.7f);
+                                    headerImages[i].setAlpha(0f);
+                                    
+                                    // Load new icon without transition
+                                    Glide.with(mContext)
+                                        .load(resId)
+                                        .skipMemoryCache(true)
+                                        .diskCacheStrategy(DiskCacheStrategy.NONE)
+                                        .into(headerImages[i]);
+                                }
+                                
+                                // Start zoom in for all images with accelerate decelerate interpolator
+                                for (ImageView img : headerImages) {
+                                    img.animate()
+                                        .scaleX(1f)
+                                        .scaleY(1f)
+                                        .alpha(1f)
+                                        .setDuration(250)
+                                        .setInterpolator(new AccelerateDecelerateInterpolator())
+                                        .start();
+                                }
+                            })
+                            .start();
+                    }
+                }
+            });
         }
 
         @Override
@@ -1185,5 +1269,37 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent),
                     PorterDuff.Mode.SRC_IN);
         }
+    }
+
+    private List<String> getRandomIconResources() {
+        List<String> iconList = new ArrayList<>();
+        try {
+            // Try to get icons_preview from app module first
+            int appPreviewId = mContext.getResources().getIdentifier("icons_preview", "array", mContext.getPackageName());
+            if (appPreviewId != 0) {
+                String[] appIcons = mContext.getResources().getStringArray(appPreviewId);
+                iconList.addAll(Arrays.asList(appIcons));
+            }
+
+            // If no icons found in app module, try library's icons_preview
+            if (iconList.isEmpty()) {
+                int libraryPreviewId = mContext.getResources().getIdentifier("icons_preview", "array", "candybar.lib");
+                if (libraryPreviewId != 0) {
+                    String[] libraryIcons = mContext.getResources().getStringArray(libraryPreviewId);
+                    iconList.addAll(Arrays.asList(libraryIcons));
+                }
+            }
+
+            // If still no icons found, use blank preview
+            if (iconList.isEmpty()) {
+                iconList.add("");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Safety fallback - use blank preview
+            iconList.add("");
+        }
+        
+        return iconList;
     }
 }

@@ -79,6 +79,7 @@
     <!--Chia sẻ-->
     <string name="share_app_title">Này! Kiểm tra %s</string>
     <string name="share_app_body">Xem Gói biểu tượng %1$s trên Cửa hàng Play: %2$s</string>
+    <string name="share_app_body_amazon">Xem Gói biểu tượng %1$s trên Cửa hàng Amazon: %2$s</string>
 
     <!--Nhấn vào phần giới thiệu-->
     <string name="tap_intro_home_navigation">Ngăn điều hướng</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Nhấn vào đây để tải xuống và lưu hình nền vào thiết bị của bạn để bạn có thể sử dụng sau này</string>
     <string name="tap_intro_wallpaper_preview_apply">Áp dụng hình nền</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Nhấn vào đây để đặt hình nền làm hình nền màn hình chính</string>
+    <string name="tap_intro_navigation_view">Kiểu điều hướng</string>
+    <string name="tap_intro_navigation_view_desc">Nhấn vào đây để chuyển đổi giữa thanh điều hướng và thanh điều hướng cuối cùng tùy thuộc vào sở thích của bạn</string>
 
     <!--Trang chủ-->
     <string name="home_more_apps_header">Nhiều ứng dụng hơn</string>

@@ -79,6 +79,7 @@
     <!--공유하다-->
     <string name="share_app_title">에야디야! %s을(를) 확인해 보세요</string>
     <string name="share_app_body">Play 스토어에서 %1$s 아이콘 팩을 확인하세요: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store 에서 %1$s 아이콘 팩을 확인하세요: %2$s</string>
 
     <!--소개를 탭하세요-->
     <string name="tap_intro_home_navigation">탐색 창</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">나중에 사용할 수 있도록 배경화면을 다운로드하고 기기에 저장하려면 여기를 누르세요.</string>
     <string name="tap_intro_wallpaper_preview_apply">배경화면 적용</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">배경화면을 홈 화면 배경으로 설정하려면 여기를 누르세요.</string>
+    <string name="tap_intro_navigation_view">네비게이션 스타일</string>
+    <string name="tap_intro_navigation_view_desc">네비게이션 드로어와 하단 네비게이션 바 사이를 전환하여 취향에 맞게 설정하세요.</string>
 
     <!--집-->
     <string name="home_more_apps_header">더 많은 앱</string>

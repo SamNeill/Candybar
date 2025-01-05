@@ -79,6 +79,7 @@
     <!--सेयर गर्नुहोस्-->
     <string name="share_app_title">यो! %s जाँच गर्नुहोस्</string>
     <string name="share_app_body">Play Store मा %1$s आइकन प्याक हेर्नुहोस्: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store मा %1$s आइकन प्याक हेर्नुहोस्: %2$s</string>
 
     <!--परिचय ट्याप गर्नुहोस्-->
     <string name="tap_intro_home_navigation">नेभिगेसन दराज</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">डाउनलोड गर्न र आफ्नो यन्त्रमा वालपेपर बचत गर्न यहाँ ट्याप गर्नुहोस् ताकि तपाईंले यसलाई पछि प्रयोग गर्न सक्नुहुन्छ</string>
     <string name="tap_intro_wallpaper_preview_apply">वालपेपर लागू गर्नुहोस्</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">होमस्क्रिन पृष्ठभूमिको रूपमा वालपेपर सेट गर्न यहाँ ट्याप गर्नुहोस्</string>
+    <string name="tap_intro_navigation_view">नेभिगेसन स्टाइल</string>
+    <string name="tap_intro_navigation_view_desc">नेभिगेसन ड्रॉअर र निचेको नेभिगेसन बारको बीच स्विच गर्न यहाँ ट्याप गर्नुहोस्</string>
 
     <!--घर-->
     <string name="home_more_apps_header">थप एपहरू</string>

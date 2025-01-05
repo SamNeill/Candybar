@@ -78,6 +78,7 @@
     <!-- Share -->
     <string name="share_app_title">Yo! Check out %s</string>
     <string name="share_app_body">Check out %1$s Icon Pack on Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Check out %1$s Icon Pack on Amazon App Store: %2$s</string>
 
     <!-- Tap Intro -->
     <string name="tap_intro_home_navigation">Navigation drawer</string>
@@ -105,10 +106,12 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tap here to download and save wallpaper to your device so you can use it later</string>
     <string name="tap_intro_wallpaper_preview_apply">Apply wallpaper</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tap here to set wallpaper as the homescreen background</string>
-
+    <string name="tap_intro_navigation_view">Navigation Style</string>
+    <string name="tap_intro_navigation_view_desc">Switch between Navigation drawer and bottom Navigation bar as your Likeness</string>
     <!-- Home -->
     <string name="home_more_apps_header">More Apps</string>
     <string name="home_more_apps">Check More Icons Pack on Google Play Store</string>
+    <string name="home_more_apps_amazon">Check More Icons Pack on Amazon App Store</string>
     <string name="home_rate">Rate</string>
     <string name="home_share">Share</string>
     <string name="home_check_update">Update</string>
@@ -366,7 +369,7 @@
 
     <!-- App Version -->
     <string name="version">Version</string>
-	
+
     <!-- Kustom -->
     <string name="home_kustom_desc">Matching Weathers komponents for %s</string>
     <string name="kustom_widgets">Widgets</string>

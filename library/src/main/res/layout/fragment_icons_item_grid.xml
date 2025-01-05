@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:theme="@style/RippleStyle">
+    android:theme="@style/RippleStyle"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:id="@+id/check_background"

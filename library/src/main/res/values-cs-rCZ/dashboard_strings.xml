@@ -79,6 +79,7 @@
     <!--Podíl-->
     <string name="share_app_title">Jo! Podívejte se na %s</string>
     <string name="share_app_body">Podívejte se na sadu ikon %1$s v Obchodě Play: %2$s</string>
+    <string name="share_app_body_amazon">Podívejte se na sadu ikon %1$s v Amazon App Store: %2$s</string>
 
     <!--Klepněte na Úvod-->
     <string name="tap_intro_home_navigation">Navigační zásuvka</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Klepnutím sem stáhnete a uložíte tapetu do zařízení, abyste ji mohli použít později</string>
     <string name="tap_intro_wallpaper_preview_apply">Použít tapetu</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Klepnutím sem nastavíte tapetu jako pozadí domovské obrazovky</string>
+    <string name="tap_intro_navigation_view">Styl navigace</string>
+    <string name="tap_intro_navigation_view_desc">Přepínání mezi navigačním panelem a dolní navigační lištou podle vašeho vkusu</string>
 
     <!--Domov-->
     <string name="home_more_apps_header">Další aplikace</string>

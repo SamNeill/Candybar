@@ -79,6 +79,7 @@
     <!--Deel-->
     <string name="share_app_title">Yo! Kyk na %s</string>
     <string name="share_app_body">Kyk na %1$s Icon Pack op Play Winkel: %2$s</string>
+    <string name="share_app_body_amazon">Kyk na %1$s Icon Pack op Amazon App Store: %2$s</string>
 
     <!--Tik Intro-->
     <string name="tap_intro_home_navigation">Navigasielaai</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tik hier om muurpapier op jou toestel af te laai en te stoor sodat jy dit later kan gebruik</string>
     <string name="tap_intro_wallpaper_preview_apply">Pas plakpapier toe</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tik hier om muurpapier as die tuisskerm-agtergrond te stel</string>
+    <string name="tap_intro_navigation_view">Navigasiestyl</string>
+    <string name="tap_intro_navigation_view_desc">Skakel tussen navigasielaai en onderste navigasiebalk volgens jou voorkeur</string>
 
     <!--Tuis-->
     <string name="home_more_apps_header">Meer toepassings</string>

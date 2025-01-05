@@ -79,6 +79,7 @@
     <!--แบ่งปัน-->
     <string name="share_app_title">โย่! ตรวจสอบ %s</string>
     <string name="share_app_body">ลองดูชุดไอคอน %1$s บน Play Store: %2$s</string>
+    <string name="share_app_body_amazon">ตรวจสอบชุดไอคอน %1$s บน Amazon App Store: %2$s</string>
 
     <!--แตะบทนำ-->
     <string name="tap_intro_home_navigation">ลิ้นชักการนำทาง</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">แตะที่นี่เพื่อดาวน์โหลดและบันทึกวอลเปเปอร์ลงในอุปกรณ์ของคุณเพื่อให้คุณใช้ในภายหลังได้</string>
     <string name="tap_intro_wallpaper_preview_apply">ติดวอลเปเปอร์</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">แตะที่นี่เพื่อตั้งวอลเปเปอร์เป็นพื้นหลังหน้าจอหลัก</string>
+    <string name="tap_intro_navigation_view">สไตล์การนำทาง</string>
+    <string name="tap_intro_navigation_view_desc">แตะที่นี่เพื่อสลับระหว่างพื้นที่นำทางและแถบนำทางด้านล่างตามที่คุณต้องการ</string>
 
     <!--บ้าน-->
     <string name="home_more_apps_header">แอพเพิ่มเติม</string>

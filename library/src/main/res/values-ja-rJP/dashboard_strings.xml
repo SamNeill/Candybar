@@ -79,6 +79,7 @@
     <!--共有-->
     <string name="share_app_title">よーい！ %s をチェックアウト</string>
     <string name="share_app_body">Play ストアで %1$s アイコン パックをチェックしてください: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store で %1$s アイコン パックをチェックしてください: %2$s</string>
 
     <!--イントロをタップ-->
     <string name="tap_intro_home_navigation">ナビゲーションドロワー</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">ここをタップして壁紙をダウンロードしてデバイスに保存し、後で使用できるようにします</string>
     <string name="tap_intro_wallpaper_preview_apply">壁紙を貼る</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">ここをタップして壁紙をホーム画面の背景として設定します</string>
+    <string name="tap_intro_navigation_view">ナビゲーションスタイル</string>
+    <string name="tap_intro_navigation_view_desc">ナビゲーションドロワーと下部ナビゲーションバーの間で切り替え、お好みに合わせてください</string>
 
     <!--家-->
     <string name="home_more_apps_header">その他のアプリ</string>

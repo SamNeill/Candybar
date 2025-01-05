@@ -10,17 +10,20 @@ import android.view.View;
 import android.view.Window;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
+
+import com.afollestad.materialdialogs.MaterialDialog;
 
 import candybar.lib.R;
 import candybar.lib.activities.CandyBarMainActivity;
 import candybar.lib.fragments.HomeFragment;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.listeners.RequestListener;
+import candybar.lib.helpers.TypefaceHelper;
+import candybar.lib.helpers.ColorHelper;
 
 public class RequestConsentDialog extends DialogFragment {
 
@@ -71,17 +74,16 @@ public class RequestConsentDialog extends DialogFragment {
             }
         });
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
-        builder.setView(view);
+        MaterialDialog dialog = new MaterialDialog.Builder(requireActivity())
+                .typeface(TypefaceHelper.getMedium(requireActivity()), TypefaceHelper.getRegular(requireActivity()))
+                .customView(view, false)
+                .cancelable(false)
+                .canceledOnTouchOutside(false)
+                .backgroundColorAttr(R.attr.cb_cardBackground)
+                .build();
 
-        AlertDialog dialog = builder.create();
-        dialog.setCancelable(false);
-        dialog.setCanceledOnTouchOutside(false);
-        
         if (dialog.getWindow() != null) {
-            dialog.getWindow().setBackgroundDrawable(
-                    new ColorDrawable(android.graphics.Color.TRANSPARENT));
-            dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         }
 
         return dialog;

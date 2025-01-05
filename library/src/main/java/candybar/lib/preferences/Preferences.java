@@ -83,6 +83,8 @@ public class Preferences {
     private static final String KEY_NAVIGATION_VIEW_STYLE = "navigation_view_style";
     private static final String KEY_REQUEST_SEARCH_INTRO = "request_search_intro";
 
+    private static final String KEY_SHOW_NAVIGATION_VIEW_INTRO = "show_navigation_view_intro";
+
     private static WeakReference<Preferences> mPreferences;
 
     @NonNull
@@ -511,5 +513,13 @@ public class Preferences {
 
     public void setTimeToShowRequestSearchIntro(boolean bool) {
         getSharedPreferences().edit().putBoolean(KEY_REQUEST_SEARCH_INTRO, bool).apply();
+    }
+
+    public void setTimeToShowNavigationViewIntro(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_SHOW_NAVIGATION_VIEW_INTRO, bool).apply();
+    }
+
+    public boolean isTimeToShowNavigationViewIntro() {
+        return getSharedPreferences().getBoolean(KEY_SHOW_NAVIGATION_VIEW_INTRO, true);
     }
 }

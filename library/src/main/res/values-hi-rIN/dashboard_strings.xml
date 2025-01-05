@@ -79,6 +79,7 @@
     <!--शेयर करना-->
     <string name="share_app_title">यो! %s देखें</string>
     <string name="share_app_body">प्ले स्टोर पर %1$s आइकन पैक देखें: %2$s</string>
+    <string name="share_app_body_amazon">प्ले स्टोर पर %1$s आइकन पैक देखें: %2$s</string>
 
     <!--परिचय टैप करें-->
     <string name="tap_intro_home_navigation">नेविगेशन दराज</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">अपने डिवाइस पर वॉलपेपर डाउनलोड करने और सहेजने के लिए यहां टैप करें ताकि आप इसे बाद में उपयोग कर सकें</string>
     <string name="tap_intro_wallpaper_preview_apply">वॉलपेपर लगाएं</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">वॉलपेपर को होमस्क्रीन पृष्ठभूमि के रूप में सेट करने के लिए यहां टैप करें</string>
+    <string name="tap_intro_navigation_view">नेविगेशन स्टाइल</string>
+    <string name="tap_intro_navigation_view_desc">नेविगेशन ड्रॉअर और नीचे के नेविगेशन बार के बीच स्विच करने के लिए यहां टैप करें</string>
 
     <!--घर-->
     <string name="home_more_apps_header">और ऐप</string>

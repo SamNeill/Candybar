@@ -79,6 +79,7 @@
     <!--Схаре-->
     <string name="share_app_title">Ио! Погледајте %с</string>
     <string name="share_app_body">Погледајте пакет икона %1$с у Плаи продавници: %2$с</string>
+    <string name="share_app_body_amazon">Погледајте пакет икона %1$с у Амазон АппСторе-у: %2$с</string>
 
     <!--Додирните Интро-->
     <string name="tap_intro_home_navigation">Фиока за навигацију</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Додирните овде да преузмете и сачувате позадину на свом уређају како бисте је могли користити касније</string>
     <string name="tap_intro_wallpaper_preview_apply">Нанесите позадину</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Додирните овде да поставите позадину као позадину почетног екрана</string>
+    <string name="tap_intro_navigation_view">Стил навигације</string>
+    <string name="tap_intro_navigation_view_desc">Додирните овде да бисте пребацили између панела навигације и доње навигационе траке у зависности од вашег избора</string>
 
     <!--Хоме-->
     <string name="home_more_apps_header">Више апликација</string>

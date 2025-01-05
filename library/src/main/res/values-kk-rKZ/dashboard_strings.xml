@@ -79,6 +79,7 @@
     <!--Бөлісу-->
     <string name="share_app_title">Йо! %s қараңыз</string>
     <string name="share_app_body">Play Store дүкенінде %1$s белгіше бумасын қараңыз: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store дүкенінде %1$s белгіше бумасын қараңыз: %2$s</string>
 
     <!--Кіріспе түймесін түртіңіз-->
     <string name="tap_intro_home_navigation">Навигация тартпасы</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Түсқағазды жүктеп алу және кейінірек пайдалану үшін құрылғыңызға сақтау үшін осы жерді түртіңіз</string>
     <string name="tap_intro_wallpaper_preview_apply">Түсқағазды жағыңыз</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Түсқағазды негізгі экранның фоны ретінде орнату үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_navigation_view">Навигация стилі</string>
+    <string name="tap_intro_navigation_view_desc">Навигация панелі мен төменгі навигация барын ауыстыру үшін осы жерді түртіңіз</string>
 
     <!--Үй-->
     <string name="home_more_apps_header">Қосымша қолданбалар</string>

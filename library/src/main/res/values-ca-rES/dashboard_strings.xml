@@ -78,6 +78,7 @@
     <!--Comparteix-->
     <string name="share_app_title">Jo! Fes una ullada a %s</string>
     <string name="share_app_body">Fes una ullada al paquet d\'icones %1$s a Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Fes una ullada al paquet d\'icones %1$s a Amazon App Store: %2$s</string>
 
     <!--Toqueu Introducció-->
     <string name="tap_intro_home_navigation">Calaix de navegació</string>
@@ -105,6 +106,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Toqueu aquí per baixar i desar fons de pantalla al vostre dispositiu perquè el pugueu utilitzar més tard</string>
     <string name="tap_intro_wallpaper_preview_apply">Aplica fons de pantalla</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Toqueu aquí per configurar el fons de pantalla com a fons de la pantalla d\'inici</string>
+    <string name="tap_intro_navigation_view">Estil de navegació</string>
+    <string name="tap_intro_navigation_view_desc">Canvia entre el llistó de navegació i la barra de navegació inferior segons el teu gust</string>
 
     <!--a casa-->
     <string name="home_more_apps_header">Més aplicacions</string>

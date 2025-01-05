@@ -79,6 +79,7 @@
     <!--Μερίδιο-->
     <string name="share_app_title">Γιο! Ρίξτε μια ματιά στο %s</string>
     <string name="share_app_body">Ρίξτε μια ματιά στο %1$s Icon Pack στο Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Ρίξτε μια ματιά στο %1$s Icon Pack στο Amazon App Store: %2$s</string>
 
     <!--Πατήστε Εισαγωγή-->
     <string name="tap_intro_home_navigation">Συρτάρι πλοήγησης</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Πατήστε εδώ για λήψη και αποθήκευση ταπετσαρίας στη συσκευή σας, ώστε να μπορείτε να τη χρησιμοποιήσετε αργότερα</string>
     <string name="tap_intro_wallpaper_preview_apply">Εφαρμόστε ταπετσαρία</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Πατήστε εδώ για να ορίσετε την ταπετσαρία ως φόντο της αρχικής οθόνης</string>
+    <string name="tap_intro_navigation_view">Στυλ πλοήγησης</string>
+    <string name="tap_intro_navigation_view_desc">Αλλάξτε μεταξύ πλέγματος πλοήγησης και κάτω πλέγματος πλοήγησης ανάλογα με την προτίμησή σας</string>
 
     <!--Σπίτι-->
     <string name="home_more_apps_header">Περισσότερες εφαρμογές</string>

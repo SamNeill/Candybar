@@ -79,6 +79,7 @@
     <!--Делиться-->
     <string name="share_app_title">Йо! Посмотреть %s</string>
     <string name="share_app_body">Ознакомьтесь с пакетом значков %1$s в магазине Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Ознакомьтесь с пакетом значков %1$s в магазине Amazon App Store: %2$s</string>
 
     <!--Нажмите «Введение»-->
     <string name="tap_intro_home_navigation">Навигационный ящик</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Нажмите здесь, чтобы загрузить и сохранить обои на свое устройство, чтобы использовать их позже.</string>
     <string name="tap_intro_wallpaper_preview_apply">Нанесите обои</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Нажмите здесь, чтобы установить обои в качестве фона рабочего стола.</string>
+    <string name="tap_intro_navigation_view">Стиль навигации</string>
+    <string name="tap_intro_navigation_view_desc">Нажмите здесь, чтобы переключиться между панелью навигации и нижней панелью навигации в зависимости от вашего предпочтения</string>
 
     <!--Дом-->
     <string name="home_more_apps_header">Больше приложений</string>

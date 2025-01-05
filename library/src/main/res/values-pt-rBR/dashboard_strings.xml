@@ -79,6 +79,7 @@
     <!--Compartilhar-->
     <string name="share_app_title">Ei! Confira %s</string>
     <string name="share_app_body">Confira o pacote de ícones %1$s na Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Confira o pacote de ícones %1$s na Amazon App Store: %2$s</string>
 
     <!--Toque em Introdução-->
     <string name="tap_intro_home_navigation">Gaveta de navegação</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Toque aqui para baixar e salvar o papel de parede no seu dispositivo para poder usá-lo mais tarde</string>
     <string name="tap_intro_wallpaper_preview_apply">Aplicar papel de parede</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Toque aqui para definir o papel de parede como plano de fundo da tela inicial</string>
+    <string name="tap_intro_navigation_view">Estilo de navegação</string>
+    <string name="tap_intro_navigation_view_desc">Switch entre o painel de navegação e a barra de navegação inferior conforme sua preferência</string>
 
     <!--Lar-->
     <string name="home_more_apps_header">Mais aplicativos</string>

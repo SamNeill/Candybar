@@ -79,6 +79,7 @@
     <!--பகிரவும்-->
     <string name="share_app_title">யோ! %sஐப் பார்க்கவும்</string>
     <string name="share_app_body">Play Store இல் %1$s ஐகான் பேக்கைப் பார்க்கவும்: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store இல் %1$s ஐகான் பேக்கைப் பார்க்கவும்: %2$s</string>
 
     <!--அறிமுகத்தைத் தட்டவும்-->
     <string name="tap_intro_home_navigation">வழிசெலுத்தல் டிராயர்</string>
@@ -106,7 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">உங்கள் சாதனத்தில் வால்பேப்பரைப் பதிவிறக்கிச் சேமிக்க, இங்கே தட்டவும், பின்னர் அதைப் பயன்படுத்தலாம்</string>
     <string name="tap_intro_wallpaper_preview_apply">வால்பேப்பரைப் பயன்படுத்துங்கள்</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">முகப்புத் திரையின் பின்னணியாக வால்பேப்பரை அமைக்க இங்கே தட்டவும்</string>
-
+    <string name="tap_intro_navigation_view">நடத்தை வடிவம்</string>
+    <string name="tap_intro_navigation_view_desc">நடத்தை டிராயரைத் திறக்க, இங்கே தட்டவும் அல்லது திரையின் இடது விளிம்பிலிருந்து ஸ்வைப் செய்யவும்</string>
     <!--வீடு-->
     <string name="home_more_apps_header">மேலும் பயன்பாடுகள்</string>
     <string name="home_more_apps">கூகுள் ப்ளே ஸ்டோரில் மேலும் ஐகான் பேக் பார்க்கவும்</string>

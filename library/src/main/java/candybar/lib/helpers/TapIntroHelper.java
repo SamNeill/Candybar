@@ -261,9 +261,9 @@ public class TapIntroHelper {
                         // Use Material You colors
                         titleColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
                         descriptionColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
-                        circleColorInner = ColorHelper.getAttributeColor(context, com.google.android.material.R.attr.colorSurface);
+                        circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
                         circleColorOuter = ColorHelper.setColorAlpha(
-                                ColorHelper.getAttributeColor(context, com.google.android.material.R.attr.colorSurface),
+                                ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
                                 0.3f
                         );
                     } else {
@@ -822,6 +822,84 @@ public class TapIntroHelper {
                             public void onTargetDismissed(TapTargetView view, boolean userInitiated) {
                                 super.onTargetDismissed(view, userInitiated);
                                 Preferences.get(context).setTimeToShowRequestSearchIntro(false);
+                            }
+
+                            @Override
+                            public void onOuterCircleClick(TapTargetView view) {
+                                super.onOuterCircleClick(view);
+                                view.dismiss(true);
+                            }
+
+                            @Override
+                            public void onTargetClick(TapTargetView view) {
+                                super.onTargetClick(view);
+                                view.dismiss(true);
+                            }
+                        });
+            }
+        } catch (Exception e) {
+            LogUtil.e(Log.getStackTraceString(e));
+        }
+    }
+
+    public static void showNavigationViewIntro(@NonNull Context context, @NonNull View navigationToggle) {
+        AppCompatActivity activity = (AppCompatActivity) context;
+
+        try {
+            int titleColor;
+            int descriptionColor;
+            int circleColorInner;
+            int circleColorOuter;
+
+            if (Preferences.get(context).isMaterialYou()) {
+                // Use Material You colors
+                titleColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
+                descriptionColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
+                circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
+                circleColorOuter = ColorHelper.setColorAlpha(
+                        ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
+                        0.3f
+                );
+            } else {
+                // Use theme accent colors
+                titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+                descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+                circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
+                circleColorOuter = ColorHelper.setColorAlpha(
+                        ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
+                        0.3f
+                );
+            }
+
+            Typeface title = TypefaceHelper.getMedium(context);
+
+            float circleScale = 45.0f / context.getResources().getInteger(R.integer.tap_intro_circle_scale_percent);
+            float targetRadius = (toDp(context, navigationToggle.getMeasuredWidth()) - 15f) * circleScale;
+
+            TapTarget tapTarget = TapTarget.forView(navigationToggle,
+                            context.getResources().getString(R.string.tap_intro_navigation_view),
+                            context.getResources().getString(R.string.tap_intro_navigation_view_desc))
+                    .titleTextColorInt(titleColor)
+                    .descriptionTextColorInt(descriptionColor)
+                    .targetCircleColorInt(circleColorInner)
+                    .outerCircleColorInt(circleColorOuter)
+                    .targetRadius((int) targetRadius)
+                    .cancelable(true)
+                    .tintTarget(false)
+                    .dimColor(android.R.color.black)
+                    .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
+
+            if (title != null) {
+                tapTarget.textTypeface(title);
+            }
+
+            if (!activity.isFinishing()) {
+                TapTargetView.showFor(activity, tapTarget,
+                        new TapTargetView.Listener() {
+                            @Override
+                            public void onTargetDismissed(TapTargetView view, boolean userInitiated) {
+                                super.onTargetDismissed(view, userInitiated);
+                                Preferences.get(context).setTimeToShowNavigationViewIntro(false);
                             }
 
                             @Override

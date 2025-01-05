@@ -79,6 +79,7 @@
     <!--Paylaşmak-->
     <string name="share_app_title">Hey! %s\'e göz atın</string>
     <string name="share_app_body">Play Store\'daki %1$s Simge Paketine göz atın: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store\'daki %1$s Simge Paketine göz atın: %2$s</string>
 
     <!--Giriş\'e dokunun-->
     <string name="tap_intro_home_navigation">Gezinme çekmecesi</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Daha sonra kullanabilmek amacıyla duvar kağıdını cihazınıza indirip kaydetmek için buraya dokunun</string>
     <string name="tap_intro_wallpaper_preview_apply">Duvar kağıdını uygula</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Duvar kağıdını ana ekranın arka planı olarak ayarlamak için buraya dokunun</string>
+    <string name="tap_intro_navigation_view">Navigasyon Stili</string>
+    <string name="tap_intro_navigation_view_desc">Navigasyon çubuğunu veya navigasyon çubuğunu aşağıda seçtiğiniz gibi değiştirin</string>
 
     <!--Ev-->
     <string name="home_more_apps_header">Daha Fazla Uygulama</string>

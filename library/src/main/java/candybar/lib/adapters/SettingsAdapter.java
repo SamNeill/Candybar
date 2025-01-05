@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
 import android.util.TypedValue;
@@ -55,6 +57,7 @@ import candybar.lib.preferences.Preferences;
 import candybar.lib.tasks.IconRequestTask;
 import candybar.lib.utils.listeners.InAppBillingListener;
 import candybar.lib.helpers.ToastHelper;
+import candybar.lib.helpers.TapIntroHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -169,6 +172,13 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
                 contentViewHolder.materialSwitch.setChecked(isBottomNav);
                 contentViewHolder.updateSwitchAppearance();
+                
+                // Show navigation intro if needed
+                if (Preferences.get(mContext).isTimeToShowNavigationViewIntro()) {
+                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                        TapIntroHelper.showNavigationViewIntro(mContext, contentViewHolder.materialSwitch);
+                    }, 100);
+                }
             }
         }
     }
@@ -576,6 +586,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         Preferences.get(mContext).setTimeToShowRequestIntro(true);
                         Preferences.get(mContext).setTimeToShowWallpapersIntro(true);
                         Preferences.get(mContext).setTimeToShowWallpaperPreviewIntro(true);
+                        Preferences.get(mContext).setTimeToShowNavigationViewIntro(true);
                         
                         // Set intro reset last to trigger the home fragment to show intro
                         Preferences.get(mContext).setIntroReset(true);

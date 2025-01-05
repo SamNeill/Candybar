@@ -79,6 +79,7 @@
     <!--Részesedés-->
     <string name="share_app_title">Jaj! Nézze meg: %s</string>
     <string name="share_app_body">Tekintse meg a %1$s ikoncsomagot a Play Áruházban: %2$s</string>
+    <string name="share_app_body_amazon">Tekintse meg a %1$s Icon Pack a Amazon App Store-ban: %2$s</string>
 
     <!--Koppintson az Intro elemre-->
     <string name="tap_intro_home_navigation">Navigációs fiók</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Koppintson ide a háttérkép letöltéséhez és mentéséhez, hogy később felhasználhassa</string>
     <string name="tap_intro_wallpaper_preview_apply">Alkalmazzon háttérképet</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Koppintson ide a háttérkép beállításához a kezdőképernyő háttereként</string>
+    <string name="tap_intro_navigation_view">Navigációs stílus</string>
+    <string name="tap_intro_navigation_view_desc">Válassza ki a navigációs stílust a kezdőképernyőn</string>
 
     <!--Otthon-->
     <string name="home_more_apps_header">További alkalmazások</string>

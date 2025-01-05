@@ -237,7 +237,7 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
                     ((TextView) item.findViewById(R.id.name)).setText(requiredApp[0]);
                     int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
                     ((ImageView) item.findViewById(R.id.kustom_icon)).setImageDrawable(
-                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_drawer_presets, color));
+                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_toolbar_presets, color));
                     item.setOnClickListener(v -> {
                         try {
                             Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(

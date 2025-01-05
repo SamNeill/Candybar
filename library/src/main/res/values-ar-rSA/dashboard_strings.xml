@@ -79,6 +79,7 @@
     <!--يشارك-->
     <string name="share_app_title">يو! تحقق من %s</string>
     <string name="share_app_body">اطلع على %1$s Icon Pack على متجر Play: %2$s</string>
+    <string name="share_app_body_amazon">اطلع على %1$s Icon Pack على متجر تطبيقات أمازون: %2$s</string>
 
     <!--اضغط على مقدمة-->
     <string name="tap_intro_home_navigation">درج التنقل</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">انقر هنا لتنزيل الخلفية وحفظها على جهازك حتى تتمكن من استخدامها لاحقًا</string>
     <string name="tap_intro_wallpaper_preview_apply">تطبيق ورق الجدران</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">انقر هنا لتعيين خلفية الشاشة كخلفية للشاشة الرئيسية</string>
+    <string name="tap_intro_navigation_view">نمط التنقل</string>
+    <string name="tap_intro_navigation_view_desc">تبديل بين الشريط الجانبي للتنقل والشريط التنقل السفلي حسب الرغبة</string>
 
     <!--بيت-->
     <string name="home_more_apps_header">المزيد من التطبيقات</string>

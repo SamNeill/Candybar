@@ -79,6 +79,7 @@
     <!--শেয়ার করুন-->
     <string name="share_app_title">ইয়ো! %s দেখুন</string>
     <string name="share_app_body">প্লে স্টোরে %1$s আইকন প্যাক দেখুন: %2$s</string>
+    <string name="share_app_body_amazon">প্লে স্টোরে %1$s আইকন প্যাক দেখুন: %2$s</string>
 
     <!--ভূমিকা আলতো চাপুন-->
     <string name="tap_intro_home_navigation">নেভিগেশন ড্রয়ার</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">আপনার ডিভাইসে ওয়ালপেপার ডাউনলোড এবং সংরক্ষণ করতে এখানে আলতো চাপুন যাতে আপনি এটি পরে ব্যবহার করতে পারেন</string>
     <string name="tap_intro_wallpaper_preview_apply">ওয়ালপেপার প্রয়োগ করুন</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">হোমস্ক্রিন ব্যাকগ্রাউন্ড হিসাবে ওয়ালপেপার সেট করতে এখানে আলতো চাপুন</string>
+    <string name="tap_intro_navigation_view">নাভিগেশন স্টাইল</string>
+    <string name="tap_intro_navigation_view_desc">নাভিগেশন ড্রয়ার এবং নিচের নাভিগেশন বারের মধ্যে স্থানান্তরিত করুন যাতে আপনার প্রিয়তার অনুসরণ করুন</string>
 
     <!--বাড়ি-->
     <string name="home_more_apps_header">আরও অ্যাপ</string>

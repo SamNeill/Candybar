@@ -79,6 +79,7 @@
     <!--Partager-->
     <string name="share_app_title">Yo! Découvrez %s</string>
     <string name="share_app_body">Découvrez le pack d\'icônes %1$s sur Play Store : %2$s</string>
+    <string name="share_app_body_amazon">Découvrez le pack d\'icônes %1$s sur Amazon App Store : %2$s</string>
 
     <!--Appuyez sur Introduction-->
     <string name="tap_intro_home_navigation">Tiroir de navigation</string>
@@ -106,6 +107,9 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Appuyez ici pour télécharger et enregistrer le fond d\'écran sur votre appareil afin de pouvoir l\'utiliser plus tard.</string>
     <string name="tap_intro_wallpaper_preview_apply">Appliquer du papier peint</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Appuyez ici pour définir le fond d\'écran comme arrière-plan de l\'écran d\'accueil</string>
+    <string name="tap_intro_navigation_view">Style de navigation</string>
+    <string name="tap_intro_navigation_view_desc">Switch entre le panneau de navigation et la barre de navigation inférieure en fonction de votre préférence</string>
+
 
     <!--Maison-->
     <string name="home_more_apps_header">Plus d\'applications</string>

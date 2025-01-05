@@ -79,6 +79,7 @@
     <!--Aktie-->
     <string name="share_app_title">Yo! Schauen Sie sich %s an</string>
     <string name="share_app_body">Schauen Sie sich das %1$s Icon Pack im Play Store an: %2$s</string>
+    <string name="share_app_body_amazon">Schauen Sie sich das %1$s Icon Pack im Amazon App Store an: %2$s</string>
 
     <!--Tippen Sie auf Einführung-->
     <string name="tap_intro_home_navigation">Navigationsschublade</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tippen Sie hier, um das Hintergrundbild herunterzuladen und auf Ihrem Gerät zu speichern, damit Sie es später verwenden können</string>
     <string name="tap_intro_wallpaper_preview_apply">Tapete anbringen</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tippen Sie hier, um das Hintergrundbild als Homescreen-Hintergrund festzulegen</string>
+    <string name="tap_intro_navigation_view">Navigationsstil</string>
+    <string name="tap_intro_navigation_view_desc">Wechseln Sie zwischen Navigationsschublade und unterer Navigationsleiste, je nach Ihrer Vorliebe</string>
 
     <!--Heim-->
     <string name="home_more_apps_header">Weitere Apps</string>

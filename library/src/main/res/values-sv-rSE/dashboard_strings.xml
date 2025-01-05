@@ -79,6 +79,7 @@
     <!--Dela-->
     <string name="share_app_title">Yo! Kolla in %s</string>
     <string name="share_app_body">Kolla in %1$s Icon Pack på Play Butik: %2$s</string>
+    <string name="share_app_body_amazon">Kolla in %1$s Icon Pack på Amazon App Store: %2$s</string>
 
     <!--Tryck på Intro-->
     <string name="tap_intro_home_navigation">Navigationslåda</string>
@@ -106,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tryck här för att ladda ner och spara bakgrundsbilder till din enhet så att du kan använda den senare</string>
     <string name="tap_intro_wallpaper_preview_apply">Applicera tapeter</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tryck här för att ställa in bakgrunden som bakgrund på startskärmen</string>
+    <string name="tap_intro_navigation_view">Navigeringstil</string>
+    <string name="tap_intro_navigation_view_desc">Switch mellan navigeringsskuff och nedre navigeringsbalk beroende på din likhet</string>
 
     <!--Hem-->
     <string name="home_more_apps_header">Fler appar</string>
