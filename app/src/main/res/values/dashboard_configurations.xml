@@ -111,7 +111,7 @@
 
     <!--Update Json -->
     <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
-    
+
     <!-- CONFIG: MISC -->
     <bool name="show_intro">true</bool>
     <bool name="use_legacy_intro_colors">true</bool>
@@ -123,5 +123,8 @@
     <!-- Set to true to use bottom navigation by default, false for sidebar navigation -->
     <bool name="enable_bottom_navigation">true</bool>
 
+    <!-- CONFIG: NAVIGATION -->
+    <!-- Enable/disable navigation toggle in settings -->
+    <bool name="enable_navigation_toggle">true</bool>
 
 </resources>
