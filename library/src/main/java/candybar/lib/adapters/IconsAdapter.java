@@ -5,7 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.content.Context;
 import android.util.TypedValue;
-import android.util.Log;
 import android.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -32,13 +31,10 @@ import com.google.android.material.tabs.TabLayout;
 import me.zhanghai.android.fastscroll.PopupTextProvider;
 
 import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Arrays;
 
 import candybar.lib.R;
 import candybar.lib.applications.CandyBarApplication;
@@ -221,7 +217,6 @@ public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.ViewHolder> 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(
                 R.layout.fragment_icons_item_grid, parent, false);
-        Log.d("IconsAdapter", "ViewHolder created");
         return new ViewHolder(view);
     }
 
@@ -230,7 +225,6 @@ public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.ViewHolder> 
         Icon icon = mIcons.get(position);
         holder.name.setText(icon.getTitle());
         loadIconInto(holder.icon, position);
-        Log.d("IconsAdapter", "ViewHolder bound for position: " + position);
         if (mIsBookmarkMode) {
             holder.setCheckChangedListener(null);
             holder.setChecked(mSelectedIcons.contains(icon), false);
@@ -358,18 +352,8 @@ public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.ViewHolder> 
                 if (actionMode != null) {
                     setChecked(!isChecked, true);
                 } else {
-                    // Log click event
-                    Log.d("IconsAdapter", "Container clicked at position: " + position);
-                    // Get new random icons
-                    List<String> randomIcons = getRandomIconResources();
-                    // Update the icons list
-                    if (!randomIcons.isEmpty()) {
-                        String iconName = randomIcons.get(0);
-                        int resId = mContext.getResources().getIdentifier(iconName, "drawable", mContext.getPackageName());
-                        Icon newIcon = new Icon(iconName, resId, "");
-                        mIcons.set(position, newIcon);
-                        notifyItemChanged(position);
-                    }
+                    SoftKeyboardHelper.closeKeyboard(mContext);
+                    IconsHelper.selectIcon(mContext, IntentHelper.sAction, mIcons.get(position));
                 }
             }
         }
@@ -450,37 +434,5 @@ public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.ViewHolder> 
             return name.substring(0, 1);
         }
         return "";
-    }
-
-    private List<String> getRandomIconResources() {
-        List<String> iconList = new ArrayList<>();
-        try {
-            // Try to get icons_preview from app module first
-            int appPreviewId = mContext.getResources().getIdentifier("icons_preview", "array", mContext.getPackageName());
-            if (appPreviewId != 0) {
-                String[] appIcons = mContext.getResources().getStringArray(appPreviewId);
-                iconList.addAll(Arrays.asList(appIcons));
-            }
-
-            // If no icons found in app module, try library's icons_preview
-            if (iconList.isEmpty()) {
-                int libraryPreviewId = mContext.getResources().getIdentifier("icons_preview", "array", "candybar.lib");
-                if (libraryPreviewId != 0) {
-                    String[] libraryIcons = mContext.getResources().getStringArray(libraryPreviewId);
-                    iconList.addAll(Arrays.asList(libraryIcons));
-                }
-            }
-
-            // If still no icons found, use blank preview
-            if (iconList.isEmpty()) {
-                iconList.add("");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            // Safety fallback - use blank preview
-            iconList.add("");
-        }
-        
-        return iconList;
     }
 }
