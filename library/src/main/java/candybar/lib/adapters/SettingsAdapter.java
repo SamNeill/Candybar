@@ -142,7 +142,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
 
                 if (setting.getIcon() != -1) {
-                    int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                    int color = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
                     contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
                             DrawableHelper.getTintedDrawable(mContext, setting.getIcon(), color), null, null, null);
                 }
@@ -215,6 +215,10 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             container = itemView.findViewById(R.id.container);
             materialSwitch = itemView.findViewById(R.id.switch_key);
             mContext = itemView.getContext();
+            
+            // Set footer text color to accent
+            footer.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+            
             updateSwitchAppearance();
 
             container.setOnClickListener(this);

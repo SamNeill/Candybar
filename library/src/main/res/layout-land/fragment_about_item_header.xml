@@ -193,6 +193,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
                     app:cardBackgroundColor="?cb_cardBackground"
                     app:cardCornerRadius="32dp"
                     app:cardElevation="@dimen/card_elevation"
@@ -287,91 +289,129 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sam_summer_title"
-                    android:textColor="?attr/cb_colorAccent"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginBottom="16dp"
-                    app:fontFamily="@font/medium" />
-
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/sam_summer_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
                     app:cardBackgroundColor="?cb_cardBackground"
-                    app:cardCornerRadius="32dp"
+                    app:cardCornerRadius="48dp"
                     app:cardElevation="@dimen/card_elevation"
                     app:strokeColor="?cb_cardStroke">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/sam_summer_description"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:padding="16dp"
-                        android:lineSpacingExtra="4dp"
-                        app:fontFamily="@font/medium" />
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="8dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/ic_drawer_sam"
+                                android:layout_marginEnd="12dp"
+                                app:tint="?attr/cb_colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sam_summer_title"
+                                android:textAlignment="textStart"
+                                android:gravity="start"
+                                android:textColor="?attr/cb_colorAccent"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/medium" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            app:cardBackgroundColor="?cb_cardBackground"
+                            app:cardCornerRadius="32dp"
+                            app:cardElevation="@dimen/card_elevation"
+                            app:strokeColor="?cb_cardStroke">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sam_summer_description"
+                                android:textColor="?android:attr/textColorPrimary"
+                                android:textSize="14sp"
+                                android:padding="16dp"
+                                android:lineSpacingExtra="4dp"
+                                app:fontFamily="@font/regular"
+                                android:textIsSelectable="true" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="16dp"
+                            android:clipToPadding="false"
+                            android:clipChildren="false"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp">
+
+                            <TextView
+                                android:id="@+id/candybar_by_sam_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/candybar_by_sam"
+                                android:textColor="?android:attr/textColorPrimary"
+                                android:textSize="14sp"
+                                android:textIsSelectable="true" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/sam_github_button"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                app:cardBackgroundColor="?cb_cardBackground"
+                                app:cardCornerRadius="@dimen/card_corner_radius"
+                                app:cardElevation="@dimen/card_elevation"
+                                app:strokeColor="?cb_cardStroke">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_toolbar_github"
+                                    android:scaleType="fitCenter"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="?attr/cb_colorAccent" />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="16dp"
-                    android:clipToPadding="false"
-                    android:clipChildren="false"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp">
-
-                    <TextView
-                        android:id="@+id/candybar_by_sam_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="@string/candybar_by_sam"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="14sp"
-                        android:textIsSelectable="true" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/sam_github_button"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginEnd="4dp"
-                        android:layout_marginBottom="4dp"
-                        app:cardBackgroundColor="?cb_cardBackground"
-                        app:cardCornerRadius="@dimen/card_corner_radius"
-                        app:cardElevation="@dimen/card_elevation"
-                        app:strokeColor="?cb_cardStroke">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_toolbar_github"
-                            android:scaleType="fitCenter"
-                            android:background="?attr/selectableItemBackgroundBorderless"
-                            app:tint="?attr/cb_colorAccent" />
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -411,6 +451,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
                     app:cardBackgroundColor="?cb_cardBackground"
                     app:cardCornerRadius="32dp"
                     app:cardElevation="@dimen/card_elevation"

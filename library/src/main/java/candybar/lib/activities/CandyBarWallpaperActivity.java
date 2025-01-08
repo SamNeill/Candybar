@@ -148,7 +148,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         mProgress.getIndeterminateDrawable().setColorFilter(
                 Color.parseColor("#CCFFFFFF"), PorterDuff.Mode.SRC_IN);
         mBack.setImageDrawable(DrawableHelper.getTintedDrawable(
-                this, R.drawable.ic_toolbar_back, Color.WHITE));
+                this, R.drawable.ic_toolbar_back, ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent)));
         mBack.setOnClickListener(this);
 
         String url = "";
@@ -435,13 +435,13 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
     private void initBottomBar() {
         mName.setText(mWallpaper.getName());
-        mName.setTextColor(Color.WHITE);
+        mName.setTextColor(ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent));
         mAuthor.setText(mWallpaper.getAuthor());
         mAuthor.setTextColor(ColorHelper.setColorAlpha(Color.WHITE, 0.7f));
         mMenuSave.setImageDrawable(DrawableHelper.getTintedDrawable(
-                this, R.drawable.ic_toolbar_download, Color.WHITE));
+                this, R.drawable.ic_toolbar_download, ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent)));
         mMenuApply.setImageDrawable(DrawableHelper.getTintedDrawable(
-                this, R.drawable.ic_toolbar_apply_options, Color.WHITE));
+                this, R.drawable.ic_toolbar_apply_options, ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent)));
 
         if (getResources().getBoolean(R.bool.enable_wallpaper_download)) {
             mMenuSave.setVisibility(View.VISIBLE);
