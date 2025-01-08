@@ -562,17 +562,17 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             if (isSelected) {
                 mSelectedItems.delete(originalPosition);
                 toggleListener.onPositiveResult();
-                // Only hide FAB if no items are selected AND we're in search mode
-                if (getSelectedItemsSize() == 0 && mFilteredRequests.size() != mRequests.size()) {
-                    try {
-                        if (mContext instanceof CandyBarMainActivity) {
-                            FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                            if (fab != null) {
+                notifySelectionChanged();
+                try {
+                    if (mContext instanceof CandyBarMainActivity) {
+                        FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
+                        if (fab != null) {
+                            if (getSelectedItemsSize() == 0) {
                                 fab.hide();
                             }
                         }
-                    } catch (Exception ignored) {
                     }
+                } catch (Exception ignored) {
                 }
             } else if (isRequested) {
                 if (isDuplicateRequestAllowed) {

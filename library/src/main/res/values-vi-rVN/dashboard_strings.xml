@@ -391,4 +391,12 @@
     <!--Tìm kiếm-->
     <string name="search_apps">Tìm kiếm ứng dụng</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Ứng dụng này được hỗ trợ bởi <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, một bảng điều khiển mã nguồn mở sáng tạo ban đầu được tạo ra bởi <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> và nhóm của anh ấy.\n\nĐặc biệt cảm ơn <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> và nhóm của anh ấy đã đóng góp vào sự phát triển của <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, mang đến những cải tiến làm phong phú thêm khả năng của nó. Hơn nữa, cam kết của Sarsa trong việc duy trì liên tục <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> đảm bảo rằng nó luôn được cập nhật và hiệu quả.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Cảm ơn đặc biệt tới <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> &amp; <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Tôi là một nhà thiết kế đầy nhiệt huyết và đầy khát vọng! Tôi tạo ra các gói biểu tượng và thành phần thời tiết KWGT và yêu thích tùy biến Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar bởi <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

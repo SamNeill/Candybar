@@ -128,6 +128,93 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                                 : DiskCacheStrategy.RESOURCE)
                         .into(headerViewHolder.profile);
             }
+
+            // Set version text and app icon
+            if (headerViewHolder.appVersion != null) {
+                try {
+                    String versionName = mContext.getPackageManager()
+                            .getPackageInfo(mContext.getPackageName(), 0).versionName;
+                    int versionCode = mContext.getPackageManager()
+                            .getPackageInfo(mContext.getPackageName(), 0).versionCode;
+                    headerViewHolder.appVersion.setText(versionName + " (" + versionCode + ")");
+
+                    // Load app icon
+                    ImageView appIcon = headerViewHolder.itemView.findViewById(R.id.app_icon);
+                    if (appIcon != null) {
+                        try {
+                            appIcon.setImageDrawable(mContext.getPackageManager().getApplicationIcon(mContext.getPackageName()));
+                        } catch (Exception e) {
+                            appIcon.setVisibility(View.GONE);
+                        }
+                    }
+                } catch (Exception e) {
+                    headerViewHolder.appVersion.setVisibility(View.GONE);
+                }
+            }
+
+            // Set description text with HTML formatting
+            if (headerViewHolder.description != null) {
+                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                String description = String.format(mContext.getString(R.string.candybar_description), colorHex);
+                
+                headerViewHolder.description.setText(HtmlCompat.fromHtml(
+                    description,
+                    HtmlCompat.FROM_HTML_MODE_LEGACY));
+                headerViewHolder.description.setMovementMethod(LinkMovementMethod.getInstance());
+                headerViewHolder.description.setLinkTextColor(accentColor);
+            }
+
+            // Set special thanks text with HTML formatting
+            if (headerViewHolder.specialThanks != null) {
+                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                String specialThanks = String.format(mContext.getString(R.string.candybar_special_thanks), colorHex);
+                
+                headerViewHolder.specialThanks.setText(HtmlCompat.fromHtml(
+                    specialThanks,
+                    HtmlCompat.FROM_HTML_MODE_LEGACY));
+                headerViewHolder.specialThanks.setMovementMethod(LinkMovementMethod.getInstance());
+                headerViewHolder.specialThanks.setLinkTextColor(accentColor);
+            }
+
+            // Set up GitHub button click listeners
+            if (headerViewHolder.originalGithubButton != null) {
+                headerViewHolder.originalGithubButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/danimahardhika/candybar-library"));
+                    mContext.startActivity(intent);
+                });
+            }
+
+            if (headerViewHolder.currentGithubButton != null) {
+                headerViewHolder.currentGithubButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zixpo/candybar"));
+                    mContext.startActivity(intent);
+                });
+            }
+
+            // Set up Sam's GitHub button click listener
+            MaterialCardView samGithubButton = headerViewHolder.itemView.findViewById(R.id.sam_github_button);
+            if (samGithubButton != null) {
+                samGithubButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SamNeill"));
+                    mContext.startActivity(intent);
+                });
+            }
+
+            // Set up Sam's section
+            TextView samText = headerViewHolder.itemView.findViewById(R.id.candybar_by_sam_text);
+            if (samText != null) {
+                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                String text = String.format(mContext.getString(R.string.candybar_by_sam), colorHex);
+                
+                samText.setText(HtmlCompat.fromHtml(
+                    text,
+                    HtmlCompat.FROM_HTML_MODE_LEGACY));
+                samText.setMovementMethod(LinkMovementMethod.getInstance());
+                samText.setLinkTextColor(accentColor);
+            }
         }
     }
 
@@ -145,11 +232,26 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         private final ImageView image;
         private final ImageView profile;
+        private final MaterialCardView originalGithubButton;
+        private final MaterialCardView currentGithubButton;
+        private final TextView appVersion;
+        private final TextView description;
+        private final TextView specialThanks;
+        private final MaterialCardView privacyPolicyButton;
+        private final MaterialCardView termsButton;
 
         HeaderViewHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.image);
             profile = itemView.findViewById(R.id.profile);
+            originalGithubButton = itemView.findViewById(R.id.original_github_button);
+            currentGithubButton = itemView.findViewById(R.id.current_github_button);
+            appVersion = itemView.findViewById(R.id.app_version);
+            description = itemView.findViewById(R.id.candybar_description);
+            specialThanks = itemView.findViewById(R.id.special_thanks);
+            privacyPolicyButton = itemView.findViewById(R.id.privacy_policy_button);
+            termsButton = itemView.findViewById(R.id.terms_conditions_button);
+
             TextView subtitle = itemView.findViewById(R.id.subtitle);
             RecyclerView recyclerView = itemView.findViewById(R.id.recyclerview);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -190,44 +292,44 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             subtitle.setMovementMethod(LinkMovementMethod.getInstance());
             subtitle.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText));
 
-            MaterialCardView privacyPolicyButton = itemView.findViewById(R.id.privacy_policy_button);
-            String privacyLink = mContext.getResources().getString(R.string.privacy_policy_link);
-            
-            if (privacyLink == null || privacyLink.trim().isEmpty()) {
-                privacyPolicyButton.setVisibility(View.GONE);
-            } else {
-                privacyPolicyButton.setVisibility(View.VISIBLE);
-                privacyPolicyButton.setOnClickListener(v -> {
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(privacyLink));
-                    try {
-                        mContext.startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        Toast.makeText(mContext, 
-                            R.string.no_browser, 
-                            Toast.LENGTH_LONG).show();
-                    }
-                });
+            if (privacyPolicyButton != null) {
+                String privacyLink = mContext.getResources().getString(R.string.privacy_policy_link);
+                if (privacyLink == null || privacyLink.trim().isEmpty()) {
+                    privacyPolicyButton.setVisibility(View.GONE);
+                } else {
+                    privacyPolicyButton.setVisibility(View.VISIBLE);
+                    privacyPolicyButton.setOnClickListener(v -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(privacyLink));
+                        try {
+                            mContext.startActivity(intent);
+                        } catch (ActivityNotFoundException e) {
+                            Toast.makeText(mContext, 
+                                R.string.no_browser, 
+                                Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
             }
 
-            MaterialCardView termsButton = itemView.findViewById(R.id.terms_conditions_button);
-            String termsLink = ConfigurationHelper.getTermsAndConditionsLink(mContext);
-            
-            if (termsLink == null || termsLink.trim().isEmpty()) {
-                termsButton.setVisibility(View.GONE);
-            } else {
-                termsButton.setVisibility(View.VISIBLE);
-                termsButton.setOnClickListener(v -> {
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(termsLink));
-                    try {
-                        mContext.startActivity(intent);
-                    } catch (ActivityNotFoundException e) {
-                        Toast.makeText(mContext, 
-                            R.string.no_browser, 
-                            Toast.LENGTH_LONG).show();
-                    }
-                });
+            if (termsButton != null) {
+                String termsLink = ConfigurationHelper.getTermsAndConditionsLink(mContext);
+                if (termsLink == null || termsLink.trim().isEmpty()) {
+                    termsButton.setVisibility(View.GONE);
+                } else {
+                    termsButton.setVisibility(View.VISIBLE);
+                    termsButton.setOnClickListener(v -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(termsLink));
+                        try {
+                            mContext.startActivity(intent);
+                        } catch (ActivityNotFoundException e) {
+                            Toast.makeText(mContext, 
+                                R.string.no_browser, 
+                                Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
             }
         }
     }

@@ -4,6 +4,7 @@ import static candybar.lib.helpers.DrawableHelper.getDrawableId;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
@@ -526,7 +527,6 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 mPosition = 0;
                 mFragmentTag = Extras.Tag.HOME;
                 setFragment(getFragment(mPosition));
-                return;
             }
         } else {
             // Handle back press for sidebar navigation
@@ -1012,6 +1012,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         TextView title = header.findViewById(R.id.header_title);
         TextView version = header.findViewById(R.id.header_version);
 
+        // Load the header image
+        String imageResource = getResources().getString(R.string.navigation_view_header);
+        if (imageResource.length() > 0) {
+            int resId = getResources().getIdentifier(imageResource, "drawable", getPackageName());
+            if (resId != 0) {
+                image.setImageResource(resId);
+            }
+        }
+
         if (CandyBarApplication.getConfiguration().getNavigationViewHeader() == CandyBarApplication.NavigationViewHeader.MINI) {
             image.setRatio(16, 9);
         }
@@ -1021,8 +1030,8 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         } else {
             title.setText(titleText);
             try {
-                String versionText = "v" + getPackageManager()
-                        .getPackageInfo(getPackageName(), 0).versionName;
+                PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+                String versionText = packageInfo.versionName + "(" + packageInfo.versionCode + ")";
                 version.setText(versionText);
             } catch (Exception ignored) {
             }

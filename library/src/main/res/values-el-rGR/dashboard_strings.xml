@@ -390,5 +390,13 @@
 
     <!--Ερευνα-->
     <string name="search_apps">Αναζήτηση εφαρμογών</string>
+    
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Αυτή η εφαρμογή τροφοδοτείται από το <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, ένας καινοτόμος πίνακας ελέγχου ανοιχτού κώδικα που αρχικά συνέλαβε ο <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> και η ομάδα του.\n\nΙδιαίτερη αναγνώριση οφείλεται στον <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> και την ομάδα του για τη συμβολή τους στην εξέλιξη του <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, παρέχοντας βελτιώσεις που εμπλουτίζουν τις δυνατότητές του. Επιπλέον, η δέσμευση του Sarsa για τη συνεχή συντήρηση του <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> διασφαλίζει ότι παραμένει ενημερωμένο και αποτελεσματικό.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Ιδιαίτερες ευχαριστίες στους <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> & <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Είμαι ένας παθιασμένος δημιουργικός και φιλόδοξος σχεδιαστής! Φτιάχνω πακέτα εικονιδίων και στοιχεία καιρού KWGT και αγαπώ την προσαρμογή Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar από τον <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
 
 </resources>

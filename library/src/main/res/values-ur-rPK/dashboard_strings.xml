@@ -391,4 +391,12 @@
     <!--تلاش کریں۔-->
     <string name="search_apps">ایپس تلاش کریں۔</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">کینڈی بار</string>
+    <string name="candybar_description"><![CDATA[<b>یہ ایپلیکیشن <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">کینڈی بار</font></a> کے ذریعے چلتی ہے، جو ایک جدید اوپن سورس ڈیش بورڈ ہے جسے ابتدائی طور پر <a href="https://github.com/danimahardhika"><font color="%1$s">دانی مہاردھیکا</font></a> اور ان کی ٹیم نے تیار کیا تھا۔\n\n<a href="https://github.com/zixpo"><font color="%1$s">سرسا مرمو</font></a> اور ان کی ٹیم کا خصوصی شکریہ جنہوں نے <a href="https://github.com/zixpo/candybar"><font color="%1$s">کینڈی بار</font></a> کی ترقی میں حصہ ڈالا، اس کی صلاحیتوں کو بڑھانے والی بہتریاں فراہم کیں۔ مزید برآں، سرسا کی <a href="https://github.com/zixpo/candybar"><font color="%1$s">کینڈی بار</font></a> کی مسلسل دیکھ بھال کے لیے عزم یہ یقینی بناتا ہے کہ یہ اپ ٹو ڈیٹ اور موثر رہے۔</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b><a href="https://github.com/danimahardhika"><font color="%1$s">دانی</font></a> اور <a href="https://github.com/zixpo"><font color="%1$s">سرسا</font></a> کا خصوصی شکریہ</b>]]></string>
+    <string name="sam_summer_title">سام سمر</string>
+    <string name="sam_summer_description">میں ایک جذباتی تخلیقی اور نوجوان ڈیزائنر ہوں! میں آئیکن پیکس اور KWGT موسمی کمپوننٹس بناتا ہوں اور اینڈرائیڈ کسٹمائزیشن سے محبت کرتا ہوں</string>
+    <string name="candybar_by_sam"><![CDATA[کینڈی بار از <a href="https://github.com/SamNeill"><font color="%1$s">سام سمر</font></a>]]></string>
+
 </resources>

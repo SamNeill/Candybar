@@ -24,8 +24,8 @@ android {
         applicationId 'com.candybar.dev'
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 209
-        versionName "2.0.9"
+        versionCode 210
+        versionName "2.1.0"
 
         // Naming app bundles
         setArchivesBaseName("${parent.name}-v${defaultConfig.versionName}")
@@ -45,8 +45,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     buildFeatures {

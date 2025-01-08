@@ -391,4 +391,12 @@
     <!--Søk-->
     <string name="search_apps">Søk etter apper</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Denne applikasjonen drives av <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, et innovativt åpen kildekode-dashbord som opprinnelig ble utviklet av <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> og teamet hans.\n\nSpesiell anerkjennelse går til <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> og teamet hans for deres bidrag til utviklingen av <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, som har levert forbedringer som beriker funksjonaliteten. Videre sikrer Sarsas engasjement i den løpende vedlikeholdet av <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> at den forblir oppdatert og effektiv.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Spesiell takk til <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> og <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Jeg er en lidenskapelig kreativ og aspirerende designer! Jeg lager ikonpakker og KWGT Weather Komponents og elsker Android-tilpasning</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar av <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

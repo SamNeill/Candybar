@@ -390,4 +390,12 @@
     <!--Căutare-->
     <string name="search_apps">Căutați aplicații</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Această aplicație este alimentată de <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, un tablou de bord inovator open-source conceput inițial de <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> și echipa sa.\n\nO recunoaștere specială se datorează lui <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> și echipei sale pentru contribuția la evoluția <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, aducând îmbunătățiri care îi îmbogățesc capacitățile. În plus, angajamentul lui Sarsa pentru întreținerea continuă a <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> asigură că rămâne actualizat și eficient.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Mulțumiri speciale lui <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> și <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Sunt un creator pasionat și designer aspirant! Fac pachete de pictograme și componente KWGT Weather și iubesc personalizarea Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar de <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

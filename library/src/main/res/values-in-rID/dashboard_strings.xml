@@ -391,4 +391,12 @@
     <!--Mencari-->
     <string name="search_apps">Aplikasi Pencarian</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Aplikasi ini didukung oleh <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, dasbor sumber terbuka inovatif yang awalnya dikonsep oleh <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> dan timnya.\n\nPenghargaan khusus diberikan kepada <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> dan timnya atas kontribusinya dalam evolusi <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, memberikan peningkatan yang memperkaya kemampuannya. Selanjutnya, komitmen Sarsa untuk pemeliharaan berkelanjutan <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> memastikan tetap up-to-date dan efisien.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Terima Kasih Khusus kepada <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> &amp; <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Saya adalah seorang kreatif yang bersemangat dan Desainer yang bercita-cita! Saya membuat paket ikon dan Komponen Cuaca KWGT dan Suka Kustomisasi Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar oleh <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

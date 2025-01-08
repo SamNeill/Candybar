@@ -390,4 +390,12 @@
     <!--Cerca-->
     <string name="search_apps">Cerca aplicacions</string>
 
+    <!--CandyBar-->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Aquesta aplicació funciona amb <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, un innovador tauler de control de codi obert originalment concebut per <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> i el seu equip.\n\nUn agraïment especial a <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> i el seu equip per la seva contribució a l\'evolució de <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, aportant millores que n\'enriqueixen les capacitats. A més, el compromís de Sarsa amb el manteniment continu de <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> garanteix que es mantingui actualitzat i eficaç.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Un agraïment especial a <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> i <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Sóc un creatiu apassionat i dissenyador aspirant! Faig paquets d\'icones i components meteorològics KWGT i m\'encanta la personalització d\'Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar per <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

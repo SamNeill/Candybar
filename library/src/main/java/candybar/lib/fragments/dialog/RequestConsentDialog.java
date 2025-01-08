@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
@@ -84,6 +85,17 @@ public class RequestConsentDialog extends DialogFragment {
 
         if (dialog.getWindow() != null) {
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+            Window window = dialog.getWindow();
+            if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                window.setLayout((int)(getResources().getDisplayMetrics().widthPixels * 0.5),
+                               WindowManager.LayoutParams.WRAP_CONTENT);
+            } else {
+                window.setLayout((int)(getResources().getDisplayMetrics().widthPixels * 0.85),
+                               WindowManager.LayoutParams.WRAP_CONTENT);
+            }
+            
+            // Center the dialog
+            window.setGravity(android.view.Gravity.CENTER);
         }
 
         return dialog;

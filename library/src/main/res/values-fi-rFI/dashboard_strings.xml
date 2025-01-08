@@ -391,4 +391,12 @@
     <!--Haku-->
     <string name="search_apps">Hae sovelluksia</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Tämä sovellus toimii <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>-ohjelmistolla, innovatiivisella avoimen lähdekoodin kojelaudalla, jonka alun perin kehitti <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> ja hänen tiiminsä.\n\nErityiskiitos kuuluu <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmulle</font></a> ja hänen tiimilleen <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBarin</font></a> kehittämisestä ja sen ominaisuuksien rikastuttamisesta. Lisäksi Sarsan sitoutuminen <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBarin</font></a> jatkuvaan ylläpitoon varmistaa, että se pysyy ajan tasalla ja tehokkaana.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Erityiskiitos <a href="https://github.com/danimahardhika"><font color="%1$s">Danille</font></a> ja <a href="https://github.com/zixpo"><font color="%1$s">Sarsalle</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Olen intohimoinen luova ja tuleva suunnittelija! Teen kuvakepaketteja ja KWGT-sääkomponentteja ja rakastan Android-kustomointia</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar tekijä <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

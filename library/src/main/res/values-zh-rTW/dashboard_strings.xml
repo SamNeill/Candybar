@@ -391,4 +391,12 @@
     <!--搜尋-->
     <string name="search_apps">搜尋應用程式</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">糖果吧</string>
+    <string name="candybar_description"><![CDATA[<b>本應用程式由 <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> 提供支援，這是一個創新的開源儀表板，最初由 <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> 及其團隊構思。\n\n特別感謝 <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> 及其團隊為 <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> 的發展做出貢獻，提供了豐富其功能的增強功能。此外，Sarsa 對 <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> 持續維護的承諾確保其保持最新和高效。</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>特別感謝 <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> 和 <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">我是一位充滿熱情的創意和有抱負的設計師！我製作圖示包和 KWGT 天氣組件，熱愛 Android 客製化</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar 由 <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a> 開發]]></string>
+
 </resources>

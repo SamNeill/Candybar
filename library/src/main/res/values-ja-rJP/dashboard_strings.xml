@@ -391,4 +391,12 @@
     <!--検索-->
     <string name="search_apps">アプリを検索</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>このアプリケーションは、<a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a>とそのチームによって最初に考案された革新的なオープンソースのダッシュボード<a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>によって動作しています。\n\n<a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a>とそのチームには、<a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>の進化に貢献し、その機能を豊かにする改良を提供したことに対して特別な感謝の意を表します。さらに、Sarsaの<a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>の継続的なメンテナンスへの取り組みにより、最新かつ効率的な状態が維持されています。</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b><a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a>と<a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a>に特別な感謝を</b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">私は情熱的なクリエイターで、アスパイアリングデザイナーです！アイコンパックとKWGT天気コンポーネントを作成し、Androidのカスタマイズを愛しています</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar by <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

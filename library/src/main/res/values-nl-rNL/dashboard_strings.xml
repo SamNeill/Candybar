@@ -390,4 +390,12 @@
     <!--Zoekopdracht-->
     <string name="search_apps">Zoekapps</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Deze applicatie wordt aangedreven door <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, een innovatief open-source dashboard dat oorspronkelijk werd bedacht door <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> en zijn team.\n\nSpeciale erkenning gaat uit naar <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> en zijn team voor hun bijdrage aan de evolutie van <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, het leveren van verbeteringen die de mogelijkheden verrijken. Bovendien zorgt Sarsa\'s toewijding aan het doorlopende onderhoud van <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> ervoor dat het up-to-date en efficiënt blijft.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Speciale dank aan <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> & <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Ik ben een gepassioneerde creatieveling en aspirant-ontwerper! Ik maak pictogrampakketten en KWGT Weather Komponents en hou van Android-aanpassing</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar door <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

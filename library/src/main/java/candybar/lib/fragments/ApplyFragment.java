@@ -80,8 +80,9 @@ public class ApplyFragment extends Fragment {
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        // Set up grid layout with 3 columns
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 3);
+        // Set up grid layout using column count from resources
+        int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
+        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
         // Make headers span all columns
         layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
@@ -89,7 +90,7 @@ public class ApplyFragment extends Fragment {
                 if (mRecyclerView.getAdapter() != null) {
                     int viewType = mRecyclerView.getAdapter().getItemViewType(position);
                     if (viewType == LauncherAdapter.TYPE_HEADER || viewType == LauncherAdapter.TYPE_FOOTER) {
-                        return 3; // Headers and footers span all columns
+                        return columnCount; // Headers and footers span all columns
                     }
                 }
                 return 1; // Normal items take 1 column
@@ -107,6 +108,25 @@ public class ApplyFragment extends Fragment {
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+        
+        // Update grid layout with new column count from resources
+        if (mRecyclerView != null) {
+            int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
+            GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
+            layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                @Override
+                public int getSpanSize(int position) {
+                    if (mRecyclerView.getAdapter() != null) {
+                        int viewType = mRecyclerView.getAdapter().getItemViewType(position);
+                        if (viewType == LauncherAdapter.TYPE_HEADER || viewType == LauncherAdapter.TYPE_FOOTER) {
+                            return columnCount; // Headers and footers span all columns
+                        }
+                    }
+                    return 1; // Normal items take 1 column
+                }
+            });
+            mRecyclerView.setLayoutManager(layoutManager);
+        }
     }
 
     @Override

@@ -391,4 +391,12 @@
     <!--Тражи-->
     <string name="search_apps">Претражи апликације</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">КендиБар</string>
+    <string name="candybar_description"><![CDATA[<b>Ову апликацију покреће <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">КендиБар</font></a>, иновативна контролна табла отвореног кода коју је првобитно осмислио <a href="https://github.com/danimahardhika"><font color="%1$s">Дани Махардхика</font></a> и његов тим.\n\nПосебно признање дугујемо <a href="https://github.com/zixpo"><font color="%1$s">Сарса Мурму</font></a> и његовом тиму за допринос еволуцији <a href="https://github.com/zixpo/candybar"><font color="%1$s">КендиБар</font></a>, доносећи побољшања која обогаћују његове могућности. Штавише, Сарсина посвећеност текућем одржавању <a href="https://github.com/zixpo/candybar"><font color="%1$s">КендиБар</font></a> осигурава да остане ажуран и ефикасан.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Посебно хвала <a href="https://github.com/danimahardhika"><font color="%1$s">Дани</font></a> и <a href="https://github.com/zixpo"><font color="%1$s">Сарса</font></a></b>]]></string>
+    <string name="sam_summer_title">Сам Самер</string>
+    <string name="sam_summer_description">Ја сам страствени креативац и амбициозни дизајнер! Правим пакете икона и КВГТ временске компоненте и волим Андроид прилагођавање</string>
+    <string name="candybar_by_sam"><![CDATA[КендиБар од <a href="https://github.com/SamNeill"><font color="%1$s">Сам Самер</font></a>]]></string>
+
 </resources>

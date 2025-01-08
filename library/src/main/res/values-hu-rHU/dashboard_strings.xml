@@ -391,4 +391,12 @@
     <!--Keresés-->
     <string name="search_apps">Alkalmazások keresése</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Ezt az alkalmazást a <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> működteti, egy innovatív nyílt forráskódú műszerfal, amelyet eredetileg <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> és csapata alkotott meg.\n\nKülönleges elismerés illeti <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a>-t és csapatát a <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> fejlődéséhez való hozzájárulásukért, amely bővítette annak képességeit. Továbbá Sarsa elkötelezettsége a <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> folyamatos karbantartása mellett biztosítja, hogy az naprakész és hatékony maradjon.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Külön köszönet <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> és <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a> részére</b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Szenvedélyes kreatív és feltörekvő tervező vagyok! Ikoncsomagokat és KWGT időjárási komponenseket készítek, és imádom az Android testreszabást</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar készítője: <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

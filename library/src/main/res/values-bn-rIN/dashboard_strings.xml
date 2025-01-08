@@ -391,4 +391,12 @@
     <!--অনুসন্ধান করুন-->
     <string name="search_apps">অ্যাপস অনুসন্ধান করুন</string>
 
+    <!--ক্যান্ডিবার-->
+    <string name="candybar_title">ক্যান্ডিবার</string>
+    <string name="candybar_description"><![CDATA[<b>এই অ্যাপটি <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> দ্বারা চালিত, একটি উদ্ভাবনী ওপেন সোর্স ড্যাশবোর্ড যা প্রাথমিকভাবে <a href="https://github.com/danimahardhika"><font color="%1$s">দানি মাহারধিকা</font></a> এবং তার টিম দ্বারা কল্পনা করা হয়েছিল।\n\nবিশেষ ধন্যবাদ <a href="https://github.com/zixpo"><font color="%1$s">সারসা মুরমু</font></a> এবং তার টিমকে <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> এর বিবর্তনে অবদান রাখার জন্য, যা এর ক্ষমতাকে সমৃদ্ধ করে এমন উন্নতি প্রদান করেছে। তদুপরি, <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> এর চলমান রক্ষণাবেক্ষণে সারসার প্রতিশ্রুতি নিশ্চিত করে যে এটি আপ টু ডেট এবং কার্যকর থাকে।</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>বিশেষ ধন্যবাদ <a href="https://github.com/danimahardhika"><font color="%1$s">দানি</font></a> এবং <a href="https://github.com/zixpo"><font color="%1$s">সারসা</font></a></b>]]></string>
+    <string name="sam_summer_title">স্যাম সামার</string>
+    <string name="sam_summer_description">আমি একজন আবেগী সৃজনশীল এবং উচ্চাকাঙ্ক্ষী ডিজাইনার! আমি আইকন প্যাক এবং KWGT ওয়েদার কম্পোনেন্ট তৈরি করি এবং অ্যান্ড্রয়েড কাস্টমাইজেশন পছন্দ করি</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar by <a href="https://github.com/SamNeill"><font color="%1$s">স্যাম সামার</font></a>]]></string>
+
 </resources>

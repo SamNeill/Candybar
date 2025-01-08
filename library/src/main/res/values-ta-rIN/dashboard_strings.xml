@@ -390,4 +390,12 @@
     <!--தேடு-->
     <string name="search_apps">தேடல் பயன்பாடுகள்</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>இந்த பயன்பாடு <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> மூலம் இயக்கப்படுகிறது, இது <a href="https://github.com/danimahardhika"><font color="%1$s">தனி மஹர்திகா</font></a> மற்றும் அவரது குழுவால் முதலில் உருவாக்கப்பட்ட புதுமையான திறந்த மூல டாஷ்போர்டு ஆகும்.\n\n<a href="https://github.com/zixpo"><font color="%1$s">சர்சா முர்மு</font></a> மற்றும் அவரது குழுவிற்கு சிறப்பு நன்றி, <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> இன் வளர்ச்சிக்கு பங்களித்து, அதன் திறன்களை மேம்படுத்தும் மேம்பாடுகளை வழங்கியதற்காக. மேலும், <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> இன் தொடர்ச்சியான பராமரிப்பிற்கான சர்சாவின் அர்ப்பணிப்பு அது புதுப்பித்த மற்றும் திறமையான நிலையில் இருப்பதை உறுதி செய்கிறது.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b><a href="https://github.com/danimahardhika"><font color="%1$s">தனி</font></a> மற்றும் <a href="https://github.com/zixpo"><font color="%1$s">சர்சா</font></a>க்கு சிறப்பு நன்றி</b>]]></string>
+    <string name="sam_summer_title">சாம் சம்மர்</string>
+    <string name="sam_summer_description">நான் ஒரு ஆர்வமுள்ள படைப்பாளி மற்றும் ஆர்வமுள்ள வடிவமைப்பாளர்! நான் ஐகான் பேக்குகள் மற்றும் KWGT வானிலை கூறுகளை உருவாக்குகிறேன் மற்றும் Android தனிப்பயனாக்கத்தை நேசிக்கிறேன்</string>
+    <string name="candybar_by_sam"><![CDATA[<a href="https://github.com/SamNeill"><font color="%1$s">சாம் சம்மர்</font></a> மூலம் CandyBar]]></string>
+
 </resources>

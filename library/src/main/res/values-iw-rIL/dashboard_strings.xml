@@ -391,4 +391,12 @@
     <!--לְחַפֵּשׂ-->
     <string name="search_apps">חפש אפליקציות</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>יישום זה מופעל על ידי <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, לוח מחוונים חדשני בקוד פתוח שנהגה לראשונה על ידי <a href="https://github.com/danimahardhika"><font color="%1$s">דני מהרדיקה</font></a> וצוותו.\n\nתודה מיוחדת מגיעה ל-<a href="https://github.com/zixpo"><font color="%1$s">סרסה מורמו</font></a> וצוותו על תרומתם להתפתחות <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, המביאים שיפורים המעשירים את יכולותיו. יתר על כן, מחויבותו של סרסה לתחזוקה המתמשכת של <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> מבטיחה שהוא נשאר מעודכן ויעיל.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>תודה מיוחדת ל-<a href="https://github.com/danimahardhika"><font color="%1$s">דני</font></a> ו-<a href="https://github.com/zixpo"><font color="%1$s">סרסה</font></a></b>]]></string>
+    <string name="sam_summer_title">סם סאמר</string>
+    <string name="sam_summer_description">אני יוצר נלהב ומעצב שואף! אני יוצר ערכות סמלים ורכיבי מזג אוויר KWGT ואוהב התאמה אישית של אנדרואיד</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar מאת <a href="https://github.com/SamNeill"><font color="%1$s">סם סאמר</font></a>]]></string>
+
 </resources>

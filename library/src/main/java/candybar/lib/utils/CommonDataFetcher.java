@@ -58,10 +58,21 @@ public class CommonDataFetcher implements DataFetcher<Bitmap> {
 
     @Nullable
     private Bitmap getDrawable(String uri) {
-        String drawableIdStr = uri.replaceFirst("drawable://", "");
-        int drawableId = Integer.parseInt(drawableIdStr);
-        Drawable drawable = ContextCompat.getDrawable(mContext, drawableId);
-        return toBitmap(drawable, Preferences.get(mContext).getIconShape());
+        try {
+            String drawableIdStr = uri.replaceFirst("drawable://", "");
+            int drawableId = Integer.parseInt(drawableIdStr);
+            if (drawableId == -1 || drawableId == 0) {
+                return null;
+            }
+            Drawable drawable = ContextCompat.getDrawable(mContext, drawableId);
+            if (drawable == null) {
+                return null;
+            }
+            return toBitmap(drawable, Preferences.get(mContext).getIconShape());
+        } catch (Exception e) {
+            LogUtil.e(Log.getStackTraceString(e));
+            return null;
+        }
     }
 
     @Nullable

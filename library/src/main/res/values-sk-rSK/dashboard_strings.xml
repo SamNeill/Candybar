@@ -391,4 +391,12 @@
     <!--Hľadať-->
     <string name="search_apps">Hľadať v aplikáciách</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Táto aplikácia je poháňaná <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, inovatívnym open-source panelom, ktorý pôvodne vytvoril <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> a jeho tím.\n\nOsobitné poďakovanie patrí <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> a jeho tímu za prispenie k vývoju <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, prinášajúc vylepšenia, ktoré obohacujú jeho možnosti. Okrem toho Sarsov záväzok k priebežnej údržbe <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> zaisťuje, že zostáva aktuálny a efektívny.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Špeciálne poďakovanie <a href="https://github.com/danimahardhika"><font color="%1$s">Danimu</font></a> a <a href="https://github.com/zixpo"><font color="%1$s">Sarsovi</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Som vášnivý tvorca a začínajúci dizajnér! Vytváram balíky ikon a KWGT Weather komponenty a milujem prispôsobovanie Androidu</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar od <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

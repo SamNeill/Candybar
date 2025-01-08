@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginRight="@dimen/content_padding"
-    android:layout_marginEnd="@dimen/content_padding"
-    android:layout_marginBottom="@dimen/content_padding"
-    app:cardBackgroundColor="?cb_cardBackground"
-    app:cardElevation="@dimen/card_elevation"
-    app:cardUseCompatPadding="@bool/card_use_compat_padding"
-    app:cardCornerRadius="@dimen/card_corner_radius"
-    app:strokeColor="?cb_cardStroke">
+    android:orientation="horizontal">
 
+    <!-- Left Column - Original Header Content -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="?cb_cardBackground">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <candybar.lib.utils.views.HeaderView
             android:id="@+id/image"
@@ -49,6 +42,7 @@
             android:text="@string/about_title"
             android:textColor="?android:attr/textColorPrimary"
             android:textSize="@dimen/text_title"
+            android:textStyle="bold"
             app:fontFamily="@font/medium" />
 
         <TextView
@@ -61,7 +55,6 @@
             android:layout_marginStart="@dimen/content_margin"
             android:layout_marginRight="@dimen/content_margin"
             android:layout_marginEnd="@dimen/content_margin"
-            android:paddingTop="@dimen/content_padding"
             android:gravity="center_horizontal"
             android:textColor="?attr/cb_primaryText"
             android:textSize="@dimen/text_content"
@@ -72,7 +65,403 @@
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="72dp"
-            android:padding="@dimen/content_margin"
             android:clipToPadding="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/privacy_policy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="?cb_cardBackground"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:strokeColor="?cb_cardStroke">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/privacy_policy"
+                    android:textColor="?attr/cb_colorAccent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:fontFamily="@font/medium" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/terms_conditions_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="?cb_cardBackground"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:strokeColor="?cb_cardStroke">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/terms_conditions"
+                    android:textColor="?attr/cb_colorAccent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:fontFamily="@font/medium" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+
+    <!-- Right Column - CandyBar Card -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/candybar_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="?cb_cardBackground"
+            app:cardCornerRadius="48dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:strokeColor="?cb_cardStroke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_toolbar_dashboard"
+                        android:layout_marginEnd="12dp"
+                        app:tint="?attr/cb_colorAccent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/candybar_title"
+                        android:textAlignment="textStart"
+                        android:gravity="start"
+                        android:textColor="?attr/cb_colorAccent"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/medium" />
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="?cb_cardBackground"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:strokeColor="?cb_cardStroke">
+
+                    <TextView
+                        android:id="@+id/candybar_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/candybar_description"
+                        android:textAlignment="textStart"
+                        android:gravity="start"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        app:fontFamily="@font/regular"
+                        android:textIsSelectable="true" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/special_thanks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:textSize="14sp"
+                        android:textColor="?android:attr/textColorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/original_github_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="4dp"
+                            app:cardBackgroundColor="?cb_cardBackground"
+                            app:cardCornerRadius="@dimen/card_corner_radius"
+                            app:cardElevation="@dimen/card_elevation"
+                            app:strokeColor="?cb_cardStroke">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_toolbar_github"
+                                android:scaleType="fitCenter"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                app:tint="?attr/cb_colorAccent" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/current_github_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="4dp"
+                            app:cardBackgroundColor="?cb_cardBackground"
+                            app:cardCornerRadius="@dimen/card_corner_radius"
+                            app:cardElevation="@dimen/card_elevation"
+                            app:strokeColor="?cb_cardStroke">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_toolbar_github"
+                                android:scaleType="fitCenter"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                app:tint="?attr/cb_colorAccent" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sam_summer_title"
+                    android:textColor="?attr/cb_colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="16dp"
+                    app:fontFamily="@font/medium" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="?cb_cardBackground"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:strokeColor="?cb_cardStroke">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sam_summer_description"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:padding="16dp"
+                        android:lineSpacingExtra="4dp"
+                        app:fontFamily="@font/medium" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/candybar_by_sam_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/candybar_by_sam"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="14sp"
+                        android:textIsSelectable="true" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/sam_github_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:cardBackgroundColor="?cb_cardBackground"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:strokeColor="?cb_cardStroke">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_toolbar_github"
+                            android:scaleType="fitCenter"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            app:tint="?attr/cb_colorAccent" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_toolbar_version"
+                        android:layout_marginEnd="8dp"
+                        app:tint="?attr/cb_colorAccent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/version"
+                        android:textColor="?attr/cb_colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/medium" />
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="?cb_cardBackground"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:strokeColor="?cb_cardStroke">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/app_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_name"
+                                android:textColor="?android:attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/app_version"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="?android:attr/textColorPrimary"
+                                android:textSize="14sp"
+                                android:layout_marginTop="4dp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/app_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitCenter" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

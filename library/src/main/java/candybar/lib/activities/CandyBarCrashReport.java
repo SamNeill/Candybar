@@ -57,27 +57,36 @@ public class CandyBarCrashReport extends AppCompatActivity {
             String message = getResources().getString(R.string.crash_report_message, getResources().getString(R.string.app_name));
             String emailAddress = getResources().getString(R.string.regular_request_email);
 
-            new MaterialDialog.Builder(this)
-                    .title(R.string.crash_report)
-                    .content(message)
-                    .cancelable(false)
-                    .canceledOnTouchOutside(false)
-                    .positiveText(R.string.crash_report_send)
-                    .negativeText(R.string.close)
-                    .onPositive((dialog, which) -> {
-                        Intent intent = new Intent(Intent.ACTION_SEND);
-                        intent.setType("text/plain");
-                        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{emailAddress});
-                        intent.putExtra(Intent.EXTRA_SUBJECT, "CandyBar: Crash Report");
+            if (!isFinishing()) {
+                new MaterialDialog.Builder(this)
+                        .title(R.string.crash_report)
+                        .content(message)
+                        .cancelable(false)
+                        .canceledOnTouchOutside(false)
+                        .positiveText(R.string.crash_report_send)
+                        .negativeText(R.string.close)
+                        .onPositive((dialog, which) -> {
+                            Intent intent = new Intent(Intent.ACTION_SEND);
+                            intent.setType("text/plain");
+                            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{emailAddress});
+                            intent.putExtra(Intent.EXTRA_SUBJECT, "CandyBar: Crash Report");
 
-                        prepareUri(deviceInfo, stackTrace, intent);
+                            prepareUri(deviceInfo, stackTrace, intent);
 
-                        startActivity(Intent.createChooser(intent,
-                                getResources().getString(R.string.app_client)));
-                        dialog.dismiss();
-                    })
-                    .dismissListener(dialogInterface -> finish())
-                    .show();
+                            startActivity(Intent.createChooser(intent,
+                                    getResources().getString(R.string.app_client)));
+                            dialog.dismiss();
+                            finish();
+                        })
+                        .onNegative((dialog, which) -> {
+                            dialog.dismiss();
+                            finish();
+                        })
+                        .dismissListener(dialogInterface -> finish())
+                        .show();
+            } else {
+                finish();
+            }
         } catch (Exception e) {
             finish();
         }

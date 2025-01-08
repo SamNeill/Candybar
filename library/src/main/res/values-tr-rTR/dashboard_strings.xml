@@ -391,4 +391,12 @@
     <!--Aramak-->
     <string name="search_apps">Uygulamalarda Ara</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Bu uygulama, <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> ve ekibi tarafından başlatılan yenilikçi bir açık kaynak kontrol paneli olan <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> tarafından desteklenmektedir.\n\n<a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> ve ekibine, <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>\'ın yeteneklerini zenginleştiren geliştirmeleri sağlayarak evrimine katkıda bulundukları için özel teşekkürler. Ayrıca, Sarsa\'nın <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>\'ın sürekli bakımına olan bağlılığı, güncel ve verimli kalmasını sağlıyor.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b><a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> ve <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a>\'ya Özel Teşekkürler</b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Tutkulu bir yaratıcı ve hevesli bir Tasarımcıyım! Simge paketleri ve KWGT Hava Durumu Bileşenleri yapıyorum ve Android Özelleştirmeyi Seviyorum</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar by <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

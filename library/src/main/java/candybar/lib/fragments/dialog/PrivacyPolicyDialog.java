@@ -11,6 +11,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -666,6 +667,16 @@ public class PrivacyPolicyDialog extends DialogFragment {
         
         if (dialog.getWindow() != null) {
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+            
+            // Set dialog size based on orientation
+            Window window = dialog.getWindow();
+            if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                window.setLayout((int)(getResources().getDisplayMetrics().widthPixels * 0.85),
+                               (int)(getResources().getDisplayMetrics().heightPixels * 0.99));
+            } else {
+                window.setLayout((int)(getResources().getDisplayMetrics().widthPixels * 0.85),
+                               WindowManager.LayoutParams.WRAP_CONTENT);
+            }
         }
 
         return dialog;

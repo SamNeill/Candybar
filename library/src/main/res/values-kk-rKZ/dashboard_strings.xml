@@ -391,4 +391,12 @@
     <!--Іздеу-->
     <string name="search_apps">Қолданбаларды іздеу</string>
 
+    <!-- CandyBar -->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Бұл қолданба <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> және оның командасы алғаш рет ойлап тапқан инновациялық ашық бастапқы код тақтасы <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a> арқылы жұмыс істейді.\n\n<a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> және оның командасына <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> эволюциясына үлес қосқаны және оның мүмкіндіктерін байытатын жақсартулар жасағаны үшін ерекше алғыс білдіреміз. Сонымен қатар, Sarsa-ның <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> үздіксіз қолдауға деген ұмтылысы оның жаңартылып, тиімді болуын қамтамасыз етеді.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b><a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> және <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a> үшін ерекше рахмет</b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Мен құмарлы шығармашылық және талапкер дизайнермін! Мен белгішелер жинақтарын және KWGT ауа райы компоненттерін жасаймын және Android-ті теңшеуді жақсы көремін</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar by <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>

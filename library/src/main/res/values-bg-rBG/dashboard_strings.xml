@@ -391,4 +391,12 @@
     <!--Търсене-->
     <string name="search_apps">Приложения за търсене</string>
 
+    <!--CandyBar-->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Това приложение се захранва от <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, иновативно табло с отворен код, първоначално замислено от <a href="https://github.com/danimahardhika"><font color="%1$s">Дани Махардика</font></a> и неговия екип.\n\nСпециална благодарност на <a href="https://github.com/zixpo"><font color="%1$s">Сарса Мурму</font></a> и неговия екип за приноса към развитието на <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, предоставяйки подобрения, които обогатяват възможностите му. Освен това ангажиментът на Сарса за текущата поддръжка на <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> гарантира, че той остава актуален и ефективен.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Специални благодарности на <a href="https://github.com/danimahardhika"><font color="%1$s">Дани</font></a> и <a href="https://github.com/zixpo"><font color="%1$s">Сарса</font></a></b>]]></string>
+    <string name="sam_summer_title">Сам Съмър</string>
+    <string name="sam_summer_description">Аз съм страстен творец и амбициозен дизайнер! Правя пакети с икони и KWGT компоненти за времето и обичам персонализирането на Android</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar от <a href="https://github.com/SamNeill"><font color="%1$s">Сам Съмър</font></a>]]></string>
+
 </resources>

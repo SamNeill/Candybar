@@ -391,4 +391,12 @@
     <!--يبحث-->
     <string name="search_apps">تطبيقات البحث</string>
 
+    <!--كاندي بار-->
+    <string name="candybar_title">كاندي بار</string>
+    <string name="candybar_description"><![CDATA[<b>هذا التطبيق مدعوم بواسطة <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">كاندي بار</font></a>، وهي لوحة تحكم مفتوحة المصدر مبتكرة تم تصورها في البداية من قبل <a href="https://github.com/danimahardhika"><font color="%1$s">داني مهارديكا</font></a> وفريقه.\n\nشكر خاص لـ <a href="https://github.com/zixpo"><font color="%1$s">سارسا مورمو</font></a> وفريقه للمساهمة في تطور <a href="https://github.com/zixpo/candybar"><font color="%1$s">كاندي بار</font></a>، وتقديم التحسينات التي تثري قدراتها. علاوة على ذلك، يضمن التزام سارسا بالصيانة المستمرة لـ <a href="https://github.com/zixpo/candybar"><font color="%1$s">كاندي بار</font></a> أن تظل محدثة وفعالة.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>شكر خاص لـ <a href="https://github.com/danimahardhika"><font color="%1$s">داني</font></a> و <a href="https://github.com/zixpo"><font color="%1$s">سارسا</font></a></b>]]></string>
+    <string name="sam_summer_title">سام سمر</string>
+    <string name="sam_summer_description">أنا مبدع شغوف ومصمم طموح! أقوم بعمل حزم الأيقونات ومكونات طقس KWGT وأحب تخصيص أندرويد</string>
+    <string name="candybar_by_sam"><![CDATA[كاندي بار بواسطة <a href="https://github.com/SamNeill"><font color="%1$s">سام سمر</font></a>]]></string>
+
 </resources>

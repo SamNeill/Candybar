@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.danimahardhika.android.helpers.core.ViewHelper;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.HashMap;
 
@@ -70,11 +71,18 @@ public class AboutFragment extends Fragment {
                 new HashMap<String, Object>() {{ put("section", "about"); }}
         );
 
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(
-                requireActivity().getResources().getInteger(R.integer.about_column_count),
-                StaggeredGridLayoutManager.VERTICAL));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        
+        // Set up layout manager based on orientation
+        int spanCount = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ? 1 : 
+                       requireActivity().getResources().getInteger(R.integer.about_column_count);
+        
+        StaggeredGridLayoutManager manager = new StaggeredGridLayoutManager(
+                spanCount, StaggeredGridLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(manager);
+
+        // Set adapter with proper span count
+        mRecyclerView.setAdapter(new AboutAdapter(requireActivity(), spanCount));
 
         TextView appVersion = view.findViewById(R.id.app_version);
         if (appVersion != null) {
@@ -86,22 +94,23 @@ public class AboutFragment extends Fragment {
                 appVersion.setVisibility(View.GONE);
             }
         }
-
-        int spanCount = requireActivity().getResources().getInteger(R.integer.about_column_count);
-        recyclerView.setAdapter(new AboutAdapter(requireActivity(), spanCount));
     }
 
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+        if (mRecyclerView == null) return;
 
-        resetRecyclerViewPadding(newConfig.orientation);
-        ViewHelper.resetSpanCount(mRecyclerView,
-                requireActivity().getResources().getInteger(R.integer.about_column_count));
-
-        StaggeredGridLayoutManager manager = (StaggeredGridLayoutManager) mRecyclerView.getLayoutManager();
-        assert manager != null;
-        mRecyclerView.setAdapter(new AboutAdapter(requireActivity(), manager.getSpanCount()));
+        // Update span count based on new orientation
+        int spanCount = newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE ? 1 :
+                       requireActivity().getResources().getInteger(R.integer.about_column_count);
+        
+        StaggeredGridLayoutManager manager = new StaggeredGridLayoutManager(
+                spanCount, StaggeredGridLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(manager);
+        
+        // Update adapter with new span count
+        mRecyclerView.setAdapter(new AboutAdapter(requireActivity(), spanCount));
     }
 
     private void resetRecyclerViewPadding(int orientation) {

@@ -391,4 +391,12 @@
     <!--Soek-->
     <string name="search_apps">Soek toepassings</string>
 
+    <!--CandyBar-->
+    <string name="candybar_title">CandyBar</string>
+    <string name="candybar_description"><![CDATA[<b>Hierdie toepassing word aangedryf deur <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, \'n innoverende oopbron-paneelbord wat aanvanklik deur <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> en sy span ontwikkel is.\n\nSpesiale erkenning gaan aan <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> en sy span vir hul bydrae tot die evolusie van <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, wat verbeterings gelewer het wat die vermoëns daarvan verryk. Verder verseker Sarsa se toewyding aan die deurlopende instandhouding van <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> dat dit op datum en doeltreffend bly.</b>]]></string>
+    <string name="candybar_special_thanks"><![CDATA[<b>Spesiale dank aan <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> &amp; <a href="https://github.com/zixpo"><font color="%1$s">Sarsa</font></a></b>]]></string>
+    <string name="sam_summer_title">Sam Summer</string>
+    <string name="sam_summer_description">Ek is \'n passievolle kreatiewe en aspirant-ontwerper! Ek maak ikoonpakkette en KWGT Weer-komponente en is lief vir Android-aanpassing</string>
+    <string name="candybar_by_sam"><![CDATA[CandyBar deur <a href="https://github.com/SamNeill"><font color="%1$s">Sam Summer</font></a>]]></string>
+
 </resources>
