@@ -36,8 +36,9 @@
     <bool name="use_flat_card">true</bool>
 
     <!-- CONFIG: NAVIGATION VIEW HEADER -->
-    <string name="navigation_view_header">nav_head</string>
+    <string name="navigation_view_header">nav_head_mini</string>
     <string name="navigation_view_header_title">CandyBar Dashboard</string>
+    <bool name="use_launcher_icon_for_nav_header">true</bool>
     <bool name="enable_apply">true</bool>
 
     <!-- CONFIG: ICONS -->
