@@ -1004,7 +1004,6 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             return;
         }
 
-
         String titleText = getResources().getString(R.string.navigation_view_header_title);
         View header = mNavigationView.getHeaderView(0);
         HeaderView image = header.findViewById(R.id.header_image);
@@ -1017,7 +1016,17 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         if (imageResource.length() > 0) {
             int resId = getResources().getIdentifier(imageResource, "drawable", getPackageName());
             if (resId != 0) {
-                image.setImageResource(resId);
+                // Check if nav_head exists and set appropriate drawable
+                boolean useLauncherIcon = getResources().getBoolean(R.bool.use_launcher_icon_for_nav_header);
+                int navHeadResId = getResources().getIdentifier("nav_head", "drawable", getPackageName());
+                
+                // If nav_head doesn't exist or flag is true, use nav_head_mini (which contains launcher icon layout)
+                if (useLauncherIcon || navHeadResId == 0) {
+                    image.setImageResource(resId); // resId already points to nav_head_mini
+                } else {
+                    // Use nav_head drawable
+                    image.setImageResource(navHeadResId);
+                }
             }
         }
 
@@ -1036,8 +1045,6 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             } catch (Exception ignored) {
             }
         }
-
-
     }
 
     private void checkWallpapers() {

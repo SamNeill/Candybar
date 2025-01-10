@@ -5,4 +5,6 @@
 
     <bool name="fit_system_window">true</bool>
 
+    <bool name="use_launcher_icon_for_nav_header">false</bool>
+
 </resources>
