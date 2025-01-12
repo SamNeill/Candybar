@@ -1,6 +1,8 @@
 package candybar.lib.adapters;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.util.Log;
 import android.util.SparseBooleanArray;
@@ -17,6 +19,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.widget.CompoundButtonCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
@@ -80,6 +83,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private static final int TYPE_CONTENT = 1;
     private static final int TYPE_FOOTER = 2;
 
+    private boolean mIsSearchMode = false;
+
     public RequestAdapter(@NonNull Context context, @NonNull List<Request> requests, int spanCount) {
         mContext = context;
         mRequests = requests;
@@ -108,19 +113,12 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 }
             }
         }
-        // Update FAB visibility based on selection state during search
-        try {
-            if (mContext instanceof CandyBarMainActivity) {
-                FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                if (fab != null) {
-                    if (getSelectedItemsSize() > 0) {
-                        fab.show();
-                    } else {
-                        fab.hide();
-                    }
-                }
+        if (mIsSearchMode) {
+            if (getSelectedItemsSize() > 0) {
+                showSearchModeFab();
+            } else {
+                hideSearchModeFab();
             }
-        } catch (Exception ignored) {
         }
         notifyDataSetChanged();
     }
@@ -249,13 +247,15 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             contentViewHolder.infoIcon.setVisibility(View.GONE);
 
             if (request.isRequested()) {
-                contentViewHolder.content.setTextColor(mTextColorAccent);
+                contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
                 contentViewHolder.content.setText(mContext.getResources().getString(
                         R.string.request_already_requested));
             } else if (request.isAvailableForRequest()) {
+                contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
                 contentViewHolder.content.setText(mContext.getResources().getString(
                         R.string.request_not_requested));
             } else {
+                contentViewHolder.content.setTextColor(mTextColorSecondary);
                 contentViewHolder.content.setText(mContext.getResources().getString(
                         R.string.request_not_available));
             }
@@ -377,8 +377,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 params.setMargins(marginLeft, marginTop, marginRight, marginBottom);
             }
 
-            if (!Preferences.get(mContext).isCardShadowEnabled() && card != null) {
-                card.setCardElevation(0);
+            if (!Preferences.get(mContext).isCardShadowEnabled()) {
+                if (card != null) card.setCardElevation(0);
             }
 
             int padding = mContext.getResources().getDimensionPixelSize(R.dimen.content_margin) + mContext.getResources().getDimensionPixelSize(R.dimen.icon_size_small);
@@ -401,7 +401,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             int primary = ColorHelper.getAttributeColor(mContext, androidx.appcompat.R.attr.colorPrimary);
             int accent = ColorHelper.getAttributeColor(mContext, com.google.android.material.R.attr.colorSecondary);
-            button.setTextColor(ColorHelper.getTitleTextColor(primary));
+            button.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
 
             premProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
             regProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
@@ -442,6 +442,20 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             infoIcon = itemView.findViewById(R.id.requestedInfoIcon);
             LinearLayout container = itemView.findViewById(R.id.container);
             divider = itemView.findViewById(R.id.divider);
+
+            // Set checkbox colors programmatically
+            int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+            ColorStateList colorStateList = new ColorStateList(
+                new int[][] {
+                    new int[] { android.R.attr.state_checked },
+                    new int[] { -android.R.attr.state_checked }
+                },
+                new int[] {
+                    accentColor,  // Checked state
+                    accentColor   // Unchecked state
+                }
+            );
+            CompoundButtonCompat.setButtonTintList(checkbox, colorStateList);
 
             MaterialCardView card = itemView.findViewById(R.id.card);
             if (CandyBarApplication.getConfiguration().getRequestStyle() == CandyBarApplication.Style.PORTRAIT_FLAT_LANDSCAPE_FLAT &&
@@ -550,6 +564,30 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
     }
 
+    private void hideSearchModeFab() {
+        try {
+            if (mContext instanceof CandyBarMainActivity) {
+                FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
+                if (fab != null) {
+                    fab.hide();
+                }
+            }
+        } catch (Exception ignored) {
+        }
+    }
+
+    private void showSearchModeFab() {
+        try {
+            if (mContext instanceof CandyBarMainActivity) {
+                FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
+                if (fab != null) {
+                    fab.show();
+                }
+            }
+        } catch (Exception ignored) {
+        }
+    }
+
     public void toggleSelection(int position, ToggleResultListener toggleListener) {
         if (position >= 0 && position < mFilteredRequests.size()) {
             Request request = mFilteredRequests.get(position);
@@ -563,16 +601,14 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 mSelectedItems.delete(originalPosition);
                 toggleListener.onPositiveResult();
                 notifySelectionChanged();
-                try {
-                    if (mContext instanceof CandyBarMainActivity) {
-                        FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                        if (fab != null) {
-                            if (getSelectedItemsSize() == 0) {
-                                fab.hide();
-                            }
-                        }
+                if (mIsSearchMode) {
+                    if (getSelectedItemsSize() > 0) {
+                        showSearchModeFab();
+                    } else {
+                        hideSearchModeFab();
                     }
-                } catch (Exception ignored) {
+                } else {
+                    updateNormalModeFabVisibility();
                 }
             } else if (isRequested) {
                 if (isDuplicateRequestAllowed) {
@@ -588,14 +624,14 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             .onPositive((dialog, which) -> {
                                 mSelectedItems.put(originalPosition, true);
                                 toggleListener.onPositiveResult();
-                                try {
-                                    if (mContext instanceof CandyBarMainActivity) {
-                                        FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                                        if (fab != null) {
-                                            fab.show();
-                                        }
+                                if (mIsSearchMode) {
+                                    if (getSelectedItemsSize() > 0) {
+                                        showSearchModeFab();
+                                    } else {
+                                        hideSearchModeFab();
                                     }
-                                } catch (Exception ignored) {
+                                } else {
+                                    updateNormalModeFabVisibility();
                                 }
                             })
                             .show();
@@ -623,30 +659,18 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             } else {
                 mSelectedItems.put(originalPosition, true);
                 toggleListener.onPositiveResult();
-                try {
-                    if (mContext instanceof CandyBarMainActivity) {
-                        FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                        if (fab != null) {
-                            fab.show();
-                        }
+                if (mIsSearchMode) {
+                    if (getSelectedItemsSize() > 0) {
+                        showSearchModeFab();
+                    } else {
+                        hideSearchModeFab();
                     }
-                } catch (Exception ignored) {
+                } else {
+                    updateNormalModeFabVisibility();
                 }
             }
         } else {
             toggleListener.onNegativeResult();
-        }
-    }
-
-    private void updateFabVisibility() {
-        try {
-            if (mContext instanceof CandyBarMainActivity) {
-                FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
-                if (fab != null) {
-                    fab.show();
-                }
-            }
-        } catch (Exception ignored) {
         }
     }
 
@@ -660,13 +684,27 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 listener.onRequestSelected(getSelectedItemsSize());
             } catch (Exception ignored) {
             }
+            if (mIsSearchMode) {
+                if (getSelectedItemsSize() > 0) {
+                    showSearchModeFab();
+                } else {
+                    hideSearchModeFab();
+                }
+            } else {
+                updateNormalModeFabVisibility();
+            }
             return false;
         }
 
         mSelectedItems.clear();
         for (int i = 0; i < mFilteredRequests.size(); i++) {
-            if (!mFilteredRequests.get(i).isRequested() && mFilteredRequests.get(i).isAvailableForRequest())
-                mSelectedItems.put(i, true);
+            Request request = mFilteredRequests.get(i);
+            if (!request.isRequested() && request.isAvailableForRequest()) {
+                int originalPosition = getOriginalPosition(request);
+                if (originalPosition != -1) {
+                    mSelectedItems.put(originalPosition, true);
+                }
+            }
         }
         mSelectedAll = mSelectedItems.size() > 0;
         notifyDataSetChanged();
@@ -675,6 +713,15 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             RequestListener listener = (RequestListener) mContext;
             listener.onRequestSelected(getSelectedItemsSize());
         } catch (Exception ignored) {
+        }
+        if (mIsSearchMode) {
+            if (getSelectedItemsSize() > 0) {
+                showSearchModeFab();
+            } else {
+                hideSearchModeFab();
+            }
+        } else {
+            updateNormalModeFabVisibility();
         }
         return mSelectedAll;
     }
@@ -721,6 +768,15 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             listener.onRequestSelected(getSelectedItemsSize());
         } catch (Exception ignored) {
         }
+        if (mIsSearchMode) {
+            if (getSelectedItemsSize() > 0) {
+                showSearchModeFab();
+            } else {
+                hideSearchModeFab();
+            }
+        } else {
+            updateNormalModeFabVisibility();
+        }
         notifyDataSetChanged();
     }
 
@@ -746,5 +802,30 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             }
         }
         return requested;
+    }
+
+    private void updateNormalModeFabVisibility() {
+        try {
+            if (mContext instanceof CandyBarMainActivity) {
+                FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
+                if (fab != null) {
+                    fab.show();
+                }
+            }
+        } catch (Exception ignored) {
+        }
+    }
+
+    public void setSearchMode(boolean searchMode) {
+        mIsSearchMode = searchMode;
+        if (mIsSearchMode) {
+            if (getSelectedItemsSize() > 0) {
+                showSearchModeFab();
+            } else {
+                hideSearchModeFab();
+            }
+        } else {
+            updateNormalModeFabVisibility();
+        }
     }
 }

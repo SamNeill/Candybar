@@ -29,16 +29,16 @@
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/content_padding"
+            android:layout_marginTop="@dimen/content_margin_title"
             android:layout_marginLeft="@dimen/content_margin"
             android:layout_marginStart="@dimen/content_margin"
             android:layout_marginRight="@dimen/content_margin"
             android:layout_marginEnd="@dimen/content_margin"
             android:gravity="center_horizontal"
-            android:text="@string/about_title"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="?attr/cb_colorAccent"
             android:textSize="@dimen/text_title"
             android:textStyle="bold"
             app:fontFamily="@font/medium" />
@@ -47,7 +47,7 @@
             android:id="@+id/subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/content_padding"
+            android:layout_marginTop="@dimen/content_margin"
             android:layout_marginBottom="@dimen/content_margin"
             android:layout_marginLeft="@dimen/content_margin"
             android:layout_marginStart="@dimen/content_margin"
@@ -435,6 +435,7 @@
                 </LinearLayout>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/version_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -443,7 +444,10 @@
                     app:cardBackgroundColor="?cb_cardBackground"
                     app:cardCornerRadius="32dp"
                     app:cardElevation="@dimen/card_elevation"
-                    app:strokeColor="?cb_cardStroke">
+                    app:strokeColor="?cb_cardStroke"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
 
                     <FrameLayout
                         android:layout_width="match_parent"

@@ -1,8 +1,12 @@
 package candybar.lib.fragments;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,6 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 import candybar.lib.R;
 import candybar.lib.activities.CandyBarMainActivity;
@@ -28,11 +33,15 @@ import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.helpers.TapIntroHelper;
 import candybar.lib.helpers.WallpaperHelper;
 import candybar.lib.items.Home;
+import candybar.lib.items.Icon;
 import candybar.lib.preferences.Preferences;
+import candybar.lib.tasks.IconsLoaderTask;
 import candybar.lib.utils.listeners.HomeListener;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import candybar.lib.helpers.TypefaceHelper;
+import candybar.lib.helpers.IconsHelper;
+import candybar.lib.helpers.RequestHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -109,36 +118,71 @@ public class HomeFragment extends Fragment implements HomeListener {
         if (mRecyclerView == null) return;
         if (mRecyclerView.getAdapter() == null) return;
 
-        if (home != null) {
-            HomeAdapter adapter = (HomeAdapter) mRecyclerView.getAdapter();
-            if (CandyBarApplication.getConfiguration().isAutomaticIconsCountEnabled()) {
-                int index = adapter.getIconsIndex();
-                if (index >= 0 && index < adapter.getItemCount()) {
-                    adapter.getItem(index).setTitle(String.valueOf(CandyBarMainActivity.sIconsCount));
-                    adapter.getItem(index).setLoading(false);
+        HomeAdapter adapter = (HomeAdapter) mRecyclerView.getAdapter();
+        
+        // Always update icon count if automatic counting is enabled
+        if (CandyBarApplication.getConfiguration().isAutomaticIconsCountEnabled()) {
+            int index = adapter.getIconsIndex();
+            if (index >= 0 && index < adapter.getItemCount()) {
+                Home iconHome = adapter.getItem(index);
+                if (iconHome != null) {
+                    iconHome.setTitle(String.valueOf(CandyBarMainActivity.sIconsCount));
+                    iconHome.setLoading(false);
                     adapter.notifyItemChanged(index);
+
+                    // Load random icon when icons are loaded
+                    if (requireActivity().getResources().getBoolean(R.bool.show_random_icon) 
+                        && !CandyBarMainActivity.sSections.isEmpty()) {
+                        mRecyclerView.post(() -> {
+                            try {
+                                Random random = new Random();
+                                int sectionIndex = random.nextInt(CandyBarMainActivity.sSections.size());
+                                List<Icon> icons = CandyBarMainActivity.sSections.get(sectionIndex).getIcons();
+                                if (!icons.isEmpty()) {
+                                    int iconIndex = random.nextInt(icons.size());
+                                    Icon icon = icons.get(iconIndex);
+
+                                    BitmapFactory.Options options = new BitmapFactory.Options();
+                                    options.inJustDecodeBounds = true;
+                                    BitmapFactory.decodeResource(requireActivity().getResources(),
+                                            icon.getRes(), options);
+
+                                    String iconDimension = "";
+                                    if (options.outWidth > 0 && options.outHeight > 0) {
+                                        iconDimension = requireActivity().getResources().getString(R.string.home_icon_dimension,
+                                                options.outWidth + " x " + options.outHeight);
+                                    }
+
+                                    Home randomIconHome = new Home(
+                                            icon.getRes(),
+                                            icon.getTitle(),
+                                            iconDimension,
+                                            Home.Type.DIMENSION,
+                                            false);
+                                    
+                                    // Update or add the random icon
+                                    int dimensionsIndex = adapter.getDimensionsIndex();
+                                    CandyBarMainActivity.sHomeIcon = randomIconHome;
+                                    if (dimensionsIndex >= 0) {
+                                        adapter.notifyItemChanged(dimensionsIndex);
+                                    } else {
+                                        adapter.addNewContent(randomIconHome);
+                                    }
+                                }
+                            } catch (Exception e) {
+                                Log.e("HomeFragment", "Failed to load random icon", e);
+                            }
+                        });
+                    }
                 }
             }
+        }
 
+        // Handle random icon preview if provided from elsewhere
+        if (home != null && home.getType() == Home.Type.DIMENSION) {
             int dimensionsIndex = adapter.getDimensionsIndex();
             if (dimensionsIndex < 0 && requireActivity().getResources().getBoolean(R.bool.show_random_icon)) {
                 adapter.addNewContent(home);
-            }
-            return;
-        }
-
-        RecyclerView.Adapter<?> adapter = mRecyclerView.getAdapter();
-        if (adapter.getItemCount() > 8) {
-            // Probably the original adapter already modified
-            adapter.notifyDataSetChanged();
-            return;
-        }
-
-        if (adapter instanceof HomeAdapter) {
-            HomeAdapter homeAdapter = (HomeAdapter) adapter;
-            int index = homeAdapter.getIconRequestIndex();
-            if (index >= 0 && index < adapter.getItemCount()) {
-                adapter.notifyItemChanged(index);
             }
         }
     }
@@ -213,14 +257,10 @@ public class HomeFragment extends Fragment implements HomeListener {
                     resources.getString(R.string.home_kustom_desc, resources.getString(R.string.app_name)),
                     Home.Type.KUSTOM,
                     false));
-        } else {
-            Log.d("CandyBar", "Kustom section not added. Conditions: " +
-                    "isBottomNav=" + isBottomNav +
-                    ", enable_kustom=" + resources.getBoolean(R.bool.enable_kustom) +
-                    ", hasKustomFolders=" + CandyBarApplication.getConfiguration().hasKustomFolders());
         }
 
         // Show icons count in home for both navigation styles
+        boolean isLoading = CandyBarApplication.getConfiguration().isAutomaticIconsCountEnabled() && CandyBarMainActivity.sIconsCount == 0;
         homes.add(new Home(
                 -1,
                 CandyBarApplication.getConfiguration().isAutomaticIconsCountEnabled() ?
@@ -228,14 +268,90 @@ public class HomeFragment extends Fragment implements HomeListener {
                         String.valueOf(CandyBarApplication.getConfiguration().getCustomIconsCount()),
                 resources.getString(R.string.home_icons),
                 Home.Type.ICONS,
-                true));
+                isLoading));
 
         if (CandyBarMainActivity.sHomeIcon != null && requireActivity().getResources().getBoolean(R.bool.show_random_icon)) {
             homes.add(CandyBarMainActivity.sHomeIcon);
         }
 
-        mRecyclerView.setAdapter(new HomeAdapter(requireActivity(), homes,
-                resources.getConfiguration().orientation));
+        HomeAdapter adapter = new HomeAdapter(requireActivity(), homes,
+                resources.getConfiguration().orientation);
+        mRecyclerView.setAdapter(adapter);
+
+        // Start icon loading and icon request loading if needed
+        if (isLoading) {
+            new Thread(() -> {
+                try {
+                    // Load icons
+                    IconsHelper.loadIcons(requireActivity(), true);
+                    
+                    // Generate random icon
+                    Home randomIconHome = null;
+                    if (requireActivity().getResources().getBoolean(R.bool.show_random_icon) 
+                        && !CandyBarMainActivity.sSections.isEmpty()) {
+                        Random random = new Random();
+                        int sectionIndex = random.nextInt(CandyBarMainActivity.sSections.size());
+                        List<Icon> icons = CandyBarMainActivity.sSections.get(sectionIndex).getIcons();
+                        if (!icons.isEmpty()) {
+                            int iconIndex = random.nextInt(icons.size());
+                            Icon icon = icons.get(iconIndex);
+
+                            BitmapFactory.Options options = new BitmapFactory.Options();
+                            options.inJustDecodeBounds = true;
+                            BitmapFactory.decodeResource(requireActivity().getResources(),
+                                    icon.getRes(), options);
+
+                            String iconDimension = "";
+                            if (options.outWidth > 0 && options.outHeight > 0) {
+                                iconDimension = requireActivity().getResources().getString(R.string.home_icon_dimension,
+                                        options.outWidth + " x " + options.outHeight);
+                            }
+
+                            randomIconHome = new Home(
+                                    icon.getRes(),
+                                    icon.getTitle(),
+                                    iconDimension,
+                                    Home.Type.DIMENSION,
+                                    false);
+                            CandyBarMainActivity.sHomeIcon = randomIconHome;
+                        }
+                    }
+
+                    // Load icon request data
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                    List<ResolveInfo> installedApps = requireActivity().getPackageManager().queryIntentActivities(
+                            intent, PackageManager.GET_RESOLVED_FILTER);
+                    CandyBarMainActivity.sInstalledAppsCount = installedApps.size();
+                    CandyBarMainActivity.sMissedApps = RequestHelper.getMissingApps(requireActivity());
+
+                    // Update UI on main thread
+                    final Home finalRandomIconHome = randomIconHome;
+                    requireActivity().runOnUiThread(() -> {
+                        // Update icon count
+                        int index = adapter.getIconsIndex();
+                        if (index >= 0 && index < adapter.getItemCount()) {
+                            Home iconHome = adapter.getItem(index);
+                            if (iconHome != null) {
+                                iconHome.setTitle(String.valueOf(CandyBarMainActivity.sIconsCount));
+                                iconHome.setLoading(false);
+                                adapter.notifyItemChanged(index);
+                            }
+                        }
+
+                        // Add random icon if generated
+                        if (finalRandomIconHome != null) {
+                            adapter.addNewContent(finalRandomIconHome);
+                        }
+
+                        // Update icon request counts
+                        adapter.notifyDataSetChanged();
+                    });
+                } catch (Exception e) {
+                    Log.e("HomeFragment", "Failed to load icons", e);
+                }
+            }).start();
+        }
 
         // By default `onHomeIntroInit` is called by the ChangelogFragment,
         // so that the intro starts after the changelog dialog is dismissed

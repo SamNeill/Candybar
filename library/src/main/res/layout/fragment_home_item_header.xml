@@ -72,7 +72,7 @@
         android:layout_marginRight="@dimen/content_margin"
         android:layout_marginEnd="@dimen/content_margin"
         android:gravity="center_horizontal"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="?attr/cb_colorAccent"
         android:textSize="@dimen/text_title"
         android:textStyle="bold"
         app:fontFamily="@font/medium" />

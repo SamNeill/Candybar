@@ -3,6 +3,7 @@ package candybar.lib.fragments;
 import static candybar.lib.helpers.ViewHelper.setFastScrollColor;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -39,6 +40,7 @@ import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.items.FAQs;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
+import candybar.lib.helpers.ColorHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -92,6 +94,14 @@ public class FAQsFragment extends Fragment {
                 new HashMap<String, Object>() {{ put("section", "faq"); }}
         );
 
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
+
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -110,6 +120,11 @@ public class FAQsFragment extends Fragment {
         View searchView = search.getActionView();
         EditText searchInput = searchView.findViewById(R.id.search_input);
         View clearQueryButton = searchView.findViewById(R.id.clear_query_button);
+
+        // Set accent color for search icon
+        if (search.getIcon() != null) {
+            search.getIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+        }
 
         searchInput.setHint(requireActivity().getResources().getString(R.string.search_faqs));
 

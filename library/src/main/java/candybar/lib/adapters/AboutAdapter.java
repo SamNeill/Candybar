@@ -48,6 +48,10 @@ import candybar.lib.fragments.dialog.PrivacyPolicyDialog;
 import candybar.lib.helpers.ConfigurationHelper;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.CandyBarGlideModule;
+import candybar.lib.fragments.dialog.ChangelogFragment;
+import candybar.lib.helpers.ViewHelper;
+import candybar.lib.utils.ImageConfig;
+import candybar.lib.utils.views.HeaderView;
 
 /*
  * CandyBar - Material Dashboard
@@ -127,6 +131,12 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                                 ? DiskCacheStrategy.NONE
                                 : DiskCacheStrategy.RESOURCE)
                         .into(headerViewHolder.profile);
+            }
+
+            // Set title text
+            TextView title = headerViewHolder.itemView.findViewById(R.id.title);
+            if (title != null) {
+                title.setText(mContext.getResources().getString(R.string.about_title));
             }
 
             // Set version text and app icon
@@ -215,6 +225,19 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 samText.setMovementMethod(LinkMovementMethod.getInstance());
                 samText.setLinkTextColor(accentColor);
             }
+
+            // Set up version card click listener
+            MaterialCardView versionCard = headerViewHolder.itemView.findViewById(R.id.version_card);
+            if (versionCard != null) {
+                versionCard.setOnClickListener(v -> {
+                    if (mContext instanceof AppCompatActivity) {
+                        ChangelogFragment.showChangelog(
+                            ((AppCompatActivity) mContext).getSupportFragmentManager(),
+                            () -> {}
+                        );
+                    }
+                });
+            }
         }
     }
 
@@ -239,6 +262,7 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         private final TextView specialThanks;
         private final MaterialCardView privacyPolicyButton;
         private final MaterialCardView termsButton;
+        private final MaterialCardView versionCard;
 
         HeaderViewHolder(View itemView) {
             super(itemView);
@@ -251,6 +275,7 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             specialThanks = itemView.findViewById(R.id.special_thanks);
             privacyPolicyButton = itemView.findViewById(R.id.privacy_policy_button);
             termsButton = itemView.findViewById(R.id.terms_conditions_button);
+            versionCard = itemView.findViewById(R.id.version_card);
 
             TextView subtitle = itemView.findViewById(R.id.subtitle);
             RecyclerView recyclerView = itemView.findViewById(R.id.recyclerview);

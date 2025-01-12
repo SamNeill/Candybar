@@ -4,17 +4,23 @@ import static candybar.lib.helpers.DrawableHelper.getPackageIcon;
 import static candybar.lib.helpers.DrawableHelper.getReqIconBase64;
 import static candybar.lib.helpers.ViewHelper.setFastScrollColor;
 
+import android.content.ContentResolver;
+import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
+import android.database.Cursor;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -26,6 +32,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -46,6 +53,7 @@ import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.Purchase;
 import com.danimahardhika.android.helpers.animation.AnimationHelper;
 import com.danimahardhika.android.helpers.core.ColorHelper;
+import com.danimahardhika.android.helpers.core.DrawableHelper;
 import com.danimahardhika.android.helpers.core.FileHelper;
 import com.danimahardhika.android.helpers.core.SoftKeyboardHelper;
 import com.danimahardhika.android.helpers.core.ViewHelper;
@@ -57,8 +65,11 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -154,16 +165,25 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
         setHasOptionsMenu(true);
         resetRecyclerViewPadding(getResources().getConfiguration().orientation);
 
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
+
         mProgress.getIndeterminateDrawable().setColorFilter(
                 ColorHelper.getAttributeColor(getActivity(), com.google.android.material.R.attr.colorSecondary),
                 PorterDuff.Mode.SRC_IN);
 
-	        int color = ColorHelper.getAttributeColor(getActivity(), android.R.attr.textColorPrimary);
+        int color = ColorHelper.getAttributeColor(getActivity(), android.R.attr.textColorPrimary);
         Drawable tintedDrawable = ResourcesCompat.getDrawable(requireActivity().getResources(), R.drawable.ic_fab_send, null);
         assert tintedDrawable != null;
         tintedDrawable.mutate().setColorFilter(color, PorterDuff.Mode.SRC_IN);
         mFab.setImageDrawable(tintedDrawable);
         mFab.setOnClickListener(this);
+        mFab.show();
 
         if (!Preferences.get(requireActivity()).isFabShadowEnabled()) {
             mFab.setCompatElevation(0f);
@@ -186,6 +206,24 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
+        // Refresh the UI when returning from email client
+        if (RequestFragment.sSelectedRequests != null && mAdapter != null) {
+            for (Integer pos : RequestFragment.sSelectedRequests) {
+                if (pos < CandyBarMainActivity.sMissedApps.size()) {
+                    Request request = CandyBarMainActivity.sMissedApps.get(pos);
+                    request.setRequested(true);
+                    // Add to database
+                    Database.get(requireActivity()).addRequest(null, request);
+                }
+            }
+            // Notify adapter of full dataset change to properly refresh UI
+            mAdapter.notifyDataSetChanged();
+            // Clear selected requests after updating
+            RequestFragment.sSelectedRequests = null;
+            // Reset selection UI
+            if (mMenuItem != null) mMenuItem.setIcon(R.drawable.ic_toolbar_select_all);
+            mAdapter.resetSelectedItems();
+        }
     }
 
     @Override
@@ -214,27 +252,46 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.menu_request_search, menu);
         MenuItem search = menu.findItem(R.id.menu_search);
+        MenuItem selectAll = menu.findItem(R.id.menu_select_all);
         View searchView = search.getActionView();
+
+        // Set initial accent color for select all icon
+        Drawable selectAllIcon = selectAll.getIcon();
+        if (selectAllIcon != null) {
+            selectAllIcon.setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+        }
+
+        // Set accent color for search icon
+        Drawable searchIcon = search.getIcon();
+        if (searchIcon != null) {
+            searchIcon.setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+        }
 
         EditText searchInput = searchView.findViewById(R.id.search_input);
         View clearQueryButton = searchView.findViewById(R.id.clear_query_button);
 
         searchInput.setHint(R.string.search_apps);
-        searchInput.setHintTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorSecondary));
         searchInput.setTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorPrimary));
+
+        // Set accent color for clear button
+        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
+        if (clearQueryButton instanceof ImageButton) {
+            ((ImageButton) clearQueryButton).setColorFilter(accentColor);
+        }
 
         search.setOnActionExpandListener(new MenuItem.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {
                 searchInput.requestFocus();
-                if (mAdapter == null || mAdapter.getSelectedItemsSize() == 0) {
-                    mFab.hide();
-                }
                 if (getActivity() != null) {
                     View bottomNavigation = getActivity().findViewById(R.id.bottom_navigation);
                     if (bottomNavigation != null) {
                         bottomNavigation.setVisibility(View.GONE);
                     }
+                }
+                mFab.hide();
+                if (mAdapter != null) {
+                    mAdapter.setSearchMode(true);
                 }
                 new Handler(Looper.getMainLooper()).postDelayed(() -> {
                     if (getActivity() != null && !getActivity().isFinishing()) {
@@ -247,7 +304,6 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
             @Override
             public boolean onMenuItemActionCollapse(MenuItem item) {
                 searchInput.setText("");
-                mFab.show();
                 SoftKeyboardHelper.closeKeyboard(requireActivity());
                 if (getActivity() != null) {
                     CandyBarMainActivity activity = (CandyBarMainActivity) getActivity();
@@ -256,6 +312,10 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
                         bottomNavigation.setVisibility(View.VISIBLE);
                     }
                 }
+                if (mAdapter != null) {
+                    mAdapter.setSearchMode(false);
+                }
+                mFab.show();
                 return true;
             }
         });
@@ -304,11 +364,19 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
             mMenuItem = item;
             if (mAdapter == null) return false;
             if (mAdapter.selectAll()) {
-                item.setIcon(R.drawable.ic_toolbar_select_all_selected);
+                Drawable icon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_toolbar_select_all_selected, null);
+                if (icon != null) {
+                    icon.setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+                    item.setIcon(icon);
+                }
                 return true;
             }
 
-            item.setIcon(R.drawable.ic_toolbar_select_all);
+            Drawable icon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_toolbar_select_all, null);
+            if (icon != null) {
+                icon.setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+                item.setIcon(icon);
+            }
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -524,7 +592,7 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
                     .build();
 
             dialog.show();
-            
+
             // Set progress bar color to accent color
             if (dialog.getProgressBar() != null) {
                 dialog.getProgressBar().getIndeterminateDrawable().setColorFilter(
@@ -591,6 +659,18 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
                             return false;
                         }
 
+                        // Clear all cache files before generating new ones
+                        File cacheDir = requireActivity().getCacheDir();
+                        File[] cacheFiles = cacheDir.listFiles((dir, name) ->
+                                name.endsWith(".xml") || name.endsWith(".zip"));
+                        if (cacheFiles != null) {
+                            for (File file : cacheFiles) {
+                                if (!file.delete()) {
+                                    LogUtil.e("Failed to delete cache file: " + file.getName());
+                                }
+                            }
+                        }
+
                         if (Preferences.get(requireActivity()).isPremiumRequest()) {
                             AtomicBoolean hasDetailsLoaded = new AtomicBoolean(false);
                             CountDownLatch doneSignal = new CountDownLatch(1);
@@ -633,6 +713,59 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
 
                         CandyBarApplication.sZipPath = FileHelper.createZip(files, new File(directory.toString(),
                                 RequestHelper.getGeneratedZipName(RequestHelper.ZIP)));
+
+                        // Copy zip file to Documents folder in app-specific directory
+                        if (CandyBarApplication.sZipPath != null) {
+                            File sourceZip = new File(CandyBarApplication.sZipPath);
+                            if (sourceZip.exists()) {
+                                try {
+                                    String appName = requireActivity().getString(requireActivity().getApplicationInfo().labelRes);
+                                    String folderPath = Environment.DIRECTORY_DOCUMENTS + File.separator + appName;
+
+                                    // Delete existing zip files in the app's Documents folder
+                                    ContentResolver resolver = requireActivity().getContentResolver();
+                                    Uri externalUri = MediaStore.Files.getContentUri("external");
+                                    String selection = MediaStore.MediaColumns.RELATIVE_PATH + "=? AND " +
+                                            MediaStore.MediaColumns.MIME_TYPE + "=?";
+                                    String[] selectionArgs = new String[]{folderPath + File.separator, "application/zip"};
+
+                                    Cursor cursor = resolver.query(externalUri, new String[]{MediaStore.MediaColumns._ID},
+                                            selection, selectionArgs, null);
+                                    if (cursor != null) {
+                                        while (cursor.moveToNext()) {
+                                            long id = cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.MediaColumns._ID));
+                                            Uri deleteUri = ContentUris.withAppendedId(externalUri, id);
+                                            resolver.delete(deleteUri, null, null);
+                                        }
+                                        cursor.close();
+                                    }
+
+                                    // Copy new zip file
+                                    ContentValues values = new ContentValues();
+                                    values.put(MediaStore.MediaColumns.DISPLAY_NAME, sourceZip.getName());
+                                    values.put(MediaStore.MediaColumns.MIME_TYPE, "application/zip");
+                                    values.put(MediaStore.MediaColumns.RELATIVE_PATH, folderPath);
+
+                                    Uri targetUri = resolver.insert(externalUri, values);
+
+                                    if (targetUri != null) {
+                                        OutputStream out = resolver.openOutputStream(targetUri);
+                                        if (out != null) {
+                                            FileInputStream in = new FileInputStream(sourceZip);
+                                            byte[] buffer = new byte[1024];
+                                            int len;
+                                            while ((len = in.read(buffer)) > 0) {
+                                                out.write(buffer, 0, len);
+                                            }
+                                            in.close();
+                                            out.close();
+                                        }
+                                    }
+                                } catch (Exception e) {
+                                    LogUtil.e("Failed to copy zip to Documents: " + e.getMessage());
+                                }
+                            }
+                        }
                     }
                     return true;
                 } catch (RuntimeException | InterruptedException e) {
@@ -654,10 +787,20 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
 
             if (ok) {
                 if (isPacific || isCustom) {
+                    // Update UI immediately after successful request
+                    if (mAdapter != null && RequestFragment.sSelectedRequests != null) {
+                        for (Integer pos : RequestFragment.sSelectedRequests) {
+                            if (pos < CandyBarMainActivity.sMissedApps.size()) {
+                                Request request = CandyBarMainActivity.sMissedApps.get(pos);
+                                request.setRequested(true);
+                                mAdapter.notifyItemChanged(pos);
+                            }
+                        }
+                    }
                     int toastText = isPacific ? R.string.request_pacific_success : R.string.request_custom_success;
                     ToastHelper.show(getActivity(), toastText, Toast.LENGTH_LONG);
-                    ((RequestListener) getActivity()).onRequestBuilt(null, IntentChooserFragment.ICON_REQUEST);
                 } else {
+                    // For email requests, mark as requested only after the email is sent
                     IntentChooserFragment.showIntentChooserDialog(getActivity().getSupportFragmentManager(),
                             IntentChooserFragment.ICON_REQUEST);
                 }

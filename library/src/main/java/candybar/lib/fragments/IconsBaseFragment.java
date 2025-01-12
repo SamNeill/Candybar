@@ -2,6 +2,7 @@ package candybar.lib.fragments;
 
 import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +28,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
 import com.danimahardhika.android.helpers.animation.AnimationHelper;
+import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.utils.LogUtil;
 import com.danimahardhika.android.helpers.core.SoftKeyboardHelper;
 import com.google.android.material.tabs.TabLayout;
@@ -104,6 +106,14 @@ public class IconsBaseFragment extends Fragment {
         inflater.inflate(R.menu.menu_icons_search, menu);
         MenuItem search = menu.findItem(R.id.menu_search);
         MenuItem iconShape = menu.findItem(R.id.menu_icon_shape);
+
+        // Set accent color for search and icon shape icons
+        if (search.getIcon() != null) {
+            search.getIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+        }
+        if (iconShape.getIcon() != null) {
+            iconShape.getIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+        }
 
         search.setOnActionExpandListener(new MenuItem.OnActionExpandListener() {
             @Override
@@ -427,5 +437,23 @@ public class IconsBaseFragment extends Fragment {
         public List<Icon> getIcons() {
             return mIcons;
         }
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
+
+        mTabLayout = view.findViewById(R.id.tab);
+        mPager = view.findViewById(R.id.pager);
+        mProgress = view.findViewById(R.id.progress);
+        initTabs();
     }
 }

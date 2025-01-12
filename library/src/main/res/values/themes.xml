@@ -22,6 +22,8 @@
         <!-- Popup/Overflow Menu styles -->
         <item name="popupMenuStyle">@style/CandyBar.PopupMenu</item>
         <item name="actionOverflowMenuStyle">@style/CandyBar.PopupMenu.Overflow</item>
+        <item name="actionOverflowButtonStyle">@style/CandyBar.ActionButton.Overflow</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
     </style>
 
     <style name="CandyBar.Theme" parent="CandyBar.Theme.Base">

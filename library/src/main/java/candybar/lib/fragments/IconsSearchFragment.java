@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -134,8 +135,13 @@ public class IconsSearchFragment extends Fragment {
         View clearQueryButton = searchView.findViewById(R.id.clear_query_button);
         mSearchInput = searchView.findViewById(R.id.search_input);
         mSearchInput.setHint(R.string.search_icon);
-        mSearchInput.setHintTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorSecondary));
         mSearchInput.setTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorPrimary));
+        
+        // Set accent color for clear button
+        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
+        if (clearQueryButton instanceof ImageButton) {
+            ((ImageButton) clearQueryButton).setColorFilter(accentColor);
+        }
 
         search.expandActionView();
         mSearchInput.requestFocus();

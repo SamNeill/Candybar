@@ -9,6 +9,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.util.Base64;
 import android.util.Log;
 
@@ -76,12 +77,12 @@ public class RequestHelper {
     public static final String APPFILTER = "appfilter.xml";
     public static final String APPMAP = "appmap.xml";
     public static final String THEME_RESOURCES = "theme_resources.xml";
-    public static final String ZIP = "icon_request.zip";
-    public static final String REBUILD_ZIP = "rebuild_icon_request.zip";
+    public static final String ZIP = "IconRequest.zip";
+    public static final String REBUILD_ZIP = "RebuildIconRequest.zip";
 
     public static String getGeneratedZipName(@NonNull String baseName) {
-        return baseName.substring(0, baseName.lastIndexOf(".")) + "_" + TimeHelper.getDateTime(
-                new SimpleDateFormat("dd_MM_yyyy_HH_mm_ss", Locale.ENGLISH)) + ".zip";
+        return baseName.substring(0, baseName.lastIndexOf(".")) + "-" + TimeHelper.getDateTime(
+                new SimpleDateFormat("yyyyMMdd-HHmmss", Locale.ENGLISH)) + ".zip";
     }
 
     public static String fixNameForRequest(String name) {
@@ -119,8 +120,24 @@ public class RequestHelper {
             String UTF8 = "UTF8";
             Writer writer = new BufferedWriter(new OutputStreamWriter(
                     new FileOutputStream(file), UTF8));
-            writer.append(xmlType.getHeader()).append("\n\n");
-
+            writer.append(xmlType.getHeader()).append("\n");
+            
+            // Add app info in single comment line
+            String appName = context.getString(context.getApplicationInfo().labelRes);
+            String versionName = "1.0";
+            long versionCode = 1;
+            
+            try {
+                PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+                versionName = packageInfo.versionName;
+                versionCode = Build.VERSION.SDK_INT >= Build.VERSION_CODES.P ? packageInfo.getLongVersionCode() : packageInfo.versionCode;
+            } catch (PackageManager.NameNotFoundException e) {
+                LogUtil.e("Failed to get package info: " + e.getMessage());
+            }
+            
+            writer.append("\t<!-- ").append(appName).append(" ")
+                  .append(versionName).append(" (").append(String.valueOf(versionCode)).append(") -->\n\n");
+            
             for (Request request : requests) {
                 writer.append(xmlType.getContent(context, request));
             }
@@ -546,22 +563,23 @@ public class RequestHelper {
     }
 
     public enum XmlType {
-        APPFILTER(RequestHelper.APPFILTER, "<resources>", "</resources>"),
-        APPMAP(RequestHelper.APPMAP, "<appmap>", "</appmap>"),
-        THEME_RESOURCES(RequestHelper.THEME_RESOURCES, "<Theme version=\"1\">", "</Theme>");
+        APPFILTER("appfilter", "<resources>", "</resources>"),
+        APPMAP("appmap", "<appmap>", "</appmap>"),
+        THEME_RESOURCES("theme_resources", "<Theme version=\"1\">", "</Theme>");
 
-        private final String fileName;
+        private final String baseName;
         private final String header;
         private final String footer;
 
-        XmlType(String fileName, String header, String footer) {
-            this.fileName = fileName;
+        XmlType(String baseName, String header, String footer) {
+            this.baseName = baseName;
             this.header = header;
             this.footer = footer;
         }
 
         private String getFileName() {
-            return fileName;
+            return baseName + "-" + TimeHelper.getDateTime(
+                    new SimpleDateFormat("yyyyMMdd-HHmmss", Locale.ENGLISH)) + ".xml";
         }
 
         private String getHeader() {

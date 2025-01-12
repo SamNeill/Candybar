@@ -3,6 +3,7 @@ package candybar.lib.fragments;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.utils.LogUtil;
 
 import java.util.ArrayList;
@@ -77,6 +79,14 @@ public class ApplyFragment extends Fragment {
                 "view",
                 new HashMap<String, Object>() {{ put("section", "icon_apply"); }}
         );
+
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 

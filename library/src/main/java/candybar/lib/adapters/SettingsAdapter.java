@@ -506,11 +506,45 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                     put("action", "confirm_without_dialog");
                                 }}
                         );
-                        try {
-                            InAppBillingListener listener = (InAppBillingListener) mContext;
-                            listener.onRestorePurchases();
-                        } catch (Exception ignored) {
-                        }
+                        new MaterialDialog.Builder(mContext)
+                                .backgroundColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground))
+                                .typeface(TypefaceHelper.getMedium(mContext), TypefaceHelper.getRegular(mContext))
+                                .content(R.string.pref_premium_request_restore_desc)
+                                .positiveText(R.string.pref_premium_request_restore)
+                                .negativeText(android.R.string.cancel)
+                                .positiveColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent))
+                                .negativeColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent))
+                                .contentColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText))
+                                .onPositive((dialog, which) -> {
+                                    try {
+                                        LogUtil.d("Attempting to restore purchases...");
+                                        if (mContext == null) {
+                                            throw new IllegalStateException("Context is null");
+                                        }
+                                        if (!(mContext instanceof InAppBillingListener)) {
+                                            LogUtil.e("Context class: " + mContext.getClass().getName());
+                                            throw new IllegalStateException("Activity must implement InAppBillingListener");
+                                        }
+                                        InAppBillingListener listener = (InAppBillingListener) mContext;
+                                        LogUtil.d("Calling onRestorePurchases...");
+                                        listener.onRestorePurchases();
+                                    } catch (Exception e) {
+                                        LogUtil.e("Failed to restore purchases: " + e.getMessage());
+                                        LogUtil.e("Stack trace: " + Log.getStackTraceString(e));
+                                        ToastHelper.show(mContext, R.string.pref_premium_request_restore_empty, Toast.LENGTH_LONG);
+                                    }
+                                })
+                                .onNegative((dialog, which) -> {
+                                    CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
+                                            "click",
+                                            new HashMap<String, Object>() {{
+                                                put("section", "settings");
+                                                put("action", "cancel");
+                                                put("item", "restore_purchase_data");
+                                            }}
+                                    );
+                                })
+                                .show();
                         break;
                     case PREMIUM_REQUEST:
                         CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(

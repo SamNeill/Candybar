@@ -58,35 +58,36 @@ public class IconsLoaderTask extends AsyncTaskBase {
                 Thread.sleep(1);
 
                 IconsHelper.loadIcons(mContext.get(), true);
+                boolean success = true;
 
-                if (CandyBarMainActivity.sHomeIcon != null) return true;
+                if (CandyBarMainActivity.sHomeIcon == null) {
+                    Random random = new Random();
+                    int index = random.nextInt(CandyBarMainActivity.sSections.size());
+                    List<Icon> icons = CandyBarMainActivity.sSections.get(index).getIcons();
+                    index = random.nextInt(icons.size());
+                    Icon icon = icons.get(index);
 
-                Random random = new Random();
-                int index = random.nextInt(CandyBarMainActivity.sSections.size());
-                List<Icon> icons = CandyBarMainActivity.sSections.get(index).getIcons();
-                index = random.nextInt(icons.size());
-                Icon icon = icons.get(index);
+                    BitmapFactory.Options options = new BitmapFactory.Options();
+                    options.inJustDecodeBounds = true;
+                    BitmapFactory.decodeResource(mContext.get().getResources(),
+                            icon.getRes(), options);
 
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inJustDecodeBounds = true;
-                BitmapFactory.decodeResource(mContext.get().getResources(),
-                        icon.getRes(), options);
+                    String iconDimension = "";
 
-                String iconDimension = "";
+                    if (options.outWidth > 0 && options.outHeight > 0) {
+                        iconDimension = mContext.get().getResources().getString(R.string.home_icon_dimension,
+                                options.outWidth + " x " + options.outHeight);
+                    }
 
-                if (options.outWidth > 0 && options.outHeight > 0) {
-                    iconDimension = mContext.get().getResources().getString(R.string.home_icon_dimension,
-                            options.outWidth + " x " + options.outHeight);
+                    mHome = new Home(
+                            icon.getRes(),
+                            icon.getTitle(),
+                            iconDimension,
+                            Home.Type.DIMENSION,
+                            false);
+                    CandyBarMainActivity.sHomeIcon = mHome;
                 }
-
-                mHome = new Home(
-                        icon.getRes(),
-                        icon.getTitle(),
-                        iconDimension,
-                        Home.Type.DIMENSION,
-                        false);
-                CandyBarMainActivity.sHomeIcon = mHome;
-                return true;
+                return success;
             } catch (Exception e) {
                 LogUtil.e(Log.getStackTraceString(e));
                 return false;
@@ -98,7 +99,6 @@ public class IconsLoaderTask extends AsyncTaskBase {
     @Override
     protected void postRun(boolean ok) {
         if (ok) {
-            if (mHome == null) return;
             if (mContext.get() == null) return;
 
             FragmentManager fm = ((AppCompatActivity) mContext.get()).getSupportFragmentManager();

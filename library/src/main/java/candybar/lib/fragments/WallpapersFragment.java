@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -113,6 +114,14 @@ public class WallpapersFragment extends Fragment {
 
         ViewCompat.setNestedScrollingEnabled(mRecyclerView, false);
 
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
+
         mProgress.getIndeterminateDrawable().setColorFilter(
                 ColorHelper.getAttributeColor(getActivity(), com.google.android.material.R.attr.colorSecondary),
                 PorterDuff.Mode.SRC_IN);
@@ -146,8 +155,13 @@ public class WallpapersFragment extends Fragment {
         EditText searchInput = searchView.findViewById(R.id.search_input);
         View clearQueryButton = searchView.findViewById(R.id.clear_query_button);
         searchInput.setHint(R.string.search_wallpapers);
-        searchInput.setHintTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorSecondary));
         searchInput.setTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorPrimary));
+
+        // Set accent color for clear button
+        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
+        if (clearQueryButton instanceof ImageButton) {
+            ((ImageButton) clearQueryButton).setColorFilter(accentColor);
+        }
 
         searchInput.addTextChangedListener(new TextWatcher() {
             @Override

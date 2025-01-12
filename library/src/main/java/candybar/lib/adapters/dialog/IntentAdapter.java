@@ -1,9 +1,11 @@
 package candybar.lib.adapters.dialog;
 
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -19,11 +21,15 @@ import androidx.fragment.app.FragmentManager;
 
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.utils.LogUtil;
+import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 import java.util.List;
 
 import candybar.lib.R;
+import candybar.lib.activities.CandyBarMainActivity;
 import candybar.lib.applications.CandyBarApplication;
+import candybar.lib.databases.Database;
+import candybar.lib.fragments.RequestFragment;
 import candybar.lib.fragments.dialog.IntentChooserFragment;
 import candybar.lib.helpers.DrawableHelper;
 import candybar.lib.items.IntentChooser;
@@ -31,7 +37,6 @@ import candybar.lib.items.Request;
 import candybar.lib.tasks.IconRequestBuilderTask;
 import candybar.lib.tasks.PremiumRequestBuilderTask;
 import candybar.lib.utils.AsyncTaskBase;
-import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
 /*
  * CandyBar - Material Dashboard

@@ -2,6 +2,7 @@ package candybar.lib.fragments;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ import candybar.lib.R;
 import candybar.lib.adapters.AboutAdapter;
 import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.preferences.Preferences;
+import com.danimahardhika.android.helpers.core.ColorHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -92,6 +94,14 @@ public class AboutFragment extends Fragment {
                 appVersion.setText("Version " + versionName);
             } catch (Exception e) {
                 appVersion.setVisibility(View.GONE);
+            }
+        }
+
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
             }
         }
     }

@@ -123,7 +123,7 @@ import candybar.lib.utils.listeners.RequestListener;
 import candybar.lib.utils.listeners.SearchListener;
 import candybar.lib.utils.listeners.WallpapersListener;
 import candybar.lib.utils.views.HeaderView;
-
+import candybar.lib.helpers.ToastHelper;
 /*
  * CandyBar - Material Dashboard
  *
@@ -736,22 +736,45 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
     @Override
     public void onRestorePurchases() {
-        InAppBillingClient.get(this).getClient()
+        LogUtil.d("Starting purchase query...");
+        InAppBillingClient billingClient = InAppBillingClient.get(this);
+        if (billingClient == null) {
+            LogUtil.e("Billing client is null");
+            ToastHelper.show(this, R.string.pref_premium_request_restore_empty, Toast.LENGTH_LONG);
+            return;
+        }
+        LogUtil.d("Got billing client, querying purchases...");
+        billingClient.getClient()
                 .queryPurchasesAsync(InAppBillingClient.INAPP_PARAMS, (billingResult, purchases) -> {
+                    LogUtil.d("Purchase query completed. Response code: " + billingResult.getResponseCode());
                     if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
                         List<String> productIds = new ArrayList<>();
-                        for (Purchase purchase : purchases) {
-                            productIds.add(purchase.getProducts().get(0));
+                        if (purchases != null) {
+                            LogUtil.d("Found " + purchases.size() + " purchases");
+                            for (Purchase purchase : purchases) {
+                                productIds.add(purchase.getProducts().get(0));
+                            }
+                        } else {
+                            LogUtil.d("No purchases found");
                         }
                         runOnUiThread(() -> {
-                            SettingsFragment fragment = (SettingsFragment) mFragManager
-                                    .findFragmentByTag(Extras.TAG_SETTINGS);
-                            if (fragment != null) fragment.restorePurchases(productIds,
-                                    mConfig.getPremiumRequestProductsId(),
-                                    mConfig.getPremiumRequestProductsCount());
+                            Fragment currentFragment = mFragManager.findFragmentById(R.id.container);
+                            if (currentFragment instanceof SettingsFragment) {
+                                LogUtil.d("Restoring purchases in SettingsFragment");
+                                ((SettingsFragment) currentFragment).restorePurchases(productIds,
+                                        mConfig.getPremiumRequestProductsId(),
+                                        mConfig.getPremiumRequestProductsCount());
+                            } else {
+                                LogUtil.e("SettingsFragment not found or not current fragment");
+                                ToastHelper.show(this, R.string.pref_premium_request_restore_empty, Toast.LENGTH_LONG);
+                            }
                         });
                     } else {
-                        LogUtil.e("Failed to load purchase data. Response Code: " + billingResult.getResponseCode());
+                        LogUtil.e("Failed to load purchase data. Response Code: " + billingResult.getResponseCode() 
+                                + " Debug Message: " + billingResult.getDebugMessage());
+                        runOnUiThread(() -> {
+                            ToastHelper.show(this, R.string.pref_premium_request_restore_empty, Toast.LENGTH_LONG);
+                        });
                     }
                 });
     }
