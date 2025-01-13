@@ -67,8 +67,9 @@
             android:layout_marginLeft="@dimen/content_margin"
             android:layout_marginStart="@dimen/content_margin"
             android:clickable="false"
-            android:background="@android:color/transparent"
-            android:theme="@style/CheckBoxStyle" />
+            android:background="@null"
+            android:theme="@style/CheckBoxStyle"
+            android:button="@drawable/custom_checkbox" />
 
     </LinearLayout>
 

@@ -283,9 +283,15 @@ public class TapIntroHelper {
                     Typeface title = TypefaceHelper.getMedium(context);
 
                     if (recyclerView != null) {
-                        int position = 0;
-                        if (Preferences.get(context).isPremiumRequestEnabled())
-                            position += 1;
+                        // Position 0 is header when premium request or regular request limit is enabled
+                        // First regular app is at position 1 in that case
+                        int position = 1;
+                        // If neither premium request nor regular request limit is enabled,
+                        // regular apps start at position 0
+                        if (!Preferences.get(context).isPremiumRequestEnabled() && 
+                            !context.getResources().getBoolean(R.bool.enable_icon_request_limit)) {
+                            position = 0;
+                        }
 
                         if (recyclerView.getAdapter() != null) {
                             if (position < recyclerView.getAdapter().getItemCount()) {
