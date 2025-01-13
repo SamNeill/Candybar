@@ -56,11 +56,7 @@ public class Popup {
 
         int width = getMeasuredWidth(builder.mContext);
         mPopupWindow.setWidth(width);
-        Drawable drawable = mPopupWindow.getBackground();
-        if (drawable != null) {
-            drawable.setColorFilter(ColorHelper.getAttributeColor(
-                    builder.mContext, R.attr.cb_cardBackground), PorterDuff.Mode.SRC_IN);
-        }
+        mPopupWindow.setBackgroundDrawable(builder.mContext.getDrawable(R.drawable.popup_background));
 
         mPopupWindow.setAnchorView(builder.mTo);
         mPopupWindow.setAdapter(mAdapter);
@@ -226,7 +222,8 @@ public class Popup {
             }
 
             if (item.getIcon() != 0) {
-                Drawable drawable = DrawableHelper.getTintedDrawable(mContext, item.getIcon(), color);
+                int iconColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                Drawable drawable = DrawableHelper.getTintedDrawable(mContext, item.getIcon(), iconColor);
                 holder.title.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
             }
 

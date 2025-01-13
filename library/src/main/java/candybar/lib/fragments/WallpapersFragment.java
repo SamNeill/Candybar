@@ -56,6 +56,7 @@ import candybar.lib.items.Wallpaper;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
 import candybar.lib.utils.listeners.WallpapersListener;
+import com.danimahardhika.android.helpers.core.DrawableHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -152,13 +153,18 @@ public class WallpapersFragment extends Fragment {
         MenuItem search = menu.findItem(R.id.menu_search);
         View searchView = search.getActionView();
 
+        // Tint search icon with accent color
+        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
+        if (search.getIcon() != null) {
+            search.getIcon().setColorFilter(accentColor, PorterDuff.Mode.SRC_IN);
+        }
+
         EditText searchInput = searchView.findViewById(R.id.search_input);
         View clearQueryButton = searchView.findViewById(R.id.clear_query_button);
         searchInput.setHint(R.string.search_wallpapers);
         searchInput.setTextColor(ColorHelper.getAttributeColor(requireActivity(), android.R.attr.textColorPrimary));
 
         // Set accent color for clear button
-        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
         if (clearQueryButton instanceof ImageButton) {
             ((ImageButton) clearQueryButton).setColorFilter(accentColor);
         }
