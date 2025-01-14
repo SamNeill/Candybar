@@ -102,6 +102,7 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
 
         if (holder.getItemViewType() == TYPE_HEADER) {
             holder.name.setText(preset.getHeaderText());
+            holder.name.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
             holder.setType(preset.getHeaderText());
         } else if (holder.getItemViewType() == TYPE_CONTENT) {
             PresetInfoLoader.create(new AssetPresetFile(preset.getPath()))
@@ -249,7 +250,8 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
                         }
                     });
                     ((ImageView) item.findViewById(R.id.forward_icon)).setImageDrawable(
-                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_arrow_forward, color));
+                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_arrow_forward, 
+                                ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent)));
                     linearLayout.addView(item);
                 }
             } else {

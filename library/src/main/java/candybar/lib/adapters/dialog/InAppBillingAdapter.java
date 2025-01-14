@@ -1,6 +1,7 @@
 package candybar.lib.adapters.dialog;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,6 +10,9 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.widget.CompoundButtonCompat;
+
+import com.danimahardhika.android.helpers.core.ColorHelper;
 
 import java.util.List;
 
@@ -74,6 +78,18 @@ public class InAppBillingAdapter extends BaseAdapter {
             final InAppBilling inAppBilling = mInAppBillings.get(position);
             if (inAppBilling != null) {
                 holder.radio.setChecked(mSelectedPosition == position);
+
+                // Set radio button colors
+                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                int[][] states = new int[][] {
+                    new int[] { android.R.attr.state_checked },
+                    new int[] { -android.R.attr.state_checked }
+                };
+                int[] colors = new int[] {
+                    accentColor,
+                    ColorHelper.setColorAlpha(accentColor, 0.5f)
+                };
+                CompoundButtonCompat.setButtonTintList(holder.radio, new ColorStateList(states, colors));
 
                 String product = inAppBilling.getPrice() + " - " +
                         inAppBilling.getProductName();

@@ -1,6 +1,7 @@
 package candybar.lib.adapters.dialog;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.core.widget.CompoundButtonCompat;
+
+import com.danimahardhika.android.helpers.core.ColorHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +85,20 @@ public class ThemeAdapter extends BaseAdapter {
 
         holder.radio.setChecked(mSelectedIndex == position);
         holder.name.setText(mThemes.get(position).displayName(mContext));
+
+        // Set checkbox colors programmatically
+        int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+        ColorStateList colorStateList = new ColorStateList(
+            new int[][] {
+                new int[] { android.R.attr.state_checked },
+                new int[] { -android.R.attr.state_checked }
+            },
+            new int[] {
+                accentColor,  // Checked state
+                ColorHelper.setColorAlpha(accentColor, 0.5f)   // Unchecked state
+            }
+        );
+        CompoundButtonCompat.setButtonTintList(holder.radio, colorStateList);
 
         holder.container.setOnClickListener(v -> {
             for (ViewHolder aHolder : mHolders) {
