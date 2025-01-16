@@ -45,6 +45,7 @@
     <bool name="enable_icons_sort">false</bool>
     <bool name="show_icon_name">true</bool>
     <bool name="includes_adaptive_icons">true</bool>
+    <bool name="show_icon_shape">true</bool>
 
     <!-- CONFIG: ICON REQUEST -->
     <bool name="enable_icon_request">true</bool>
