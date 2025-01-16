@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tocca qui per impostare lo sfondo come sfondo della schermata iniziale</string>
     <string name="tap_intro_navigation_view">Stile di navigazione</string>
     <string name="tap_intro_navigation_view_desc">Switch tra il pannello di navigazione e la barra di navigazione inferiore in base alla tua preferenza</string>
-    <string name="tap_intro_theme_black">Tema Nero</string>
-    <string name="tap_intro_theme_black_desc">Tocca qui per applicare il tema Nero</string>
+    <string name="tap_intro_theme_black">Tema nero puro</string>
+    <string name="tap_intro_theme_black_desc">Tocca qui per abilitare il tema nero puro per una vera esperienza scura AMOLED con neri profondi</string>
 
     <!--Casa-->
     <string name="home_more_apps_header">Più app</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Leggero</string>
     <string name="theme_name_dark">Buio</string>
     <string name="theme_name_material_you">Materiale Tu</string>
-    <string name="theme_name_pure_black">Puro Nero</string>
+    <string name="theme_name_pure_black">Nero puro</string>
 
     <!--Autorizzazione-->
     <string name="permission_storage_denied">Autorizzazione di archiviazione necessaria per salvare lo sfondo</string>

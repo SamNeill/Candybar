@@ -108,8 +108,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Toqueu aquí per configurar el fons de pantalla com a fons de la pantalla d\'inici</string>
     <string name="tap_intro_navigation_view">Estil de navegació</string>
     <string name="tap_intro_navigation_view_desc">Canvia entre el llistó de navegació i la barra de navegació inferior segons el teu gust</string>
-    <string name="tap_intro_theme_black">Tema negre</string>
-    <string name="tap_intro_theme_black_desc">Toqueu aquí per aplicar el tema negre</string>
+    <string name="tap_intro_theme_black">Tema negre pur</string>
+    <string name="tap_intro_theme_black_desc">Toqueu aquí per activar el tema negre pur per obtenir una veritable experiència fosca AMOLED amb negres profunds</string>
 
 
     <!--a casa-->

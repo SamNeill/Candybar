@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Πατήστε εδώ για να ορίσετε την ταπετσαρία ως φόντο της αρχικής οθόνης</string>
     <string name="tap_intro_navigation_view">Στυλ πλοήγησης</string>
     <string name="tap_intro_navigation_view_desc">Αλλάξτε μεταξύ πλέγματος πλοήγησης και κάτω πλέγματος πλοήγησης ανάλογα με την προτίμησή σας</string>
-    <string name="tap_intro_theme_black">Απλό Σκούρο</string>
-    <string name="tap_intro_theme_black_desc">Πατήστε εδώ για να εφαρμόσετε το απλό σκούρο θέμα</string>
+    <string name="tap_intro_theme_black">Αμιγώς μαύρο θέμα</string>
+    <string name="tap_intro_theme_black_desc">Πατήστε εδώ για να ενεργοποιήσετε το αμιγώς μαύρο θέμα για μια πραγματική σκοτεινή εμπειρία AMOLED με βαθύ μαύρο</string>
 
     <!--Σπίτι-->
     <string name="home_more_apps_header">Περισσότερες εφαρμογές</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Φως</string>
     <string name="theme_name_dark">Σκοτάδι</string>
     <string name="theme_name_material_you">Υλικό Εσείς</string>
-    <string name="theme_name_pure_black">Απλό Σκούρο</string>
+    <string name="theme_name_pure_black">Απόλυτο μαύρο</string>
 
     <!--Αδεια-->
     <string name="permission_storage_denied">Απαιτείται άδεια αποθήκευσης για την αποθήκευση ταπετσαρίας</string>

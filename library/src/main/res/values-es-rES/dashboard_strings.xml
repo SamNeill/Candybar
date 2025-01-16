@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Toque aquí para configurar el fondo de pantalla como fondo de pantalla de inicio</string>
     <string name="tap_intro_navigation_view">Estilo de navegación</string>
     <string name="tap_intro_navigation_view_desc">Cambie entre el panel de navegación y la barra de navegación inferior según su preferencia</string>
-    <string name="tap_intro_theme_black">Tema negro</string>
-    <string name="tap_intro_theme_black_desc">Toque aquí para aplicar el tema negro</string>
+    <string name="tap_intro_theme_black">Tema negro puro</string>
+    <string name="tap_intro_theme_black_desc">Toque aquí para habilitar el tema negro puro para una verdadera experiencia oscura AMOLED con negros profundos</string>
 
 
     <!--Hogar-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Luz</string>
     <string name="theme_name_dark">Oscuro</string>
     <string name="theme_name_material_you">material usted</string>
-    <string name="theme_name_pure_black">Puro negro</string>
+    <string name="theme_name_pure_black">Negro puro</string>
 
     <!--Permiso-->
     <string name="permission_storage_denied">Se necesita permiso de almacenamiento para guardar el fondo de pantalla</string>

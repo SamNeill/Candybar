@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tik hier om de achtergrond in te stellen als achtergrond voor het startscherm</string>
     <string name="tap_intro_navigation_view">Navigatiestijl</string>
     <string name="tap_intro_navigation_view_desc">Switch tussen de navigatielade en de onderste navigatiebalk, afhankelijk van uw voorkeur</string>
-    <string name="tap_intro_theme_black">Pures Blou Tema</string>
-    <string name="tap_intro_theme_black_desc">Koppintson ide a pures blou temának való alkalmazásához</string>
+    <string name="tap_intro_theme_black">Puur zwart thema</string>
+    <string name="tap_intro_theme_black_desc">Tik hier om het puur zwarte thema in te schakelen voor een echte AMOLED-donkere ervaring met diepe zwarten</string>
 
 
     <!--Thuis-->
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Licht</string>
     <string name="theme_name_dark">Donker</string>
     <string name="theme_name_material_you">Materiaal jij</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Puur zwart</string>
 
     <!--Toestemming-->
     <string name="permission_storage_denied">Toestemming voor opslag vereist om achtergrond op te slaan</string>

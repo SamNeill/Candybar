@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Duvar kağıdını ana ekranın arka planı olarak ayarlamak için buraya dokunun</string>
     <string name="tap_intro_navigation_view">Navigasyon Stili</string>
     <string name="tap_intro_navigation_view_desc">Navigasyon çubuğunu veya navigasyon çubuğunu aşağıda seçtiğiniz gibi değiştirin</string>
-    <string name="tap_intro_theme_black">Siyah Temalı</string>
-    <string name="tap_intro_theme_black_desc">Buraya dokunun veya uzun basın, siyah temayı uygulamak için</string>
+    <string name="tap_intro_theme_black">Saf Siyah Tema</string>
+    <string name="tap_intro_theme_black_desc">Derin siyahlarla gerçek bir AMOLED karanlık deneyimi için saf siyah temayı etkinleştirmek üzere buraya dokunun</string>
 
 
     <!--Ev-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Işık</string>
     <string name="theme_name_dark">Karanlık</string>
     <string name="theme_name_material_you">Malzeme Siz</string>
-    <string name="theme_name_pure_black">Puro Siyah</string>
+    <string name="theme_name_pure_black">Saf Siyah</string>
 
     <!--İzin-->
     <string name="permission_storage_denied">Duvar kağıdını kaydetmek için depolama izni gerekiyor</string>

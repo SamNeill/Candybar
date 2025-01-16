@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">点击此处将壁纸设置为主屏幕背景</string>
     <string name="tap_intro_navigation_view">导航视图</string>
     <string name="tap_intro_navigation_view_desc">点击此处或从屏幕左边缘滑动以打开导航抽屉</string>
-    <string name="tap_intro_theme_black">纯黑</string>
-    <string name="tap_intro_theme_black_desc">点击此处应用纯黑主题</string>
+    <string name="tap_intro_theme_black">纯黑主题</string>
+    <string name="tap_intro_theme_black_desc">点击此处启用纯黑主题，获得真正的 AMOLED 深黑色暗色体验</string>
 
 
     <!--家-->

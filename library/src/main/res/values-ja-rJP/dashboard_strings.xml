@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">ここをタップして壁紙をホーム画面の背景として設定します</string>
     <string name="tap_intro_navigation_view">ナビゲーションスタイル</string>
     <string name="tap_intro_navigation_view_desc">ナビゲーションドロワーと下部ナビゲーションバーの間で切り替え、お好みに合わせてください</string>
-    <string name="tap_intro_theme_black">ブラックテーマ</string>
-    <string name="tap_intro_theme_black_desc">ここをタップしてブラックテーマを適用します</string>
+    <string name="tap_intro_theme_black">ピュアブラックテーマ</string>
+    <string name="tap_intro_theme_black_desc">ここをタップすると、AMOLEDディスプレイに最適な深い黒を実現するピュアブラックテーマが有効になります</string>
 
 
     <!--家-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">ライト</string>
     <string name="theme_name_dark">暗い</string>
     <string name="theme_name_material_you">マテリアル・ユー</string>
-    <string name="theme_name_pure_black">ブラック</string>
+    <string name="theme_name_pure_black">ピュアブラック</string>
 
     <!--許可-->
     <string name="permission_storage_denied">壁紙を保存するにはストレージ権限が必要です</string>

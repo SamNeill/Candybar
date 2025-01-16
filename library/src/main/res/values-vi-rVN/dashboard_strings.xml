@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Nhấn vào đây để đặt hình nền làm hình nền màn hình chính</string>
     <string name="tap_intro_navigation_view">Kiểu điều hướng</string>
     <string name="tap_intro_navigation_view_desc">Nhấn vào đây để chuyển đổi giữa thanh điều hướng và thanh điều hướng cuối cùng tùy thuộc vào sở thích của bạn</string>
-    <string name="tap_intro_theme_black">Chủ đề đen</string>
-    <string name="tap_intro_theme_black_desc">Nhấn vào đây để áp dụng chủ đề đen</string>
+    <string name="tap_intro_theme_black">Chủ đề đen thuần</string>
+    <string name="tap_intro_theme_black_desc">Nhấn vào đây để bật chủ đề đen thuần cho trải nghiệm tối AMOLED thực sự với màu đen sâu</string>
 
     <!--Trang chủ-->
     <string name="home_more_apps_header">Nhiều ứng dụng hơn</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Ánh sáng</string>
     <string name="theme_name_dark">Tối tăm</string>
     <string name="theme_name_material_you">tài liệu bạn</string>
-    <string name="theme_name_pure_black">Đen</string>
+    <string name="theme_name_pure_black">Đen tuyền</string>
 
     <!--Sự cho phép-->
     <string name="permission_storage_denied">Cần có quyền lưu trữ để lưu hình nền</string>

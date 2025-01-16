@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">הקש כאן כדי להגדיר טפט כרקע למסך הבית</string>
     <string name="tap_intro_navigation_view">סגנון ניווט</string>
     <string name="tap_intro_navigation_view_desc">הקש כאן כדי להחליף בין מסך הניווט למסך הניווט התחתון כפי שהיא מותאמת לך</string>
-    <string name="tap_intro_theme_black">אֶפְשָׁר קָוָה</string>
-    <string name="tap_intro_theme_black_desc">הקש כאן כדי להחליף את חבילת האייקונים שלך לאפשר קווים בצבע שחור</string>
+    <string name="tap_intro_theme_black">ערכת נושא שחורה טהורה</string>
+    <string name="tap_intro_theme_black_desc">הקש כאן כדי להפעיל את ערכת הנושא השחורה הטהורה לחוויית AMOLED אמיתית עם שחורים עמוקים</string>
 
     <!--בַּיִת-->
     <string name="home_more_apps_header">אפליקציות נוספות</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">אוֹר</string>
     <string name="theme_name_dark">כֵּהֶה</string>
     <string name="theme_name_material_you">חומר אתה</string>
-    <string name="theme_name_pure_black">אֶפְשָׁר קָוָה</string>
+    <string name="theme_name_pure_black">שחור טהור</string>
 
     <!--רְשׁוּת-->
     <string name="permission_storage_denied">נדרשת הרשאת אחסון כדי לשמור טפטים</string>

@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tap here to set wallpaper as the homescreen background</string>
     <string name="tap_intro_navigation_view">Navigation Style</string>
     <string name="tap_intro_navigation_view_desc">Switch between Navigation drawer and bottom Navigation bar as your Likeness</string>
-    <string name="tap_intro_theme_black">Black Theme</string>
-    <string name="tap_intro_theme_black_desc">Tap here to apply the black theme</string>
+    <string name="tap_intro_theme_black">Pure Black Theme</string>
+    <string name="tap_intro_theme_black_desc">Tap here to enable the pure black theme for a true AMOLED dark experience with deep blacks</string>
 
     <!--Home-->
     <string name="home_more_apps_header">More Apps</string>

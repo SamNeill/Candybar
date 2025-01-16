@@ -107,8 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tryk her for at downloade og gemme tapet på din enhed, så du kan bruge det senere</string>
     <string name="tap_intro_wallpaper_preview_apply">Påfør tapet</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tryk her for at indstille tapet som startskærmens baggrund</string>
-    <string name="tap_intro_theme_black">Mørk tema</string>
-    <string name="tap_intro_theme_black_desc">Tryk her for at anvende mørk tema</string>
+    <string name="tap_intro_theme_black">Rent sort tema</string>
+    <string name="tap_intro_theme_black_desc">Tryk her for at aktivere det rene sorte tema for en ægte AMOLED-mørk oplevelse med dybe sorte farver</string>
 
 
     <!--Hjem-->
@@ -308,7 +308,7 @@
     <string name="theme_name_light">Lys</string>
     <string name="theme_name_dark">Mørk</string>
     <string name="theme_name_material_you">Materiale dig</string>
-    <string name="theme_name_pure_black">Mørk tema</string>
+    <string name="theme_name_pure_black">Sort</string>
 
     <!--Tilladelse-->
     <string name="permission_storage_denied">Lagringstilladelse er nødvendig for at gemme tapet</string>

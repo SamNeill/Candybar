@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Napauta tätä asettaaksesi taustakuvan aloitusnäytön taustaksi</string>
     <string name="tap_intro_navigation_view">Navigointitapa</string>
     <string name="tap_intro_navigation_view_desc">Vaihda navigointilaatikko ja alapalkki navigointitavan mukaan</string>
-    <string name="tap_intro_theme_black">Tema negro</string>
-    <string name="tap_intro_theme_black_desc">Toque aquí para aplicar el tema negro</string>
+    <string name="tap_intro_theme_black">Täysin musta teema</string>
+    <string name="tap_intro_theme_black_desc">Napauta tätä ottaaksesi käyttöön täysin mustan teeman aitoa AMOLED-tummaa kokemusta varten syvän mustilla väreillä</string>
 
 
     <!--Kotiin-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Kevyt</string>
     <string name="theme_name_dark">Tumma</string>
     <string name="theme_name_material_you">Materiaali sinä</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Täysin musta</string>
 
     <!--Lupa-->
     <string name="permission_storage_denied">Taustakuvan tallentamiseen tarvitaan tallennuslupa</string>

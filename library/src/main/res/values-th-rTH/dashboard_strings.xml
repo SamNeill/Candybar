@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">แตะที่นี่เพื่อตั้งวอลเปเปอร์เป็นพื้นหลังหน้าจอหลัก</string>
     <string name="tap_intro_navigation_view">สไตล์การนำทาง</string>
     <string name="tap_intro_navigation_view_desc">แตะที่นี่เพื่อสลับระหว่างพื้นที่นำทางและแถบนำทางด้านล่างตามที่คุณต้องการ</string>
-    <string name="tap_intro_theme_black">สีดำ</string>
-    <string name="tap_intro_theme_black_desc">แตะที่นี่เพื่อใช้สีดำ</string>
+    <string name="tap_intro_theme_black">ธีมดำสนิท</string>
+    <string name="tap_intro_theme_black_desc">แตะที่นี่เพื่อเปิดใช้งานธีมดำสนิทสำหรับประสบการณ์โหมดมืดแบบ AMOLED ที่แท้จริงด้วยสีดำลึก</string>
 
 
     <!--บ้าน-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">แสงสว่าง</string>
     <string name="theme_name_dark">มืด</string>
     <string name="theme_name_material_you">วัสดุคุณ</string>
-    <string name="theme_name_pure_black">สีดำ</string>
+    <string name="theme_name_pure_black">ดำสนิท</string>
 
     <!--การอนุญาต-->
     <string name="permission_storage_denied">จำเป็นต้องได้รับอนุญาตในการจัดเก็บเพื่อบันทึกวอลเปเปอร์</string>

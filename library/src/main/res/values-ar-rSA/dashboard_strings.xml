@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">انقر هنا لتعيين خلفية الشاشة كخلفية للشاشة الرئيسية</string>
     <string name="tap_intro_navigation_view">نمط التنقل</string>
     <string name="tap_intro_navigation_view_desc">تبديل بين الشريط الجانبي للتنقل والشريط التنقل السفلي حسب الرغبة</string>
-    <string name="tap_intro_theme_black">نمط أسود عميق</string>
-    <string name="tap_intro_theme_black_desc">انقر هنا لتطبيق نمط أسود عميق لتجربة التجربة الأسود العميقة التي تتميز بالألوان الأسود العميقة والأبيض الفاتح</string>
+    <string name="tap_intro_theme_black">السمة السوداء النقية</string>
+    <string name="tap_intro_theme_black_desc">انقر هنا لتمكين السمة السوداء النقية للحصول على تجربة AMOLED مظلمة حقيقية مع درجات اللون الأسود العميق</string>
 
 
     <!--بيت-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">ضوء</string>
     <string name="theme_name_dark">مظلم</string>
     <string name="theme_name_material_you">المادة أنت</string>
-    <string name="theme_name_pure_black">أسود عميق</string>
+    <string name="theme_name_pure_black">أسود خالص</string>
 
     <!--إذن-->
     <string name="permission_storage_denied">إذن التخزين مطلوب لحفظ ورق الحائط</string>

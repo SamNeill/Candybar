@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tippen Sie hier, um das Hintergrundbild als Homescreen-Hintergrund festzulegen</string>
     <string name="tap_intro_navigation_view">Navigationsstil</string>
     <string name="tap_intro_navigation_view_desc">Wechseln Sie zwischen Navigationsschublade und unterer Navigationsleiste, je nach Ihrer Vorliebe</string>
-    <string name="tap_intro_theme_black">Dunkles Thema</string>
-    <string name="tap_intro_theme_black_desc">Tippen Sie hier, um das dunkle Thema anzuwenden</string>
+    <string name="tap_intro_theme_black">Reines Schwarz-Theme</string>
+    <string name="tap_intro_theme_black_desc">Tippen Sie hier, um das reine Schwarz-Theme für ein echtes AMOLED-Dunkelerlebnis mit tiefem Schwarz zu aktivieren</string>
 
 
     <!--Heim-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Licht</string>
     <string name="theme_name_dark">Dunkel</string>
     <string name="theme_name_material_you">Material Sie</string>
-    <string name="theme_name_pure_black">Schwarz</string>
+    <string name="theme_name_pure_black">Tiefschwarz</string>
 
     <!--Erlaubnis-->
     <string name="permission_storage_denied">Zum Speichern des Hintergrundbilds ist eine Speicherberechtigung erforderlich</string>

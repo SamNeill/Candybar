@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Нажмите здесь, чтобы установить обои в качестве фона рабочего стола.</string>
     <string name="tap_intro_navigation_view">Стиль навигации</string>
     <string name="tap_intro_navigation_view_desc">Нажмите здесь, чтобы переключиться между панелью навигации и нижней панелью навигации в зависимости от вашего предпочтения</string>
-    <string name="tap_intro_theme_black">Черный темный</string> 
-    <string name="tap_intro_theme_black_desc">Нажмите здесь, чтобы применить черный темный темный</string>
+    <string name="tap_intro_theme_black">Чистая черная тема</string>
+    <string name="tap_intro_theme_black_desc">Нажмите здесь, чтобы включить чистую черную тему для настоящего темного режима AMOLED с глубокими черными цветами</string>
 
     <!--Дом-->
     <string name="home_more_apps_header">Больше приложений</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Свет</string>
     <string name="theme_name_dark">Темный</string>
     <string name="theme_name_material_you">Материальный ты</string>
-    <string name="theme_name_pure_black">Черный</string>
+    <string name="theme_name_pure_black">Чисто черный</string>
 
     <!--Разрешение-->
     <string name="permission_storage_denied">Для сохранения обоев необходимо разрешение на хранение</string>

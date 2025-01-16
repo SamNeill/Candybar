@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Додирните овде да поставите позадину као позадину почетног екрана</string>
     <string name="tap_intro_navigation_view">Стил навигације</string>
     <string name="tap_intro_navigation_view_desc">Додирните овде да бисте пребацили између панела навигације и доње навигационе траке у зависности од вашег избора</string>
-    <string name="tap_intro_theme_black">Црна тема</string>
-    <string name="tap_intro_theme_black_desc">Додирните овде да бисте применили црну тему</string>
+    <string name="tap_intro_theme_black">Чиста црна тема</string>
+    <string name="tap_intro_theme_black_desc">Додирните овде да бисте омогућили чисту црну тему за прави АМОЛЕД тамни доживљај са дубоким црним тоновима</string>
 
     <!--Хоме-->
     <string name="home_more_apps_header">Више апликација</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Светлост</string>
     <string name="theme_name_dark">Дарк</string>
     <string name="theme_name_material_you">Материјал Ви</string>
-    <string name="theme_name_pure_black">Црна</string>
+    <string name="theme_name_pure_black">Чисто црна</string>
 
     <!--Дозвола-->
     <string name="permission_storage_denied">Дозвола за складиштење је потребна да бисте сачували позадину</string>

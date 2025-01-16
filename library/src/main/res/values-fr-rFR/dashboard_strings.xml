@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Appuyez ici pour définir le fond d\'écran comme arrière-plan de l\'écran d\'accueil</string>
     <string name="tap_intro_navigation_view">Style de navigation</string>
     <string name="tap_intro_navigation_view_desc">Switch entre le panneau de navigation et la barre de navigation inférieure en fonction de votre préférence</string>
-    <string name="tap_intro_theme_black">Tema Noir</string>
-    <string name="tap_intro_theme_black_desc">Appuyez ici pour appliquer le thème Noir</string>
+    <string name="tap_intro_theme_black">Thème noir pur</string>
+    <string name="tap_intro_theme_black_desc">Appuyez ici pour activer le thème noir pur pour une véritable expérience sombre AMOLED avec des noirs profonds</string>
 
     <!--Maison-->
     <string name="home_more_apps_header">Plus d\'applications</string>

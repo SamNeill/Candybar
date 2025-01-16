@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Klepnutím sem nastavíte tapetu jako pozadí domovské obrazovky</string>
     <string name="tap_intro_navigation_view">Styl navigace</string>
     <string name="tap_intro_navigation_view_desc">Přepínání mezi navigačním panelem a dolní navigační lištou podle vašeho vkusu</string>
-    <string name="tap_intro_theme_black">Tema negre</string>
-    <string name="tap_intro_theme_black_desc">Toqueu aquí per aplicar el tema negre</string>
+    <string name="tap_intro_theme_black">Čistě černý motiv</string>
+    <string name="tap_intro_theme_black_desc">Klepnutím sem povolíte čistě černý motiv pro skutečný tmavý zážitek AMOLED s hlubokými černými barvami</string>
 
 
     <!--Domov-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Světlo</string>
     <string name="theme_name_dark">Tmavý</string>
     <string name="theme_name_material_you">Materiál vás</string>
-    <string name="theme_name_pure_black">Černý</string>
+    <string name="theme_name_pure_black">Černá</string>
 
     <!--Povolení-->
     <string name="permission_storage_denied">K uložení tapety je potřeba oprávnění k úložišti</string>

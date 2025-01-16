@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">배경화면을 홈 화면 배경으로 설정하려면 여기를 누르세요.</string>
     <string name="tap_intro_navigation_view">네비게이션 스타일</string>
     <string name="tap_intro_navigation_view_desc">네비게이션 드로어와 하단 네비게이션 바 사이를 전환하여 취향에 맞게 설정하세요.</string>
-    <string name="tap_intro_theme_black">블랙 테마</string>
-    <string name="tap_intro_theme_black_desc">여기를 탭하여 블랙 테마를 적용하세요</string>
+    <string name="tap_intro_theme_black">순수 블랙 테마</string>
+    <string name="tap_intro_theme_black_desc">깊은 블랙으로 진정한 AMOLED 다크 경험을 위한 순수 블랙 테마를 활성화하려면 여기를 탭하세요.</string>
 
 
     <!--집-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">빛</string>
     <string name="theme_name_dark">어두운</string>
     <string name="theme_name_material_you">재료 당신</string>
-    <string name="theme_name_pure_black">블랙</string>
+    <string name="theme_name_pure_black">퓨어 블랙</string>
 
     <!--허가-->
     <string name="permission_storage_denied">배경화면을 저장하려면 저장 권한이 필요합니다.</string>

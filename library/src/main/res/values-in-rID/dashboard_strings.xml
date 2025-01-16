@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Ketuk di sini untuk menyetel wallpaper sebagai latar belakang layar beranda</string>
     <string name="tap_intro_navigation_view">Gaya Navigasi</string>
     <string name="tap_intro_navigation_view_desc">Beralih antara panel samping navigasi dan bilah navigasi bawah sesuai keinginan Anda</string>
-    <string name="tap_intro_theme_black">Tema Pures Blou</string>
-    <string name="tap_intro_theme_black_desc">Klik di sini untuk menerapkan tema Pures Blou</string>
+    <string name="tap_intro_theme_black">Tema Hitam Murni</string>
+    <string name="tap_intro_theme_black_desc">Ketuk di sini untuk mengaktifkan tema hitam murni untuk pengalaman gelap AMOLED sejati dengan warna hitam pekat</string>
 
 
     <!--Rumah-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Lampu</string>
     <string name="theme_name_dark">Gelap</string>
     <string name="theme_name_material_you">Materi Anda</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Hitam Pekat</string>
 
     <!--Izin-->
     <string name="permission_storage_denied">Izin penyimpanan diperlukan untuk menyimpan wallpaper</string>

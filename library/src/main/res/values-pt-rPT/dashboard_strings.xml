@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Toque aqui para definir o papel de parede como fundo do ecrã inicial</string>
     <string name="tap_intro_navigation_view">Estilo de navegação</string>
     <string name="tap_intro_navigation_view_desc">Switch entre o painel de navegação e a barra de navegação inferior conforme sua preferência</string>
-    <string name="tap_intro_theme_black">Tema negro</string>
-    <string name="tap_intro_theme_black_desc">Toque aqui para aplicar o tema negro</string>
+    <string name="tap_intro_theme_black">Tema Preto Puro</string>
+    <string name="tap_intro_theme_black_desc">Toque aqui para ativar o tema preto puro para uma verdadeira experiência escura AMOLED com pretos profundos</string>
 
 
     <!--Casa-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Luz</string>
     <string name="theme_name_dark">Escuro</string>
     <string name="theme_name_material_you">Material que</string>
-    <string name="theme_name_pure_black">Puro negro</string>
+    <string name="theme_name_pure_black">Preto Puro</string>
 
     <!--Permissão-->
     <string name="permission_storage_denied">Permissão de armazenamento necessária para guardar papel de parede</string>

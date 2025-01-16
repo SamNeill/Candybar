@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tik hier om muurpapier as die tuisskerm-agtergrond te stel</string>
     <string name="tap_intro_navigation_view">Navigasiestyl</string>
     <string name="tap_intro_navigation_view_desc">Skakel tussen navigasielaai en onderste navigasiebalk volgens jou voorkeur</string>
-    <string name="tap_intro_theme_black">Pures Blou Tema</string>
-    <string name="tap_intro_theme_black_desc">Tik hier om die pures blou tema in te sluit vir \'n ewekansige AMOLED donkere ervaring met die diepste blou</string>
+    <string name="tap_intro_theme_black">Suiwer Swart Tema</string>
+    <string name="tap_intro_theme_black_desc">Tik hier om die suiwer swart tema te aktiveer vir \'n ware AMOLED-donker ervaring met diep swart</string>
 
     <!--Tuis-->
     <string name="home_more_apps_header">Meer toepassings</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">Lig</string>
     <string name="theme_name_dark">Donker</string>
     <string name="theme_name_material_you">Materiaal Jy</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Suiwer Swart</string>
 
     <!--Toestemming-->
     <string name="permission_storage_denied">Bergingtoestemming benodig om muurpapier te stoor</string>

@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Торкніться тут, щоб встановити шпалери як фон головного екрана</string>
     <string name="tap_intro_navigation_view">Стиль навигации</string>
     <string name="tap_intro_navigation_view_desc">Нажмите здесь, чтобы переключиться между панелью навигации и нижней панелью навигации в зависимости от вашего предпочтения</string>
-    <string name="tap_intro_theme_black">Черный темный</string>
-    <string name="tap_intro_theme_black_desc">Нажмите здесь, чтобы применить черный темный темный</string>
+    <string name="tap_intro_theme_black">Чиста чорна тема</string>
+    <string name="tap_intro_theme_black_desc">Торкніться тут, щоб увімкнути чисту чорну тему для справжнього темного досвіду AMOLED з глибокими чорними кольорами</string>
 
     <!--додому-->
     <string name="home_more_apps_header">Більше програм</string>
@@ -309,7 +309,7 @@
     <string name="theme_name_light">світло</string>
     <string name="theme_name_dark">Темний</string>
     <string name="theme_name_material_you">Матеріал Ви</string>
-    <string name="theme_name_pure_black">Черный</string>
+    <string name="theme_name_pure_black">Чисто чорний</string>
 
     <!--Дозвіл-->
     <string name="permission_storage_denied">Щоб зберегти шпалери, потрібен дозвіл на зберігання</string>

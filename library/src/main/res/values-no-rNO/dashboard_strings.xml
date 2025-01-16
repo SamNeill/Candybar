@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Trykk her for å angi bakgrunn som hjemmeskjermbakgrunn</string>
     <string name="tap_intro_navigation_view">Navigasjonsstil</string>
     <string name="tap_intro_navigation_view_desc">Switch mellom navigasjonsskuff og nedre navigasjonsbånd som din likhet</string>
-    <string name="tap_intro_theme_black">Mørk tema</string>
-    <string name="tap_intro_theme_black_desc">Trykk her for at anvende mørk tema</string>
+    <string name="tap_intro_theme_black">Rent svart tema</string>
+    <string name="tap_intro_theme_black_desc">Trykk her for å aktivere det rene svarte temaet for en ekte AMOLED-mørk opplevelse med dyp svart</string>
 
 
     <!--Hjem-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Lys</string>
     <string name="theme_name_dark">Mørk</string>
     <string name="theme_name_material_you">Materiale deg</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Rent svart</string>
 
     <!--Tillatelse-->
     <string name="permission_storage_denied">Lagringstillatelse er nødvendig for å lagre bakgrunnsbilde</string>

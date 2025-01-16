@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tryck här för att ställa in bakgrunden som bakgrund på startskärmen</string>
     <string name="tap_intro_navigation_view">Navigeringstil</string>
     <string name="tap_intro_navigation_view_desc">Switch mellan navigeringsskuff och nedre navigeringsbalk beroende på din likhet</string>
-    <string name="tap_intro_theme_black">Svart tema</string>
-    <string name="tap_intro_theme_black_desc">Tryck här för att applicera svart tema</string>
+    <string name="tap_intro_theme_black">Rent svart tema</string>
+    <string name="tap_intro_theme_black_desc">Tryck här för att aktivera det rent svarta temat för en äkta AMOLED-mörk upplevelse med djupa svarta toner</string>
 
 
     <!--Hem-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Ljus</string>
     <string name="theme_name_dark">Mörk</string>
     <string name="theme_name_material_you">Material du</string>
-    <string name="theme_name_pure_black">Svart</string>
+    <string name="theme_name_pure_black">Rent svart</string>
 
     <!--Tillstånd-->
     <string name="permission_storage_denied">Lagringsbehörighet krävs för att spara bakgrundsbild</string>

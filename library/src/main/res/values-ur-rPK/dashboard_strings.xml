@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">وال پیپر کو ہوم اسکرین کے پس منظر کے طور پر سیٹ کرنے کے لیے یہاں تھپتھپائیں۔</string>
     <string name="tap_intro_navigation_view">نیویگیشن دراز کا نظام</string>
     <string name="tap_intro_navigation_view_desc">نیویگیشن دراز کا نظام کو منتخب کرنے کے لیے یہاں تھپتھپائیں۔</string>
-    <string name="tap_intro_theme_black">سیاہ تیم</string>
-    <string name="tap_intro_theme_black_desc">سیاہ تیم کو منتخب کرنے کے لیے یہاں تھپتھپائیں۔</string>
+    <string name="tap_intro_theme_black">خالص سیاہ تھیم</string>
+    <string name="tap_intro_theme_black_desc">گہری سیاہی کے ساتھ حقیقی AMOLED ڈارک تجربے کے لیے خالص سیاہ تھیم کو فعال کرنے کے لیے یہاں تھپتھپائیں</string>
 
 
     <!--گھر-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">روشنی</string>
     <string name="theme_name_dark">اندھیرا</string>
     <string name="theme_name_material_you">مواد آپ</string>
-    <string name="theme_name_pure_black">سیاہ</string>
+    <string name="theme_name_pure_black">خالص سیاہ</string>
 
     <!--اجازت-->
     <string name="permission_storage_denied">وال پیپر کو محفوظ کرنے کے لیے سٹوریج کی اجازت درکار ہے۔</string>

@@ -109,8 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Koppintson ide a háttérkép beállításához a kezdőképernyő háttereként</string>
     <string name="tap_intro_navigation_view">Navigációs stílus</string>
     <string name="tap_intro_navigation_view_desc">Válassza ki a navigációs stílust a kezdőképernyőn</string>
-    <string name="tap_intro_theme_black">Pures Blou Tema</string>
-    <string name="tap_intro_theme_black_desc">Koppintson ide a pures blou temának való alkalmazásához</string>
+    <string name="tap_intro_theme_black">Tiszta fekete téma</string>
+    <string name="tap_intro_theme_black_desc">Koppintson ide a tiszta fekete téma engedélyezéséhez a valódi AMOLED sötét élményhez mély feketékkel</string>
 
 
     <!--Otthon-->
@@ -310,7 +310,7 @@
     <string name="theme_name_light">Fény</string>
     <string name="theme_name_dark">Sötét</string>
     <string name="theme_name_material_you">Anyag Te</string>
-    <string name="theme_name_pure_black">Pures Blou</string>
+    <string name="theme_name_pure_black">Tiszta fekete</string>
 
     <!--Engedély-->
     <string name="permission_storage_denied">Tárolási engedély szükséges a háttérkép mentéséhez</string>
