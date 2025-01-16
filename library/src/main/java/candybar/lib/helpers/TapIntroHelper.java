@@ -33,6 +33,7 @@ import candybar.lib.R;
 import candybar.lib.activities.CandyBarMainActivity;
 import candybar.lib.adapters.HomeAdapter;
 import candybar.lib.preferences.Preferences;
+import candybar.lib.helpers.ThemeHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -99,7 +100,7 @@ public class TapIntroHelper {
                         }
 
                         if (title != null) {
-                            tapTarget.textTypeface(title);
+                            //tapTarget.textTypeface(title);
                         }
 
                         tapTargetSequence.target(tapTarget);
@@ -135,7 +136,7 @@ public class TapIntroHelper {
                                         }
 
                                         if (title != null) {
-                                            tapTarget.textTypeface(title);
+                                            //tapTarget.textTypeface(title);
                                         }
 
                                         tapTargetSequence.target(tapTarget);
@@ -207,7 +208,7 @@ public class TapIntroHelper {
                     }
 
                     if (title != null) {
-                        tapTarget.textTypeface(title);
+                        //tapTarget.textTypeface(title);
                     }
 
                     TapTargetView.showFor(activity, tapTarget,
@@ -320,7 +321,7 @@ public class TapIntroHelper {
                                         }
 
                                         if (title != null) {
-                                            tapTarget.textTypeface(title);
+                                            //tapTarget.textTypeface(title);
                                         }
 
                                         tapTargetSequence.target(tapTarget);
@@ -350,7 +351,7 @@ public class TapIntroHelper {
                             }
 
                             if (title != null) {
-                                searchTarget.textTypeface(title);
+                                //searchTarget.textTypeface(title);
                             }
 
                             tapTargetSequence.target(searchTarget);
@@ -372,7 +373,7 @@ public class TapIntroHelper {
                         }
 
                         if (title != null) {
-                            tapTarget.textTypeface(title);
+                            //tapTarget.textTypeface(title);
                         }
 
                         tapTargetSequence.target(tapTarget);
@@ -400,7 +401,7 @@ public class TapIntroHelper {
                         }
 
                         if (title != null) {
-                            tapTarget.textTypeface(title);
+                            //tapTarget.textTypeface(title);
                         }
 
                         tapTargetSequence.target(tapTarget);
@@ -438,7 +439,7 @@ public class TapIntroHelper {
                                                 }
 
                                                 if (title != null) {
-                                                    tapTarget.textTypeface(title);
+                                                    //tapTarget.textTypeface(title);
                                                 }
 
                                                 tapTargetSequence.target(tapTarget);
@@ -576,8 +577,8 @@ public class TapIntroHelper {
                                 }
 
                                 if (title != null) {
-                                    tapTarget.textTypeface(title);
-                                    tapTarget1.textTypeface(title);
+                                    //tapTarget.textTypeface(title);
+                                    //tapTarget1.textTypeface(title);
                                 }
 
                                 tapTargetSequence.target(tapTarget);
@@ -662,7 +663,7 @@ public class TapIntroHelper {
                                 .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
 
                         if (title != null) {
-                            tapTarget.textTypeface(title);
+                            //tapTarget.textTypeface(title);
                         }
 
                         tapTargetSequence.target(tapTarget);
@@ -686,7 +687,7 @@ public class TapIntroHelper {
                                 .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
 
                         if (title != null) {
-                            tapTarget.textTypeface(title);
+                            //tapTarget.textTypeface(title);
                         }
 
                         tapTargetSequence.target(tapTarget);
@@ -818,7 +819,7 @@ public class TapIntroHelper {
                     .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
 
             if (title != null) {
-                tapTarget.textTypeface(title);
+                //tapTarget.textTypeface(title);
             }
 
             if (!activity.isFinishing()) {
@@ -852,35 +853,16 @@ public class TapIntroHelper {
         AppCompatActivity activity = (AppCompatActivity) context;
 
         try {
-            int titleColor;
-            int descriptionColor;
-            int circleColorInner;
-            int circleColorOuter;
+            int titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+            int descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+            int circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
+            int circleColorOuter = ColorHelper.setColorAlpha(
+                    ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
+                    0.3f
+            );
 
-            if (Preferences.get(context).isMaterialYou()) {
-                // Use Material You colors
-                titleColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
-                descriptionColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
-                circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
-                circleColorOuter = ColorHelper.setColorAlpha(
-                        ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
-                        0.3f
-                );
-            } else {
-                // Use theme accent colors
-                titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
-                descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
-                circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
-                circleColorOuter = ColorHelper.setColorAlpha(
-                        ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
-                        0.3f
-                );
-            }
-
-            Typeface title = TypefaceHelper.getMedium(context);
-
-            float circleScale = 45.0f / context.getResources().getInteger(R.integer.tap_intro_circle_scale_percent);
-            float targetRadius = (toDp(context, navigationToggle.getMeasuredWidth()) - 15f) * circleScale;
+            Typeface titleFont = TypefaceHelper.getBold(context);
+            Typeface descFont = TypefaceHelper.getRegular(context);
 
             TapTarget tapTarget = TapTarget.forView(navigationToggle,
                             context.getResources().getString(R.string.tap_intro_navigation_view),
@@ -889,14 +871,14 @@ public class TapIntroHelper {
                     .descriptionTextColorInt(descriptionColor)
                     .targetCircleColorInt(circleColorInner)
                     .outerCircleColorInt(circleColorOuter)
-                    .targetRadius((int) targetRadius)
                     .cancelable(true)
                     .tintTarget(false)
                     .dimColor(android.R.color.black)
                     .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
 
-            if (title != null) {
-                tapTarget.textTypeface(title);
+            if (titleFont != null) {
+                //tapTarget.titleTypeface(titleFont)
+                //        .descriptionTypeface(descFont);
             }
 
             if (!activity.isFinishing()) {
@@ -906,6 +888,73 @@ public class TapIntroHelper {
                             public void onTargetDismissed(TapTargetView view, boolean userInitiated) {
                                 super.onTargetDismissed(view, userInitiated);
                                 Preferences.get(context).setTimeToShowNavigationViewIntro(false);
+                                
+                                // Show black theme tutorial after navigation tutorial is dismissed
+                                if (ThemeHelper.isDarkTheme(context) && 
+                                    Preferences.get(context).isTimeToShowBlackThemeIntro()) {
+                                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                                        showBlackThemeIntro(context, navigationToggle);
+                                    }, 100);
+                                }
+                            }
+
+                            @Override
+                            public void onOuterCircleClick(TapTargetView view) {
+                                super.onOuterCircleClick(view);
+                                view.dismiss(true);
+                            }
+
+                            @Override
+                            public void onTargetClick(TapTargetView view) {
+                                super.onTargetClick(view);
+                                view.dismiss(true);
+                            }
+                        });
+            }
+        } catch (Exception e) {
+            LogUtil.e(Log.getStackTraceString(e));
+        }
+    }
+
+    public static void showBlackThemeIntro(@NonNull Context context, @NonNull View themeSwitch) {
+        AppCompatActivity activity = (AppCompatActivity) context;
+
+        try {
+            int titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+            int descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+            int circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
+            int circleColorOuter = ColorHelper.setColorAlpha(
+                    ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
+                    0.3f
+            );
+
+            Typeface titleFont = TypefaceHelper.getBold(context);
+            Typeface descFont = TypefaceHelper.getRegular(context);
+
+            TapTarget tapTarget = TapTarget.forView(themeSwitch,
+                            context.getResources().getString(R.string.tap_intro_theme_black),
+                            context.getResources().getString(R.string.tap_intro_theme_black_desc))
+                    .titleTextColorInt(titleColor)
+                    .descriptionTextColorInt(descriptionColor)
+                    .targetCircleColorInt(circleColorInner)
+                    .outerCircleColorInt(circleColorOuter)
+                    .cancelable(true)
+                    .tintTarget(false)
+                    .dimColor(android.R.color.black)
+                    .drawShadow(Preferences.get(context).isTapIntroShadowEnabled());
+
+            if (titleFont != null) {
+                //tapTarget.titleTypeface(titleFont)
+                //        .descriptionTypeface(descFont);
+            }
+
+            if (!activity.isFinishing()) {
+                TapTargetView.showFor(activity, tapTarget,
+                        new TapTargetView.Listener() {
+                            @Override
+                            public void onTargetDismissed(TapTargetView view, boolean userInitiated) {
+                                super.onTargetDismissed(view, userInitiated);
+                                Preferences.get(context).setTimeToShowBlackThemeIntro(false);
                             }
 
                             @Override

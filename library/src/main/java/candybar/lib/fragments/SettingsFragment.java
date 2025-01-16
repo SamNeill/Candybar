@@ -48,6 +48,7 @@ import candybar.lib.utils.AsyncTaskBase;
 import candybar.lib.utils.listeners.RequestListener;
 import candybar.lib.helpers.ToastHelper;
 import candybar.lib.helpers.ColorHelper;
+import candybar.lib.helpers.ThemeHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -190,6 +191,10 @@ public class SettingsFragment extends Fragment {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 settings.add(new Setting(-1, "", resources.getString(R.string.theme_name_material_you), "", "", Setting.Type.MATERIAL_YOU));
+            }
+
+            if (ThemeHelper.isDarkTheme(requireActivity())) {
+                settings.add(new Setting(-1, "", resources.getString(R.string.theme_name_pure_black), "", "", Setting.Type.PURE_BLACK));
             }
             
             if (resources.getBoolean(R.bool.enable_navigation_toggle)) {

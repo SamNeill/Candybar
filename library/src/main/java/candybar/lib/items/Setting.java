@@ -77,6 +77,7 @@ public class Setting {
         PREMIUM_REQUEST,
         THEME,
         MATERIAL_YOU,
+        PURE_BLACK,
         NAVIGATION_VIEW_STYLE,
         NOTIFICATIONS,
         LANGUAGE,

@@ -108,6 +108,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Toqueu aquí per configurar el fons de pantalla com a fons de la pantalla d\'inici</string>
     <string name="tap_intro_navigation_view">Estil de navegació</string>
     <string name="tap_intro_navigation_view_desc">Canvia entre el llistó de navegació i la barra de navegació inferior segons el teu gust</string>
+    <string name="tap_intro_theme_black">Tema negre</string>
+    <string name="tap_intro_theme_black_desc">Toqueu aquí per aplicar el tema negre</string>
+
 
     <!--a casa-->
     <string name="home_more_apps_header">Més aplicacions</string>
@@ -306,6 +309,7 @@
     <string name="theme_name_light">Llum</string>
     <string name="theme_name_dark">Fosc</string>
     <string name="theme_name_material_you">Material tu</string>
+    <string name="theme_name_pure_black">Negre pur</string>
 
     <!--Permís-->
     <string name="permission_storage_denied">Cal permís d\'emmagatzematge per desar fons de pantalla</string>

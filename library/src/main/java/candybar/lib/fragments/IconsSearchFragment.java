@@ -126,7 +126,8 @@ public class IconsSearchFragment extends Fragment {
         View searchView = search.getActionView();
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ||
-                !requireActivity().getResources().getBoolean(R.bool.includes_adaptive_icons)) {
+                !requireActivity().getResources().getBoolean(R.bool.includes_adaptive_icons) ||
+                !requireActivity().getResources().getBoolean(R.bool.show_icon_shape)) {
             iconShape.setVisible(false);
         } else {
             searchView.findViewById(R.id.container).setPadding(0, 0, 0, 0);

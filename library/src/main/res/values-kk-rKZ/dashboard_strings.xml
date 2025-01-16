@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Түсқағазды негізгі экранның фоны ретінде орнату үшін осы жерді түртіңіз</string>
     <string name="tap_intro_navigation_view">Навигация стилі</string>
     <string name="tap_intro_navigation_view_desc">Навигация панелі мен төменгі навигация барын ауыстыру үшін осы жерді түртіңіз</string>
+    <string name="tap_intro_theme_black">Қараңғы түс</string>
+    <string name="tap_intro_theme_black_desc">Осы жерді түртіңіз, қараңғы түсін қолдану үшін</string>
+
 
     <!--Үй-->
     <string name="home_more_apps_header">Қосымша қолданбалар</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">Жарық</string>
     <string name="theme_name_dark">Қараңғы</string>
     <string name="theme_name_material_you">Материал Сіз</string>
+    <string name="theme_name_pure_black">Қараңғы</string>
 
     <!--Рұқсат-->
     <string name="permission_storage_denied">Түсқағазды сақтау үшін сақтау рұқсаты қажет</string>

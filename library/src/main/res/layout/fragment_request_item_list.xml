@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="?cb_cardBackground">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/container"
@@ -15,7 +14,9 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:background="?attr/selectableItemBackground"
-        android:theme="@style/RippleStyle">
+        android:theme="@style/RippleStyle"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:id="@+id/icon"

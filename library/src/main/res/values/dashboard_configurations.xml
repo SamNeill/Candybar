@@ -103,6 +103,7 @@
     <bool name="use_flat_card">false</bool>
 
 
+
     <!-- Navigation view header text
         Leave empty if you don't want to show any text -->
     <string name="navigation_view_header_title">CandyBar Dashboard</string>
@@ -128,6 +129,9 @@
     <!-- Enable if your icon pack includes adaptive icons.
         When enabled, the dashboard shows an Icon Shape changer button -->
     <bool name="includes_adaptive_icons">false</bool>
+
+    <!-- Enable/disable icon shape changer button -->
+    <bool name="show_icon_shape"></bool>
 
     <!-- Icons section will read icons from drawable.xml same as Nova Launcher
         Put drawable.xml inside the "xml" folder -->
@@ -256,6 +260,7 @@
     -->
     <string name="wallpaper_grid_preview_style">square</string>
 
+
     <!--
         CONFIG: ABOUT
     -->
@@ -267,7 +272,6 @@
         If you want to use a solid color, you can put the hex color code here
         ex: <string name="about_image">#000000</string> -->
     <string name="about_image">https://drive.google.com/uc?id=0B0f4ypHfNKm5WV9JOG9Fb2h2Qms</string>
-
 
     <!-- About profile image
         If you want to use an image from url, just put the url here

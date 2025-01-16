@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">முகப்புத் திரையின் பின்னணியாக வால்பேப்பரை அமைக்க இங்கே தட்டவும்</string>
     <string name="tap_intro_navigation_view">நடத்தை வடிவம்</string>
     <string name="tap_intro_navigation_view_desc">நடத்தை டிராயரைத் திறக்க, இங்கே தட்டவும் அல்லது திரையின் இடது விளிம்பிலிருந்து ஸ்வைப் செய்யவும்</string>
+    <string name="tap_intro_theme_black">கருப்பொருள் துவக்கி</string>
+    <string name="tap_intro_theme_black_desc">இங்கே தட்டவும் கருப்பொருள் துவக்கியை பயன்படுத்தவும்</string>
+
     <!--வீடு-->
     <string name="home_more_apps_header">மேலும் பயன்பாடுகள்</string>
     <string name="home_more_apps">கூகுள் ப்ளே ஸ்டோரில் மேலும் ஐகான் பேக் பார்க்கவும்</string>
@@ -306,6 +309,7 @@
     <string name="theme_name_light">ஒளி</string>
     <string name="theme_name_dark">இருள்</string>
     <string name="theme_name_material_you">பொருள் நீங்கள்</string>
+    <string name="theme_name_pure_black">கருப்பொருள்</string>
 
     <!--அனுமதி-->
     <string name="permission_storage_denied">வால்பேப்பரைச் சேமிக்க சேமிப்பக அனுமதி தேவை</string>

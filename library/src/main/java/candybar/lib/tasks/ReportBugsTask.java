@@ -26,6 +26,7 @@ import candybar.lib.helpers.RequestHelper;
 import candybar.lib.helpers.TypefaceHelper;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
+import candybar.lib.helpers.ToastHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -136,8 +137,7 @@ public class ReportBugsTask extends AsyncTaskBase {
             mContext.get().startActivity(Intent.createChooser(intent,
                     mContext.get().getResources().getString(R.string.app_client)));
         } else {
-            Toast.makeText(mContext.get(), R.string.report_bugs_failed,
-                    Toast.LENGTH_LONG).show();
+            ToastHelper.show(mContext.get(), R.string.report_bugs_failed, Toast.LENGTH_LONG);
         }
 
         mZipPath = null;

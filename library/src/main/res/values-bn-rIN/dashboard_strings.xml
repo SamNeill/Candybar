@@ -109,6 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">হোমস্ক্রিন ব্যাকগ্রাউন্ড হিসাবে ওয়ালপেপার সেট করতে এখানে আলতো চাপুন</string>
     <string name="tap_intro_navigation_view">নাভিগেশন স্টাইল</string>
     <string name="tap_intro_navigation_view_desc">নাভিগেশন ড্রয়ার এবং নিচের নাভিগেশন বারের মধ্যে স্থানান্তরিত করুন যাতে আপনার প্রিয়তার অনুসরণ করুন</string>
+    <string name="tap_intro_theme_black">প্রস্তুত কালো টেমা</string>
+    <string name="tap_intro_theme_black_desc">এখানে টিপুন যাতে আপনি একটি প্রস্তুত কালো টেমা প্রয়োগ করুন যাতে আপনি এটি পরে ব্যবহার করতে পারেন</string>
 
     <!--বাড়ি-->
     <string name="home_more_apps_header">আরও অ্যাপ</string>
@@ -307,6 +309,7 @@
     <string name="theme_name_light">আলো</string>
     <string name="theme_name_dark">অন্ধকার</string>
     <string name="theme_name_material_you">উপাদান আপনি</string>
+    <string name="theme_name_pure_black">প্রস্তুত কালো</string>
 
     <!--অনুমতি-->
     <string name="permission_storage_denied">ওয়ালপেপার সংরক্ষণ করার জন্য স্টোরেজ অনুমতি প্রয়োজন</string>

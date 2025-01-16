@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">होमस्क्रिन पृष्ठभूमिको रूपमा वालपेपर सेट गर्न यहाँ ट्याप गर्नुहोस्</string>
     <string name="tap_intro_navigation_view">नेभिगेसन स्टाइल</string>
     <string name="tap_intro_navigation_view_desc">नेभिगेसन ड्रॉअर र निचेको नेभिगेसन बारको बीच स्विच गर्न यहाँ ट्याप गर्नुहोस्</string>
+    <string name="tap_intro_theme_black">गहरा ब्लू टीमा</string>
+    <string name="tap_intro_theme_black_desc">यहां टैप गर्नुहोस् जो आप गहरा ब्लू टीमा लागू करना चाहते हैं</string>
+
 
     <!--घर-->
     <string name="home_more_apps_header">थप एपहरू</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">उज्यालो</string>
     <string name="theme_name_dark">अँध्यारो</string>
     <string name="theme_name_material_you">सामग्री तपाईं</string>
+    <string name="theme_name_pure_black">गहरा ब्लू</string>
 
     <!--अनुमति-->
     <string name="permission_storage_denied">वालपेपर बचत गर्न भण्डारण अनुमति आवश्यक छ</string>

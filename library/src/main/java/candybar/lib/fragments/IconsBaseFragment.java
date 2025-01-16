@@ -253,7 +253,8 @@ public class IconsBaseFragment extends Fragment {
         });
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ||
-                !requireActivity().getResources().getBoolean(R.bool.includes_adaptive_icons)) {
+                !requireActivity().getResources().getBoolean(R.bool.includes_adaptive_icons) ||
+                !requireActivity().getResources().getBoolean(R.bool.show_icon_shape)) {
             iconShape.setVisible(false);
         }
 

@@ -2,6 +2,7 @@ package candybar.lib.helpers;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.os.Build;
 
 import candybar.lib.R;
 import candybar.lib.applications.CandyBarApplication;
@@ -32,5 +33,30 @@ public class ThemeHelper {
         }
 
         return currentTheme == Theme.DARK;
+    }
+
+    public static boolean isPureBlackEnabled(Context context) {
+        boolean isDark = isDarkTheme(context);
+        return isDark && Preferences.get(context).isPureBlack();
+    }
+
+    public static int getThemeRes(Context context) {
+        if (isDarkTheme(context)) {
+            boolean isPureBlack = Preferences.get(context).isPureBlack();
+            boolean isMaterialYou = Preferences.get(context).isMaterialYou() && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S;
+
+            if (isPureBlack) {
+                if (isMaterialYou) {
+                    return R.style.CandyBar_Theme_App_MaterialYou_PureBlack;
+                }
+                return R.style.CandyBar_Theme_App_PureBlack;
+            }
+            
+            if (isMaterialYou) {
+                return R.style.CandyBar_Theme_App_MaterialYou;
+            }
+            return R.style.CandyBar_Theme_App_DayNight;
+        }
+        return R.style.CandyBar_Theme_App_DayNight;
     }
 }

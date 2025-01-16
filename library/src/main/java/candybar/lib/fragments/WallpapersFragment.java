@@ -4,6 +4,7 @@ import static candybar.lib.helpers.ViewHelper.setFastScrollColor;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -51,6 +52,7 @@ import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.databases.Database;
 import candybar.lib.helpers.JsonHelper;
 import candybar.lib.helpers.TapIntroHelper;
+import candybar.lib.helpers.ToastHelper;
 import candybar.lib.helpers.WallpaperHelper;
 import candybar.lib.items.Wallpaper;
 import candybar.lib.preferences.Preferences;
@@ -324,8 +326,7 @@ public class WallpapersFragment extends Fragment {
 
                 setHasOptionsMenu(true);
             } else {
-                Toast.makeText(getActivity(), R.string.connection_failed,
-                        Toast.LENGTH_LONG).show();
+                ToastHelper.show(getActivity(), R.string.connection_failed, Toast.LENGTH_LONG);
             }
         }
     }

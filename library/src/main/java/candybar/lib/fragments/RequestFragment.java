@@ -130,6 +130,10 @@ public class RequestFragment extends Fragment implements View.OnClickListener {
 
     private boolean noEmailClientError = false;
 
+    public RequestAdapter getAdapter() {
+        return mAdapter;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">वॉलपेपर को होमस्क्रीन पृष्ठभूमि के रूप में सेट करने के लिए यहां टैप करें</string>
     <string name="tap_intro_navigation_view">नेविगेशन स्टाइल</string>
     <string name="tap_intro_navigation_view_desc">नेविगेशन ड्रॉअर और नीचे के नेविगेशन बार के बीच स्विच करने के लिए यहां टैप करें</string>
+    <string name="tap_intro_theme_black">गहरा ब्लू टीमा</string>
+    <string name="tap_intro_theme_black_desc">यहां टैप करें जो आप गहरा ब्लू टीमा लागू करना चाहते हैं</string>
+
 
     <!--घर-->
     <string name="home_more_apps_header">और ऐप</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">रोशनी</string>
     <string name="theme_name_dark">अँधेरा</string>
     <string name="theme_name_material_you">सामग्री आप</string>
+    <string name="theme_name_pure_black">गहरा ब्लू</string>
 
     <!--अनुमति-->
     <string name="permission_storage_denied">वॉलपेपर सहेजने के लिए भंडारण की अनुमति आवश्यक है</string>

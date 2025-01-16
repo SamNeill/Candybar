@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Atingeți aici pentru a seta imaginea de fundal ca fundal pentru ecranul de pornire</string>
     <string name="tap_intro_navigation_view">Stil de navigare</string>
     <string name="tap_intro_navigation_view_desc">Switch entre panoul de navigare și bara de navigare inferioară în funcție de preferința dvs.</string>
+    <string name="tap_intro_theme_black">Tema negru</string>
+    <string name="tap_intro_theme_black_desc">Atingeți aici pentru a aplica tema negru</string>
+    
     <!--Acasă-->
     <string name="home_more_apps_header">Mai multe aplicații</string>
     <string name="home_more_apps">Verificați pachetul de pictograme mai multe în Magazinul Google Play</string>
@@ -306,6 +309,7 @@
     <string name="theme_name_light">Aprinde</string>
     <string name="theme_name_dark">Întuneric</string>
     <string name="theme_name_material_you">Material Tu</string>
+    <string name="theme_name_pure_black">Negru pur</string>
 
     <!--Permisiune-->
     <string name="permission_storage_denied">Este necesară permisiunea de stocare pentru a salva imaginea de fundal</string>

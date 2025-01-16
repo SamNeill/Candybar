@@ -38,6 +38,7 @@ import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
 import candybar.lib.utils.InAppBillingClient;
 import candybar.lib.utils.listeners.InAppBillingListener;
+import candybar.lib.helpers.ToastHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -274,8 +275,7 @@ public class InAppBillingFragment extends DialogFragment {
                 dismiss();
                 Preferences.get(getActivity()).setInAppBillingType(-1);
 
-                Toast.makeText(getActivity(), R.string.billing_load_product_failed,
-                        Toast.LENGTH_LONG).show();
+                ToastHelper.show(getActivity(), R.string.billing_load_product_failed, Toast.LENGTH_LONG);
             }
         }
     }

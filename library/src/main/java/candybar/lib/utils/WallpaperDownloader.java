@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
 import android.webkit.URLUtil;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
@@ -25,6 +26,7 @@ import java.io.OutputStream;
 
 import candybar.lib.R;
 import candybar.lib.helpers.TypefaceHelper;
+import candybar.lib.helpers.ToastHelper;
 import candybar.lib.helpers.WallpaperHelper;
 import candybar.lib.items.Wallpaper;
 
@@ -61,42 +63,23 @@ public class WallpaperDownloader {
     }
 
     private void showCafeBar(int res) {
-        CafeBar.builder(mContext)
-                .theme(CafeBarTheme.Custom(ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground)))
-                .contentTypeface(TypefaceHelper.getRegular(mContext))
-                .content(res)
-                .floating(true)
-                .fitSystemWindow()
-                .show();
+        ToastHelper.show(mContext, res, Toast.LENGTH_LONG);
     }
 
     private void showOpenFileCafeBar(@StringRes int textRes, File target) {
-        CafeBar.builder(mContext)
-                .theme(CafeBarTheme.Custom(ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground)))
-                .floating(true)
-                .fitSystemWindow()
-                .duration(CafeBar.Duration.MEDIUM)
-                .typeface(TypefaceHelper.getRegular(mContext), TypefaceHelper.getBold(mContext))
-                .content(textRes)
-                .neutralText(R.string.open)
-                .onNeutral(cafeBar -> {
-                    Uri uri = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N
-                            ? Uri.parse(target.toString())
-                            : Uri.fromFile(target);
+        ToastHelper.show(mContext, textRes, Toast.LENGTH_LONG);
+        
+        // Open the file after showing the toast
+        Uri uri = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N
+                ? Uri.parse(target.toString())
+                : Uri.fromFile(target);
 
-                    if (uri == null) {
-                        cafeBar.dismiss();
-                        return;
-                    }
-
-                    mContext.startActivity(new Intent()
-                            .setAction(Intent.ACTION_VIEW)
-                            .setDataAndType(uri, "image/*")
-                            .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION));
-
-                    cafeBar.dismiss();
-                })
-                .show();
+        if (uri != null) {
+            mContext.startActivity(new Intent()
+                    .setAction(Intent.ACTION_VIEW)
+                    .setDataAndType(uri, "image/*")
+                    .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION));
+        }
     }
 
     public void start() {

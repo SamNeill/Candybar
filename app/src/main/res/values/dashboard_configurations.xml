@@ -45,6 +45,7 @@
     <bool name="enable_icons_sort">false</bool>
     <bool name="show_icon_name">true</bool>
     <bool name="includes_adaptive_icons">true</bool>
+    <bool name="show_icon_shape">true</bool>
 
     <!-- CONFIG: ICON REQUEST -->
     <bool name="enable_icon_request">true</bool>
@@ -55,7 +56,7 @@
     <bool name="enable_ps_signature">false</bool>
     <bool name="enable_premium_request">true</bool>
     <bool name="enable_restore_purchases">false</bool>
-    <bool name="enable_non_mail_app_request">false</bool>
+    <bool name="enable_non_mail_app_request">true</bool>
     <bool name="hide_missing_app_count">false</bool>
     <string name="regular_request_method">email</string>
     <string name="premium_request_method"></string>

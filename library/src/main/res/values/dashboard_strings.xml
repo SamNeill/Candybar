@@ -109,6 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tap here to set wallpaper as the homescreen background</string>
     <string name="tap_intro_navigation_view">Navigation Style</string>
     <string name="tap_intro_navigation_view_desc">Switch between Navigation drawer and bottom Navigation bar as your Likeness</string>
+    <string name="tap_intro_theme_black">Pure Black Theme</string>
+    <string name="tap_intro_theme_black_desc">Tap here to enable the pure black theme for a true AMOLED dark experience with deep blacks</string>
     <!-- Home -->
     <string name="home_more_apps_header">More Apps</string>
     <string name="home_more_apps">Check More Icons Pack on Google Play Store</string>
@@ -306,6 +308,7 @@
     <string name="theme_name_light">Light</string>
     <string name="theme_name_dark">Dark</string>
     <string name="theme_name_material_you">Material You</string>
+    <string name="theme_name_pure_black">Pure Black</string>
 
     <!-- Permission -->
     <string name="permission_storage_denied">Storage permission needed to save wallpaper</string>
@@ -390,7 +393,6 @@
     <!-- Search -->
     <string name="search_apps">Search Apps</string>
 
-    <!-- CandyBar -->
     <string name="candybar_title">CandyBar</string>
     <string name="candybar_description"><![CDATA[<b>This application is powered by <a href="https://github.com/danimahardhika/candybar-library"><font color="%1$s">CandyBar</font></a>, an innovative open-source dashboard initially conceived by <a href="https://github.com/danimahardhika"><font color="%1$s">Dani Mahardhika</font></a> and its team.\n\nSpecial acknowledgment is due to <a href="https://github.com/zixpo"><font color="%1$s">Sarsa Murmu</font></a> and its team for contributing to the evolution of <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a>, delivering enhancements that enrich its capabilities. Furthermore, Sarsa\'s commitment to the ongoing maintenance of <a href="https://github.com/zixpo/candybar"><font color="%1$s">CandyBar</font></a> ensures that it remains up-to-date and efficient.</b>]]></string>
     <string name="candybar_special_thanks"><![CDATA[<b>Special Thanks to <a href="https://github.com/danimahardhika"><font color="%1$s">Dani</font></a> &amp; <a href="https://github.com/zixpo"><font color="%1$s">Sarsa\'s</font></a></b>]]></string>

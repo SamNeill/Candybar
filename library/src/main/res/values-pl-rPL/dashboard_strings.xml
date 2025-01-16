@@ -109,6 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Kliknij tutaj, aby ustawić tapetę jako tło ekranu głównego</string>
     <string name="tap_intro_navigation_view">Styl nawigacji</string>
     <string name="tap_intro_navigation_view_desc">Przełącz się między panelem nawigacji i dolną paskiem nawigacyjnym w zależności od Twoich preferencji</string>
+    <string name="tap_intro_theme_black">Czarny temat</string>
+    <string name="tap_intro_theme_black_desc">Kliknij tutaj, aby zastosować czarny temat</string>
 
     <!--Dom-->
     <string name="home_more_apps_header">Więcej aplikacji</string>
@@ -307,6 +309,7 @@
     <string name="theme_name_light">Światło</string>
     <string name="theme_name_dark">Ciemny</string>
     <string name="theme_name_material_you">Materialny Ty</string>
+    <string name="theme_name_pure_black">Czarny</string>
 
     <!--Pozwolenie-->
     <string name="permission_storage_denied">Aby zapisać tapetę, potrzebne jest pozwolenie na przechowywanie</string>

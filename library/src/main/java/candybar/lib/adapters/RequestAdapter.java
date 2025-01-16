@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.util.Log;
 import android.util.SparseBooleanArray;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,6 +79,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private final boolean mShowShadow;
     private final boolean mShowPremiumRequest;
     private final boolean mShowRegularRequestLimit;
+    private final int mSelectionHighlightColor;
 
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_CONTENT = 1;
@@ -93,6 +95,13 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         mTextColorSecondary = ColorHelper.getAttributeColor(mContext,
                 android.R.attr.textColorSecondary);
         mTextColorAccent = ColorHelper.getAttributeColor(mContext, com.google.android.material.R.attr.colorSecondary);
+        
+        int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+        mSelectionHighlightColor = Color.argb(40,
+                Color.red(accentColor),
+                Color.green(accentColor),
+                Color.blue(accentColor));
+                
         mSelectedItems = new SparseBooleanArray();
 
         mShowShadow = (spanCount == 1);
@@ -233,33 +242,41 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             Request request = mFilteredRequests.get(finalPosition);
             int originalPosition = getOriginalPosition(request);
-
-            if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
-                Glide.with(mContext)
-                        .load("package://" + request.getActivity())
-                        .override(272)
-                        .transition(DrawableTransitionOptions.withCrossFade(300))
-                        .diskCacheStrategy(DiskCacheStrategy.NONE)
-                        .into(contentViewHolder.icon);
-            }
+            
+            // Set checkbox tint color
+            int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+            CompoundButtonCompat.setButtonTintList(contentViewHolder.checkbox, 
+                ColorStateList.valueOf(accentColor));
 
             contentViewHolder.title.setText(request.getName());
             contentViewHolder.infoIcon.setVisibility(View.GONE);
 
-            if (request.isRequested()) {
-                contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
-                contentViewHolder.content.setText(mContext.getResources().getString(
-                        R.string.request_already_requested));
-            } else if (request.isAvailableForRequest()) {
-                contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
-                contentViewHolder.content.setText(mContext.getResources().getString(
-                        R.string.request_not_requested));
+            if (mSelectedItems.get(originalPosition, false)) {
+                // Selected state
+                contentViewHolder.container.setBackgroundColor(mSelectionHighlightColor);
+                contentViewHolder.title.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                if (!request.isRequested()) {
+                    contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                }
             } else {
-                contentViewHolder.content.setTextColor(mTextColorSecondary);
-                contentViewHolder.content.setText(mContext.getResources().getString(
-                        R.string.request_not_available));
+                // Unselected state
+                contentViewHolder.container.setBackgroundColor(Color.TRANSPARENT);
+                contentViewHolder.title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                
+                // Set content text color based on request state
+                if (request.isRequested()) {
+                    contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                    contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_already_requested));
+                } else if (request.isAvailableForRequest()) {
+                    contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                    contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_not_requested));
+                } else {
+                    contentViewHolder.content.setTextColor(mTextColorSecondary);
+                    contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_not_available));
+                }
             }
 
+            // Handle opacity based on request state
             if (request.isRequested() && !mContext.getResources().getBoolean(R.bool.enable_icon_request_multiple)) {
                 contentViewHolder.content.setAlpha(1f);
                 contentViewHolder.title.setAlpha(1f);
@@ -277,6 +294,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 contentViewHolder.checkbox.setEnabled(true);
             }
 
+            // Handle info text
             if (!request.getInfoText().isEmpty()) {
                 contentViewHolder.infoIcon.setVisibility(View.VISIBLE);
                 contentViewHolder.infoIcon.setImageDrawable(AppCompatResources.getDrawable(mContext, R.drawable.ic_drawer_about));
@@ -287,6 +305,15 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                         .content(request.getInfoText())
                         .positiveText(android.R.string.yes)
                         .show());
+            }
+
+            if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
+                Glide.with(mContext)
+                        .load("package://" + request.getActivity())
+                        .override(272)
+                        .transition(DrawableTransitionOptions.withCrossFade(300))
+                        .diskCacheStrategy(DiskCacheStrategy.NONE)
+                        .into(contentViewHolder.icon);
             }
 
             contentViewHolder.checkbox.setChecked(mSelectedItems.get(originalPosition, false));
@@ -432,6 +459,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         private final CheckBox checkbox;
         private final ImageView infoIcon;
         private final View divider;
+        private final LinearLayout container;
 
         ContentViewHolder(View itemView) {
             super(itemView);
@@ -440,51 +468,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             icon = itemView.findViewById(R.id.icon);
             checkbox = itemView.findViewById(R.id.checkbox);
             infoIcon = itemView.findViewById(R.id.requestedInfoIcon);
-            LinearLayout container = itemView.findViewById(R.id.container);
+            container = itemView.findViewById(R.id.container);
             divider = itemView.findViewById(R.id.divider);
-
-            // Set checkbox colors programmatically
-            int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-            ColorStateList colorStateList = new ColorStateList(
-                new int[][] {
-                    new int[] { android.R.attr.state_checked },
-                    new int[] { -android.R.attr.state_checked }
-                },
-                new int[] {
-                    accentColor,  // Checked state
-                    accentColor   // Unchecked state
-                }
-            );
-            CompoundButtonCompat.setButtonTintList(checkbox, colorStateList);
-
-            MaterialCardView card = itemView.findViewById(R.id.card);
-            if (CandyBarApplication.getConfiguration().getRequestStyle() == CandyBarApplication.Style.PORTRAIT_FLAT_LANDSCAPE_FLAT &&
-                    card != null) {
-                if (card.getLayoutParams() instanceof StaggeredGridLayoutManager.LayoutParams) {
-                    card.setRadius(0f);
-                    card.setUseCompatPadding(false);
-                    int margin = mContext.getResources().getDimensionPixelSize(R.dimen.card_margin);
-                    StaggeredGridLayoutManager.LayoutParams params = (StaggeredGridLayoutManager.LayoutParams) card.getLayoutParams();
-                    params.setMargins(0, 0, margin, margin);
-                    params.setMarginEnd(margin);
-                }
-            }
-
-            if (mContext.getResources().getBoolean(R.bool.use_flat_card) && card != null) {
-                card.setStrokeWidth(mContext.getResources().getDimensionPixelSize(R.dimen.card_stroke_width));
-                card.setCardElevation(0);
-                card.setUseCompatPadding(false);
-                int marginTop = mContext.getResources().getDimensionPixelSize(R.dimen.card_margin_top);
-                int marginLeft = mContext.getResources().getDimensionPixelSize(R.dimen.card_margin_left);
-                int marginRight = mContext.getResources().getDimensionPixelSize(R.dimen.card_margin_right);
-                int marginBottom = mContext.getResources().getDimensionPixelSize(R.dimen.card_margin_bottom);
-                StaggeredGridLayoutManager.LayoutParams params = (StaggeredGridLayoutManager.LayoutParams) card.getLayoutParams();
-                params.setMargins(marginLeft, marginTop, marginRight, marginBottom);
-            }
-
-            if (!Preferences.get(mContext).isCardShadowEnabled()) {
-                if (card != null) card.setCardElevation(0);
-            }
 
             container.setOnClickListener(this);
             container.setOnLongClickListener(this);
@@ -499,6 +484,20 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 toggleSelection(position, new ToggleResultListener() {
                     @Override public void onPositiveResult() {
                         checkbox.toggle();
+                        // Update background and text colors immediately after selection
+                        if (checkbox.isChecked()) {
+                            container.setBackgroundColor(mSelectionHighlightColor);
+                            title.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                            }
+                        } else {
+                            container.setBackgroundColor(Color.TRANSPARENT);
+                            title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            }
+                        }
                         try {
                             RequestListener listener = (RequestListener) mContext;
                             listener.onRequestSelected(getSelectedItemsSize());
@@ -519,6 +518,20 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 toggleSelection(position, new ToggleResultListener() {
                     @Override public void onPositiveResult() {
                         checkbox.toggle();
+                        // Update background and text colors immediately after selection
+                        if (checkbox.isChecked()) {
+                            container.setBackgroundColor(mSelectionHighlightColor);
+                            title.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+                            }
+                        } else {
+                            container.setBackgroundColor(Color.TRANSPARENT);
+                            title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            }
+                        }
                         try {
                             RequestListener listener = (RequestListener) mContext;
                             listener.onRequestSelected(getSelectedItemsSize());

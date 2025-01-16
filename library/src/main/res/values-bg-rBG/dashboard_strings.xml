@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Докоснете тук, за да зададете тапет като фон на началния екран</string>
     <string name="tap_intro_navigation_view">Стиль на навигация</string>
     <string name="tap_intro_navigation_view_desc">Превключете между навигационен ларди и навигационна ларди на дъното, като вашето предпочитание</string>
+    <string name="tap_intro_theme_black">Черно</string>
+    <string name="tap_intro_theme_black_desc">Докоснете тук, за да приложите черно теме</string>
+
 
     <!--Начало-->
     <string name="home_more_apps_header">Още приложения</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">светлина</string>
     <string name="theme_name_dark">Тъмно</string>
     <string name="theme_name_material_you">Материални Вие</string>
+    <string name="theme_name_pure_black">Черно</string>
 
     <!--разрешение-->
     <string name="permission_storage_denied">Необходимо е разрешение за съхранение, за да запазите тапет</string>

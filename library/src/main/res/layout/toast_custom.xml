@@ -20,7 +20,7 @@
         android:paddingTop="12dp"
         android:paddingEnd="24dp"
         android:paddingBottom="12dp"
-        android:textSize="15sp"
+        android:textSize="13sp"
         android:textColor="?attr/cb_primaryText" />
 
 </androidx.cardview.widget.CardView> 

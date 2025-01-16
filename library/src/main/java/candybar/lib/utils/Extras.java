@@ -21,6 +21,8 @@ package candybar.lib.utils;
 import android.content.Context;
 import android.widget.Toast;
 
+import candybar.lib.helpers.ToastHelper;
+
 public abstract class Extras {
 
     public enum Tag {
@@ -81,7 +83,7 @@ public abstract class Extras {
 
         public void showToast(Context context) {
             if (context == null) return;
-            Toast.makeText(context, getMessage(), Toast.LENGTH_LONG).show();
+            ToastHelper.show(context, getMessage(), Toast.LENGTH_LONG);
         }
     }
 }

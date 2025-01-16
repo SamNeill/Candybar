@@ -3,6 +3,7 @@ package candybar.lib.adapters;
 import static candybar.lib.items.Setting.Type.MATERIAL_YOU;
 import static candybar.lib.items.Setting.Type.NOTIFICATIONS;
 import static candybar.lib.items.Setting.Type.NAVIGATION_VIEW_STYLE;
+import static candybar.lib.items.Setting.Type.PURE_BLACK;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,9 +15,11 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,7 +37,10 @@ import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
 import com.danimahardhika.android.helpers.core.FileHelper;
 import com.danimahardhika.android.helpers.core.utils.LogUtil;
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.material.materialswitch.MaterialSwitch;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
 import java.io.File;
 import java.text.DecimalFormat;
@@ -55,9 +61,10 @@ import candybar.lib.helpers.TypefaceHelper;
 import candybar.lib.items.Setting;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.tasks.IconRequestTask;
-import candybar.lib.utils.listeners.InAppBillingListener;
 import candybar.lib.helpers.ToastHelper;
 import candybar.lib.helpers.TapIntroHelper;
+import candybar.lib.helpers.ThemeHelper;
+import candybar.lib.utils.listeners.InAppBillingListener;
 
 /*
  * CandyBar - Material Dashboard
@@ -149,36 +156,89 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             }
 
             if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS || 
-                setting.getType() == NAVIGATION_VIEW_STYLE) {
-                contentViewHolder.materialSwitch.setVisibility(View.VISIBLE);
+                setting.getType() == NAVIGATION_VIEW_STYLE || setting.getType() == PURE_BLACK) {
+                contentViewHolder.switchView.setVisibility(View.VISIBLE);
                 contentViewHolder.container.setClickable(false);
                 int pad = contentViewHolder.container.getPaddingLeft();
                 contentViewHolder.container.setPadding(pad, 0, pad, 0);
-            }
-
-            if (setting.getType() == MATERIAL_YOU) {
-                contentViewHolder.materialSwitch.setChecked(Preferences.get(mContext).isMaterialYou());
-            }
-
-            if (setting.getType() == NOTIFICATIONS) {
-                boolean isPermissionGranted = Build.VERSION.SDK_INT < Build.VERSION_CODES.O || NotificationManagerCompat.from(mContext).areNotificationsEnabled();
-                contentViewHolder.materialSwitch.setChecked(Preferences.get(mContext).isNotificationsEnabled() && isPermissionGranted);
-                int pad = contentViewHolder.container.getPaddingLeft();
-                contentViewHolder.container.setPadding(pad, pad, pad, 0);
-            }
-
-            if (setting.getType() == NAVIGATION_VIEW_STYLE) {
-                boolean isBottomNav = Preferences.get(mContext).getNavigationViewStyle() 
-                    == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
-                contentViewHolder.materialSwitch.setChecked(isBottomNav);
                 contentViewHolder.updateSwitchAppearance();
-                
+
+                if (contentViewHolder.switchView instanceof CompoundButton) {
+                    CompoundButton switchButton = (CompoundButton) contentViewHolder.switchView;
+                    if (setting.getType() == MATERIAL_YOU) {
+                        switchButton.setChecked(Preferences.get(mContext).isMaterialYou());
+                    } else if (setting.getType() == PURE_BLACK) {
+                        switchButton.setChecked(Preferences.get(mContext).isPureBlack());
+                        switchButton.setEnabled(ThemeHelper.isDarkTheme(mContext));
+                    } else if (setting.getType() == NOTIFICATIONS) {
+                        boolean isPermissionGranted = Build.VERSION.SDK_INT < Build.VERSION_CODES.O || NotificationManagerCompat.from(mContext).areNotificationsEnabled();
+                        switchButton.setChecked(Preferences.get(mContext).isNotificationsEnabled() && isPermissionGranted);
+                        pad = contentViewHolder.container.getPaddingLeft();
+                        contentViewHolder.container.setPadding(pad, pad, pad, 0);
+                    } else if (setting.getType() == NAVIGATION_VIEW_STYLE) {
+                        boolean isBottomNav = Preferences.get(mContext).getNavigationViewStyle() 
+                            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
+                        switchButton.setChecked(isBottomNav);
+                    }
+                }
+
                 // Show navigation intro if needed
-                if (Preferences.get(mContext).isTimeToShowNavigationViewIntro()) {
+                if (setting.getType() == NAVIGATION_VIEW_STYLE && 
+                    Preferences.get(mContext).isTimeToShowNavigationViewIntro()) {
                     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                        TapIntroHelper.showNavigationViewIntro(mContext, contentViewHolder.materialSwitch);
+                        // Store a reference to the RecyclerView
+                        RecyclerView recyclerView = (RecyclerView) contentViewHolder.itemView.getParent();
+                        
+                        TapTargetView.showFor((AppCompatActivity) mContext, 
+                            TapTarget.forView(contentViewHolder.switchView,
+                                mContext.getResources().getString(R.string.tap_intro_navigation_view),
+                                mContext.getResources().getString(R.string.tap_intro_navigation_view_desc))
+                            .titleTextColorInt(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent))
+                            .descriptionTextColorInt(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent))
+                            .targetCircleColorInt(ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground))
+                            .outerCircleColorInt(ColorHelper.setColorAlpha(
+                                ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground),
+                                0.3f))
+                            .cancelable(true)
+                            .tintTarget(false)
+                            .dimColor(android.R.color.black)
+                            .drawShadow(Preferences.get(mContext).isTapIntroShadowEnabled()),
+                            new TapTargetView.Listener() {
+                                @Override
+                                public void onTargetDismissed(TapTargetView view, boolean userInitiated) {
+                                    super.onTargetDismissed(view, userInitiated);
+                                    Preferences.get(mContext).setTimeToShowNavigationViewIntro(false);
+                                    
+                                    // Show black theme tutorial after navigation tutorial is dismissed
+                                    if (ThemeHelper.isDarkTheme(mContext) && 
+                                        Preferences.get(mContext).isTimeToShowBlackThemeIntro()) {
+                                        // Find the black theme switch view
+                                        for (int i = 0; i < mSettings.size(); i++) {
+                                            if (mSettings.get(i).getType() == PURE_BLACK) {
+                                                RecyclerView.ViewHolder holder = recyclerView.findViewHolderForAdapterPosition(i);
+                                                if (holder instanceof ContentViewHolder) {
+                                                    ContentViewHolder blackThemeHolder = (ContentViewHolder) holder;
+                                                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                                                        TapIntroHelper.showBlackThemeIntro(mContext, blackThemeHolder.switchView);
+                                                    }, 100);
+                                                }
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                @Override
+                                public void onTargetClick(TapTargetView view) {
+                                    super.onTargetClick(view);
+                                    view.dismiss(true);
+                                }
+                            });
                     }, 100);
                 }
+            } else {
+                contentViewHolder.switchView.setVisibility(View.GONE);
+                contentViewHolder.container.setClickable(true);
             }
         }
     }
@@ -202,8 +262,9 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         private final TextView footer;
         private final LinearLayout container;
         private final View divider;
-        private final MaterialSwitch materialSwitch;
+        private View switchView;
         private final Context mContext;
+        private CompoundButton.OnCheckedChangeListener switchListener;
 
         ContentViewHolder(View itemView) {
             super(itemView);
@@ -213,108 +274,144 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             footer = itemView.findViewById(R.id.footer);
             divider = itemView.findViewById(R.id.divider);
             container = itemView.findViewById(R.id.container);
-            materialSwitch = itemView.findViewById(R.id.switch_key);
+            switchView = itemView.findViewById(R.id.switch_key);
             mContext = itemView.getContext();
             
             // Set footer text color to accent
             footer.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
             
-            updateSwitchAppearance();
+            // Store the switch listener
+            if (switchView instanceof CompoundButton) {
+                switchListener = (buttonView, isChecked) -> {
+                    int position = getBindingAdapterPosition();
+                    if (position < 0) return;
+                    Setting setting = mSettings.get(position);
+                    
+                    switch (setting.getType()) {
+                        case MATERIAL_YOU:
+                            if (isChecked != Preferences.get(mContext).isMaterialYou()) {
+                                Preferences.get(mContext).setMaterialYou(isChecked);
+                                notifyDataSetChanged();
+                                ((Activity) mContext).recreate();
+                            }
+                            break;
+                        case PURE_BLACK:
+                            if (isChecked != Preferences.get(mContext).isPureBlack() && ThemeHelper.isDarkTheme(mContext)) {
+                                Preferences.get(mContext).setPureBlack(isChecked);
+                                notifyDataSetChanged();
+                                ((Activity) mContext).recreate();
+                            }
+                            break;
+                        case NOTIFICATIONS:
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !NotificationManagerCompat.from(mContext).areNotificationsEnabled()) {
+                                ((CompoundButton)switchView).setChecked(false);
+                                Intent settingsIntent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+                                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                                        .putExtra(Settings.EXTRA_APP_PACKAGE, mContext.getPackageName());
+                                mContext.startActivity(settingsIntent);
+                                break;
+                            }
+                            if (isChecked != Preferences.get(mContext).isNotificationsEnabled()) {
+                                Preferences.get(mContext).setNotificationsEnabled(isChecked);
+                                CandyBarApplication.Configuration.NotificationHandler handler = CandyBarApplication.getConfiguration().getNotificationHandler();
+                                if (handler != null) {
+                                    handler.setMode(isChecked);
+                                }
+                            }
+                            break;
+                        case NAVIGATION_VIEW_STYLE:
+                            if (isChecked != (Preferences.get(mContext).getNavigationViewStyle() 
+                                == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
+                                CandyBarApplication.NavigationViewStyle newStyle = isChecked ? 
+                                    CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
+                                    CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
+                                
+                                Preferences.get(mContext).setNavigationViewStyle(newStyle);
+                                
+                                Activity activity = (Activity) mContext;
+                                Intent intent = activity.getIntent();
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                activity.finish();
+                                activity.startActivity(intent);
+                            }
+                            break;
+                    }
+                };
+                ((CompoundButton)switchView).setOnCheckedChangeListener(switchListener);
+            }
 
             container.setOnClickListener(this);
-            materialSwitch.setOnCheckedChangeListener((compoundButton, isChecked) -> {
-                int position = getBindingAdapterPosition();
-                switch (mSettings.get(position).getType()) {
-                    case MATERIAL_YOU:
-                        if (isChecked != Preferences.get(mContext).isMaterialYou()) {
-                            Preferences.get(mContext).setMaterialYou(isChecked);
-                            notifyDataSetChanged();
-                            ((Activity) mContext).recreate();
-                        }
-                        break;
-                    case NOTIFICATIONS:
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !NotificationManagerCompat.from(mContext).areNotificationsEnabled()) {
-                            materialSwitch.setChecked(false);
-                            Intent settingsIntent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                    .putExtra(Settings.EXTRA_APP_PACKAGE, mContext.getPackageName());
-                            mContext.startActivity(settingsIntent);
-                            break;
-                        }
-                        if (isChecked != Preferences.get(mContext).isNotificationsEnabled()) {
-                            Preferences.get(mContext).setNotificationsEnabled(isChecked);
-                            CandyBarApplication.Configuration.NotificationHandler handler = CandyBarApplication.getConfiguration().getNotificationHandler();
-                            if (handler != null) {
-                                handler.setMode(isChecked);
-                            }
-                        }
-                        break;
-                    case NAVIGATION_VIEW_STYLE:
-                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle() 
-                            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
-                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ? 
-                                CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
-                                CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
-                            
-                            Preferences.get(mContext).setNavigationViewStyle(newStyle);
-                            
-                            Activity activity = (Activity) mContext;
-                            Intent intent = activity.getIntent();
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            activity.finish();
-                            activity.startActivity(intent);
-                        }
-                        break;
-                }
-            });
         }
 
         private void updateSwitchAppearance() {
             boolean isMaterialYou = Preferences.get(mContext).isMaterialYou();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                ViewGroup parent = (ViewGroup) switchView.getParent();
+                if (parent == null) return;
+                
+                int index = parent.indexOfChild(switchView);
+                boolean isChecked = switchView instanceof CompoundButton && ((CompoundButton)switchView).isChecked();
+                boolean isEnabled = switchView.isEnabled();
+                
+                // Always recreate the switch to ensure consistent styling
+                View oldSwitch = switchView;
                 if (isMaterialYou) {
-                    materialSwitch.setLayoutParams(new LinearLayout.LayoutParams(
+                    Context context = new ContextThemeWrapper(mContext, R.style.Widget_Material3_MaterialSwitch);
+                    MaterialSwitch newSwitch = new MaterialSwitch(context);
+                    newSwitch.setLayoutParams(new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         ViewGroup.LayoutParams.WRAP_CONTENT));
-                    materialSwitch.setMinHeight((int) mContext.getResources().getDimension(R.dimen.switch_height));
-                    materialSwitch.setMinWidth((int) mContext.getResources().getDimension(R.dimen.switch_width));
-                    materialSwitch.setThumbTintList(ColorStateList.valueOf(
+                    newSwitch.setChecked(isChecked);
+                    newSwitch.setEnabled(isEnabled);
+                    newSwitch.setOnCheckedChangeListener(switchListener);
+                    
+                    // Set Material You colors
+                    newSwitch.setThumbTintList(ColorStateList.valueOf(
                         ContextCompat.getColor(mContext, R.color.material_you_switch_thumb)));
-                    materialSwitch.setTrackTintList(ColorStateList.valueOf(
+                    newSwitch.setTrackTintList(ColorStateList.valueOf(
                         ContextCompat.getColor(mContext, R.color.material_you_switch_track)));
+                    
+                    parent.removeView(oldSwitch);
+                    parent.addView(newSwitch, index);
+                    switchView = newSwitch;
                 } else {
-                    materialSwitch.setLayoutParams(new LinearLayout.LayoutParams(
+                    Context context = new ContextThemeWrapper(mContext, R.style.Widget_Material2_MaterialSwitch);
+                    SwitchMaterial newSwitch = new SwitchMaterial(context);
+                    newSwitch.setLayoutParams(new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         ViewGroup.LayoutParams.WRAP_CONTENT));
-                    materialSwitch.setMinHeight((int) mContext.getResources().getDimension(R.dimen.switch_height_m2));
-                    materialSwitch.setMinWidth((int) mContext.getResources().getDimension(R.dimen.switch_width_m2));
+                    newSwitch.setChecked(isChecked);
+                    newSwitch.setEnabled(isEnabled);
+                    newSwitch.setOnCheckedChangeListener(switchListener);
+                    
+                    // Set Material 2 colors
+                    TypedValue typedValue = new TypedValue();
+                    mContext.getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
+                    int accentColor = typedValue.data;
+                    int trackColorChecked = ColorHelper.setColorAlpha(accentColor, 0.3f);
+                    
                     int[][] states = new int[][] {
                         new int[] { android.R.attr.state_checked },
                         new int[] { -android.R.attr.state_checked }
                     };
-                    
-                    TypedValue typedValue = new TypedValue();
-                    mContext.getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
-                    int accentColor = typedValue.data;
-                    
-                    // Get main background color from theme for track
-                    TypedValue cardValue = new TypedValue();
-                    mContext.getTheme().resolveAttribute(R.attr.cb_mainBackground, cardValue, true);
-                    int trackColor = cardValue.data;
-                    trackColor = ColorHelper.setColorAlpha(trackColor, 0.8f); // 60% opacity
-                    
-                    int[] thumbColors = new int[] {
-                        accentColor,
-                        accentColor
+                    int[] thumbColors = new int[] { 
+                        accentColor,      // Checked: accent color
+                        0xFFFFFFFF       // Unchecked: white
                     };
                     
-                    int[] trackColors = new int[] {
-                        trackColor,
-                        trackColor
+                    // Use accent color with reduced alpha for track in Pure Black theme
+                    boolean isPureBlack = ThemeHelper.isPureBlackEnabled(mContext);
+                    int[] trackColors = new int[] { 
+                        trackColorChecked,  // Checked: semi-transparent accent
+                        isPureBlack ? ColorHelper.setColorAlpha(accentColor, 0.12f) : 0x61000000  // Unchecked: accent color with 12% alpha for Pure Black, default grey for others
                     };
                     
-                    materialSwitch.setThumbTintList(new ColorStateList(states, thumbColors));
-                    materialSwitch.setTrackTintList(new ColorStateList(states, trackColors));
+                    newSwitch.setThumbTintList(new ColorStateList(states, thumbColors));
+                    newSwitch.setTrackTintList(new ColorStateList(states, trackColors));
+                    
+                    parent.removeView(oldSwitch);
+                    parent.addView(newSwitch, index);
+                    switchView = newSwitch;
                 }
             }
         }
@@ -325,63 +422,37 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             content.setText(setting.getContent());
 
             if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS || 
-                setting.getType() == NAVIGATION_VIEW_STYLE) {
-                materialSwitch.setVisibility(View.VISIBLE);
+                setting.getType() == NAVIGATION_VIEW_STYLE || setting.getType() == PURE_BLACK) {
+                switchView.setVisibility(View.VISIBLE);
                 container.setClickable(false);
                 int pad = container.getPaddingLeft();
                 container.setPadding(pad, 0, pad, 0);
                 updateSwitchAppearance();
+            } else {
+                switchView.setVisibility(View.GONE);
+                container.setClickable(true);
             }
 
-            if (setting.getType() == MATERIAL_YOU) {
-                materialSwitch.setChecked(Preferences.get(mContext).isMaterialYou());
-            }
-
-            materialSwitch.setOnCheckedChangeListener((compoundButton, isChecked) -> {
-                int position = getBindingAdapterPosition();
-                switch (mSettings.get(position).getType()) {
-                    case MATERIAL_YOU:
-                        if (isChecked != Preferences.get(mContext).isMaterialYou()) {
-                            Preferences.get(mContext).setMaterialYou(isChecked);
-                            notifyDataSetChanged();
-                            ((Activity) mContext).recreate();
-                        }
-                        break;
-                    case NOTIFICATIONS:
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !NotificationManagerCompat.from(mContext).areNotificationsEnabled()) {
-                            materialSwitch.setChecked(false);
-                            Intent settingsIntent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                                    .putExtra(Settings.EXTRA_APP_PACKAGE, mContext.getPackageName());
-                            mContext.startActivity(settingsIntent);
-                            break;
-                        }
-                        if (isChecked != Preferences.get(mContext).isNotificationsEnabled()) {
-                            Preferences.get(mContext).setNotificationsEnabled(isChecked);
-                            CandyBarApplication.Configuration.NotificationHandler handler = CandyBarApplication.getConfiguration().getNotificationHandler();
-                            if (handler != null) {
-                                handler.setMode(isChecked);
-                            }
-                        }
-                        break;
-                    case NAVIGATION_VIEW_STYLE:
-                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle() 
-                            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
-                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ? 
-                                CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
-                                CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
-                            
-                            Preferences.get(mContext).setNavigationViewStyle(newStyle);
-                            
-                            Activity activity = (Activity) mContext;
-                            Intent intent = activity.getIntent();
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            activity.finish();
-                            activity.startActivity(intent);
-                        }
-                        break;
+            if (switchView instanceof CompoundButton) {
+                CompoundButton switchButton = (CompoundButton)switchView;
+                if (setting.getType() == MATERIAL_YOU) {
+                    switchButton.setChecked(Preferences.get(mContext).isMaterialYou());
+                    updateSwitchAppearance();
+                } else if (setting.getType() == PURE_BLACK) {
+                    switchButton.setChecked(Preferences.get(mContext).isPureBlack());
+                    switchButton.setEnabled(ThemeHelper.isDarkTheme(mContext));
+                    updateSwitchAppearance();
+                } else if (setting.getType() == NOTIFICATIONS) {
+                    boolean isPermissionGranted = Build.VERSION.SDK_INT < Build.VERSION_CODES.O || NotificationManagerCompat.from(mContext).areNotificationsEnabled();
+                    switchButton.setChecked(Preferences.get(mContext).isNotificationsEnabled() && isPermissionGranted);
+                    updateSwitchAppearance();
+                } else if (setting.getType() == NAVIGATION_VIEW_STYLE) {
+                    boolean isBottomNav = Preferences.get(mContext).getNavigationViewStyle() 
+                        == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
+                    switchButton.setChecked(isBottomNav);
+                    updateSwitchAppearance();
                 }
-            });
+            }
         }
 
         @Override
@@ -624,7 +695,9 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         Preferences.get(mContext).setTimeToShowRequestIntro(true);
                         Preferences.get(mContext).setTimeToShowWallpapersIntro(true);
                         Preferences.get(mContext).setTimeToShowWallpaperPreviewIntro(true);
+                        Preferences.get(mContext).setTimeToShowRequestSearchIntro(true);
                         Preferences.get(mContext).setTimeToShowNavigationViewIntro(true);
+                        Preferences.get(mContext).setTimeToShowBlackThemeIntro(true);
                         
                         // Set intro reset last to trigger the home fragment to show intro
                         Preferences.get(mContext).setIntroReset(true);

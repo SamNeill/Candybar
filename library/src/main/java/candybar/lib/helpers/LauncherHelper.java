@@ -420,8 +420,7 @@ public class LauncherHelper {
                             .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                             .show();
                 } catch (SecurityException | IllegalArgumentException e) {
-                    Toast.makeText(context, R.string.apply_cmtheme_failed,
-                            Toast.LENGTH_LONG).show();
+                    ToastHelper.show(context, R.string.apply_cmtheme_failed, Toast.LENGTH_LONG);
                 }
                 break;
             case COLOR_OS:

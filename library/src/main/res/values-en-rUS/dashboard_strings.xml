@@ -109,6 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Tap here to set wallpaper as the homescreen background</string>
     <string name="tap_intro_navigation_view">Navigation Style</string>
     <string name="tap_intro_navigation_view_desc">Switch between Navigation drawer and bottom Navigation bar as your Likeness</string>
+    <string name="tap_intro_theme_black">Black Theme</string>
+    <string name="tap_intro_theme_black_desc">Tap here to apply the black theme</string>
 
     <!--Home-->
     <string name="home_more_apps_header">More Apps</string>
@@ -307,6 +309,7 @@
     <string name="theme_name_light">Light</string>
     <string name="theme_name_dark">Dark</string>
     <string name="theme_name_material_you">Material You</string>
+    <string name="theme_name_pure_black">Pure Black</string>
 
     <!--Permission-->
     <string name="permission_storage_denied">Storage permission needed to save wallpaper</string>

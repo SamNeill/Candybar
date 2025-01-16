@@ -5,6 +5,11 @@
     <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorOutline" format="color" />
     
+    <!-- Pure Black Theme Colors -->
+    <color name="pureBlackBackground">#000000</color>
+    <color name="pureBlackSurface">#000000</color>
+    <color name="pureBlackSurfaceVariant">#000000</color>
+    
     <!-- Base colors - Increased contrast -->
     <color name="colorPrimary">@android:color/system_accent1_600</color>
     <color name="colorPrimaryDark">@android:color/system_accent1_800</color>

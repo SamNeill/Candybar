@@ -52,6 +52,7 @@ import candybar.lib.databases.Database;
 import candybar.lib.helpers.LocaleHelper;
 import candybar.lib.helpers.TapIntroHelper;
 import candybar.lib.helpers.ThemeHelper;
+import candybar.lib.helpers.ToastHelper;
 import candybar.lib.items.PopupItem;
 import candybar.lib.items.Wallpaper;
 import candybar.lib.preferences.Preferences;
@@ -109,7 +110,28 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         prevIsDarkTheme = ThemeHelper.isDarkTheme(this);
         final boolean isMaterialYou = Preferences.get(this).isMaterialYou();
-        super.setTheme(isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight);
+        final boolean isPureBlack = Preferences.get(this).isPureBlack();
+        
+        if (ThemeHelper.isDarkTheme(this)) {
+            if (isPureBlack) {
+                if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    setTheme(R.style.CandyBar_Theme_App_MaterialYou_PureBlack);
+                } else {
+                    setTheme(R.style.CandyBar_Theme_App_PureBlack);
+                }
+            } else if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                setTheme(R.style.CandyBar_Theme_App_MaterialYou);
+            } else {
+                setTheme(R.style.CandyBar_Theme_App_DayNight);
+            }
+        } else {
+            if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                setTheme(R.style.CandyBar_Theme_App_MaterialYou);
+            } else {
+                setTheme(R.style.CandyBar_Theme_App_DayNight);
+            }
+        }
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper);
         mIsEnter = true;
@@ -406,7 +428,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
         if (res == 0) return false;
 
-        Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
+        ToastHelper.show(this, res, Toast.LENGTH_SHORT);
         return true;
     }
 
@@ -419,7 +441,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
                     grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 WallpaperDownloader.prepare(this).wallpaper(mWallpaper).start();
             } else {
-                Toast.makeText(this, R.string.permission_storage_denied, Toast.LENGTH_LONG).show();
+                ToastHelper.show(this, R.string.permission_storage_denied, Toast.LENGTH_LONG);
             }
         }
     }
@@ -502,7 +524,8 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
                                 mWallpaper.setColor(ColorHelper.getAttributeColor(
                                         CandyBarWallpaperActivity.this, com.google.android.material.R.attr.colorSecondary));
                             }
-
+                            
+                            ToastHelper.show(CandyBarWallpaperActivity.this, R.string.connection_failed, Toast.LENGTH_LONG);
                             return true;
                         }
 

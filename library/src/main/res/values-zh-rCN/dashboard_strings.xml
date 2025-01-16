@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">点击此处将壁纸设置为主屏幕背景</string>
     <string name="tap_intro_navigation_view">导航视图</string>
     <string name="tap_intro_navigation_view_desc">点击此处或从屏幕左边缘滑动以打开导航抽屉</string>
+    <string name="tap_intro_theme_black">纯黑</string>
+    <string name="tap_intro_theme_black_desc">点击此处应用纯黑主题</string>
+
 
     <!--家-->
     <string name="home_more_apps_header">更多应用程序</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">光</string>
     <string name="theme_name_dark">黑暗的</string>
     <string name="theme_name_material_you">物质的你</string>
+    <string name="theme_name_pure_black">纯黑</string>
 
     <!--允许-->
     <string name="permission_storage_denied">保存壁纸需要存储权限</string>

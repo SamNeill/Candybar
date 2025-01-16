@@ -143,6 +143,16 @@
 
     <style name="CandyBar.Theme.App.MaterialYou" parent="CandyBar.Theme" />
 
+    <style name="CandyBar.Theme.App.MaterialYou.PureBlack" parent="CandyBar.Theme">
+        <item name="popupMenuStyle">@style/CandyBar.PopupMenu.PureBlack</item>
+        <item name="actionOverflowMenuStyle">@style/CandyBar.PopupMenu.Overflow.PureBlack</item>
+    </style>
+
+    <style name="CandyBar.Theme.App.PureBlack" parent="CandyBar.Theme">
+        <item name="popupMenuStyle">@style/CandyBar.PopupMenu.PureBlack</item>
+        <item name="actionOverflowMenuStyle">@style/CandyBar.PopupMenu.Overflow.PureBlack</item>
+    </style>
+
     <style name="CandyBar.Theme.Splash" parent="Theme.Material3.DayNight">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>

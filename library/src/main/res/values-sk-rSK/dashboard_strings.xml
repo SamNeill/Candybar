@@ -109,6 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Klepnutím sem nastavíte tapetu ako pozadie domovskej obrazovky</string>
     <string name="tap_intro_navigation_view">Stíl navigácie</string>
     <string name="tap_intro_navigation_view_desc">Klepnutím sem môžete prejsť medzi panelom navigácie a dolnou navigačnou lištou v závislosti od vašich preferencií</string>
+    <string name="tap_intro_theme_black">Čierna tematika</string>
+    <string name="tap_intro_theme_black_desc">Klepnutím sem môžete prejsť medzi panelom navigácie a dolnou navigačnou lištou v závislosti od vašich preferencií</string>
 
     <!--Domov-->
     <string name="home_more_apps_header">Viac aplikácií</string>
@@ -307,6 +309,7 @@
     <string name="theme_name_light">Svetlo</string>
     <string name="theme_name_dark">Tmavý</string>
     <string name="theme_name_material_you">Material You</string>
+    <string name="theme_name_pure_black">Čierna</string>
 
     <!--Povolenie-->
     <string name="permission_storage_denied">Na uloženie tapety je potrebné povolenie na ukladanie</string>

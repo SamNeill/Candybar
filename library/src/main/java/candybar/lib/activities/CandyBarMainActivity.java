@@ -181,6 +181,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         final boolean isMaterialYou = Preferences.get(this).isMaterialYou();
+        final boolean isPureBlack = Preferences.get(this).isPureBlack();
         final int nightMode;
         switch (Preferences.get(this).getTheme()) {
             case LIGHT:
@@ -197,7 +198,28 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
         LocaleHelper.setLocale(this);
         super.onCreate(savedInstanceState);
-        super.setTheme(isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight);
+        
+        // Apply the correct theme based on settings
+        if (ThemeHelper.isDarkTheme(this)) {
+            if (isPureBlack) {
+                if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    setTheme(R.style.CandyBar_Theme_App_MaterialYou_PureBlack);
+                } else {
+                    setTheme(R.style.CandyBar_Theme_App_PureBlack);
+                }
+            } else if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                setTheme(R.style.CandyBar_Theme_App_MaterialYou);
+            } else {
+                setTheme(R.style.CandyBar_Theme_App_DayNight);
+            }
+        } else {
+            if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                setTheme(R.style.CandyBar_Theme_App_MaterialYou);
+            } else {
+                setTheme(R.style.CandyBar_Theme_App_DayNight);
+            }
+        }
+
         setContentView(R.layout.activity_main);
 
         // Show privacy policy dialog before anything else
@@ -211,7 +233,9 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
         // Initialize toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setPopupTheme(isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight);
+        toolbar.setPopupTheme(ThemeHelper.isDarkTheme(this) && isPureBlack ? 
+            R.style.CandyBar_PopupMenu_PureBlack : 
+            (isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight));
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
@@ -481,6 +505,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         if (isBottomNavigation) {
             Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.container);
 
+            // Check if current fragment is RequestFragment and has selected items
+            if (currentFragment instanceof RequestFragment) {
+                RequestFragment requestFragment = (RequestFragment) currentFragment;
+                if (requestFragment.getAdapter() != null && requestFragment.getAdapter().getSelectedItemsSize() > 0) {
+                    requestFragment.getAdapter().resetSelectedItems();
+                    return;
+                }
+            }
+
             // Check if current fragment is from overflow menu (excluding Presets/Kustom)
             if (currentFragment instanceof FAQsFragment ||
                     currentFragment instanceof SettingsFragment ||
@@ -541,6 +574,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             }
 
             Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.container);
+            // Check if current fragment is RequestFragment and has selected items
+            if (currentFragment instanceof RequestFragment) {
+                RequestFragment requestFragment = (RequestFragment) currentFragment;
+                if (requestFragment.getAdapter() != null && requestFragment.getAdapter().getSelectedItemsSize() > 0) {
+                    requestFragment.getAdapter().resetSelectedItems();
+                    return;
+                }
+            }
+
             if (currentFragment instanceof HomeFragment) {
                 // If we're in Home, exit app
                 super.onBackPressed();
@@ -563,7 +605,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 recreate();
                 return;
             }
-            Toast.makeText(this, R.string.permission_storage_denied, Toast.LENGTH_LONG).show();
+            ToastHelper.show(this, R.string.permission_storage_denied, Toast.LENGTH_LONG);
         }
         if (requestCode == NOTIFICATION_PERMISSION_CODE) {
             if (grantResults.length > 0 &&
@@ -571,8 +613,8 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 CandyBarApplication.getConfiguration().getNotificationHandler()
                         .setMode(Preferences.get(this).isNotificationsEnabled());
             } else {
-                Toast.makeText(this, getResources().getString(R.string.permission_notification_denied_1), Toast.LENGTH_LONG).show();
-                Toast.makeText(this, getResources().getString(R.string.permission_notification_denied_2), Toast.LENGTH_LONG).show();
+                ToastHelper.show(this, getResources().getString(R.string.permission_notification_denied_1), Toast.LENGTH_LONG);
+                ToastHelper.show(this, getResources().getString(R.string.permission_notification_denied_2), Toast.LENGTH_LONG);
             }
         }
     }
@@ -1502,10 +1544,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 Preferences.get(this).isMaterialYou();
         boolean isDarkTheme = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
                 == Configuration.UI_MODE_NIGHT_YES;
+        boolean isPureBlack = Preferences.get(this).isPureBlack();
 
         if (isMaterialYou && isDarkTheme) {
-            int systemNeutral2_800 = getResources().getColor(android.R.color.system_neutral2_800);
-            mBottomNavigationView.setBackgroundColor(systemNeutral2_800);
+            if (isPureBlack) {
+                mBottomNavigationView.setBackgroundColor(Color.BLACK);
+            } else {
+                int systemNeutral2_800 = getResources().getColor(android.R.color.system_neutral2_800);
+                mBottomNavigationView.setBackgroundColor(systemNeutral2_800);
+            }
         } else if (!isDarkTheme && !isMaterialYou) {
             int mintColor = Color.parseColor("#A5E6C8");
             mBottomNavigationView.setBackgroundColor(mintColor);

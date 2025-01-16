@@ -34,6 +34,7 @@ import candybar.lib.items.ImageSize;
 import candybar.lib.items.Wallpaper;
 import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
+import candybar.lib.helpers.ToastHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -80,19 +81,17 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
     @Override
     protected AsyncTaskBase execute(ExecutorService executorService) {
         if (mDialog == null) {
-            int color = mWallpaper.getColor();
-            if (color == 0) {
-                color = ColorHelper.getAttributeColor(mContext.get(), com.google.android.material.R.attr.colorSecondary);
-            }
+            int accentColor = ColorHelper.getAttributeColor(mContext.get(), R.attr.cb_colorAccent);
 
             final MaterialDialog.Builder builder = new MaterialDialog.Builder(mContext.get());
-            builder.widgetColor(color)
+            builder.widgetColor(accentColor)
+                    .backgroundColor(ColorHelper.getAttributeColor(mContext.get(), R.attr.cb_cardBackground))
                     .typeface(TypefaceHelper.getMedium(mContext.get()), TypefaceHelper.getRegular(mContext.get()))
                     .progress(true, 0)
                     .cancelable(false)
                     .progressIndeterminateStyle(true)
                     .content(R.string.wallpaper_loading)
-                    .positiveColor(color)
+                    .positiveColor(accentColor)
                     .positiveText(android.R.string.cancel)
                     .onPositive((dialog, which) -> cancel(true));
 
@@ -130,8 +129,7 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
                 mDialog.dismiss();
             }
 
-            Toast.makeText(mContext.get(), R.string.wallpaper_apply_failed,
-                    Toast.LENGTH_LONG).show();
+            ToastHelper.show(mContext.get(), R.string.wallpaper_apply_failed, Toast.LENGTH_LONG);
             return;
         }
 
@@ -333,8 +331,7 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
     @Override
     public void cancel(boolean mayInterruptIfRunning) {
         super.cancel(mayInterruptIfRunning);
-        Toast.makeText(mContext.get(), R.string.wallpaper_apply_cancelled,
-                Toast.LENGTH_LONG).show();
+        ToastHelper.show(mContext.get(), R.string.wallpaper_apply_cancelled, Toast.LENGTH_LONG);
     }
 
     @Override
@@ -352,17 +349,9 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
         }
 
         if (ok) {
-            CafeBar.builder(mContext.get())
-                    .theme(CafeBarTheme.Custom(ColorHelper.getAttributeColor(
-                            mContext.get(), R.attr.cb_cardBackground)))
-                    .contentTypeface(TypefaceHelper.getRegular(mContext.get()))
-                    .floating(true)
-                    .fitSystemWindow()
-                    .content(R.string.wallpaper_applied)
-                    .show();
+            ToastHelper.show(mContext.get(), R.string.wallpaper_applied, Toast.LENGTH_LONG);
         } else {
-            Toast.makeText(mContext.get(), R.string.wallpaper_apply_failed,
-                    Toast.LENGTH_LONG).show();
+            ToastHelper.show(mContext.get(), R.string.wallpaper_apply_failed, Toast.LENGTH_LONG);
         }
     }
 

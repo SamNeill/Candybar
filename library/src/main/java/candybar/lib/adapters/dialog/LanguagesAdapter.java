@@ -1,6 +1,8 @@
 package candybar.lib.adapters.dialog;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.CompoundButtonCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -17,6 +20,7 @@ import java.util.List;
 
 import candybar.lib.R;
 import candybar.lib.fragments.dialog.LanguagesFragment;
+import candybar.lib.helpers.ColorHelper;
 import candybar.lib.items.Language;
 
 /*
@@ -66,17 +70,36 @@ public class LanguagesAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
-        LanguagesAdapter.ViewHolder holder;
+        ViewHolder holder;
         if (view == null) {
             view = View.inflate(mContext, R.layout.fragment_inapp_dialog_item_list, null);
             holder = new ViewHolder(view);
             view.setTag(holder);
         } else {
-            holder = (LanguagesAdapter.ViewHolder) view.getTag();
+            holder = (ViewHolder) view.getTag();
         }
 
         holder.radio.setChecked(mSelectedIndex == position);
         holder.name.setText(mLanguages.get(position).getName());
+
+        // Set radio button colors programmatically
+        int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+        int uncheckedColor = Color.argb(128, // 50% opacity
+                Color.red(accentColor),
+                Color.green(accentColor),
+                Color.blue(accentColor));
+        
+        ColorStateList colorStateList = new ColorStateList(
+            new int[][] {
+                new int[] { android.R.attr.state_checked },
+                new int[] { -android.R.attr.state_checked }
+            },
+            new int[] {
+                accentColor,  // Checked state
+                uncheckedColor   // Unchecked state
+            }
+        );
+        CompoundButtonCompat.setButtonTintList(holder.radio, colorStateList);
 
         holder.container.setOnClickListener(v -> {
             FragmentManager fm = ((AppCompatActivity) mContext).getSupportFragmentManager();

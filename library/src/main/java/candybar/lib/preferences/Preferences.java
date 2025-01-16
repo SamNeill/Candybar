@@ -49,6 +49,7 @@ public class Preferences {
     private static final String KEY_FIRST_RUN = "first_run";
     private static final String KEY_THEME = "theme";
     private static final String KEY_MATERIAL_YOU = "material_you";
+    private static final String KEY_PURE_BLACK = "pure_black";
     private static final String KEY_NOTIFICATIONS = "notifications";
     private static final String KEY_ICON_SHAPE = "icon_shape";
     private static final String KEY_APP_VERSION = "app_version";
@@ -76,6 +77,7 @@ public class Preferences {
     private static final String KEY_REQUEST_CONSENT = "request_consent";
     private static final String KEY_PRIVACY_POLICY_ACCEPTED = "privacy_policy_accepted";
     private static final String KEY_CONSENT_GIVEN = "consent_given";
+    private static final String KEY_BLACK_THEME_INTRO = "black_theme_intro";
 
     private static final String KEY_LANGUAGE_PREFERENCE = "language_preference";
     private static final String KEY_CURRENT_LOCALE = "current_locale";
@@ -203,6 +205,14 @@ public class Preferences {
 
     public void setMaterialYou(boolean bool) {
         getSharedPreferences().edit().putBoolean(KEY_MATERIAL_YOU, bool).apply();
+    }
+
+    public boolean isPureBlack() {
+        return getSharedPreferences().getBoolean(KEY_PURE_BLACK, false);
+    }
+
+    public void setPureBlack(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_PURE_BLACK, bool).apply();
     }
 
     public boolean isNotificationsEnabled() {
@@ -521,5 +531,13 @@ public class Preferences {
 
     public boolean isTimeToShowNavigationViewIntro() {
         return getSharedPreferences().getBoolean(KEY_SHOW_NAVIGATION_VIEW_INTRO, true);
+    }
+
+    public boolean isTimeToShowBlackThemeIntro() {
+        return getSharedPreferences().getBoolean(KEY_BLACK_THEME_INTRO, true);
+    }
+
+    public void setTimeToShowBlackThemeIntro(boolean bool) {
+        getSharedPreferences().edit().putBoolean(KEY_BLACK_THEME_INTRO, bool).apply();
     }
 }

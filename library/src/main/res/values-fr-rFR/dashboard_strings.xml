@@ -109,7 +109,8 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Appuyez ici pour définir le fond d\'écran comme arrière-plan de l\'écran d\'accueil</string>
     <string name="tap_intro_navigation_view">Style de navigation</string>
     <string name="tap_intro_navigation_view_desc">Switch entre le panneau de navigation et la barre de navigation inférieure en fonction de votre préférence</string>
-
+    <string name="tap_intro_theme_black">Tema Noir</string>
+    <string name="tap_intro_theme_black_desc">Appuyez ici pour appliquer le thème Noir</string>
 
     <!--Maison-->
     <string name="home_more_apps_header">Plus d\'applications</string>
@@ -308,6 +309,7 @@
     <string name="theme_name_light">Lumière</string>
     <string name="theme_name_dark">Sombre</string>
     <string name="theme_name_material_you">Matériel Vous</string>
+    <string name="theme_name_pure_black">Noir pur</string>
 
     <!--Autorisation-->
     <string name="permission_storage_denied">Autorisation de stockage nécessaire pour enregistrer le fond d\'écran</string>

@@ -109,6 +109,9 @@
     <string name="tap_intro_wallpaper_preview_apply_desc">Mag-tap dito para itakda ang wallpaper bilang background ng homescreen</string>
     <string name="tap_intro_navigation_view">Stilo ng Navigation</string>
     <string name="tap_intro_navigation_view_desc">I-tap dito para i-switch ang Navigation Drawer at ang Bottom Navigation Bar</string>
+    <string name="tap_intro_theme_black">Tema ng kulay itim</string>
+    <string name="tap_intro_theme_black_desc">I-tap dito para i-switch ang Navigation Drawer at ang Bottom Navigation Bar</string>
+
 
     <!--Bahay-->
     <string name="home_more_apps_header">Higit pang Apps</string>
@@ -307,6 +310,7 @@
     <string name="theme_name_light">Liwanag</string>
     <string name="theme_name_dark">Madilim</string>
     <string name="theme_name_material_you">Materyal Ikaw</string>
+    <string name="theme_name_pure_black">Puro itim</string>
 
     <!--Pahintulot-->
     <string name="permission_storage_denied">Kailangan ng pahintulot sa pag-iimbak para i-save ang wallpaper</string>
