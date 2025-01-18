@@ -8,6 +8,6 @@
         android:strokeWidth="2"
         android:strokeColor="?attr/cb_secondaryText"
         android:fillColor="@android:color/transparent"
-        android:pathData="M4,4 L20,4 L20,20 L4,20 Z"
+        android:pathData="M8,4 L16,4 C18.2091,4 20,5.79086 20,8 L20,16 C20,18.2091 18.2091,20 16,20 L8,20 C5.79086,20 4,18.2091 4,16 L4,8 C4,5.79086 5.79086,4 8,4 Z"
         android:strokeLineJoin="round"/>
 </vector> 

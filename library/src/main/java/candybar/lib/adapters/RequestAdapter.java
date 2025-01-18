@@ -243,10 +243,19 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             Request request = mFilteredRequests.get(finalPosition);
             int originalPosition = getOriginalPosition(request);
             
-            // Set checkbox tint color
-            int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+            // Set checkbox state based on request state
+            int tintColor;
+            if (request.isRequested() && !mContext.getResources().getBoolean(R.bool.enable_icon_request_multiple)) {
+                contentViewHolder.checkbox.setEnabled(false);
+                contentViewHolder.checkbox.setAlpha(0.3f);
+                tintColor = Color.parseColor("#808080"); // Grey color for already requested icons
+            } else {
+                contentViewHolder.checkbox.setEnabled(true);
+                contentViewHolder.checkbox.setAlpha(1.0f);
+                tintColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+            }
             CompoundButtonCompat.setButtonTintList(contentViewHolder.checkbox, 
-                ColorStateList.valueOf(accentColor));
+                ColorStateList.valueOf(tintColor));
 
             contentViewHolder.title.setText(request.getName());
             contentViewHolder.infoIcon.setVisibility(View.GONE);
