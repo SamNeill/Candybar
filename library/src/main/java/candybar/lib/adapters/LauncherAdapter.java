@@ -2,6 +2,7 @@ package candybar.lib.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,9 +51,7 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private final Context mContext;
     private final List<Icon> mLaunchers;
 
-    public static final int TYPE_HEADER = 0;
     public static final int TYPE_CONTENT = 1;
-    public static final int TYPE_FOOTER = 2;
 
     public LauncherAdapter(@NonNull Context context, @NonNull List<Icon> launchers) {
         mContext = context;
@@ -62,88 +61,45 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view;
-        if (viewType == TYPE_HEADER) {
-            view = LayoutInflater.from(mContext).inflate(
-                    R.layout.fragment_apply_item_header, parent, false);
-            return new ViewHolder(view, viewType);
-        } else if (viewType == TYPE_CONTENT) {
-            view = LayoutInflater.from(mContext).inflate(
-                    R.layout.fragment_apply_item_grid, parent, false);
-            return new ViewHolder(view, viewType);
-        } else {  // TYPE_FOOTER
-            view = LayoutInflater.from(mContext).inflate(
-                    R.layout.fragment_apply_item_footer, parent, false);
-            return new FooterViewHolder(view);
-        }
+        View view = LayoutInflater.from(mContext).inflate(
+                R.layout.fragment_apply_item_grid, parent, false);
+        return new ViewHolder(view, viewType);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if (holder.getItemViewType() == TYPE_HEADER) {
-            ((ViewHolder) holder).name.setText(mLaunchers.get(position).getTitle());
-        } else if (holder.getItemViewType() == TYPE_CONTENT) {
-            ViewHolder contentViewHolder = ((ViewHolder) holder);
-            Icon launcher = mLaunchers.get(position);
-            contentViewHolder.name.setText(launcher.getTitle());
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        Icon launcher = mLaunchers.get(position);
+        ViewHolder contentViewHolder = (ViewHolder) holder;
+        contentViewHolder.name.setText(launcher.getTitle());
 
-            if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
-                if (position > getLastHeaderPosition()) {
-                    // This is a supported (not installed) launcher
-                    Glide.with(mContext)
-                            .asBitmap()
-                            .load("drawable://" + launcher.getRes())
-                            .transform(new CandyBarGlideModule.GrayscaleTransformation())
-                            .skipMemoryCache(true)
-                            .diskCacheStrategy(DiskCacheStrategy.NONE)
-                            .into(contentViewHolder.icon);
-                } else {
-                    // This is an installed launcher
-                    Glide.with(mContext)
-                            .load("drawable://" + launcher.getRes())
-                            .skipMemoryCache(true)
-                            .diskCacheStrategy(DiskCacheStrategy.NONE)
-                            .into(contentViewHolder.icon);
-                }
-            }
-        }
-    }
-
-    private void bindContent(ViewHolder holder, int position) {
-        Icon launcher = mLaunchers.get(position - 1);
-        holder.name.setText(launcher.getTitle());
-
-        // Load launcher icon
-        if (position > getLastHeaderPosition()) {
-            // This is a supported (not installed) launcher
+        try {
+            PackageManager pm = mContext.getPackageManager();
+            pm.getPackageInfo(launcher.getPackageName(), PackageManager.GET_ACTIVITIES);
+            // Package is installed - show in color
+            Glide.with(mContext)
+                    .load("drawable://" + launcher.getRes())
+                    .skipMemoryCache(true)
+                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+                    .into(contentViewHolder.icon);
+        } catch (Exception e) {
+            // Package not installed - show in grayscale
             Glide.with(mContext)
                     .asBitmap()
                     .load("drawable://" + launcher.getRes())
                     .transform(new CandyBarGlideModule.GrayscaleTransformation())
-                    .diskCacheStrategy(DiskCacheStrategy.NONE)
                     .skipMemoryCache(true)
-                    .into(holder.icon);
-        } else {
-            // This is an installed launcher
-            Glide.with(mContext)
-                    .load("drawable://" + launcher.getRes())
                     .diskCacheStrategy(DiskCacheStrategy.NONE)
-                    .skipMemoryCache(true)
-                    .into(holder.icon);
+                    .into(contentViewHolder.icon);
         }
     }
 
     @Override
     public int getItemCount() {
-        return mLaunchers.size() + 1;
+        return mLaunchers.size();
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (position == getFirstHeaderPosition() || position == getLastHeaderPosition() || position == getMiddleHeaderPosition()) {
-            return TYPE_HEADER;
-        }
-        if (position == getItemCount() - 1) return TYPE_FOOTER;
         return TYPE_CONTENT;
     }
 
@@ -154,15 +110,10 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         ViewHolder(View itemView, int viewType) {
             super(itemView);
-            if (viewType == TYPE_HEADER) {
-                name = itemView.findViewById(R.id.name);
-            } else if (viewType == TYPE_CONTENT) {
-                icon = itemView.findViewById(R.id.icon);
-                name = itemView.findViewById(R.id.name);
-                LinearLayout container = itemView.findViewById(R.id.container);
-
-                container.setOnClickListener(this);
-            }
+            icon = itemView.findViewById(R.id.icon);
+            name = itemView.findViewById(R.id.name);
+            LinearLayout container = itemView.findViewById(R.id.container);
+            container.setOnClickListener(this);
         }
 
         @SuppressLint("StringFormatInvalid")
@@ -181,34 +132,7 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                     R.string.apply_launch_failed, mLaunchers.get(position).getTitle()),
                             Toast.LENGTH_LONG).show();
                 }
-
             }
         }
-    }
-
-    class FooterViewHolder extends RecyclerView.ViewHolder {
-
-        FooterViewHolder(View itemView) {
-            super(itemView);
-            if (!Preferences.get(mContext).isCardShadowEnabled()) {
-                View shadow = itemView.findViewById(R.id.shadow);
-                shadow.setVisibility(View.GONE);
-            }
-        }
-    }
-
-    public int getFirstHeaderPosition() {
-        return mLaunchers.indexOf(new Icon(
-                mContext.getResources().getString(R.string.apply_installed), -1, null));
-    }
-
-    public int getMiddleHeaderPosition() {
-        return mLaunchers.indexOf(new Icon(
-                mContext.getResources().getString(R.string.apply_installed_launchers), -3, null));
-    }
-
-    public int getLastHeaderPosition() {
-        return mLaunchers.indexOf(new Icon(
-                mContext.getResources().getString(R.string.apply_supported), -2, null));
     }
 }

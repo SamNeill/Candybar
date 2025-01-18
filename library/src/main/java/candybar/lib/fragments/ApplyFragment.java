@@ -4,6 +4,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -93,24 +94,17 @@ public class ApplyFragment extends Fragment {
         // Set up grid layout using column count from resources
         int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
-        // Make headers span all columns
-        layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+        mRecyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setPadding(0, 0, 0, 0);
+        mRecyclerView.setClipToPadding(false);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override
-            public int getSpanSize(int position) {
-                if (mRecyclerView.getAdapter() != null) {
-                    int viewType = mRecyclerView.getAdapter().getItemViewType(position);
-                    if (viewType == LauncherAdapter.TYPE_HEADER || viewType == LauncherAdapter.TYPE_FOOTER) {
-                        return columnCount; // Headers and footers span all columns
-                    }
-                }
-                return 1; // Normal items take 1 column
+            public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, 
+                                     @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
+                outRect.set(0, 0, 0, 0);
             }
         });
-        mRecyclerView.setLayoutManager(layoutManager);
-
-        // Add some padding to the RecyclerView
-        int padding = getResources().getDimensionPixelSize(R.dimen.content_margin);
-        mRecyclerView.setPadding(padding, padding, padding, padding);
 
         mAsyncTask = new LaunchersLoader().executeOnThreadPool();
     }
@@ -123,18 +117,6 @@ public class ApplyFragment extends Fragment {
         if (mRecyclerView != null) {
             int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
             GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
-            layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-                @Override
-                public int getSpanSize(int position) {
-                    if (mRecyclerView.getAdapter() != null) {
-                        int viewType = mRecyclerView.getAdapter().getItemViewType(position);
-                        if (viewType == LauncherAdapter.TYPE_HEADER || viewType == LauncherAdapter.TYPE_FOOTER) {
-                            return columnCount; // Headers and footers span all columns
-                        }
-                    }
-                    return 1; // Normal items take 1 column
-                }
-            });
             mRecyclerView.setLayoutManager(layoutManager);
         }
     }
@@ -249,18 +231,9 @@ public class ApplyFragment extends Fragment {
                     } catch (Exception ignored) {
                     }
 
-                    if (installed.size() == 1) {
-                        launchers.add(new Icon(getResources().getString(
-                                R.string.apply_installed), -1, null));
-                    }
-                    else{
-                        launchers.add(new Icon(getResources().getString(
-                                R.string.apply_installed_launchers), -3, null));
-                    }
-
+                    // Add installed launchers first (these will be colored)
                     launchers.addAll(installed);
-                    launchers.add(new Icon(getResources().getString(
-                            R.string.apply_supported), -2, null));
+                    // Add supported launchers after (these will be grayscale)
                     launchers.addAll(supported);
 
                     return true;
