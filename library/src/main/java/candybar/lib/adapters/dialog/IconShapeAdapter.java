@@ -1,6 +1,8 @@
 package candybar.lib.adapters.dialog;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.core.widget.CompoundButtonCompat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +22,7 @@ import java.util.List;
 import candybar.lib.R;
 import candybar.lib.fragments.dialog.IconShapeChooserFragment;
 import candybar.lib.items.IconShape;
+import candybar.lib.helpers.ColorHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -78,6 +82,26 @@ public class IconShapeAdapter extends BaseAdapter {
         } else {
             holder = (IconShapeAdapter.ViewHolder) view.getTag();
         }
+
+        // Set accent color for radio button
+        int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+        int uncheckedColor = Color.argb(
+            (int) (255 * 0.7f),
+            Color.red(accentColor),
+            Color.green(accentColor),
+            Color.blue(accentColor)
+        );
+        ColorStateList colorStateList = new ColorStateList(
+                new int[][]{
+                        new int[]{-android.R.attr.state_checked},
+                        new int[]{android.R.attr.state_checked}
+                },
+                new int[]{
+                        uncheckedColor,
+                        accentColor
+                }
+        );
+        CompoundButtonCompat.setButtonTintList(holder.radio, colorStateList);
 
         holder.radio.setChecked(mSelectedIndex == position);
         holder.name.setText(mShapes.get(position).getName());

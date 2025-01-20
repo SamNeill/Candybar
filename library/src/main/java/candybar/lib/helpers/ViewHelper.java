@@ -1,6 +1,7 @@
 package candybar.lib.helpers;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.graphics.Point;
 
 import androidx.annotation.Nullable;
@@ -11,6 +12,7 @@ import com.pluscubed.recyclerfastscroll.RecyclerFastScroller;
 
 import java.util.Locale;
 
+import candybar.lib.R;
 import candybar.lib.items.Home;
 
 /*
@@ -25,7 +27,7 @@ import candybar.lib.items.Home;
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on an "AS IS" BASIS,.
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,10 +38,17 @@ public class ViewHelper {
     public static void setFastScrollColor(@Nullable RecyclerFastScroller fastScroll) {
         if (fastScroll == null) return;
 
-        int accent = ColorHelper.getAttributeColor(fastScroll.getContext(), com.google.android.material.R.attr.colorSecondary);
-        fastScroll.setBarColor(ColorHelper.setColorAlpha(accent, 0.8f));
-        fastScroll.setHandleNormalColor(accent);
-        fastScroll.setHandlePressedColor(ColorHelper.getDarkerColor(accent, 0.7f));
+        int accentColor = ColorHelper.getAttributeColor(fastScroll.getContext(), R.attr.cb_colorAccent);
+        int trackColor = Color.argb(
+            (int) (255 * 0.2f),
+            Color.red(accentColor),
+            Color.green(accentColor),
+            Color.blue(accentColor)
+        );
+        
+        fastScroll.setBarColor(trackColor);
+        fastScroll.setHandleNormalColor(accentColor);
+        fastScroll.setHandlePressedColor(accentColor);
     }
 
     public static Point getWallpaperViewRatio(String viewStyle) {

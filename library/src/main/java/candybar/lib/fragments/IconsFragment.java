@@ -1,11 +1,14 @@
 package candybar.lib.fragments;
 
 import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +16,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import me.zhanghai.android.fastscroll.FastScrollerBuilder;
 
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
@@ -29,7 +34,6 @@ import candybar.lib.adapters.IconsAdapter;
 import candybar.lib.applications.CandyBarApplication;
 import candybar.lib.databases.Database;
 import candybar.lib.items.Icon;
-import me.zhanghai.android.fastscroll.FastScrollerBuilder;
 
 /*
  * CandyBar - Material Dashboard
@@ -43,7 +47,7 @@ import me.zhanghai.android.fastscroll.FastScrollerBuilder;
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on an "AS IS" BASIS,.
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -112,8 +116,57 @@ public class IconsFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
         iconsAdapters.add(new WeakReference<>(mAdapter));
 
+        int accentColor = ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent);
+        int trackColor = Color.argb(
+            (int) (255 * 0.2f),
+            Color.red(accentColor),
+            Color.green(accentColor),
+            Color.blue(accentColor)
+        );
+        
         new FastScrollerBuilder(mRecyclerView)
                 .useMd2Style()
+                .setThumbDrawable(DrawableHelper.getTintedDrawable(requireActivity(), 
+                    me.zhanghai.android.fastscroll.R.drawable.afs_md2_thumb, 
+                    accentColor))
+                .setTrackDrawable(DrawableHelper.getTintedDrawable(requireActivity(),
+                    me.zhanghai.android.fastscroll.R.drawable.afs_md2_track,
+                    trackColor))
+                .setPopupStyle(popupView -> {
+                    popupView.setBackground(DrawableHelper.getTintedDrawable(requireActivity(),
+                        R.drawable.fastscroll_popup_background,
+                        accentColor));
+                    if (popupView instanceof TextView) {
+                        TextView textView = (TextView) popupView;
+                        textView.setTextColor(Color.WHITE);
+                        textView.setTextSize(36); // Increased text size
+                        textView.setGravity(android.view.Gravity.CENTER);
+                        int verticalPadding = (int) TypedValue.applyDimension(
+                            TypedValue.COMPLEX_UNIT_DIP,
+                            8,
+                            Resources.getSystem().getDisplayMetrics()
+                        );
+                        int leftPadding = (int) TypedValue.applyDimension(
+                            TypedValue.COMPLEX_UNIT_DIP,
+                            4,  // Less padding on the left
+                            Resources.getSystem().getDisplayMetrics()
+                        );
+                        int rightPadding = (int) TypedValue.applyDimension(
+                            TypedValue.COMPLEX_UNIT_DIP,
+                            12,  // More padding on the right
+                            Resources.getSystem().getDisplayMetrics()
+                        );
+                        textView.setPadding(leftPadding, verticalPadding, rightPadding, verticalPadding);
+                        
+                        // Center the popup using view properties
+                        textView.setY(0);
+                        textView.setElevation(10f);
+                        textView.post(() -> {
+                            int thumbHeight = mRecyclerView.getHeight() / mRecyclerView.getAdapter().getItemCount();
+                            textView.setY(-textView.getHeight() / 2f + thumbHeight / 2f);
+                        });
+                    }
+                })
                 .build();
     }
 
