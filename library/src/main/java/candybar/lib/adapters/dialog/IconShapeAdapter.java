@@ -83,6 +83,14 @@ public class IconShapeAdapter extends BaseAdapter {
             holder = (IconShapeAdapter.ViewHolder) view.getTag();
         }
 
+        // Fix text color for dark theme
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            holder.name.setTextColor(isDarkMode ? android.graphics.Color.WHITE : android.graphics.Color.BLACK);
+        }
+
         // Set accent color for radio button
         int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
         int uncheckedColor = Color.argb(

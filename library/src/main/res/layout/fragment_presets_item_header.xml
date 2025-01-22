@@ -51,7 +51,7 @@
                 android:layout_marginBottom="@dimen/content_padding"
                 android:gravity="center"
                 android:text="@string/presets_required_apps"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="?attr/cb_primaryText"
                 android:textSize="@dimen/text_content"
                 app:fontFamily="@font/regular" />
 

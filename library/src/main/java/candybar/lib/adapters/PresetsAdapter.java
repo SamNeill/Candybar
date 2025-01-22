@@ -101,12 +101,16 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
         Preset preset = mPresets.get(position);
 
         if (holder.getItemViewType() == TYPE_HEADER) {
-            holder.name.setText(preset.getHeaderText());
-            holder.name.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+            TextView headerText = holder.name;
+            headerText.setText(preset.getHeaderText());
+            headerText.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
             holder.setType(preset.getHeaderText());
         } else if (holder.getItemViewType() == TYPE_CONTENT) {
             PresetInfoLoader.create(new AssetPresetFile(preset.getPath()))
-                    .load(mContext, info -> holder.name.setText(info.getTitle().replaceAll("_", "")));
+                    .load(mContext, info -> {
+                        holder.name.setText(info.getTitle().replaceAll("_", ""));
+                        holder.name.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText));
+                    });
 
             if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
                 Glide.with(mContext)
@@ -235,10 +239,12 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
             if (requiredApps.size() > 0) {
                 for (String[] requiredApp : requiredApps) {
                     View item = LayoutInflater.from(mContext).inflate(R.layout.fragment_presets_item_header_list, linearLayout, false);
-                    ((TextView) item.findViewById(R.id.name)).setText(requiredApp[0]);
-                    int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                    TextView nameText = item.findViewById(R.id.name);
+                    nameText.setText(requiredApp[0]);
+                    nameText.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText));
+                    int iconColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText);
                     ((ImageView) item.findViewById(R.id.kustom_icon)).setImageDrawable(
-                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_toolbar_presets, color));
+                            DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_toolbar_presets, iconColor));
                     item.setOnClickListener(v -> {
                         try {
                             Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(
@@ -303,6 +309,9 @@ public class PresetsAdapter extends RecyclerView.Adapter<PresetsAdapter.ViewHold
                                 .typeface(TypefaceHelper.getMedium(mContext), TypefaceHelper.getRegular(mContext))
                                 .content(R.string.presets_required_apps_not_installed)
                                 .positiveText(R.string.close)
+                                .backgroundColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground))
+                                .positiveColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent))
+                                .contentColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_primaryText))
                                 .show();
                     } else {
                         mContext.startActivity(intent);

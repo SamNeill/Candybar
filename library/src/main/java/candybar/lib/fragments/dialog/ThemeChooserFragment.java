@@ -76,6 +76,7 @@ public class ThemeChooserFragment extends DialogFragment {
                 .negativeText(R.string.close)
                 .negativeColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent))
                 .backgroundColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_cardBackground))
+                .titleColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_primaryText))
                 .build();
         dialog.show();
 

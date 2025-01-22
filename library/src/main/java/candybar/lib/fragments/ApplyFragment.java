@@ -90,8 +90,11 @@ public class ApplyFragment extends Fragment {
         }
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-
+        setupRecyclerView();
+        mAsyncTask = new LaunchersLoader().executeOnThreadPool();
+    }
         // Set up grid layout using column count from resources
+    private void setupRecyclerView() {
         int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -105,8 +108,6 @@ public class ApplyFragment extends Fragment {
                 outRect.set(0, 0, 0, 0);
             }
         });
-
-        mAsyncTask = new LaunchersLoader().executeOnThreadPool();
     }
 
     @Override
@@ -118,6 +119,13 @@ public class ApplyFragment extends Fragment {
             int columnCount = requireActivity().getResources().getInteger(R.integer.apply_column_count);
             GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), columnCount);
             mRecyclerView.setLayoutManager(layoutManager);
+            
+            // Recreate adapter to force layout refresh
+            if (mRecyclerView.getAdapter() != null) {
+                LauncherAdapter adapter = (LauncherAdapter) mRecyclerView.getAdapter();
+                List<Icon> launchers = adapter.getLaunchers();
+                mRecyclerView.setAdapter(new LauncherAdapter(requireActivity(), launchers));
+            }
         }
     }
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.util.TypedValue;
@@ -65,6 +66,16 @@ import candybar.lib.utils.listeners.RequestListener;
  */
 
 public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    private void setTextColorForOldAndroid(TextView textView) {
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            textView.setTextColor(mContext.getResources().getColor(
+                isDarkMode ? android.R.color.white : android.R.color.black));
+        }
+    }
 
     private final Context mContext;
     private final List<Request> mRequests;
@@ -185,6 +196,18 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (holder.getItemViewType() == TYPE_HEADER) {
             HeaderViewHolder headerViewHolder = (HeaderViewHolder) holder;
+            
+            // Set text colors for Android 11 and below
+            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                setTextColorForOldAndroid(headerViewHolder.premContent);
+                setTextColorForOldAndroid(headerViewHolder.premTotal);
+                setTextColorForOldAndroid(headerViewHolder.premAvailable);
+                setTextColorForOldAndroid(headerViewHolder.premUsed);
+                setTextColorForOldAndroid(headerViewHolder.regTotal);
+                setTextColorForOldAndroid(headerViewHolder.regAvailable);
+                setTextColorForOldAndroid(headerViewHolder.regUsed);
+            }
+
             if (mShowPremiumRequest) {
                 if (Preferences.get(mContext).isPremiumRequest()) {
                     headerViewHolder.button.setVisibility(View.GONE);
@@ -242,6 +265,30 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             Request request = mFilteredRequests.get(finalPosition);
             int originalPosition = getOriginalPosition(request);
+
+            // Fix text colors for dark theme
+            int textColor = Color.WHITE;
+            boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            if (!isDarkMode) {
+                textColor = Color.BLACK;
+            }
+
+            // Handle info text and icon
+            if (!request.getInfoText().isEmpty()) {
+                contentViewHolder.infoIcon.setVisibility(View.VISIBLE);
+                contentViewHolder.infoIcon.setImageDrawable(AppCompatResources.getDrawable(mContext, R.drawable.ic_drawer_about));
+                contentViewHolder.infoIcon.setColorFilter(textColor);
+                contentViewHolder.infoIcon.setOnClickListener(v -> new MaterialDialog.Builder(mContext)
+                        .typeface(TypefaceHelper.getMedium(mContext), TypefaceHelper.getRegular(mContext))
+                        .title(request.getName())
+                        .content(request.getInfoText())
+                        .positiveText(android.R.string.yes)
+                        .show());
+            } else {
+                contentViewHolder.infoIcon.setVisibility(View.GONE);
+            }
             
             // Set checkbox state based on request state
             int tintColor;
@@ -258,7 +305,8 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 ColorStateList.valueOf(tintColor));
 
             contentViewHolder.title.setText(request.getName());
-            contentViewHolder.infoIcon.setVisibility(View.GONE);
+            contentViewHolder.title.setTextColor(textColor);
+            contentViewHolder.content.setTextColor(textColor);
 
             if (mSelectedItems.get(originalPosition, false)) {
                 // Selected state
@@ -270,17 +318,32 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             } else {
                 // Unselected state
                 contentViewHolder.container.setBackgroundColor(Color.TRANSPARENT);
-                contentViewHolder.title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                
+                // Reset text colors based on Android version and theme
+                if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                    boolean isDarkTheme = (mContext.getResources().getConfiguration().uiMode 
+                        & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                        == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                    int defaultTextColor = isDarkTheme ? Color.WHITE : Color.BLACK;
+                    contentViewHolder.title.setTextColor(defaultTextColor);
+                    if (!request.isRequested()) {
+                        contentViewHolder.content.setTextColor(defaultTextColor);
+                    }
+                } else {
+                    int defaultTextColor = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                    contentViewHolder.title.setTextColor(defaultTextColor);
+                    if (!request.isRequested()) {
+                        contentViewHolder.content.setTextColor(defaultTextColor);
+                    }
+                }
                 
                 // Set content text color based on request state
                 if (request.isRequested()) {
                     contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
                     contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_already_requested));
                 } else if (request.isAvailableForRequest()) {
-                    contentViewHolder.content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
                     contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_not_requested));
                 } else {
-                    contentViewHolder.content.setTextColor(mTextColorSecondary);
                     contentViewHolder.content.setText(mContext.getResources().getString(R.string.request_not_available));
                 }
             }
@@ -301,19 +364,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 contentViewHolder.title.setAlpha(1f);
                 contentViewHolder.icon.setAlpha(1f);
                 contentViewHolder.checkbox.setEnabled(true);
-            }
-
-            // Handle info text
-            if (!request.getInfoText().isEmpty()) {
-                contentViewHolder.infoIcon.setVisibility(View.VISIBLE);
-                contentViewHolder.infoIcon.setImageDrawable(AppCompatResources.getDrawable(mContext, R.drawable.ic_drawer_about));
-                contentViewHolder.infoIcon.setColorFilter(mTextColorSecondary);
-                contentViewHolder.infoIcon.setOnClickListener(v -> new MaterialDialog.Builder(mContext)
-                        .typeface(TypefaceHelper.getMedium(mContext), TypefaceHelper.getRegular(mContext))
-                        .title(request.getName())
-                        .content(request.getInfoText())
-                        .positiveText(android.R.string.yes)
-                        .show());
             }
 
             if (CandyBarGlideModule.isValidContextForGlide(mContext)) {
@@ -371,13 +421,19 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             premContent = itemView.findViewById(R.id.premium_request_content);
             button = itemView.findViewById(R.id.buy);
 
+            // Fix colors for dark theme - use primary text color for better visibility
+            int textColor = ColorHelper.getAttributeColor(mContext, android.R.attr.colorForeground);
+            
+            // Fix all text colors in premium section
+            premTitle.setTextColor(textColor);
+            premContent.setTextColor(textColor);
+
             premWholeContainer = itemView.findViewById(R.id.premium_request_container);
             premContainer = itemView.findViewById(R.id.premium_request);
             premTotal = itemView.findViewById(R.id.premium_request_total);
             premAvailable = itemView.findViewById(R.id.premium_request_available);
             premUsed = itemView.findViewById(R.id.premium_request_used);
             premProgress = itemView.findViewById(R.id.premium_request_progress);
-
 
             TextView regTitle = itemView.findViewById(R.id.regular_request_title);
             TextView regContent = itemView.findViewById(R.id.regular_request_content);
@@ -388,7 +444,36 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             regUsed = itemView.findViewById(R.id.regular_request_used);
             regProgress = itemView.findViewById(R.id.regular_request_progress);
 
+            // Fix all text colors in regular section
+            regTitle.setTextColor(textColor);
+            regContent.setTextColor(textColor);
+            regTotal.setTextColor(textColor);
+            regAvailable.setTextColor(textColor);
+            regUsed.setTextColor(textColor);
+            premTotal.setTextColor(textColor);
+            premAvailable.setTextColor(textColor);
+            premUsed.setTextColor(textColor);
+
+            button.setTextColor(textColor);
+
+            // Fix icon colors - use primary text color for icons
+            premTitle.setCompoundDrawablesWithIntrinsicBounds(
+                    DrawableHelper.getTintedDrawable(mContext,
+                            R.drawable.ic_toolbar_premium_request, textColor),
+                    null, null, null);
+
+            regTitle.setCompoundDrawablesWithIntrinsicBounds(
+                    DrawableHelper.getTintedDrawable(mContext,
+                            R.drawable.ic_toolbar_icon_request, textColor),
+                    null, null, null);
+
+            // Fix progress bar colors
+            int accent = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+            premProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
+            regProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
+
             MaterialCardView card = itemView.findViewById(R.id.card);
+
             if (CandyBarApplication.getConfiguration().getRequestStyle() == CandyBarApplication.Style.PORTRAIT_FLAT_LANDSCAPE_FLAT &&
                     card != null) {
                 if (card.getLayoutParams() instanceof StaggeredGridLayoutManager.LayoutParams) {
@@ -423,24 +508,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             regContent.setPadding(padding, 0, 0, 0);
             regContainer.setPadding(padding, 0, padding, 0);
-
-            int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
-            premTitle.setCompoundDrawablesWithIntrinsicBounds(
-                    DrawableHelper.getTintedDrawable(mContext,
-                            R.drawable.ic_toolbar_premium_request, color),
-                    null, null, null);
-
-            regTitle.setCompoundDrawablesWithIntrinsicBounds(
-                    DrawableHelper.getTintedDrawable(mContext,
-                            R.drawable.ic_toolbar_icon_request, color),
-                    null, null, null);
-
-            int primary = ColorHelper.getAttributeColor(mContext, androidx.appcompat.R.attr.colorPrimary);
-            int accent = ColorHelper.getAttributeColor(mContext, com.google.android.material.R.attr.colorSecondary);
-            button.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
-
-            premProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
-            regProgress.getProgressDrawable().setColorFilter(accent, PorterDuff.Mode.SRC_IN);
 
             button.setOnClickListener(this);
         }
@@ -502,9 +569,22 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             }
                         } else {
                             container.setBackgroundColor(Color.TRANSPARENT);
-                            title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
-                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
-                                content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            // Reset text colors based on Android version and theme
+                            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                                boolean isDarkTheme = (mContext.getResources().getConfiguration().uiMode 
+                                    & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                                    == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                                int defaultTextColor = isDarkTheme ? Color.WHITE : Color.BLACK;
+                                title.setTextColor(defaultTextColor);
+                                if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                    content.setTextColor(defaultTextColor);
+                                }
+                            } else {
+                                int defaultTextColor = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                                title.setTextColor(defaultTextColor);
+                                if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                    content.setTextColor(defaultTextColor);
+                                }
                             }
                         }
                         try {
@@ -536,9 +616,22 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             }
                         } else {
                             container.setBackgroundColor(Color.TRANSPARENT);
-                            title.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
-                            if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
-                                content.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary));
+                            // Reset text colors based on Android version and theme
+                            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                                boolean isDarkTheme = (mContext.getResources().getConfiguration().uiMode 
+                                    & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                                    == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                                int defaultTextColor = isDarkTheme ? Color.WHITE : Color.BLACK;
+                                title.setTextColor(defaultTextColor);
+                                if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                    content.setTextColor(defaultTextColor);
+                                }
+                            } else {
+                                int defaultTextColor = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                                title.setTextColor(defaultTextColor);
+                                if (!mFilteredRequests.get(getBindingAdapterPosition() - 1).isRequested()) {
+                                    content.setTextColor(defaultTextColor);
+                                }
                             }
                         }
                         try {
@@ -604,6 +697,9 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
                 if (fab != null) {
                     fab.show();
+                    // Fix FAB icon color in dark theme
+                    fab.setImageTintList(ColorStateList.valueOf(
+                        ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary)));
                 }
             }
         } catch (Exception ignored) {
@@ -832,6 +928,9 @@ public class RequestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 FloatingActionButton fab = ((CandyBarMainActivity) mContext).findViewById(R.id.fab);
                 if (fab != null) {
                     fab.show();
+                    // Fix FAB icon color in dark theme
+                    fab.setImageTintList(ColorStateList.valueOf(
+                        ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary)));
                 }
             }
         } catch (Exception ignored) {

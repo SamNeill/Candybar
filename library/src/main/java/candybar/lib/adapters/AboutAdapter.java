@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Gravity;
@@ -18,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.res.Configuration;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -110,10 +112,7 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     Glide.with(mContext)
                             .load(imageUri)
                             .transition(DrawableTransitionOptions.withCrossFade(300))
-                            .skipMemoryCache(true)
-                            .diskCacheStrategy(imageUri.contains("drawable://")
-                                    ? DiskCacheStrategy.NONE
-                                    : DiskCacheStrategy.RESOURCE)
+                            .diskCacheStrategy(DiskCacheStrategy.NONE)
                             .into(headerViewHolder.image);
                 }
             }
@@ -137,6 +136,7 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             TextView title = headerViewHolder.itemView.findViewById(R.id.title);
             if (title != null) {
                 title.setText(mContext.getResources().getString(R.string.about_title));
+                setTextColorForOldAndroid(title);
             }
 
             // Set version text and app icon
@@ -147,6 +147,7 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                     int versionCode = mContext.getPackageManager()
                             .getPackageInfo(mContext.getPackageName(), 0).versionCode;
                     headerViewHolder.appVersion.setText(versionName + " (" + versionCode + ")");
+                    setTextColorForOldAndroid(headerViewHolder.appVersion);
 
                     // Load app icon
                     ImageView appIcon = headerViewHolder.itemView.findViewById(R.id.app_icon);
@@ -164,28 +165,30 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
             // Set description text with HTML formatting
             if (headerViewHolder.description != null) {
-                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                int linkColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & linkColor));
                 String description = String.format(mContext.getString(R.string.candybar_description), colorHex);
                 
                 headerViewHolder.description.setText(HtmlCompat.fromHtml(
                     description,
                     HtmlCompat.FROM_HTML_MODE_LEGACY));
                 headerViewHolder.description.setMovementMethod(LinkMovementMethod.getInstance());
-                headerViewHolder.description.setLinkTextColor(accentColor);
+                headerViewHolder.description.setLinkTextColor(linkColor);
+                setTextColorForOldAndroid(headerViewHolder.description);
             }
 
             // Set special thanks text with HTML formatting
             if (headerViewHolder.specialThanks != null) {
-                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                int linkColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & linkColor));
                 String specialThanks = String.format(mContext.getString(R.string.candybar_special_thanks), colorHex);
                 
                 headerViewHolder.specialThanks.setText(HtmlCompat.fromHtml(
                     specialThanks,
                     HtmlCompat.FROM_HTML_MODE_LEGACY));
                 headerViewHolder.specialThanks.setMovementMethod(LinkMovementMethod.getInstance());
-                headerViewHolder.specialThanks.setLinkTextColor(accentColor);
+                headerViewHolder.specialThanks.setLinkTextColor(linkColor);
+                setTextColorForOldAndroid(headerViewHolder.specialThanks);
             }
 
             // Set up GitHub button click listeners
@@ -203,27 +206,56 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 });
             }
 
-            // Set up Sam's GitHub button click listener
-            MaterialCardView samGithubButton = headerViewHolder.itemView.findViewById(R.id.sam_github_button);
-            if (samGithubButton != null) {
-                samGithubButton.setOnClickListener(v -> {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SamNeill"));
-                    mContext.startActivity(intent);
-                });
-            }
-
             // Set up Sam's section
             TextView samText = headerViewHolder.itemView.findViewById(R.id.candybar_by_sam_text);
+            MaterialCardView samSummerCard = headerViewHolder.itemView.findViewById(R.id.sam_summer_card);
+            if (samSummerCard != null) {
+                // Navigate through the nested structure to find the description TextView
+                View outerContent = samSummerCard.getChildAt(0);
+                if (outerContent instanceof ViewGroup) {
+                    ViewGroup outerGroup = (ViewGroup) outerContent;
+                    // Look for the inner MaterialCardView that contains the description
+                    for (int i = 0; i < outerGroup.getChildCount(); i++) {
+                        View child = outerGroup.getChildAt(i);
+                        if (child instanceof MaterialCardView) {
+                            // Found the inner card, now look for the TextView
+                            View innerContent = ((MaterialCardView) child).getChildAt(0);
+                            if (innerContent instanceof TextView) {
+                                TextView descriptionText = (TextView) innerContent;
+                                if (descriptionText.getText().toString().equals(mContext.getString(R.string.sam_summer_description))) {
+                                    setTextColorForOldAndroid(descriptionText);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             if (samText != null) {
-                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-                String colorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+                int linkColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                String colorHex = String.format("#%06X", (0xFFFFFF & linkColor));
                 String text = String.format(mContext.getString(R.string.candybar_by_sam), colorHex);
                 
                 samText.setText(HtmlCompat.fromHtml(
                     text,
                     HtmlCompat.FROM_HTML_MODE_LEGACY));
                 samText.setMovementMethod(LinkMovementMethod.getInstance());
-                samText.setLinkTextColor(accentColor);
+                samText.setLinkTextColor(linkColor);
+                setTextColorForOldAndroid(samText);
+            }
+
+            // Set up Sam's GitHub button click listener
+            MaterialCardView samGithubButton = headerViewHolder.itemView.findViewById(R.id.sam_github_button);
+            if (samGithubButton != null) {
+                samGithubButton.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SamNeill"));
+                    try {
+                        mContext.startActivity(intent);
+                    } catch (ActivityNotFoundException e) {
+                        Toast.makeText(mContext, R.string.no_browser, Toast.LENGTH_LONG).show();
+                    }
+                });
             }
 
             // Set up version card click listener
@@ -385,6 +417,25 @@ public class AboutAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                             Toast.LENGTH_LONG).show();
                     }
                 }
+            }
+        }
+    }
+
+    private boolean isDarkMode() {
+        int nightModeFlags = mContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    private void setTextColorForOldAndroid(TextView textView) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            int color = isDarkMode() ? 
+                mContext.getResources().getColor(android.R.color.white) :
+                mContext.getResources().getColor(android.R.color.black);
+            textView.setHighlightColor(Color.TRANSPARENT); // Remove highlight on click
+            textView.setTextColor(color);
+            // Also update drawable tint if there are any
+            if (textView.getCompoundDrawables()[0] != null) {
+                textView.getCompoundDrawables()[0].setTint(color);
             }
         }
     }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
@@ -216,9 +217,17 @@ public class Popup {
                 holder.checkBox.setVisibility(View.VISIBLE);
             }
 
-            int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+            int color;
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                color = isDarkMode() ? 
+                    mContext.getResources().getColor(android.R.color.white) :
+                    mContext.getResources().getColor(android.R.color.black);
+            } else {
+                color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+            }
+
             if (item.isSelected()) {
-                color = ColorHelper.getAttributeColor(mContext, com.google.android.material.R.attr.colorSecondary);
+                color = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
             }
 
             if (item.getIcon() != 0) {
@@ -230,6 +239,11 @@ public class Popup {
             holder.title.setText(item.getTitle());
             holder.title.setTextColor(color);
             return view;
+        }
+
+        private boolean isDarkMode() {
+            int nightModeFlags = mContext.getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+            return nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES;
         }
 
         static class ViewHolder {

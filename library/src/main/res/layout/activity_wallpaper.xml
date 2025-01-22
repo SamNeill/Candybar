@@ -35,33 +35,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:visibility="gone">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_shadow"
-            android:background="@drawable/reverse_shadow" />
 
         <LinearLayout
             android:id="@+id/bottom_bar_container"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="@dimen/bottom_bar_height"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:background="#66000000">
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/bottom_bar_bg">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/content_padding"
-                android:paddingBottom="24dp"
+                android:paddingBottom="@dimen/content_padding"
                 android:paddingLeft="@dimen/content_margin"
                 android:paddingStart="@dimen/content_margin"
                 android:paddingRight="@dimen/content_margin"
                 android:paddingEnd="@dimen/content_margin"
-                android:layout_marginBottom="16dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -71,7 +69,6 @@
                     android:textSize="@dimen/text_content_title"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:textColor="?android:attr/textColorPrimary"
                     app:fontFamily="@font/medium" />
 
                 <TextView
@@ -81,7 +78,6 @@
                     android:textSize="@dimen/text_content"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:textColor="?cb_colorAccent"
                     app:fontFamily="@font/regular" />
             </LinearLayout>
 
@@ -90,7 +86,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/content_margin"
-                android:layout_marginBottom="16dp"
                 android:visibility="gone"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:theme="@style/RippleStyle" />
@@ -100,7 +95,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/content_margin"
-                android:layout_marginBottom="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:theme="@style/RippleStyle" />
         </LinearLayout>

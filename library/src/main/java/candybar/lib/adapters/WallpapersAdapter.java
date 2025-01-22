@@ -101,6 +101,17 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
         if (mIsShowName) {
             holder.name.setText(wallpaper.getName());
             holder.author.setText(wallpaper.getAuthor());
+
+            // Set author text color based on Android version and theme
+            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                int nightMode = mContext.getResources().getConfiguration().uiMode &
+                        android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+                boolean isDarkTheme = nightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                int textColor = isDarkTheme ?
+                        mContext.getResources().getColor(android.R.color.white) :
+                        mContext.getResources().getColor(android.R.color.black);
+                holder.author.setTextColor(textColor);
+            }
         }
 
         if (CandyBarGlideModule.isValidContextForGlide(mContext)) {

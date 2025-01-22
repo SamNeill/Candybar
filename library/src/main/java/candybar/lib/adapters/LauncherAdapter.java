@@ -3,6 +3,9 @@ package candybar.lib.adapters;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.shape.CornerFamily;
+import com.google.android.material.shape.ShapeAppearanceModel;
 
 import java.util.HashMap;
 import java.util.List;
@@ -50,19 +56,28 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     private final Context mContext;
     private final List<Icon> mLaunchers;
+    private int mColumnCount;
 
     public static final int TYPE_CONTENT = 1;
 
     public LauncherAdapter(@NonNull Context context, @NonNull List<Icon> launchers) {
         mContext = context;
         mLaunchers = launchers;
+        mColumnCount = context.getResources().getInteger(R.integer.apply_column_count);
+    }
+
+    public List<Icon> getLaunchers() {
+        return mLaunchers;
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(
-                R.layout.fragment_apply_item_grid, parent, false);
+        // Use different layout for older Android versions
+        int layoutRes = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R ? 
+                R.layout.fragment_apply_item_grid : 
+                R.layout.fragment_apply_item_grid_legacy;
+        View view = LayoutInflater.from(mContext).inflate(layoutRes, parent, false);
         return new ViewHolder(view, viewType);
     }
 
@@ -71,6 +86,38 @@ public class LauncherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         Icon launcher = mLaunchers.get(position);
         ViewHolder contentViewHolder = (ViewHolder) holder;
         contentViewHolder.name.setText(launcher.getTitle());
+
+        // Make icon container background transparent for Android 11 and below in dark theme
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            boolean isDarkTheme = (mContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
+                    == Configuration.UI_MODE_NIGHT_YES;
+            if (isDarkTheme) {
+                contentViewHolder.icon.setBackgroundColor(Color.TRANSPARENT);
+            }
+        }
+
+        // Hide bottom line for last row
+        int lastRowFirstPosition = mLaunchers.size() - (mLaunchers.size() % mColumnCount == 0 ? mColumnCount : mLaunchers.size() % mColumnCount);
+        View bottomLine = contentViewHolder.itemView.findViewById(R.id.bottom_line);
+        if (position >= lastRowFirstPosition) {
+            bottomLine.setVisibility(View.GONE);
+        } else {
+            bottomLine.setVisibility(View.VISIBLE);
+        }
+
+        // Apply shape appearance programmatically for newer Android versions
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && contentViewHolder.icon instanceof ShapeableImageView) {
+            try {
+                ShapeableImageView shapeableIcon = (ShapeableImageView) contentViewHolder.icon;
+                float cornerSize = 32f * mContext.getResources().getDisplayMetrics().density;
+                ShapeAppearanceModel shapeAppearanceModel = ShapeAppearanceModel.builder()
+                        .setAllCorners(CornerFamily.ROUNDED, cornerSize)
+                        .build();
+                shapeableIcon.setShapeAppearanceModel(shapeAppearanceModel);
+            } catch (Exception ignored) {
+                // Fallback if shapeAppearance fails
+            }
+        }
 
         try {
             PackageManager pm = mContext.getPackageManager();

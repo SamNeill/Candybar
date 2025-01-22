@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
@@ -123,12 +124,14 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 contentViewHolder.container.setVisibility(View.VISIBLE);
 
                 contentViewHolder.subtitle.setText(setting.getSubtitle());
+                setTextColorForOldAndroid(contentViewHolder.subtitle);
 
                 if (setting.getContent().length() == 0) {
                     contentViewHolder.content.setVisibility(View.GONE);
                 } else {
                     contentViewHolder.content.setText(setting.getContent());
                     contentViewHolder.content.setVisibility(View.VISIBLE);
+                    setTextColorForOldAndroid(contentViewHolder.content);
                 }
 
                 if (setting.getFooter().length() == 0) {
@@ -141,6 +144,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 contentViewHolder.container.setVisibility(View.GONE);
                 contentViewHolder.title.setVisibility(View.VISIBLE);
                 contentViewHolder.title.setText(setting.getTitle());
+                setTextColorForOldAndroid(contentViewHolder.title);
 
                 if (position > 0) {
                     contentViewHolder.divider.setVisibility(View.VISIBLE);
@@ -149,9 +153,13 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
 
                 if (setting.getIcon() != -1) {
-                    int color = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                    int color = Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? 
+                            (isDarkMode() ? mContext.getResources().getColor(android.R.color.white) 
+                                        : mContext.getResources().getColor(android.R.color.black)) :
+                            ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
                     contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
-                            DrawableHelper.getTintedDrawable(mContext, setting.getIcon(), color), null, null, null);
+                            DrawableHelper.getTintedDrawable(mContext, setting.getIcon(), color),
+                            null, null, null);
                 }
             }
 
@@ -413,6 +421,28 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     parent.addView(newSwitch, index);
                     switchView = newSwitch;
                 }
+            } else if (switchView instanceof SwitchMaterial) {
+                SwitchMaterial switchMaterial = (SwitchMaterial) switchView;
+                int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
+                
+                int[][] states = new int[][] {
+                    new int[] { android.R.attr.state_checked },
+                    new int[] { -android.R.attr.state_checked }
+                };
+                int[] thumbColors = new int[] { 
+                    accentColor,      // Checked: accent color
+                    0xFFFFFFFF       // Unchecked: white
+                };
+                
+                // Use accent color with reduced alpha for track
+                boolean isPureBlack = ThemeHelper.isPureBlackEnabled(mContext);
+                int[] trackColors = new int[] { 
+                    ColorHelper.setColorAlpha(accentColor, 0.3f),  // Checked: semi-transparent accent
+                    isPureBlack ? ColorHelper.setColorAlpha(accentColor, 0.12f) : 0x61000000  // Unchecked: accent color with 12% alpha for Pure Black, default grey for others
+                };
+                
+                switchMaterial.setThumbTintList(new ColorStateList(states, thumbColors));
+                switchMaterial.setTrackTintList(new ColorStateList(states, trackColors));
             }
         }
 
@@ -716,6 +746,24 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             if (!Preferences.get(mContext).isCardShadowEnabled()) {
                 View shadow = itemView.findViewById(R.id.shadow);
                 shadow.setVisibility(View.GONE);
+            }
+        }
+    }
+
+    private boolean isDarkMode() {
+        int nightModeFlags = mContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    private void setTextColorForOldAndroid(TextView textView) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            int color = isDarkMode() ? 
+                mContext.getResources().getColor(android.R.color.white) :
+                mContext.getResources().getColor(android.R.color.black);
+            textView.setTextColor(color);
+            // Also update drawable tint if there are any
+            if (textView.getCompoundDrawables()[0] != null) {
+                textView.getCompoundDrawables()[0].setTint(color);
             }
         }
     }

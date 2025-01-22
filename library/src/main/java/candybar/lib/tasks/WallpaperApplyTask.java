@@ -5,6 +5,7 @@ import android.app.WallpaperManager;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Build;
@@ -94,6 +95,11 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
                     .positiveColor(accentColor)
                     .positiveText(android.R.string.cancel)
                     .onPositive((dialog, which) -> cancel(true));
+
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                builder.contentColor(textColor);
+            }
 
             mDialog = builder.build();
         }
@@ -359,5 +365,10 @@ public class WallpaperApplyTask extends AsyncTaskBase implements WallpaperProper
         LOCKSCREEN,
         HOMESCREEN,
         HOMESCREEN_LOCKSCREEN
+    }
+
+    private boolean isDarkMode() {
+        int nightModeFlags = mContext.get().getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == android.content.res.Configuration.UI_MODE_NIGHT_YES;
     }
 }

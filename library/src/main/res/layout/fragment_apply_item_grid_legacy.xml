@@ -19,14 +19,13 @@
         android:focusable="true"
         android:background="?attr/selectableItemBackground">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:id="@+id/icon"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:padding="16dp"
             android:scaleType="fitCenter"
-            android:background="?attr/colorSurfaceVariant"
-            app:shapeAppearance="@style/ShapeAppearance.CandyBar.Launcher"/>
+            android:background="?attr/cb_cardBackground"/>
 
         <TextView
             android:id="@+id/name"
@@ -56,4 +55,4 @@
         android:layout_gravity="end"
         android:background="?attr/cb_colorAccent"/>
 
-</FrameLayout>
+</FrameLayout> 

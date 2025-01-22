@@ -274,6 +274,30 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                             .into(headerViewHolder.headerImage4);
                 }
             }
+
+            // Set colors for buttons in Android 11 and below
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                MaterialButton rate = headerViewHolder.itemView.findViewById(R.id.rate);
+                MaterialButton share = headerViewHolder.itemView.findViewById(R.id.share);
+                MaterialButton update = headerViewHolder.itemView.findViewById(R.id.update);
+
+                int color = isDarkMode() ? 
+                    mContext.getResources().getColor(android.R.color.white) :
+                    mContext.getResources().getColor(android.R.color.black);
+                rate.setTextColor(color);
+                share.setTextColor(color);
+                update.setTextColor(color);
+                rate.setIconTint(ColorStateList.valueOf(color));
+                share.setIconTint(ColorStateList.valueOf(color));
+                update.setIconTint(ColorStateList.valueOf(color));
+            }
+
+            if (headerViewHolder.title != null) {
+                setTextColorForOldAndroid(headerViewHolder.title);
+            }
+            if (headerViewHolder.content != null) {
+                setTextColorForOldAndroid(headerViewHolder.content);
+            }
         } else if (holder.getItemViewType() == TYPE_CONTENT) {
             ContentViewHolder contentViewHolder = (ContentViewHolder) holder;
             int finalPosition = position - 1;
@@ -356,6 +380,10 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             if (home.getType() == Home.Type.KUSTOM) {
                 contentViewHolder.title.setTypeface(Typeface.DEFAULT_BOLD);
             }
+
+            if (contentViewHolder.title != null) {
+                setTextColorForOldAndroid(contentViewHolder.title);
+            }
         } else if (holder.getItemViewType() == TYPE_ICON_REQUEST) {
             IconRequestViewHolder iconRequestViewHolder = (IconRequestViewHolder) holder;
             initIconRequest(iconRequestViewHolder);
@@ -374,6 +402,18 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             iconRequestViewHolder.title.setTypeface(Typeface.DEFAULT_BOLD);
 
+            int color = Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? 
+                    (isDarkMode() ? mContext.getResources().getColor(android.R.color.white) 
+                                : mContext.getResources().getColor(android.R.color.black)) :
+                    ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+            iconRequestViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
+                    DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_toolbar_icon_request, color),
+                    null, null, null);
+
+            if (iconRequestViewHolder.title != null) {
+                setTextColorForOldAndroid(iconRequestViewHolder.title);
+            }
+
             int installed = CandyBarMainActivity.sInstalledAppsCount;
             int missed = CandyBarMainActivity.sMissedApps == null ?
                     installed : CandyBarMainActivity.sMissedApps.size();
@@ -385,6 +425,10 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     R.string.home_icon_request_missed_apps, missed));
             iconRequestViewHolder.themedApps.setText(mContext.getResources().getString(
                     R.string.home_icon_request_themed_apps, themed));
+
+            if (iconRequestViewHolder.installedApps != null) setTextColorForOldAndroid(iconRequestViewHolder.installedApps);
+            if (iconRequestViewHolder.missedApps != null) setTextColorForOldAndroid(iconRequestViewHolder.missedApps);
+            if (iconRequestViewHolder.themedApps != null) setTextColorForOldAndroid(iconRequestViewHolder.themedApps);
 
             CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
                     "stats",
@@ -401,11 +445,37 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         } else if (holder.getItemViewType() == TYPE_WALLPAPERS) {
             WallpapersViewHolder wallpapersViewHolder = (WallpapersViewHolder) holder;
             wallpapersViewHolder.title.setTypeface(Typeface.DEFAULT_BOLD);
+            
+            int color = Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? 
+                    (isDarkMode() ? mContext.getResources().getColor(android.R.color.white) 
+                                : mContext.getResources().getColor(android.R.color.black)) :
+                    ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+            wallpapersViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
+                    DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_toolbar_wallpapers, color),
+                    null, null, null);
+
             wallpapersViewHolder.title.setText(mContext.getResources().getString(
                     R.string.home_loud_wallpapers, Preferences.get(mContext).getAvailableWallpapersCount()));
+            
+            if (wallpapersViewHolder.title != null) {
+                setTextColorForOldAndroid(wallpapersViewHolder.title);
+            }
+
         } else if (holder.getItemViewType() == TYPE_GOOGLE_PLAY_DEV) {
             GooglePlayDevViewHolder googlePlayDevViewHolder = (GooglePlayDevViewHolder) holder;
             googlePlayDevViewHolder.title.setTypeface(Typeface.DEFAULT_BOLD);
+            
+            int color = Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? 
+                    (isDarkMode() ? mContext.getResources().getColor(android.R.color.white) 
+                                : mContext.getResources().getColor(android.R.color.black)) :
+                    ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+            googlePlayDevViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
+                    DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_google_play_more_apps, color),
+                    null, null, null);
+
+            if (googlePlayDevViewHolder.title != null) {
+                setTextColorForOldAndroid(googlePlayDevViewHolder.title);
+            }
         }
     }
 
@@ -616,7 +686,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
             int cardBackground = ColorHelper.getAttributeColor(mContext, R.attr.cb_cardBackground);
             
-            loadingDialog = new MaterialDialog.Builder(mContext)
+            MaterialDialog.Builder builder = new MaterialDialog.Builder(mContext)
                     .typeface(TypefaceHelper.getMedium(mContext), TypefaceHelper.getRegular(mContext))
                     .content(R.string.checking_for_update)
                     .cancelable(false)
@@ -624,9 +694,14 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     .progress(true, 0)
                     .progressIndeterminateStyle(true)
                     .widgetColor(accentColor)
-                    .backgroundColor(cardBackground)
-                    .build();
+                    .backgroundColor(cardBackground);
 
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                builder.contentColor(textColor);
+            }
+
+            loadingDialog = builder.build();
             loadingDialog.show();
         }
 
@@ -714,16 +789,26 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                             .positiveText(R.string.update)
                             .negativeText(R.string.close)
                             .positiveColor(accentColor)
-                            .negativeColor(accentColor)
-                            .onPositive((dialog, which) -> {
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(updateUrl));
-                                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-                                mContext.startActivity(intent);
-                            });
+                            .negativeColor(accentColor);
+                    if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                        int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                        builder.contentColor(textColor)
+                               .titleColor(textColor);
+                    }
+                    builder.onPositive((dialog, which) -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(updateUrl));
+                        intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                        mContext.startActivity(intent);
+                    });
                 } else {
                     builder
                             .positiveText(R.string.close)
                             .positiveColor(accentColor);
+                    if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                        int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                        builder.contentColor(textColor)
+                               .titleColor(textColor);
+                    }
                 }
 
                 MaterialDialog dialog = builder.build();
@@ -742,6 +827,11 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     mChangelogList.setVisibility(View.GONE);
                 }
 
+                if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                    int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                    changelogVersion.setTextColor(textColor);
+                }
+
                 dialog.show();
             } else {
                 int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
@@ -755,6 +845,12 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                         .buttonRippleColor(accentColor)
                         .backgroundColor(cardBackground)
                         .canceledOnTouchOutside(true);
+
+                if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                    int textColor = isDarkMode() ? Color.WHITE : Color.BLACK;
+                    builder.contentColor(textColor)
+                           .titleColor(textColor);
+                }
 
                 MaterialDialog dialog = builder.build();
                 dialog.show();
@@ -1301,5 +1397,23 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
         
         return iconList;
+    }
+
+    private boolean isDarkMode() {
+        int nightModeFlags = mContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    private void setTextColorForOldAndroid(TextView textView) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            int color = isDarkMode() ? 
+                mContext.getResources().getColor(android.R.color.white) :
+                mContext.getResources().getColor(android.R.color.black);
+            textView.setTextColor(color);
+            // Also update drawable tint if there are any
+            if (textView.getCompoundDrawables()[0] != null) {
+                textView.getCompoundDrawables()[0].setTint(color);
+            }
+        }
     }
 }

@@ -95,14 +95,24 @@ public class IntentAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
 
+        // Fix text colors for dark theme
+        int textColor = Color.WHITE;
+        boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+            & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+            == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+        if (!isDarkMode) {
+            textColor = Color.BLACK;
+        }
+
         holder.icon.setImageDrawable(DrawableHelper.getAppIcon(mContext, mApps.get(position).getApp()));
         holder.name.setText(mApps.get(position).getApp().loadLabel(mContext.getPackageManager()).toString());
+        holder.name.setTextColor(textColor);
 
         if (mApps.get(position).getType() == IntentChooser.TYPE_SUPPORTED) {
-            holder.type.setTextColor(ColorHelper.getAttributeColor(mContext, android.R.attr.textColorSecondary));
+            holder.type.setTextColor(textColor);
             holder.type.setText(mContext.getResources().getString(R.string.intent_email_supported));
         } else if (mApps.get(position).getType() == IntentChooser.TYPE_RECOMMENDED) {
-            holder.type.setTextColor(ColorHelper.getAttributeColor(mContext, com.google.android.material.R.attr.colorSecondary));
+            holder.type.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
             holder.type.setText(mContext.getResources().getString(R.string.intent_email_recommended));
         } else {
             holder.type.setTextColor(Color.parseColor("#F44336"));

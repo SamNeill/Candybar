@@ -233,9 +233,19 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
         // Initialize toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setPopupTheme(ThemeHelper.isDarkTheme(this) && isPureBlack ? 
-            R.style.CandyBar_PopupMenu_PureBlack : 
-            (isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight));
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            // For Android 11 and below, use explicit light/dark themes
+            boolean isDarkMode = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
+                    == Configuration.UI_MODE_NIGHT_YES;
+            toolbar.setPopupTheme(isDarkMode ? 
+                (isPureBlack ? R.style.CandyBar_PopupMenu_PureBlack : R.style.CandyBar_PopupMenu_Dark) : 
+                R.style.CandyBar_PopupMenu_Light);
+        } else {
+            // For Android 12+, use Material You or day/night themes
+            toolbar.setPopupTheme(ThemeHelper.isDarkTheme(this) && isPureBlack ? 
+                R.style.CandyBar_PopupMenu_PureBlack : 
+                (isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight));
+        }
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
@@ -966,20 +976,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
     }
 
     private void initNavigationView(Toolbar toolbar) {
-        // Skip drawer toggle setup if using bottom navigation
-        if (isBottomNavigation) {
-            return;
-        }
-
         mDrawerToggle = new ActionBarDrawerToggle(
-                this, mDrawerLayout, toolbar, R.string.txt_open, R.string.txt_close) {
+                this, mDrawerLayout, null, R.string.txt_open, R.string.txt_close) {
 
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                SoftKeyboardHelper.closeKeyboard(CandyBarMainActivity.this);
-                toolbar.setNavigationIcon(ConfigurationHelper.getNavigationIcon(CandyBarMainActivity.this,
-                        CandyBarApplication.getConfiguration().getNavigationIcon()));
+                if (CandyBarApplication.getConfiguration().getNavigationIcon() == CandyBarApplication.NavigationIcon.DEFAULT) {
+                    mDrawerToggle.setDrawerArrowDrawable(new DrawerArrowDrawable(CandyBarMainActivity.this));
+                }
             }
 
             @Override
@@ -1005,9 +1010,31 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         toolbar.setNavigationOnClickListener(view ->
                 mDrawerLayout.openDrawer(GravityCompat.START));
 
+        // Set navigation icon color based on Android version and theme
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            boolean isDarkTheme = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
+                    == Configuration.UI_MODE_NIGHT_YES;
+            if (isDarkTheme) {
+                int accentColor = ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent);
+                if (toolbar.getNavigationIcon() != null) {
+                    toolbar.getNavigationIcon().setTint(accentColor);
+                }
+            }
+        }
+
         if (CandyBarApplication.getConfiguration().getNavigationIcon() == CandyBarApplication.NavigationIcon.DEFAULT) {
             DrawerArrowDrawable drawerArrowDrawable = new DrawerArrowDrawable(this);
-            drawerArrowDrawable.setColor(ColorHelper.getAttributeColor(this, R.attr.cb_toolbarIcon));
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+                boolean isDarkTheme = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
+                        == Configuration.UI_MODE_NIGHT_YES;
+                if (isDarkTheme) {
+                    drawerArrowDrawable.setColor(ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent));
+                } else {
+                    drawerArrowDrawable.setColor(ColorHelper.getAttributeColor(this, R.attr.cb_toolbarIcon));
+                }
+            } else {
+                drawerArrowDrawable.setColor(ColorHelper.getAttributeColor(this, R.attr.cb_toolbarIcon));
+            }
             drawerArrowDrawable.setSpinEnabled(true);
             mDrawerToggle.setDrawerArrowDrawable(drawerArrowDrawable);
         } else {

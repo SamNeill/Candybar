@@ -259,9 +259,9 @@ public class TapIntroHelper {
                     int circleColorOuter;
 
                     if (Preferences.get(context).isMaterialYou()) {
-                        // Use Material You colors
-                        titleColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
-                        descriptionColor = ColorHelper.getAttributeColor(context, android.R.attr.colorPrimary);
+                        // Use theme accent colors for Material You
+                        titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+                        descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
                         circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);
                         circleColorOuter = ColorHelper.setColorAlpha(
                                 ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground),
@@ -505,7 +505,7 @@ public class TapIntroHelper {
                     int circleColorOuter;
 
                     if (Preferences.get(context).isMaterialYou()) {
-                        // Use theme accent colors
+                        // Use theme accent colors for Material You
                         titleColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
                         descriptionColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
                         circleColorInner = ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground);

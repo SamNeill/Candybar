@@ -79,20 +79,47 @@ public class PrivacyPolicyDialog extends DialogFragment {
         View btnDeny = view.findViewById(R.id.btn_deny);
 
         // Get theme colors
-        TypedValue typedValue = new TypedValue();
-        requireContext().getTheme().resolveAttribute(android.R.attr.textColorPrimary, typedValue, true);
-        int textColorPrimary = typedValue.data;
+        String textColorPrimaryHex;
+        String textColorSecondaryHex;
+        String accentColorHex;
 
-        requireContext().getTheme().resolveAttribute(android.R.attr.textColorSecondary, typedValue, true);
-        int textColorSecondary = typedValue.data;
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            // For Android 11 and below, manually set colors based on theme
+            int nightMode = requireContext().getResources().getConfiguration().uiMode & 
+                    Configuration.UI_MODE_NIGHT_MASK;
+            boolean isDarkTheme = nightMode == Configuration.UI_MODE_NIGHT_YES;
+            
+            int textColorPrimary = isDarkTheme ? 
+                    requireContext().getResources().getColor(android.R.color.white) :
+                    requireContext().getResources().getColor(android.R.color.black);
+            int textColorSecondary = isDarkTheme ? 
+                    requireContext().getResources().getColor(android.R.color.white) :
+                    requireContext().getResources().getColor(android.R.color.black);
+                    
+            // Get accent color from theme
+            TypedValue typedValue = new TypedValue();
+            requireContext().getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
+            int accentColor = typedValue.data;
+                    
+            textColorPrimaryHex = String.format("#%06X", (0xFFFFFF & textColorPrimary));
+            textColorSecondaryHex = String.format("#%06X", (0xFFFFFF & textColorSecondary));
+            accentColorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+        } else {
+            // For Android 12+, use theme attributes
+            TypedValue typedValue = new TypedValue();
+            requireContext().getTheme().resolveAttribute(android.R.attr.textColorPrimary, typedValue, true);
+            int textColorPrimary = typedValue.data;
 
-        requireContext().getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
-        int accentColor = typedValue.data;
+            requireContext().getTheme().resolveAttribute(android.R.attr.textColorSecondary, typedValue, true);
+            int textColorSecondary = typedValue.data;
 
-        // Convert colors to hex strings
-        String textColorPrimaryHex = String.format("#%06X", (0xFFFFFF & textColorPrimary));
-        String textColorSecondaryHex = String.format("#%06X", (0xFFFFFF & textColorSecondary));
-        String accentColorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+            requireContext().getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
+            int accentColor = typedValue.data;
+
+            textColorPrimaryHex = String.format("#%06X", (0xFFFFFF & textColorPrimary));
+            textColorSecondaryHex = String.format("#%06X", (0xFFFFFF & textColorSecondary));
+            accentColorHex = String.format("#%06X", (0xFFFFFF & accentColor));
+        }
 
         // Configure WebView
         webView.setBackgroundColor(0x00000000); // Transparent background
@@ -138,13 +165,17 @@ public class PrivacyPolicyDialog extends DialogFragment {
             "a { " +
             "   color: %s !important; " +
             "   text-decoration: none !important; " +
+            "} " +
+            "a[href^='mailto:'] { " +
+            "   color: %s !important; " +
             "} ",
             textColorSecondaryHex, // body text
             textColorPrimaryHex,   // h1, h2
             textColorPrimaryHex,   // h3-h6
             textColorSecondaryHex, // p, li
             textColorPrimaryHex,   // strong
-            accentColorHex         // links
+            textColorSecondaryHex, // regular links
+            accentColorHex         // email links
         );
 
         webView.setWebViewClient(new WebViewClient() {

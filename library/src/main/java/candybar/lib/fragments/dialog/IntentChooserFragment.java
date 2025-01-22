@@ -11,7 +11,9 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +24,9 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -107,9 +112,21 @@ public class IntentChooserFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        // Fix text colors for dark theme
+        int textColor = Color.WHITE;
+        boolean isDarkMode = (requireActivity().getResources().getConfiguration().uiMode 
+            & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+            == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+        if (!isDarkMode) {
+            textColor = Color.BLACK;
+        }
+
         MaterialDialog dialog = new MaterialDialog.Builder(requireActivity())
                 .customView(R.layout.fragment_intent_chooser, false)
                 .typeface(TypefaceHelper.getMedium(requireActivity()), TypefaceHelper.getRegular(requireActivity()))
+                .title(R.string.request_title)
+                .titleColor(textColor)
+                .contentColor(textColor)
                 .positiveText(android.R.string.cancel)
                 .positiveColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent))
                 .backgroundColorAttr(R.attr.cb_cardBackground)
@@ -117,15 +134,6 @@ public class IntentChooserFragment extends DialogFragment {
 
         dialog.getActionButton(DialogAction.POSITIVE).setOnClickListener(view -> {
             if (mAdapter == null || mAdapter.isAsyncTaskRunning()) return;
-
-            if (CandyBarApplication.sZipPath != null) {
-                File file = new File(CandyBarApplication.sZipPath);
-                if (file.exists()) {
-                    if (file.delete()) {
-                        LogUtil.e(String.format("Intent chooser cancel: %s deleted", file.getName()));
-                    }
-                }
-            }
 
             RequestFragment.sSelectedRequests = null;
             CandyBarApplication.sRequestProperty = null;
@@ -137,8 +145,20 @@ public class IntentChooserFragment extends DialogFragment {
         dialog.show();
         setCancelable(false);
 
-        mIntentList = (ListView) dialog.findViewById(R.id.intent_list);
-        mNoApp = (TextView) dialog.findViewById(R.id.intent_noapp);
+        View customView = dialog.getCustomView();
+        if (customView != null) {
+            mIntentList = (ListView) customView.findViewById(R.id.intent_list);
+            mNoApp = (TextView) customView.findViewById(R.id.intent_noapp);
+            
+            // Fix the instruction text color
+            TextView instructionText = customView.findViewById(R.id.intent_text);
+            if (instructionText != null) {
+                instructionText.setTextColor(textColor);
+            }
+            if (mNoApp != null) {
+                mNoApp.setTextColor(textColor);
+            }
+        }
         mAsyncTask = new IntentChooserLoader().execute();
 
         return dialog;

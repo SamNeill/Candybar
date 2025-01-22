@@ -6,6 +6,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.widget.Toast;
@@ -1155,7 +1156,7 @@ public class LauncherHelper {
     }
 
     private static void openGooglePlay(Context context, String packageName, String launcherName) {
-        new MaterialDialog.Builder(context)
+        MaterialDialog.Builder builder = new MaterialDialog.Builder(context)
                 .typeface(TypefaceHelper.getMedium(context), TypefaceHelper.getRegular(context))
                 .title(launcherName)
                 .content(String.format(context.getResources().getString(
@@ -1164,8 +1165,21 @@ public class LauncherHelper {
                 .negativeText(android.R.string.cancel)
                 .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .onPositive((dialog, which) -> {
+                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent));
+
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            boolean isDarkMode = (context.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            int textColor = isDarkMode ? Color.WHITE : Color.BLACK;
+            builder.titleColor(textColor)
+                   .contentColor(textColor);
+        } else {
+            builder.titleColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
+                   .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText));
+        }
+
+        builder.onPositive((dialog, which) -> {
                     try {
                         Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(
                                 "https://play.google.com/store/apps/details?id=" + packageName));

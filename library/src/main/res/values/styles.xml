@@ -173,4 +173,19 @@
         <item name="colorControlHighlight">?cb_rippleColor</item>
     </style>
 
+    <style name="ShapeAppearance.CandyBar.Launcher" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+    </style>
+
+    <style name="CandyBar_PopupMenu_Light" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:itemBackground">@android:color/white</item>
+    </style>
+
+    <style name="CandyBar_PopupMenu_Dark" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:itemBackground">?attr/cb_cardBackground</item>
+    </style>
+
 </resources>

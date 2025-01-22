@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.util.TypedValue;
 import android.view.ActionMode;
 import android.view.LayoutInflater;
@@ -294,6 +295,14 @@ public class IconsAdapter extends RecyclerView.Adapter<IconsAdapter.ViewHolder> 
 
             container = itemView.findViewById(R.id.container);
             container.setOnClickListener(this);
+
+            // Fix text colors for dark theme in Android 11 and below
+            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                    & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                    == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                name.setTextColor(isDarkMode ? Color.WHITE : Color.BLACK);
+            }
 
             if (mIsBookmarkMode) {
                 container.setOnLongClickListener(this);

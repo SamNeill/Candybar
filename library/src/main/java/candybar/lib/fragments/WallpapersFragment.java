@@ -126,7 +126,7 @@ public class WallpapersFragment extends Fragment {
         }
 
         mProgress.getIndeterminateDrawable().setColorFilter(
-                ColorHelper.getAttributeColor(getActivity(), com.google.android.material.R.attr.colorSecondary),
+                ColorHelper.getAttributeColor(getActivity(), R.attr.cb_colorAccent),
                 PorterDuff.Mode.SRC_IN);
         mSwipe.setColorSchemeColors(
                 ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_swipeRefresh));

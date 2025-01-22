@@ -11,10 +11,10 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="16dp"
+        android:paddingTop="24dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:paddingBottom="16dp"
+        android:paddingBottom="24dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground">
@@ -26,7 +26,7 @@
             android:padding="16dp"
             android:scaleType="fitCenter"
             android:background="?attr/colorSurfaceVariant"
-            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+            app:shapeAppearance="@style/ShapeAppearance.CandyBar.Launcher"/>
 
         <TextView
             android:id="@+id/name"
@@ -42,14 +42,17 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/bottom_line"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="0.7dp"
+        android:alpha="0.40"
         android:layout_gravity="bottom"
         android:background="?attr/cb_colorAccent"/>
 
     <View
-        android:layout_width="0.5dp"
         android:layout_height="match_parent"
+        android:layout_width="0.7dp"
+        android:alpha="0.40"
         android:layout_gravity="end"
         android:background="?attr/cb_colorAccent"/>
 

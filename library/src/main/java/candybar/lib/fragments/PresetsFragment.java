@@ -97,6 +97,14 @@ public class PresetsFragment extends Fragment {
                 new HashMap<String, Object>() {{ put("section", "presets"); }}
         );
 
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
+
         ViewCompat.setNestedScrollingEnabled(mRecyclerView, false);
 
         mProgress.getIndeterminateDrawable().setColorFilter(

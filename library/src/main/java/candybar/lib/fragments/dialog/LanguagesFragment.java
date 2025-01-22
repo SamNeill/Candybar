@@ -85,6 +85,7 @@ public class LanguagesFragment extends DialogFragment {
                 .negativeText(R.string.close)
                 .backgroundColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_cardBackground))
                 .negativeColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_colorAccent))
+                .titleColor(ColorHelper.getAttributeColor(requireActivity(), R.attr.cb_primaryText))
                 .onNegative((dialog, which) -> {
                     if (mIsLanguageChanged) {
                         requireActivity().recreate();

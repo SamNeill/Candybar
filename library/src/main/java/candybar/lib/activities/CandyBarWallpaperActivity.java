@@ -96,6 +96,9 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
     private boolean mIsEnter;
     private boolean mIsResumed = false;
+    private boolean isUiVisible = true;
+    private boolean isDialogShowing = false;
+    private Popup currentPopup = null;
 
     private Wallpaper mWallpaper;
     private String mWallpaperName;
@@ -111,7 +114,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         prevIsDarkTheme = ThemeHelper.isDarkTheme(this);
         final boolean isMaterialYou = Preferences.get(this).isMaterialYou();
         final boolean isPureBlack = Preferences.get(this).isPureBlack();
-        
+
         if (ThemeHelper.isDarkTheme(this)) {
             if (isPureBlack) {
                 if (isMaterialYou && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
@@ -131,19 +134,10 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
                 setTheme(R.style.CandyBar_Theme_App_DayNight);
             }
         }
-        
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpaper);
         mIsEnter = true;
-
-        // Get window insets
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            getWindow().setDecorFitsSystemWindows(false);
-        } else {
-            getWindow().getDecorView().setSystemUiVisibility(
-                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-            );
-        }
 
         mImageView = findViewById(R.id.wallpaper);
         mProgress = findViewById(R.id.progress);
@@ -154,21 +148,10 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         mMenuApply = findViewById(R.id.menu_apply);
         mMenuSave = findViewById(R.id.menu_save);
 
-        // Adjust bottom bar margin based on navigation bar height
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            mBottomBar.setOnApplyWindowInsetsListener((v, insets) -> {
-                CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) v.getLayoutParams();
-                params.bottomMargin = insets.getInsets(android.view.WindowInsets.Type.navigationBars()).bottom;
-                return insets;
-            });
-        } else {
-            int navigationBarHeight = getNavigationBarHeight();
-            CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) mBottomBar.getLayoutParams();
-            params.bottomMargin = navigationBarHeight;
-        }
+        mImageView.setOnClickListener(view -> toggleUiVisibility());
 
         mProgress.getIndeterminateDrawable().setColorFilter(
-                Color.parseColor("#CCFFFFFF"), PorterDuff.Mode.SRC_IN);
+                ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent), PorterDuff.Mode.SRC_IN);
         mBack.setImageDrawable(DrawableHelper.getTintedDrawable(
                 this, R.drawable.ic_toolbar_back, ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent)));
         mBack.setOnClickListener(this);
@@ -218,7 +201,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
             AnimationHelper.setBackgroundColor(findViewById(R.id.rootview), Color.TRANSPARENT, color).start();
             mProgress.getIndeterminateDrawable().setColorFilter(
-                    ColorHelper.setColorAlpha(ColorHelper.getTitleTextColor(color), 0.7f),
+                    ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent),
                     PorterDuff.Mode.SRC_IN);
         }
 
@@ -341,6 +324,8 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
                     .to(mMenuApply)
                     .list(PopupItem.getApplyItems(this))
                     .callback((p, position) -> {
+                        isDialogShowing = false;
+                        currentPopup = null;
                         PopupItem item = p.getItems().get(position);
                         if (item.getType() == PopupItem.Type.WALLPAPER_CROP) {
                             Preferences.get(this).setCropWallpaper(!item.getCheckboxValue());
@@ -408,6 +393,8 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
             if (getResources().getBoolean(R.bool.enable_wallpaper_download)) {
                 popup.removeItem(popup.getItems().size() - 1);
             }
+            isDialogShowing = true;
+            currentPopup = popup;
             popup.show();
         } else if (id == R.id.menu_save) {
             WallpaperDownloader.prepare(this)
@@ -459,7 +446,18 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         mName.setText(mWallpaper.getName());
         mName.setTextColor(ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent));
         mAuthor.setText(mWallpaper.getAuthor());
-        mAuthor.setTextColor(ColorHelper.setColorAlpha(Color.WHITE, 0.7f));
+        mAuthor.setTextColor(ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent));
+
+        int buttonColor;
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            boolean isDarkMode = (getResources().getConfiguration().uiMode
+                    & Configuration.UI_MODE_NIGHT_MASK)
+                    == Configuration.UI_MODE_NIGHT_YES;
+            buttonColor = isDarkMode ? Color.WHITE : Color.BLACK;
+        } else {
+            buttonColor = ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent);
+        }
+
         mMenuSave.setImageDrawable(DrawableHelper.getTintedDrawable(
                 this, R.drawable.ic_toolbar_download, ColorHelper.getAttributeColor(this, R.attr.cb_colorAccent)));
         mMenuApply.setImageDrawable(DrawableHelper.getTintedDrawable(
@@ -478,6 +476,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
 
     private void resetBottomBarPadding() {
         LinearLayout container = findViewById(R.id.bottom_bar_container);
+        int height = getResources().getDimensionPixelSize(R.dimen.bottom_bar_height);
         int bottom = 0;
         int right = WindowHelper.getNavigationBarHeight(this);
 
@@ -499,6 +498,34 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         }
 
         container.setPadding(0, 0, right, bottom);
+
+        // Adjust height and content positioning for Android 11 and below
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            height = getResources().getDimensionPixelSize(R.dimen.bottom_bar_height) - 16; // Reduce height for older versions
+            int verticalPadding = getResources().getDimensionPixelSize(R.dimen.content_padding);
+            int buttonPadding = getResources().getDimensionPixelSize(R.dimen.content_margin);
+            
+            LinearLayout contentContainer = (LinearLayout) container.getChildAt(0);
+            if (contentContainer != null) {
+                contentContainer.setPadding(
+                    contentContainer.getPaddingLeft(),
+                    verticalPadding,
+                    contentContainer.getPaddingRight(),
+                    verticalPadding
+                );
+            }
+
+            // Center the buttons vertically
+            View buttonContainer = container.getChildAt(container.getChildCount() - 1);
+            if (buttonContainer instanceof ImageView) {
+                buttonContainer.setPadding(buttonPadding, verticalPadding, buttonPadding, verticalPadding);
+            }
+        }
+
+        if (container.getLayoutParams() instanceof LinearLayout.LayoutParams) {
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) container.getLayoutParams();
+            params.height = height + bottom;
+        }
     }
 
     private void loadWallpaper() {
@@ -524,7 +551,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
                                 mWallpaper.setColor(ColorHelper.getAttributeColor(
                                         CandyBarWallpaperActivity.this, com.google.android.material.R.attr.colorSecondary));
                             }
-                            
+
                             ToastHelper.show(CandyBarWallpaperActivity.this, R.string.connection_failed, Toast.LENGTH_LONG);
                             return true;
                         }
@@ -574,7 +601,7 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
     }
 
     private void onWallpaperLoaded() {
-        mAttacher = (PhotoView) mImageView;
+        mAttacher = new PhotoView(mImageView.getContext());
         mAttacher.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         AnimationHelper.fade(mProgress).start();
@@ -587,11 +614,40 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         }
     }
 
-    private int getNavigationBarHeight() {
-        int resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            return getResources().getDimensionPixelSize(resourceId);
+    private void toggleUiVisibility() {
+        if (isDialogShowing && currentPopup != null) {
+            currentPopup.dismiss();
+            isDialogShowing = false;
+            currentPopup = null;
+            return;
         }
-        return 0;
+
+        isUiVisible = !isUiVisible;
+        float alpha = isUiVisible ? 1.0f : 0.0f;
+        
+        mBottomBar.animate()
+                .alpha(alpha)
+                .setDuration(200)
+                .withEndAction(() -> {
+                    if (!isUiVisible) {
+                        mBottomBar.setVisibility(View.GONE);
+                    }
+                })
+                .start();
+
+        mBack.animate()
+                .alpha(alpha)
+                .setDuration(200)
+                .withEndAction(() -> {
+                    if (!isUiVisible) {
+                        mBack.setVisibility(View.GONE);
+                    }
+                })
+                .start();
+
+        if (isUiVisible) {
+            mBottomBar.setVisibility(View.VISIBLE);
+            mBack.setVisibility(View.VISIBLE);
+        }
     }
 }

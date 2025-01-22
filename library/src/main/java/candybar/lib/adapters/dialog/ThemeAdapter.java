@@ -86,18 +86,25 @@ public class ThemeAdapter extends BaseAdapter {
         holder.radio.setChecked(mSelectedIndex == position);
         holder.name.setText(mThemes.get(position).displayName(mContext));
 
-        // Set checkbox colors programmatically
+        // Fix text color for dark theme
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            holder.name.setTextColor(isDarkMode ? android.graphics.Color.WHITE : android.graphics.Color.BLACK);
+        }
+
+        // Set radio button colors
         int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-        ColorStateList colorStateList = new ColorStateList(
-            new int[][] {
-                new int[] { android.R.attr.state_checked },
-                new int[] { -android.R.attr.state_checked }
-            },
-            new int[] {
-                accentColor,  // Checked state
-                ColorHelper.setColorAlpha(accentColor, 0.5f)   // Unchecked state
-            }
-        );
+        int[][] states = new int[][] {
+            new int[] { android.R.attr.state_checked },
+            new int[] { -android.R.attr.state_checked }
+        };
+        int[] colors = new int[] {
+            accentColor,
+            ColorHelper.setColorAlpha(accentColor, 0.5f)
+        };
+        ColorStateList colorStateList = new ColorStateList(states, colors);
         CompoundButtonCompat.setButtonTintList(holder.radio, colorStateList);
 
         holder.container.setOnClickListener(v -> {

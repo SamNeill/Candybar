@@ -95,6 +95,14 @@ public class InAppBillingAdapter extends BaseAdapter {
                         inAppBilling.getProductName();
                 holder.name.setText(product);
 
+                // Fix text color for dark theme
+                if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                    boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                        & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                        == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                    holder.name.setTextColor(isDarkMode ? android.graphics.Color.WHITE : android.graphics.Color.BLACK);
+                }
+
                 holder.container.setOnClickListener(v -> {
                     mSelectedPosition = position;
                     notifyDataSetChanged();

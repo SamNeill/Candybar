@@ -60,6 +60,17 @@ public class IconPreviewFragment extends DialogFragment {
         name.setText(mIcon.getTitle());
         name.setVisibility(View.VISIBLE);
 
+        // Set text color based on Android version and theme
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            int nightMode = requireActivity().getResources().getConfiguration().uiMode & 
+                    android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+            boolean isDarkTheme = nightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            int textColor = isDarkTheme ? 
+                    requireActivity().getResources().getColor(android.R.color.white) :
+                    requireActivity().getResources().getColor(android.R.color.black);
+            name.setTextColor(textColor);
+        }
+
         // Make icon square
         int size = getResources().getDimensionPixelSize(R.dimen.icon_preview_size);
         icon.getLayoutParams().width = size;

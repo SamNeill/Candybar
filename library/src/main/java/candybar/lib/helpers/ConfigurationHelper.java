@@ -3,7 +3,13 @@ package candybar.lib.helpers;
 import static com.danimahardhika.android.helpers.core.DrawableHelper.get;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.provider.Settings;
+import android.provider.Settings.Global;
+import android.provider.Settings.System;
+import android.provider.Settings.Secure;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.graphics.drawable.DrawerArrowDrawable;
@@ -34,20 +40,34 @@ import candybar.lib.applications.CandyBarApplication;
 public class ConfigurationHelper {
 
     public static Drawable getNavigationIcon(@NonNull Context context, @NonNull CandyBarApplication.NavigationIcon navigationIcon) {
+        Drawable drawable;
+        // Always use accent color for navigation icon
+        int iconColor = ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent);
+
         switch (navigationIcon) {
             case DEFAULT:
-                return new DrawerArrowDrawable(context);
+                DrawerArrowDrawable drawerArrowDrawable = new DrawerArrowDrawable(context);
+                drawerArrowDrawable.setColor(iconColor);
+                return drawerArrowDrawable;
             case STYLE_1:
-                return get(context, R.drawable.ic_toolbar_navigation);
+                drawable = get(context, R.drawable.ic_toolbar_navigation);
+                break;
             case STYLE_2:
-                return get(context, R.drawable.ic_toolbar_navigation_2);
+                drawable = get(context, R.drawable.ic_toolbar_navigation_2);
+                break;
             case STYLE_3:
-                return get(context, R.drawable.ic_toolbar_navigation_3);
+                drawable = get(context, R.drawable.ic_toolbar_navigation_3);
+                break;
             case STYLE_4:
-                return get(context, R.drawable.ic_toolbar_navigation_4);
+                drawable = get(context, R.drawable.ic_toolbar_navigation_4);
+                break;
             default:
-                return get(context, R.drawable.ic_toolbar_navigation);
+                drawable = get(context, R.drawable.ic_toolbar_navigation);
+                break;
         }
+
+        drawable.setTint(iconColor);
+        return drawable;
     }
 
     public static int getSocialIconColor(@NonNull Context context, @NonNull CandyBarApplication.IconColor iconColor) {

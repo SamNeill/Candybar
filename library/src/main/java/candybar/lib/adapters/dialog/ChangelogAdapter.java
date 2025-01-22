@@ -85,6 +85,17 @@ public class ChangelogAdapter extends BaseAdapter {
             changelog.setCompoundDrawablesWithIntrinsicBounds(
                     DrawableHelper.getTintedDrawable(mContext, R.drawable.ic_changelog_dot, color),
                     null, null, null);
+            
+            // Set text color based on Android version and theme
+            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+                int nightMode = mContext.getResources().getConfiguration().uiMode & 
+                        android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+                boolean isDarkTheme = nightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+                int textColor = isDarkTheme ? 
+                        mContext.getResources().getColor(android.R.color.white) :
+                        mContext.getResources().getColor(android.R.color.black);
+                changelog.setTextColor(textColor);
+            }
         }
     }
 }

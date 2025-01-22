@@ -82,6 +82,14 @@ public class LanguagesAdapter extends BaseAdapter {
         holder.radio.setChecked(mSelectedIndex == position);
         holder.name.setText(mLanguages.get(position).getName());
 
+        // Fix text color for dark theme
+        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
+            boolean isDarkMode = (mContext.getResources().getConfiguration().uiMode 
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK) 
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            holder.name.setTextColor(isDarkMode ? android.graphics.Color.WHITE : android.graphics.Color.BLACK);
+        }
+
         // Set radio button colors programmatically
         int accentColor = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
         int uncheckedColor = Color.argb(128, // 50% opacity

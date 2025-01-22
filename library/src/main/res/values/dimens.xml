@@ -41,7 +41,7 @@
     <dimen name="toolbar_shadow">6dp</dimen>
 
     <!-- Bottom Bar -->
-    <dimen name="bottom_bar_height">64dp</dimen>
+    <dimen name="bottom_bar_height">80dp</dimen>
 
     <!-- Tab -->
     <dimen name="tab_text">14sp</dimen>
