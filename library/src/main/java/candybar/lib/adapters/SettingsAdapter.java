@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
@@ -152,14 +153,17 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     contentViewHolder.divider.setVisibility(View.GONE);
                 }
 
+                // Apply accent color tint to the title's compound drawable (icon)
                 if (setting.getIcon() != -1) {
-                    int color = Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? 
-                            (isDarkMode() ? mContext.getResources().getColor(android.R.color.white) 
-                                        : mContext.getResources().getColor(android.R.color.black)) :
-                            ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
-                    contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
-                            DrawableHelper.getTintedDrawable(mContext, setting.getIcon(), color),
-                            null, null, null);
+                    Drawable icon = ContextCompat.getDrawable(mContext, setting.getIcon());
+                    if (icon != null) {
+                        icon = DrawableHelper.getTintedDrawable(
+                            mContext,
+                            setting.getIcon(),
+                            ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent)
+                        );
+                        contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(icon, null, null, null);
+                    }
                 }
             }
 
@@ -450,6 +454,19 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             title.setText(setting.getTitle());
             subtitle.setText(setting.getSubtitle());
             content.setText(setting.getContent());
+
+            // Apply accent color tint to the title's compound drawable (icon)
+            if (setting.getIcon() != -1) {
+                Drawable icon = ContextCompat.getDrawable(mContext, setting.getIcon());
+                if (icon != null) {
+                    icon = DrawableHelper.getTintedDrawable(
+                        mContext,
+                        setting.getIcon(),
+                        ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent)
+                    );
+                    title.setCompoundDrawablesWithIntrinsicBounds(icon, null, null, null);
+                }
+            }
 
             if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS || 
                 setting.getType() == NAVIGATION_VIEW_STYLE || setting.getType() == PURE_BLACK) {
