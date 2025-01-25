@@ -11,21 +11,21 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="24dp"
+        android:paddingTop="16dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:paddingBottom="24dp"
+        android:paddingBottom="16dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/icon"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:padding="16dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="12dp"
             android:scaleType="fitCenter"
-            android:background="?attr/colorSurfaceVariant"
+            android:background="?attr/cb_cardBackground"
             app:shapeAppearance="@style/ShapeAppearance.CandyBar.Launcher"/>
 
         <TextView
