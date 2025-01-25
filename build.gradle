@@ -1,11 +1,19 @@
+import org.jetbrains.kotlin.gradle.plugin.KotlinBasePlugin
+
 buildscript {
+    ext {
+        kotlin_version = '2.1.0'
+        gradle_version = '8.7.3'
+        jdk_version = 17
+    }
     repositories {
         mavenCentral()
         google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.3'
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -17,10 +25,39 @@ allprojects {
         maven { url 'https://maven.google.com' }
     }
 
+    plugins.withType(JavaPlugin).configureEach {
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(jdk_version)
+            }
+        }
+        tasks.withType(JavaCompile).tap {
+            configureEach {
+                options.release = jdk_version
+            }
+        }
+    }
+
+    plugins.withType(KotlinBasePlugin).configureEach {
+        kotlin {
+            jvmToolchain(jdk_version)
+        }
+    }
+
+    configurations.configureEach {
+        resolutionStrategy {
+            eachDependency { DependencyResolveDetails details ->
+                if (details.requested.group == 'org.jetbrains.kotlin') {
+                    details.useVersion kotlin_version
+                }
+            }
+        }
+    }
+
     rootProject.ext {
         def major = 2
         def minor = 2
-        def patch = 4
+        def patch = 5
 
         VersionCode = major * 10000 + minor * 100 + patch
         VersionName = "$major.$minor.$patch"
