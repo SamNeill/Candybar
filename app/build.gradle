@@ -24,8 +24,8 @@ android {
         applicationId 'com.candybar.dev'
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 224
-        versionName "2.2.4"
+        versionCode 225
+        versionName "2.2.5"
 
         // Naming app bundles
         setArchivesBaseName("${parent.name}-v${defaultConfig.versionName}")

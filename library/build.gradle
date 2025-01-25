@@ -21,6 +21,20 @@ plugins {
     id 'maven-publish'
 }
 
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.SamNeill'
+            artifactId = 'library'
+            version = rootProject.ext.VersionName
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+
 allprojects {
     tasks.withType(JavaCompile).tap {
         configureEach {
@@ -89,7 +103,7 @@ dependencies {
     api 'dev.jahir.KustomAPI:preset:6369c37'
 
     implementation 'androidx.work:work-runtime:2.10.0'
-    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'androidx.palette:palette-ktx:1.0.0'
     implementation 'com.google.android.material:material:1.12.0'
@@ -110,7 +124,7 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'me.grantland:autofittextview:0.2.1'
     implementation 'com.github.KeepSafe:TapTargetView:1.13.2'
-    implementation 'com.github.sarsamurmu:AdaptiveIconBitmap:1.0.1'
+    implementation 'com.github.sarsamurmu:AdaptiveIconBitmap:1.0.2'
     implementation 'com.github.zixpo:recycler-fast-scroll:6add4dff39'
     implementation 'me.zhanghai.android.fastscroll:library:1.3.0'
 
@@ -122,34 +136,3 @@ dependencies {
     implementation 'com.github.danimahardhika:DrawMe:4a672e78fc'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.SamNeill'
-                artifactId = 'Candybar'
-                version = rootProject.ext.VersionName
-
-                pom {
-                    name = 'Candyama'
-                    description = 'Android Icon Pack Dashboard Library'
-                    url = 'https://github.com/SamNeill/Candybar'
-                    licenses {
-                        license {
-                            name = 'The Apache License, Version 2.0'
-                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-                    developers {
-                        developer {
-                            id = 'samneill'
-                            name = 'Sam Neill'
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
