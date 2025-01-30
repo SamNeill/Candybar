@@ -24,8 +24,8 @@ android {
         applicationId 'com.candybar.dev'
         minSdkVersion rootProject.ext.MinSdk
         targetSdkVersion rootProject.ext.TargetSdk
-        versionCode 224
-        versionName "2.2.4"
+        versionCode 226
+        versionName "2.2.6"
 
         // Naming app bundles
         setArchivesBaseName("${parent.name}-v${defaultConfig.versionName}")
@@ -59,8 +59,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.SamNeill.Candybar:library:2.2.5'
-    implementation 'com.github.SamNeill.Candybar:PreLollipopTransitions:2.2.5'
+    implementation 'com.github.SamNeill.Candybar:library:2.2.6'
+    implementation 'com.github.SamNeill.Candybar:PreLollipopTransitions:2.2.6'
 
     // TODO: Remove `//` below to enable OneSignal
     //implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
