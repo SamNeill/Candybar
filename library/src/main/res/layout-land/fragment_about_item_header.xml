@@ -42,8 +42,7 @@
             android:text="@string/about_title"
             android:textColor="?attr/cb_colorAccent"
             android:textSize="@dimen/text_title"
-            android:textStyle="bold"
-            app:fontFamily="@font/medium" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/subtitle"
